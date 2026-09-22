@@ -1,0 +1,13 @@
+{
+  "name": "BetterLimay",
+  "short_name": "BetterLimay",
+  "description": "Independent, community-run transparency portal for Limay, Bataan.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#f5f8fc",
+  "theme_color": "#0032A0",
+  "lang": "en",
+  "categories": ["government", "education", "social"],
+  "prefer_related_applications": false
+}

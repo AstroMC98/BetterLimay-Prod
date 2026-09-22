@@ -1,0 +1,18 @@
+[
+  {
+    "id": "service-search-placeholder",
+    "kind": "service",
+    "title": "TODO: verify - public services",
+    "route": "/services",
+    "verified": false,
+    "provenance": {"source_url":"https://limaybataan.ph/","source_name":"Official Municipality of Limay website (currently under construction)","retrieved_at":"2026-09-21","verified":false,"verification_note":"Search fixture only; do not publish as a confirmed fact."}
+  },
+  {
+    "id": "office-search-placeholder",
+    "kind": "office",
+    "title": "TODO: verify - municipal offices",
+    "route": "/government/departments",
+    "verified": false,
+    "provenance": {"source_url":"https://limaybataan.ph/","source_name":"Official Municipality of Limay website (currently under construction)","retrieved_at":"2026-09-21","verified":false,"verification_note":"Search fixture only; do not publish as a confirmed fact."}
+  }
+]

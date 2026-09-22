@@ -1,0 +1,82 @@
+[
+  {
+    "id": "population-2020-total",
+    "metric": "Total population",
+    "geography": "Municipality of Limay",
+    "year": 2020,
+    "value": 78272,
+    "unit": "persons",
+    "howToRead": "This is the population counted by the 2020 Census of Population and Housing as of 01 May 2020. It is a census count, not a current-year estimate.",
+    "provenance": {
+      "source_url": "https://rsso03.psa.gov.ph/sites/default/files/Special%20Release%20CPH%20Limay.pdf",
+      "source_name": "Philippine Statistics Authority Bataan — 2020 CPH Limay Special Release",
+      "retrieved_at": "2026-09-22",
+      "verified": true,
+      "verification_note": "Table A and the accompanying text report Limay's 2020 total population as 78,272 persons."
+    }
+  },
+  {
+    "id": "population-2020-household",
+    "metric": "Household population",
+    "geography": "Municipality of Limay",
+    "year": 2020,
+    "value": 78076,
+    "unit": "persons",
+    "howToRead": "Household population excludes the institutional population reported separately by PSA for the same census reference date.",
+    "provenance": {
+      "source_url": "https://rsso03.psa.gov.ph/sites/default/files/Special%20Release%20CPH%20Limay.pdf",
+      "source_name": "Philippine Statistics Authority Bataan — 2020 CPH Limay Special Release",
+      "retrieved_at": "2026-09-22",
+      "verified": true,
+      "verification_note": "Table A reports Limay's 2020 household population as 78,076 persons."
+    }
+  },
+  {
+    "id": "households-2020",
+    "metric": "Number of households",
+    "geography": "Municipality of Limay",
+    "year": 2020,
+    "value": 19571,
+    "unit": "households",
+    "howToRead": "This is the number of households counted by the 2020 Census of Population and Housing, not the number of registered households in a local administrative system.",
+    "provenance": {
+      "source_url": "https://rsso03.psa.gov.ph/sites/default/files/Special%20Release%20CPH%20Limay.pdf",
+      "source_name": "Philippine Statistics Authority Bataan — 2020 CPH Limay Special Release",
+      "retrieved_at": "2026-09-22",
+      "verified": true,
+      "verification_note": "Table A reports 19,571 households for Limay in 2020."
+    }
+  },
+  {
+    "id": "average-household-size-2020",
+    "metric": "Average household size",
+    "geography": "Municipality of Limay",
+    "year": 2020,
+    "value": 4,
+    "unit": "persons per household",
+    "howToRead": "This is the average household size reported by PSA for the 2020 census; it should not be read as a count of households or residents.",
+    "provenance": {
+      "source_url": "https://rsso03.psa.gov.ph/sites/default/files/Special%20Release%20CPH%20Limay.pdf",
+      "source_name": "Philippine Statistics Authority Bataan — 2020 CPH Limay Special Release",
+      "retrieved_at": "2026-09-22",
+      "verified": true,
+      "verification_note": "Table A and the release text report an average household size of 4.0 persons for Limay in 2020."
+    }
+  },
+  {
+    "id": "population-2024-popcen",
+    "metric": "Population (2024 POPCEN)",
+    "geography": "Municipality of Limay",
+    "year": 2024,
+    "value": 81960,
+    "unit": "persons",
+    "howToRead": "This is the PSA population value listed for the 2024 POPCEN. It is a population count for the stated reference year and should not be combined with the 2020 census records as if both were the same enumeration.",
+    "provenance": {
+      "source_url": "https://psa.gov.ph/classification/psgc/citimuni/0300800000",
+      "source_name": "Philippine Statistics Authority PSGC — Province of Bataan",
+      "retrieved_at": "2026-09-22",
+      "verified": true,
+      "verification_note": "The municipality table lists Limay with a 2024 POPCEN population of 81,960."
+    }
+  }
+]

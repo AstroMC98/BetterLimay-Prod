@@ -1,0 +1,2 @@
+Synthetic pipeline fixture. No real LGU data is included.
+

@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "BetterLimay Government Office",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "name", "officeType", "head", "contact", "location", "provenance"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+    "name": { "type": "string", "minLength": 1 },
+    "officeType": { "type": "string", "minLength": 1 },
+    "description": { "type": "string" },
+    "head": { "type": ["string", "null"] },
+    "contact": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "properties": {
+        "phone": { "type": ["string", "null"] },
+        "email": { "type": ["string", "null"], "format": "email" },
+        "hours": { "type": ["string", "null"] }
+      }
+    },
+    "location": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "properties": {
+        "address": { "type": ["string", "null"] },
+        "coordinates": {
+          "type": ["object", "null"],
+          "additionalProperties": false,
+          "required": ["lat", "lng"],
+          "properties": {
+            "lat": { "type": "number", "minimum": -90, "maximum": 90 },
+            "lng": { "type": "number", "minimum": -180, "maximum": 180 }
+          }
+        }
+      }
+    },
+    "provenance": { "$ref": "./provenance.schema.json" }
+  }
+}

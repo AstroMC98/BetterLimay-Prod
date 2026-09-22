@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "BetterLimay Public Service",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "slug", "category", "title", "eligibleApplicants", "requirements", "steps", "fees", "processingTime", "responsibleOfficeId", "provenance"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+    "slug": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+    "category": {
+      "type": "string",
+      "enum": ["business-permits", "civil-registry", "real-property-tax", "treasurer", "health", "social-welfare", "engineering-building", "agriculture", "environment", "drrm", "education-scholarships", "barangay-clearances"]
+    },
+    "title": { "type": "string", "minLength": 1 },
+    "summary": { "type": "string" },
+    "eligibleApplicants": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } },
+    "requirements": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+    "steps": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["order", "actor", "action"],
+        "properties": {
+          "order": { "type": "integer", "minimum": 1 },
+          "actor": { "type": "string", "minLength": 1 },
+          "action": { "type": "string", "minLength": 1 }
+        }
+      }
+    },
+    "fees": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["label", "amount"],
+        "properties": {
+          "label": { "type": "string", "minLength": 1 },
+          "amount": { "type": "string", "minLength": 1 },
+          "notes": { "type": "string" }
+        }
+      }
+    },
+    "processingTime": { "type": "string", "minLength": 1 },
+    "responsibleOfficeId": { "type": "string", "minLength": 1 },
+    "sourceDocumentUrl": { "type": "string", "format": "uri" },
+    "dataGapIds": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string", "pattern": "^GAP-[0-9]{3}(?:-[A-Z]+)?$" }
+    },
+    "provenance": { "$ref": "./provenance.schema.json" }
+  }
+}

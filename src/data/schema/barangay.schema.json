@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "BetterLimay Barangay",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "name", "punongBarangay", "coordinates", "provenance"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+    "name": { "type": "string", "minLength": 1 },
+    "punongBarangay": { "type": ["string", "null"] },
+    "coordinates": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "required": ["lat", "lng"],
+      "properties": {
+        "lat": { "type": "number", "minimum": -90, "maximum": 90 },
+        "lng": { "type": "number", "minimum": -180, "maximum": 180 }
+      }
+    },
+    "profile": { "type": "string" },
+    "provenance": { "$ref": "./provenance.schema.json" }
+  }
+}

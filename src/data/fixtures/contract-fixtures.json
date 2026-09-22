@@ -1,0 +1,73 @@
+{
+  "_purpose": "Schema tests only. Do not publish or import these records as Limay data.",
+  "_syntheticProvenance": {
+    "source_url": "https://example.gov.ph/test-only/record",
+    "source_name": "Synthetic fixture source (test only)",
+    "retrieved_at": "2026-09-21",
+    "verified": true
+  },
+  "services": {
+    "verified": [{
+      "id": "fixture-service",
+      "slug": "fixture-service",
+      "category": "health",
+      "title": "Synthetic service fixture",
+      "eligibleApplicants": ["Test applicant"],
+      "requirements": ["Synthetic requirement"],
+      "steps": [{"order": 1, "actor": "Applicant", "action": "Submit synthetic requirement"}],
+      "fees": [{"label": "Test fee", "amount": "₱0 (fixture only)"}],
+      "processingTime": "Fixture duration",
+      "responsibleOfficeId": "fixture-office",
+      "provenance": {"source_url": "https://example.gov.ph/test-only/service", "source_name": "Synthetic fixture source (test only)", "retrieved_at": "2026-09-21", "verified": true}
+    }],
+    "unverified": [{
+      "id": "fixture-service-unverified",
+      "slug": "fixture-service-unverified",
+      "category": "health",
+      "title": "TODO: verify - synthetic service",
+      "eligibleApplicants": ["TODO: verify - source needed"],
+      "requirements": ["TODO: verify - source needed"],
+      "steps": [{"order": 1, "actor": "TODO: verify - source needed", "action": "TODO: verify - source needed"}],
+      "fees": [{"label": "TODO: verify - source needed", "amount": "TODO: verify - source needed"}],
+      "processingTime": "TODO: verify - source needed",
+      "responsibleOfficeId": "TODO: verify - source needed",
+      "provenance": {"source_url": "https://example.gov.ph/test-only/service-unverified", "source_name": "Synthetic fixture source (test only)", "retrieved_at": "2026-09-21", "verified": false, "verification_note": "Fixture placeholder only"}
+    }],
+    "invalid": [{"id": "invalid-service"}]
+  },
+  "offices": {
+    "verified": [{"id": "fixture-office", "name": "Synthetic office fixture", "officeType": "test", "head": null, "contact": null, "location": null, "provenance": {"source_url": "https://example.gov.ph/test-only/office", "source_name": "Synthetic fixture source (test only)", "retrieved_at": "2026-09-21", "verified": true}}],
+    "unverified": [{"id": "fixture-office-unverified", "name": "TODO: verify - office", "officeType": "unverified", "head": null, "contact": null, "location": null, "provenance": {"source_url": "https://example.gov.ph/test-only/office-unverified", "source_name": "Synthetic fixture source (test only)", "retrieved_at": "2026-09-21", "verified": false}}],
+    "invalid": [{"id": "invalid-office", "name": "Invalid office"}]
+  },
+  "officials": {
+    "verified": [{"id": "fixture-official", "name": "Synthetic official fixture", "role": "Test role", "branch": "executive", "status": "current", "provenance": {"source_url": "https://example.gov.ph/test-only/official", "source_name": "Synthetic fixture source (test only)", "retrieved_at": "2026-09-21", "verified": true}}],
+    "unverified": [{"id": "fixture-official-unverified", "name": "TODO: verify - official", "role": "TODO: verify - source needed", "branch": "ex-officio", "status": "unverified", "provenance": {"source_url": "https://example.gov.ph/test-only/official-unverified", "source_name": "Synthetic fixture source (test only)", "retrieved_at": "2026-09-21", "verified": false}}],
+    "invalid": [{"id": "invalid-official", "name": "Invalid official"}]
+  },
+  "barangays": {
+    "verified": [{"id": "fixture-barangay", "name": "Synthetic barangay fixture", "punongBarangay": null, "coordinates": null, "provenance": {"source_url": "https://example.gov.ph/test-only/barangay", "source_name": "Synthetic fixture source (test only)", "retrieved_at": "2026-09-21", "verified": true}}],
+    "unverified": [{"id": "fixture-barangay-unverified", "name": "TODO: verify - barangay", "punongBarangay": null, "coordinates": null, "provenance": {"source_url": "https://example.gov.ph/test-only/barangay-unverified", "source_name": "Synthetic fixture source (test only)", "retrieved_at": "2026-09-21", "verified": false}}],
+    "invalid": [{"id": "invalid-barangay", "name": "Invalid barangay"}]
+  },
+  "legislation": {
+    "verified": [{"id": "fixture-ordinance", "type": "ordinance", "number": "TEST-001", "title": "Synthetic ordinance fixture", "year": 2026, "status": "fixture", "documentUrl": "https://example.gov.ph/test-only/ordinance.pdf", "summary": null, "summaryStatus": "not-written", "provenance": {"source_url": "https://example.gov.ph/test-only/ordinance", "source_name": "Synthetic fixture source (test only)", "retrieved_at": "2026-09-21", "verified": true}}],
+    "unverified": [{"id": "fixture-resolution-unverified", "type": "resolution", "number": "TODO-VERIFY", "title": "TODO: verify - legislation", "year": 2026, "status": "unverified", "documentUrl": "https://example.gov.ph/test-only/resolution-unverified.pdf", "summary": null, "summaryStatus": "draft", "provenance": {"source_url": "https://example.gov.ph/test-only/resolution-unverified", "source_name": "Synthetic fixture source (test only)", "retrieved_at": "2026-09-21", "verified": false}}],
+    "invalid": [{"id": "invalid-legislation", "type": "ordinance"}]
+  },
+  "transparency": {
+    "verified": [{"id": "fixture-budget", "kind": "budget", "title": "Synthetic budget fixture", "year": 2026, "amount": null, "unit": "PHP", "status": "fixture", "sourceAgency": "Synthetic source", "howToRead": "Synthetic fixture only.", "provenance": {"source_url": "https://example.gov.ph/test-only/budget", "source_name": "Synthetic fixture source (test only)", "retrieved_at": "2026-09-21", "verified": true}}],
+    "unverified": [{"id": "fixture-project-unverified", "kind": "infrastructure", "title": "TODO: verify - project", "year": 2026, "amount": null, "unit": "PHP", "status": "unverified", "sourceAgency": "TODO: verify - source needed", "howToRead": "TODO: verify - interpretation needed", "provenance": {"source_url": "https://example.gov.ph/test-only/project-unverified", "source_name": "Synthetic fixture source (test only)", "retrieved_at": "2026-09-21", "verified": false}}],
+    "invalid": [{"id": "invalid-transparency", "kind": "budget"}]
+  },
+  "statistics": {
+    "verified": [{"id": "fixture-statistic", "metric": "Synthetic metric", "geography": "Synthetic geography", "year": 2026, "value": 1, "unit": "count", "howToRead": "Synthetic fixture only.", "provenance": {"source_url": "https://example.gov.ph/test-only/statistic", "source_name": "Synthetic fixture source (test only)", "retrieved_at": "2026-09-21", "verified": true}}],
+    "unverified": [{"id": "fixture-statistic-unverified", "metric": "TODO: verify - metric", "geography": "TODO: verify - geography", "year": 2026, "value": 0, "unit": "TODO: verify - unit", "howToRead": "TODO: verify - interpretation needed", "provenance": {"source_url": "https://example.gov.ph/test-only/statistic-unverified", "source_name": "Synthetic fixture source (test only)", "retrieved_at": "2026-09-21", "verified": false}}],
+    "invalid": [{"id": "invalid-statistic", "metric": "Invalid statistic"}]
+  },
+  "announcements": {
+    "verified": [{"id": "fixture-announcement", "title": "Synthetic announcement fixture", "publishedAt": "2026-09-21T00:00:00Z", "url": "https://example.gov.ph/test-only/announcement", "sourceName": "Synthetic source", "provenance": {"source_url": "https://example.gov.ph/test-only/announcement", "source_name": "Synthetic fixture source (test only)", "retrieved_at": "2026-09-21", "verified": true}}],
+    "unverified": [{"id": "fixture-announcement-unverified", "title": "TODO: verify - announcement", "publishedAt": "2026-09-21T00:00:00Z", "url": "https://example.gov.ph/test-only/announcement-unverified", "sourceName": "Synthetic source", "provenance": {"source_url": "https://example.gov.ph/test-only/announcement-unverified", "source_name": "Synthetic fixture source (test only)", "retrieved_at": "2026-09-21", "verified": false}}],
+    "invalid": [{"id": "invalid-announcement", "title": "Invalid announcement"}]
+  }
+}

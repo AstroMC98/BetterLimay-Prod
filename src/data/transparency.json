@@ -1,0 +1,62 @@
+[
+  {
+    "id": "dbm-fy2026-solar-water-system-duale",
+    "kind": "infrastructure",
+    "title": "Construction of Solar Water System, Barangay Duale, Limay, Bataan",
+    "year": 2026,
+    "amount": 10000000,
+    "unit": "PHP",
+    "status": "appropriated",
+    "sourceAgency": "Department of Budget and Management / Department of Public Works and Highways",
+    "contractor": null,
+    "location": "Barangay Duale, Limay, Bataan",
+    "howToRead": "This is a national-government FY 2026 appropriation reference. It is not evidence that the Municipality of Limay executed the project, awarded a contract, or spent the full amount.",
+    "provenance": {
+      "source_url": "https://www.dbm.gov.ph/wp-content/uploads/GAA/GAA2026/DBM-OFFICIAL-GAZETTE-FY-2026_VOLUME-1-C.pdf",
+      "source_name": "Department of Budget and Management — Official Gazette FY 2026, Volume I-C",
+      "retrieved_at": "2026-09-22",
+      "verified": true,
+      "verification_note": "The Region III section lists the project under Bataan 2nd District Engineering Office with an amount of PHP 10,000,000."
+    }
+  },
+  {
+    "id": "dbm-fy2026-rehabilitation-road-phase-3-duale",
+    "kind": "infrastructure",
+    "title": "Rehabilitation of Road, Phase 3, Barangay Duale, Limay, Bataan",
+    "year": 2026,
+    "amount": 50000000,
+    "unit": "PHP",
+    "status": "appropriated",
+    "sourceAgency": "Department of Budget and Management / Department of Public Works and Highways",
+    "contractor": null,
+    "location": "Barangay Duale, Limay, Bataan",
+    "howToRead": "This is a national-government FY 2026 appropriation reference. It is not evidence that the Municipality of Limay executed the project, awarded a contract, or spent the full amount.",
+    "provenance": {
+      "source_url": "https://www.dbm.gov.ph/wp-content/uploads/NEP2026/Details-of-DPWH.pdf",
+      "source_name": "Department of Budget and Management — FY 2026 Expenditure Program, DPWH details",
+      "retrieved_at": "2026-09-22",
+      "verified": true,
+      "verification_note": "The Bataan 2nd District Engineering Office section lists the project with an amount of PHP 50,000,000."
+    }
+  },
+  {
+    "id": "philgeps-25cb0017-limay-bypass-road",
+    "kind": "procurement",
+    "title": "25CB0017: Construction of Limay By-Pass Road, Limay, Bataan",
+    "year": 2025,
+    "amount": 16713900,
+    "unit": "PHP",
+    "status": "awarded",
+    "sourceAgency": "Department of Public Works and Highways — Bataan 2nd District Engineering Office",
+    "contractor": null,
+    "location": "Limay, Bataan",
+    "howToRead": "This is the Approved Budget for the Contract shown in a PhilGEPS bid notice. It is not the final paid amount, and no contractor is listed here unless the source record explicitly identifies one.",
+    "provenance": {
+      "source_url": "https://notices.philgeps.gov.ph/GEPSNONPILOT/Tender/PrintableBidNoticeAbstractUI.aspx?refid=11407627",
+      "source_name": "Philippine Government Electronic Procurement System — Bid Notice Abstract 11407627",
+      "retrieved_at": "2026-09-22",
+      "verified": true,
+      "verification_note": "The notice identifies solicitation 25CB0017, an Approved Budget for the Contract of PHP 16,713,900, and status Awarded."
+    }
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "BetterLimay Statistic",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "metric", "geography", "year", "value", "unit", "howToRead", "provenance"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+    "metric": { "type": "string", "minLength": 1 },
+    "geography": { "type": "string", "minLength": 1 },
+    "year": { "type": "integer", "minimum": 1900, "maximum": 2200 },
+    "value": { "type": "number" },
+    "unit": { "type": "string", "minLength": 1 },
+    "howToRead": { "type": "string", "minLength": 1 },
+    "provenance": { "$ref": "./provenance.schema.json" }
+  }
+}

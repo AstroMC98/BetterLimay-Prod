@@ -1,0 +1,549 @@
+{
+  "_clarification": "Kumpleto sa MVP ang mga wika na Ingles at Filipino; ipinagpapaliban ang Tagalog sa Phase 2.",
+  "accessibility": {
+    "skipToContent": "Lumaktaw sa pangunahing nilalaman",
+    "mainNavigation": "Pangunahing nabigasyon",
+    "externalLink": "Magbubukas sa bagong window"
+  },
+  "common": {
+    "communityInformationPortal": "Portal ng impormasyon ng komunidad",
+    "loadingPage": "Ikinakarga ang pahina",
+    "portalIdentityLoaded": "Nakuha ang pagkakakilanlan ng portal mula sa LGU configuration."
+  },
+  "errors": {
+    "eyebrow": "BetterLimay",
+    "title": "May kailangang ayusin.",
+    "description": "Hindi maikarga ng portal ang pahinang ito. Pakisubukang muli.",
+    "reload": "Ikarga muli ang pahina"
+  },
+  "footer": {
+    "independentPortal": "Independenteng community portal; tiyakin ang pampublikong impormasyon sa mga opisyal na source.",
+    "footerNavigation": "Nabigasyon sa footer",
+    "officialWebsite": "Opisyal na website ng LGU",
+    "betterGov": "BetterGov.ph",
+    "directory": "Better LGU directory",
+    "sourceCode": "Source code",
+    "license": "Lisensya",
+    "costToPeople": "Gastos sa mga Mamamayan ng Limay: ₱0"
+  },
+  "forms": {
+    "required": "Kailangan",
+    "submit": "Ipadala",
+    "consent": "Sumasang-ayon ako sa pangongolekta at paggamit ng impormasyong kailangan upang maproseso ang kahilingang ito.",
+    "error": "Pakisuri ang mga field na may mali."
+  },
+  "language": {
+    "switcherLabel": "Wika",
+    "english": "Ingles",
+    "filipino": "Filipino"
+  },
+  "navigation": {
+    "home": "Home",
+    "services": "Mga serbisyo",
+    "government": "Pamahalaan",
+    "legislation": "Batas lokal",
+    "transparency": "Transparency",
+    "statistics": "Estadistika",
+    "news": "Balita",
+    "report": "Mag-ulat ng problema",
+    "contribute": "Makibahagi",
+    "about": "Tungkol sa BetterLimay",
+    "openMenu": "Buksan ang menu",
+    "closeMenu": "Isara ang menu"
+  },
+  "provenance": {
+    "verified": "Napatunayang source",
+    "unverified": "Hindi pa napatunayan — tiyakin bago umasa sa impormasyong ito",
+    "sourceUnavailable": "Hindi available ang source",
+    "stale": "Maaaring luma na",
+    "lastRetrieved": "Huling nakuha",
+    "verifyOfficialSource": "Tiyakin sa opisyal na source",
+    "sourceInformation": "Source at beripikasyon",
+    "sourceName": "Source",
+    "verificationNote": "Tala ng beripikasyon",
+    "missingValue": "Walang datos — kailangan ng source",
+    "showSource": "Ipakita ang source at beripikasyon",
+    "status": {
+      "verified": "Beripikado",
+      "unverified": "Hindi beripikado",
+      "stale": "Maaaring luma na",
+      "unavailable": "Hindi available ang source"
+    },
+    "statusDescriptions": {
+      "verified": "May valid na source ang record na ito at kamakailan itong beripikado.",
+      "unverified": "Hindi pa beripikado ang record na ito; tingnan ang source bago umasa rito.",
+      "stale": "Na-beripika na ang record na ito ngunit maaaring hindi na kasalukuyan.",
+      "unavailable": "Walang available na valid source o kinakailangang provenance metadata."
+    }
+  },
+  "services": {
+    "loading": "Ikinakarga ang mga serbisyo",
+    "empty": "Walang serbisyong tumutugma sa iyong paghahanap.",
+    "unverified": "Kailangang tiyakin ang mga detalye",
+    "sourceUnavailable": "Hindi kasalukuyang available ang source document.",
+    "directoryEyebrow": "Direktoryo ng Citizen's Charter",
+    "directoryDescription": "Mag-browse ng mga pampublikong serbisyo ayon sa kategorya at tingnan kung alin ang kumpirmado o kailangan pang tiyakin.",
+    "searchLabel": "I-filter ang mga serbisyo",
+    "searchPlaceholder": "Maghanap ayon sa pangalan o kategorya ng serbisyo",
+    "categoryFilterLabel": "Kategorya ng serbisyo",
+    "allCategories": "Lahat ng kategorya",
+    "categoryCount": "{{count}} serbisyo",
+    "categoryCount_other": "{{count}} serbisyo",
+    "resultsHeading": "Mga rekord ng serbisyo",
+    "openCategory": "Buksan ang kategorya",
+    "noResults": "Walang rekord ng serbisyo na tumutugma sa mga filter.",
+    "backToServices": "Bumalik sa lahat ng serbisyo",
+    "backToCategory": "Bumalik sa {{category}}",
+    "eligibility": "Sino ang maaaring gumamit",
+    "requirements": "Checklist ng requirements",
+    "steps": "Mga hakbang ng kliyente at ahensya",
+    "stepActor": "{{actor}}",
+    "fees": "Mga bayarin",
+    "processingTime": "Oras ng pagproseso",
+    "responsibleOffice": "Responsableng opisina",
+    "sourceInformation": "Source at beripikasyon",
+    "sourceName": "Source",
+    "lastRetrieved": "Huling nakuha",
+    "verificationNote": "Tala sa beripikasyon",
+    "missingValue": "Hindi pa nailathala — kailangan ng source",
+    "print": "I-print ang serbisyong ito",
+    "share": "Kopyahin o ibahagi ang pahinang ito",
+    "shared": "Nakopya ang link ng pahina",
+    "shareUnavailable": "Kopyahin ang URL ng pahina para ibahagi",
+    "verifyBeforeRelying": "Tiyakin sa opisyal na source ang requirements, bayarin, oras ng pagproseso, at detalye ng opisina bago umasa sa rekord na ito.",
+    "categories": {
+      "business-permits": "Mga business permit",
+      "civil-registry": "Civil registry",
+      "real-property-tax": "Buwis sa ari-arian at assessor",
+      "treasurer": "Mga serbisyo ng ingat-yaman",
+      "health": "Mga serbisyong pangkalusugan",
+      "social-welfare": "Serbisyong panlipunan",
+      "engineering-building": "Engineering at building permit",
+      "agriculture": "Agrikultura",
+      "environment": "Kapaligiran",
+      "drrm": "Pamamahala sa panganib at kalamidad",
+      "education-scholarships": "Edukasyon at scholarship",
+      "barangay-clearances": "Barangay clearance"
+    }
+  },
+  "hotline": {
+    "label": "Mga emergency hotline",
+    "unavailable": "Wala pang nailathalang numerong may beripikasyon dito.",
+    "verifyOfficial": "Tingnan ang opisyal na source ng LGU"
+  },
+  "info": {
+    "philippineTime": "Oras sa Pilipinas",
+    "weatherLabel": "Panahon sa Limay",
+    "weatherLoading": "Kinukuha ang panahon",
+    "weatherUnavailable": "Pansamantalang hindi available ang panahon",
+    "weather": {
+      "clear": "Maaliwalas",
+      "cloudy": "Maulap",
+      "fog": "Maulap na may hamog",
+      "rain": "Umuulan",
+      "snow": "Niyebe",
+      "thunderstorm": "May pagkulog at kidlat",
+      "unknown": "Hindi available ang kondisyon"
+    }
+  },
+  "home": {
+    "heroTitle": "Mas malinaw na paraan para hanapin ang impormasyon ng pamahalaan ng Limay.",
+    "heroDescription": "Hanapin ang mga pampublikong serbisyo, opisina, at rekord ng komunidad na laging nakikita ang source.",
+    "searchLabel": "Maghanap sa BetterLimay",
+    "searchPlaceholder": "Maghanap ng serbisyo, opisina, opisyal, o dokumento",
+    "searchAction": "Maghanap sa portal",
+    "quickAccessTitle": "Magsimula sa pampublikong serbisyo",
+    "quickAccessDescription": "Hanapin ang requirements at opisinang responsable sa serbisyo.",
+    "latestAnnouncements": "Mga pinakabagong anunsyo",
+    "announcementsUnavailable": "Wala pang anunsyong galing sa beripikadong opisyal na source.",
+    "transparencyTitle": "Transparency, isang source kada pagkakataon",
+    "transparencyUnavailable": "Tingnan ang sourced project at procurement references; malinaw na gap pa ang municipal finance at CMCI data.",
+    "transparencyAction": "Buksan ang transparency records",
+    "statisticsAction": "Buksan ang statistics",
+    "contributeTitle": "Tulungan kaming linawin ang impormasyon sa Limay",
+    "contributeDescription": "Magbahagi ng pagwawasto o tumulong na beripikahin ang pampublikong rekord.",
+    "contributeAction": "Magbahagi ng pagwawasto",
+    "disclaimerTitle": "Independenteng community portal",
+    "disclaimerBody": "Hindi kaanib ng LGU ang BetterLimay. Tiyakin palagi ang mahalagang impormasyon sa opisyal na source."
+  },
+  "search": {
+    "label": "Maghanap sa BetterLimay",
+    "placeholder": "Maghanap ng serbisyo, opisina, opisyal, o batas",
+    "submit": "Maghanap sa portal",
+    "minChars": "Mag-type ng hindi bababa sa 2 karakter para maghanap.",
+    "noResults": "Walang nailathalang rekord na tumutugma sa paghahanap.",
+    "results": "Mga resulta ng paghahanap",
+    "resultTypes": {
+      "service": "Serbisyo",
+      "office": "Opisina",
+      "official": "Opisyal",
+      "legislation": "Batas"
+    }
+  },
+  "legislation": {
+    "eyebrow": "Rekord ng batas lokal",
+    "searchLabel": "Maghanap ng batas lokal",
+    "searchPlaceholder": "Maghanap sa pamagat, numero, o buod",
+    "typeFilter": "Uri ng rekord",
+    "allTypes": "Lahat ng uri",
+    "yearFilter": "Taon",
+    "allYears": "Lahat ng taon",
+    "committeeFilter": "Komite",
+    "allCommittees": "Lahat ng komite",
+    "authorFilter": "May-akda",
+    "allAuthors": "Lahat ng may-akda",
+    "statusFilter": "Status",
+    "allStatuses": "Lahat ng status",
+    "resultsEyebrow": "Mga nailathalang rekord",
+    "resultsTitle": "Mga rekord ng batas lokal",
+    "resultCount": "{{count}} rekord",
+    "noResults": "Walang batas lokal na tumutugma sa mga filter.",
+    "noResultsDescription": "Alisin ang isang filter o gumamit ng ibang parirala sa paghahanap.",
+    "empty": "Wala pang nailathalang rekord ng batas lokal.",
+    "emptyDescription": "Hindi kasalukuyang available ang opisyal na source ng batas lokal ng Limay para sa masusuring rekord. Magdaragdag kami ng dokumento kapag nasuri na ang source.",
+    "summaryLabel": "Simpleng paliwanag",
+    "summaryNotAvailable": "Wala pang nailathalang simpleng paliwanag para sa rekord na ito.",
+    "summaryStatus": {
+      "not-written": "Wala pang buod",
+      "draft": "Draft na buod — kailangan ng pagsusuri",
+      "human-reviewed": "Sinuri ng tao ang buod"
+    },
+    "openDocument": "Buksan ang source document",
+    "status": "Status",
+    "committee": "Komite",
+    "dateEnacted": "Petsa ng pagpapatibay",
+    "backToIndex": "Bumalik sa talaan ng batas lokal",
+    "summaryEyebrow": "Paliwanag sa simpleng wika",
+    "number": "Numero ng rekord",
+    "notAvailable": "Walang datos — kailangan ng source",
+    "types": {
+      "ordinance": "Ordinansa",
+      "resolution": "Resolusyon",
+      "executive-order": "Kautusang ehekutibo"
+    }
+  },
+  "news": {
+    "eyebrow": "Mga anunsyo mula sa opisyal na source",
+    "publishedAt": "Inilathala",
+    "openSource": "Buksan ang orihinal na anunsyo",
+    "officialFacebook": "Tingnan ang opisyal na Facebook page ng Limay",
+    "empty": "Wala pang anunsyong handang ilathala",
+    "emptyDescription": "Hindi ligtas na na-aggregate ang opisyal na website at Facebook source sa isang auditable news record. Hindi ito nangangahulugang walang anunsyo; tingnan nang direkta ang mga opisyal na channel."
+  },
+  "report": {
+    "eyebrow": "Feedback ng komunidad",
+    "name": "Iyong pangalan",
+    "email": "Email address",
+    "message": "Ano ang nais mong i-report?",
+    "honeypotLabel": "Iwanang blangko ang field na ito",
+    "privacyNotice": "Ang independenteng portal na ito ay kumukuha lamang ng impormasyong kailangan upang maipasa ang report. Sa pagpapatuloy, kinikilala mo ang notice sa Data Privacy Act of 2012 (RA 10173). Huwag magsama ng password, financial information, o sensitibong personal na datos.",
+    "consentLabel": "Sumasang-ayon ako sa pangongolekta at paggamit ng impormasyong ito upang maproseso ang aking report.",
+    "turnstileLabel": "Kailangan ang security challenge bago maipasa ang report.",
+    "deliveryDisabled": "Hindi pa pinapagana ang report delivery. Hindi ipapadala ng form ang report habang kino-configure ang server-side security at delivery service.",
+    "submit": "Ipadala ang report",
+    "validationSummary": "Ayusin ang mga naka-highlight na field bago magpatuloy.",
+    "status": {
+      "idle": "",
+      "disabled": "Hindi pa available ang report delivery. Walang report na ipinadala.",
+      "success": "Tinanggap para sa processing ang iyong report.",
+      "validation-error": "Hindi tinanggap ang report. Suriin ang form at subukan muli.",
+      "challenge-failed": "Hindi napatunayan ang security check. Subukan muli.",
+      "rate-limited": "Napakaraming pagtatangka. Maghintay muna bago subukan muli.",
+      "provider-error": "Pansamantalang hindi available ang delivery service. Subukan muli mamaya."
+    },
+    "errors": {
+      "name": "Maglagay ng pangalan o community identifier.",
+      "email": "Maglagay ng valid na email address.",
+      "message": "Maglagay ng report na hindi lalampas sa 5,000 character.",
+      "consent": "Kailangan ang pahintulot bago mag-submit.",
+      "server": "Hindi pumasa sa server validation ang report."
+    }
+  },
+  "contribute": {
+    "eyebrow": "Tumulong sa pagpapanatili ng talaan",
+    "correctionEyebrow": "Para sa mga residente",
+    "correctionTitle": "Magmungkahi ng pagwawasto",
+    "correctionBody": "Sabihin sa maintainers kung ano ang dapat itama at magsama ng link sa pampublikong source kung maaari. Huwag magsumite ng pribadong impormasyon o agarang emergency request sa issue channel na ito.",
+    "correctionStep1": "Ilarawan ang partikular na page, record, o pangungusap na kailangang suriin.",
+    "correctionStep2": "Isama ang opisyal na source URL at petsa kung kailan mo ito sinuri.",
+    "correctionStep3": "Ipaliwanag ang pagbabago nang walang kumpidensyal na personal na impormasyon.",
+    "issueAction": "Magbukas ng correction issue",
+    "developerEyebrow": "Para sa developers",
+    "developerTitle": "Pagandahin ang portal",
+    "developerBody": "Suriin ang architecture, data provenance, tests, at contribution rules bago magbukas ng pull request. Mas madaling beripikahin ng community maintainers ang maliliit at reviewable na pagbabago.",
+    "sourceAction": "Buksan ang source code"
+  },
+  "about": {
+    "missionTitle": "Ano ang BetterLimay",
+    "missionBody": "Ang BetterLimay ay independenteng portal na binuo ng volunteers upang mas madaling hanapin, unawain, at tiyakin ang pampublikong impormasyon tungkol sa Limay.",
+    "independenceTitle": "Ano ang hindi ito",
+    "independenceBody": "Hindi opisyal na website ng Municipality of Limay ang BetterLimay at hindi ito nagsasalita para sa LGU. Tiyakin ang mahalagang impormasyon sa orihinal na government source.",
+    "sourcesTitle": "Paano hinahawakan ang sources",
+    "sourcesBody": "May source, retrieval, at verification metadata ang mga inilathalang fact. Kapag hindi available ang source, ipinapakita ang gap sa halip na punan ito ng palagay."
+  },
+  "legal": {
+    "portal": {
+      "title": "Independenteng portal",
+      "body": "Ang BetterLimay ay community project at hindi kaanib, inendorso, o pinapatakbo ng Municipality of Limay."
+    },
+    "sources": {
+      "title": "Pananagutan sa source",
+      "body": "Gamitin ang naka-link na orihinal na source upang tiyakin ang kasalukuyang requirements, schedule, opisyal, legal records, at emergency information."
+    },
+    "contact": {
+      "title": "Pagwawasto at contact",
+      "body": "Gamitin ang contribution route upang magmungkahi ng correction o suriin ang public source code at issue tracker."
+    }
+  },
+  "privacy": {
+    "collection": {
+      "title": "Anong kinokolekta ng portal",
+      "body": "Hindi kailangan ng account sa pag-browse. Humihingi lamang ang report form ng contact details at paglalarawang kailangan upang maproseso ang report, kasama ang consent at security fields."
+    },
+    "use": {
+      "title": "Paano ginagamit ang impormasyon",
+      "body": "Ang report information ay para lamang sa configured delivery provider kapag pinagana ang service. Hindi ipinapadala ang report text sa client analytics."
+    },
+    "retention": {
+      "title": "Retention at provider handling",
+      "body": "Kailangang dokumentado ang delivery provider, retention period, deletion process, at access procedure bago paganahin ang report delivery. Hanggang noon, hindi nagpapadala ng reports ang form."
+    },
+    "rights": {
+      "title": "Mga tanong tungkol sa privacy",
+      "body": "Para sa privacy concern o correction request, gamitin ang public contribution channel at huwag magsama ng sensitibong personal na impormasyon sa issue."
+    }
+  },
+  "terms": {
+    "independence": {
+      "title": "Independenteng impormasyon",
+      "body": "Ang BetterLimay ay volunteer community portal, hindi opisyal na publikasyon ng LGU. Hindi lumilikha ang mga page nito ng opisyal na obligasyon, approval, o service guarantee."
+    },
+    "verification": {
+      "title": "Tiyakin bago umasa",
+      "body": "Tingnan ang naka-link na source para sa kasalukuyang bayarin, requirements, deadline, opisyal, legal documents, project status, at agarang instructions."
+    },
+    "links": {
+      "title": "External links",
+      "body": "Ang mga link sa official o third-party websites ay para sa verification at maaaring magbago nang wala sa kontrol ng portal."
+    },
+    "changes": {
+      "title": "Mga pagbabago sa portal",
+      "body": "Maaaring i-update ng community maintainers ang mga page, source notes, at route availability habang nagbabago ang pampublikong ebidensya."
+    }
+  },
+  "accessibilityPage": {
+    "commitment": {
+      "title": "Pangako sa accessibility",
+      "body": "Layunin ng portal ang WCAG 2.1 AA practices: semantic landmarks, keyboard operation, visible focus, readable contrast, text alternatives, at reduced-motion support."
+    },
+    "features": {
+      "title": "Mga kasalukuyang feature",
+      "body": "May visible table alternative ang charts, may list alternative ang maps, at hindi lamang kulay ang gamit sa source states."
+    },
+    "feedback": {
+      "title": "Mag-report ng accessibility barrier",
+      "body": "Gamitin ang contribution route upang ilarawan ang page, control, device, at assistive technology. Huwag magsama ng sensitibong personal na impormasyon."
+    }
+  },
+  "faq": {
+    "independent": {
+      "title": "Opisyal ba ang BetterLimay?",
+      "body": "Hindi. Independenteng community portal ito at hindi kaanib ng Municipality of Limay."
+    },
+    "sources": {
+      "title": "Saan galing ang impormasyon?",
+      "body": "Ang mga inilathalang record ay may link sa pampublikong government o ibang orihinal na source at may retrieval at verification details."
+    },
+    "unverified": {
+      "title": "Bakit may kulang na detalye?",
+      "body": "Ang missing o unverified record ay nangangahulugang hindi ito ligtas na nakumpirma mula sa reachable public source."
+    },
+    "report": {
+      "title": "Nagpapadala ba ng impormasyon ang report form?",
+      "body": "Hindi pa. Mananatiling disabled ang delivery hanggang ma-configure ang server-side security, rate limiting, privacy operations, at approved delivery provider."
+    }
+  },
+  "transparency": {
+    "eyebrow": "Pampublikong talaan",
+    "explainerEyebrow": "Paano basahin ito",
+    "explainerTitle": "Ang sourced record ay hindi awtomatikong patunay ng bayad",
+    "explainerBody": "Magkakasama sa bawat entry ang ahensya, halaga, panahon, status, lokasyon, at source. Ang appropriation at procurement notice ay ipinapakita bilang mga nailathalang sanggunian; hindi nito pinatutunayan ang pagpapatupad, aktuwal na bayad, o contractor ng munisipyo maliban kung malinaw itong sinasabi ng source.",
+    "chartEyebrow": "Biswal na buod",
+    "chartTitle": "Mga nailathalang rekord ayon sa halaga",
+    "chartUnit": "Unit ng chart: {{unit}}",
+    "chartLabel": "Mga halaga ng transparency sa {{unit}}; gamitin ang talahanayan sa ibaba para sa eksaktong halaga at source.",
+    "recordsEyebrow": "Talaan ng source",
+    "recordsTitle": "Mga rekord ng transparency",
+    "recordCount": "{{count}} nailathalang rekord",
+    "tableCaption": "Mga rekord ng transparency na may eksaktong halaga, konteksto, at provenance.",
+    "howToRead": "Paano basahin ang rekord na ito",
+    "notAvailable": "Hindi nailathala — kailangan ng source",
+    "amount": "Halaga",
+    "fields": {
+      "record": "Rekord",
+      "year": "Taon",
+      "amount": "Halaga",
+      "status": "Status",
+      "agency": "Source agency",
+      "location": "Lokasyon",
+      "source": "Source"
+    },
+    "kinds": {
+      "budget": "Badyet",
+      "procurement": "Procurement",
+      "bid": "Bid notice",
+      "infrastructure": "Imprastraktura"
+    },
+    "gaps": {
+      "financial": "Wala pang nailalathalang municipal financial records sa katalogong ito. Ang mga rekord sa ibaba ay sourced national appropriation at procurement references, hindi kumpletong municipal budget o expenditure report."
+    }
+  },
+  "statistics": {
+    "eyebrow": "Snapshot ng census",
+    "explainerEyebrow": "Paano basahin ito",
+    "explainerTitle": "Magkahiwalay ang metrics kapag magkaiba ang unit",
+    "explainerBody": "Pumili ng isang metric sa bawat pagkakataon. Magkaiba ang kahulugan ng population count, household count, at average household size kaya hindi dapat pagsamahin sa iisang series. Nananatili sa bawat value ang reference year, heograpiya, at PSA source.",
+    "chartEyebrow": "Biswal na buod",
+    "chartTitle": "Napiling metric sa paglipas ng panahon",
+    "chartUnit": "Unit ng chart: {{unit}}",
+    "chartLabel": "Statistics chart sa {{unit}}; gamitin ang talahanayan sa ibaba para sa eksaktong values at source.",
+    "metricPicker": "Metric",
+    "chartRows": "{{count}} source records ang ipinapakita sa talahanayan sa ibaba.",
+    "tableCaption": "Mga statistics record na may eksaktong value, reference year, heograpiya, at provenance.",
+    "howToRead": "Paano basahin ang statistic na ito",
+    "value": "Value",
+    "fields": {
+      "year": "Reference year",
+      "value": "Value",
+      "geography": "Heograpiya",
+      "source": "Source"
+    },
+    "gaps": {
+      "barangayDemographics": "Wala pang nailathalang barangay-level demographic records. Walang barangay value ang hinango mula sa municipal totals.",
+      "cmci": "Wala pang verified DTI CMCI ranking sa katalogong ito. Walang ranking o score ang ginawa."
+    },
+    "empty": "Wala pang nailathalang statistics record."
+  },
+  "pages": {
+    "independentEyebrow": "Independenteng community portal",
+    "placeholderNotice": "Ang MVP view na ito ay route placeholder para sa {{portal}}. Walang impormasyon tungkol sa Limay ang kumpirmado rito nang walang nailathalang source.",
+    "notFound": {
+      "title": "Hindi nahanap ang pahina",
+      "description": "Ang address na ito ay hindi tumutugma sa isang nailathalang BetterLimay route."
+    },
+    "offline": {
+      "title": "Offline ang BetterLimay",
+      "description": "Walang available na network. Kumonekta muli at tiyakin ang agarang impormasyon sa opisyal na source.",
+      "hotlineGap": "Wala pang beripikadong emergency hotline number para ipakita offline. Huwag umasa sa hindi beripikadong numero.",
+      "verifyOfficial": "Tingnan ang opisyal na source ng Limay"
+    },
+    "featureDisabled": {
+      "title": "Hindi pa available ang {{feature}}",
+      "description": "Naka-disable ang BetterLimay feature na ito sa kasalukuyang MVP configuration.",
+      "notice": "Independenteng community portal ang BetterLimay. Ang view na ito ay hindi opisyal na publikasyon ng LGU."
+    },
+    "services": {
+      "title": "Mga pampublikong serbisyo",
+      "description": "Mag-browse ng mga kategorya ng serbisyo at source-status placeholder para sa BetterLimay MVP.",
+      "eyebrow": "Directory ng serbisyo",
+      "categoryTitle": "{{category}}",
+      "categoryDescription": "Ang mga service record sa kategoryang ito ay kailangan pa ng source review.",
+      "detailDescription": "Ipinapakita ang detalye ng {{service}} kasama ang kasalukuyang source status nito.",
+      "detailNotice": "Hindi pa kumpirmado ang record na ito. Tiyakin ang requirements, bayarin, oras ng pagproseso, at mga detalye ng opisina sa opisyal na source bago umasa rito."
+    },
+    "government": {
+      "title": "Directory ng pamahalaan",
+      "description": "Mag-browse ng route placeholder para sa mga sangay at opisina ng pamahalaan nang hindi itinuturing na kumpirmado ang mga hindi beripikadong record.",
+      "eyebrow": "Directory ng pamahalaan",
+      "branchDescription": "Available ang {{branch}} route, ngunit kailangan pa ng source verification ang mga record dito.",
+      "recordNotice": "Wala pang kumpirmadong record na nailathala para sa route na ito. Tiyakin ang mga pangalan, tungkulin, opisina, at lokasyon sa opisyal na source.",
+      "branches": {
+        "executive": "Sangay ehekutibo",
+        "legislative": "Sangay lehislatibo",
+        "ex-officio": "Mga ex-officio na tungkulin",
+        "departments": "Mga departamento",
+        "barangays": "Mga barangay"
+      },
+      "electedOfficialsTitle": "Mga halal na opisyal",
+      "electedOfficialsDescription": "Tingnan ang mga placeholder para sa Sangguniang Bayan at mga ex-officio na tungkulin. Mananatiling malinaw na hindi beripikado ang mga pangalan hanggang makumpirma ng pampublikong source.",
+      "exOfficioNote": "Kasama rito bilang ex-officio na tungkulin ang Pangulo ng ABC Federation at Pangulo ng SK Federation. Hindi ilalathala ang mga pangalan bago beripikahin.",
+      "term": "Termino",
+      "verified": "Beripikado",
+      "viewSource": "Tingnan ang source",
+      "officeHead": "Pinuno ng opisina",
+      "contact": "Kontak",
+      "location": "Lokasyon",
+      "notAvailable": "Walang datos — tiyakin sa opisyal na source",
+      "locationNotVerified": "Hindi beripikado ang lokasyon",
+      "locationMissing": "Walang nailathalang lokasyon",
+      "locationAvailable": "May beripikadong koordinado",
+      "punongBarangay": "Punong barangay",
+      "mapEyebrow": "Tingnan ang lokasyon",
+      "mapTitle": "Mapa ng barangay",
+      "mapLoading": "Ikinakarga ang beripikadong mapa…",
+      "mapUnavailable": "Hindi pa available ang mapa dahil wala pang beripikadong koordinado ng barangay.",
+      "osmAttribution": "mga kontribyutor ng OpenStreetMap",
+      "listEyebrow": "Alternatibong accessible",
+      "listAlternative": "Listahan ng barangay",
+      "noBarangays": "Wala pang nailathalang record ng barangay.",
+      "expectedBarangays": "Inaasahan ng configuration ang {{count}} barangay; kailangan pang beripikahin ang mga pangalan at profile mula sa source."
+    },
+    "about": {
+      "title": "Tungkol sa BetterLimay",
+      "description": "Alamin ang tungkol sa independenteng community-run information portal na ito."
+    },
+    "legal": {
+      "title": "Legal at trust information",
+      "description": "Tingnan ang gabay ng BetterLimay sa pagiging independenteng portal, source verification, at correction.",
+      "privacyTitle": "Placeholder sa privacy",
+      "privacyDescription": "Hindi pa nailathala ang privacy information sa MVP na ito.",
+      "termsTitle": "Placeholder sa terms",
+      "termsDescription": "Hindi pa nailathala ang terms information sa MVP na ito."
+    },
+    "search": {
+      "title": "Maghanap sa BetterLimay",
+      "description": "Maghanap ng pampublikong serbisyo, opisina, opisyal, at legislation-ready records na nakikita ang source status."
+    },
+    "transparency": {
+      "title": "Mga rekord ng transparency",
+      "description": "Mag-browse ng sourced procurement at infrastructure references habang malinaw ang limitasyon at verification status ng mga ito."
+    },
+    "statistics": {
+      "title": "Estadistika ng Limay",
+      "description": "Tingnan ang sourced population at household metrics kasama ang reference year, unit, talahanayan, at provenance."
+    },
+    "news": {
+      "title": "Mga anunsyo ng Limay",
+      "description": "Tingnan lamang ang mga anunsyong may naka-link at nasuring orihinal na opisyal na source."
+    },
+    "report": {
+      "title": "Mag-report ng concern sa komunidad",
+      "description": "Magbahagi ng concern sa public service gamit ang privacy-first report form. Hindi pinagana ang delivery hangga't hindi configured ang security service."
+    },
+    "contribute": {
+      "title": "Makibahagi sa BetterLimay",
+      "description": "Magmungkahi ng source-backed correction o tumulong sa independenteng community portal na ito."
+    },
+    "faq": {
+      "title": "Mga madalas itanong",
+      "description": "Alamin kung paano hinahawakan ng BetterLimay ang sources, gaps, corrections, at community reports."
+    },
+    "accessibility": {
+      "title": "Accessibility",
+      "description": "Tingnan ang accessibility practices at kasalukuyang limitasyon ng community portal na ito."
+    },
+    "privacy": {
+      "title": "Privacy notice",
+      "description": "Alamin kung anong kinokolekta ng BetterLimay, bakit kailangan ito, at ano ang hindi kinokolekta ng report form."
+    },
+    "terms": {
+      "title": "Terms of use",
+      "description": "Basahin ang terms para sa paggamit ng independenteng information portal at mga source link nito."
+    },
+    "sitemap": {
+      "title": "Site map",
+      "description": "Mag-browse sa lahat ng pampublikong BetterLimay route sa isang accessible na listahan.",
+      "navigationLabel": "Pampublikong site map"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+jsonschema>=4.23,<5
+pdfplumber>=0.11,<1
+pypdf>=5,<6
+pydantic>=2.7,<3
+pytest>=8,<9
+reportlab>=4,<5
+PyMuPDF>=1.24,<2
+Pillow>=10,<12
+pytesseract>=0.3,<1

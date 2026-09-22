@@ -1,0 +1,40 @@
+{
+  "_comment": "BetterLimay identity and capability configuration. Keep LGU facts and portal identity here so a fork can be rebranded without editing React components.",
+  "_clarification": "The optional PHP exchange-rate enhancement is disabled for MVP. Weather is enabled because it is the required live information enhancement; contact email remains null until verified.",
+  "lgu": {
+    "name": "Limay",
+    "fullName": "Municipality of Limay",
+    "type": "municipality",
+    "province": "Bataan",
+    "region": "Region III",
+    "regionCode": "03",
+    "officialWebsite": "https://limaybataan.ph/",
+    "coordinates": {
+      "lat": 14.5625,
+      "lng": 120.5949
+    },
+    "barangayCount": 12
+  },
+  "portal": {
+    "name": "BetterLimay",
+    "baseUrl": "https://betterlimay.org",
+    "tagline": "Community-run transparency portal for Limay",
+    "socials": {
+      "officialWebsite": "https://limaybataan.ph/",
+      "officialFacebook": "https://www.facebook.com/1Limay",
+      "sourceCode": "https://github.com/AstroMC98/betterlimay",
+      "betterGovDirectory": "https://lgu.bettergov.ph/"
+    },
+    "contactEmail": null,
+    "brandColor": "#0032A0"
+  },
+  "features": {
+    "legislation": false,
+    "transparency": false,
+    "statistics": false,
+    "weather": true,
+    "reports": false,
+    "pwa": false,
+    "exchangeRate": false
+  }
+}

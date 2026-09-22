@@ -1,0 +1,549 @@
+{
+  "_clarification": "English and Filipino are the complete MVP locales; Tagalog is deferred to Phase 2.",
+  "accessibility": {
+    "skipToContent": "Skip to main content",
+    "mainNavigation": "Main navigation",
+    "externalLink": "Opens in a new window"
+  },
+  "common": {
+    "communityInformationPortal": "Community information portal",
+    "loadingPage": "Loading page",
+    "portalIdentityLoaded": "Portal identity loaded from the LGU configuration."
+  },
+  "errors": {
+    "eyebrow": "BetterLimay",
+    "title": "Something needs attention.",
+    "description": "The portal could not load this view. Please try again.",
+    "reload": "Reload page"
+  },
+  "footer": {
+    "independentPortal": "Independent community portal; verify public information with official sources.",
+    "footerNavigation": "Footer navigation",
+    "officialWebsite": "Official LGU website",
+    "betterGov": "BetterGov.ph",
+    "directory": "Better LGU directory",
+    "sourceCode": "Source code",
+    "license": "License",
+    "costToPeople": "Cost to the People of Limay: ₱0"
+  },
+  "forms": {
+    "required": "Required",
+    "submit": "Submit",
+    "consent": "I consent to the collection and use of the information needed to process this request.",
+    "error": "Please review the highlighted fields."
+  },
+  "language": {
+    "switcherLabel": "Language",
+    "english": "English",
+    "filipino": "Filipino"
+  },
+  "navigation": {
+    "home": "Home",
+    "services": "Services",
+    "government": "Government",
+    "legislation": "Legislation",
+    "transparency": "Transparency",
+    "statistics": "Statistics",
+    "news": "News",
+    "report": "Report an issue",
+    "contribute": "Contribute",
+    "about": "About BetterLimay",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
+  },
+  "provenance": {
+    "verified": "Verified source",
+    "unverified": "Unverified — verify before relying on this information",
+    "sourceUnavailable": "Source unavailable",
+    "stale": "May be outdated",
+    "lastRetrieved": "Last retrieved",
+    "verifyOfficialSource": "Verify with the official source",
+    "sourceInformation": "Source and verification",
+    "sourceName": "Source",
+    "verificationNote": "Verification note",
+    "missingValue": "Not available — source needed",
+    "showSource": "Show source and verification",
+    "status": {
+      "verified": "Verified",
+      "unverified": "Unverified",
+      "stale": "May be outdated",
+      "unavailable": "Source unavailable"
+    },
+    "statusDescriptions": {
+      "verified": "This record has a valid source and was verified recently.",
+      "unverified": "This record has not been verified; check the source before relying on it.",
+      "stale": "This record was verified previously but may no longer be current.",
+      "unavailable": "A valid source or required provenance metadata is not available."
+    }
+  },
+  "services": {
+    "loading": "Loading services",
+    "empty": "No services match your search.",
+    "unverified": "Details need verification",
+    "sourceUnavailable": "The source document is currently unavailable.",
+    "directoryEyebrow": "Citizen's Charter directory",
+    "directoryDescription": "Browse public services by category and see what is confirmed, pending, or still needs verification.",
+    "searchLabel": "Filter services",
+    "searchPlaceholder": "Search by service name or category",
+    "categoryFilterLabel": "Service category",
+    "allCategories": "All categories",
+    "categoryCount": "{{count}} service",
+    "categoryCount_other": "{{count}} services",
+    "resultsHeading": "Service records",
+    "openCategory": "Open category",
+    "noResults": "No service records match these filters.",
+    "backToServices": "Back to all services",
+    "backToCategory": "Back to {{category}}",
+    "eligibility": "Who may avail",
+    "requirements": "Requirements checklist",
+    "steps": "Client and agency steps",
+    "stepActor": "{{actor}}",
+    "fees": "Fees",
+    "processingTime": "Processing time",
+    "responsibleOffice": "Responsible office",
+    "sourceInformation": "Source and verification",
+    "sourceName": "Source",
+    "lastRetrieved": "Last retrieved",
+    "verificationNote": "Verification note",
+    "missingValue": "Not yet published — source needed",
+    "print": "Print this service",
+    "share": "Copy or share this page",
+    "shared": "Page link copied",
+    "shareUnavailable": "Copy this page URL to share it",
+    "verifyBeforeRelying": "Verify requirements, fees, processing time, and office details with the official source before relying on this record.",
+    "categories": {
+      "business-permits": "Business permits",
+      "civil-registry": "Civil registry",
+      "real-property-tax": "Real property tax and assessor",
+      "treasurer": "Treasurer services",
+      "health": "Health services",
+      "social-welfare": "Social welfare",
+      "engineering-building": "Engineering and building permits",
+      "agriculture": "Agriculture",
+      "environment": "Environment",
+      "drrm": "Disaster risk reduction and management",
+      "education-scholarships": "Education and scholarships",
+      "barangay-clearances": "Barangay clearances"
+    }
+  },
+  "hotline": {
+    "label": "Emergency hotlines",
+    "unavailable": "No verified hotline numbers are currently published here.",
+    "verifyOfficial": "Check the official LGU source"
+  },
+  "info": {
+    "philippineTime": "Philippine time",
+    "weatherLabel": "Weather in Limay",
+    "weatherLoading": "Weather loading",
+    "weatherUnavailable": "Weather is temporarily unavailable",
+    "weather": {
+      "clear": "Clear",
+      "cloudy": "Cloudy",
+      "fog": "Fog",
+      "rain": "Rain",
+      "snow": "Snow",
+      "thunderstorm": "Thunderstorm",
+      "unknown": "Conditions unavailable"
+    }
+  },
+  "home": {
+    "heroTitle": "A clearer way to find Limay government information.",
+    "heroDescription": "Browse public services, offices, and community records with the source always in view.",
+    "searchLabel": "Search BetterLimay",
+    "searchPlaceholder": "Search services, offices, officials, or documents",
+    "searchAction": "Search the portal",
+    "quickAccessTitle": "Start with a public service",
+    "quickAccessDescription": "Find the requirements and office responsible for a service.",
+    "latestAnnouncements": "Latest announcements",
+    "announcementsUnavailable": "No announcements are available from a verified official source yet.",
+    "transparencyTitle": "Transparency, one source at a time",
+    "transparencyUnavailable": "Browse sourced project and procurement references; municipal finance and CMCI data remain explicit gaps.",
+    "transparencyAction": "Open transparency records",
+    "statisticsAction": "Open statistics",
+    "contributeTitle": "Help keep Limay information clear",
+    "contributeDescription": "Share a correction or help us verify a public record.",
+    "contributeAction": "Contribute a correction",
+    "disclaimerTitle": "Independent community portal",
+    "disclaimerBody": "BetterLimay is not affiliated with the LGU. Always verify important information with the official source."
+  },
+  "search": {
+    "label": "Search BetterLimay",
+    "placeholder": "Search services, offices, officials, or legislation",
+    "submit": "Search the portal",
+    "minChars": "Type at least 2 characters to search.",
+    "noResults": "No published records match this search.",
+    "results": "Search results",
+    "resultTypes": {
+      "service": "Service",
+      "office": "Office",
+      "official": "Official",
+      "legislation": "Legislation"
+    }
+  },
+  "legislation": {
+    "eyebrow": "Legislative record",
+    "searchLabel": "Search legislation",
+    "searchPlaceholder": "Search title, number, or summary",
+    "typeFilter": "Record type",
+    "allTypes": "All types",
+    "yearFilter": "Year",
+    "allYears": "All years",
+    "committeeFilter": "Committee",
+    "allCommittees": "All committees",
+    "authorFilter": "Author",
+    "allAuthors": "All authors",
+    "statusFilter": "Status",
+    "allStatuses": "All statuses",
+    "resultsEyebrow": "Published records",
+    "resultsTitle": "Legislation records",
+    "resultCount": "{{count}} records",
+    "noResults": "No legislation matches these filters.",
+    "noResultsDescription": "Try removing a filter or using a different search phrase.",
+    "empty": "No legislation records are published yet.",
+    "emptyDescription": "The official Limay legislation source is not currently available for an auditable record. We will add documents when a source can be checked.",
+    "summaryLabel": "Explain simply",
+    "summaryNotAvailable": "No plain-language summary has been published for this record.",
+    "summaryStatus": {
+      "not-written": "Summary not written",
+      "draft": "Draft summary — review needed",
+      "human-reviewed": "Human-reviewed summary"
+    },
+    "openDocument": "Open source document",
+    "status": "Status",
+    "committee": "Committee",
+    "dateEnacted": "Date enacted",
+    "backToIndex": "Back to legislation index",
+    "summaryEyebrow": "Plain-language explanation",
+    "number": "Record number",
+    "notAvailable": "Not available — source needed",
+    "types": {
+      "ordinance": "Ordinance",
+      "resolution": "Resolution",
+      "executive-order": "Executive order"
+    }
+  },
+  "news": {
+    "eyebrow": "Official-source announcements",
+    "publishedAt": "Published",
+    "openSource": "Open original announcement",
+    "officialFacebook": "Check the official Limay Facebook page",
+    "empty": "No announcements are ready for publication",
+    "emptyDescription": "The official site and Facebook source could not be safely aggregated into an auditable news record. This does not mean there are no announcements; check the official channels directly."
+  },
+  "report": {
+    "eyebrow": "Community feedback",
+    "name": "Your name",
+    "email": "Email address",
+    "message": "What would you like to report?",
+    "honeypotLabel": "Leave this field blank",
+    "privacyNotice": "This independent portal collects only the information needed to route a report. By continuing, you acknowledge the Data Privacy Act of 2012 (RA 10173) notice. Do not include passwords, financial information, or sensitive personal data.",
+    "consentLabel": "I consent to the collection and use of this information to process my report.",
+    "turnstileLabel": "A security challenge is required before a report can be delivered.",
+    "deliveryDisabled": "Report delivery is not enabled yet. The form will not send your report while the server-side security and delivery service is being configured.",
+    "submit": "Submit report",
+    "validationSummary": "Please correct the highlighted fields before continuing.",
+    "status": {
+      "idle": "",
+      "disabled": "Report delivery is currently unavailable. No report was sent.",
+      "success": "Your report was accepted for processing.",
+      "validation-error": "The report could not be accepted. Check the form and try again.",
+      "challenge-failed": "The security check could not be verified. Please try again.",
+      "rate-limited": "Too many attempts were made. Please wait before trying again.",
+      "provider-error": "The delivery service is temporarily unavailable. Please try again later."
+    },
+    "errors": {
+      "name": "Enter your name or a community identifier.",
+      "email": "Enter a valid email address.",
+      "message": "Enter a report of no more than 5,000 characters.",
+      "consent": "Consent is required before submitting.",
+      "server": "The report did not pass server validation."
+    }
+  },
+  "contribute": {
+    "eyebrow": "Help maintain the record",
+    "correctionEyebrow": "For residents",
+    "correctionTitle": "Suggest a correction",
+    "correctionBody": "Tell maintainers what should be corrected and include a link to the public source whenever possible. Do not submit private information or urgent emergency requests through this issue channel.",
+    "correctionStep1": "Describe the specific page, record, or sentence that needs review.",
+    "correctionStep2": "Include the official source URL and the date you checked it.",
+    "correctionStep3": "Explain what changed without including confidential personal information.",
+    "issueAction": "Open a correction issue",
+    "developerEyebrow": "For developers",
+    "developerTitle": "Improve the portal",
+    "developerBody": "Review the architecture, data provenance, tests, and contribution rules before opening a pull request. Small, reviewable changes are easier for community maintainers to verify.",
+    "sourceAction": "Open the source code"
+  },
+  "about": {
+    "missionTitle": "What BetterLimay is",
+    "missionBody": "BetterLimay is an independent, volunteer-built portal that makes public information about Limay easier to find, understand, and verify.",
+    "independenceTitle": "What it is not",
+    "independenceBody": "BetterLimay is not the official website of the Municipality of Limay and does not speak for the LGU. Verify important information with the original government source.",
+    "sourcesTitle": "How sources are handled",
+    "sourcesBody": "Published facts carry source, retrieval, and verification metadata. When a source is unavailable, the portal shows the gap instead of filling it with an assumption."
+  },
+  "legal": {
+    "portal": {
+      "title": "Independent portal",
+      "body": "BetterLimay is a community project and is not affiliated with, endorsed by, or operated by the Municipality of Limay."
+    },
+    "sources": {
+      "title": "Source responsibility",
+      "body": "Use the linked original source to confirm current requirements, schedules, officials, legal records, and emergency information."
+    },
+    "contact": {
+      "title": "Corrections and contact",
+      "body": "Use the contribution route to suggest a correction or review the public source code and issue tracker."
+    }
+  },
+  "privacy": {
+    "collection": {
+      "title": "What the portal collects",
+      "body": "Browsing does not require an account. The report form asks only for the contact details and description needed to process a report, plus consent and security fields."
+    },
+    "use": {
+      "title": "How information is used",
+      "body": "Report information is intended only for the configured delivery provider when the service is enabled. Report text is not sent to client analytics."
+    },
+    "retention": {
+      "title": "Retention and provider handling",
+      "body": "The delivery provider, retention period, deletion process, and access procedure must be documented before report delivery is enabled. Until then, the form does not send reports."
+    },
+    "rights": {
+      "title": "Your privacy questions",
+      "body": "For a privacy concern or correction request, use the public contribution channel and do not include sensitive personal information in an issue."
+    }
+  },
+  "terms": {
+    "independence": {
+      "title": "Independent information",
+      "body": "BetterLimay is a volunteer community portal, not an official LGU publication. Its pages do not create an official obligation, approval, or service guarantee."
+    },
+    "verification": {
+      "title": "Verify before relying",
+      "body": "Check the linked source for current fees, requirements, deadlines, officials, legal documents, project status, and urgent instructions."
+    },
+    "links": {
+      "title": "External links",
+      "body": "Links to official or third-party websites are provided for verification and may change outside the portal's control."
+    },
+    "changes": {
+      "title": "Changes to the portal",
+      "body": "Community maintainers may update pages, source notes, and route availability as public evidence changes."
+    }
+  },
+  "accessibilityPage": {
+    "commitment": {
+      "title": "Accessibility commitment",
+      "body": "The portal aims for WCAG 2.1 AA practices: semantic landmarks, keyboard operation, visible focus, readable contrast, text alternatives, and reduced-motion support."
+    },
+    "features": {
+      "title": "Current features",
+      "body": "Charts have visible table alternatives, maps have list alternatives, and source states do not rely on color alone."
+    },
+    "feedback": {
+      "title": "Report an accessibility barrier",
+      "body": "Use the contribution route to describe the page, control, device, and assistive technology involved. Please do not include sensitive personal information."
+    }
+  },
+  "faq": {
+    "independent": {
+      "title": "Is BetterLimay official?",
+      "body": "No. It is an independent community portal and is not affiliated with the Municipality of Limay."
+    },
+    "sources": {
+      "title": "Where does information come from?",
+      "body": "Published records link to public government or other original sources and show retrieval and verification details."
+    },
+    "unverified": {
+      "title": "Why are some details missing?",
+      "body": "A missing or unverified record means the maintainers could not safely confirm it from a reachable public source."
+    },
+    "report": {
+      "title": "Does the report form send information?",
+      "body": "Not yet. Delivery remains disabled until server-side security, rate limiting, privacy operations, and an approved delivery provider are configured."
+    }
+  },
+  "transparency": {
+    "eyebrow": "Public ledger",
+    "explainerEyebrow": "How to read this",
+    "explainerTitle": "A sourced record is not automatically a payment record",
+    "explainerBody": "Each entry keeps its agency, amount, period, status, location, and source together. Appropriations and procurement notices are displayed as published references; they do not prove municipal execution, final payment, or a contractor unless the source says so.",
+    "chartEyebrow": "Visual summary",
+    "chartTitle": "Published records by amount",
+    "chartUnit": "Chart unit: {{unit}}",
+    "chartLabel": "Transparency amounts in {{unit}}; use the data table below for exact values and sources.",
+    "recordsEyebrow": "Source register",
+    "recordsTitle": "Transparency records",
+    "recordCount": "{{count}} published records",
+    "tableCaption": "Transparency records with exact values, context, and provenance.",
+    "howToRead": "How to read this record",
+    "notAvailable": "Not published — source needed",
+    "amount": "Amount",
+    "fields": {
+      "record": "Record",
+      "year": "Year",
+      "amount": "Amount",
+      "status": "Status",
+      "agency": "Source agency",
+      "location": "Location",
+      "source": "Source"
+    },
+    "kinds": {
+      "budget": "Budget",
+      "procurement": "Procurement",
+      "bid": "Bid notice",
+      "infrastructure": "Infrastructure"
+    },
+    "gaps": {
+      "financial": "Municipal financial records are not yet published in this catalog. The records below are sourced national appropriation and procurement references, not a complete municipal budget or expenditure report."
+    }
+  },
+  "statistics": {
+    "eyebrow": "Census snapshot",
+    "explainerEyebrow": "How to read this",
+    "explainerTitle": "Metrics stay separate when their units differ",
+    "explainerBody": "Choose one metric at a time. Population counts, household counts, and average household size have different meanings and must not be combined in a single series. Every value keeps its reference year, geography, and PSA source.",
+    "chartEyebrow": "Visual summary",
+    "chartTitle": "Selected metric over time",
+    "chartUnit": "Chart unit: {{unit}}",
+    "chartLabel": "Statistics chart in {{unit}}; use the data table below for exact values and sources.",
+    "metricPicker": "Metric",
+    "chartRows": "{{count}} source records are shown in the table below.",
+    "tableCaption": "Statistics records with exact values, reference years, geography, and provenance.",
+    "howToRead": "How to read this statistic",
+    "value": "Value",
+    "fields": {
+      "year": "Reference year",
+      "value": "Value",
+      "geography": "Geography",
+      "source": "Source"
+    },
+    "gaps": {
+      "barangayDemographics": "Barangay-level demographic records are not yet published. No barangay value is inferred from the municipal totals.",
+      "cmci": "A verified DTI CMCI ranking is not yet published in this catalog. No ranking or score is fabricated."
+    },
+    "empty": "No statistics records are published yet."
+  },
+  "pages": {
+    "independentEyebrow": "Independent community portal",
+    "placeholderNotice": "This MVP view is a route placeholder for {{portal}}. No Limay fact is confirmed here without a published source.",
+    "notFound": {
+      "title": "Page not found",
+      "description": "This address does not match a published BetterLimay route."
+    },
+    "offline": {
+      "title": "BetterLimay is offline",
+      "description": "The network is unavailable. Reconnect and verify urgent information with the official source.",
+      "hotlineGap": "No emergency hotline number is verified for offline display yet. Do not rely on an unverified number.",
+      "verifyOfficial": "Check the official Limay source"
+    },
+    "featureDisabled": {
+      "title": "{{feature}} is not available yet",
+      "description": "This BetterLimay feature is disabled in the current MVP configuration.",
+      "notice": "BetterLimay is an independent community portal. This view does not represent an official LGU publication."
+    },
+    "services": {
+      "title": "Public services",
+      "description": "Browse service categories and source-status placeholders for the BetterLimay MVP.",
+      "eyebrow": "Service directory",
+      "categoryTitle": "{{category}}",
+      "categoryDescription": "Service records in this category remain subject to source review.",
+      "detailDescription": "Details for {{service}} are shown with their current source status.",
+      "detailNotice": "This record is not confirmed. Verify requirements, fees, processing time, and office details with the official source before relying on it."
+    },
+    "government": {
+      "title": "Government directory",
+      "description": "Browse government branch and office route placeholders without treating unverified records as confirmed facts.",
+      "eyebrow": "Government directory",
+      "branchDescription": "The {{branch}} route is available, but records shown here require source verification.",
+      "recordNotice": "No confirmed record is published for this route yet. Verify names, roles, offices, and locations with an official source.",
+      "branches": {
+        "executive": "Executive branch",
+        "legislative": "Legislative branch",
+        "ex-officio": "Ex-officio roles",
+        "departments": "Departments",
+        "barangays": "Barangays"
+      },
+      "electedOfficialsTitle": "Elected officials",
+      "electedOfficialsDescription": "Review the Sangguniang Bayan and ex-officio role placeholders. Names remain visibly unverified until a public source confirms them.",
+      "exOfficioNote": "The ABC Federation President and SK Federation President are represented as ex-officio roles. Their names are not published until verified.",
+      "term": "Term",
+      "verified": "Verified",
+      "viewSource": "View source",
+      "officeHead": "Office head",
+      "contact": "Contact",
+      "location": "Location",
+      "notAvailable": "Not available — verify with the official source",
+      "locationNotVerified": "Location not verified",
+      "locationMissing": "No location published",
+      "locationAvailable": "Verified coordinates available",
+      "punongBarangay": "Punong barangay",
+      "mapEyebrow": "Location view",
+      "mapTitle": "Barangay map",
+      "mapLoading": "Loading the verified map…",
+      "mapUnavailable": "The map is not available because no barangay coordinates have been verified yet.",
+      "osmAttribution": "OpenStreetMap contributors",
+      "listEyebrow": "Accessible alternative",
+      "listAlternative": "Barangay list",
+      "noBarangays": "No barangay records are published yet.",
+      "expectedBarangays": "The configuration expects {{count}} barangays; names and profiles still need source verification."
+    },
+    "about": {
+      "title": "About BetterLimay",
+      "description": "Learn about this independent, community-run information portal."
+    },
+    "legal": {
+      "title": "Legal and trust information",
+      "description": "Review BetterLimay's independent-portal, source-verification, and correction guidance.",
+      "privacyTitle": "Privacy placeholder",
+      "privacyDescription": "Privacy information is not published in this MVP yet.",
+      "termsTitle": "Terms placeholder",
+      "termsDescription": "Terms information is not published in this MVP yet."
+    },
+    "search": {
+      "title": "Search BetterLimay",
+      "description": "Search public services, offices, officials, and legislation-ready records with source status in view."
+    },
+    "transparency": {
+      "title": "Transparency records",
+      "description": "Browse sourced procurement and infrastructure references while keeping their limits and verification status visible."
+    },
+    "statistics": {
+      "title": "Limay statistics",
+      "description": "Review sourced population and household metrics with reference years, units, tables, and provenance."
+    },
+    "news": {
+      "title": "Limay announcements",
+      "description": "Review announcements only when an original official source can be linked and checked."
+    },
+    "report": {
+      "title": "Report a community concern",
+      "description": "Share a public-service concern through the privacy-first report form. Delivery is not enabled until its security service is configured."
+    },
+    "contribute": {
+      "title": "Contribute to BetterLimay",
+      "description": "Suggest source-backed corrections or help improve this independent community portal."
+    },
+    "faq": {
+      "title": "Frequently asked questions",
+      "description": "Learn how BetterLimay handles sources, gaps, corrections, and community reports."
+    },
+    "accessibility": {
+      "title": "Accessibility",
+      "description": "Review the accessibility practices and known limitations of this community portal."
+    },
+    "privacy": {
+      "title": "Privacy notice",
+      "description": "Understand what BetterLimay collects, why it is needed, and what the report form does not collect."
+    },
+    "terms": {
+      "title": "Terms of use",
+      "description": "Read the terms for using an independent information portal and its source links."
+    },
+    "sitemap": {
+      "title": "Site map",
+      "description": "Browse the public BetterLimay routes in one accessible list.",
+      "navigationLabel": "Public site map"
+    }
+  }
+}

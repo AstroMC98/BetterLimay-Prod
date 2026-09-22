@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "BetterLimay Announcement",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "title", "publishedAt", "url", "sourceName", "provenance"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+    "title": { "type": "string", "minLength": 1 },
+    "publishedAt": { "type": "string", "format": "date-time" },
+    "url": { "type": "string", "format": "uri" },
+    "sourceName": { "type": "string", "minLength": 1 },
+    "summary": { "type": "string" },
+    "provenance": { "$ref": "./provenance.schema.json" }
+  }
+}

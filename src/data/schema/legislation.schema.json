@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "BetterLimay Legislation Record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "type", "number", "title", "year", "status", "documentUrl", "summary", "summaryStatus", "provenance"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+    "type": { "type": "string", "enum": ["ordinance", "resolution", "executive-order"] },
+    "number": { "type": "string", "minLength": 1 },
+    "title": { "type": "string", "minLength": 1 },
+    "year": { "type": "integer", "minimum": 1900, "maximum": 2200 },
+    "dateEnacted": { "type": ["string", "null"], "format": "date" },
+    "status": { "type": "string", "minLength": 1 },
+    "authorIds": { "type": "array", "items": { "type": "string" } },
+    "committee": { "type": ["string", "null"] },
+    "documentUrl": { "type": "string", "format": "uri" },
+    "summary": { "type": ["string", "null"] },
+    "summaryStatus": { "type": "string", "enum": ["not-written", "draft", "human-reviewed"] },
+    "provenance": { "$ref": "./provenance.schema.json" }
+  }
+}

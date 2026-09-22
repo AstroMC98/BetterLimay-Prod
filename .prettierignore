@@ -1,0 +1,15 @@
+node_modules
+dist
+coverage
+playwright-report
+test-results
+raw_data
+pipeline/.cache
+branding
+config
+dev_tasks
+docs
+pipeline
+src/data
+tests/pipeline
+*.min.js

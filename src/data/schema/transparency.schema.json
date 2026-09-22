@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "BetterLimay Transparency Record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "kind", "title", "year", "amount", "unit", "status", "sourceAgency", "howToRead", "provenance"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+    "kind": { "type": "string", "enum": ["budget", "procurement", "bid", "infrastructure"] },
+    "title": { "type": "string", "minLength": 1 },
+    "year": { "type": "integer", "minimum": 1900, "maximum": 2200 },
+    "amount": { "type": ["number", "null"], "minimum": 0 },
+    "unit": { "type": "string", "minLength": 1 },
+    "status": { "type": "string", "minLength": 1 },
+    "sourceAgency": { "type": "string", "minLength": 1 },
+    "howToRead": { "type": "string", "minLength": 1 },
+    "contractor": { "type": ["string", "null"] },
+    "location": { "type": ["string", "null"] },
+    "provenance": { "$ref": "./provenance.schema.json" }
+  }
+}

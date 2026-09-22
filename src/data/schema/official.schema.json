@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "BetterLimay Public Official",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "name", "role", "branch", "status", "provenance"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+    "name": { "type": "string", "minLength": 1 },
+    "role": { "type": "string", "minLength": 1 },
+    "branch": { "type": "string", "enum": ["executive", "legislative", "ex-officio"] },
+    "status": { "type": "string", "enum": ["current", "historical", "unverified"] },
+    "term": { "type": ["string", "null"] },
+    "officeId": { "type": ["string", "null"] },
+    "provenance": { "$ref": "./provenance.schema.json" }
+  }
+}

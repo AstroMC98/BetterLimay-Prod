@@ -1,0 +1,101 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "BetterLimay LGU Configuration",
+  "description": "Config-driven identity and feature flags for a forkable Better LGU portal.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["_comment", "_clarification", "lgu", "portal", "features"],
+  "properties": {
+    "_comment": {
+      "type": "string"
+    },
+    "_clarification": {
+      "type": "string"
+    },
+    "lgu": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "name",
+        "fullName",
+        "type",
+        "province",
+        "region",
+        "regionCode",
+        "officialWebsite",
+        "coordinates",
+        "barangayCount"
+      ],
+      "properties": {
+        "name": { "type": "string", "minLength": 1 },
+        "fullName": { "type": "string", "minLength": 1 },
+        "type": { "type": "string", "enum": ["municipality", "city", "province"] },
+        "province": { "type": "string", "minLength": 1 },
+        "region": { "type": "string", "minLength": 1 },
+        "regionCode": { "type": "string", "minLength": 1 },
+        "officialWebsite": { "type": "string", "format": "uri" },
+        "coordinates": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["lat", "lng"],
+          "properties": {
+            "lat": { "type": "number", "minimum": -90, "maximum": 90 },
+            "lng": { "type": "number", "minimum": -180, "maximum": 180 }
+          }
+        },
+        "barangayCount": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "portal": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "baseUrl", "tagline", "socials", "contactEmail", "brandColor"],
+      "properties": {
+        "name": { "type": "string", "minLength": 1 },
+        "baseUrl": { "type": "string", "format": "uri" },
+        "tagline": { "type": "string", "minLength": 1 },
+        "socials": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["officialWebsite", "officialFacebook", "sourceCode", "betterGovDirectory"],
+          "properties": {
+            "officialWebsite": { "type": "string", "format": "uri" },
+            "officialFacebook": { "type": "string", "format": "uri" },
+            "sourceCode": { "type": "string", "format": "uri" },
+            "betterGovDirectory": { "type": "string", "format": "uri" }
+          }
+        },
+        "contactEmail": {
+          "type": ["string", "null"],
+          "format": "email"
+        },
+        "brandColor": {
+          "type": "string",
+          "pattern": "^#[0-9A-Fa-f]{6}$"
+        }
+      }
+    },
+    "features": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "legislation",
+        "transparency",
+        "statistics",
+        "weather",
+        "reports",
+        "pwa",
+        "exchangeRate"
+      ],
+      "properties": {
+        "legislation": { "type": "boolean" },
+        "transparency": { "type": "boolean" },
+        "statistics": { "type": "boolean" },
+        "weather": { "type": "boolean" },
+        "reports": { "type": "boolean" },
+        "pwa": { "type": "boolean" },
+        "exchangeRate": { "type": "boolean" }
+      }
+    }
+  }
+}
