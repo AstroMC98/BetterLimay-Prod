@@ -3783,3 +3783,123 @@
   height: 26rem;
   width: 100%;
 }
+
+/* --- Source and "how to read" disclosures ------------------------------------
+   The source is context for a figure, not the figure. On cards it is one quiet
+   citation line; in tables it opens as one full-width row under the figure. */
+.provenance-details > summary {
+  color: var(--better-text-muted);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.provenance-details > summary:hover {
+  color: var(--better-text-strong);
+}
+
+.provenance-details[open] > summary {
+  margin-bottom: var(--better-space-3);
+}
+
+.provenance-block {
+  display: grid;
+  gap: var(--better-space-3);
+  font-size: 0.875rem;
+}
+
+.provenance-block dl {
+  display: grid;
+  gap: var(--better-space-2);
+  margin: 0;
+}
+
+.provenance-block dt {
+  color: var(--better-text-muted);
+  font-size: 0.75rem;
+}
+
+.provenance-block dd {
+  margin: 0;
+}
+
+.provenance-details .provenance-block {
+  padding: var(--better-space-4);
+  border: 1px solid var(--better-border);
+  border-radius: 0.5rem;
+  background: var(--better-surface-tint);
+}
+
+.source-link {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: var(--better-space-2);
+  align-items: center;
+  font-size: 0.875rem;
+}
+
+.data-table__toggle {
+  display: inline-block;
+  margin-top: var(--better-space-2);
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--better-brand-primary);
+  font: inherit;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.data-table__toggle::after {
+  content: " ▾";
+}
+
+.data-table__toggle[aria-expanded="true"]::after {
+  content: " ▴";
+}
+
+.data-table__toggle:hover {
+  text-decoration: underline;
+}
+
+.data-table__toggle:focus-visible {
+  outline: 0.2rem solid var(--better-focus);
+  outline-offset: 0.15rem;
+}
+
+.data-table__detail > td {
+  padding: var(--better-space-5) !important;
+  background: var(--better-surface-tint);
+}
+
+.data-table__detail-grid {
+  display: grid;
+  gap: var(--better-space-6);
+}
+
+@media (min-width: 48rem) {
+  .data-table__detail-grid {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  }
+}
+
+.data-table__detail-grid h3 {
+  margin: 0 0 var(--better-space-2);
+  color: var(--better-text-strong);
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.data-table__detail-grid p {
+  margin: 0;
+  font-size: 0.875rem;
+  line-height: 1.55;
+  text-align: left;
+  white-space: normal;
+}
+
+/* Set the detail panel apart from the table's zebra striping. */
+.data-table__detail > td {
+  box-shadow: inset 4px 0 0 var(--bl-chart-accent);
+}

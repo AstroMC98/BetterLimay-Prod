@@ -80,13 +80,43 @@ function ProvenanceFields({ model }: { model: ProvenanceViewModel }) {
   );
 }
 
+/** The publisher, trimmed for a one-line citation. */
+function shortSource(name: string | undefined, fallback: string): string {
+  if (!name) return fallback;
+  return name.length > 48 ? `${name.slice(0, 45).trimEnd()}…` : name;
+}
+
+/**
+ * Where a record comes from, as one quiet line that opens to the full details.
+ *
+ * The source is context for a figure, not the figure: a card's most prominent
+ * line should not be "Show source and verification". So the summary is the
+ * citation itself, "Source: DILG · 2026-09-25", and everything else is inside.
+ */
 export function ProvenanceDetails({ provenance }: { provenance: ProvenanceLike }) {
   const { t } = useTranslation("common");
   const model = getProvenanceViewModel(provenance);
 
   return (
     <details className="provenance-details">
-      <summary>{t("provenance.showSource")}</summary>
+      <summary>
+        {t("provenance.sourceSummary", {
+          source: shortSource(model.sourceName, t("provenance.sourceUnavailable")),
+          date: model.retrievedAt ?? t("provenance.missingValue"),
+        })}
+      </summary>
+      <ProvenanceBlock provenance={provenance} />
+    </details>
+  );
+}
+
+/** The full source record, for a details panel or a table's detail row. */
+export function ProvenanceBlock({ provenance }: { provenance: ProvenanceLike }) {
+  const { t } = useTranslation("common");
+  const model = getProvenanceViewModel(provenance);
+
+  return (
+    <div className="provenance-block">
       <ProvenanceStatusBadge provenance={provenance} />
       <ProvenanceFields model={model} />
       {model.sourceUrl ? (
@@ -96,7 +126,27 @@ export function ProvenanceDetails({ provenance }: { provenance: ProvenanceLike }
       ) : model.sourceCitation ? (
         <p className="provenance-citation">{t("provenance.requestDocument")}</p>
       ) : null}
-    </details>
+    </div>
+  );
+}
+
+/** Just the publisher, linked when there is a URL: the Source column of a table. */
+export function SourceLink({ provenance }: { provenance: ProvenanceLike }) {
+  const { t } = useTranslation("common");
+  const model = getProvenanceViewModel(provenance);
+  const label = shortSource(model.sourceName, t("provenance.sourceUnavailable"));
+
+  return (
+    <span className="source-link">
+      <ProvenanceStatusBadge provenance={provenance} />
+      {model.sourceUrl ? (
+        <a href={model.sourceUrl} target="_blank" rel="noreferrer">
+          {label}
+        </a>
+      ) : (
+        label
+      )}
+    </span>
   );
 }
 

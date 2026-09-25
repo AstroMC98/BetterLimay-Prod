@@ -60,7 +60,7 @@ describe("legislation portal UI", () => {
     // Provenance is still shown, just not as a badge: a badge that appears on
     // every record carries no signal. The source and retrieval date live in the
     // details panel, which is what these pages must expose.
-    expect(markup).toContain("provenance.showSource");
+    expect(markup).toContain("provenance.sourceSummary");
     expect(markup).toContain("provenance.lastRetrieved");
   });
 });

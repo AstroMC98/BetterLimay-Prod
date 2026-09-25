@@ -77,7 +77,8 @@
       "stale": "This record was verified previously but may no longer be current.",
       "unavailable": "A valid source or required provenance metadata is not available."
     },
-    "requestDocument": "This source is a document rather than a web page. Cite the title, edition and page above to request or look it up."
+    "requestDocument": "This source is a document rather than a web page. Cite the title, edition and page above to request or look it up.",
+    "sourceSummary": "Source: {{source}} · {{date}}"
   },
   "services": {
     "loading": "Loading services",
@@ -427,7 +428,9 @@
     },
     "chartOmitted": "{{count}} record is not charted because its amount has not been published.",
     "chartOmitted_other": "{{count}} records are not charted because their amounts have not been published.",
-    "notApplicable": "Not applicable"
+    "notApplicable": "Not applicable",
+    "details": "Details",
+    "hideDetails": "Hide details"
   },
   "statistics": {
     "eyebrow": "Census snapshot",

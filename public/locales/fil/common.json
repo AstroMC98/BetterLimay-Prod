@@ -77,7 +77,8 @@
       "stale": "Na-beripika na ang record na ito ngunit maaaring hindi na kasalukuyan.",
       "unavailable": "Walang available na valid source o kinakailangang provenance metadata."
     },
-    "requestDocument": "Dokumento ang pinagmulan nito, hindi web page. Gamitin ang pamagat, edisyon at pahina sa itaas upang hilingin o hanapin ito."
+    "requestDocument": "Dokumento ang pinagmulan nito, hindi web page. Gamitin ang pamagat, edisyon at pahina sa itaas upang hilingin o hanapin ito.",
+    "sourceSummary": "Pinagmulan: {{source}} · {{date}}"
   },
   "services": {
     "loading": "Ikinakarga ang mga serbisyo",
@@ -427,7 +428,9 @@
     },
     "chartOmitted": "{{count}} record ang hindi naka-chart dahil hindi pa nailalathala ang halaga nito.",
     "chartOmitted_other": "{{count}} records ang hindi naka-chart dahil hindi pa nailalathala ang halaga ng mga ito.",
-    "notApplicable": "Hindi naaangkop"
+    "notApplicable": "Hindi naaangkop",
+    "details": "Detalye",
+    "hideDetails": "Itago ang detalye"
   },
   "statistics": {
     "eyebrow": "Snapshot ng census",
