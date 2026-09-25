@@ -34,6 +34,12 @@ import statisticsJson from "../data/statistics.json";
 import transparencyJson from "../data/transparency.json";
 import type { StatisticRecord, TransparencyRecord } from "../data/types";
 import { AXIS_TICK, GRID } from "../lib/ui/chartTheme";
+import {
+  groupStatistics,
+  seriesDecimals,
+  valueFor,
+  type StatisticSeries,
+} from "../lib/ui/statisticsTable";
 import { RouteMetadata } from "../lib/ui/RouteMetadata";
 import {
   getTransparencyChartSeries,
@@ -350,61 +356,178 @@ function TransparencyChart({
   );
 }
 
+function SeriesDetail({
+  series,
+  colSpan,
+  open,
+}: {
+  series: StatisticSeries;
+  colSpan: number;
+  open: boolean;
+}) {
+  const { t } = useTranslation("common");
+  if (!open) return null;
+  return (
+    <DetailRow
+      id={series.latest.id}
+      colSpan={colSpan}
+      howToRead={series.latest.howToRead}
+      provenance={series.latest.provenance}
+      howToReadLabel={t("statistics.howToRead")}
+    />
+  );
+}
+
+function MetricCell({
+  series,
+  showGeography,
+  open,
+  onToggle,
+}: {
+  series: StatisticSeries;
+  showGeography: boolean;
+  open: boolean;
+  onToggle: () => void;
+}) {
+  return (
+    <th scope="row">
+      <span className="data-table__title">{series.metric}</span>
+      <span className="data-table__meta">
+        {showGeography ? `${series.unit} · ${series.geography}` : series.unit}
+      </span>
+      <DetailsToggle id={series.latest.id} open={open} onToggle={onToggle} />
+    </th>
+  );
+}
+
+/**
+ * Every statistic, as two tables a reader can scan.
+ *
+ * Figures measured once (census counts) get a row each; figures measured every
+ * year (CMCI scores) get a row each with a column per year, so a trend reads
+ * left to right and the metric is named once instead of on every line.
+ */
 function StatisticsTable({ records }: { records: StatisticRecord[] }) {
   const { t } = useTranslation("common");
   const rows = useOpenRows();
+  const tables = groupStatistics(records);
+  const showGeography = tables.sharedGeography === null;
+  const timeColumns = tables.years.length + 2;
 
   return (
-    <div className="data-table-wrapper" data-testid="statistics-chart-table">
-      <table className="data-table">
-        <caption>{t("statistics.tableCaption")}</caption>
-        <thead>
-          <tr>
-            <th scope="col" className="data-table__num">
-              {t("statistics.fields.year")}
-            </th>
-            <th scope="col" className="data-table__num">
-              {t("statistics.fields.value")}
-            </th>
-            <th scope="col">{t("statistics.fields.geography")}</th>
-            <th scope="col">{t("statistics.fields.source")}</th>
-          </tr>
-        </thead>
-        <tbody>
-          {records.map((record) => (
-            <Fragment key={record.id}>
+    <div className="statistics-tables" data-testid="statistics-chart-table">
+      {tables.sharedGeography ? (
+        <p className="data-chart__note">
+          {t("statistics.allFor", { geography: tables.sharedGeography })}
+        </p>
+      ) : null}
+
+      {tables.single.length > 0 ? (
+        <div className="data-table-wrapper">
+          <table className="data-table statistics-table">
+            <caption>{t("statistics.singleCaption")}</caption>
+            <thead>
               <tr>
-                <th scope="row" className="data-table__num">
-                  {record.year}
+                <th scope="col">{t("statistics.fields.metric")}</th>
+                <th scope="col" className="data-table__num">
+                  {t("statistics.fields.year")}
                 </th>
-                <td className="data-table__num">
-                  <span className="data-table__title">
-                    {formatNumber(record.value)} {record.unit}
-                  </span>
-                  <DetailsToggle
-                    id={record.id}
-                    open={rows.isOpen(record.id)}
-                    onToggle={() => rows.toggle(record.id)}
-                  />
-                </td>
-                <td>{record.geography}</td>
-                <td>
-                  <SourceLink provenance={record.provenance} />
-                </td>
+                <th scope="col" className="data-table__num">
+                  {t("statistics.fields.value")}
+                </th>
+                <th scope="col">{t("statistics.fields.source")}</th>
               </tr>
-              {rows.isOpen(record.id) ? (
-                <DetailRow
-                  id={record.id}
-                  colSpan={4}
-                  howToRead={record.howToRead}
-                  provenance={record.provenance}
-                  howToReadLabel={t("statistics.howToRead")}
-                />
-              ) : null}
-            </Fragment>
-          ))}
-        </tbody>
-      </table>
+            </thead>
+            <tbody>
+              {tables.single.map((series) => (
+                <Fragment key={series.key}>
+                  <tr>
+                    <MetricCell
+                      series={series}
+                      showGeography={showGeography}
+                      open={rows.isOpen(series.key)}
+                      onToggle={() => rows.toggle(series.key)}
+                    />
+                    <td className="data-table__num">{series.latest.year}</td>
+                    <td className="data-table__num">
+                      <strong>{formatNumber(series.latest.value)}</strong>
+                    </td>
+                    <td>
+                      <SourceLink provenance={series.latest.provenance} />
+                    </td>
+                  </tr>
+                  <SeriesDetail
+                    series={series}
+                    colSpan={4}
+                    open={rows.isOpen(series.key)}
+                  />
+                </Fragment>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      ) : null}
+
+      {tables.timeSeries.length > 0 ? (
+        <div className="data-table-wrapper">
+          <table className="data-table statistics-table statistics-table--years">
+            <caption>{t("statistics.seriesCaption")}</caption>
+            <thead>
+              <tr>
+                <th scope="col">{t("statistics.fields.metric")}</th>
+                {tables.years.map((year) => (
+                  <th key={year} scope="col" className="data-table__num">
+                    {year}
+                  </th>
+                ))}
+                <th scope="col">{t("statistics.fields.source")}</th>
+              </tr>
+            </thead>
+            <tbody>
+              {tables.timeSeries.map((series) => (
+                <Fragment key={series.key}>
+                  <tr>
+                    <MetricCell
+                      series={series}
+                      showGeography={showGeography}
+                      open={rows.isOpen(series.key)}
+                      onToggle={() => rows.toggle(series.key)}
+                    />
+                    {tables.years.map((year) => {
+                      const value = valueFor(series, year);
+                      return (
+                        <td key={year} className="data-table__num">
+                          {value === undefined ? (
+                            <span
+                              className="statistics-table__missing"
+                              title={t("statistics.notMeasured")}
+                            >
+                              –
+                            </span>
+                          ) : (
+                            value.toLocaleString("en-PH", {
+                              minimumFractionDigits: seriesDecimals(series),
+                              maximumFractionDigits: seriesDecimals(series),
+                            })
+                          )}
+                        </td>
+                      );
+                    })}
+                    <td>
+                      <SourceLink provenance={series.latest.provenance} />
+                    </td>
+                  </tr>
+                  <SeriesDetail
+                    series={series}
+                    colSpan={timeColumns}
+                    open={rows.isOpen(series.key)}
+                  />
+                </Fragment>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      ) : null}
     </div>
   );
 }

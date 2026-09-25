@@ -451,7 +451,8 @@
       "year": "Reference year",
       "value": "Value",
       "geography": "Heograpiya",
-      "source": "Source"
+      "source": "Source",
+      "metric": "Sukatan"
     },
     "gaps": {
       "barangayDemographics": "Wala pang nailathalang barangay-level demographic records. Walang barangay value ang hinango mula sa municipal totals.",
@@ -508,7 +509,11 @@
       "rankColumn": "Ranggo",
       "scoreColumn": "Iskor",
       "source": "Tingnan ang buong profile ng Limay sa DTI CMCI"
-    }
+    },
+    "allFor": "Lahat ng bilang ay para sa {{geography}}.",
+    "singleCaption": "Mga bilang mula sa senso",
+    "seriesCaption": "Mga bilang na sinusukat taon-taon",
+    "notMeasured": "Hindi nasukat ngayong taon"
   },
   "pages": {
     "independentEyebrow": "Independenteng community portal",
