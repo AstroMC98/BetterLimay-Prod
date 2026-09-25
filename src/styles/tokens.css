@@ -4052,3 +4052,57 @@
   grid-column: 1;
   grid-row: auto;
 }
+
+/* --- Statistics record tables ------------------------------------------------- */
+.statistics-tables {
+  display: grid;
+  gap: var(--better-space-6);
+}
+
+.statistics-table caption {
+  text-align: left;
+  font-weight: 700;
+}
+
+.statistics-table th[scope="row"] {
+  min-width: 12rem;
+  text-align: left;
+}
+
+.statistics-table td.data-table__num,
+.statistics-table th.data-table__num {
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+/* The source column should not squeeze the numbers: one line, truncated. */
+.statistics-table td:last-child {
+  max-width: 14rem;
+}
+
+.statistics-table td:last-child .source-link {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.statistics-table__missing {
+  color: var(--better-text-muted);
+}
+
+/* Unit and Details share one line under the metric name. */
+.statistics-table th[scope="row"] .data-table__meta {
+  display: inline;
+  margin-right: var(--better-space-3);
+}
+
+.statistics-table th[scope="row"] .data-table__toggle {
+  display: inline;
+  margin-top: 0;
+}
+
+.statistics-table th[scope="row"] .data-table__title {
+  display: block;
+  margin-bottom: 0.125rem;
+}

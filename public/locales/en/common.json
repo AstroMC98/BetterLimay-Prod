@@ -451,7 +451,8 @@
       "year": "Reference year",
       "value": "Value",
       "geography": "Geography",
-      "source": "Source"
+      "source": "Source",
+      "metric": "Metric"
     },
     "gaps": {
       "barangayDemographics": "Barangay-level demographic records are not yet published. No barangay value is inferred from the municipal totals.",
@@ -508,7 +509,11 @@
       "rankColumn": "Rank",
       "scoreColumn": "Score",
       "source": "See Limay's full profile on the DTI CMCI site"
-    }
+    },
+    "allFor": "All figures are for the {{geography}}.",
+    "singleCaption": "Census figures",
+    "seriesCaption": "Figures measured every year",
+    "notMeasured": "Not measured this year"
   },
   "pages": {
     "independentEyebrow": "Independent community portal",
