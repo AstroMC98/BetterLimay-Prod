@@ -241,7 +241,9 @@
     "openSource": "Buksan ang orihinal na anunsyo",
     "officialFacebook": "Tingnan ang opisyal na Facebook page ng Limay",
     "empty": "Wala pang anunsyong handang ilathala",
-    "emptyDescription": "Hindi ligtas na na-aggregate ang opisyal na website at Facebook source sa isang auditable news record. Hindi ito nangangahulugang walang anunsyo; tingnan nang direkta ang mga opisyal na channel."
+    "emptyDescription": "Hindi ligtas na na-aggregate ang opisyal na website at Facebook source sa isang auditable news record. Hindi ito nangangahulugang walang anunsyo; tingnan nang direkta ang mga opisyal na channel.",
+    "readMore": "Basahin ang buong post",
+    "backToNews": "Bumalik sa lahat ng balita"
   },
   "report": {
     "eyebrow": "Feedback ng komunidad",
@@ -557,7 +559,7 @@
     },
     "news": {
       "title": "Mga anunsyo ng Limay",
-      "description": "Tingnan lamang ang mga anunsyong may naka-link at nasuring orihinal na opisyal na source."
+      "description": "Mga balita at anunsyo mula sa Munisipyo ng Limay."
     },
     "report": {
       "title": "Mag-report ng concern sa komunidad",
@@ -592,5 +594,9 @@
       "description": "Mag-browse sa lahat ng pampublikong BetterLimay route sa isang accessible na listahan.",
       "navigationLabel": "Pampublikong site map"
     }
+  },
+  "theme": {
+    "switchToDark": "Lumipat sa madilim na mode",
+    "switchToLight": "Lumipat sa maliwanag na mode"
   }
 }

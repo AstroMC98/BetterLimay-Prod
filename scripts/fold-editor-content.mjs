@@ -22,18 +22,53 @@ import { fileURLToPath } from "node:url";
 const here = dirname(fileURLToPath(import.meta.url));
 const dataDir = resolve(here, "../src/data");
 
-/** collection directory -> the array file the app imports. */
+/**
+ * collection directory -> the array file the app imports.
+ *
+ * `editorOnly` collections exist only in the editor, so an empty or missing
+ * directory means "no posts" and the array is emptied. Without that, deleting
+ * the last post leaves it live, because git does not keep an empty directory.
+ * Hotlines are also seeded by the pipeline, so a missing directory leaves the
+ * committed array alone.
+ */
 const COLLECTIONS = [
-  ["announcements", "announcements.json"],
-  ["hotlines", "hotlines.json"],
+  { collection: "announcements", arrayFile: "announcements.json", editorOnly: true },
+  { collection: "hotlines", arrayFile: "hotlines.json", editorOnly: false },
 ];
 
+/**
+ * The editor writes "" for an optional field left blank. The schemas treat a
+ * present field as a claim ("url" must be a URL), so blanks are removed rather
+ * than validated.
+ */
+function dropBlanks(value) {
+  if (Array.isArray(value)) return value.map(dropBlanks);
+  if (value && typeof value === "object") {
+    return Object.fromEntries(
+      Object.entries(value)
+        .filter(([, entry]) => entry !== "" && entry !== null && entry !== undefined)
+        .map(([key, entry]) => [key, dropBlanks(entry)]),
+    );
+  }
+  return value;
+}
+
 /** Newest first for announcements; hotlines keep their urgency order by category. */
-const CATEGORY_ORDER = ["disaster", "police", "fire", "medical", "coastguard", "utility", "other"];
+const CATEGORY_ORDER = [
+  "disaster",
+  "police",
+  "fire",
+  "medical",
+  "coastguard",
+  "utility",
+  "other",
+];
 
 function sortFor(collection, records) {
   if (collection === "announcements") {
-    return [...records].sort((a, b) => String(b.publishedAt).localeCompare(String(a.publishedAt)));
+    return [...records].sort((a, b) =>
+      String(b.publishedAt).localeCompare(String(a.publishedAt)),
+    );
   }
   if (collection === "hotlines") {
     return [...records].sort((a, b) => {
@@ -56,12 +91,19 @@ async function exists(path) {
 
 let folded = 0;
 
-for (const [collection, arrayFile] of COLLECTIONS) {
+for (const { collection, arrayFile, editorOnly } of COLLECTIONS) {
   const directory = join(dataDir, collection);
-  if (!(await exists(directory))) continue;
+  const names = (await exists(directory))
+    ? (await readdir(directory)).filter((name) => name.endsWith(".json")).sort()
+    : [];
 
-  const names = (await readdir(directory)).filter((name) => name.endsWith(".json")).sort();
-  if (names.length === 0) continue;
+  if (names.length === 0) {
+    if (editorOnly) {
+      await writeFile(join(dataDir, arrayFile), "[]\n", "utf8");
+      console.log(`No ${collection} entries; src/data/${arrayFile} is empty`);
+    }
+    continue;
+  }
 
   const records = [];
   const ids = new Set();
@@ -90,13 +132,15 @@ for (const [collection, arrayFile] of COLLECTIONS) {
       process.exit(1);
     }
     ids.add(record.id);
-    records.push(record);
+    records.push(dropBlanks(record));
   }
 
   const target = join(dataDir, arrayFile);
   const sorted = sortFor(collection, records);
   await writeFile(target, `${JSON.stringify(sorted, null, 2)}\n`, "utf8");
-  console.log(`Folded ${records.length} ${collection} entry/entries into src/data/${arrayFile}`);
+  console.log(
+    `Folded ${records.length} ${collection} entry/entries into src/data/${arrayFile}`,
+  );
   folded += records.length;
 }
 

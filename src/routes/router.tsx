@@ -64,6 +64,7 @@ export const MVP_ROUTE_PATHS = [
   "/transparency",
   "/statistics",
   "/news",
+  "/news/:id",
   "/report",
   "/contribute",
   "/faq",
@@ -130,6 +131,14 @@ const router = createBrowserRouter([
       { path: "transparency", element: <TransparencyPage /> },
       { path: "statistics", element: <StatisticsPage /> },
       { path: "news", element: <NewsPage /> },
+      {
+        // Lazy: the Markdown renderer is only needed on a post page.
+        path: "news/:id",
+        lazy: () =>
+          import("../pages/NewsPostPage").then((module) => ({
+            Component: module.NewsPostPage,
+          })),
+      },
       { path: "report", element: <ReportPage /> },
       { path: "contribute", element: <ContributePage /> },
       { path: "faq", element: <FaqPage /> },

@@ -4,14 +4,11 @@ import { Link } from "react-router-dom";
 
 import { loadLguConfig } from "../app/lguConfig";
 import { createPortalIdentity } from "../app/portalIdentity";
-import {
-  ProvenanceDetails,
-  ProvenanceStatusBadge,
-} from "../components/provenance/Provenance";
 import announcementsJson from "../data/announcements.json";
 import type { AnnouncementRecord } from "../data/types";
 import { submitReport, type ReportResult } from "../lib/ui/reportApi";
 import { type ReportInput, validateReportInput } from "../lib/ui/reportValidation";
+import { formatNewsDate } from "../lib/ui/newsDate";
 import { RouteMetadata } from "../lib/ui/RouteMetadata";
 
 const config = loadLguConfig();
@@ -110,22 +107,46 @@ export function NewsPage() {
       {announcements.length > 0 ? (
         <div className="news-grid">
           {announcements.map((announcement) => (
-            <article className="news-card" key={announcement.id}>
-              <div className="news-card__header">
-                <div>
-                  <p className="eyebrow">{announcement.sourceName}</p>
-                  <h2>{announcement.title}</h2>
+            <article
+              className="news-card"
+              key={announcement.id}
+              data-testid={`news-card-${announcement.id}`}
+            >
+              {announcement.image ? (
+                <img
+                  className="news-card__image"
+                  src={announcement.image}
+                  alt={announcement.imageAlt ?? ""}
+                  loading="lazy"
+                />
+              ) : null}
+              <div className="news-card__content">
+                <p className="news-card__date">
+                  <time dateTime={announcement.publishedAt}>
+                    {formatNewsDate(announcement.publishedAt)}
+                  </time>
+                  {" · "}
+                  {announcement.sourceName}
+                </p>
+                <h2>
+                  {announcement.body ? (
+                    <Link to={`/news/${announcement.id}`}>{announcement.title}</Link>
+                  ) : (
+                    announcement.title
+                  )}
+                </h2>
+                {announcement.summary ? <p>{announcement.summary}</p> : null}
+                <div className="news-card__links">
+                  {announcement.body ? (
+                    <Link to={`/news/${announcement.id}`}>{t("news.readMore")}</Link>
+                  ) : null}
+                  {announcement.url ? (
+                    <ExternalSourceLink href={announcement.url}>
+                      {t("news.openSource")}
+                    </ExternalSourceLink>
+                  ) : null}
                 </div>
-                <ProvenanceStatusBadge provenance={announcement.provenance} />
               </div>
-              <p className="news-card__date">
-                {t("news.publishedAt")}: {announcement.publishedAt}
-              </p>
-              {announcement.summary ? <p>{announcement.summary}</p> : null}
-              <ExternalSourceLink href={announcement.url}>
-                {t("news.openSource")}
-              </ExternalSourceLink>
-              <ProvenanceDetails provenance={announcement.provenance} />
             </article>
           ))}
         </div>

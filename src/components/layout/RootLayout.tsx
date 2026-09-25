@@ -7,6 +7,7 @@ import { createPortalIdentity } from "../../app/portalIdentity";
 import { HotlineBar } from "../home/HotlineBar";
 import { InfoBar } from "../home/InfoBar";
 import { LanguageSwitcher } from "./LanguageSwitcher";
+import { ThemeToggle } from "./ThemeToggle";
 import { LoadingState } from "./LoadingState";
 import { Navigation } from "./Navigation";
 
@@ -57,6 +58,7 @@ export function RootLayout() {
             </span>
           </Link>
           <div className="portal-header__actions">
+            <ThemeToggle />
             <LanguageSwitcher />
           </div>
         </div>

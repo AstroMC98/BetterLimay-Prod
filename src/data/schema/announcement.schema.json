@@ -1,16 +1,71 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "BetterLimay Announcement",
+  "description": "A news post. Either written in the content editor (body, optional image) or pointing at an official post elsewhere (url), or both.",
   "type": "object",
   "additionalProperties": false,
-  "required": ["id", "title", "publishedAt", "url", "sourceName", "provenance"],
+  "required": [
+    "id",
+    "title",
+    "publishedAt",
+    "sourceName",
+    "provenance"
+  ],
+  "anyOf": [
+    {
+      "required": [
+        "body"
+      ]
+    },
+    {
+      "required": [
+        "url"
+      ]
+    }
+  ],
   "properties": {
-    "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
-    "title": { "type": "string", "minLength": 1 },
-    "publishedAt": { "type": "string", "format": "date-time" },
-    "url": { "type": "string", "format": "uri" },
-    "sourceName": { "type": "string", "minLength": 1 },
-    "summary": { "type": "string" },
-    "provenance": { "$ref": "./provenance.schema.json" }
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "publishedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "url": {
+      "type": "string",
+      "format": "uri",
+      "description": "The original post, when there is one."
+    },
+    "sourceName": {
+      "type": "string",
+      "minLength": 1
+    },
+    "summary": {
+      "type": "string",
+      "description": "One or two sentences for the news list."
+    },
+    "body": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Markdown. Rendered without raw HTML."
+    },
+    "image": {
+      "type": "string",
+      "pattern": "^/uploads/",
+      "description": "Cover image uploaded through the content editor."
+    },
+    "imageAlt": {
+      "type": "string",
+      "minLength": 1,
+      "description": "What the image shows, for screen readers."
+    },
+    "provenance": {
+      "$ref": "./provenance.schema.json"
+    }
   }
 }

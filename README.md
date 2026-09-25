@@ -73,12 +73,12 @@ The decision is recorded in [`docs/research/PHASE2_DECISIONS.md`](docs/research/
 Use this row when registering or confirming the existing project in [`better-lgu-directory`](https://github.com/jmacj/better-lgu-directory). Keep the status at 🟡 Work in Progress until the launch gates are complete.
 
 ```markdown
-| Limay | Bataan | Region III | Municipality | BetterLimay | 🟡 Work in Progress | https://github.com/AstroMC98/betterlimay | https://betterlimay.org |
+| Limay | Bataan | Region III | Municipality | BetterLimay | 🟡 Work in Progress | https://github.com/AstroMC98/BetterLimay-Prod | https://betterlimay.org |
 ```
 
 Before changing the status or domain, the maintainer must manually verify:
 
-- [ ] The Better LGU directory entry points to `AstroMC98/betterlimay` and is not duplicated.
+- [ ] The Better LGU directory entry points to `AstroMC98/BetterLimay-Prod` and is not duplicated.
 - [ ] `betterlimay.org` DNS ownership, HTTPS redirects, and HSTS behavior are confirmed.
 - [ ] The official Limay source is reachable, and each enabled fact is checked against an exact source URL.
 - [ ] Officials, offices, barangays, services, fees, processing times, contact details, and emergency information are reviewed record by record.

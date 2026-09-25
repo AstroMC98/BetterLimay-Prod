@@ -14,6 +14,12 @@
  *
  * The handshake back to Decap is a `postMessage` to the opener window, which is
  * the protocol Decap's `github` backend expects from an external OAuth client.
+ * The script that sends it is a static file, /admin/oauth-callback.js, because
+ * the site's Content-Security-Policy forbids inline scripts.
+ *
+ * A random `state` value, held in a short-lived HttpOnly cookie, must come back
+ * from GitHub unchanged. Without it, a crafted link could complete sign-in with
+ * a code the attacker obtained for their own account (login CSRF).
  *
  * The alternative to this file is asking editors to paste a long-lived personal
  * access token into a web page. That is worse: a PAT is a bearer credential with
@@ -24,8 +30,56 @@
 const GITHUB_AUTHORIZE = "https://github.com/login/oauth/authorize";
 const GITHUB_TOKEN = "https://github.com/login/oauth/access_token";
 
-/** Only what the CMS needs: read and write content in repositories. */
-const SCOPE = "repo";
+/**
+ * Only what the CMS needs. The content repository is public, so `public_repo`
+ * is enough; `repo` would also grant every private repository the editor can
+ * reach. If the repository is ever made private, this must become `repo`.
+ */
+const SCOPE = "public_repo";
+
+const STATE_COOKIE = "admin_oauth_state";
+/** Long enough to approve on GitHub, short enough that a stale value is useless. */
+const STATE_MAX_AGE_SECONDS = 600;
+
+function randomState(): string {
+  const bytes = new Uint8Array(32);
+  crypto.getRandomValues(bytes);
+  return Array.from(bytes, (byte) => byte.toString(16).padStart(2, "0")).join("");
+}
+
+function stateCookie(value: string, maxAge: number): string {
+  // Lax, not Strict: the return from GitHub is a top-level navigation from
+  // another site, which Strict would strip the cookie from.
+  return `${STATE_COOKIE}=${value}; Path=/api/admin-auth; Max-Age=${maxAge}; HttpOnly; Secure; SameSite=Lax`;
+}
+
+function readCookie(request: Request, name: string): string | null {
+  const header = request.headers.get("cookie") ?? "";
+  for (const part of header.split(";")) {
+    const [key, ...rest] = part.trim().split("=");
+    if (key === name) return rest.join("=");
+  }
+  return null;
+}
+
+/** Constant-time comparison, so the state cannot be guessed byte by byte. */
+function sameState(left: string, right: string): boolean {
+  if (left.length !== right.length) return false;
+  let difference = 0;
+  for (let index = 0; index < left.length; index += 1) {
+    difference |= left.charCodeAt(index) ^ right.charCodeAt(index);
+  }
+  return difference === 0;
+}
+
+function escapeAttribute(value: string): string {
+  return value
+    .replace(/&/g, "&amp;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;");
+}
 
 interface OAuthConfig {
   clientId: string;
@@ -43,9 +97,10 @@ function readConfig(): OAuthConfig | null {
  * The page handed back to the CMS window.
  *
  * Decap listens for a `postMessage` of the form
- * `authorization:github:success:<json>` from the popup it opened. The payload is
- * serialised into the script, so it is JSON-encoded rather than interpolated
- * raw -- a token containing a quote would otherwise break out of the string.
+ * `authorization:github:success:<json>` from the popup it opened. The message
+ * rides in a data attribute (escaped, so a token cannot break out of it) and
+ * /admin/oauth-callback.js sends it. An inline script would be simpler and is
+ * exactly what the site's Content-Security-Policy blocks.
  */
 function handshakePage(status: "success" | "error", payload: unknown): Response {
   const message = `authorization:github:${status}:${JSON.stringify(payload)}`;
@@ -53,21 +108,8 @@ function handshakePage(status: "success" | "error", payload: unknown): Response 
 <html lang="en">
 <head><meta charset="utf-8"><title>Signing in…</title></head>
 <body>
-<p>Completing sign-in…</p>
-<script>
-  (function () {
-    var message = ${JSON.stringify(message)};
-    function send() {
-      if (!window.opener) return;
-      window.opener.postMessage(message, window.location.origin);
-    }
-    // Decap sends an initiating message first; answer it, and also send once
-    // directly in case the listener was already attached.
-    window.addEventListener("message", send, false);
-    send();
-    setTimeout(function () { window.close(); }, 1000);
-  })();
-</script>
+<p id="oauth-handshake" data-message="${escapeAttribute(message)}">Completing sign-in…</p>
+<script src="/admin/oauth-callback.js"></script>
 </body>
 </html>`;
 
@@ -79,6 +121,8 @@ function handshakePage(status: "success" | "error", payload: unknown): Response 
       "Cache-Control": "no-store",
       "X-Frame-Options": "DENY",
       "Referrer-Policy": "no-referrer",
+      // The state is single-use: clear it whatever the outcome.
+      "Set-Cookie": stateCookie("", 0),
     },
   });
 }
@@ -130,11 +174,30 @@ export function createAdminAuthHandler() {
     const code = url.searchParams.get("code");
 
     if (!code) {
+      const state = randomState();
       const authorize = new URL(GITHUB_AUTHORIZE);
       authorize.searchParams.set("client_id", config.clientId);
       authorize.searchParams.set("scope", SCOPE);
       authorize.searchParams.set("redirect_uri", `${url.origin}/api/admin-auth`);
-      return Response.redirect(authorize.toString(), 302);
+      authorize.searchParams.set("state", state);
+      // Built by hand: Response.redirect() returns immutable headers, and the
+      // state cookie has to ride on this response.
+      return new Response(null, {
+        status: 302,
+        headers: {
+          Location: authorize.toString(),
+          "Set-Cookie": stateCookie(state, STATE_MAX_AGE_SECONDS),
+          "Cache-Control": "no-store",
+        },
+      });
+    }
+
+    const returnedState = url.searchParams.get("state");
+    const expectedState = readCookie(request, STATE_COOKIE);
+    if (!returnedState || !expectedState || !sameState(returnedState, expectedState)) {
+      // Checked before the code is exchanged, so a forged callback never
+      // reaches GitHub with our client secret.
+      return handshakePage("error", { message: "STATE_MISMATCH" });
     }
 
     const result = await exchangeCode(config, code);

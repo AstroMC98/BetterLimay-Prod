@@ -236,8 +236,14 @@ export interface AnnouncementRecord {
   id: string;
   title: string;
   publishedAt: string;
-  url: string;
+  /** The original post, when there is one. */
+  url?: string;
   sourceName: string;
   summary?: string;
+  /** Markdown written in the content editor. */
+  body?: string;
+  /** Cover image path under /uploads. */
+  image?: string;
+  imageAlt?: string;
   provenance: Provenance;
 }

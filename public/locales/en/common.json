@@ -241,7 +241,9 @@
     "openSource": "Open original announcement",
     "officialFacebook": "Check the official Limay Facebook page",
     "empty": "No announcements are ready for publication",
-    "emptyDescription": "The official site and Facebook source could not be safely aggregated into an auditable news record. This does not mean there are no announcements; check the official channels directly."
+    "emptyDescription": "The official site and Facebook source could not be safely aggregated into an auditable news record. This does not mean there are no announcements; check the official channels directly.",
+    "readMore": "Read the full post",
+    "backToNews": "Back to all news"
   },
   "report": {
     "eyebrow": "Community feedback",
@@ -557,7 +559,7 @@
     },
     "news": {
       "title": "Limay announcements",
-      "description": "Review announcements only when an original official source can be linked and checked."
+      "description": "News and announcements from the Municipality of Limay."
     },
     "report": {
       "title": "Report a community concern",
@@ -592,5 +594,9 @@
       "description": "Browse the public BetterLimay routes in one accessible list.",
       "navigationLabel": "Public site map"
     }
+  },
+  "theme": {
+    "switchToDark": "Switch to dark mode",
+    "switchToLight": "Switch to light mode"
   }
 }

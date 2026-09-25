@@ -21,7 +21,8 @@ backend:
   #   2. this base_url
   #   3. the GitHub OAuth app's Authorization callback URL
   # Change them together, never one at a time.
-  base_url: https://betterlimay.org
+  # The apex betterlimay.org redirects to www, so www is the one real origin.
+  base_url: https://www.betterlimay.org
   auth_endpoint: api/admin-auth
 
 # Posts land on a branch and open a pull request rather than committing straight
@@ -39,30 +40,118 @@ collections:
     label: News and announcements
     label_singular: Announcement
     description: >
-      Official news posted by the Municipality. Each entry links to the original
-      post so a reader can confirm it at the source.
+      News posted by the Municipality. Write the post here, or link to an
+      official post elsewhere, or both. Open a post to edit it; use the Delete
+      button inside a post to remove it.
     folder: src/data/announcements
     create: true
+    delete: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    summary: "{{publishedAt | date('YYYY-MM-DD')}} — {{title}}"
+    sortable_fields: [publishedAt, title]
     # One JSON file per post; a build step folds them into announcements.json.
     extension: json
     format: json
     fields:
-      - { name: id, label: ID, widget: string, pattern: ['^[a-z0-9-]+$', "Lowercase letters, numbers and hyphens only"] }
+      - {
+          name: id,
+          label: ID,
+          widget: string,
+          hint: "Lowercase letters, numbers and hyphens, e.g. 2026-09-25-road-closure",
+          pattern: ["^[a-z0-9-]+$", "Lowercase letters, numbers and hyphens only"],
+        }
       - { name: title, label: Title, widget: string }
-      - { name: publishedAt, label: Published, widget: datetime, format: "YYYY-MM-DDTHH:mm:ssZ" }
-      - { name: url, label: Original post URL, widget: string, pattern: ['^https://', "Must be a full https:// link to the original post"] }
-      - { name: sourceName, label: Source, widget: string, default: "Municipality of Limay" }
-      - { name: summary, label: Summary, widget: text, required: false }
+      - {
+          name: publishedAt,
+          label: Published,
+          widget: datetime,
+          format: "YYYY-MM-DDTHH:mm:ssZ",
+        }
+      - {
+          name: summary,
+          label: Summary,
+          widget: text,
+          required: false,
+          hint: "One or two sentences shown on the news list.",
+        }
+      - {
+          name: image,
+          label: Cover image,
+          widget: image,
+          required: false,
+          choose_url: false,
+        }
+      - {
+          name: imageAlt,
+          label: Image description,
+          widget: string,
+          required: false,
+          hint: "What the image shows, for readers using a screen reader. Required if you add an image.",
+        }
+      - name: body
+        label: Post
+        widget: markdown
+        required: false
+        buttons:
+          [
+            bold,
+            italic,
+            link,
+            heading-two,
+            heading-three,
+            bulleted-list,
+            numbered-list,
+            quote,
+          ]
+        editor_components: [image]
+        modes: [rich_text, raw]
+      - {
+          name: url,
+          label: Original post URL,
+          widget: string,
+          required: false,
+          hint: "Optional. Link to the post on the official website or Facebook page.",
+          pattern: ["^https://", "Must be a full https:// link"],
+        }
+      - {
+          name: sourceName,
+          label: Posted by,
+          widget: string,
+          default: "Municipality of Limay",
+        }
       - name: provenance
-        label: Provenance
+        label: Source
         widget: object
+        collapsed: true
         fields:
-          - { name: source_url, label: Source URL, widget: string, pattern: ['^https://', "Must be a full https:// link"] }
-          - { name: source_name, label: Publisher, widget: string, default: "Municipality of Limay" }
-          - { name: retrieved_at, label: Retrieved, widget: datetime, format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false }
+          - {
+              name: source_document,
+              label: Source,
+              widget: string,
+              default: "Posted by the Municipality of Limay on BetterLimay",
+            }
+          - {
+              name: source_url,
+              label: Source URL,
+              widget: string,
+              required: false,
+              pattern: ["^https://", "Must be a full https:// link"],
+            }
+          - {
+              name: source_name,
+              label: Publisher,
+              widget: string,
+              default: "Municipality of Limay",
+            }
+          - {
+              name: retrieved_at,
+              label: Date,
+              widget: datetime,
+              format: "YYYY-MM-DD",
+              date_format: "YYYY-MM-DD",
+              time_format: false,
+            }
           - { name: verified, label: Verified, widget: hidden, default: true }
-          - { name: verification_note, label: Note, widget: string, required: false, default: "Posted by a maintainer from the official source named above." }
 
   - name: hotlines
     label: Emergency hotlines
@@ -78,7 +167,12 @@ collections:
     format: json
     slug: "{{slug}}"
     fields:
-      - { name: id, label: ID, widget: string, pattern: ['^[a-z0-9-]+$', "Lowercase letters, numbers and hyphens only"] }
+      - {
+          name: id,
+          label: ID,
+          widget: string,
+          pattern: ["^[a-z0-9-]+$", "Lowercase letters, numbers and hyphens only"],
+        }
       - { name: service, label: Service or office, widget: string }
       - { name: agency, label: Agency, widget: string, required: false }
       - name: numbers
@@ -94,8 +188,25 @@ collections:
         label: Provenance
         widget: object
         fields:
-          - { name: source_document, label: Source document, widget: string, default: "Municipality of Limay emergency hotlines poster" }
-          - { name: source_name, label: Publisher, widget: string, default: "Municipality of Limay" }
-          - { name: retrieved_at, label: Retrieved, widget: datetime, format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false }
+          - {
+              name: source_document,
+              label: Source document,
+              widget: string,
+              default: "Municipality of Limay emergency hotlines poster",
+            }
+          - {
+              name: source_name,
+              label: Publisher,
+              widget: string,
+              default: "Municipality of Limay",
+            }
+          - {
+              name: retrieved_at,
+              label: Retrieved,
+              widget: datetime,
+              format: "YYYY-MM-DD",
+              date_format: "YYYY-MM-DD",
+              time_format: false,
+            }
           - { name: verified, label: Verified, widget: hidden, default: true }
           - { name: verification_note, label: Note, widget: string, required: false }

@@ -6,6 +6,11 @@
     <!-- Never index the editor. -->
     <meta name="robots" content="noindex, nofollow" />
     <title>BetterLimay content editor</title>
+    <!--
+      Absolute, not the default relative "config.yml": opened as /admin (no
+      trailing slash) the relative lookup resolves to /config.yml and 404s.
+    -->
+    <link href="/admin/config.yml" type="text/yaml" rel="cms-config-url" />
   </head>
   <body>
     <!--

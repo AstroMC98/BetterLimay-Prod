@@ -4,7 +4,7 @@ BetterLimay is a Vite SPA deployed to Vercel. It is an independent community por
 
 ## Vercel project setup
 
-1. Create or select the Vercel project for `AstroMC98/betterlimay`.
+1. Create or select the Vercel project for `AstroMC98/BetterLimay-Prod`.
 2. Set the project root to the repository root and use the detected Vite framework.
 3. Confirm the production domain `betterlimay.org` and its DNS ownership before claiming launch; HSTS is configured for HTTPS deployments but must be manually verified on the production host.
 4. Keep build settings aligned with `vercel.json`: `npm run build` and output directory `dist`.
