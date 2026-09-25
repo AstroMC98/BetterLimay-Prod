@@ -1,5 +1,6 @@
-import { useMemo, useState, type ReactNode } from "react";
+import { lazy, Suspense, useEffect, useMemo, useState, type ReactNode } from "react";
 import { useTranslation } from "react-i18next";
+import { useLocation } from "react-router-dom";
 import {
   Bar,
   BarChart,
@@ -17,6 +18,9 @@ import {
 } from "../components/provenance/Provenance";
 import { CmciComparison } from "../components/statistics/CmciComparison";
 import { CmciProfile } from "../components/statistics/CmciProfile";
+
+// Leaflet and the hazard layer load only when the Statistics page is opened.
+const FloodHazardMap = lazy(() => import("../components/statistics/FloodHazardMap"));
 import statisticsJson from "../data/statistics.json";
 import transparencyJson from "../data/transparency.json";
 import type { StatisticRecord, TransparencyRecord } from "../data/types";
@@ -443,6 +447,12 @@ function StatTile({ record }: { record: StatisticRecord }) {
 }
 
 export function StatisticsPage() {
+  const { hash } = useLocation();
+  // React Router does not scroll to #fragments; the home page links to #hazards.
+  useEffect(() => {
+    if (!hash) return;
+    document.getElementById(hash.slice(1))?.scrollIntoView();
+  }, [hash]);
   const { t } = useTranslation("common");
   const groups = useMemo(() => getStatisticMetricGroups(statistics), []);
   const [selectedKey, setSelectedKey] = useState(() =>
@@ -479,6 +489,30 @@ export function StatisticsPage() {
       </div>
 
       <DataGapNotice>{t("statistics.gaps.barangayDemographics")}</DataGapNotice>
+
+      <section className="data-section" id="hazards" aria-labelledby="hazards-title">
+        <div className="section-heading">
+          <div>
+            <p className="eyebrow">{t("hazards.eyebrow")}</p>
+            <h2 id="hazards-title">{t("hazards.title")}</h2>
+          </div>
+        </div>
+        <p>{t("hazards.intro")}</p>
+        <Suspense fallback={<p className="data-chart__note">{t("hazards.loading")}</p>}>
+          <FloodHazardMap />
+        </Suspense>
+        <p className="data-chart__note">{t("hazards.disclaimer")}</p>
+        <p className="data-chart__note">
+          {t("hazards.coverage")}{" "}
+          <a
+            href="https://noah.up.edu.ph/know-your-hazards"
+            target="_blank"
+            rel="noreferrer"
+          >
+            {t("hazards.noahLink")}
+          </a>
+        </p>
+      </section>
 
       <section className="data-section" aria-labelledby="cmci-profile-title">
         <div className="section-heading">

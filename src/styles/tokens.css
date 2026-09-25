@@ -3742,3 +3742,43 @@
 .cmci-profile__chart {
   min-height: 0;
 }
+
+/* --- Flood hazard map ------------------------------------------------------- */
+.hazard-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--better-space-3) var(--better-space-6);
+  margin: var(--better-space-4) 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.875rem;
+}
+
+.hazard-legend li {
+  display: flex;
+  gap: var(--better-space-2);
+  align-items: center;
+}
+
+.hazard-legend__swatch {
+  width: 1rem;
+  height: 1rem;
+  border: 1px solid var(--better-border-strong);
+  border-radius: 3px;
+}
+
+.hazard-legend__area {
+  color: var(--better-text-muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.hazard-map__frame {
+  overflow: hidden;
+  border: 1px solid var(--better-border);
+  border-radius: 0.75rem;
+}
+
+.hazard-map__canvas {
+  height: 26rem;
+  width: 100%;
+}

@@ -73,6 +73,9 @@ export function HomePage() {
             <Link className="text-link" to="/statistics">
               {t("home.statisticsAction")}
             </Link>
+            <Link className="text-link" to="/statistics#hazards">
+              {t("home.floodMapAction")}
+            </Link>
           </div>
         </article>
       </section>

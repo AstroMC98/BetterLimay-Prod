@@ -171,14 +171,15 @@
     "latestAnnouncements": "Mga pinakabagong anunsyo",
     "announcementsUnavailable": "Wala pang anunsyong galing sa beripikadong opisyal na source.",
     "transparencyTitle": "Transparency, isang source kada pagkakataon",
-    "transparencyUnavailable": "Tingnan ang sourced project at procurement references; malinaw na gap pa ang municipal finance at CMCI data.",
+    "transparencyUnavailable": "Na-audit na pananalapi, procurement, ranggo ng Limay sa competitiveness at mapa ng panganib sa baha, bawat isa may source.",
     "transparencyAction": "Buksan ang transparency records",
     "statisticsAction": "Buksan ang statistics",
     "contributeTitle": "Tulungan kaming linawin ang impormasyon sa Limay",
     "contributeDescription": "Magbahagi ng pagwawasto o tumulong na beripikahin ang pampublikong rekord.",
     "contributeAction": "Magbahagi ng pagwawasto",
     "disclaimerTitle": "Independenteng community portal",
-    "disclaimerBody": "Hindi kaanib ng LGU ang BetterLimay. Tiyakin palagi ang mahalagang impormasyon sa opisyal na source."
+    "disclaimerBody": "Hindi kaanib ng LGU ang BetterLimay. Tiyakin palagi ang mahalagang impormasyon sa opisyal na source.",
+    "floodMapAction": "Mapa ng panganib sa baha"
   },
   "search": {
     "label": "Maghanap sa BetterLimay",
@@ -670,5 +671,28 @@
     "party": "Partido",
     "votes": "Boto",
     "elected": "Nahalal"
+  },
+  "hazards": {
+    "eyebrow": "Mapa ng panganib sa baha ng UP NOAH",
+    "title": "Saan binabaha ang Limay",
+    "intro": "Mga lugar sa Limay na babahain sa napakalakas na ulan, ang uri na inaasahan halos isang beses sa 100 taon, ayon sa panganib ng tubig.",
+    "loading": "Nilo-load ang mapa ng panganib sa baha…",
+    "unavailable": "Hindi ma-load ang mapa ng panganib sa baha.",
+    "legendLabel": "Antas ng panganib sa baha",
+    "levels": {
+      "low": "Mababa",
+      "medium": "Katamtaman",
+      "high": "Mataas"
+    },
+    "depths": {
+      "low": "hanggang tuhod (0–0.5 m)",
+      "medium": "tuhod hanggang leeg (0.5–1.5 m)",
+      "high": "lampas leeg (higit 1.5 m)"
+    },
+    "area": "{{km2}} km²",
+    "mapLabel": "Mapa ng panganib sa baha ng Limay para sa 100-taong ulan: {{low}} km² mababa, {{medium}} km² katamtaman at {{high}} km² mataas na panganib.",
+    "disclaimer": "Ito ay mga modelong sona ng panganib, hindi ulat ng aktuwal na baha. Isinasama rin ang bilis ng tubig, kaya ang mababaw pero mabilis na tubig ay maaaring mas mataas ang antas. Sa emergency, sundin ang abiso ng MDRRMO at ang mga hotline sa itaas ng pahina.",
+    "coverage": "Hindi sakop ng mapa ng NOAH para sa mas madalas na ulan (5- at 25-taon) ang karamihan ng Limay, kaya hindi ito ipinapakita.",
+    "noahLink": "Tingnan ang lahat ng panganib sa UP NOAH"
   }
 }

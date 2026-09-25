@@ -1,6 +1,6 @@
 /* global caches, fetch, Response, URL, self */
 
-const CACHE_VERSION = "betterlimay-shell-v1";
+const CACHE_VERSION = "betterlimay-shell-v2";
 const NAVIGATION_CACHE = `${CACHE_VERSION}-navigation`;
 const ASSET_CACHE = `${CACHE_VERSION}-assets`;
 const OFFLINE_URL = "/offline";
@@ -43,7 +43,15 @@ self.addEventListener("fetch", (event) => {
     return;
   }
 
-  event.respondWith(staleWhileRevalidate(request));
+  // Only content-hashed build output is safe to serve stale: a new deploy gives
+  // it a new name. Translations and data keep their names across deploys, so a
+  // stale copy would show last week's figures or raw keys for new sections.
+  if (url.pathname.startsWith("/assets/")) {
+    event.respondWith(staleWhileRevalidate(request));
+    return;
+  }
+
+  event.respondWith(networkFirst(request));
 });
 
 async function networkFirstNavigation(request) {
@@ -61,6 +69,20 @@ async function networkFirstNavigation(request) {
         status: 503,
         headers: { "Content-Type": "text/plain; charset=utf-8" },
       })
+    );
+  }
+}
+
+async function networkFirst(request) {
+  const cache = await caches.open(ASSET_CACHE);
+  try {
+    const response = await fetch(request);
+    if (response.ok) await cache.put(request, response.clone());
+    return response;
+  } catch {
+    return (
+      (await cache.match(request)) ||
+      new Response("", { status: 504, statusText: "Offline" })
     );
   }
 }

@@ -171,14 +171,15 @@
     "latestAnnouncements": "Latest announcements",
     "announcementsUnavailable": "No announcements are available from a verified official source yet.",
     "transparencyTitle": "Transparency, one source at a time",
-    "transparencyUnavailable": "Browse sourced project and procurement references; municipal finance and CMCI data remain explicit gaps.",
+    "transparencyUnavailable": "Audited finances, procurement, Limay's competitiveness ranking and a flood hazard map, each with its source.",
     "transparencyAction": "Open transparency records",
     "statisticsAction": "Open statistics",
     "contributeTitle": "Help keep Limay information clear",
     "contributeDescription": "Share a correction or help us verify a public record.",
     "contributeAction": "Contribute a correction",
     "disclaimerTitle": "Independent community portal",
-    "disclaimerBody": "BetterLimay is not affiliated with the LGU. Always verify important information with the official source."
+    "disclaimerBody": "BetterLimay is not affiliated with the LGU. Always verify important information with the official source.",
+    "floodMapAction": "Flood hazard map"
   },
   "search": {
     "label": "Search BetterLimay",
@@ -670,5 +671,28 @@
     "party": "Party",
     "votes": "Votes",
     "elected": "Elected"
+  },
+  "hazards": {
+    "eyebrow": "UP NOAH flood hazard map",
+    "title": "Where Limay floods",
+    "intro": "Areas of Limay that would flood in a very heavy rain, the kind expected about once in 100 years, by how dangerous the water would be.",
+    "loading": "Loading the flood hazard map…",
+    "unavailable": "The flood hazard map could not be loaded.",
+    "legendLabel": "Flood hazard levels",
+    "levels": {
+      "low": "Low",
+      "medium": "Medium",
+      "high": "High"
+    },
+    "depths": {
+      "low": "up to knee-deep (0–0.5 m)",
+      "medium": "knee to neck (0.5–1.5 m)",
+      "high": "above the neck (over 1.5 m)"
+    },
+    "area": "{{km2}} km²",
+    "mapLabel": "Flood hazard map of Limay for a 100-year rain: {{low}} km² low, {{medium}} km² medium and {{high}} km² high hazard.",
+    "disclaimer": "These are modelled hazard zones, not live flood reports. Water speed counts too, so shallow but fast water can be rated higher. In an emergency, follow MDRRMO advisories and the hotlines at the top of the page.",
+    "coverage": "NOAH's maps for more frequent rains (5- and 25-year) do not cover most of Limay, so they are not shown.",
+    "noahLink": "Explore all hazards on UP NOAH"
   }
 }
