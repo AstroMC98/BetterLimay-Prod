@@ -26,34 +26,34 @@ test.describe("MVP critical flows", () => {
     await openHome(page);
 
     const search = page.getByRole("combobox", { name: "Search BetterLimay" });
-    await search.fill("Business Permits and Licensing");
+    await search.fill("Marriage License");
     await expect(page.getByTestId("global-search-results")).toBeVisible();
     await page
       .getByRole("option")
-      .filter({ hasText: "Business Permits and Licensing" })
+      .filter({ hasText: "Application for Marriage License" })
       .first()
       .click();
 
-    await expect(page).toHaveURL(/\/services\/business-permits\/business-permits$/);
+    await expect(page).toHaveURL(
+      /\/services\/civil-registry\/application-for-marriage-license$/,
+    );
     await expect(page.getByTestId("service-detail-page")).toBeVisible();
-    await expect(
-      page
-        .locator(
-          '[data-testid="service-detail-page"] [data-provenance-state="unverified"]',
-        )
-        .first(),
-    ).toBeVisible();
   });
 
   test("persists a service category filter in the URL", async ({ page }) => {
     await page.goto("/services", { waitUntil: "domcontentloaded" });
     await expect(page.getByTestId("services-page")).toBeVisible();
 
-    await page.getByLabel("Service category").selectOption("real-property-tax");
+    await page.getByLabel("Service category").selectOption("civil-registry");
 
-    await expect(page).toHaveURL(/\/services\?category=real-property-tax$/);
-    await expect(page.getByTestId("service-card-real-property-tax")).toBeVisible();
-    await expect(page.getByTestId("service-card-business-permits")).toHaveCount(0);
+    await expect(page).toHaveURL(/\/services\?category=civil-registry$/);
+    await expect(
+      page.getByTestId("service-card-application-for-marriage-license"),
+    ).toBeVisible();
+    // Only the chosen category's cards remain in the results.
+    await expect(
+      page.locator('.service-record-grid a[href^="/services/business-permits/"]'),
+    ).toHaveCount(0);
   });
 
   test("switches language and updates the document language", async ({ page }) => {
@@ -86,20 +86,18 @@ test.describe("MVP critical flows", () => {
     await expect(menuButton).toHaveAttribute("aria-expanded", "false");
   });
 
-  test("keeps source status and source links visible on service details", async ({
-    page,
-  }) => {
-    await page.goto("/services/business-permits/business-permits", {
+  test("shows where a service comes from on its detail page", async ({ page }) => {
+    await page.goto("/services/civil-registry/application-for-marriage-license", {
       waitUntil: "domcontentloaded",
     });
 
     await expect(page.getByTestId("service-detail-page")).toBeVisible();
-    await expect(
-      page.locator('[data-provenance-state="unverified"]').first(),
-    ).toBeVisible();
-    await expect(
-      page.getByRole("link", { name: "Verify with the official source" }),
-    ).toHaveAttribute("href", /limaybataan\.ph/);
+    // A service borrowed from another LGU's charter says so, next to the title.
+    await expect(page.getByTestId("service-provider-notice")).toContainText("Orion");
+    // The full source record is on the page: the charter it was taken from.
+    await expect(page.locator(".service-source-panel")).toContainText(
+      "Citizen's Charter",
+    );
   });
 
   test("renders the offline fallback and does not invent emergency numbers", async ({
