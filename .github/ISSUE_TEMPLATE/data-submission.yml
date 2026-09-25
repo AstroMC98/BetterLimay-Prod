@@ -1,0 +1,36 @@
+name: Submit Limay data
+description: Share a public record about Limay (an ordinance, a directory, a charter...) for review.
+title: "[Data] "
+labels: ["data submission"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you. Every submission is checked against its source before anything is published.
+        You can also email the document to volunteer.betterlimay@gmail.com instead.
+  - type: textarea
+    id: what
+    attributes:
+      label: What is it?
+      description: e.g. "Ordinance No. 12, s. 2024 on waste segregation" or "Directory of municipal offices".
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Where does it come from?
+      description: A public link, or the document's title, the office that issued it, and its date.
+    validations:
+      required: true
+  - type: textarea
+    id: files
+    attributes:
+      label: Files
+      description: Drag photos, scans or PDFs here. Make sure they are legible.
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacy
+      options:
+        - label: This submission contains no private personal information (IDs, home addresses or contact details of private individuals).
+          required: true

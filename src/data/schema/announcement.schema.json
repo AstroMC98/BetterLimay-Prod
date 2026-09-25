@@ -76,6 +76,14 @@
       "type": "string",
       "pattern": "^https://(www\\.|m\\.)?facebook\\.com/|^https://fb\\.watch/",
       "description": "A Facebook post or live video, embedded click-to-load."
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "municipal",
+        "project"
+      ],
+      "description": "municipal: an announcement from the LGU (the default). project: an update from the BetterLimay team, tagged as such on the site."
     }
   }
 }

@@ -1,6 +1,6 @@
-import { useState, type FormEvent, type ReactNode } from "react";
+import { useEffect, useState, type FormEvent, type ReactNode } from "react";
 import { useTranslation } from "react-i18next";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 import { loadLguConfig } from "../app/lguConfig";
 import { createPortalIdentity } from "../app/portalIdentity";
@@ -124,6 +124,11 @@ export function NewsPage() {
               ) : null}
               <div className="news-card__content">
                 <p className="news-card__date">
+                  {announcement.category === "project" ? (
+                    <span className="news-card__tag news-card__tag--project">
+                      {t("news.projectTag")}
+                    </span>
+                  ) : null}
                   {announcement.facebookUrl ? (
                     <span className="news-card__tag">
                       {facebookEmbedKind(announcement.facebookUrl) === "video"
@@ -339,8 +344,94 @@ export function ReportPage() {
   );
 }
 
+/**
+ * How to send Limay records for review. Linked from the announcements, the
+ * footer and the home page as /contribute#submit-data, so it has to stay put.
+ */
+function SubmitDataGuide() {
+  const { t } = useTranslation("common");
+  const email = config.portal.contactEmail;
+  // Lists live in the locale files as arrays; anything else renders nothing.
+  const list = (key: string): string[] => {
+    const value: unknown = t(key, { returnObjects: true });
+    return Array.isArray(value) ? value.map(String) : [];
+  };
+
+  return (
+    <section
+      id="submit-data"
+      className="submit-guide"
+      aria-labelledby="submit-data-title"
+      data-testid="submit-data-guide"
+    >
+      <p className="eyebrow">{t("contribute.submit.eyebrow")}</p>
+      <h2 id="submit-data-title">{t("contribute.submit.title")}</h2>
+      <p className="submit-guide__intro">{t("contribute.submit.intro")}</p>
+
+      <div className="submit-guide__grid">
+        <section>
+          <h3>{t("contribute.submit.needTitle")}</h3>
+          <ul>
+            {list("contribute.submit.needs").map((item) => (
+              <li key={item}>{item}</li>
+            ))}
+          </ul>
+        </section>
+        <section>
+          <h3>{t("contribute.submit.usableTitle")}</h3>
+          <ul>
+            {list("contribute.submit.usable").map((item) => (
+              <li key={item}>{item}</li>
+            ))}
+          </ul>
+        </section>
+        <section>
+          <h3>{t("contribute.submit.howTitle")}</h3>
+          {email ? (
+            <p>
+              {t("contribute.submit.howEmail")}{" "}
+              <a href={`mailto:${email}`}>
+                <strong>{email}</strong>
+              </a>
+              .
+            </p>
+          ) : null}
+          <p>
+            <ExternalSourceLink
+              href={`${portalIdentity.socials.sourceCode}/issues/new?template=data-submission.yml`}
+            >
+              {t("contribute.submit.howGithub")}
+            </ExternalSourceLink>
+          </p>
+        </section>
+        <section>
+          <h3>{t("contribute.submit.nextTitle")}</h3>
+          <ol>
+            {list("contribute.submit.next").map((item) => (
+              <li key={item}>{item}</li>
+            ))}
+          </ol>
+        </section>
+      </div>
+
+      {email ? (
+        <p className="submit-guide__collab">
+          <strong>{t("contribute.submit.collabTitle")}.</strong>{" "}
+          {t("contribute.submit.collabBody")} <a href={`mailto:${email}`}>{email}</a>.
+        </p>
+      ) : null}
+    </section>
+  );
+}
+
 export function ContributePage() {
   const { t } = useTranslation("common");
+  const { hash } = useLocation();
+  // React Router does not scroll to #fragments; posts and the footer link here.
+  useEffect(() => {
+    if (!hash) return;
+    document.getElementById(hash.slice(1))?.scrollIntoView();
+  }, [hash]);
 
   return (
     <SupportPageShell
@@ -350,6 +441,8 @@ export function ContributePage() {
       path="/contribute"
       testId="contribute-page"
     >
+      <SubmitDataGuide />
+
       <div className="support-page__document support-page__document--split">
         <section>
           <p className="eyebrow">{t("contribute.correctionEyebrow")}</p>

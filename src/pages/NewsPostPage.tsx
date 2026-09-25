@@ -47,6 +47,11 @@ export function NewsPostPage() {
         {t("news.backToNews")}
       </Link>
       <p className="news-card__date">
+        {post.category === "project" ? (
+          <span className="news-card__tag news-card__tag--project">
+            {t("news.projectTag")}
+          </span>
+        ) : null}
         <time dateTime={post.publishedAt}>{formatNewsDate(post.publishedAt)}</time>
         {" · "}
         {post.sourceName}
@@ -62,11 +67,16 @@ export function NewsPostPage() {
             components={{
               // Links in a post leave the site; images stay lazy so a long post
               // does not download every picture up front.
-              a: ({ href, children }) => (
-                <a href={href} target="_blank" rel="noreferrer">
-                  {children}
-                </a>
-              ),
+              // Links to this site stay in the app; everything else opens
+              // in a new tab so the reader keeps their place in the post.
+              a: ({ href, children }) =>
+                href?.startsWith("/") ? (
+                  <Link to={href}>{children}</Link>
+                ) : (
+                  <a href={href} target="_blank" rel="noreferrer">
+                    {children}
+                  </a>
+                ),
               img: ({ src, alt }) => <img src={src} alt={alt ?? ""} loading="lazy" />,
             }}
           >

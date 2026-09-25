@@ -200,7 +200,7 @@ export function AboutStrip() {
         <Link className="button button--secondary" to="/about">
           {t("home.about.project")} <IconArrow />
         </Link>
-        <Link className="text-link" to="/contribute">
+        <Link className="text-link" to="/contribute#submit-data">
           {t("home.about.help")}
         </Link>
       </div>

@@ -261,6 +261,8 @@ export interface AnnouncementRecord {
   imageAlt?: string;
   /** A Facebook post or live video, embedded click-to-load. */
   facebookUrl?: string;
+  /** "project" marks a BetterLimay team update; missing means an LGU announcement. */
+  category?: "municipal" | "project";
   provenance: Provenance;
 }
 

@@ -63,7 +63,8 @@
       "province": "Province of Bataan",
       "foi": "Freedom of Information",
       "report": "Report an issue",
-      "editor": "Content editor"
+      "editor": "Content editor",
+      "submitData": "Submit Limay data"
     }
   },
   "forms": {
@@ -349,7 +350,8 @@
       "open": "Open on Facebook",
       "videoTitle": "Facebook video",
       "postTitle": "Facebook post"
-    }
+    },
+    "projectTag": "BetterLimay update"
   },
   "report": {
     "eyebrow": "Community feedback",
@@ -393,7 +395,40 @@
     "developerEyebrow": "For developers",
     "developerTitle": "Improve the portal",
     "developerBody": "Review the architecture, data provenance, tests, and contribution rules before opening a pull request. Small, reviewable changes are easier for community maintainers to verify.",
-    "sourceAction": "Open the source code"
+    "sourceAction": "Open the source code",
+    "submit": {
+      "eyebrow": "Help complete the repository",
+      "title": "Submit Limay data for review",
+      "intro": "Public records you share are checked against their source, cited, and credited if you wish. Nothing is published without a source a reader could check.",
+      "needTitle": "What we are looking for",
+      "needs": [
+        "Ordinances, resolutions and executive orders, with their numbers and dates of approval",
+        "Limay's own Citizen's Charter",
+        "The municipal department directory: offices, heads, hours and direct lines",
+        "Barangay hall locations",
+        "The ABC Federation and SK Federation presidents",
+        "Official names of the Vice Mayor and Sangguniang Bayan members",
+        "The annual budget and Full Disclosure Policy documents"
+      ],
+      "usableTitle": "What makes a submission usable",
+      "usable": [
+        "It comes from an official source: a municipal or barangay office, the Sangguniang Bayan, DILG, COA or PSA.",
+        "It says where it came from and when: a link, or the document's title, the issuing office and its date.",
+        "Photos and scans are fine as long as they are legible.",
+        "It contains no private personal information, such as IDs or the home addresses of private individuals."
+      ],
+      "howTitle": "How to submit",
+      "howEmail": "Email the document, or a link to it, with where it came from and its date, to",
+      "howGithub": "Or open a data submission on GitHub",
+      "nextTitle": "What happens next",
+      "next": [
+        "A maintainer checks it against the source.",
+        "It is added with a citation, and your name if you want the credit.",
+        "You get a reply either way."
+      ],
+      "collabTitle": "Collaborations and volunteering",
+      "collabBody": "For partnerships, volunteering, research, design, translation or local knowledge, write to"
+    }
   },
   "about": {
     "missionTitle": "What BetterLimay is",
@@ -728,7 +763,7 @@
     },
     "news": {
       "title": "Limay announcements",
-      "description": "News and announcements from the Municipality of Limay."
+      "description": "Announcements from the Municipality of Limay, and updates from the BetterLimay team."
     },
     "report": {
       "title": "Report a community concern",
