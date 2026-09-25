@@ -46,7 +46,9 @@ describe("transparency and statistics pages", () => {
     expect(markup).toContain('data-testid="statistics-page"');
     expect(markup).toContain('data-testid="statistics-chart-table"');
     expect(markup).toContain("Population (2024 POPCEN)");
-    expect(markup).toContain("statistics.gaps.cmci");
+    // CMCI is no longer a gap: the national profile section replaces the notice.
+    expect(markup).not.toContain("statistics.gaps.cmci");
+    expect(markup).toContain("statistics.cmciProfile.title");
     expect(markup).toContain("statistics.gaps.barangayDemographics");
     // Provenance is still shown, just not as a badge: a badge that appears on
     // every record carries no signal. The source and retrieval date live in the

@@ -415,8 +415,8 @@ sources:
     acquisition: manual-download
     extraction: tabular
     completeness: complete
-    target_datasets: [offices.json, officials.json]
-    gap_ids: [GAP-004, GAP-006]
+    target_datasets: [offices.json, officials.json, cmci-limay-profile.json]
+    gap_ids: [GAP-004, GAP-006, GAP-015]
     publishable: true
     notes: >
       Server-rendered HTML. Carries the LGU's official tel (633-0302 /

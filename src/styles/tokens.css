@@ -3638,3 +3638,107 @@
   font-size: 0.75rem;
   font-weight: 700;
 }
+
+/* --- CMCI national profile --------------------------------------------------- */
+.cmci-profile__category {
+  margin: 0 0 var(--better-space-3);
+  color: var(--better-text-muted);
+  font-size: 0.875rem;
+}
+
+.cmci-profile__headline {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--better-space-2) var(--better-space-5);
+  align-items: baseline;
+}
+
+.cmci-profile__rank {
+  display: flex;
+  gap: var(--better-space-3);
+  align-items: baseline;
+  margin: 0;
+}
+
+.cmci-profile__rank strong {
+  color: var(--bl-chart-accent);
+  font-family: var(--better-font-display);
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.cmci-profile__score {
+  flex-basis: 100%;
+  margin: 0;
+  color: var(--better-text-muted);
+}
+
+.cmci-change {
+  color: var(--better-text-muted);
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+/* Direction is also in the words and arrow shape, never colour alone. */
+.cmci-change--up {
+  color: var(--bl-chart-accent);
+}
+
+.cmci-pillars {
+  display: grid;
+  gap: var(--better-space-3);
+  margin: var(--better-space-6) 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media (min-width: 40rem) {
+  .cmci-pillars {
+    grid-template-columns: repeat(auto-fit, minmax(10.5rem, 1fr));
+  }
+}
+
+.cmci-pillar {
+  display: flex;
+  flex-direction: column;
+  gap: var(--better-space-1, 0.25rem);
+  padding: var(--better-space-4);
+  border: 1px solid var(--better-border);
+  border-radius: 0.75rem;
+  background: var(--better-surface-raised);
+}
+
+.cmci-pillar__name {
+  color: var(--better-text-muted);
+  font-size: 0.8125rem;
+  font-weight: 700;
+}
+
+.cmci-pillar__rank {
+  font-family: var(--better-font-display);
+  font-size: 1.75rem;
+  line-height: 1.1;
+}
+
+.cmci-pillar__score {
+  font-size: 0.875rem;
+}
+
+.cmci-profile__figure {
+  margin: var(--better-space-8) 0 0;
+}
+
+.cmci-profile__figure figcaption {
+  display: flex;
+  flex-direction: column;
+  gap: 0.125rem;
+}
+
+.cmci-profile__figure figcaption span {
+  color: var(--better-text-muted);
+  font-size: 0.8125rem;
+}
+
+.cmci-profile__chart {
+  min-height: 0;
+}

@@ -16,6 +16,7 @@ import {
   ProvenanceStatusBadge,
 } from "../components/provenance/Provenance";
 import { CmciComparison } from "../components/statistics/CmciComparison";
+import { CmciProfile } from "../components/statistics/CmciProfile";
 import statisticsJson from "../data/statistics.json";
 import transparencyJson from "../data/transparency.json";
 import type { StatisticRecord, TransparencyRecord } from "../data/types";
@@ -478,7 +479,16 @@ export function StatisticsPage() {
       </div>
 
       <DataGapNotice>{t("statistics.gaps.barangayDemographics")}</DataGapNotice>
-      <DataGapNotice>{t("statistics.gaps.cmci")}</DataGapNotice>
+
+      <section className="data-section" aria-labelledby="cmci-profile-title">
+        <div className="section-heading">
+          <div>
+            <p className="eyebrow">{t("statistics.cmciProfile.eyebrow")}</p>
+            <h2 id="cmci-profile-title">{t("statistics.cmciProfile.title")}</h2>
+          </div>
+        </div>
+        <CmciProfile />
+      </section>
 
       <section className="data-section" aria-labelledby="cmci-title">
         <div className="section-heading">

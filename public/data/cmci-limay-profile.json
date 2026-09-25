@@ -1,0 +1,2345 @@
+{
+  "lgu": "Limay",
+  "category": "First Class Municipality",
+  "unit": "index points",
+  "howToRead": "Ranks are Limay's position nationally among municipalities in its CMCI category (1 is best). Scores are index points; the overall score is the sum of the pillars. A pillar missing from a year was not part of the index that year. DTI's comparison group changed over the years and the profile does not say how many municipalities were ranked, so a change in rank is not by itself a change in performance. 2018 was not surveyed for Limay.",
+  "crossChecked": 10,
+  "years": [
+    {
+      "year": 2014,
+      "surveyed": true,
+      "overallRank": 186,
+      "overallScore": 26.2307,
+      "pillars": [
+        {
+          "pillar": "Economic Dynamism",
+          "rank": 92,
+          "score": 8.0394,
+          "indicators": [
+            {
+              "indicator": "Local Economy Size",
+              "rank": 62,
+              "score": 0.4248
+            },
+            {
+              "indicator": "Local Economy Growth",
+              "rank": null,
+              "score": 0.0
+            },
+            {
+              "indicator": "Jobs",
+              "rank": 103,
+              "score": 0.2989
+            },
+            {
+              "indicator": "Inflation Rate",
+              "rank": 28,
+              "score": 3.9751
+            },
+            {
+              "indicator": "Financial Institutions",
+              "rank": 61,
+              "score": 1.1406
+            },
+            {
+              "indicator": "Productivity",
+              "rank": null,
+              "score": 0.0
+            },
+            {
+              "indicator": "Business Groups",
+              "rank": null,
+              "score": 0.0
+            },
+            {
+              "indicator": "Cost of Doing Business",
+              "rank": 172,
+              "score": 2.2
+            }
+          ]
+        },
+        {
+          "pillar": "Government Efficiency",
+          "rank": 185,
+          "score": 12.6955,
+          "indicators": [
+            {
+              "indicator": "Transparency Score in LGPMS",
+              "rank": 140,
+              "score": 2.9369
+            },
+            {
+              "indicator": "Economic Governance Score in LGPMS",
+              "rank": 168,
+              "score": 2.7152
+            },
+            {
+              "indicator": "Ratio of LGU collected tax to LGU revenues",
+              "rank": 49,
+              "score": 1.2557
+            },
+            {
+              "indicator": "LGU Competitions Related Awards",
+              "rank": 164,
+              "score": 0.0
+            },
+            {
+              "indicator": "Investment Promotion",
+              "rank": 1,
+              "score": 3.3333
+            },
+            {
+              "indicator": "Compliance to National Directives for LGUs",
+              "rank": 352,
+              "score": 0.0
+            },
+            {
+              "indicator": "Security",
+              "rank": 130,
+              "score": 0.55
+            },
+            {
+              "indicator": "Health",
+              "rank": 94,
+              "score": 0.134
+            },
+            {
+              "indicator": "Schools",
+              "rank": 231,
+              "score": 0.2024
+            }
+          ]
+        },
+        {
+          "pillar": "Infrastructure",
+          "rank": 255,
+          "score": 5.4958,
+          "indicators": [
+            {
+              "indicator": "Existing Road Network",
+              "rank": null,
+              "score": 0.0
+            },
+            {
+              "indicator": "Distance of Center to Major Ports",
+              "rank": 222,
+              "score": 2.1625
+            },
+            {
+              "indicator": "DOT Accredited Accommodations",
+              "rank": 163,
+              "score": 0.0
+            },
+            {
+              "indicator": "Health Infrastructure",
+              "rank": null,
+              "score": 0.0
+            },
+            {
+              "indicator": "Education Infrastructure",
+              "rank": null,
+              "score": 0.0
+            },
+            {
+              "indicator": "Availability of Basic Utilities",
+              "rank": 1,
+              "score": 3.3333
+            },
+            {
+              "indicator": "Annual Investments in Infrastructure",
+              "rank": null,
+              "score": 0.0
+            },
+            {
+              "indicator": "Connection to ICT",
+              "rank": null,
+              "score": 0.0
+            },
+            {
+              "indicator": "Number of ATMs",
+              "rank": null,
+              "score": 0.0
+            },
+            {
+              "indicator": "Number of Public Transportations",
+              "rank": null,
+              "score": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year": 2015,
+      "surveyed": true,
+      "overallRank": 27,
+      "overallScore": 36.0563,
+      "pillars": [
+        {
+          "pillar": "Economic Dynamism",
+          "rank": 92,
+          "score": 8.3941,
+          "indicators": [
+            {
+              "indicator": "Local Economy Size",
+              "rank": 60,
+              "score": 0.3014
+            },
+            {
+              "indicator": "Local Economy Growth",
+              "rank": 323,
+              "score": 0.2217
+            },
+            {
+              "indicator": "Jobs",
+              "rank": 92,
+              "score": 0.212
+            },
+            {
+              "indicator": "Cost of Living",
+              "rank": 73,
+              "score": 3.2946
+            },
+            {
+              "indicator": "Cost of Doing Business",
+              "rank": 71,
+              "score": 3.6001
+            },
+            {
+              "indicator": "Financial Institutions",
+              "rank": 163,
+              "score": 0.7366
+            },
+            {
+              "indicator": "Productivity",
+              "rank": 32,
+              "score": 0.0277
+            },
+            {
+              "indicator": "Business Groups",
+              "rank": 253,
+              "score": 0.0
+            }
+          ]
+        },
+        {
+          "pillar": "Government Efficiency",
+          "rank": 12,
+          "score": 18.9815,
+          "indicators": [
+            {
+              "indicator": "Capacity of Health Services",
+              "rank": 3,
+              "score": 1.4089
+            },
+            {
+              "indicator": "Capacity of Schools",
+              "rank": 279,
+              "score": 0.399
+            },
+            {
+              "indicator": "Police to Population",
+              "rank": 129,
+              "score": 0.0672
+            },
+            {
+              "indicator": "Business Registration Efficiency",
+              "rank": 63,
+              "score": 2.9435
+            },
+            {
+              "indicator": "Investment Promotion",
+              "rank": 1,
+              "score": 3.3333
+            },
+            {
+              "indicator": "Compliance to National Directives",
+              "rank": 1,
+              "score": 3.3333
+            },
+            {
+              "indicator": "LGU Tax",
+              "rank": 69,
+              "score": 1.3426
+            },
+            {
+              "indicator": "Transparency",
+              "rank": 149,
+              "score": 2.9963
+            },
+            {
+              "indicator": "Economic Governance",
+              "rank": 66,
+              "score": 3.1573
+            },
+            {
+              "indicator": "LGU Awards",
+              "rank": 259,
+              "score": 0.0
+            }
+          ]
+        },
+        {
+          "pillar": "Infrastructure",
+          "rank": 80,
+          "score": 8.6807,
+          "indicators": [
+            {
+              "indicator": "Road Network",
+              "rank": 220,
+              "score": 0.001
+            },
+            {
+              "indicator": "Distance to Ports",
+              "rank": 174,
+              "score": 2.9975
+            },
+            {
+              "indicator": "Accommodations",
+              "rank": 144,
+              "score": 0.0
+            },
+            {
+              "indicator": "Availability of Utilities",
+              "rank": 1,
+              "score": 3.3333
+            },
+            {
+              "indicator": "Infrastructure Investment",
+              "rank": 170,
+              "score": 0.4161
+            },
+            {
+              "indicator": "Connection to ICT",
+              "rank": 206,
+              "score": 0.4651
+            },
+            {
+              "indicator": "Transportation",
+              "rank": 52,
+              "score": 0.2991
+            },
+            {
+              "indicator": "Health",
+              "rank": 18,
+              "score": 0.7343
+            },
+            {
+              "indicator": "Education",
+              "rank": 294,
+              "score": 0.2042
+            },
+            {
+              "indicator": "ATM",
+              "rank": 88,
+              "score": 0.2302
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year": 2016,
+      "surveyed": true,
+      "overallRank": 52,
+      "overallScore": 29.4295,
+      "pillars": [
+        {
+          "pillar": "Economic Dynamism",
+          "rank": 125,
+          "score": 7.9271,
+          "indicators": [
+            {
+              "indicator": "Local Economy Size",
+              "rank": 63,
+              "score": 0.2854
+            },
+            {
+              "indicator": "Local Economy Growth",
+              "rank": 372,
+              "score": 0.0576
+            },
+            {
+              "indicator": "Jobs",
+              "rank": 31,
+              "score": 0.4423
+            },
+            {
+              "indicator": "Cost of Living",
+              "rank": 255,
+              "score": 2.8333
+            },
+            {
+              "indicator": "Cost of Doing Business",
+              "rank": 88,
+              "score": 3.5294
+            },
+            {
+              "indicator": "Financial Institutions",
+              "rank": 178,
+              "score": 0.7699
+            },
+            {
+              "indicator": "Productivity",
+              "rank": 48,
+              "score": 0.0092
+            },
+            {
+              "indicator": "Business Groups",
+              "rank": 332,
+              "score": 0.0
+            }
+          ]
+        },
+        {
+          "pillar": "Government Efficiency",
+          "rank": 75,
+          "score": 11.8353,
+          "indicators": [
+            {
+              "indicator": "Capacity of Health Services",
+              "rank": 2,
+              "score": 1.6943
+            },
+            {
+              "indicator": "Capacity of Schools",
+              "rank": 232,
+              "score": 0.3874
+            },
+            {
+              "indicator": "Police to Population",
+              "rank": 58,
+              "score": 0.0821
+            },
+            {
+              "indicator": "Business Registration Efficiency",
+              "rank": 334,
+              "score": 1.6188
+            },
+            {
+              "indicator": "Compliance to BPLS standards",
+              "rank": 1,
+              "score": 1.1111
+            },
+            {
+              "indicator": "Presence of Investment Promotions Unit",
+              "rank": 1,
+              "score": 3.3333
+            },
+            {
+              "indicator": "Compliance to National Directives for LGUs",
+              "rank": 138,
+              "score": 3.2164
+            },
+            {
+              "indicator": "Ratio of LGU collected tax to LGU revenues",
+              "rank": 412,
+              "score": 0.0
+            },
+            {
+              "indicator": "Most Competitive LGU awardee",
+              "rank": 270,
+              "score": 0.0505
+            },
+            {
+              "indicator": "Social Protection",
+              "rank": 187,
+              "score": 0.3413
+            }
+          ]
+        },
+        {
+          "pillar": "Infrastructure",
+          "rank": 46,
+          "score": 9.6671,
+          "indicators": [
+            {
+              "indicator": "Road Network",
+              "rank": 254,
+              "score": 0.0011
+            },
+            {
+              "indicator": "Distance to Ports",
+              "rank": 284,
+              "score": 2.7207
+            },
+            {
+              "indicator": "Accommodations",
+              "rank": 185,
+              "score": 0.0
+            },
+            {
+              "indicator": "Availability of Utilities",
+              "rank": 1,
+              "score": 3.3333
+            },
+            {
+              "indicator": "Infrastructure Investment",
+              "rank": 20,
+              "score": 1.8244
+            },
+            {
+              "indicator": "Connection to ICT",
+              "rank": 263,
+              "score": 0.6039
+            },
+            {
+              "indicator": "Transportation",
+              "rank": 207,
+              "score": 0.1218
+            },
+            {
+              "indicator": "Health",
+              "rank": 33,
+              "score": 0.7694
+            },
+            {
+              "indicator": "Education",
+              "rank": 398,
+              "score": 0.045
+            },
+            {
+              "indicator": "ATM",
+              "rank": 86,
+              "score": 0.2476
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year": 2017,
+      "surveyed": true,
+      "overallRank": 347,
+      "overallScore": 31.5894,
+      "pillars": [
+        {
+          "pillar": "Economic Dynamism",
+          "rank": 48,
+          "score": 5.9777,
+          "indicators": [
+            {
+              "indicator": "Local Economy Size",
+              "rank": 2,
+              "score": 1.2568
+            },
+            {
+              "indicator": "Local Economy Growth",
+              "rank": 96,
+              "score": 0.0128
+            },
+            {
+              "indicator": "Local Economy Structure",
+              "rank": 335,
+              "score": 0.0
+            },
+            {
+              "indicator": "Safety Compliant Business",
+              "rank": 141,
+              "score": 0.1971
+            },
+            {
+              "indicator": "Increase in Employment",
+              "rank": 28,
+              "score": 0.2673
+            },
+            {
+              "indicator": "Cost of Living",
+              "rank": 479,
+              "score": 0.6757
+            },
+            {
+              "indicator": "Cost of Doing Business",
+              "rank": 52,
+              "score": 2.2567
+            },
+            {
+              "indicator": "Financial Deepening",
+              "rank": 165,
+              "score": 0.5051
+            },
+            {
+              "indicator": "Productivity",
+              "rank": 4,
+              "score": 0.8021
+            },
+            {
+              "indicator": "Presence of Business and Professional Organizations",
+              "rank": 304,
+              "score": 0.0043
+            }
+          ]
+        },
+        {
+          "pillar": "Government Efficiency",
+          "rank": 384,
+          "score": 6.735,
+          "indicators": [
+            {
+              "indicator": "Compliance to National Directives",
+              "rank": 364,
+              "score": 0.0
+            },
+            {
+              "indicator": "Presence of Investment Promotion Unit",
+              "rank": 354,
+              "score": 0.0
+            },
+            {
+              "indicator": "Business Registration Efficiency",
+              "rank": 298,
+              "score": 2.1232
+            },
+            {
+              "indicator": "Capacity to Generate Local Resource",
+              "rank": 174,
+              "score": 0.9032
+            },
+            {
+              "indicator": "Capacity of Health Services",
+              "rank": 201,
+              "score": 0.1182
+            },
+            {
+              "indicator": "Capacity of School Services",
+              "rank": 17,
+              "score": 0.4092
+            },
+            {
+              "indicator": "Recognition of Performance",
+              "rank": 17,
+              "score": 0.4092
+            },
+            {
+              "indicator": "Compliance to Business Permits and Licensing System (BPLS) Standards",
+              "rank": 101,
+              "score": 2.1784
+            },
+            {
+              "indicator": "Peace and Order",
+              "rank": 272,
+              "score": 0.3055
+            },
+            {
+              "indicator": "Social Protection",
+              "rank": 166,
+              "score": 0.288
+            }
+          ]
+        },
+        {
+          "pillar": "Infrastructure",
+          "rank": 143,
+          "score": 6.3062,
+          "indicators": [
+            {
+              "indicator": "Road Network",
+              "rank": 172,
+              "score": 0.0012
+            },
+            {
+              "indicator": "Distance to Ports",
+              "rank": 170,
+              "score": 2.2414
+            },
+            {
+              "indicator": "Availability of Basic Utilities",
+              "rank": 1,
+              "score": 2.5
+            },
+            {
+              "indicator": "Transportation Vehicles",
+              "rank": 51,
+              "score": 0.2746
+            },
+            {
+              "indicator": "Education",
+              "rank": 294,
+              "score": 0.0892
+            },
+            {
+              "indicator": "Health",
+              "rank": 208,
+              "score": 0.1928
+            },
+            {
+              "indicator": "LGU Investment",
+              "rank": 86,
+              "score": 0.6036
+            },
+            {
+              "indicator": "Accommodation Capacity",
+              "rank": 231,
+              "score": 0.0
+            },
+            {
+              "indicator": "Information Technology Capacity",
+              "rank": 401,
+              "score": 0.2611
+            },
+            {
+              "indicator": "Financial Technology Capacity",
+              "rank": 126,
+              "score": 0.1423
+            }
+          ]
+        },
+        {
+          "pillar": "Resiliency",
+          "rank": 413,
+          "score": 12.5705,
+          "indicators": [
+            {
+              "indicator": "Land Use Plan",
+              "rank": 1,
+              "score": 2.5
+            },
+            {
+              "indicator": "Disaster Risk Reduction Plan",
+              "rank": 1,
+              "score": 2.5
+            },
+            {
+              "indicator": "Annual Disaster Drill",
+              "rank": 1,
+              "score": 2.5
+            },
+            {
+              "indicator": "Early Warning System",
+              "rank": 413,
+              "score": 0.0
+            },
+            {
+              "indicator": "Budget for DRRMP",
+              "rank": 217,
+              "score": 0.0022
+            },
+            {
+              "indicator": "Local Risk Assessments",
+              "rank": 385,
+              "score": 1.25
+            },
+            {
+              "indicator": "Emergency Infrastructure",
+              "rank": 154,
+              "score": 0.9117
+            },
+            {
+              "indicator": "Utilities",
+              "rank": 25,
+              "score": 1.1419
+            },
+            {
+              "indicator": "Employed Population",
+              "rank": 32,
+              "score": 0.4705
+            },
+            {
+              "indicator": "Sanitary System",
+              "rank": 252,
+              "score": 1.2942
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year": 2018,
+      "surveyed": false
+    },
+    {
+      "year": 2019,
+      "surveyed": true,
+      "overallRank": 389,
+      "overallScore": 32.0592,
+      "pillars": [
+        {
+          "pillar": "Economic Dynamism",
+          "rank": 58,
+          "score": 5.0289,
+          "indicators": [
+            {
+              "indicator": "Local Economy Size",
+              "rank": 33,
+              "score": 0.0815
+            },
+            {
+              "indicator": "Local Economy Growth",
+              "rank": 437,
+              "score": 0.0003
+            },
+            {
+              "indicator": "Local Economy Structure",
+              "rank": 204,
+              "score": 0.1355
+            },
+            {
+              "indicator": "Safety Compliant Business",
+              "rank": 223,
+              "score": 0.1369
+            },
+            {
+              "indicator": "Increase in Employment",
+              "rank": 55,
+              "score": 0.3004
+            },
+            {
+              "indicator": "Cost of Living",
+              "rank": 1,
+              "score": 2.5
+            },
+            {
+              "indicator": "Cost of Doing Business",
+              "rank": 438,
+              "score": 1.5669
+            },
+            {
+              "indicator": "Financial Deepening",
+              "rank": 174,
+              "score": 0.2682
+            },
+            {
+              "indicator": "Productivity",
+              "rank": 7,
+              "score": 0.0391
+            },
+            {
+              "indicator": "Presence of Business and Professional Organizations",
+              "rank": 393,
+              "score": 0.0
+            }
+          ]
+        },
+        {
+          "pillar": "Government Efficiency",
+          "rank": 87,
+          "score": 11.0193,
+          "indicators": [
+            {
+              "indicator": "Compliance to National Directives",
+              "rank": 377,
+              "score": 2.2
+            },
+            {
+              "indicator": "Presence of Investment Promotion Unit",
+              "rank": 1,
+              "score": 2.5
+            },
+            {
+              "indicator": "Business Registration Efficiency",
+              "rank": 377,
+              "score": 2.1405
+            },
+            {
+              "indicator": "Capacity to Generate Local Resource",
+              "rank": 5,
+              "score": 1.2301
+            },
+            {
+              "indicator": "Capacity of Health Services",
+              "rank": 404,
+              "score": 0.0371
+            },
+            {
+              "indicator": "Capacity of School Services",
+              "rank": 199,
+              "score": 0.2911
+            },
+            {
+              "indicator": "Recognition of Performance",
+              "rank": 196,
+              "score": 0.1443
+            },
+            {
+              "indicator": "Compliance to Business Permits and Licensing System (BPLS) Standards",
+              "rank": 271,
+              "score": 2.4093
+            },
+            {
+              "indicator": "Peace and Order",
+              "rank": 298,
+              "score": 0.018
+            },
+            {
+              "indicator": "Social Protection",
+              "rank": 451,
+              "score": 0.0489
+            }
+          ]
+        },
+        {
+          "pillar": "Infrastructure",
+          "rank": 485,
+          "score": 1.2645,
+          "indicators": [
+            {
+              "indicator": "Road Network",
+              "rank": 410,
+              "score": 0.0114
+            },
+            {
+              "indicator": "Distance to Ports",
+              "rank": 484,
+              "score": 0.0
+            },
+            {
+              "indicator": "Availability of Basic Utilities",
+              "rank": 482,
+              "score": 0.0
+            },
+            {
+              "indicator": "Transportation Vehicles",
+              "rank": 485,
+              "score": 0.0
+            },
+            {
+              "indicator": "Education",
+              "rank": 265,
+              "score": 0.0875
+            },
+            {
+              "indicator": "Health",
+              "rank": 161,
+              "score": 0.1547
+            },
+            {
+              "indicator": "LGU Investment",
+              "rank": 25,
+              "score": 0.7567
+            },
+            {
+              "indicator": "Accommodation Capacity",
+              "rank": 270,
+              "score": 0.0
+            },
+            {
+              "indicator": "Information Technology Capacity",
+              "rank": 484,
+              "score": 0.0361
+            },
+            {
+              "indicator": "Financial Technology Capacity",
+              "rank": 93,
+              "score": 0.218
+            }
+          ]
+        },
+        {
+          "pillar": "Resiliency",
+          "rank": 432,
+          "score": 14.7465,
+          "indicators": [
+            {
+              "indicator": "Land Use Plan",
+              "rank": 99,
+              "score": 2.4744
+            },
+            {
+              "indicator": "Disaster Risk Reduction Plan",
+              "rank": 382,
+              "score": 2.3611
+            },
+            {
+              "indicator": "Annual Disaster Drill",
+              "rank": 417,
+              "score": 1.25
+            },
+            {
+              "indicator": "Early Warning System",
+              "rank": 1,
+              "score": 2.5
+            },
+            {
+              "indicator": "Budget for DRRMP",
+              "rank": 17,
+              "score": 0.55
+            },
+            {
+              "indicator": "Local Risk Assessments",
+              "rank": 463,
+              "score": 1.25
+            },
+            {
+              "indicator": "Emergency Infrastructure",
+              "rank": 331,
+              "score": 0.4769
+            },
+            {
+              "indicator": "Utilities",
+              "rank": 213,
+              "score": 1.8777
+            },
+            {
+              "indicator": "Employed Population",
+              "rank": 403,
+              "score": 0.0041
+            },
+            {
+              "indicator": "Sanitary System",
+              "rank": 116,
+              "score": 2.0022
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year": 2020,
+      "surveyed": true,
+      "overallRank": 222,
+      "overallScore": 36.6401,
+      "pillars": [
+        {
+          "pillar": "Economic Dynamism",
+          "rank": 221,
+          "score": 4.4735,
+          "indicators": [
+            {
+              "indicator": "Local Economy Size",
+              "rank": 119,
+              "score": 0.0253
+            },
+            {
+              "indicator": "Local Economy Growth",
+              "rank": 417,
+              "score": 0.3294
+            },
+            {
+              "indicator": "Local Economy Structure",
+              "rank": 197,
+              "score": 0.2092
+            },
+            {
+              "indicator": "Safety Compliant Business",
+              "rank": 253,
+              "score": 0.1155
+            },
+            {
+              "indicator": "Increase in Employment",
+              "rank": 120,
+              "score": 0.1586
+            },
+            {
+              "indicator": "Cost of Living",
+              "rank": 177,
+              "score": 1.1207
+            },
+            {
+              "indicator": "Cost of Doing Business",
+              "rank": 293,
+              "score": 2.1494
+            },
+            {
+              "indicator": "Financial Deepening",
+              "rank": 214,
+              "score": 0.2338
+            },
+            {
+              "indicator": "Productivity",
+              "rank": 111,
+              "score": 0.1299
+            },
+            {
+              "indicator": "Presence of Business and Professional Organizations",
+              "rank": 356,
+              "score": 0.0017
+            }
+          ]
+        },
+        {
+          "pillar": "Government Efficiency",
+          "rank": 210,
+          "score": 10.3127,
+          "indicators": [
+            {
+              "indicator": "Compliance to National Directives",
+              "rank": 419,
+              "score": 2.2727
+            },
+            {
+              "indicator": "Presence of Investment Promotion Unit",
+              "rank": 1,
+              "score": 2.5
+            },
+            {
+              "indicator": "Business Registration Efficiency",
+              "rank": 376,
+              "score": 2.3205
+            },
+            {
+              "indicator": "Capacity to Generate Local Resource",
+              "rank": 7,
+              "score": 1.1111
+            },
+            {
+              "indicator": "Capacity of Health Services",
+              "rank": 339,
+              "score": 0.0482
+            },
+            {
+              "indicator": "Capacity of School Services",
+              "rank": 304,
+              "score": 0.0963
+            },
+            {
+              "indicator": "Recognition of Performance",
+              "rank": 230,
+              "score": 0.0298
+            },
+            {
+              "indicator": "Compliance to Business Permits and Licensing System (BPLS) Standards",
+              "rank": 417,
+              "score": 1.5746
+            },
+            {
+              "indicator": "Peace and Order",
+              "rank": 210,
+              "score": 0.0263
+            },
+            {
+              "indicator": "Social Protection",
+              "rank": 191,
+              "score": 0.3331
+            }
+          ]
+        },
+        {
+          "pillar": "Infrastructure",
+          "rank": 142,
+          "score": 5.9671,
+          "indicators": [
+            {
+              "indicator": "Road Network",
+              "rank": 488,
+              "score": 0.0
+            },
+            {
+              "indicator": "Distance to Ports",
+              "rank": 116,
+              "score": 2.4845
+            },
+            {
+              "indicator": "Availability of Basic Utilities",
+              "rank": 90,
+              "score": 2.4696
+            },
+            {
+              "indicator": "Transportation Vehicles",
+              "rank": 172,
+              "score": 0.0356
+            },
+            {
+              "indicator": "Education",
+              "rank": 333,
+              "score": 0.0674
+            },
+            {
+              "indicator": "Health",
+              "rank": 164,
+              "score": 0.1823
+            },
+            {
+              "indicator": "LGU Investment",
+              "rank": 31,
+              "score": 0.3992
+            },
+            {
+              "indicator": "Accommodation Capacity",
+              "rank": 289,
+              "score": 0.0
+            },
+            {
+              "indicator": "Information Technology Capacity",
+              "rank": 479,
+              "score": 0.0761
+            },
+            {
+              "indicator": "Financial Technology Capacity",
+              "rank": 80,
+              "score": 0.2524
+            }
+          ]
+        },
+        {
+          "pillar": "Resiliency",
+          "rank": 383,
+          "score": 15.8868,
+          "indicators": [
+            {
+              "indicator": "Land Use Plan",
+              "rank": 151,
+              "score": 2.4744
+            },
+            {
+              "indicator": "Disaster Risk Reduction Plan",
+              "rank": 255,
+              "score": 2.4537
+            },
+            {
+              "indicator": "Annual Disaster Drill",
+              "rank": 444,
+              "score": 1.6667
+            },
+            {
+              "indicator": "Early Warning System",
+              "rank": 1,
+              "score": 2.5
+            },
+            {
+              "indicator": "Budget for DRRMP",
+              "rank": 20,
+              "score": 0.377
+            },
+            {
+              "indicator": "Local Risk Assessments",
+              "rank": 1,
+              "score": 2.5
+            },
+            {
+              "indicator": "Emergency Infrastructure",
+              "rank": 181,
+              "score": 0.5358
+            },
+            {
+              "indicator": "Utilities",
+              "rank": 200,
+              "score": 1.879
+            },
+            {
+              "indicator": "Employed Population",
+              "rank": 425,
+              "score": 0.004
+            },
+            {
+              "indicator": "Sanitary System",
+              "rank": 375,
+              "score": 1.4963
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year": 2021,
+      "surveyed": true,
+      "overallRank": 88,
+      "overallScore": 34.8435,
+      "pillars": [
+        {
+          "pillar": "Economic Dynamism",
+          "rank": 31,
+          "score": 6.4965,
+          "indicators": [
+            {
+              "indicator": "Local Economy Size",
+              "rank": 4,
+              "score": 1.0145
+            },
+            {
+              "indicator": "Local Economy Growth",
+              "rank": 7,
+              "score": 0.2725
+            },
+            {
+              "indicator": "Local Economy Structure",
+              "rank": 175,
+              "score": 0.3061
+            },
+            {
+              "indicator": "Safety Compliant Business",
+              "rank": 164,
+              "score": 0.1949
+            },
+            {
+              "indicator": "Increase in Employment",
+              "rank": 138,
+              "score": 0.1604
+            },
+            {
+              "indicator": "Cost of Living",
+              "rank": 34,
+              "score": 1.0625
+            },
+            {
+              "indicator": "Cost of Doing Business",
+              "rank": 366,
+              "score": 2.0674
+            },
+            {
+              "indicator": "Financial Deepening",
+              "rank": 143,
+              "score": 0.295
+            },
+            {
+              "indicator": "Productivity",
+              "rank": 6,
+              "score": 1.1232
+            },
+            {
+              "indicator": "Presence of Business and Professional Organizations",
+              "rank": 333,
+              "score": 0.0
+            }
+          ]
+        },
+        {
+          "pillar": "Government Efficiency",
+          "rank": 181,
+          "score": 9.4749,
+          "indicators": [
+            {
+              "indicator": "Compliance to National Directives",
+              "rank": 9,
+              "score": 2.0238
+            },
+            {
+              "indicator": "Presence of Investment Promotion Unit",
+              "rank": 1,
+              "score": 2.5
+            },
+            {
+              "indicator": "Business Registration Efficiency",
+              "rank": 186,
+              "score": 1.9498
+            },
+            {
+              "indicator": "Capacity to Generate Local Resource",
+              "rank": 12,
+              "score": 0.1914
+            },
+            {
+              "indicator": "Capacity of Health Services",
+              "rank": 256,
+              "score": 0.1164
+            },
+            {
+              "indicator": "Capacity of School Services",
+              "rank": 129,
+              "score": 0.0925
+            },
+            {
+              "indicator": "Recognition of Performance",
+              "rank": 84,
+              "score": 0.0
+            },
+            {
+              "indicator": "Compliance to Business Permits and Licensing System (BPLS) Standards",
+              "rank": 39,
+              "score": 2.3189
+            },
+            {
+              "indicator": "Peace and Order",
+              "rank": 86,
+              "score": 0.0342
+            },
+            {
+              "indicator": "Social Protection",
+              "rank": 243,
+              "score": 0.2478
+            }
+          ]
+        },
+        {
+          "pillar": "Infrastructure",
+          "rank": 194,
+          "score": 5.5756,
+          "indicators": [
+            {
+              "indicator": "Road Network",
+              "rank": 394,
+              "score": 0.0232
+            },
+            {
+              "indicator": "Distance to Ports",
+              "rank": 257,
+              "score": 2.3347
+            },
+            {
+              "indicator": "Availability of Basic Utilities",
+              "rank": 40,
+              "score": 2.4438
+            },
+            {
+              "indicator": "Transportation Vehicles",
+              "rank": 76,
+              "score": 0.0527
+            },
+            {
+              "indicator": "Education",
+              "rank": 477,
+              "score": 0.0133
+            },
+            {
+              "indicator": "Health",
+              "rank": 303,
+              "score": 0.1243
+            },
+            {
+              "indicator": "LGU Investment",
+              "rank": 32,
+              "score": 0.0632
+            },
+            {
+              "indicator": "Accommodation Capacity",
+              "rank": 11,
+              "score": 0.2225
+            },
+            {
+              "indicator": "Information Technology Capacity",
+              "rank": 30,
+              "score": 0.0455
+            },
+            {
+              "indicator": "Financial Technology Capacity",
+              "rank": 74,
+              "score": 0.2524
+            }
+          ]
+        },
+        {
+          "pillar": "Resiliency",
+          "rank": 260,
+          "score": 13.2965,
+          "indicators": [
+            {
+              "indicator": "Land Use Plan",
+              "rank": 5,
+              "score": 2.4091
+            },
+            {
+              "indicator": "Disaster Risk Reduction Plan",
+              "rank": 4,
+              "score": 2.4211
+            },
+            {
+              "indicator": "Annual Disaster Drill",
+              "rank": 39,
+              "score": 1.2542
+            },
+            {
+              "indicator": "Early Warning System",
+              "rank": 72,
+              "score": 1.261
+            },
+            {
+              "indicator": "Budget for DRRMP",
+              "rank": 147,
+              "score": 0.0213
+            },
+            {
+              "indicator": "Local Risk Assessments",
+              "rank": 1,
+              "score": 2.5
+            },
+            {
+              "indicator": "Emergency Infrastructure",
+              "rank": 303,
+              "score": 0.2584
+            },
+            {
+              "indicator": "Utilities",
+              "rank": 414,
+              "score": 1.2501
+            },
+            {
+              "indicator": "Employed Population",
+              "rank": 150,
+              "score": 0.0463
+            },
+            {
+              "indicator": "Sanitary System",
+              "rank": 75,
+              "score": 1.8752
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year": 2022,
+      "surveyed": true,
+      "overallRank": 44,
+      "overallScore": 33.872,
+      "pillars": [
+        {
+          "pillar": "Economic Dynamism",
+          "rank": 15,
+          "score": 6.4086,
+          "indicators": [
+            {
+              "indicator": "Local Economy Size",
+              "rank": 2,
+              "score": 1.0058
+            },
+            {
+              "indicator": "Local Economy Growth",
+              "rank": 18,
+              "score": 0.0001
+            },
+            {
+              "indicator": "Active Establishments in the Locality",
+              "rank": 120,
+              "score": 0.3204
+            },
+            {
+              "indicator": "Safety Compliant Business",
+              "rank": 3,
+              "score": 0.0
+            },
+            {
+              "indicator": "Employment Generation",
+              "rank": 66,
+              "score": 0.2001
+            },
+            {
+              "indicator": "Cost of Living",
+              "rank": 53,
+              "score": 1.75
+            },
+            {
+              "indicator": "Cost of Doing Business",
+              "rank": 305,
+              "score": 1.8142
+            },
+            {
+              "indicator": "Financial Deepening",
+              "rank": 208,
+              "score": 0.2092
+            },
+            {
+              "indicator": "Productivity",
+              "rank": 3,
+              "score": 1.1054
+            },
+            {
+              "indicator": "Presence of Business and Professional Organizations",
+              "rank": 125,
+              "score": 0.0034
+            }
+          ]
+        },
+        {
+          "pillar": "Government Efficiency",
+          "rank": 20,
+          "score": 8.4918,
+          "indicators": [
+            {
+              "indicator": "Compliance to National Directives",
+              "rank": 10,
+              "score": 1.6786
+            },
+            {
+              "indicator": "Presence of Investment Promotion Unit",
+              "rank": 3,
+              "score": 1.9488
+            },
+            {
+              "indicator": "Compliance to ARTA Citizens Charter",
+              "rank": 1,
+              "score": 2.0
+            },
+            {
+              "indicator": "Capacity to Generate Local Resource",
+              "rank": 7,
+              "score": 0.0973
+            },
+            {
+              "indicator": "Capacity of Health Services",
+              "rank": 13,
+              "score": 0.01
+            },
+            {
+              "indicator": "Capacity of School Services",
+              "rank": 144,
+              "score": 0.0282
+            },
+            {
+              "indicator": "Recognition of Performance",
+              "rank": 47,
+              "score": 0.3559
+            },
+            {
+              "indicator": "Getting Business Permits",
+              "rank": 1,
+              "score": 2.0
+            },
+            {
+              "indicator": "Peace and Order",
+              "rank": 4,
+              "score": 0.3717
+            },
+            {
+              "indicator": "Social Protection",
+              "rank": 12,
+              "score": 0.0013
+            }
+          ]
+        },
+        {
+          "pillar": "Infrastructure",
+          "rank": 169,
+          "score": 2.3819,
+          "indicators": [
+            {
+              "indicator": "Road Network",
+              "rank": 55,
+              "score": 0.0001
+            },
+            {
+              "indicator": "Distance to Ports",
+              "rank": 149,
+              "score": 1.864
+            },
+            {
+              "indicator": "Availability of Basic Utilities",
+              "rank": 146,
+              "score": 0.0835
+            },
+            {
+              "indicator": "Transportation Vehicles",
+              "rank": 70,
+              "score": 0.0535
+            },
+            {
+              "indicator": "Education",
+              "rank": 267,
+              "score": 0.0525
+            },
+            {
+              "indicator": "Health",
+              "rank": 355,
+              "score": 0.0651
+            },
+            {
+              "indicator": "LGU Investment",
+              "rank": 48,
+              "score": 0.0004
+            },
+            {
+              "indicator": "Accommodation Capacity",
+              "rank": 59,
+              "score": 0.0449
+            },
+            {
+              "indicator": "Information Technology Capacity",
+              "rank": 35,
+              "score": 0.1145
+            },
+            {
+              "indicator": "Financial Technology Capacity",
+              "rank": 38,
+              "score": 0.1034
+            }
+          ]
+        },
+        {
+          "pillar": "Resiliency",
+          "rank": 132,
+          "score": 11.4727,
+          "indicators": [
+            {
+              "indicator": "Land Use Plan",
+              "rank": 3,
+              "score": 1.9697
+            },
+            {
+              "indicator": "Disaster Risk Reduction Plan",
+              "rank": 2,
+              "score": 1.9998
+            },
+            {
+              "indicator": "Annual Disaster Drill",
+              "rank": 36,
+              "score": 1.024
+            },
+            {
+              "indicator": "Early Warning System",
+              "rank": 82,
+              "score": 1.0149
+            },
+            {
+              "indicator": "Budget for DRRMP",
+              "rank": 4,
+              "score": 0.0
+            },
+            {
+              "indicator": "Local Risk Assessments",
+              "rank": 1,
+              "score": 2.0
+            },
+            {
+              "indicator": "Emergency Infrastructure",
+              "rank": 237,
+              "score": 0.3803
+            },
+            {
+              "indicator": "Utilities",
+              "rank": 210,
+              "score": 1.5
+            },
+            {
+              "indicator": "Employed Population",
+              "rank": 98,
+              "score": 0.0838
+            },
+            {
+              "indicator": "Sanitary System",
+              "rank": 46,
+              "score": 1.5002
+            }
+          ]
+        },
+        {
+          "pillar": "Innovation",
+          "rank": 121,
+          "score": 5.117,
+          "indicators": [
+            {
+              "indicator": "ICT Plan",
+              "rank": 1,
+              "score": 2.0001
+            },
+            {
+              "indicator": "Innovation Financing: R&D Expenditures Allotment",
+              "rank": 67,
+              "score": 0.0057
+            },
+            {
+              "indicator": "ICT Use: E-BPLS Software",
+              "rank": 1,
+              "score": 2.0
+            },
+            {
+              "indicator": "Online Payment Facilities",
+              "rank": 2,
+              "score": 0.0
+            },
+            {
+              "indicator": "STEM graduates",
+              "rank": 152,
+              "score": 0.0
+            },
+            {
+              "indicator": "Intellectual Property Registration",
+              "rank": 174,
+              "score": 0.0056
+            },
+            {
+              "indicator": "Internet Capability",
+              "rank": 32,
+              "score": 1.0619
+            },
+            {
+              "indicator": "Availability of Basic Internet Service",
+              "rank": 128,
+              "score": 0.0045
+            },
+            {
+              "indicator": "Start Up and Innovation Facilities",
+              "rank": 122,
+              "score": 0.0392
+            },
+            {
+              "indicator": "New Technology",
+              "rank": 14,
+              "score": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year": 2023,
+      "surveyed": true,
+      "overallRank": 141,
+      "overallScore": 32.9022,
+      "pillars": [
+        {
+          "pillar": "Economic Dynamism",
+          "rank": 129,
+          "score": 3.7989,
+          "indicators": [
+            {
+              "indicator": "Local Economy Size",
+              "rank": 6,
+              "score": 0.5154
+            },
+            {
+              "indicator": "Local Economy Growth",
+              "rank": 68,
+              "score": 0.0004
+            },
+            {
+              "indicator": "Active Establishments in the Locality",
+              "rank": 123,
+              "score": 0.3216
+            },
+            {
+              "indicator": "Safety Compliant Business",
+              "rank": 127,
+              "score": 0.2213
+            },
+            {
+              "indicator": "Employment Generation",
+              "rank": 146,
+              "score": 0.1146
+            },
+            {
+              "indicator": "Cost of Living",
+              "rank": 66,
+              "score": 0.2551
+            },
+            {
+              "indicator": "Cost of Doing Business",
+              "rank": 423,
+              "score": 1.4662
+            },
+            {
+              "indicator": "Financial Deepening",
+              "rank": 171,
+              "score": 0.2946
+            },
+            {
+              "indicator": "Productivity",
+              "rank": 11,
+              "score": 0.5875
+            },
+            {
+              "indicator": "Presence of Business and Professional Organizations",
+              "rank": 97,
+              "score": 0.0222
+            }
+          ]
+        },
+        {
+          "pillar": "Government Efficiency",
+          "rank": 7,
+          "score": 10.9495,
+          "indicators": [
+            {
+              "indicator": "Compliance to National Directives",
+              "rank": 2,
+              "score": 1.9565
+            },
+            {
+              "indicator": "Presence of Investment Promotion Unit",
+              "rank": 4,
+              "score": 1.9231
+            },
+            {
+              "indicator": "Compliance to ARTA Citizens Charter",
+              "rank": 2,
+              "score": 1.0
+            },
+            {
+              "indicator": "Capacity to Generate Local Resource",
+              "rank": 5,
+              "score": 0.6237
+            },
+            {
+              "indicator": "Capacity of Health Services",
+              "rank": 4,
+              "score": 0.9506
+            },
+            {
+              "indicator": "Capacity of School Services",
+              "rank": 232,
+              "score": 0.0491
+            },
+            {
+              "indicator": "Recognition of Performance",
+              "rank": 10,
+              "score": 0.5202
+            },
+            {
+              "indicator": "Getting Business Permits",
+              "rank": 1,
+              "score": 2.0
+            },
+            {
+              "indicator": "Peace and Order",
+              "rank": 18,
+              "score": 0.8571
+            },
+            {
+              "indicator": "Social Protection",
+              "rank": 200,
+              "score": 1.0692
+            }
+          ]
+        },
+        {
+          "pillar": "Infrastructure",
+          "rank": 137,
+          "score": 2.9108,
+          "indicators": [
+            {
+              "indicator": "Road Network",
+              "rank": 47,
+              "score": 0.0011
+            },
+            {
+              "indicator": "Distance to Ports",
+              "rank": 204,
+              "score": 1.77
+            },
+            {
+              "indicator": "Availability of Basic Utilities",
+              "rank": 182,
+              "score": 0.5865
+            },
+            {
+              "indicator": "Transportation Vehicles",
+              "rank": 28,
+              "score": 0.1759
+            },
+            {
+              "indicator": "Education",
+              "rank": 276,
+              "score": 0.0406
+            },
+            {
+              "indicator": "Health",
+              "rank": 163,
+              "score": 0.1093
+            },
+            {
+              "indicator": "LGU Investment",
+              "rank": 54,
+              "score": 0.0021
+            },
+            {
+              "indicator": "Accommodation Capacity",
+              "rank": 217,
+              "score": 0.0034
+            },
+            {
+              "indicator": "Information Technology Capacity",
+              "rank": 47,
+              "score": 0.1145
+            },
+            {
+              "indicator": "Financial Technology Capacity",
+              "rank": 47,
+              "score": 0.1074
+            }
+          ]
+        },
+        {
+          "pillar": "Resiliency",
+          "rank": 113,
+          "score": 11.5044,
+          "indicators": [
+            {
+              "indicator": "Land Use Plan",
+              "rank": 2,
+              "score": 1.9853
+            },
+            {
+              "indicator": "Disaster Risk Reduction Plan",
+              "rank": 2,
+              "score": 1.9583
+            },
+            {
+              "indicator": "Annual Disaster Drill",
+              "rank": 70,
+              "score": 1.004
+            },
+            {
+              "indicator": "Early Warning System",
+              "rank": 107,
+              "score": 1.0019
+            },
+            {
+              "indicator": "Budget for DRRMP",
+              "rank": 89,
+              "score": 0.0348
+            },
+            {
+              "indicator": "Local Risk Assessments",
+              "rank": 1,
+              "score": 2.0
+            },
+            {
+              "indicator": "Emergency Infrastructure",
+              "rank": 244,
+              "score": 0.3849
+            },
+            {
+              "indicator": "Utilities",
+              "rank": 125,
+              "score": 1.506
+            },
+            {
+              "indicator": "Employed Population",
+              "rank": 90,
+              "score": 0.113
+            },
+            {
+              "indicator": "Sanitary System",
+              "rank": 24,
+              "score": 1.5162
+            }
+          ]
+        },
+        {
+          "pillar": "Innovation",
+          "rank": 353,
+          "score": 3.7386,
+          "indicators": [
+            {
+              "indicator": "ICT Plan",
+              "rank": 3,
+              "score": 0.6667
+            },
+            {
+              "indicator": "Innovation Financing: R&D Expenditures Allotment",
+              "rank": 74,
+              "score": 0.0
+            },
+            {
+              "indicator": "ICT Use: E-BPLS Software",
+              "rank": 1,
+              "score": 2.0
+            },
+            {
+              "indicator": "Online Payment Facilities",
+              "rank": 2,
+              "score": 0.0
+            },
+            {
+              "indicator": "STEM graduates",
+              "rank": 207,
+              "score": 0.0
+            },
+            {
+              "indicator": "Intellectual Property Registration",
+              "rank": 192,
+              "score": 0.0029
+            },
+            {
+              "indicator": "Internet Capability",
+              "rank": 51,
+              "score": 1.065
+            },
+            {
+              "indicator": "Availability of Basic Internet Service",
+              "rank": 316,
+              "score": 0.004
+            },
+            {
+              "indicator": "Start Up and Innovation Facilities",
+              "rank": 171,
+              "score": 0.0
+            },
+            {
+              "indicator": "New Technology",
+              "rank": 20,
+              "score": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year": 2024,
+      "surveyed": true,
+      "overallRank": 53,
+      "overallScore": 35.2288,
+      "pillars": [
+        {
+          "pillar": "Economic Dynamism",
+          "rank": 105,
+          "score": 3.9407,
+          "indicators": [
+            {
+              "indicator": "Local Economy Size",
+              "rank": 10,
+              "score": 0.1914
+            },
+            {
+              "indicator": "Local Economy Growth",
+              "rank": 64,
+              "score": 0.0008
+            },
+            {
+              "indicator": "Active Establishments in the Locality",
+              "rank": 117,
+              "score": 0.2859
+            },
+            {
+              "indicator": "Safety Compliant Business",
+              "rank": 133,
+              "score": 0.214
+            },
+            {
+              "indicator": "Employment Generation",
+              "rank": 43,
+              "score": 0.2849
+            },
+            {
+              "indicator": "Cost of Living",
+              "rank": 47,
+              "score": 0.8889
+            },
+            {
+              "indicator": "Cost of Doing Business",
+              "rank": 382,
+              "score": 1.4045
+            },
+            {
+              "indicator": "Financial Deepening",
+              "rank": 128,
+              "score": 0.2636
+            },
+            {
+              "indicator": "Productivity",
+              "rank": 15,
+              "score": 0.3622
+            },
+            {
+              "indicator": "Presence of Business and Professional Organizations",
+              "rank": 118,
+              "score": 0.0445
+            }
+          ]
+        },
+        {
+          "pillar": "Government Efficiency",
+          "rank": 4,
+          "score": 10.696,
+          "indicators": [
+            {
+              "indicator": "Compliance to National Directives",
+              "rank": 3,
+              "score": 1.92
+            },
+            {
+              "indicator": "Presence of Investment Promotion Unit",
+              "rank": 5,
+              "score": 1.9048
+            },
+            {
+              "indicator": "Compliance to ARTA Citizens Charter",
+              "rank": 1,
+              "score": 2.0
+            },
+            {
+              "indicator": "Capacity to Generate Local Resource",
+              "rank": 7,
+              "score": 0.5962
+            },
+            {
+              "indicator": "Capacity of Health Services",
+              "rank": 7,
+              "score": 1.0484
+            },
+            {
+              "indicator": "Capacity of School Services",
+              "rank": 226,
+              "score": 0.038
+            },
+            {
+              "indicator": "Recognition of Performance",
+              "rank": 22,
+              "score": 0.3776
+            },
+            {
+              "indicator": "Getting Business Permits",
+              "rank": 1,
+              "score": 2.0
+            },
+            {
+              "indicator": "Peace and Order",
+              "rank": 25,
+              "score": 0.3093
+            },
+            {
+              "indicator": "Social Protection",
+              "rank": 215,
+              "score": 0.5017
+            }
+          ]
+        },
+        {
+          "pillar": "Infrastructure",
+          "rank": 105,
+          "score": 2.7419,
+          "indicators": [
+            {
+              "indicator": "Road Network",
+              "rank": 52,
+              "score": 0.0006
+            },
+            {
+              "indicator": "Distance to Ports",
+              "rank": 134,
+              "score": 1.9148
+            },
+            {
+              "indicator": "Availability of Basic Utilities",
+              "rank": 229,
+              "score": 0.2924
+            },
+            {
+              "indicator": "Transportation Vehicles",
+              "rank": 37,
+              "score": 0.1218
+            },
+            {
+              "indicator": "Education",
+              "rank": 343,
+              "score": 0.0258
+            },
+            {
+              "indicator": "Health",
+              "rank": 86,
+              "score": 0.2383
+            },
+            {
+              "indicator": "LGU Investment",
+              "rank": 12,
+              "score": 0.0294
+            },
+            {
+              "indicator": "Accommodation Capacity",
+              "rank": 214,
+              "score": 0.0034
+            },
+            {
+              "indicator": "Information Technology Capacity",
+              "rank": 51,
+              "score": 0.007
+            },
+            {
+              "indicator": "Financial Technology Capacity",
+              "rank": 53,
+              "score": 0.1084
+            }
+          ]
+        },
+        {
+          "pillar": "Resiliency",
+          "rank": 155,
+          "score": 11.432,
+          "indicators": [
+            {
+              "indicator": "Land Use Plan",
+              "rank": 3,
+              "score": 1.9714
+            },
+            {
+              "indicator": "Disaster Risk Reduction Plan",
+              "rank": 2,
+              "score": 1.9783
+            },
+            {
+              "indicator": "Annual Disaster Drill",
+              "rank": 98,
+              "score": 1.0063
+            },
+            {
+              "indicator": "Early Warning System",
+              "rank": 101,
+              "score": 1.0117
+            },
+            {
+              "indicator": "Budget for DRRMP",
+              "rank": 45,
+              "score": 0.002
+            },
+            {
+              "indicator": "Local Risk Assessments",
+              "rank": 1,
+              "score": 2.0
+            },
+            {
+              "indicator": "Emergency Infrastructure",
+              "rank": 271,
+              "score": 0.3742
+            },
+            {
+              "indicator": "Utilities",
+              "rank": 159,
+              "score": 1.5021
+            },
+            {
+              "indicator": "Employed Population",
+              "rank": 122,
+              "score": 0.086
+            },
+            {
+              "indicator": "Sanitary System",
+              "rank": 22,
+              "score": 1.5
+            }
+          ]
+        },
+        {
+          "pillar": "Innovation",
+          "rank": 156,
+          "score": 6.4182,
+          "indicators": [
+            {
+              "indicator": "ICT Plan",
+              "rank": 2,
+              "score": 1.3334
+            },
+            {
+              "indicator": "Innovation Financing: R&D Expenditures Allotment",
+              "rank": 43,
+              "score": 0.0
+            },
+            {
+              "indicator": "ICT Use: E-BPLS Software",
+              "rank": 1,
+              "score": 2.0
+            },
+            {
+              "indicator": "Online Payment Facilities",
+              "rank": 1,
+              "score": 2.0
+            },
+            {
+              "indicator": "STEM graduates",
+              "rank": 68,
+              "score": 0.076
+            },
+            {
+              "indicator": "Intellectual Property Registration",
+              "rank": 209,
+              "score": 0.003
+            },
+            {
+              "indicator": "Internet Capability",
+              "rank": 65,
+              "score": 1.0021
+            },
+            {
+              "indicator": "Availability of Basic Internet Service",
+              "rank": 360,
+              "score": 0.0037
+            },
+            {
+              "indicator": "Start Up and Innovation Facilities",
+              "rank": 180,
+              "score": 0.0
+            },
+            {
+              "indicator": "New Technology",
+              "rank": 32,
+              "score": 0.0
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source_name": "DTI Cities and Municipalities Competitiveness Index - Limay LGU profile",
+    "retrieved_at": "2026-09-25",
+    "verified": true,
+    "verification_note": "Ranks and pillar scores from the DTI CMCI Limay profile, one page per year. The overall score is computed as the sum of pillars and matched DTI's rankings export for 10 year(s).",
+    "source_url": "https://cmci.dti.gov.ph/lgu-profile.php?lgu=Limay"
+  }
+}
