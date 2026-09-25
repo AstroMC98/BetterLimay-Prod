@@ -23,6 +23,14 @@ export function ProvenanceStatusBadge({
 }) {
   const { t } = useTranslation("common");
   const model = getProvenanceViewModel(provenance);
+
+  /* A badge on every record tells the reader nothing. Records publish as
+     sourced and verified, so the normal state is silent and the badge is
+     reserved for the exceptions worth interrupting for: a record whose source
+     has gone past the freshness threshold, or one we cannot point at. The
+     source and date remain one click away in the details panel either way. */
+  if (model.state === "verified") return null;
+
   const label = t(`provenance.status.${model.state}`);
   const description = t(`provenance.statusDescriptions.${model.state}`);
 
@@ -31,7 +39,6 @@ export function ProvenanceStatusBadge({
       className={`status-badge status-badge--${model.state}`}
       data-provenance-state={model.state}
       data-testid={dataTestId}
-      role="status"
       aria-label={`${label}: ${description}`}
     >
       <span aria-hidden="true">{STATE_ICONS[model.state]}</span> {label}
@@ -51,6 +58,11 @@ function ProvenanceFields({ model }: { model: ProvenanceViewModel }) {
             <a href={model.sourceUrl} target="_blank" rel="noreferrer">
               {model.sourceName ?? t("provenance.sourceUnavailable")}
             </a>
+          ) : model.sourceCitation ? (
+            // An official document the maintainers hold is a real source. Saying
+            // "unavailable" here would understate the evidence behind the figure,
+            // so render the citation a reader could act on instead.
+            <span className="provenance-citation">{model.sourceCitation}</span>
           ) : (
             t("provenance.sourceUnavailable")
           )}
@@ -81,6 +93,8 @@ export function ProvenanceDetails({ provenance }: { provenance: ProvenanceLike }
         <a href={model.sourceUrl} target="_blank" rel="noreferrer">
           {t("provenance.verifyOfficialSource")}
         </a>
+      ) : model.sourceCitation ? (
+        <p className="provenance-citation">{t("provenance.requestDocument")}</p>
       ) : null}
     </details>
   );
@@ -99,7 +113,6 @@ export function ProvenancePanel({
 
   return (
     <section className={className} aria-labelledby={headingId}>
-      <p className="eyebrow">{t("provenance.sourceInformation")}</p>
       <h2 id={headingId}>{t("provenance.sourceInformation")}</h2>
       <ProvenanceStatusBadge provenance={provenance} />
       <ProvenanceFields model={model} />
@@ -109,6 +122,8 @@ export function ProvenancePanel({
             {t("provenance.verifyOfficialSource")}
           </a>
         </p>
+      ) : model.sourceCitation ? (
+        <p className="provenance-citation">{t("provenance.requestDocument")}</p>
       ) : null}
     </section>
   );

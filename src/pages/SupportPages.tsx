@@ -181,6 +181,7 @@ export function ReportPage() {
     const validation = validateReportInput(input);
     if (!validation.valid) {
       setValidationErrors(validation.errors);
+      return;
     }
 
     const nextResult = await submitReport(input, {
@@ -329,6 +330,7 @@ export function LegalPage() {
     <SupportDocumentPage
       path="/legal"
       testId="legal-page"
+      eyebrowKey="pages.legal.eyebrow"
       titleKey="pages.legal.title"
       descriptionKey="pages.legal.description"
       sectionKeys={["legal.portal", "legal.sources", "legal.contact"]}
@@ -342,6 +344,7 @@ interface DocumentPageProps {
   titleKey: string;
   descriptionKey: string;
   sectionKeys: string[];
+  eyebrowKey?: string;
 }
 
 function SupportDocumentPage({
@@ -350,6 +353,7 @@ function SupportDocumentPage({
   titleKey,
   descriptionKey,
   sectionKeys,
+  eyebrowKey = "pages.independentEyebrow",
 }: DocumentPageProps) {
   const { t } = useTranslation("common");
   const title = t(titleKey);
@@ -357,7 +361,7 @@ function SupportDocumentPage({
 
   return (
     <SupportPageShell
-      eyebrow={t("pages.independentEyebrow")}
+      eyebrow={t(eyebrowKey)}
       title={title}
       description={description}
       path={path}
@@ -381,6 +385,7 @@ export function PrivacyPage({ path = "/privacy" }: { path?: string } = {}) {
     <SupportDocumentPage
       path={path}
       testId="privacy.page"
+      eyebrowKey="pages.privacy.eyebrow"
       titleKey="pages.privacy.title"
       descriptionKey="pages.privacy.description"
       sectionKeys={[
@@ -398,6 +403,7 @@ export function TermsPage({ path = "/terms" }: { path?: string } = {}) {
     <SupportDocumentPage
       path={path}
       testId="terms.page"
+      eyebrowKey="pages.terms.eyebrow"
       titleKey="pages.terms.title"
       descriptionKey="pages.terms.description"
       sectionKeys={[
@@ -415,6 +421,7 @@ export function AccessibilityPage() {
     <SupportDocumentPage
       path="/accessibility"
       testId="accessibility.page"
+      eyebrowKey="pages.accessibility.eyebrow"
       titleKey="pages.accessibility.title"
       descriptionKey="pages.accessibility.description"
       sectionKeys={[
@@ -431,6 +438,7 @@ export function FaqPage() {
     <SupportDocumentPage
       path="/faq"
       testId="faq.page"
+      eyebrowKey="pages.faq.eyebrow"
       titleKey="pages.faq.title"
       descriptionKey="pages.faq.description"
       sectionKeys={["faq.independent", "faq.sources", "faq.unverified", "faq.report"]}

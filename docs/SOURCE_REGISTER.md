@@ -7,6 +7,7 @@
 - `available`: source was reachable and relevant material was found.
 - `unavailable`: source was unreachable, under construction, blocked, or did not expose usable material during the research pass.
 - `candidate`: authoritative source identified but not yet reviewed for the Limay-specific dataset.
+- `acquired`: the document or export is held locally under `sources/` and its exact public URL was not captured. It is still publishable when cited precisely — `provenance.schema.json` accepts either `source_url` or a `source_document` citation (exact title, issue date, page). What it cannot do is flow through the stage 2-4 document bridge, which derives identity from the URL; `pipeline/0_acquire.py` marks those `bridge_blocked_by` and `pipeline/2_normalize.py` skips them.
 - `reference-only`: useful for project patterns or registration metadata, never a source of Limay facts.
 - `verified`: a specific record has been checked against the source and carries `verified: true` in its own data record.
 
@@ -27,10 +28,17 @@
 | `https://www.dbm.gov.ph/` | Department of Budget and Management | Municipal budget releases and local government financial references beyond the records above | 2026-09-22 | `candidate` | Cite the exact DBM publication/dataset and year | AstroMC98 |
 | `https://blgf.gov.ph/` | Bureau of Local Government Finance | Local finance and full disclosure references | 2026-09-21 | `candidate` | Cite exact publication and reporting period | AstroMC98 |
 | `https://www.coa.gov.ph/` | Commission on Audit | Audit reports and financial references | 2026-09-21 | `candidate` | Cite exact LGU/report/year; do not infer figures | AstroMC98 |
+| _URL not yet recorded_ | COA Annual Audit Report on the Municipality of Limay, Bataan, CY 2024 | Audited municipal financial statements, Executive Summary, Statement of Cash Flows, audit findings | 2026-09-23 | `acquired` - held locally and cited by title/issue date; publishable by citation, URL still wanted | 211 pages, clean selectable text, published 2025-12-03, AAR date 2025-06-25. The strongest available answer to GAP-011. Companion documents: AAPSI (60pp) and APMT (45pp). | AstroMC98 |
+| _URL not yet recorded_ | PhilGEPS awarded contracts export - Municipality of Limay | Procurement awards, awardees, contract amounts, award dates | 2026-09-23 | `acquired` - cited by title; the export has no per-award URL column, which still limits record-level award claims | 1000 rows, truncated at a UI page cap. Yearly aggregates are citable now; per-award records still need per-notice URLs (DATA_GAPS rule 4). | AstroMC98 |
+| _URL not yet recorded_ | Municipality of Orion Citizen's Charter, 2026 1st Edition | Extraction reference for service structure while Limay's charter is unavailable | 2026-09-23 | `acquired` - cited by title and edition; URL still wanted | 381 pages, fully scanned (zero selectable text; every page a JPEG). Peer-LGU reference only: Orion's fees and processing times are Orion's facts. | AstroMC98 |
+| _URL not yet recorded_ | Provincial Government of Bataan Citizen's Charter, 2026 1st Edition | Provincial service referral index | 2026-09-23 | `acquired` - cited by title and edition; URL still wanted | 584 pages, 1,006,451 selectable characters, standard ARTA charter tables. Used to route residents to the province when a service is not municipal. | AstroMC98 |
+| _URL not yet recorded_ | Limay Water District Citizen's Charter 2026 (1st Edition) | Water utility service referral | 2026-09-23 | `acquired` - cited by title and edition; URL still wanted | 140 pages, clean selectable text. A separate GOCC, not the Municipality; referral index only. | AstroMC98 |
+| _URL not yet recorded_ | PSA PSGC - Limay barangay list with 2024 POPCEN population | Barangay names, 10-digit PSGC codes, urban/rural class, barangay-level population | 2026-09-23 | `acquired` - cited by title; `psa.gov.ph` returns HTTP 403 to automated fetch, so the URL must be confirmed from a browser | 12 barangays, matching the count in `config/lgu.config.json`. Closes GAP-008. | AstroMC98 |
 | `https://notices.philgeps.gov.ph/GEPSNONPILOT/Tender/PrintableBidNoticeAbstractUI.aspx?refid=11407627` | Philippine Government Electronic Procurement System - Bid Notice Abstract 11407627 | 2025 DPWH Bataan 2nd DEO procurement notice for Limay By-Pass Road | 2026-09-22 | `verified` | The notice's ABC and status are recorded; contractor/payment details require separate source evidence | AstroMC98 |
 | `https://notices.philgeps.gov.ph/` | Philippine Government Electronic Procurement System | Procurement notices, bids, and awards beyond the verified notice above | 2026-09-22 | `candidate` | Link the exact notice; respect site terms and rate limits | AstroMC98 |
 | `https://www.dpwh.gov.ph/` | Department of Public Works and Highways | Infrastructure project references | 2026-09-21 | `candidate` | Link exact project/report and distinguish LGU from national projects | AstroMC98 |
 | `https://cmci.dti.gov.ph/` | DTI Cities and Municipalities Competitiveness Index | Competitiveness ranking and pillar indicators | 2026-09-21 | `candidate` | Cite municipality, year, and pillar/dataset | AstroMC98 |
+| `https://cmci.dti.gov.ph/rankings-data.php?unit=1st%20to%202nd%20Class%20Municipalities` | DTI CMCI rankings data - 1st to 2nd class municipalities | CMCI overall score, five pillars, and 50 indicators for 8 Bataan municipalities, 2014-2024 | 2026-09-23 | `available` | Published cross-LGU comparison; peer rows are permitted under the comparative-benchmark carve-out in `src/data/README.md`. 2018 is a not-surveyed column for 46 of 56 indicators - never coerce its `0.0000` to a score. Methodology: `https://cmci.dti.gov.ph/about-method.php` | AstroMC98 |
 | `https://open-meteo.com/` | Open-Meteo | Optional current weather enhancement | 2026-09-21 | `candidate` | API attribution and current retrieval timestamp required; never use as civic fact source | Platform owner |
 | `https://github.com/BetterLosBanos/betterlb` | BetterLB | Architecture and fork patterns only | 2026-09-21 | `available` | CC0/public-domain project documentation; verify exact file before copying code | AstroMC98 |
 | `https://github.com/BetterSolano/bettersolano` | BetterSolano | Services UX, PWA, hotline, i18n patterns only | 2026-09-21 | `available` | MIT code + CC BY 4.0 content as documented; no Solano data reuse | AstroMC98 |
@@ -49,7 +57,9 @@ Before a record is marked `verified: true`, confirm:
 
 ## Record-level provenance contract
 
-Every fact-bearing record must carry at least:
+Every fact-bearing record must carry at least a publisher, a retrieval date, a verification state, and **either** an exact URL **or** a document citation.
+
+Linked source:
 
 ```json
 {
@@ -59,6 +69,21 @@ Every fact-bearing record must carry at least:
   "verified": false
 }
 ```
+
+Cited document, for an official source that is not online:
+
+```json
+{
+  "source_document": "Annual Audit Report on the Municipality of Limay, Bataan for CY 2024",
+  "source_issued": "2025-12-03",
+  "source_page": 18,
+  "source_name": "Commission on Audit",
+  "retrieved_at": "2026-09-23",
+  "verified": false
+}
+```
+
+A citation must be precise enough that a reader could request the document and turn to the page. Prefer a URL when one exists.
 
 Use `verified: false` until a maintainer checks the exact source. Do not replace an unavailable source with an inferred value.
 

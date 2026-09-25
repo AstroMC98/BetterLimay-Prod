@@ -24,7 +24,8 @@
     "directory": "Better LGU directory",
     "sourceCode": "Source code",
     "license": "Lisensya",
-    "costToPeople": "Gastos sa mga Mamamayan ng Limay: ₱0"
+    "costToPeople": "Gastos sa mga Mamamayan ng Limay: ₱0",
+    "endorsement": "Isang inisyatiba ng BetterGov.PH"
   },
   "forms": {
     "required": "Kailangan",
@@ -74,7 +75,8 @@
       "unverified": "Hindi pa beripikado ang record na ito; tingnan ang source bago umasa rito.",
       "stale": "Na-beripika na ang record na ito ngunit maaaring hindi na kasalukuyan.",
       "unavailable": "Walang available na valid source o kinakailangang provenance metadata."
-    }
+    },
+    "requestDocument": "Dokumento ang pinagmulan nito, hindi web page. Gamitin ang pamagat, edisyon at pahina sa itaas upang hilingin o hanapin ito."
   },
   "services": {
     "loading": "Ikinakarga ang mga serbisyo",
@@ -124,6 +126,17 @@
       "drrm": "Pamamahala sa panganib at kalamidad",
       "education-scholarships": "Edukasyon at scholarship",
       "barangay-clearances": "Barangay clearance"
+    },
+    "providerNotice": {
+      "inferred": "Hinango mula sa Citizen's Charter ng {{entity}} ({{edition}}{{page}}). Maaaring iba ang bayarin at oras ng pagproseso sa Limay.",
+      "page": ", p. {{page}}"
+    },
+    "card": {
+      "processingTime": "Oras ng pagproseso",
+      "fees": "Bayarin",
+      "feesNone": "Walang nakalista",
+      "feesSome": "May bayarin",
+      "notStated": "Hindi nakasaad"
     }
   },
   "hotline": {
@@ -392,11 +405,15 @@
       "budget": "Badyet",
       "procurement": "Procurement",
       "bid": "Bid notice",
-      "infrastructure": "Imprastraktura"
+      "infrastructure": "Imprastraktura",
+      "financial-statement": "Na-awditang financial statement"
     },
     "gaps": {
       "financial": "Wala pang nailalathalang municipal financial records sa katalogong ito. Ang mga rekord sa ibaba ay sourced national appropriation at procurement references, hindi kumpletong municipal budget o expenditure report."
-    }
+    },
+    "chartOmitted": "{{count}} record ang hindi naka-chart dahil hindi pa nailalathala ang halaga nito.",
+    "chartOmitted_other": "{{count}} records ang hindi naka-chart dahil hindi pa nailalathala ang halaga ng mga ito.",
+    "notApplicable": "Hindi naaangkop"
   },
   "statistics": {
     "eyebrow": "Snapshot ng census",
@@ -408,7 +425,8 @@
     "chartUnit": "Unit ng chart: {{unit}}",
     "chartLabel": "Statistics chart sa {{unit}}; gamitin ang talahanayan sa ibaba para sa eksaktong values at source.",
     "metricPicker": "Metric",
-    "chartRows": "{{count}} source records ang ipinapakita sa talahanayan sa ibaba.",
+    "chartRows": "{{count}} source record ang ipinapakita sa talahanayan sa ibaba.",
+    "chartRows_other": "{{count}} source records ang ipinapakita sa talahanayan sa ibaba.",
     "tableCaption": "Mga statistics record na may eksaktong value, reference year, heograpiya, at provenance.",
     "howToRead": "Paano basahin ang statistic na ito",
     "value": "Value",
@@ -422,7 +440,28 @@
       "barangayDemographics": "Wala pang nailathalang barangay-level demographic records. Walang barangay value ang hinango mula sa municipal totals.",
       "cmci": "Wala pang verified DTI CMCI ranking sa katalogong ito. Walang ranking o score ang ginawa."
     },
-    "empty": "Wala pang nailathalang statistics record."
+    "empty": "Wala pang nailathalang statistics record.",
+    "headlineEyebrow": "Snapshot ng census",
+    "headlineTitle": "Ang Limay sa isang sulyap",
+    "recordsEyebrow": "Mga source record",
+    "recordsTitle": "Lahat ng statistics record",
+    "cmci": {
+      "loading": "Kinukuha ang paghahambing sa Bataan…",
+      "unavailable": "Hindi makuha ang paghahambing sa Bataan. Nasa itaas ang talaan ng sariling puntos ng Limay.",
+      "indicatorLabel": "Ihambing",
+      "rankCaption": "Puwesto ng {{subject}} sa {{indicator}}, {{year}}",
+      "rankOutOf": "sa {{total}} bayan ng Bataan",
+      "subjectScore": "{{subject}}",
+      "bestScore": "Pinakamataas sa Bataan",
+      "medianScore": "Gitnang halaga sa Bataan",
+      "chartLabel": "{{indicator}} ng {{subject}} kumpara sa ibang bayan ng Bataan, ayon sa taon",
+      "legendSubject": "{{subject}}",
+      "legendContext": "Ibang bayan ng Bataan",
+      "tableToggle": "Tingnan ang paghahambing bilang talaan",
+      "tableCaption": "{{indicator}} ayon sa bayan at taon",
+      "year": "Taon",
+      "notSurveyed": "Walang survey"
+    }
   },
   "pages": {
     "independentEyebrow": "Independenteng community portal",
@@ -448,8 +487,7 @@
       "eyebrow": "Directory ng serbisyo",
       "categoryTitle": "{{category}}",
       "categoryDescription": "Ang mga service record sa kategoryang ito ay kailangan pa ng source review.",
-      "detailDescription": "Ipinapakita ang detalye ng {{service}} kasama ang kasalukuyang source status nito.",
-      "detailNotice": "Hindi pa kumpirmado ang record na ito. Tiyakin ang requirements, bayarin, oras ng pagproseso, at mga detalye ng opisina sa opisyal na source bago umasa rito."
+      "detailDescription": "Ipinapakita ang detalye ng {{service}} kasama ang kasalukuyang source status nito."
     },
     "government": {
       "title": "Directory ng pamahalaan",
@@ -493,6 +531,7 @@
       "description": "Alamin ang tungkol sa independenteng community-run information portal na ito."
     },
     "legal": {
+      "eyebrow": "Legal na paunawa",
       "title": "Legal at trust information",
       "description": "Tingnan ang gabay ng BetterLimay sa pagiging independenteng portal, source verification, at correction.",
       "privacyTitle": "Placeholder sa privacy",
@@ -512,6 +551,10 @@
       "title": "Estadistika ng Limay",
       "description": "Tingnan ang sourced population at household metrics kasama ang reference year, unit, talahanayan, at provenance."
     },
+    "legislation": {
+      "title": "Batas lokal",
+      "description": "Mag-browse ng mga sourced na ordinansa at resolusyon kasama ang kanilang numero, status, at link sa orihinal na dokumento."
+    },
     "news": {
       "title": "Mga anunsyo ng Limay",
       "description": "Tingnan lamang ang mga anunsyong may naka-link at nasuring orihinal na opisyal na source."
@@ -525,18 +568,22 @@
       "description": "Magmungkahi ng source-backed correction o tumulong sa independenteng community portal na ito."
     },
     "faq": {
+      "eyebrow": "Mga karaniwang tanong",
       "title": "Mga madalas itanong",
       "description": "Alamin kung paano hinahawakan ng BetterLimay ang sources, gaps, corrections, at community reports."
     },
     "accessibility": {
+      "eyebrow": "Accessibility",
       "title": "Accessibility",
       "description": "Tingnan ang accessibility practices at kasalukuyang limitasyon ng community portal na ito."
     },
     "privacy": {
+      "eyebrow": "Privacy",
       "title": "Privacy notice",
       "description": "Alamin kung anong kinokolekta ng BetterLimay, bakit kailangan ito, at ano ang hindi kinokolekta ng report form."
     },
     "terms": {
+      "eyebrow": "Mga tuntunin ng paggamit",
       "title": "Terms of use",
       "description": "Basahin ang terms para sa paggamit ng independenteng information portal at mga source link nito."
     },

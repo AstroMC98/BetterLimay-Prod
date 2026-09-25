@@ -54,3 +54,36 @@ export function sortServiceSteps(steps: ServiceStep[]): ServiceStep[] {
 export function hasUnverifiedServiceData(record: ServiceRecord): boolean {
   return !record.provenance.verified || JSON.stringify(record).includes("TODO:");
 }
+
+/**
+ * True when the service is not provided by the Municipality of Limay.
+ *
+ * These records exist so a resident is not met with an empty page, but their
+ * fees and processing times belong to another entity. Any surface that shows
+ * one must say so — that visibility is the whole reason the field exists.
+ */
+export function isProvidedByAnotherEntity(record: ServiceRecord): boolean {
+  return Boolean(record.providerScope && record.providerScope !== "municipal");
+}
+
+/** Amounts a charter prints when a service costs nothing, or does not say. */
+const NO_FEE = /^(none(\s+stated.*)?|free|no fee.*|n\/a|-)$/i;
+
+/**
+ * Whether any real fee is listed, for the one-word answer on a service card.
+ *
+ * The card deliberately says "Fees apply" rather than an amount: a service can
+ * carry several fees against different steps, and a single figure pulled from
+ * that list would understate what a resident actually pays.
+ */
+export function hasListedFees(record: ServiceRecord): boolean {
+  return record.fees.some((fee) => !NO_FEE.test(fee.amount.trim()));
+}
+
+/** Processing time for display, or `undefined` when the source gives none. */
+export function getStatedProcessingTime(record: ServiceRecord): string | undefined {
+  const value = record.processingTime.trim();
+  return !value || /^not stated/i.test(value) || /^none$/i.test(value)
+    ? undefined
+    : value;
+}

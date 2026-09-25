@@ -15,7 +15,10 @@ import {
   filterServices,
   findServiceByRoute,
   getServiceCategoryOptions,
+  getStatedProcessingTime,
+  hasListedFees,
   hasUnverifiedServiceData,
+  isProvidedByAnotherEntity,
   sortServiceSteps,
 } from "../lib/ui/serviceCatalog";
 import { NotFoundPage } from "./PortalStatusPages";
@@ -29,8 +32,30 @@ function isServiceCategory(value: string | undefined): value is ServiceCategory 
   return services.some((service) => service.category === value);
 }
 
-function ServiceCard({ service }: { service: ServiceRecord }) {
+function officeNameFor(service: ServiceRecord): string | undefined {
+  return (
+    offices.find((office) => office.id === service.responsibleOfficeId)?.name ??
+    service.responsibleOfficeName
+  );
+}
+
+/**
+ * One service in a grid: what it is, who handles it, how long, whether it costs.
+ *
+ * The card never names a peer LGU. A resident scanning "Municipality of Orion"
+ * on a Limay card reads it as "go to Orion"; where a record comes from is
+ * stated on the detail page, one click away, next to the fees it qualifies.
+ */
+function ServiceCard({
+  service,
+  showCategory = true,
+}: {
+  service: ServiceRecord;
+  showCategory?: boolean;
+}) {
   const { t } = useTranslation("common");
+  const office = officeNameFor(service);
+  const processingTime = getStatedProcessingTime(service);
 
   return (
     <Link
@@ -38,17 +63,27 @@ function ServiceCard({ service }: { service: ServiceRecord }) {
       data-testid={`service-card-${service.slug}`}
       to={`/services/${service.category}/${service.slug}`}
     >
-      <span className="service-record-card__category">
-        {t(`services.categories.${service.category}`)}
-      </span>
-      <strong>{service.title}</strong>
-      <span className="service-record-card__summary">
-        {service.summary ?? t("services.missingValue")}
-      </span>
-      <ProvenanceStatusBadge
-        provenance={service.provenance}
-        dataTestId="unverified-badge"
-      />
+      {showCategory ? (
+        <span className="service-record-card__category">
+          {t(`services.categories.${service.category}`)}
+        </span>
+      ) : null}
+      <strong className="service-record-card__title">{service.title}</strong>
+      {office ? <span className="service-record-card__office">{office}</span> : null}
+      <dl className="service-record-card__facts">
+        <div>
+          <dt>{t("services.card.processingTime")}</dt>
+          <dd title={processingTime}>{processingTime ?? t("services.card.notStated")}</dd>
+        </div>
+        <div>
+          <dt>{t("services.card.fees")}</dt>
+          <dd>
+            {hasListedFees(service)
+              ? t("services.card.feesSome")
+              : t("services.card.feesNone")}
+          </dd>
+        </div>
+      </dl>
     </Link>
   );
 }
@@ -69,8 +104,7 @@ function ServiceCategoryCard({
       data-testid={`service-category-${category}`}
       to={`/services/${category}`}
     >
-      <span className="service-record-card__category">{categoryLabel}</span>
-      <strong>{t("services.openCategory")}</strong>
+      <strong className="service-category-card__title">{categoryLabel}</strong>
       <span className="service-category-card__count">
         {t("services.categoryCount", { count })}
       </span>
@@ -168,7 +202,6 @@ export function ServicesPage() {
 
       <section className="service-results" aria-labelledby="service-results-heading">
         <div className="section-heading">
-          <p className="eyebrow">{t("services.resultsHeading")}</p>
           <h2 id="service-results-heading">{t("services.resultsHeading")}</h2>
         </div>
         {filteredRecords.length > 0 ? (
@@ -223,7 +256,8 @@ export function ServiceCategoryPage() {
       <p className="foundation-page__tagline">{description}</p>
       <div className="service-record-grid">
         {records.map((service) => (
-          <ServiceCard key={service.id} service={service} />
+          // Every card here shares the page's category; repeating it is noise.
+          <ServiceCard key={service.id} service={service} showCategory={false} />
         ))}
       </div>
     </section>
@@ -297,6 +331,7 @@ export function ServiceDetailPage() {
     (candidate) => candidate.id === service.responsibleOfficeId,
   );
   const steps = sortServiceSteps(service.steps);
+  const providedElsewhere = isProvidedByAnotherEntity(service);
   const title = service.title;
   const description = t("pages.services.detailDescription", {
     service: service.title,
@@ -321,6 +356,24 @@ export function ServiceDetailPage() {
           <p className="foundation-page__tagline">
             {service.summary ?? t("services.missingValue")}
           </p>
+          {providedElsewhere ? (
+            // Small and next to the title rather than a warning banner: the
+            // process is the useful part and transfers; only the numbers may
+            // not, and this line says exactly that.
+            <p
+              className="service-origin-note"
+              role="note"
+              data-testid="service-provider-notice"
+            >
+              {t("services.providerNotice.inferred", {
+                entity: service.providerEntity ?? t("services.missingValue"),
+                edition: service.charterEdition ?? t("services.missingValue"),
+                page: service.sourcePage
+                  ? t("services.providerNotice.page", { page: service.sourcePage })
+                  : "",
+              })}
+            </p>
+          ) : null}
         </div>
         <div className="service-detail__status">
           <ProvenanceStatusBadge provenance={service.provenance} />
@@ -330,14 +383,12 @@ export function ServiceDetailPage() {
         </div>
       </div>
       <ShareActions />
-      <div className="service-detail__notice" role="note">
-        <span className="status-dot" aria-hidden="true" />
-        <p>
-          {hasUnverifiedServiceData(service)
-            ? t("services.verifyBeforeRelying")
-            : t("pages.services.detailNotice")}
-        </p>
-      </div>
+      {hasUnverifiedServiceData(service) ? (
+        <div className="service-detail__notice" role="note">
+          <span className="status-dot" aria-hidden="true" />
+          <p>{t("services.verifyBeforeRelying")}</p>
+        </div>
+      ) : null}
 
       <div className="service-detail__grid">
         <section aria-labelledby="service-eligibility-heading">
@@ -400,8 +451,8 @@ export function ServiceDetailPage() {
         </section>
         <section aria-labelledby="service-office-heading">
           <h2 id="service-office-heading">{t("services.responsibleOffice")}</h2>
-          <p>{office?.name ?? t("services.missingValue")}</p>
-          <ProvenanceStatusBadge provenance={office?.provenance} />
+          <p>{officeNameFor(service) ?? t("services.missingValue")}</p>
+          {office ? <ProvenanceStatusBadge provenance={office.provenance} /> : null}
         </section>
         <section aria-labelledby="service-time-heading">
           <h2 id="service-time-heading">{t("services.processingTime")}</h2>

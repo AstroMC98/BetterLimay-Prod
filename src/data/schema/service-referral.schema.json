@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "BetterLimay Service Referral",
+  "description": "Answers 'I need X and Limay does not do it'. A referral points a resident at the entity that does provide the service — the province, a water district, a national agency — without importing that entity's services into the municipal catalog, where a reader could mistake its fees for the Municipality's.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "office", "entity", "entityScope", "howToRead", "provenance"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+    "office": {
+      "type": "string",
+      "minLength": 1,
+      "description": "The office within that entity, as its charter names it."
+    },
+    "entity": {
+      "type": "string",
+      "minLength": 1,
+      "description": "The juridical entity accountable for the service."
+    },
+    "entityScope": {
+      "type": "string",
+      "enum": ["provincial", "gocc", "national-agency", "peer-lgu"],
+      "description": "Never 'municipal': a municipal service belongs in services.json, not here."
+    },
+    "charterEdition": { "type": "string", "minLength": 1 },
+    "charterPage": { "type": "integer", "minimum": 1 },
+    "serviceCount": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "How many services this office lists, for the fuller index."
+    },
+    "examples": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "description": "A few service names verbatim, so a reader can recognise their need."
+    },
+    "howToRead": { "type": "string", "minLength": 1 },
+    "provenance": { "$ref": "./provenance.schema.json" }
+  }
+}

@@ -1,0 +1,765 @@
+[
+  {
+    "id": "referral-bataan-agricultural-and-biosystems-engineering-division",
+    "office": "Agricultural and Biosystems Engineering Division",
+    "entity": "Provincial Government of Bataan",
+    "entityScope": "provincial",
+    "charterEdition": "2026 1st Edition",
+    "serviceCount": 3,
+    "examples": [
+      "ABE Technical Assistance",
+      "Provision and Construction of Agri-Fisheries Machineries and Postharvest Facilities and Equipment",
+      "Assistance in the Construction of Agri-Infrastructure Projects"
+    ],
+    "howToRead": "This service is provided by the Provincial Government of Bataan, not by the Municipality of Limay. Contact the Agricultural and Biosystems Engineering Division. Any fee or processing time is the province's, and is set out in its Citizen's Charter (2026 1st Edition).",
+    "provenance": {
+      "source_name": "Provincial Government of Bataan",
+      "retrieved_at": "2026-09-23",
+      "verified": true,
+      "verification_note": "Transcribed from the published Citizen's Charter index named in this record's source.",
+      "source_document": "Provincial Government of Bataan Citizen's Charter, 2026 1st Edition",
+      "source_page": 71
+    },
+    "charterPage": 71
+  },
+  {
+    "id": "referral-bataan-antonino-tony-p-roman-memorial-hospital-external-services",
+    "office": "Antonino “Tony” P. Roman Memorial Hospital External Services",
+    "entity": "Provincial Government of Bataan",
+    "entityScope": "provincial",
+    "charterEdition": "2026 1st Edition",
+    "serviceCount": 29,
+    "examples": [
+      "Admission Procedure",
+      "Ambulance Services- Transfer of Service to Other Facility/Hospital",
+      "Ambulance Services- Patient Conduction for Diagnostic Procedure",
+      "Animal Bite Treatment Services- All Patients Needing Animal Bite Treatment"
+    ],
+    "howToRead": "This service is provided by the Provincial Government of Bataan, not by the Municipality of Limay. Contact the Antonino “Tony” P. Roman Memorial Hospital External Services. Any fee or processing time is the province's, and is set out in its Citizen's Charter (2026 1st Edition).",
+    "provenance": {
+      "source_name": "Provincial Government of Bataan",
+      "retrieved_at": "2026-09-23",
+      "verified": true,
+      "verification_note": "Transcribed from the published Citizen's Charter index named in this record's source.",
+      "source_document": "Provincial Government of Bataan Citizen's Charter, 2026 1st Edition",
+      "source_page": 498
+    },
+    "charterPage": 498
+  },
+  {
+    "id": "referral-bataan-bagac-community-and-medicare-hospital-external-services",
+    "office": "Bagac Community and Medicare Hospital External Services",
+    "entity": "Provincial Government of Bataan",
+    "entityScope": "provincial",
+    "charterEdition": "2026 1st Edition",
+    "serviceCount": 17,
+    "examples": [
+      "Admission of Patients",
+      "Animal Bite Treatment Center",
+      "Billing",
+      "Billing (Philhealth or non-Philhealth patients with excess bill)"
+    ],
+    "howToRead": "This service is provided by the Provincial Government of Bataan, not by the Municipality of Limay. Contact the Bagac Community and Medicare Hospital External Services. Any fee or processing time is the province's, and is set out in its Citizen's Charter (2026 1st Edition).",
+    "provenance": {
+      "source_name": "Provincial Government of Bataan",
+      "retrieved_at": "2026-09-23",
+      "verified": true,
+      "verification_note": "Transcribed from the published Citizen's Charter index named in this record's source.",
+      "source_document": "Provincial Government of Bataan Citizen's Charter, 2026 1st Edition",
+      "source_page": 546
+    },
+    "charterPage": 546
+  },
+  {
+    "id": "referral-bataan-bataan-human-settlement-office-external-services",
+    "office": "Bataan Human Settlement Office External Services",
+    "entity": "Provincial Government of Bataan",
+    "entityScope": "provincial",
+    "charterEdition": "2026 1st Edition",
+    "serviceCount": 3,
+    "examples": [
+      "Provision of Assistance to Walk-in Clients on Housing Inquiries and Concerns",
+      "Orientation and Model-Units Tour of 1Bataan Village Housing Showroom",
+      "Facilitation for the Registration of Community/ Homeowners Association"
+    ],
+    "howToRead": "This service is provided by the Provincial Government of Bataan, not by the Municipality of Limay. Contact the Bataan Human Settlement Office External Services. Any fee or processing time is the province's, and is set out in its Citizen's Charter (2026 1st Edition).",
+    "provenance": {
+      "source_name": "Provincial Government of Bataan",
+      "retrieved_at": "2026-09-23",
+      "verified": true,
+      "verification_note": "Transcribed from the published Citizen's Charter index named in this record's source.",
+      "source_document": "Provincial Government of Bataan Citizen's Charter, 2026 1st Edition",
+      "source_page": 376
+    },
+    "charterPage": 376
+  },
+  {
+    "id": "referral-bataan-bataan-public-private-partnership-and-investment-center-external-services",
+    "office": "Bataan Public-Private Partnership and Investment Center External Services",
+    "entity": "Provincial Government of Bataan",
+    "entityScope": "provincial",
+    "charterEdition": "2026 1st Edition",
+    "serviceCount": 8,
+    "examples": [
+      "Benchmarking of other LGUs and other government offices",
+      "Facilitation, Assistance, and Participation in PPP Project Negotiation and Implementation",
+      "Meeting with Proponents/investors",
+      "Non-renewal of the Sublease Agreement of Commercial and Office Space at the Bunker Building"
+    ],
+    "howToRead": "This service is provided by the Provincial Government of Bataan, not by the Municipality of Limay. Contact the Bataan Public-Private Partnership and Investment Center External Services. Any fee or processing time is the province's, and is set out in its Citizen's Charter (2026 1st Edition).",
+    "provenance": {
+      "source_name": "Provincial Government of Bataan",
+      "retrieved_at": "2026-09-23",
+      "verified": true,
+      "verification_note": "Transcribed from the published Citizen's Charter index named in this record's source.",
+      "source_document": "Provincial Government of Bataan Citizen's Charter, 2026 1st Edition",
+      "source_page": 439
+    },
+    "charterPage": 439
+  },
+  {
+    "id": "referral-bataan-capitol-security-intelligence-unit",
+    "office": "Capitol Security Intelligence Unit",
+    "entity": "Provincial Government of Bataan",
+    "entityScope": "provincial",
+    "charterEdition": "2026 1st Edition",
+    "serviceCount": 3,
+    "examples": [
+      "Assistance to Internal / External Clients during Events",
+      "Incident Report",
+      "Investigation Report"
+    ],
+    "howToRead": "This service is provided by the Provincial Government of Bataan, not by the Municipality of Limay. Contact the Capitol Security Intelligence Unit. Any fee or processing time is the province's, and is set out in its Citizen's Charter (2026 1st Edition).",
+    "provenance": {
+      "source_name": "Provincial Government of Bataan",
+      "retrieved_at": "2026-09-23",
+      "verified": true,
+      "verification_note": "Transcribed from the published Citizen's Charter index named in this record's source.",
+      "source_document": "Provincial Government of Bataan Citizen's Charter, 2026 1st Edition",
+      "source_page": 435
+    },
+    "charterPage": 435
+  },
+  {
+    "id": "referral-bataan-iskolar-ng-bataan",
+    "office": "Iskolar ng Bataan",
+    "entity": "Provincial Government of Bataan",
+    "entityScope": "provincial",
+    "charterEdition": "2026 1st Edition",
+    "serviceCount": 20,
+    "examples": [
+      "Application for Professional Eligibility Review Assistance",
+      "ATM Card Enrollment for Scholarship Beneficiaries",
+      "Awarding of Professional Eligibility Review Assistance",
+      "Awarding of Scholarship Grants to Gurong Iskolar and Vocational Iskolar"
+    ],
+    "howToRead": "This service is provided by the Provincial Government of Bataan, not by the Municipality of Limay. Contact the Iskolar ng Bataan. Any fee or processing time is the province's, and is set out in its Citizen's Charter (2026 1st Edition).",
+    "provenance": {
+      "source_name": "Provincial Government of Bataan",
+      "retrieved_at": "2026-09-23",
+      "verified": true,
+      "verification_note": "Transcribed from the published Citizen's Charter index named in this record's source.",
+      "source_document": "Provincial Government of Bataan Citizen's Charter, 2026 1st Edition",
+      "source_page": 46
+    },
+    "charterPage": 46
+  },
+  {
+    "id": "referral-bataan-jose-c-payumo-jr-memorial-hospital-external-services",
+    "office": "Jose C. Payumo Jr. Memorial Hospital External Services",
+    "entity": "Provincial Government of Bataan",
+    "entityScope": "provincial",
+    "charterEdition": "2026 1st Edition",
+    "serviceCount": 27,
+    "examples": [
+      "Admission",
+      "Animal Bite Treatment Center",
+      "Antiretroviral (ARV) Refill",
+      "Antiretroviral Treatment Initiation (HIV/Hepa B)"
+    ],
+    "howToRead": "This service is provided by the Provincial Government of Bataan, not by the Municipality of Limay. Contact the Jose C. Payumo Jr. Memorial Hospital External Services. Any fee or processing time is the province's, and is set out in its Citizen's Charter (2026 1st Edition).",
+    "provenance": {
+      "source_name": "Provincial Government of Bataan",
+      "retrieved_at": "2026-09-23",
+      "verified": true,
+      "verification_note": "Transcribed from the published Citizen's Charter index named in this record's source.",
+      "source_document": "Provincial Government of Bataan Citizen's Charter, 2026 1st Edition",
+      "source_page": 457
+    },
+    "charterPage": 457
+  },
+  {
+    "id": "referral-bataan-metro-bataan-development-authority-external-services",
+    "office": "Metro Bataan Development Authority External Services",
+    "entity": "Provincial Government of Bataan",
+    "entityScope": "provincial",
+    "charterEdition": "2026 1st Edition",
+    "serviceCount": 5,
+    "examples": [
+      "Bataan 911 and MBDA hotline emergency calls and emergency response by MBDA medics and or MBDA enforcers",
+      "CCTV footage request for copy for court use and MBDA representation for court hearing",
+      "CCTV footage review and request for PNP copy",
+      "Request for ambulance assistance"
+    ],
+    "howToRead": "This service is provided by the Provincial Government of Bataan, not by the Municipality of Limay. Contact the Metro Bataan Development Authority External Services. Any fee or processing time is the province's, and is set out in its Citizen's Charter (2026 1st Edition).",
+    "provenance": {
+      "source_name": "Provincial Government of Bataan",
+      "retrieved_at": "2026-09-23",
+      "verified": true,
+      "verification_note": "Transcribed from the published Citizen's Charter index named in this record's source.",
+      "source_document": "Provincial Government of Bataan Citizen's Charter, 2026 1st Edition",
+      "source_page": 418
+    },
+    "charterPage": 418
+  },
+  {
+    "id": "referral-bataan-office-of-strategy-management",
+    "office": "Office of Strategy Management",
+    "entity": "Provincial Government of Bataan",
+    "entityScope": "provincial",
+    "charterEdition": "2026 1st Edition",
+    "serviceCount": 2,
+    "examples": [
+      "Strategic Initiatives Profile Request for Adjustment",
+      "Automated Performance Management System Requests"
+    ],
+    "howToRead": "This service is provided by the Provincial Government of Bataan, not by the Municipality of Limay. Contact the Office of Strategy Management. Any fee or processing time is the province's, and is set out in its Citizen's Charter (2026 1st Edition).",
+    "provenance": {
+      "source_name": "Provincial Government of Bataan",
+      "retrieved_at": "2026-09-23",
+      "verified": true,
+      "verification_note": "Transcribed from the published Citizen's Charter index named in this record's source.",
+      "source_document": "Provincial Government of Bataan Citizen's Charter, 2026 1st Edition",
+      "source_page": 77
+    },
+    "charterPage": 77
+  },
+  {
+    "id": "referral-bataan-office-of-the-provincial-accountant-external-service",
+    "office": "Office of the Provincial Accountant External Service",
+    "entity": "Provincial Government of Bataan",
+    "entityScope": "provincial",
+    "charterEdition": "2026 1st Edition",
+    "serviceCount": 1,
+    "examples": [
+      "Issuance of Certification of Collectible Final Payment"
+    ],
+    "howToRead": "This service is provided by the Provincial Government of Bataan, not by the Municipality of Limay. Contact the Office of the Provincial Accountant External Service. Any fee or processing time is the province's, and is set out in its Citizen's Charter (2026 1st Edition).",
+    "provenance": {
+      "source_name": "Provincial Government of Bataan",
+      "retrieved_at": "2026-09-23",
+      "verified": true,
+      "verification_note": "Transcribed from the published Citizen's Charter index named in this record's source.",
+      "source_document": "Provincial Government of Bataan Citizen's Charter, 2026 1st Edition",
+      "source_page": 111
+    },
+    "charterPage": 111
+  },
+  {
+    "id": "referral-bataan-office-of-the-provincial-administrator-external-services",
+    "office": "Office of the Provincial Administrator External Services",
+    "entity": "Provincial Government of Bataan",
+    "entityScope": "provincial",
+    "charterEdition": "2026 1st Edition",
+    "serviceCount": 2,
+    "examples": [
+      "Issuance of Certification of Posting for Energy Regulatory Commission Compliance",
+      "Receiving and Management of Incoming Communications"
+    ],
+    "howToRead": "This service is provided by the Provincial Government of Bataan, not by the Municipality of Limay. Contact the Office of the Provincial Administrator External Services. Any fee or processing time is the province's, and is set out in its Citizen's Charter (2026 1st Edition).",
+    "provenance": {
+      "source_name": "Provincial Government of Bataan",
+      "retrieved_at": "2026-09-23",
+      "verified": true,
+      "verification_note": "Transcribed from the published Citizen's Charter index named in this record's source.",
+      "source_document": "Provincial Government of Bataan Citizen's Charter, 2026 1st Edition",
+      "source_page": 80
+    },
+    "charterPage": 80
+  },
+  {
+    "id": "referral-bataan-office-of-the-provincial-agriculturist-external-services",
+    "office": "Office of the Provincial Agriculturist External Services",
+    "entity": "Provincial Government of Bataan",
+    "entityScope": "provincial",
+    "charterEdition": "2026 1st Edition",
+    "serviceCount": 10,
+    "examples": [
+      "Livelihood Trainings to Farmer Groups & Rural Based Organizations",
+      "Provision of Assorted Repacked Vegetable Seeds and Fruit-bearing Tree Seedlings",
+      "Provision of Tilapia Fingerlings",
+      "Provision of Molasses and Soil Ameliorant Liquid Root Exudates"
+    ],
+    "howToRead": "This service is provided by the Provincial Government of Bataan, not by the Municipality of Limay. Contact the Office of the Provincial Agriculturist External Services. Any fee or processing time is the province's, and is set out in its Citizen's Charter (2026 1st Edition).",
+    "provenance": {
+      "source_name": "Provincial Government of Bataan",
+      "retrieved_at": "2026-09-23",
+      "verified": true,
+      "verification_note": "Transcribed from the published Citizen's Charter index named in this record's source.",
+      "source_document": "Provincial Government of Bataan Citizen's Charter, 2026 1st Edition",
+      "source_page": 335
+    },
+    "charterPage": 335
+  },
+  {
+    "id": "referral-bataan-office-of-the-provincial-assessor-external-services",
+    "office": "Office of the Provincial Assessor External Services",
+    "entity": "Provincial Government of Bataan",
+    "entityScope": "provincial",
+    "charterEdition": "2026 1st Edition",
+    "serviceCount": 21,
+    "examples": [
+      "Appraisal of Real Property/ies",
+      "Certification of Improvement",
+      "Certification of No Property Holdings",
+      "Certification of Property Holdings"
+    ],
+    "howToRead": "This service is provided by the Provincial Government of Bataan, not by the Municipality of Limay. Contact the Office of the Provincial Assessor External Services. Any fee or processing time is the province's, and is set out in its Citizen's Charter (2026 1st Edition).",
+    "provenance": {
+      "source_name": "Provincial Government of Bataan",
+      "retrieved_at": "2026-09-23",
+      "verified": true,
+      "verification_note": "Transcribed from the published Citizen's Charter index named in this record's source.",
+      "source_document": "Provincial Government of Bataan Citizen's Charter, 2026 1st Edition",
+      "source_page": 117
+    },
+    "charterPage": 117
+  },
+  {
+    "id": "referral-bataan-office-of-the-provincial-cooperative-and-enterprise-development-officer-external-services",
+    "office": "Office of the Provincial Cooperative and Enterprise Development Officer External Services",
+    "entity": "Provincial Government of Bataan",
+    "entityScope": "provincial",
+    "charterEdition": "2026 1st Edition",
+    "serviceCount": 8,
+    "examples": [
+      "Assistance In the Registration of Cooperatives",
+      "Galing! Bataan Brand Development Program Accreditation",
+      "Inquiries about Trade Fairs for Bataan MSMEs Engaged into Food Processing and Non-Food Manufacturing",
+      "Inquiries to join Enterprise Development Related Trainings, Seminars, Online trainings, Webinar"
+    ],
+    "howToRead": "This service is provided by the Provincial Government of Bataan, not by the Municipality of Limay. Contact the Office of the Provincial Cooperative and Enterprise Development Officer External Services. Any fee or processing time is the province's, and is set out in its Citizen's Charter (2026 1st Edition).",
+    "provenance": {
+      "source_name": "Provincial Government of Bataan",
+      "retrieved_at": "2026-09-23",
+      "verified": true,
+      "verification_note": "Transcribed from the published Citizen's Charter index named in this record's source.",
+      "source_document": "Provincial Government of Bataan Citizen's Charter, 2026 1st Edition",
+      "source_page": 380
+    },
+    "charterPage": 380
+  },
+  {
+    "id": "referral-bataan-office-of-the-provincial-engineer-external-services",
+    "office": "Office of the Provincial Engineer External Services",
+    "entity": "Provincial Government of Bataan",
+    "entityScope": "provincial",
+    "charterEdition": "2026 1st Edition",
+    "serviceCount": 11,
+    "examples": [
+      "Order of Payment - Copy of Approved Technical Documents (Program of Works (POW) or Plans and Project Payment Documents) - (For End-User/Contractor)",
+      "Order of Payment - Copy of Approved Program of Works (POW) or Plans (for School)",
+      "Quality Control - Order of Payment and Grading Test Result",
+      "Quality Control- Order of Payment and Field Density Test Result"
+    ],
+    "howToRead": "This service is provided by the Provincial Government of Bataan, not by the Municipality of Limay. Contact the Office of the Provincial Engineer External Services. Any fee or processing time is the province's, and is set out in its Citizen's Charter (2026 1st Edition).",
+    "provenance": {
+      "source_name": "Provincial Government of Bataan",
+      "retrieved_at": "2026-09-23",
+      "verified": true,
+      "verification_note": "Transcribed from the published Citizen's Charter index named in this record's source.",
+      "source_document": "Provincial Government of Bataan Citizen's Charter, 2026 1st Edition",
+      "source_page": 285
+    },
+    "charterPage": 285
+  },
+  {
+    "id": "referral-bataan-office-of-the-provincial-general-services-officer-external-services",
+    "office": "Office of the Provincial General Services Officer External Services",
+    "entity": "Provincial Government of Bataan",
+    "entityScope": "provincial",
+    "charterEdition": "2026 1st Edition",
+    "serviceCount": 5,
+    "examples": [
+      "Bataan People Center Reservation",
+      "1Bataan Dormitory and Training Center Reservation",
+      "BPCC Daily Selling Vendors",
+      "BPCC Event Selling Vendors"
+    ],
+    "howToRead": "This service is provided by the Provincial Government of Bataan, not by the Municipality of Limay. Contact the Office of the Provincial General Services Officer External Services. Any fee or processing time is the province's, and is set out in its Citizen's Charter (2026 1st Edition).",
+    "provenance": {
+      "source_name": "Provincial Government of Bataan",
+      "retrieved_at": "2026-09-23",
+      "verified": true,
+      "verification_note": "Transcribed from the published Citizen's Charter index named in this record's source.",
+      "source_document": "Provincial Government of Bataan Citizen's Charter, 2026 1st Edition",
+      "source_page": 224
+    },
+    "charterPage": 224
+  },
+  {
+    "id": "referral-bataan-office-of-the-provincial-governor-external-services",
+    "office": "Office of the Provincial Governor External Services",
+    "entity": "Provincial Government of Bataan",
+    "entityScope": "provincial",
+    "charterEdition": "2026 1st Edition",
+    "serviceCount": 7,
+    "examples": [
+      "Request of Financial Assistance Aid to Families of Deceased Barangay Public Safety Officer",
+      "Request of Financial Assistance From Private Individuals for Educational Assistance",
+      "Request of Financial Assistance From Private Individuals (Sports League/ Basketball)",
+      "Request of Financial Assistance from LGUs/NGOs/NGA's (NGOs/NGA's)"
+    ],
+    "howToRead": "This service is provided by the Provincial Government of Bataan, not by the Municipality of Limay. Contact the Office of the Provincial Governor External Services. Any fee or processing time is the province's, and is set out in its Citizen's Charter (2026 1st Edition).",
+    "provenance": {
+      "source_name": "Provincial Government of Bataan",
+      "retrieved_at": "2026-09-23",
+      "verified": true,
+      "verification_note": "Transcribed from the published Citizen's Charter index named in this record's source.",
+      "source_document": "Provincial Government of Bataan Citizen's Charter, 2026 1st Edition",
+      "source_page": 29
+    },
+    "charterPage": 29
+  },
+  {
+    "id": "referral-bataan-office-of-the-provincial-health-officer-external-services",
+    "office": "Office of the Provincial Health Officer External Services",
+    "entity": "Provincial Government of Bataan",
+    "entityScope": "provincial",
+    "charterEdition": "2026 1st Edition",
+    "serviceCount": 2,
+    "examples": [
+      "Clinical Laboratory",
+      "Water Laboratory"
+    ],
+    "howToRead": "This service is provided by the Provincial Government of Bataan, not by the Municipality of Limay. Contact the Office of the Provincial Health Officer External Services. Any fee or processing time is the province's, and is set out in its Citizen's Charter (2026 1st Edition).",
+    "provenance": {
+      "source_name": "Provincial Government of Bataan",
+      "retrieved_at": "2026-09-23",
+      "verified": true,
+      "verification_note": "Transcribed from the published Citizen's Charter index named in this record's source.",
+      "source_document": "Provincial Government of Bataan Citizen's Charter, 2026 1st Edition",
+      "source_page": 449
+    },
+    "charterPage": 449
+  },
+  {
+    "id": "referral-bataan-office-of-the-provincial-human-resource-management-officer-external-service",
+    "office": "Office of the Provincial Human Resource Management Officer External Service",
+    "entity": "Provincial Government of Bataan",
+    "entityScope": "provincial",
+    "charterEdition": "2026 1st Edition",
+    "serviceCount": 1,
+    "examples": [
+      "Student Internship Services"
+    ],
+    "howToRead": "This service is provided by the Provincial Government of Bataan, not by the Municipality of Limay. Contact the Office of the Provincial Human Resource Management Officer External Service. Any fee or processing time is the province's, and is set out in its Citizen's Charter (2026 1st Edition).",
+    "provenance": {
+      "source_name": "Provincial Government of Bataan",
+      "retrieved_at": "2026-09-23",
+      "verified": true,
+      "verification_note": "Transcribed from the published Citizen's Charter index named in this record's source.",
+      "source_document": "Provincial Government of Bataan Citizen's Charter, 2026 1st Edition",
+      "source_page": 92
+    },
+    "charterPage": 92
+  },
+  {
+    "id": "referral-bataan-office-of-the-provincial-legal-officer-external-service",
+    "office": "Office of the Provincial Legal Officer External Service",
+    "entity": "Provincial Government of Bataan",
+    "entityScope": "provincial",
+    "charterEdition": "2026 1st Edition",
+    "serviceCount": 1,
+    "examples": [
+      "Legal Assistance/ Investigation / Representation (Documentation and Research)"
+    ],
+    "howToRead": "This service is provided by the Provincial Government of Bataan, not by the Municipality of Limay. Contact the Office of the Provincial Legal Officer External Service. Any fee or processing time is the province's, and is set out in its Citizen's Charter (2026 1st Edition).",
+    "provenance": {
+      "source_name": "Provincial Government of Bataan",
+      "retrieved_at": "2026-09-23",
+      "verified": true,
+      "verification_note": "Transcribed from the published Citizen's Charter index named in this record's source.",
+      "source_document": "Provincial Government of Bataan Citizen's Charter, 2026 1st Edition",
+      "source_page": 89
+    },
+    "charterPage": 89
+  },
+  {
+    "id": "referral-bataan-office-of-the-provincial-planning-and-development-coordinator-external-service",
+    "office": "Office of the Provincial Planning and Development Coordinator External Service",
+    "entity": "Provincial Government of Bataan",
+    "entityScope": "provincial",
+    "charterEdition": "2026 1st Edition",
+    "serviceCount": 1,
+    "examples": [
+      "Provision of Sectoral Information and Data About the Province and its Development Plans"
+    ],
+    "howToRead": "This service is provided by the Provincial Government of Bataan, not by the Municipality of Limay. Contact the Office of the Provincial Planning and Development Coordinator External Service. Any fee or processing time is the province's, and is set out in its Citizen's Charter (2026 1st Edition).",
+    "provenance": {
+      "source_name": "Provincial Government of Bataan",
+      "retrieved_at": "2026-09-23",
+      "verified": true,
+      "verification_note": "Transcribed from the published Citizen's Charter index named in this record's source.",
+      "source_document": "Provincial Government of Bataan Citizen's Charter, 2026 1st Edition",
+      "source_page": 262
+    },
+    "charterPage": 262
+  },
+  {
+    "id": "referral-bataan-office-of-the-provincial-population-officer-external-services",
+    "office": "Office of the Provincial Population Officer External Services",
+    "entity": "Provincial Government of Bataan",
+    "entityScope": "provincial",
+    "charterEdition": "2026 1st Edition",
+    "serviceCount": 7,
+    "examples": [
+      "Population and Development Integration (Registry of Barangay Inhabitants and Migrants",
+      "Provision of POPDEV and GAD Data, Information and Reports",
+      "Provision of Pre-Marriage Orientation and Counseling (City/Municipal level)",
+      "Teen Information Center"
+    ],
+    "howToRead": "This service is provided by the Provincial Government of Bataan, not by the Municipality of Limay. Contact the Office of the Provincial Population Officer External Services. Any fee or processing time is the province's, and is set out in its Citizen's Charter (2026 1st Edition).",
+    "provenance": {
+      "source_name": "Provincial Government of Bataan",
+      "retrieved_at": "2026-09-23",
+      "verified": true,
+      "verification_note": "Transcribed from the published Citizen's Charter index named in this record's source.",
+      "source_document": "Provincial Government of Bataan Citizen's Charter, 2026 1st Edition",
+      "source_page": 393
+    },
+    "charterPage": 393
+  },
+  {
+    "id": "referral-bataan-office-of-the-provincial-public-employment-service-manager-external-services",
+    "office": "Office of the Provincial Public Employment Service Manager External Services",
+    "entity": "Provincial Government of Bataan",
+    "entityScope": "provincial",
+    "charterEdition": "2026 1st Edition",
+    "serviceCount": 12,
+    "examples": [
+      "Assistance to Bataeno OFWs",
+      "Assistance to Municipal PESOs",
+      "Career Guidance and Employment Coaching",
+      "Facilitation of Skills Training"
+    ],
+    "howToRead": "This service is provided by the Provincial Government of Bataan, not by the Municipality of Limay. Contact the Office of the Provincial Public Employment Service Manager External Services. Any fee or processing time is the province's, and is set out in its Citizen's Charter (2026 1st Edition).",
+    "provenance": {
+      "source_name": "Provincial Government of Bataan",
+      "retrieved_at": "2026-09-23",
+      "verified": true,
+      "verification_note": "Transcribed from the published Citizen's Charter index named in this record's source.",
+      "source_document": "Provincial Government of Bataan Citizen's Charter, 2026 1st Edition",
+      "source_page": 244
+    },
+    "charterPage": 244
+  },
+  {
+    "id": "referral-bataan-office-of-the-provincial-treasurer-external-services",
+    "office": "Office of the Provincial Treasurer External Services",
+    "entity": "Provincial Government of Bataan",
+    "entityScope": "provincial",
+    "charterEdition": "2026 1st Edition",
+    "serviceCount": 6,
+    "examples": [
+      "Issuance and Payment of Accountable Forms",
+      "Issuance of Certificate of Posting",
+      "Issuance of Certified Photocopy of Office Documents",
+      "Issuance of Check/Cash (Payment of Various Obligations)"
+    ],
+    "howToRead": "This service is provided by the Provincial Government of Bataan, not by the Municipality of Limay. Contact the Office of the Provincial Treasurer External Services. Any fee or processing time is the province's, and is set out in its Citizen's Charter (2026 1st Edition).",
+    "provenance": {
+      "source_name": "Provincial Government of Bataan",
+      "retrieved_at": "2026-09-23",
+      "verified": true,
+      "verification_note": "Transcribed from the published Citizen's Charter index named in this record's source.",
+      "source_document": "Provincial Government of Bataan Citizen's Charter, 2026 1st Edition",
+      "source_page": 167
+    },
+    "charterPage": 167
+  },
+  {
+    "id": "referral-bataan-office-of-the-provincial-veterinarian-external-services",
+    "office": "Office of the Provincial Veterinarian External Services",
+    "entity": "Provincial Government of Bataan",
+    "entityScope": "provincial",
+    "charterEdition": "2026 1st Edition",
+    "serviceCount": 9,
+    "examples": [
+      "Accreditation of Commercial Poultry Breeder Farms",
+      "Artificial Insemination of Large Ruminants",
+      "Issuance of Shipping Permits",
+      "Issuance of Veterinary Health Certificates"
+    ],
+    "howToRead": "This service is provided by the Provincial Government of Bataan, not by the Municipality of Limay. Contact the Office of the Provincial Veterinarian External Services. Any fee or processing time is the province's, and is set out in its Citizen's Charter (2026 1st Edition).",
+    "provenance": {
+      "source_name": "Provincial Government of Bataan",
+      "retrieved_at": "2026-09-23",
+      "verified": true,
+      "verification_note": "Transcribed from the published Citizen's Charter index named in this record's source.",
+      "source_document": "Provincial Government of Bataan Citizen's Charter, 2026 1st Edition",
+      "source_page": 364
+    },
+    "charterPage": 364
+  },
+  {
+    "id": "referral-bataan-office-of-the-sangguniang-panlalawigan-external-services",
+    "office": "Office of the Sangguniang Panlalawigan External Services",
+    "entity": "Provincial Government of Bataan",
+    "entityScope": "provincial",
+    "charterEdition": "2026 1st Edition",
+    "serviceCount": 4,
+    "examples": [
+      "Accreditation of Civil Society Organizations",
+      "Filing of Administrative Complaints against erring Elected Officials",
+      "Filing of Administrative Appeals in the decisions of the lower Sanggunian",
+      "Issuance of Certifications, and Copy and Certified True Copy of Public Records"
+    ],
+    "howToRead": "This service is provided by the Provincial Government of Bataan, not by the Municipality of Limay. Contact the Office of the Sangguniang Panlalawigan External Services. Any fee or processing time is the province's, and is set out in its Citizen's Charter (2026 1st Edition).",
+    "provenance": {
+      "source_name": "Provincial Government of Bataan",
+      "retrieved_at": "2026-09-23",
+      "verified": true,
+      "verification_note": "Transcribed from the published Citizen's Charter index named in this record's source.",
+      "source_document": "Provincial Government of Bataan Citizen's Charter, 2026 1st Edition",
+      "source_page": 83
+    },
+    "charterPage": 83
+  },
+  {
+    "id": "referral-bataan-office-provincial-disaster-risk-reduction-and-management-officer-external-services",
+    "office": "Office Provincial Disaster Risk Reduction and Management Officer External Services",
+    "entity": "Provincial Government of Bataan",
+    "entityScope": "provincial",
+    "charterEdition": "2026 1st Edition",
+    "serviceCount": 5,
+    "examples": [
+      "Activation of event / Incident Command System",
+      "Conduct of Disaster Risk Reduction and Management (DRRM) Training",
+      "Provision of Equipment / Tools / Accessories / Vehicle Resources",
+      "Provision of Manpower Resources for Training Facilitation"
+    ],
+    "howToRead": "This service is provided by the Provincial Government of Bataan, not by the Municipality of Limay. Contact the Office Provincial Disaster Risk Reduction and Management Officer External Services. Any fee or processing time is the province's, and is set out in its Citizen's Charter (2026 1st Edition).",
+    "provenance": {
+      "source_name": "Provincial Government of Bataan",
+      "retrieved_at": "2026-09-23",
+      "verified": true,
+      "verification_note": "Transcribed from the published Citizen's Charter index named in this record's source.",
+      "source_document": "Provincial Government of Bataan Citizen's Charter, 2026 1st Edition",
+      "source_page": 424
+    },
+    "charterPage": 424
+  },
+  {
+    "id": "referral-bataan-office-provincial-government-environment-and-natural-resources-officer-external-services",
+    "office": "Office Provincial Government—Environment and Natural Resources Officer External Services",
+    "entity": "Provincial Government of Bataan",
+    "entityScope": "provincial",
+    "charterEdition": "2026 1st Edition",
+    "serviceCount": 8,
+    "examples": [
+      "Issuance of Certificate of Environmental Compliance",
+      "Issuance of Private Gratuitous Permit",
+      "Issuance of Small-Scale Mining Permits (Quarry Permit, Industrial Sand and Gravel Permit, Commercial Sand and Gravel Permit)",
+      "Protection and Conservation of Wildlife/ Technical Assistance on Wildlife Rescue"
+    ],
+    "howToRead": "This service is provided by the Provincial Government of Bataan, not by the Municipality of Limay. Contact the Office Provincial Government—Environment and Natural Resources Officer External Services. Any fee or processing time is the province's, and is set out in its Citizen's Charter (2026 1st Edition).",
+    "provenance": {
+      "source_name": "Provincial Government of Bataan",
+      "retrieved_at": "2026-09-23",
+      "verified": true,
+      "verification_note": "Transcribed from the published Citizen's Charter index named in this record's source.",
+      "source_document": "Provincial Government of Bataan Citizen's Charter, 2026 1st Edition",
+      "source_page": 346
+    },
+    "charterPage": 346
+  },
+  {
+    "id": "referral-bataan-office-provincial-social-welfare-and-development-officer-external-service",
+    "office": "Office Provincial Social Welfare and Development Officer External Service",
+    "entity": "Provincial Government of Bataan",
+    "entityScope": "provincial",
+    "charterEdition": "2026 1st Edition",
+    "serviceCount": 1,
+    "examples": [
+      "Support Services to Individuals in Crisis"
+    ],
+    "howToRead": "This service is provided by the Provincial Government of Bataan, not by the Municipality of Limay. Contact the Office Provincial Social Welfare and Development Officer External Service. Any fee or processing time is the province's, and is set out in its Citizen's Charter (2026 1st Edition).",
+    "provenance": {
+      "source_name": "Provincial Government of Bataan",
+      "retrieved_at": "2026-09-23",
+      "verified": true,
+      "verification_note": "Transcribed from the published Citizen's Charter index named in this record's source.",
+      "source_document": "Provincial Government of Bataan Citizen's Charter, 2026 1st Edition",
+      "source_page": 407
+    },
+    "charterPage": 407
+  },
+  {
+    "id": "referral-bataan-office-provincial-tourism-officer-external-services",
+    "office": "Office Provincial Tourism Officer External Services",
+    "entity": "Provincial Government of Bataan",
+    "entityScope": "provincial",
+    "charterEdition": "2026 1st Edition",
+    "serviceCount": 5,
+    "examples": [
+      "Assistance to Applicants for DOT Accreditation",
+      "Assistance to Tour Guide for DOT Accreditation",
+      "Assistance to Applicants for Guests and Tourists",
+      "Assistance to Student and Researchers"
+    ],
+    "howToRead": "This service is provided by the Provincial Government of Bataan, not by the Municipality of Limay. Contact the Office Provincial Tourism Officer External Services. Any fee or processing time is the province's, and is set out in its Citizen's Charter (2026 1st Edition).",
+    "provenance": {
+      "source_name": "Provincial Government of Bataan",
+      "retrieved_at": "2026-09-23",
+      "verified": true,
+      "verification_note": "Transcribed from the published Citizen's Charter index named in this record's source.",
+      "source_document": "Provincial Government of Bataan Citizen's Charter, 2026 1st Edition",
+      "source_page": 412
+    },
+    "charterPage": 412
+  },
+  {
+    "id": "referral-bataan-procurement-management-division-bids-and-awards-committee",
+    "office": "Procurement Management Division ( Bids and Awards Committee )",
+    "entity": "Provincial Government of Bataan",
+    "entityScope": "provincial",
+    "charterEdition": "2026 1st Edition",
+    "serviceCount": 1,
+    "examples": [
+      "Issuance of Bidding Documents"
+    ],
+    "howToRead": "This service is provided by the Provincial Government of Bataan, not by the Municipality of Limay. Contact the Procurement Management Division ( Bids and Awards Committee ). Any fee or processing time is the province's, and is set out in its Citizen's Charter (2026 1st Edition).",
+    "provenance": {
+      "source_name": "Provincial Government of Bataan",
+      "retrieved_at": "2026-09-23",
+      "verified": true,
+      "verification_note": "Transcribed from the published Citizen's Charter index named in this record's source.",
+      "source_document": "Provincial Government of Bataan Citizen's Charter, 2026 1st Edition",
+      "source_page": 37
+    },
+    "charterPage": 37
+  },
+  {
+    "id": "referral-bataan-special-assistance-program-1-bataan-bagong-pilipinas-integrated-action-center",
+    "office": "Special Assistance Program & 1 Bataan Bagong Pilipinas Integrated Action Center",
+    "entity": "Provincial Government of Bataan",
+    "entityScope": "provincial",
+    "charterEdition": "2026 1st Edition",
+    "serviceCount": 2,
+    "examples": [
+      "Financial Assistance thru DSWD",
+      "Guarantee Letter"
+    ],
+    "howToRead": "This service is provided by the Provincial Government of Bataan, not by the Municipality of Limay. Contact the Special Assistance Program & 1 Bataan Bagong Pilipinas Integrated Action Center. Any fee or processing time is the province's, and is set out in its Citizen's Charter (2026 1st Edition).",
+    "provenance": {
+      "source_name": "Provincial Government of Bataan",
+      "retrieved_at": "2026-09-23",
+      "verified": true,
+      "verification_note": "Transcribed from the published Citizen's Charter index named in this record's source.",
+      "source_document": "Provincial Government of Bataan Citizen's Charter, 2026 1st Edition",
+      "source_page": 40
+    },
+    "charterPage": 40
+  }
+]

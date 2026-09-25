@@ -43,6 +43,31 @@
     },
     "processingTime": { "type": "string", "minLength": 1 },
     "responsibleOfficeId": { "type": "string", "minLength": 1 },
+    "responsibleOfficeName": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Office name as printed in the source, for records whose office is not in offices.json (peer-LGU references)."
+    },
+    "providerEntity": {
+      "type": "string",
+      "minLength": 1,
+      "description": "The entity that actually provides this service."
+    },
+    "providerScope": {
+      "type": "string",
+      "enum": ["municipal", "peer-lgu-reference", "provincial", "gocc", "national-agency"],
+      "description": "Anything other than 'municipal' MUST be rendered visibly. A peer-LGU record shows another municipality's process while Limay's own charter is unavailable; its fees and processing times are that municipality's facts, not Limay's."
+    },
+    "charterEdition": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Edition of the charter this record was taken from."
+    },
+    "sourcePage": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Page in that charter, so a maintainer can check the fee without re-reading the document."
+    },
     "sourceDocumentUrl": { "type": "string", "format": "uri" },
     "dataGapIds": {
       "type": "array",

@@ -6,10 +6,17 @@
   "required": ["id", "kind", "title", "year", "amount", "unit", "status", "sourceAgency", "howToRead", "provenance"],
   "properties": {
     "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
-    "kind": { "type": "string", "enum": ["budget", "procurement", "bid", "infrastructure"] },
+    "kind": {
+      "type": "string",
+      "enum": ["budget", "procurement", "bid", "infrastructure", "financial-statement"],
+      "description": "financial-statement covers audited statement line items, which are not a budget: a balance-sheet figure and an appropriation are different claims."
+    },
     "title": { "type": "string", "minLength": 1 },
     "year": { "type": "integer", "minimum": 1900, "maximum": 2200 },
-    "amount": { "type": ["number", "null"], "minimum": 0 },
+    "amount": {
+      "type": ["number", "null"],
+      "description": "Negative values are meaningful in audited statements (deductions, outflows, contra accounts), so there is no lower bound. Dropping the sign would misstate the figure."
+    },
     "unit": { "type": "string", "minLength": 1 },
     "status": { "type": "string", "minLength": 1 },
     "sourceAgency": { "type": "string", "minLength": 1 },

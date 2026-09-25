@@ -1,0 +1,2342 @@
+{
+  "sourceId": "bataan-provincial-citizens-charter-2026",
+  "sourceName": "Provincial Government of Bataan Citizen's Charter, 2026 1st Edition",
+  "entity": "Provincial Government of Bataan",
+  "kind": "service-index",
+  "model": "gemini-3.5-flash-lite",
+  "thinkingLevel": "low",
+  "pdfPageRange": [
+    14,
+    27
+  ],
+  "callCount": 1,
+  "usage": {
+    "prompt": 7586,
+    "output": 12552,
+    "thoughts": 0,
+    "cached": 0
+  },
+  "note": "Machine-extracted and not yet human-reviewed. Gemini returns no confidence scores or coordinates, so every figure needs checking against the source before promotion. Publication additionally requires an exact public source URL in sources/sources.yml.",
+  "records": [
+    {
+      "office": "Office of the Provincial Governor External Services",
+      "serviceName": "Request of Financial Assistance Aid to Families of Deceased Barangay Public Safety Officer",
+      "listedPage": 29,
+      "documentPage": 1,
+      "printedPage": 14,
+      "pdfPage": 14
+    },
+    {
+      "office": "Office of the Provincial Governor External Services",
+      "serviceName": "Request of Financial Assistance From Private Individuals for Educational Assistance",
+      "listedPage": 30,
+      "documentPage": 1,
+      "printedPage": 14,
+      "pdfPage": 14
+    },
+    {
+      "office": "Office of the Provincial Governor External Services",
+      "serviceName": "Request of Financial Assistance From Private Individuals (Sports League/ Basketball)",
+      "listedPage": 31,
+      "documentPage": 1,
+      "printedPage": 14,
+      "pdfPage": 14
+    },
+    {
+      "office": "Office of the Provincial Governor External Services",
+      "serviceName": "Request of Financial Assistance from LGUs/NGOs/NGA's (NGOs/NGA's)",
+      "listedPage": 32,
+      "documentPage": 1,
+      "printedPage": 14,
+      "pdfPage": 14
+    },
+    {
+      "office": "Office of the Provincial Governor External Services",
+      "serviceName": "Request of Financial Assistance from LGUs/NGA's",
+      "listedPage": 33,
+      "documentPage": 1,
+      "printedPage": 14,
+      "pdfPage": 14
+    },
+    {
+      "office": "Office of the Provincial Governor External Services",
+      "serviceName": "Request of Financial Assistance from Senior Citizens",
+      "listedPage": 34,
+      "documentPage": 1,
+      "printedPage": 14,
+      "pdfPage": 14
+    },
+    {
+      "office": "Office of the Provincial Governor External Services",
+      "serviceName": "Request of Financial Assistance from Trial Court",
+      "listedPage": 35,
+      "documentPage": 1,
+      "printedPage": 14,
+      "pdfPage": 14
+    },
+    {
+      "office": "Procurement Management Division ( Bids and Awards Committee )",
+      "serviceName": "Issuance of Bidding Documents",
+      "listedPage": 37,
+      "documentPage": 1,
+      "printedPage": 14,
+      "pdfPage": 14
+    },
+    {
+      "office": "Special Assistance Program & 1 Bataan Bagong Pilipinas Integrated Action Center",
+      "serviceName": "Financial Assistance thru DSWD",
+      "listedPage": 40,
+      "documentPage": 1,
+      "printedPage": 14,
+      "pdfPage": 14
+    },
+    {
+      "office": "Special Assistance Program & 1 Bataan Bagong Pilipinas Integrated Action Center",
+      "serviceName": "Guarantee Letter",
+      "listedPage": 42,
+      "documentPage": 1,
+      "printedPage": 14,
+      "pdfPage": 14
+    },
+    {
+      "office": "Iskolar ng Bataan",
+      "serviceName": "Application for Professional Eligibility Review Assistance",
+      "listedPage": 46,
+      "documentPage": 1,
+      "printedPage": 14,
+      "pdfPage": 14
+    },
+    {
+      "office": "Iskolar ng Bataan",
+      "serviceName": "ATM Card Enrollment for Scholarship Beneficiaries",
+      "listedPage": 48,
+      "documentPage": 1,
+      "printedPage": 14,
+      "pdfPage": 14
+    },
+    {
+      "office": "Iskolar ng Bataan",
+      "serviceName": "Awarding of Professional Eligibility Review Assistance",
+      "listedPage": 49,
+      "documentPage": 1,
+      "printedPage": 14,
+      "pdfPage": 14
+    },
+    {
+      "office": "Iskolar ng Bataan",
+      "serviceName": "Awarding of Scholarship Grants to Gurong Iskolar and Vocational Iskolar",
+      "listedPage": 50,
+      "documentPage": 1,
+      "printedPage": 14,
+      "pdfPage": 14
+    },
+    {
+      "office": "Iskolar ng Bataan",
+      "serviceName": "Awarding of Top 30 per Municipality",
+      "listedPage": 51,
+      "documentPage": 1,
+      "printedPage": 14,
+      "pdfPage": 14
+    },
+    {
+      "office": "Iskolar ng Bataan",
+      "serviceName": "Cash Refund for PUP Mariveles and New Batch of Scholars",
+      "listedPage": 52,
+      "documentPage": 1,
+      "printedPage": 14,
+      "pdfPage": 14
+    },
+    {
+      "office": "Iskolar ng Bataan",
+      "serviceName": "General Assembly and Orientation for New Scholars",
+      "listedPage": 53,
+      "documentPage": 1,
+      "printedPage": 14,
+      "pdfPage": 14
+    },
+    {
+      "office": "Iskolar ng Bataan",
+      "serviceName": "General Assembly,Orientation and Contract Signing for Gurong Iskolars",
+      "listedPage": 54,
+      "documentPage": 1,
+      "printedPage": 14,
+      "pdfPage": 14
+    },
+    {
+      "office": "Iskolar ng Bataan",
+      "serviceName": "Gurong Iskolar Ng Bataan Masteral And Doctoral Program Application",
+      "listedPage": 55,
+      "documentPage": 1,
+      "printedPage": 14,
+      "pdfPage": 14
+    },
+    {
+      "office": "Iskolar ng Bataan",
+      "serviceName": "Iskolar ng Bataan Application - Online Registration For New Applicants",
+      "listedPage": 57,
+      "documentPage": 1,
+      "printedPage": 14,
+      "pdfPage": 14
+    },
+    {
+      "office": "Iskolar ng Bataan",
+      "serviceName": "Iskolar ng Bataan Application - Online Submission For New Applicants",
+      "listedPage": 58,
+      "documentPage": 1,
+      "printedPage": 14,
+      "pdfPage": 14
+    },
+    {
+      "office": "Iskolar ng Bataan",
+      "serviceName": "Iskolar ng Bataan Application - Online Submission For Qualified New Batch",
+      "listedPage": 60,
+      "documentPage": 2,
+      "printedPage": 15,
+      "pdfPage": 15
+    },
+    {
+      "office": "Iskolar ng Bataan",
+      "serviceName": "Orientation for Qualified Beneficiaries for Vocational Course Program",
+      "listedPage": 61,
+      "documentPage": 2,
+      "printedPage": 15,
+      "pdfPage": 15
+    },
+    {
+      "office": "Iskolar ng Bataan",
+      "serviceName": "Recognition and Cash Incentives for Board/Bar Top Notchers",
+      "listedPage": 62,
+      "documentPage": 2,
+      "printedPage": 15,
+      "pdfPage": 15
+    },
+    {
+      "office": "Iskolar ng Bataan",
+      "serviceName": "Replacement of Lost and Damaged ATM Cards",
+      "listedPage": 63,
+      "documentPage": 2,
+      "printedPage": 15,
+      "pdfPage": 15
+    },
+    {
+      "office": "Iskolar ng Bataan",
+      "serviceName": "Submission of Requirements for PUP Mariveles beneficiaries",
+      "listedPage": 64,
+      "documentPage": 2,
+      "printedPage": 15,
+      "pdfPage": 15
+    },
+    {
+      "office": "Iskolar ng Bataan",
+      "serviceName": "Thesis/Dissertation Refund for Gurong Iskolars",
+      "listedPage": 65,
+      "documentPage": 2,
+      "printedPage": 15,
+      "pdfPage": 15
+    },
+    {
+      "office": "Iskolar ng Bataan",
+      "serviceName": "Validation of Grades for Undergraduate Beneficiaries",
+      "listedPage": 66,
+      "documentPage": 2,
+      "printedPage": 15,
+      "pdfPage": 15
+    },
+    {
+      "office": "Iskolar ng Bataan",
+      "serviceName": "Validation of Grades for Gurong Iskolars",
+      "listedPage": 67,
+      "documentPage": 2,
+      "printedPage": 15,
+      "pdfPage": 15
+    },
+    {
+      "office": "Iskolar ng Bataan",
+      "serviceName": "Vocational Course Scholarship Program Application",
+      "listedPage": 69,
+      "documentPage": 2,
+      "printedPage": 15,
+      "pdfPage": 15
+    },
+    {
+      "office": "Agricultural and Biosystems Engineering Division",
+      "serviceName": "ABE Technical Assistance",
+      "listedPage": 71,
+      "documentPage": 2,
+      "printedPage": 15,
+      "pdfPage": 15
+    },
+    {
+      "office": "Agricultural and Biosystems Engineering Division",
+      "serviceName": "Provision and Construction of Agri-Fisheries Machineries and Postharvest Facilities and Equipment",
+      "listedPage": 72,
+      "documentPage": 2,
+      "printedPage": 15,
+      "pdfPage": 15
+    },
+    {
+      "office": "Agricultural and Biosystems Engineering Division",
+      "serviceName": "Assistance in the Construction of Agri-Infrastructure Projects",
+      "listedPage": 74,
+      "documentPage": 2,
+      "printedPage": 15,
+      "pdfPage": 15
+    },
+    {
+      "office": "Office of Strategy Management",
+      "serviceName": "Strategic Initiatives Profile Request for Adjustment",
+      "listedPage": 77,
+      "documentPage": 2,
+      "printedPage": 15,
+      "pdfPage": 15
+    },
+    {
+      "office": "Office of Strategy Management",
+      "serviceName": "Automated Performance Management System Requests",
+      "listedPage": 78,
+      "documentPage": 2,
+      "printedPage": 15,
+      "pdfPage": 15
+    },
+    {
+      "office": "Office of the Provincial Administrator External Services",
+      "serviceName": "Issuance of Certification of Posting for Energy Regulatory Commission Compliance",
+      "listedPage": 80,
+      "documentPage": 2,
+      "printedPage": 15,
+      "pdfPage": 15
+    },
+    {
+      "office": "Office of the Provincial Administrator External Services",
+      "serviceName": "Receiving and Management of Incoming Communications",
+      "listedPage": 81,
+      "documentPage": 2,
+      "printedPage": 15,
+      "pdfPage": 15
+    },
+    {
+      "office": "Office of the Sangguniang Panlalawigan External Services",
+      "serviceName": "Accreditation of Civil Society Organizations",
+      "listedPage": 83,
+      "documentPage": 2,
+      "printedPage": 15,
+      "pdfPage": 15
+    },
+    {
+      "office": "Office of the Sangguniang Panlalawigan External Services",
+      "serviceName": "Filing of Administrative Complaints against erring Elected Officials",
+      "listedPage": 84,
+      "documentPage": 2,
+      "printedPage": 15,
+      "pdfPage": 15
+    },
+    {
+      "office": "Office of the Sangguniang Panlalawigan External Services",
+      "serviceName": "Filing of Administrative Appeals in the decisions of the lower Sanggunian",
+      "listedPage": 85,
+      "documentPage": 2,
+      "printedPage": 15,
+      "pdfPage": 15
+    },
+    {
+      "office": "Office of the Sangguniang Panlalawigan External Services",
+      "serviceName": "Issuance of Certifications, and Copy and Certified True Copy of Public Records",
+      "listedPage": 86,
+      "documentPage": 2,
+      "printedPage": 15,
+      "pdfPage": 15
+    },
+    {
+      "office": "Office of the Provincial Legal Officer External Service",
+      "serviceName": "Legal Assistance/ Investigation / Representation (Documentation and Research)",
+      "listedPage": 89,
+      "documentPage": 3,
+      "printedPage": 16,
+      "pdfPage": 16
+    },
+    {
+      "office": "Office of the Provincial Human Resource Management Officer External Service",
+      "serviceName": "Student Internship Services",
+      "listedPage": 92,
+      "documentPage": 3,
+      "printedPage": 16,
+      "pdfPage": 16
+    },
+    {
+      "office": "Office of the Provincial Human Resource Management Officer Internal Services",
+      "serviceName": "Appointment Preparation/ Orientation (Regular Employees)",
+      "listedPage": 95,
+      "documentPage": 3,
+      "printedPage": 16,
+      "pdfPage": 16
+    },
+    {
+      "office": "Office of the Provincial Human Resource Management Officer Internal Services",
+      "serviceName": "Appointment Preparation/ Orientation and Processing of Job Order (JO)",
+      "listedPage": 98,
+      "documentPage": 3,
+      "printedPage": 16,
+      "pdfPage": 16
+    },
+    {
+      "office": "Office of the Provincial Human Resource Management Officer Internal Services",
+      "serviceName": "Employee Leave Administration",
+      "listedPage": 100,
+      "documentPage": 3,
+      "printedPage": 16,
+      "pdfPage": 16
+    },
+    {
+      "office": "Office of the Provincial Human Resource Management Officer Internal Services",
+      "serviceName": "Employee Grievance Settlement",
+      "listedPage": 101,
+      "documentPage": 3,
+      "printedPage": 16,
+      "pdfPage": 16
+    },
+    {
+      "office": "Office of the Provincial Human Resource Management Officer Internal Services",
+      "serviceName": "Job Application",
+      "listedPage": 102,
+      "documentPage": 3,
+      "printedPage": 16,
+      "pdfPage": 16
+    },
+    {
+      "office": "Office of the Provincial Human Resource Management Officer Internal Services",
+      "serviceName": "Payroll Preparation",
+      "listedPage": 105,
+      "documentPage": 3,
+      "printedPage": 16,
+      "pdfPage": 16
+    },
+    {
+      "office": "Office of the Provincial Human Resource Management Officer Internal Services",
+      "serviceName": "Request for Records File",
+      "listedPage": 106,
+      "documentPage": 3,
+      "printedPage": 16,
+      "pdfPage": 16
+    },
+    {
+      "office": "Office of the Provincial Accountant External Service",
+      "serviceName": "Issuance of Certification of Collectible Final Payment",
+      "listedPage": 111,
+      "documentPage": 3,
+      "printedPage": 16,
+      "pdfPage": 16
+    },
+    {
+      "office": "Office of the Provincial Accountant Internal Services",
+      "serviceName": "Issuance / Approval of Certification of Net Take Home Pay",
+      "listedPage": 114,
+      "documentPage": 3,
+      "printedPage": 16,
+      "pdfPage": 16
+    },
+    {
+      "office": "Office of the Provincial Accountant Internal Services",
+      "serviceName": "Issuance of Various Certifications",
+      "listedPage": 115,
+      "documentPage": 3,
+      "printedPage": 16,
+      "pdfPage": 16
+    },
+    {
+      "office": "Office of the Provincial Assessor External Services",
+      "serviceName": "Appraisal of Real Property/ies",
+      "listedPage": 117,
+      "documentPage": 3,
+      "printedPage": 16,
+      "pdfPage": 16
+    },
+    {
+      "office": "Office of the Provincial Assessor External Services",
+      "serviceName": "Certification of Improvement",
+      "listedPage": 118,
+      "documentPage": 3,
+      "printedPage": 16,
+      "pdfPage": 16
+    },
+    {
+      "office": "Office of the Provincial Assessor External Services",
+      "serviceName": "Certification of No Property Holdings",
+      "listedPage": 120,
+      "documentPage": 3,
+      "printedPage": 16,
+      "pdfPage": 16
+    },
+    {
+      "office": "Office of the Provincial Assessor External Services",
+      "serviceName": "Certification of Property Holdings",
+      "listedPage": 122,
+      "documentPage": 3,
+      "printedPage": 16,
+      "pdfPage": 16
+    },
+    {
+      "office": "Office of the Provincial Assessor External Services",
+      "serviceName": "Certified True Copy of Latest Tax Declaration",
+      "listedPage": 124,
+      "documentPage": 3,
+      "printedPage": 16,
+      "pdfPage": 16
+    },
+    {
+      "office": "Office of the Provincial Assessor External Services",
+      "serviceName": "Certified True Copy of Latest Tax Declaration with Annotation",
+      "listedPage": 126,
+      "documentPage": 3,
+      "printedPage": 16,
+      "pdfPage": 16
+    },
+    {
+      "office": "Office of the Provincial Assessor External Services",
+      "serviceName": "Certified Photocopy of Cancelled Tax Declaration (Trace Back of Cancelled Tax Declaration)",
+      "listedPage": 128,
+      "documentPage": 4,
+      "printedPage": 17,
+      "pdfPage": 17
+    },
+    {
+      "office": "Office of the Provincial Assessor External Services",
+      "serviceName": "Consolidation of Land",
+      "listedPage": 130,
+      "documentPage": 4,
+      "printedPage": 17,
+      "pdfPage": 17
+    },
+    {
+      "office": "Office of the Provincial Assessor External Services",
+      "serviceName": "Consolidation-Subdivision of Land",
+      "listedPage": 133,
+      "documentPage": 4,
+      "printedPage": 17,
+      "pdfPage": 17
+    },
+    {
+      "office": "Office of the Provincial Assessor External Services",
+      "serviceName": "Correction/ Revision of Tax Declaration",
+      "listedPage": 136,
+      "documentPage": 4,
+      "printedPage": 17,
+      "pdfPage": 17
+    },
+    {
+      "office": "Office of the Provincial Assessor External Services",
+      "serviceName": "Demolition/Cancellation of Tax Declaration",
+      "listedPage": 139,
+      "documentPage": 4,
+      "printedPage": 17,
+      "pdfPage": 17
+    },
+    {
+      "office": "Office of the Provincial Assessor External Services",
+      "serviceName": "Location Map/ Certification",
+      "listedPage": 140,
+      "documentPage": 4,
+      "printedPage": 17,
+      "pdfPage": 17
+    },
+    {
+      "office": "Office of the Provincial Assessor External Services",
+      "serviceName": "New Declaration of Building and Machinery (Municipal Assessor's Office Initiative/ Tax Mapping)",
+      "listedPage": 141,
+      "documentPage": 4,
+      "printedPage": 17,
+      "pdfPage": 17
+    },
+    {
+      "office": "Office of the Provincial Assessor External Services",
+      "serviceName": "New Declaration of Building and Machinery (Walk-in/ Office of the Provincial Assessor)",
+      "listedPage": 143,
+      "documentPage": 4,
+      "printedPage": 17,
+      "pdfPage": 17
+    },
+    {
+      "office": "Office of the Provincial Assessor External Services",
+      "serviceName": "New Declaration of Land",
+      "listedPage": 146,
+      "documentPage": 4,
+      "printedPage": 17,
+      "pdfPage": 17
+    },
+    {
+      "office": "Office of the Provincial Assessor External Services",
+      "serviceName": "Real Property Tax Order of Payment",
+      "listedPage": 149,
+      "documentPage": 4,
+      "printedPage": 17,
+      "pdfPage": 17
+    },
+    {
+      "office": "Office of the Provincial Assessor External Services",
+      "serviceName": "Reassessment of Real Property/ies",
+      "listedPage": 150,
+      "documentPage": 4,
+      "printedPage": 17,
+      "pdfPage": 17
+    },
+    {
+      "office": "Office of the Provincial Assessor External Services",
+      "serviceName": "Reclassification of Real Property/ies",
+      "listedPage": 152,
+      "documentPage": 4,
+      "printedPage": 17,
+      "pdfPage": 17
+    },
+    {
+      "office": "Office of the Provincial Assessor External Services",
+      "serviceName": "Subdivision of Parcel of Land",
+      "listedPage": 154,
+      "documentPage": 4,
+      "printedPage": 17,
+      "pdfPage": 17
+    },
+    {
+      "office": "Office of the Provincial Assessor External Services",
+      "serviceName": "Transfer of Ownership (Sale, Donation, Etc.)",
+      "listedPage": 156,
+      "documentPage": 4,
+      "printedPage": 17,
+      "pdfPage": 17
+    },
+    {
+      "office": "Office of the Provincial Assessor External Services",
+      "serviceName": "Transfer of Ownership Using Extrajudicial Settlement",
+      "listedPage": 158,
+      "documentPage": 4,
+      "printedPage": 17,
+      "pdfPage": 17
+    },
+    {
+      "office": "Office of the Provincial Budget Officer Internal Services",
+      "serviceName": "Request for the Realignment of Funds thru Augmentation Form AuF)",
+      "listedPage": 161,
+      "documentPage": 4,
+      "printedPage": 17,
+      "pdfPage": 17
+    },
+    {
+      "office": "Office of the Provincial Budget Officer Internal Services",
+      "serviceName": "Request for the Release of Allotment",
+      "listedPage": 164,
+      "documentPage": 4,
+      "printedPage": 17,
+      "pdfPage": 17
+    },
+    {
+      "office": "Office of the Provincial Treasurer External Services",
+      "serviceName": "Issuance and Payment of Accountable Forms",
+      "listedPage": 167,
+      "documentPage": 4,
+      "printedPage": 17,
+      "pdfPage": 17
+    },
+    {
+      "office": "Office of the Provincial Treasurer External Services",
+      "serviceName": "Issuance of Certificate of Posting",
+      "listedPage": 169,
+      "documentPage": 4,
+      "printedPage": 17,
+      "pdfPage": 17
+    },
+    {
+      "office": "Office of the Provincial Treasurer External Services",
+      "serviceName": "Issuance of Certified Photocopy of Office Documents",
+      "listedPage": 171,
+      "documentPage": 4,
+      "printedPage": 17,
+      "pdfPage": 17
+    },
+    {
+      "office": "Office of the Provincial Treasurer External Services",
+      "serviceName": "Issuance of Check/Cash (Payment of Various Obligations)",
+      "listedPage": 173,
+      "documentPage": 4,
+      "printedPage": 17,
+      "pdfPage": 17
+    },
+    {
+      "office": "Office of the Provincial Treasurer External Services",
+      "serviceName": "Payment of other fees and charges",
+      "listedPage": 177,
+      "documentPage": 4,
+      "printedPage": 17,
+      "pdfPage": 17
+    },
+    {
+      "office": "Office of the Provincial Treasurer External Services",
+      "serviceName": "Payment of Tax Revenues",
+      "listedPage": 179,
+      "documentPage": 4,
+      "printedPage": 17,
+      "pdfPage": 17
+    },
+    {
+      "office": "Office of the Provincial Treasurer Internal Service",
+      "serviceName": "Processing of Fidelity Bond of Accountable Officers",
+      "listedPage": 221,
+      "documentPage": 4,
+      "printedPage": 17,
+      "pdfPage": 17
+    },
+    {
+      "office": "Office of the Provincial General Services Officer External Services",
+      "serviceName": "Bataan People Center Reservation",
+      "listedPage": 224,
+      "documentPage": 5,
+      "printedPage": 18,
+      "pdfPage": 18
+    },
+    {
+      "office": "Office of the Provincial General Services Officer External Services",
+      "serviceName": "1Bataan Dormitory and Training Center Reservation",
+      "listedPage": 226,
+      "documentPage": 5,
+      "printedPage": 18,
+      "pdfPage": 18
+    },
+    {
+      "office": "Office of the Provincial General Services Officer External Services",
+      "serviceName": "BPCC Daily Selling Vendors",
+      "listedPage": 227,
+      "documentPage": 5,
+      "printedPage": 18,
+      "pdfPage": 18
+    },
+    {
+      "office": "Office of the Provincial General Services Officer External Services",
+      "serviceName": "BPCC Event Selling Vendors",
+      "listedPage": 228,
+      "documentPage": 5,
+      "printedPage": 18,
+      "pdfPage": 18
+    },
+    {
+      "office": "Office of the Provincial General Services Officer External Services",
+      "serviceName": "PGB Advertising Facilities",
+      "listedPage": 229,
+      "documentPage": 5,
+      "printedPage": 18,
+      "pdfPage": 18
+    },
+    {
+      "office": "Office of the Provincial General Services Officer Internal Services",
+      "serviceName": "Bunker Facility Reservations for PGB Offices",
+      "listedPage": 232,
+      "documentPage": 5,
+      "printedPage": 18,
+      "pdfPage": 18
+    },
+    {
+      "office": "Office of the Provincial General Services Officer Internal Services",
+      "serviceName": "Bunker Facility Reservations for Co-hosted with PGB Offices",
+      "listedPage": 232,
+      "documentPage": 5,
+      "printedPage": 18,
+      "pdfPage": 18
+    },
+    {
+      "office": "Office of the Provincial General Services Officer Internal Services",
+      "serviceName": "Heavy Equipment Request",
+      "listedPage": 233,
+      "documentPage": 5,
+      "printedPage": 18,
+      "pdfPage": 18
+    },
+    {
+      "office": "Office of the Provincial General Services Officer Internal Services",
+      "serviceName": "Maintenance Request for duties with available materials and/or equipment",
+      "listedPage": 234,
+      "documentPage": 5,
+      "printedPage": 18,
+      "pdfPage": 18
+    },
+    {
+      "office": "Office of the Provincial General Services Officer Internal Services",
+      "serviceName": "Maintenance Request for duties without available materials and/or equipment",
+      "listedPage": 235,
+      "documentPage": 5,
+      "printedPage": 18,
+      "pdfPage": 18
+    },
+    {
+      "office": "Office of the Provincial General Services Officer Internal Services",
+      "serviceName": "Maintenance Request for duties without available materials nor equipment, and require multiple tasks",
+      "listedPage": 236,
+      "documentPage": 5,
+      "printedPage": 18,
+      "pdfPage": 18
+    },
+    {
+      "office": "Office of the Provincial General Services Officer Internal Services",
+      "serviceName": "Request of Fuel Under Fleet Card System",
+      "listedPage": 237,
+      "documentPage": 5,
+      "printedPage": 18,
+      "pdfPage": 18
+    },
+    {
+      "office": "Office of the Provincial General Services Officer Internal Services",
+      "serviceName": "Request for Repair and Maintenance of Light Vehicles and other Equipment (For PMS and Supplies is available)",
+      "listedPage": 238,
+      "documentPage": 5,
+      "printedPage": 18,
+      "pdfPage": 18
+    },
+    {
+      "office": "Office of the Provincial General Services Officer Internal Services",
+      "serviceName": "Request for Repair and Maintenance of Light Vehicles and other Equipment (Not for PMS)",
+      "listedPage": 239,
+      "documentPage": 5,
+      "printedPage": 18,
+      "pdfPage": 18
+    },
+    {
+      "office": "Office of the Provincial General Services Officer Internal Services",
+      "serviceName": "Requisition and Issuance of Office and Janitorial Supplies as per Consolidated PPMP",
+      "listedPage": 240,
+      "documentPage": 5,
+      "printedPage": 18,
+      "pdfPage": 18
+    },
+    {
+      "office": "Office of the Provincial General Services Officer Internal Services",
+      "serviceName": "Tables and Chairs Requests",
+      "listedPage": 241,
+      "documentPage": 5,
+      "printedPage": 18,
+      "pdfPage": 18
+    },
+    {
+      "office": "Office of the Provincial General Services Officer Internal Services",
+      "serviceName": "Vehicle Request",
+      "listedPage": 242,
+      "documentPage": 5,
+      "printedPage": 18,
+      "pdfPage": 18
+    },
+    {
+      "office": "Office of the Provincial Public Employment Service Manager External Services",
+      "serviceName": "Assistance to Bataeno OFWs",
+      "listedPage": 244,
+      "documentPage": 5,
+      "printedPage": 18,
+      "pdfPage": 18
+    },
+    {
+      "office": "Office of the Provincial Public Employment Service Manager External Services",
+      "serviceName": "Assistance to Municipal PESOs",
+      "listedPage": 246,
+      "documentPage": 5,
+      "printedPage": 18,
+      "pdfPage": 18
+    },
+    {
+      "office": "Office of the Provincial Public Employment Service Manager External Services",
+      "serviceName": "Career Guidance and Employment Coaching",
+      "listedPage": 247,
+      "documentPage": 5,
+      "printedPage": 18,
+      "pdfPage": 18
+    },
+    {
+      "office": "Office of the Provincial Public Employment Service Manager External Services",
+      "serviceName": "Facilitation of Skills Training",
+      "listedPage": 248,
+      "documentPage": 5,
+      "printedPage": 18,
+      "pdfPage": 18
+    },
+    {
+      "office": "Office of the Provincial Public Employment Service Manager External Services",
+      "serviceName": "Government Internship Program (GIP)",
+      "listedPage": 249,
+      "documentPage": 5,
+      "printedPage": 18,
+      "pdfPage": 18
+    },
+    {
+      "office": "Office of the Provincial Public Employment Service Manager External Services",
+      "serviceName": "Job Fair",
+      "listedPage": 250,
+      "documentPage": 5,
+      "printedPage": 18,
+      "pdfPage": 18
+    },
+    {
+      "office": "Office of the Provincial Public Employment Service Manager External Services",
+      "serviceName": "Job Seeker Registration",
+      "listedPage": 251,
+      "documentPage": 6,
+      "printedPage": 19,
+      "pdfPage": 19
+    },
+    {
+      "office": "Office of the Provincial Public Employment Service Manager External Services",
+      "serviceName": "Job Vacancy Solicitation and Posting",
+      "listedPage": 252,
+      "documentPage": 6,
+      "printedPage": 19,
+      "pdfPage": 19
+    },
+    {
+      "office": "Office of the Provincial Public Employment Service Manager External Services",
+      "serviceName": "Local and Special Recruitment Activities",
+      "listedPage": 253,
+      "documentPage": 6,
+      "printedPage": 19,
+      "pdfPage": 19
+    },
+    {
+      "office": "Office of the Provincial Public Employment Service Manager External Services",
+      "serviceName": "Referral and Placement",
+      "listedPage": 255,
+      "documentPage": 6,
+      "printedPage": 19,
+      "pdfPage": 19
+    },
+    {
+      "office": "Office of the Provincial Public Employment Service Manager External Services",
+      "serviceName": "Special Program for Employment of Students (SPES)",
+      "listedPage": 256,
+      "documentPage": 6,
+      "printedPage": 19,
+      "pdfPage": 19
+    },
+    {
+      "office": "Office of the Provincial Public Employment Service Manager External Services",
+      "serviceName": "Tulong Panghanapbuhay sa Ating Disadvantage/Displayed Workers (TUPAD)",
+      "listedPage": 258,
+      "documentPage": 6,
+      "printedPage": 19,
+      "pdfPage": 19
+    },
+    {
+      "office": "Office of the Provincial Public Employment Service Manager Internal Service",
+      "serviceName": "Request for Employment Data",
+      "listedPage": 260,
+      "documentPage": 6,
+      "printedPage": 19,
+      "pdfPage": 19
+    },
+    {
+      "office": "Office of the Provincial Planning and Development Coordinator External Service",
+      "serviceName": "Provision of Sectoral Information and Data About the Province and its Development Plans",
+      "listedPage": 262,
+      "documentPage": 6,
+      "printedPage": 19,
+      "pdfPage": 19
+    },
+    {
+      "office": "Office of the Provincial Planning and Development Coordinator Internal Services",
+      "serviceName": "Inclusion of PPAs in the Annual Investment Program",
+      "listedPage": 265,
+      "documentPage": 6,
+      "printedPage": 19,
+      "pdfPage": 19
+    },
+    {
+      "office": "Office of Provincial Information Officer Internal Services",
+      "serviceName": "Coverage/ Documentation (Full Coverages)",
+      "listedPage": 267,
+      "documentPage": 6,
+      "printedPage": 19,
+      "pdfPage": 19
+    },
+    {
+      "office": "Office of Provincial Information Officer Internal Services",
+      "serviceName": "Coverage/ Documentation (Live Streaming)",
+      "listedPage": 268,
+      "documentPage": 6,
+      "printedPage": 19,
+      "pdfPage": 19
+    },
+    {
+      "office": "Office of Provincial Information Officer Internal Services",
+      "serviceName": "Print Media (Messages)",
+      "listedPage": 270,
+      "documentPage": 6,
+      "printedPage": 19,
+      "pdfPage": 19
+    },
+    {
+      "office": "Office of Provincial Information Officer Internal Services",
+      "serviceName": "Print Media (Tarpaulin)",
+      "listedPage": 272,
+      "documentPage": 6,
+      "printedPage": 19,
+      "pdfPage": 19
+    },
+    {
+      "office": "Office of Provincial Information Officer Internal Services",
+      "serviceName": "Audio/ Visual Presentations",
+      "listedPage": 274,
+      "documentPage": 6,
+      "printedPage": 19,
+      "pdfPage": 19
+    },
+    {
+      "office": "Office of the Provincial Information Technology Officer Internal Services",
+      "serviceName": "Borrowing of IT Equipment",
+      "listedPage": 277,
+      "documentPage": 6,
+      "printedPage": 19,
+      "pdfPage": 19
+    },
+    {
+      "office": "Office of the Provincial Information Technology Officer Internal Services",
+      "serviceName": "Graphic Design Request",
+      "listedPage": 278,
+      "documentPage": 6,
+      "printedPage": 19,
+      "pdfPage": 19
+    },
+    {
+      "office": "Office of the Provincial Information Technology Officer Internal Services",
+      "serviceName": "ICT Assessment",
+      "listedPage": 279,
+      "documentPage": 6,
+      "printedPage": 19,
+      "pdfPage": 19
+    },
+    {
+      "office": "Office of the Provincial Information Technology Officer Internal Services",
+      "serviceName": "Print Job Requests",
+      "listedPage": 280,
+      "documentPage": 6,
+      "printedPage": 19,
+      "pdfPage": 19
+    },
+    {
+      "office": "Office of the Provincial Information Technology Officer Internal Services",
+      "serviceName": "System Evaluation, Recommendation, and Assessment",
+      "listedPage": 281,
+      "documentPage": 6,
+      "printedPage": 19,
+      "pdfPage": 19
+    },
+    {
+      "office": "Office of the Provincial Information Technology Officer Internal Services",
+      "serviceName": "System Maintenance",
+      "listedPage": 282,
+      "documentPage": 6,
+      "printedPage": 19,
+      "pdfPage": 19
+    },
+    {
+      "office": "Office of the Provincial Information Technology Officer Internal Services",
+      "serviceName": "Technical Repair Requests",
+      "listedPage": 283,
+      "documentPage": 6,
+      "printedPage": 19,
+      "pdfPage": 19
+    },
+    {
+      "office": "Office of the Provincial Engineer External Services",
+      "serviceName": "Order of Payment - Copy of Approved Technical Documents (Program of Works (POW) or Plans and Project Payment Documents) - (For End-User/Contractor)",
+      "listedPage": 285,
+      "documentPage": 7,
+      "printedPage": 20,
+      "pdfPage": 20
+    },
+    {
+      "office": "Office of the Provincial Engineer External Services",
+      "serviceName": "Order of Payment - Copy of Approved Program of Works (POW) or Plans (for School)",
+      "listedPage": 286,
+      "documentPage": 7,
+      "printedPage": 20,
+      "pdfPage": 20
+    },
+    {
+      "office": "Office of the Provincial Engineer External Services",
+      "serviceName": "Quality Control - Order of Payment and Grading Test Result",
+      "listedPage": 287,
+      "documentPage": 7,
+      "printedPage": 20,
+      "pdfPage": 20
+    },
+    {
+      "office": "Office of the Provincial Engineer External Services",
+      "serviceName": "Quality Control- Order of Payment and Field Density Test Result",
+      "listedPage": 291,
+      "documentPage": 7,
+      "printedPage": 20,
+      "pdfPage": 20
+    },
+    {
+      "office": "Office of the Provincial Engineer External Services",
+      "serviceName": "Quality Control - Order of Payment and Compressive and Flexural Strength Test Result (Concrete)",
+      "listedPage": 294,
+      "documentPage": 7,
+      "printedPage": 20,
+      "pdfPage": 20
+    },
+    {
+      "office": "Office of the Provincial Engineer External Services",
+      "serviceName": "Quality Control- Order of Payment and Compressive Strength Test Result (CHB)",
+      "listedPage": 298,
+      "documentPage": 7,
+      "printedPage": 20,
+      "pdfPage": 20
+    },
+    {
+      "office": "Office of the Provincial Engineer External Services",
+      "serviceName": "Quality Control- Order of Payment and Tensile Strength Test Result (RSB)",
+      "listedPage": 302,
+      "documentPage": 7,
+      "printedPage": 20,
+      "pdfPage": 20
+    },
+    {
+      "office": "Office of the Provincial Engineer External Services",
+      "serviceName": "Quality Control - Order of Payment and Thickness Determination (CORING) Result",
+      "listedPage": 306,
+      "documentPage": 7,
+      "printedPage": 20,
+      "pdfPage": 20
+    },
+    {
+      "office": "Office of the Provincial Engineer External Services",
+      "serviceName": "Request for Project Payment Processing (Partial Payment)",
+      "listedPage": 309,
+      "documentPage": 7,
+      "printedPage": 20,
+      "pdfPage": 20
+    },
+    {
+      "office": "Office of the Provincial Engineer External Services",
+      "serviceName": "Request for Project Payment Processing (Full Payment)",
+      "listedPage": 317,
+      "documentPage": 7,
+      "printedPage": 20,
+      "pdfPage": 20
+    },
+    {
+      "office": "Office of the Provincial Engineer External Services",
+      "serviceName": "Engineering and Technical Services- Request for Infrastructure Project Site Inspection",
+      "listedPage": 324,
+      "documentPage": 7,
+      "printedPage": 20,
+      "pdfPage": 20
+    },
+    {
+      "office": "Office of the Provincial Engineer Internal Services",
+      "serviceName": "Request for Technical Support, Assistance, and Services to PGB Local and National Events",
+      "listedPage": 328,
+      "documentPage": 7,
+      "printedPage": 20,
+      "pdfPage": 20
+    },
+    {
+      "office": "Office of the Provincial Engineer Internal Services",
+      "serviceName": "Request for PEO Painting Services and Assistance- Painting Works and Activities",
+      "listedPage": 331,
+      "documentPage": 7,
+      "printedPage": 20,
+      "pdfPage": 20
+    },
+    {
+      "office": "Office of the Provincial Agriculturist External Services",
+      "serviceName": "Livelihood Trainings to Farmer Groups & Rural Based Organizations",
+      "listedPage": 335,
+      "documentPage": 7,
+      "printedPage": 20,
+      "pdfPage": 20
+    },
+    {
+      "office": "Office of the Provincial Agriculturist External Services",
+      "serviceName": "Provision of Assorted Repacked Vegetable Seeds and Fruit-bearing Tree Seedlings",
+      "listedPage": 336,
+      "documentPage": 7,
+      "printedPage": 20,
+      "pdfPage": 20
+    },
+    {
+      "office": "Office of the Provincial Agriculturist External Services",
+      "serviceName": "Provision of Tilapia Fingerlings",
+      "listedPage": 337,
+      "documentPage": 7,
+      "printedPage": 20,
+      "pdfPage": 20
+    },
+    {
+      "office": "Office of the Provincial Agriculturist External Services",
+      "serviceName": "Provision of Molasses and Soil Ameliorant Liquid Root Exudates",
+      "listedPage": 338,
+      "documentPage": 7,
+      "printedPage": 20,
+      "pdfPage": 20
+    },
+    {
+      "office": "Office of the Provincial Agriculturist External Services",
+      "serviceName": "Provision of Trichoderma Harzianum or Compost Fungus Activator (CFA)",
+      "listedPage": 339,
+      "documentPage": 7,
+      "printedPage": 20,
+      "pdfPage": 20
+    },
+    {
+      "office": "Office of the Provincial Agriculturist External Services",
+      "serviceName": "Scientific Examination of Fish suspected to be caught by the use of explosives",
+      "listedPage": 340,
+      "documentPage": 7,
+      "printedPage": 20,
+      "pdfPage": 20
+    },
+    {
+      "office": "Office of the Provincial Agriculturist External Services",
+      "serviceName": "Soil Sampling",
+      "listedPage": 341,
+      "documentPage": 7,
+      "printedPage": 20,
+      "pdfPage": 20
+    },
+    {
+      "office": "Office of the Provincial Agriculturist External Services",
+      "serviceName": "Technical Assistance on Agricultural Development Support",
+      "listedPage": 342,
+      "documentPage": 7,
+      "printedPage": 20,
+      "pdfPage": 20
+    },
+    {
+      "office": "Office of the Provincial Agriculturist External Services",
+      "serviceName": "Technical Assistance on Crop Production",
+      "listedPage": 343,
+      "documentPage": 7,
+      "printedPage": 20,
+      "pdfPage": 20
+    },
+    {
+      "office": "Office of the Provincial Agriculturist External Services",
+      "serviceName": "Technical Assistance on Fisheries and Aquaculture",
+      "listedPage": 344,
+      "documentPage": 8,
+      "printedPage": 21,
+      "pdfPage": 21
+    },
+    {
+      "office": "Office Provincial Government—Environment and Natural Resources Officer External Services",
+      "serviceName": "Issuance of Certificate of Environmental Compliance",
+      "listedPage": 346,
+      "documentPage": 8,
+      "printedPage": 21,
+      "pdfPage": 21
+    },
+    {
+      "office": "Office Provincial Government—Environment and Natural Resources Officer External Services",
+      "serviceName": "Issuance of Private Gratuitous Permit",
+      "listedPage": 348,
+      "documentPage": 8,
+      "printedPage": 21,
+      "pdfPage": 21
+    },
+    {
+      "office": "Office Provincial Government—Environment and Natural Resources Officer External Services",
+      "serviceName": "Issuance of Small-Scale Mining Permits (Quarry Permit, Industrial Sand and Gravel Permit, Commercial Sand and Gravel Permit)",
+      "listedPage": 351,
+      "documentPage": 8,
+      "printedPage": 21,
+      "pdfPage": 21
+    },
+    {
+      "office": "Office Provincial Government—Environment and Natural Resources Officer External Services",
+      "serviceName": "Protection and Conservation of Wildlife/ Technical Assistance on Wildlife Rescue",
+      "listedPage": 356,
+      "documentPage": 8,
+      "printedPage": 21,
+      "pdfPage": 21
+    },
+    {
+      "office": "Office Provincial Government—Environment and Natural Resources Officer External Services",
+      "serviceName": "Provision of Farm Inputs",
+      "listedPage": 356,
+      "documentPage": 8,
+      "printedPage": 21,
+      "pdfPage": 21
+    },
+    {
+      "office": "Office Provincial Government—Environment and Natural Resources Officer External Services",
+      "serviceName": "Special Collection of Solid Waste",
+      "listedPage": 358,
+      "documentPage": 8,
+      "printedPage": 21,
+      "pdfPage": 21
+    },
+    {
+      "office": "Office Provincial Government—Environment and Natural Resources Officer External Services",
+      "serviceName": "Support to Provincial Greening Program: Provision of Seedlings",
+      "listedPage": 359,
+      "documentPage": 8,
+      "printedPage": 21,
+      "pdfPage": 21
+    },
+    {
+      "office": "Office Provincial Government—Environment and Natural Resources Officer External Services",
+      "serviceName": "Support to Provincial Greening Program: Technical Assistance on Mangrove Planting Activity",
+      "listedPage": 361,
+      "documentPage": 8,
+      "printedPage": 21,
+      "pdfPage": 21
+    },
+    {
+      "office": "Office of the Provincial Veterinarian External Services",
+      "serviceName": "Accreditation of Commercial Poultry Breeder Farms",
+      "listedPage": 364,
+      "documentPage": 8,
+      "printedPage": 21,
+      "pdfPage": 21
+    },
+    {
+      "office": "Office of the Provincial Veterinarian External Services",
+      "serviceName": "Artificial Insemination of Large Ruminants",
+      "listedPage": 365,
+      "documentPage": 8,
+      "printedPage": 21,
+      "pdfPage": 21
+    },
+    {
+      "office": "Office of the Provincial Veterinarian External Services",
+      "serviceName": "Issuance of Shipping Permits",
+      "listedPage": 366,
+      "documentPage": 8,
+      "printedPage": 21,
+      "pdfPage": 21
+    },
+    {
+      "office": "Office of the Provincial Veterinarian External Services",
+      "serviceName": "Issuance of Veterinary Health Certificates",
+      "listedPage": 367,
+      "documentPage": 8,
+      "printedPage": 21,
+      "pdfPage": 21
+    },
+    {
+      "office": "Office of the Provincial Veterinarian External Services",
+      "serviceName": "Neutering of Pets",
+      "listedPage": 368,
+      "documentPage": 8,
+      "printedPage": 21,
+      "pdfPage": 21
+    },
+    {
+      "office": "Office of the Provincial Veterinarian External Services",
+      "serviceName": "Testing of samples for ASF using cPCR",
+      "listedPage": 370,
+      "documentPage": 8,
+      "printedPage": 21,
+      "pdfPage": 21
+    },
+    {
+      "office": "Office of the Provincial Veterinarian External Services",
+      "serviceName": "Testing of samples for rabies",
+      "listedPage": 371,
+      "documentPage": 8,
+      "printedPage": 21,
+      "pdfPage": 21
+    },
+    {
+      "office": "Office of the Provincial Veterinarian External Services",
+      "serviceName": "Treatment and vaccination of companion animals",
+      "listedPage": 372,
+      "documentPage": 8,
+      "printedPage": 21,
+      "pdfPage": 21
+    },
+    {
+      "office": "Office of the Provincial Veterinarian External Services",
+      "serviceName": "Treatment and vaccination of livestock and poultry",
+      "listedPage": 373,
+      "documentPage": 8,
+      "printedPage": 21,
+      "pdfPage": 21
+    },
+    {
+      "office": "Bataan Human Settlement Office External Services",
+      "serviceName": "Provision of Assistance to Walk-in Clients on Housing Inquiries and Concerns",
+      "listedPage": 376,
+      "documentPage": 8,
+      "printedPage": 21,
+      "pdfPage": 21
+    },
+    {
+      "office": "Bataan Human Settlement Office External Services",
+      "serviceName": "Orientation and Model-Units Tour of 1Bataan Village Housing Showroom",
+      "listedPage": 377,
+      "documentPage": 8,
+      "printedPage": 21,
+      "pdfPage": 21
+    },
+    {
+      "office": "Bataan Human Settlement Office External Services",
+      "serviceName": "Facilitation for the Registration of Community/ Homeowners Association",
+      "listedPage": 378,
+      "documentPage": 8,
+      "printedPage": 21,
+      "pdfPage": 21
+    },
+    {
+      "office": "Office of the Provincial Cooperative and Enterprise Development Officer External Services",
+      "serviceName": "Assistance In the Registration of Cooperatives",
+      "listedPage": 380,
+      "documentPage": 9,
+      "printedPage": 22,
+      "pdfPage": 22
+    },
+    {
+      "office": "Office of the Provincial Cooperative and Enterprise Development Officer External Services",
+      "serviceName": "Galing! Bataan Brand Development Program Accreditation",
+      "listedPage": 382,
+      "documentPage": 9,
+      "printedPage": 22,
+      "pdfPage": 22
+    },
+    {
+      "office": "Office of the Provincial Cooperative and Enterprise Development Officer External Services",
+      "serviceName": "Inquiries about Trade Fairs for Bataan MSMEs Engaged into Food Processing and Non-Food Manufacturing",
+      "listedPage": 384,
+      "documentPage": 9,
+      "printedPage": 22,
+      "pdfPage": 22
+    },
+    {
+      "office": "Office of the Provincial Cooperative and Enterprise Development Officer External Services",
+      "serviceName": "Inquiries to join Enterprise Development Related Trainings, Seminars, Online trainings, Webinar",
+      "listedPage": 385,
+      "documentPage": 9,
+      "printedPage": 22,
+      "pdfPage": 22
+    },
+    {
+      "office": "Office of the Provincial Cooperative and Enterprise Development Officer External Services",
+      "serviceName": "Label Design Services",
+      "listedPage": 385,
+      "documentPage": 9,
+      "printedPage": 22,
+      "pdfPage": 22
+    },
+    {
+      "office": "Office of the Provincial Cooperative and Enterprise Development Officer External Services",
+      "serviceName": "Label Printing Services",
+      "listedPage": 387,
+      "documentPage": 9,
+      "printedPage": 22,
+      "pdfPage": 22
+    },
+    {
+      "office": "Office of the Provincial Cooperative and Enterprise Development Officer External Services",
+      "serviceName": "Request for Assistance in the Preparation and Submission of Cooperative Annual Progress Report (CAPR) and Attachments",
+      "listedPage": 389,
+      "documentPage": 9,
+      "printedPage": 22,
+      "pdfPage": 22
+    },
+    {
+      "office": "Office of the Provincial Cooperative and Enterprise Development Officer External Services",
+      "serviceName": "Requests for In-House Mandatory Trainings",
+      "listedPage": 390,
+      "documentPage": 9,
+      "printedPage": 22,
+      "pdfPage": 22
+    },
+    {
+      "office": "Office of the Provincial Population Officer External Services",
+      "serviceName": "Population and Development Integration (Registry of Barangay Inhabitants and Migrants",
+      "listedPage": 393,
+      "documentPage": 9,
+      "printedPage": 22,
+      "pdfPage": 22
+    },
+    {
+      "office": "Office of the Provincial Population Officer External Services",
+      "serviceName": "Provision of POPDEV and GAD Data, Information and Reports",
+      "listedPage": 394,
+      "documentPage": 9,
+      "printedPage": 22,
+      "pdfPage": 22
+    },
+    {
+      "office": "Office of the Provincial Population Officer External Services",
+      "serviceName": "Provision of Pre-Marriage Orientation and Counseling (City/Municipal level)",
+      "listedPage": 397,
+      "documentPage": 9,
+      "printedPage": 22,
+      "pdfPage": 22
+    },
+    {
+      "office": "Office of the Provincial Population Officer External Services",
+      "serviceName": "Teen Information Center",
+      "listedPage": 399,
+      "documentPage": 9,
+      "printedPage": 22,
+      "pdfPage": 22
+    },
+    {
+      "office": "Office of the Provincial Population Officer External Services",
+      "serviceName": "1-Day Orientation, Seminar, and/or Training for Adolescent Health and Development (AHD), Responsible Parenthood and Family Planning (RPFP) and Population and Development (POPDEV)",
+      "listedPage": 400,
+      "documentPage": 9,
+      "printedPage": 22,
+      "pdfPage": 22
+    },
+    {
+      "office": "Office of the Provincial Population Officer External Services",
+      "serviceName": "1-Day Orientation, Seminar, and/or Training for Adolescent Health and Development (AHD), Responsible Parenthood and Family Planning (RPFP) and Population and Development (POPDEV) - PPW Initiative",
+      "listedPage": 401,
+      "documentPage": 9,
+      "printedPage": 22,
+      "pdfPage": 22
+    },
+    {
+      "office": "Office of the Provincial Population Officer External Services",
+      "serviceName": "2-3 Days Orientation, Seminar, and/or Training for Adolescent Health and Development (AHD), Responsible Parenthood and Family Planning (RPFP), and Population and Development (POPDEV)",
+      "listedPage": 402,
+      "documentPage": 9,
+      "printedPage": 22,
+      "pdfPage": 22
+    },
+    {
+      "office": "Office of the Provincial Population Officer Internal Services",
+      "serviceName": "General and Development Seminar to Provincial Government of Bataan Offices",
+      "listedPage": 404,
+      "documentPage": 9,
+      "printedPage": 22,
+      "pdfPage": 22
+    },
+    {
+      "office": "Office of the Provincial Population Officer Internal Services",
+      "serviceName": "Provision of POPDEV and GAD Data, Reports, and Information",
+      "listedPage": 405,
+      "documentPage": 10,
+      "printedPage": 23,
+      "pdfPage": 23
+    },
+    {
+      "office": "Office Provincial Social Welfare and Development Officer External Service",
+      "serviceName": "Support Services to Individuals in Crisis",
+      "listedPage": 407,
+      "documentPage": 10,
+      "printedPage": 23,
+      "pdfPage": 23
+    },
+    {
+      "office": "Office Provincial Tourism Officer External Services",
+      "serviceName": "Assistance to Applicants for DOT Accreditation",
+      "listedPage": 412,
+      "documentPage": 10,
+      "printedPage": 23,
+      "pdfPage": 23
+    },
+    {
+      "office": "Office Provincial Tourism Officer External Services",
+      "serviceName": "Assistance to Tour Guide for DOT Accreditation",
+      "listedPage": 413,
+      "documentPage": 10,
+      "printedPage": 23,
+      "pdfPage": 23
+    },
+    {
+      "office": "Office Provincial Tourism Officer External Services",
+      "serviceName": "Assistance to Applicants for Guests and Tourists",
+      "listedPage": 414,
+      "documentPage": 10,
+      "printedPage": 23,
+      "pdfPage": 23
+    },
+    {
+      "office": "Office Provincial Tourism Officer External Services",
+      "serviceName": "Assistance to Student and Researchers",
+      "listedPage": 415,
+      "documentPage": 10,
+      "printedPage": 23,
+      "pdfPage": 23
+    },
+    {
+      "office": "Office Provincial Tourism Officer External Services",
+      "serviceName": "Tour Guide Engagement",
+      "listedPage": 416,
+      "documentPage": 10,
+      "printedPage": 23,
+      "pdfPage": 23
+    },
+    {
+      "office": "Metro Bataan Development Authority External Services",
+      "serviceName": "Bataan 911 and MBDA hotline emergency calls and emergency response by MBDA medics and or MBDA enforcers",
+      "listedPage": 418,
+      "documentPage": 10,
+      "printedPage": 23,
+      "pdfPage": 23
+    },
+    {
+      "office": "Metro Bataan Development Authority External Services",
+      "serviceName": "CCTV footage request for copy for court use and MBDA representation for court hearing",
+      "listedPage": 419,
+      "documentPage": 10,
+      "printedPage": 23,
+      "pdfPage": 23
+    },
+    {
+      "office": "Metro Bataan Development Authority External Services",
+      "serviceName": "CCTV footage review and request for PNP copy",
+      "listedPage": 420,
+      "documentPage": 10,
+      "printedPage": 23,
+      "pdfPage": 23
+    },
+    {
+      "office": "Metro Bataan Development Authority External Services",
+      "serviceName": "Request for ambulance assistance",
+      "listedPage": 421,
+      "documentPage": 10,
+      "printedPage": 23,
+      "pdfPage": 23
+    },
+    {
+      "office": "Metro Bataan Development Authority External Services",
+      "serviceName": "Stranded vehicle assistance",
+      "listedPage": 422,
+      "documentPage": 10,
+      "printedPage": 23,
+      "pdfPage": 23
+    },
+    {
+      "office": "Office Provincial Disaster Risk Reduction and Management Officer External Services",
+      "serviceName": "Activation of event / Incident Command System",
+      "listedPage": 424,
+      "documentPage": 10,
+      "printedPage": 23,
+      "pdfPage": 23
+    },
+    {
+      "office": "Office Provincial Disaster Risk Reduction and Management Officer External Services",
+      "serviceName": "Conduct of Disaster Risk Reduction and Management (DRRM) Training",
+      "listedPage": 428,
+      "documentPage": 10,
+      "printedPage": 23,
+      "pdfPage": 23
+    },
+    {
+      "office": "Office Provincial Disaster Risk Reduction and Management Officer External Services",
+      "serviceName": "Provision of Equipment / Tools / Accessories / Vehicle Resources",
+      "listedPage": 431,
+      "documentPage": 10,
+      "printedPage": 23,
+      "pdfPage": 23
+    },
+    {
+      "office": "Office Provincial Disaster Risk Reduction and Management Officer External Services",
+      "serviceName": "Provision of Manpower Resources for Training Facilitation",
+      "listedPage": 432,
+      "documentPage": 10,
+      "printedPage": 23,
+      "pdfPage": 23
+    },
+    {
+      "office": "Office Provincial Disaster Risk Reduction and Management Officer External Services",
+      "serviceName": "Response to Emergency Calls in Provincial Disaster Risk Reduction and Management Office Hotline Services",
+      "listedPage": 433,
+      "documentPage": 10,
+      "printedPage": 23,
+      "pdfPage": 23
+    },
+    {
+      "office": "Capitol Security Intelligence Unit",
+      "serviceName": "Assistance to Internal / External Clients during Events",
+      "listedPage": 435,
+      "documentPage": 10,
+      "printedPage": 23,
+      "pdfPage": 23
+    },
+    {
+      "office": "Capitol Security Intelligence Unit",
+      "serviceName": "Incident Report",
+      "listedPage": 436,
+      "documentPage": 11,
+      "printedPage": 24,
+      "pdfPage": 24
+    },
+    {
+      "office": "Capitol Security Intelligence Unit",
+      "serviceName": "Investigation Report",
+      "listedPage": 437,
+      "documentPage": 11,
+      "printedPage": 24,
+      "pdfPage": 24
+    },
+    {
+      "office": "Bataan Public-Private Partnership and Investment Center External Services",
+      "serviceName": "Benchmarking of other LGUs and other government offices",
+      "listedPage": 439,
+      "documentPage": 11,
+      "printedPage": 24,
+      "pdfPage": 24
+    },
+    {
+      "office": "Bataan Public-Private Partnership and Investment Center External Services",
+      "serviceName": "Facilitation, Assistance, and Participation in PPP Project Negotiation and Implementation",
+      "listedPage": 440,
+      "documentPage": 11,
+      "printedPage": 24,
+      "pdfPage": 24
+    },
+    {
+      "office": "Bataan Public-Private Partnership and Investment Center External Services",
+      "serviceName": "Meeting with Proponents/investors",
+      "listedPage": 441,
+      "documentPage": 11,
+      "printedPage": 24,
+      "pdfPage": 24
+    },
+    {
+      "office": "Bataan Public-Private Partnership and Investment Center External Services",
+      "serviceName": "Non-renewal of the Sublease Agreement of Commercial and Office Space at the Bunker Building",
+      "listedPage": 442,
+      "documentPage": 11,
+      "printedPage": 24,
+      "pdfPage": 24
+    },
+    {
+      "office": "Bataan Public-Private Partnership and Investment Center External Services",
+      "serviceName": "Processing of the Sublease Agreement of Commercial and Office Space at the Bunker Building",
+      "listedPage": 443,
+      "documentPage": 11,
+      "printedPage": 24,
+      "pdfPage": 24
+    },
+    {
+      "office": "Bataan Public-Private Partnership and Investment Center External Services",
+      "serviceName": "Renewal of the Sublease Agreement of Commercial and Office Space at the Bunker Building",
+      "listedPage": 445,
+      "documentPage": 11,
+      "printedPage": 24,
+      "pdfPage": 24
+    },
+    {
+      "office": "Bataan Public-Private Partnership and Investment Center External Services",
+      "serviceName": "Contract Management of PPP Projects to Ensure Transparency, Efficiency, and Value for Public Resources",
+      "listedPage": 446,
+      "documentPage": 11,
+      "printedPage": 24,
+      "pdfPage": 24
+    },
+    {
+      "office": "Bataan Public-Private Partnership and Investment Center External Services",
+      "serviceName": "Execution of Additional PPPIC-Related Tasks as Directed by PPP Regulatory Authority and Other Requesting Agencies",
+      "listedPage": 447,
+      "documentPage": 11,
+      "printedPage": 24,
+      "pdfPage": 24
+    },
+    {
+      "office": "Office of the Provincial Health Officer External Services",
+      "serviceName": "Clinical Laboratory",
+      "listedPage": 449,
+      "documentPage": 11,
+      "printedPage": 24,
+      "pdfPage": 24
+    },
+    {
+      "office": "Office of the Provincial Health Officer External Services",
+      "serviceName": "Water Laboratory",
+      "listedPage": 450,
+      "documentPage": 11,
+      "printedPage": 24,
+      "pdfPage": 24
+    },
+    {
+      "office": "Office of the Provincial Health Officer Internal Service",
+      "serviceName": "Bunker Clinic Check-up",
+      "listedPage": 453,
+      "documentPage": 11,
+      "printedPage": 24,
+      "pdfPage": 24
+    },
+    {
+      "office": "Jose C. Payumo Jr. Memorial Hospital External Services",
+      "serviceName": "Admission",
+      "listedPage": 457,
+      "documentPage": 11,
+      "printedPage": 24,
+      "pdfPage": 24
+    },
+    {
+      "office": "Jose C. Payumo Jr. Memorial Hospital External Services",
+      "serviceName": "Animal Bite Treatment Center",
+      "listedPage": 458,
+      "documentPage": 11,
+      "printedPage": 24,
+      "pdfPage": 24
+    },
+    {
+      "office": "Jose C. Payumo Jr. Memorial Hospital External Services",
+      "serviceName": "Antiretroviral (ARV) Refill",
+      "listedPage": 459,
+      "documentPage": 11,
+      "printedPage": 24,
+      "pdfPage": 24
+    },
+    {
+      "office": "Jose C. Payumo Jr. Memorial Hospital External Services",
+      "serviceName": "Antiretroviral Treatment Initiation (HIV/Hepa B)",
+      "listedPage": 460,
+      "documentPage": 11,
+      "printedPage": 24,
+      "pdfPage": 24
+    },
+    {
+      "office": "Jose C. Payumo Jr. Memorial Hospital External Services",
+      "serviceName": "Billing (For NBB patients)",
+      "listedPage": 461,
+      "documentPage": 11,
+      "printedPage": 24,
+      "pdfPage": 24
+    },
+    {
+      "office": "Jose C. Payumo Jr. Memorial Hospital External Services",
+      "serviceName": "Billing ( Philhealth or non-Philhealth patients with excess bill)",
+      "listedPage": 462,
+      "documentPage": 11,
+      "printedPage": 24,
+      "pdfPage": 24
+    },
+    {
+      "office": "Jose C. Payumo Jr. Memorial Hospital External Services",
+      "serviceName": "Cash Collection",
+      "listedPage": 463,
+      "documentPage": 12,
+      "printedPage": 25,
+      "pdfPage": 25
+    },
+    {
+      "office": "Jose C. Payumo Jr. Memorial Hospital External Services",
+      "serviceName": "Clinical Laboratory",
+      "listedPage": 464,
+      "documentPage": 12,
+      "printedPage": 25,
+      "pdfPage": 25
+    },
+    {
+      "office": "Jose C. Payumo Jr. Memorial Hospital External Services",
+      "serviceName": "Dental",
+      "listedPage": 465,
+      "documentPage": 12,
+      "printedPage": 25,
+      "pdfPage": 25
+    },
+    {
+      "office": "Jose C. Payumo Jr. Memorial Hospital External Services",
+      "serviceName": "Discharge",
+      "listedPage": 466,
+      "documentPage": 12,
+      "printedPage": 25,
+      "pdfPage": 25
+    },
+    {
+      "office": "Jose C. Payumo Jr. Memorial Hospital External Services",
+      "serviceName": "Emergency Room: Consultation, Diagnostics and Treatment",
+      "listedPage": 469,
+      "documentPage": 12,
+      "printedPage": 25,
+      "pdfPage": 25
+    },
+    {
+      "office": "Jose C. Payumo Jr. Memorial Hospital External Services",
+      "serviceName": "HEARTH Counseling and Testing",
+      "listedPage": 471,
+      "documentPage": 12,
+      "printedPage": 25,
+      "pdfPage": 25
+    },
+    {
+      "office": "Jose C. Payumo Jr. Memorial Hospital External Services",
+      "serviceName": "Hemodialysis",
+      "listedPage": 472,
+      "documentPage": 12,
+      "printedPage": 25,
+      "pdfPage": 25
+    },
+    {
+      "office": "Jose C. Payumo Jr. Memorial Hospital External Services",
+      "serviceName": "Hospital Certificate: Birth Certificate",
+      "listedPage": 473,
+      "documentPage": 12,
+      "printedPage": 25,
+      "pdfPage": 25
+    },
+    {
+      "office": "Jose C. Payumo Jr. Memorial Hospital External Services",
+      "serviceName": "Hospital Certificate: Death Certificate",
+      "listedPage": 474,
+      "documentPage": 12,
+      "printedPage": 25,
+      "pdfPage": 25
+    },
+    {
+      "office": "Jose C. Payumo Jr. Memorial Hospital External Services",
+      "serviceName": "Hospital Certificates: Issuance of Certificates",
+      "listedPage": 475,
+      "documentPage": 12,
+      "printedPage": 25,
+      "pdfPage": 25
+    },
+    {
+      "office": "Jose C. Payumo Jr. Memorial Hospital External Services",
+      "serviceName": "Newborn Screening",
+      "listedPage": 476,
+      "documentPage": 12,
+      "printedPage": 25,
+      "pdfPage": 25
+    },
+    {
+      "office": "Jose C. Payumo Jr. Memorial Hospital External Services",
+      "serviceName": "Out Patient Department: Consultation",
+      "listedPage": 477,
+      "documentPage": 12,
+      "printedPage": 25,
+      "pdfPage": 25
+    },
+    {
+      "office": "Jose C. Payumo Jr. Memorial Hospital External Services",
+      "serviceName": "Out Patient Department: Consultation and Follow -up with Specialist",
+      "listedPage": 478,
+      "documentPage": 12,
+      "printedPage": 25,
+      "pdfPage": 25
+    },
+    {
+      "office": "Jose C. Payumo Jr. Memorial Hospital External Services",
+      "serviceName": "Outgoing Referrals to Bataan General Hospital",
+      "listedPage": 479,
+      "documentPage": 12,
+      "printedPage": 25,
+      "pdfPage": 25
+    },
+    {
+      "office": "Jose C. Payumo Jr. Memorial Hospital External Services",
+      "serviceName": "Outgoing Referral to Jose B Lingad Memorial Hospital",
+      "listedPage": 480,
+      "documentPage": 12,
+      "printedPage": 25,
+      "pdfPage": 25
+    },
+    {
+      "office": "Jose C. Payumo Jr. Memorial Hospital External Services",
+      "serviceName": "Patient Triage",
+      "listedPage": 481,
+      "documentPage": 12,
+      "printedPage": 25,
+      "pdfPage": 25
+    },
+    {
+      "office": "Jose C. Payumo Jr. Memorial Hospital External Services",
+      "serviceName": "Dispensing of Medicines and Supplies",
+      "listedPage": 483,
+      "documentPage": 12,
+      "printedPage": 25,
+      "pdfPage": 25
+    },
+    {
+      "office": "Jose C. Payumo Jr. Memorial Hospital External Services",
+      "serviceName": "Claims Benefits",
+      "listedPage": 484,
+      "documentPage": 12,
+      "printedPage": 25,
+      "pdfPage": 25
+    },
+    {
+      "office": "Jose C. Payumo Jr. Memorial Hospital External Services",
+      "serviceName": "Pre-exposure Prophylaxis Initiation (PrEP)",
+      "listedPage": 485,
+      "documentPage": 12,
+      "printedPage": 25,
+      "pdfPage": 25
+    },
+    {
+      "office": "Jose C. Payumo Jr. Memorial Hospital External Services",
+      "serviceName": "Radiology - X-ray",
+      "listedPage": 486,
+      "documentPage": 12,
+      "printedPage": 25,
+      "pdfPage": 25
+    },
+    {
+      "office": "Jose C. Payumo Jr. Memorial Hospital External Services",
+      "serviceName": "Social Service Assistance",
+      "listedPage": 487,
+      "documentPage": 12,
+      "printedPage": 25,
+      "pdfPage": 25
+    },
+    {
+      "office": "Antonino “Tony” P. Roman Memorial Hospital External Services",
+      "serviceName": "Admission Procedure",
+      "listedPage": 498,
+      "documentPage": 12,
+      "printedPage": 25,
+      "pdfPage": 25
+    },
+    {
+      "office": "Antonino “Tony” P. Roman Memorial Hospital External Services",
+      "serviceName": "Ambulance Services- Transfer of Service to Other Facility/Hospital",
+      "listedPage": 500,
+      "documentPage": 12,
+      "printedPage": 25,
+      "pdfPage": 25
+    },
+    {
+      "office": "Antonino “Tony” P. Roman Memorial Hospital External Services",
+      "serviceName": "Ambulance Services- Patient Conduction for Diagnostic Procedure",
+      "listedPage": 502,
+      "documentPage": 12,
+      "printedPage": 25,
+      "pdfPage": 25
+    },
+    {
+      "office": "Antonino “Tony” P. Roman Memorial Hospital External Services",
+      "serviceName": "Animal Bite Treatment Services- All Patients Needing Animal Bite Treatment",
+      "listedPage": 503,
+      "documentPage": 12,
+      "printedPage": 25,
+      "pdfPage": 25
+    },
+    {
+      "office": "Antonino “Tony” P. Roman Memorial Hospital External Services",
+      "serviceName": "Billing -In-Patient Settlement of Bill",
+      "listedPage": 505,
+      "documentPage": 12,
+      "printedPage": 25,
+      "pdfPage": 25
+    },
+    {
+      "office": "Antonino “Tony” P. Roman Memorial Hospital External Services",
+      "serviceName": "Billing– OPD/ ER Settlement of Bill.",
+      "listedPage": 506,
+      "documentPage": 12,
+      "printedPage": 25,
+      "pdfPage": 25
+    },
+    {
+      "office": "Antonino “Tony” P. Roman Memorial Hospital External Services",
+      "serviceName": "Blood Station Services",
+      "listedPage": 507,
+      "documentPage": 12,
+      "printedPage": 25,
+      "pdfPage": 25
+    },
+    {
+      "office": "Antonino “Tony” P. Roman Memorial Hospital External Services",
+      "serviceName": "Cashier- In-Patient Settlement of Fees",
+      "listedPage": 508,
+      "documentPage": 12,
+      "printedPage": 25,
+      "pdfPage": 25
+    },
+    {
+      "office": "Antonino “Tony” P. Roman Memorial Hospital External Services",
+      "serviceName": "Cashier- OPD/ ER Settlement of Fees",
+      "listedPage": 509,
+      "documentPage": 12,
+      "printedPage": 25,
+      "pdfPage": 25
+    },
+    {
+      "office": "Antonino “Tony” P. Roman Memorial Hospital External Services",
+      "serviceName": "Claims (PhilHealth) Services- PhilHealth Members for Checking of Eligibility",
+      "listedPage": 510,
+      "documentPage": 12,
+      "printedPage": 25,
+      "pdfPage": 25
+    },
+    {
+      "office": "Antonino “Tony” P. Roman Memorial Hospital External Services",
+      "serviceName": "Claims (PhilHealth) Services- Eligible PhilHealth Members and their Dependent for Discharge",
+      "listedPage": 511,
+      "documentPage": 12,
+      "printedPage": 25,
+      "pdfPage": 25
+    },
+    {
+      "office": "Antonino “Tony” P. Roman Memorial Hospital External Services",
+      "serviceName": "Dental Services",
+      "listedPage": 513,
+      "documentPage": 13,
+      "printedPage": 26,
+      "pdfPage": 26
+    },
+    {
+      "office": "Antonino “Tony” P. Roman Memorial Hospital External Services",
+      "serviceName": "Emergency Room Procedures",
+      "listedPage": 515,
+      "documentPage": 13,
+      "printedPage": 26,
+      "pdfPage": 26
+    },
+    {
+      "office": "Antonino “Tony” P. Roman Memorial Hospital External Services",
+      "serviceName": "Health Information Management Department- Issuance of OPD Record for Previous/ Old Patients",
+      "listedPage": 516,
+      "documentPage": 13,
+      "printedPage": 26,
+      "pdfPage": 26
+    },
+    {
+      "office": "Antonino “Tony” P. Roman Memorial Hospital External Services",
+      "serviceName": "Health Information Management Department- Issuance of OPD Record for New Patients",
+      "listedPage": 517,
+      "documentPage": 13,
+      "printedPage": 26,
+      "pdfPage": 26
+    },
+    {
+      "office": "Antonino “Tony” P. Roman Memorial Hospital External Services",
+      "serviceName": "Health Information Management Department: Issuance of Certificate (Medical Certificate, Birth Certificate, Death Certificate, Medico-Legal Certificate)",
+      "listedPage": 518,
+      "documentPage": 13,
+      "printedPage": 26,
+      "pdfPage": 26
+    },
+    {
+      "office": "Antonino “Tony” P. Roman Memorial Hospital External Services",
+      "serviceName": "Laboratory Services: Blood tests, Urinalysis and Fecalysis for ER, Walk-in and Out-Patients)",
+      "listedPage": 520,
+      "documentPage": 13,
+      "printedPage": 26,
+      "pdfPage": 26
+    },
+    {
+      "office": "Antonino “Tony” P. Roman Memorial Hospital External Services",
+      "serviceName": "Medical Social Services– (Out-Patients/ ER-Patients)",
+      "listedPage": 523,
+      "documentPage": 13,
+      "printedPage": 26,
+      "pdfPage": 26
+    },
+    {
+      "office": "Antonino “Tony” P. Roman Memorial Hospital External Services",
+      "serviceName": "Medical Social Services– (In-Patients Pre-Admission Classification)",
+      "listedPage": 524,
+      "documentPage": 13,
+      "printedPage": 26,
+      "pdfPage": 26
+    },
+    {
+      "office": "Antonino “Tony” P. Roman Memorial Hospital External Services",
+      "serviceName": "Medical Social Services– (In-Patients Classification)",
+      "listedPage": 525,
+      "documentPage": 13,
+      "printedPage": 26,
+      "pdfPage": 26
+    },
+    {
+      "office": "Antonino “Tony” P. Roman Memorial Hospital External Services",
+      "serviceName": "Medical Social Services- (Senior Citizens/PWDs)",
+      "listedPage": 526,
+      "documentPage": 13,
+      "printedPage": 26,
+      "pdfPage": 26
+    },
+    {
+      "office": "Antonino “Tony” P. Roman Memorial Hospital External Services",
+      "serviceName": "Medical Social Services- (PCSO/MAIFIP PATIENT)",
+      "listedPage": 527,
+      "documentPage": 13,
+      "printedPage": 26,
+      "pdfPage": 26
+    },
+    {
+      "office": "Antonino “Tony” P. Roman Memorial Hospital External Services",
+      "serviceName": "New Born Hearing Screening Test Service- In Patient Newborn Babies (24 Hours After Birth)",
+      "listedPage": 528,
+      "documentPage": 13,
+      "printedPage": 26,
+      "pdfPage": 26
+    },
+    {
+      "office": "Antonino “Tony” P. Roman Memorial Hospital External Services",
+      "serviceName": "New Born Hearing Screening Test Service- Out Patient Newborn Babies (1-3 months after Birth)",
+      "listedPage": 529,
+      "documentPage": 13,
+      "printedPage": 26,
+      "pdfPage": 26
+    },
+    {
+      "office": "Antonino “Tony” P. Roman Memorial Hospital External Services",
+      "serviceName": "Newborn Screening Services",
+      "listedPage": 531,
+      "documentPage": 13,
+      "printedPage": 26,
+      "pdfPage": 26
+    },
+    {
+      "office": "Antonino “Tony” P. Roman Memorial Hospital External Services",
+      "serviceName": "Out-Patient Department (OPD) Procedures",
+      "listedPage": 532,
+      "documentPage": 13,
+      "printedPage": 26,
+      "pdfPage": 26
+    },
+    {
+      "office": "Antonino “Tony” P. Roman Memorial Hospital External Services",
+      "serviceName": "Pharmacy Services- Dispensing of Prescribed Drugs And Medical Supplies",
+      "listedPage": 534,
+      "documentPage": 13,
+      "printedPage": 26,
+      "pdfPage": 26
+    },
+    {
+      "office": "Antonino “Tony” P. Roman Memorial Hospital External Services",
+      "serviceName": "Radiology Procedures- Patients Needing General X-ray Services in ER, OPD, Medicolegal Patients",
+      "listedPage": 536,
+      "documentPage": 13,
+      "printedPage": 26,
+      "pdfPage": 26
+    },
+    {
+      "office": "Antonino “Tony” P. Roman Memorial Hospital External Services",
+      "serviceName": "Ultrasound Services",
+      "listedPage": 538,
+      "documentPage": 13,
+      "printedPage": 26,
+      "pdfPage": 26
+    },
+    {
+      "office": "Bagac Community and Medicare Hospital External Services",
+      "serviceName": "Admission of Patients",
+      "listedPage": 546,
+      "documentPage": 13,
+      "printedPage": 26,
+      "pdfPage": 26
+    },
+    {
+      "office": "Bagac Community and Medicare Hospital External Services",
+      "serviceName": "Animal Bite Treatment Center",
+      "listedPage": 547,
+      "documentPage": 13,
+      "printedPage": 26,
+      "pdfPage": 26
+    },
+    {
+      "office": "Bagac Community and Medicare Hospital External Services",
+      "serviceName": "Billing",
+      "listedPage": 549,
+      "documentPage": 13,
+      "printedPage": 26,
+      "pdfPage": 26
+    },
+    {
+      "office": "Bagac Community and Medicare Hospital External Services",
+      "serviceName": "Billing (Philhealth or non-Philhealth patients with excess bill)",
+      "listedPage": 550,
+      "documentPage": 13,
+      "printedPage": 26,
+      "pdfPage": 26
+    },
+    {
+      "office": "Bagac Community and Medicare Hospital External Services",
+      "serviceName": "Cash Collections",
+      "listedPage": 552,
+      "documentPage": 13,
+      "printedPage": 26,
+      "pdfPage": 26
+    },
+    {
+      "office": "Bagac Community and Medicare Hospital External Services",
+      "serviceName": "Clinical Laboratory",
+      "listedPage": 553,
+      "documentPage": 13,
+      "printedPage": 26,
+      "pdfPage": 26
+    },
+    {
+      "office": "Bagac Community and Medicare Hospital External Services",
+      "serviceName": "Discharge",
+      "listedPage": 555,
+      "documentPage": 13,
+      "printedPage": 26,
+      "pdfPage": 26
+    },
+    {
+      "office": "Bagac Community and Medicare Hospital External Services",
+      "serviceName": "Emergency Room: Consultation, Diagnostic and Treatment",
+      "listedPage": 557,
+      "documentPage": 14,
+      "printedPage": 27,
+      "pdfPage": 27
+    },
+    {
+      "office": "Bagac Community and Medicare Hospital External Services",
+      "serviceName": "Issuance of Certificates (Birth, Death, Medical, and Medico-Legal)",
+      "listedPage": 560,
+      "documentPage": 14,
+      "printedPage": 27,
+      "pdfPage": 27
+    },
+    {
+      "office": "Bagac Community and Medicare Hospital External Services",
+      "serviceName": "Issuance of OPD Card/Records",
+      "listedPage": 561,
+      "documentPage": 14,
+      "printedPage": 27,
+      "pdfPage": 27
+    },
+    {
+      "office": "Bagac Community and Medicare Hospital External Services",
+      "serviceName": "Newborn Screening",
+      "listedPage": 562,
+      "documentPage": 14,
+      "printedPage": 27,
+      "pdfPage": 27
+    },
+    {
+      "office": "Bagac Community and Medicare Hospital External Services",
+      "serviceName": "Out Patient Department: Consultation",
+      "listedPage": 563,
+      "documentPage": 14,
+      "printedPage": 27,
+      "pdfPage": 27
+    },
+    {
+      "office": "Bagac Community and Medicare Hospital External Services",
+      "serviceName": "Outgoing Referrals",
+      "listedPage": 565,
+      "documentPage": 14,
+      "printedPage": 27,
+      "pdfPage": 27
+    },
+    {
+      "office": "Bagac Community and Medicare Hospital External Services",
+      "serviceName": "Patient Triage",
+      "listedPage": 566,
+      "documentPage": 14,
+      "printedPage": 27,
+      "pdfPage": 27
+    },
+    {
+      "office": "Bagac Community and Medicare Hospital External Services",
+      "serviceName": "Claims Benefit",
+      "listedPage": 567,
+      "documentPage": 14,
+      "printedPage": 27,
+      "pdfPage": 27
+    },
+    {
+      "office": "Bagac Community and Medicare Hospital External Services",
+      "serviceName": "Radiology – X-ray",
+      "listedPage": 568,
+      "documentPage": 14,
+      "printedPage": 27,
+      "pdfPage": 27
+    },
+    {
+      "office": "Bagac Community and Medicare Hospital External Services",
+      "serviceName": "Social Service Assistance",
+      "listedPage": 569,
+      "documentPage": 14,
+      "printedPage": 27,
+      "pdfPage": 27
+    }
+  ]
+}

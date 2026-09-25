@@ -4,6 +4,7 @@ import type {
   LegislationRecord,
   OfficeRecord,
   OfficialRecord,
+  Provenance,
   ServiceRecord,
 } from "../../data/types";
 
@@ -20,7 +21,8 @@ export interface SearchDocument {
   year?: number;
   summary?: string;
   path: string;
-  sourceUrl: string;
+  /** Absent when the source is cited as a document rather than linked. */
+  sourceUrl?: string;
   sourceName: string;
   retrievedAt: string;
   verified: boolean;
@@ -37,14 +39,10 @@ export interface SearchProvider {
   search(query: string, limit?: number): FuseResult<SearchDocument>[];
 }
 
-function provenanceFor(record: {
-  provenance: {
-    source_url: string;
-    source_name: string;
-    retrieved_at: string;
-    verified: boolean;
-  };
-}) {
+// Use the shared Provenance type rather than restating its shape: a local copy
+// silently drifts from src/data/types.ts, which is how an optional source_url
+// turned into a build error here.
+function provenanceFor(record: { provenance: Provenance }) {
   return {
     sourceUrl: record.provenance.source_url,
     sourceName: record.provenance.source_name,

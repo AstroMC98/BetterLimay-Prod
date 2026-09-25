@@ -78,5 +78,533 @@
       "verified": true,
       "verification_note": "The municipality table lists Limay with a 2024 POPCEN population of 81,960."
     }
+  },
+  {
+    "id": "cmci-economic-dynamism-2019",
+    "metric": "CMCI Economic Dynamism",
+    "geography": "Municipality of Limay",
+    "year": 2019,
+    "value": 5.0289,
+    "unit": "index points",
+    "howToRead": "DTI Cities and Municipalities Competitiveness Index pillar score for 2019. Higher is better; that year's pillar scores sum to the overall score. CMCI has added pillars over time -- three through 2016, Resiliency from 2017, Innovation from 2022 -- so totals are comparable across years only within the same methodology. Bataan-wide comparison figures are in the full CMCI dataset.",
+    "provenance": {
+      "source_url": "https://cmci.dti.gov.ph/rankings-data.php?unit=1st%20to%202nd%20Class%20Municipalities",
+      "source_name": "DTI Cities and Municipalities Competitiveness Index - Bataan municipalities",
+      "retrieved_at": "2026-09-23",
+      "verified": true,
+      "verification_note": "Transcribed from the published dataset named in this record's source."
+    }
+  },
+  {
+    "id": "cmci-economic-dynamism-2020",
+    "metric": "CMCI Economic Dynamism",
+    "geography": "Municipality of Limay",
+    "year": 2020,
+    "value": 4.4735,
+    "unit": "index points",
+    "howToRead": "DTI Cities and Municipalities Competitiveness Index pillar score for 2020. Higher is better; that year's pillar scores sum to the overall score. CMCI has added pillars over time -- three through 2016, Resiliency from 2017, Innovation from 2022 -- so totals are comparable across years only within the same methodology. Bataan-wide comparison figures are in the full CMCI dataset.",
+    "provenance": {
+      "source_url": "https://cmci.dti.gov.ph/rankings-data.php?unit=1st%20to%202nd%20Class%20Municipalities",
+      "source_name": "DTI Cities and Municipalities Competitiveness Index - Bataan municipalities",
+      "retrieved_at": "2026-09-23",
+      "verified": true,
+      "verification_note": "Transcribed from the published dataset named in this record's source."
+    }
+  },
+  {
+    "id": "cmci-economic-dynamism-2021",
+    "metric": "CMCI Economic Dynamism",
+    "geography": "Municipality of Limay",
+    "year": 2021,
+    "value": 6.4965,
+    "unit": "index points",
+    "howToRead": "DTI Cities and Municipalities Competitiveness Index pillar score for 2021. Higher is better; that year's pillar scores sum to the overall score. CMCI has added pillars over time -- three through 2016, Resiliency from 2017, Innovation from 2022 -- so totals are comparable across years only within the same methodology. Bataan-wide comparison figures are in the full CMCI dataset.",
+    "provenance": {
+      "source_url": "https://cmci.dti.gov.ph/rankings-data.php?unit=1st%20to%202nd%20Class%20Municipalities",
+      "source_name": "DTI Cities and Municipalities Competitiveness Index - Bataan municipalities",
+      "retrieved_at": "2026-09-23",
+      "verified": true,
+      "verification_note": "Transcribed from the published dataset named in this record's source."
+    }
+  },
+  {
+    "id": "cmci-economic-dynamism-2022",
+    "metric": "CMCI Economic Dynamism",
+    "geography": "Municipality of Limay",
+    "year": 2022,
+    "value": 6.4086,
+    "unit": "index points",
+    "howToRead": "DTI Cities and Municipalities Competitiveness Index pillar score for 2022. Higher is better; that year's pillar scores sum to the overall score. CMCI has added pillars over time -- three through 2016, Resiliency from 2017, Innovation from 2022 -- so totals are comparable across years only within the same methodology. Bataan-wide comparison figures are in the full CMCI dataset.",
+    "provenance": {
+      "source_url": "https://cmci.dti.gov.ph/rankings-data.php?unit=1st%20to%202nd%20Class%20Municipalities",
+      "source_name": "DTI Cities and Municipalities Competitiveness Index - Bataan municipalities",
+      "retrieved_at": "2026-09-23",
+      "verified": true,
+      "verification_note": "Transcribed from the published dataset named in this record's source."
+    }
+  },
+  {
+    "id": "cmci-economic-dynamism-2023",
+    "metric": "CMCI Economic Dynamism",
+    "geography": "Municipality of Limay",
+    "year": 2023,
+    "value": 3.7989,
+    "unit": "index points",
+    "howToRead": "DTI Cities and Municipalities Competitiveness Index pillar score for 2023. Higher is better; that year's pillar scores sum to the overall score. CMCI has added pillars over time -- three through 2016, Resiliency from 2017, Innovation from 2022 -- so totals are comparable across years only within the same methodology. Bataan-wide comparison figures are in the full CMCI dataset.",
+    "provenance": {
+      "source_url": "https://cmci.dti.gov.ph/rankings-data.php?unit=1st%20to%202nd%20Class%20Municipalities",
+      "source_name": "DTI Cities and Municipalities Competitiveness Index - Bataan municipalities",
+      "retrieved_at": "2026-09-23",
+      "verified": true,
+      "verification_note": "Transcribed from the published dataset named in this record's source."
+    }
+  },
+  {
+    "id": "cmci-economic-dynamism-2024",
+    "metric": "CMCI Economic Dynamism",
+    "geography": "Municipality of Limay",
+    "year": 2024,
+    "value": 3.9407,
+    "unit": "index points",
+    "howToRead": "DTI Cities and Municipalities Competitiveness Index pillar score for 2024. Higher is better; that year's pillar scores sum to the overall score. CMCI has added pillars over time -- three through 2016, Resiliency from 2017, Innovation from 2022 -- so totals are comparable across years only within the same methodology. Bataan-wide comparison figures are in the full CMCI dataset.",
+    "provenance": {
+      "source_url": "https://cmci.dti.gov.ph/rankings-data.php?unit=1st%20to%202nd%20Class%20Municipalities",
+      "source_name": "DTI Cities and Municipalities Competitiveness Index - Bataan municipalities",
+      "retrieved_at": "2026-09-23",
+      "verified": true,
+      "verification_note": "Transcribed from the published dataset named in this record's source."
+    }
+  },
+  {
+    "id": "cmci-government-efficiency-2019",
+    "metric": "CMCI Government Efficiency",
+    "geography": "Municipality of Limay",
+    "year": 2019,
+    "value": 11.0193,
+    "unit": "index points",
+    "howToRead": "DTI Cities and Municipalities Competitiveness Index pillar score for 2019. Higher is better; that year's pillar scores sum to the overall score. CMCI has added pillars over time -- three through 2016, Resiliency from 2017, Innovation from 2022 -- so totals are comparable across years only within the same methodology. Bataan-wide comparison figures are in the full CMCI dataset.",
+    "provenance": {
+      "source_url": "https://cmci.dti.gov.ph/rankings-data.php?unit=1st%20to%202nd%20Class%20Municipalities",
+      "source_name": "DTI Cities and Municipalities Competitiveness Index - Bataan municipalities",
+      "retrieved_at": "2026-09-23",
+      "verified": true,
+      "verification_note": "Transcribed from the published dataset named in this record's source."
+    }
+  },
+  {
+    "id": "cmci-government-efficiency-2020",
+    "metric": "CMCI Government Efficiency",
+    "geography": "Municipality of Limay",
+    "year": 2020,
+    "value": 10.3127,
+    "unit": "index points",
+    "howToRead": "DTI Cities and Municipalities Competitiveness Index pillar score for 2020. Higher is better; that year's pillar scores sum to the overall score. CMCI has added pillars over time -- three through 2016, Resiliency from 2017, Innovation from 2022 -- so totals are comparable across years only within the same methodology. Bataan-wide comparison figures are in the full CMCI dataset.",
+    "provenance": {
+      "source_url": "https://cmci.dti.gov.ph/rankings-data.php?unit=1st%20to%202nd%20Class%20Municipalities",
+      "source_name": "DTI Cities and Municipalities Competitiveness Index - Bataan municipalities",
+      "retrieved_at": "2026-09-23",
+      "verified": true,
+      "verification_note": "Transcribed from the published dataset named in this record's source."
+    }
+  },
+  {
+    "id": "cmci-government-efficiency-2021",
+    "metric": "CMCI Government Efficiency",
+    "geography": "Municipality of Limay",
+    "year": 2021,
+    "value": 9.4749,
+    "unit": "index points",
+    "howToRead": "DTI Cities and Municipalities Competitiveness Index pillar score for 2021. Higher is better; that year's pillar scores sum to the overall score. CMCI has added pillars over time -- three through 2016, Resiliency from 2017, Innovation from 2022 -- so totals are comparable across years only within the same methodology. Bataan-wide comparison figures are in the full CMCI dataset.",
+    "provenance": {
+      "source_url": "https://cmci.dti.gov.ph/rankings-data.php?unit=1st%20to%202nd%20Class%20Municipalities",
+      "source_name": "DTI Cities and Municipalities Competitiveness Index - Bataan municipalities",
+      "retrieved_at": "2026-09-23",
+      "verified": true,
+      "verification_note": "Transcribed from the published dataset named in this record's source."
+    }
+  },
+  {
+    "id": "cmci-government-efficiency-2022",
+    "metric": "CMCI Government Efficiency",
+    "geography": "Municipality of Limay",
+    "year": 2022,
+    "value": 8.4918,
+    "unit": "index points",
+    "howToRead": "DTI Cities and Municipalities Competitiveness Index pillar score for 2022. Higher is better; that year's pillar scores sum to the overall score. CMCI has added pillars over time -- three through 2016, Resiliency from 2017, Innovation from 2022 -- so totals are comparable across years only within the same methodology. Bataan-wide comparison figures are in the full CMCI dataset.",
+    "provenance": {
+      "source_url": "https://cmci.dti.gov.ph/rankings-data.php?unit=1st%20to%202nd%20Class%20Municipalities",
+      "source_name": "DTI Cities and Municipalities Competitiveness Index - Bataan municipalities",
+      "retrieved_at": "2026-09-23",
+      "verified": true,
+      "verification_note": "Transcribed from the published dataset named in this record's source."
+    }
+  },
+  {
+    "id": "cmci-government-efficiency-2023",
+    "metric": "CMCI Government Efficiency",
+    "geography": "Municipality of Limay",
+    "year": 2023,
+    "value": 10.9495,
+    "unit": "index points",
+    "howToRead": "DTI Cities and Municipalities Competitiveness Index pillar score for 2023. Higher is better; that year's pillar scores sum to the overall score. CMCI has added pillars over time -- three through 2016, Resiliency from 2017, Innovation from 2022 -- so totals are comparable across years only within the same methodology. Bataan-wide comparison figures are in the full CMCI dataset.",
+    "provenance": {
+      "source_url": "https://cmci.dti.gov.ph/rankings-data.php?unit=1st%20to%202nd%20Class%20Municipalities",
+      "source_name": "DTI Cities and Municipalities Competitiveness Index - Bataan municipalities",
+      "retrieved_at": "2026-09-23",
+      "verified": true,
+      "verification_note": "Transcribed from the published dataset named in this record's source."
+    }
+  },
+  {
+    "id": "cmci-government-efficiency-2024",
+    "metric": "CMCI Government Efficiency",
+    "geography": "Municipality of Limay",
+    "year": 2024,
+    "value": 10.696,
+    "unit": "index points",
+    "howToRead": "DTI Cities and Municipalities Competitiveness Index pillar score for 2024. Higher is better; that year's pillar scores sum to the overall score. CMCI has added pillars over time -- three through 2016, Resiliency from 2017, Innovation from 2022 -- so totals are comparable across years only within the same methodology. Bataan-wide comparison figures are in the full CMCI dataset.",
+    "provenance": {
+      "source_url": "https://cmci.dti.gov.ph/rankings-data.php?unit=1st%20to%202nd%20Class%20Municipalities",
+      "source_name": "DTI Cities and Municipalities Competitiveness Index - Bataan municipalities",
+      "retrieved_at": "2026-09-23",
+      "verified": true,
+      "verification_note": "Transcribed from the published dataset named in this record's source."
+    }
+  },
+  {
+    "id": "cmci-infrastructure-2019",
+    "metric": "CMCI Infrastructure",
+    "geography": "Municipality of Limay",
+    "year": 2019,
+    "value": 1.2645,
+    "unit": "index points",
+    "howToRead": "DTI Cities and Municipalities Competitiveness Index pillar score for 2019. Higher is better; that year's pillar scores sum to the overall score. CMCI has added pillars over time -- three through 2016, Resiliency from 2017, Innovation from 2022 -- so totals are comparable across years only within the same methodology. Bataan-wide comparison figures are in the full CMCI dataset.",
+    "provenance": {
+      "source_url": "https://cmci.dti.gov.ph/rankings-data.php?unit=1st%20to%202nd%20Class%20Municipalities",
+      "source_name": "DTI Cities and Municipalities Competitiveness Index - Bataan municipalities",
+      "retrieved_at": "2026-09-23",
+      "verified": true,
+      "verification_note": "Transcribed from the published dataset named in this record's source."
+    }
+  },
+  {
+    "id": "cmci-infrastructure-2020",
+    "metric": "CMCI Infrastructure",
+    "geography": "Municipality of Limay",
+    "year": 2020,
+    "value": 5.9671,
+    "unit": "index points",
+    "howToRead": "DTI Cities and Municipalities Competitiveness Index pillar score for 2020. Higher is better; that year's pillar scores sum to the overall score. CMCI has added pillars over time -- three through 2016, Resiliency from 2017, Innovation from 2022 -- so totals are comparable across years only within the same methodology. Bataan-wide comparison figures are in the full CMCI dataset.",
+    "provenance": {
+      "source_url": "https://cmci.dti.gov.ph/rankings-data.php?unit=1st%20to%202nd%20Class%20Municipalities",
+      "source_name": "DTI Cities and Municipalities Competitiveness Index - Bataan municipalities",
+      "retrieved_at": "2026-09-23",
+      "verified": true,
+      "verification_note": "Transcribed from the published dataset named in this record's source."
+    }
+  },
+  {
+    "id": "cmci-infrastructure-2021",
+    "metric": "CMCI Infrastructure",
+    "geography": "Municipality of Limay",
+    "year": 2021,
+    "value": 5.5756,
+    "unit": "index points",
+    "howToRead": "DTI Cities and Municipalities Competitiveness Index pillar score for 2021. Higher is better; that year's pillar scores sum to the overall score. CMCI has added pillars over time -- three through 2016, Resiliency from 2017, Innovation from 2022 -- so totals are comparable across years only within the same methodology. Bataan-wide comparison figures are in the full CMCI dataset.",
+    "provenance": {
+      "source_url": "https://cmci.dti.gov.ph/rankings-data.php?unit=1st%20to%202nd%20Class%20Municipalities",
+      "source_name": "DTI Cities and Municipalities Competitiveness Index - Bataan municipalities",
+      "retrieved_at": "2026-09-23",
+      "verified": true,
+      "verification_note": "Transcribed from the published dataset named in this record's source."
+    }
+  },
+  {
+    "id": "cmci-infrastructure-2022",
+    "metric": "CMCI Infrastructure",
+    "geography": "Municipality of Limay",
+    "year": 2022,
+    "value": 2.3819,
+    "unit": "index points",
+    "howToRead": "DTI Cities and Municipalities Competitiveness Index pillar score for 2022. Higher is better; that year's pillar scores sum to the overall score. CMCI has added pillars over time -- three through 2016, Resiliency from 2017, Innovation from 2022 -- so totals are comparable across years only within the same methodology. Bataan-wide comparison figures are in the full CMCI dataset.",
+    "provenance": {
+      "source_url": "https://cmci.dti.gov.ph/rankings-data.php?unit=1st%20to%202nd%20Class%20Municipalities",
+      "source_name": "DTI Cities and Municipalities Competitiveness Index - Bataan municipalities",
+      "retrieved_at": "2026-09-23",
+      "verified": true,
+      "verification_note": "Transcribed from the published dataset named in this record's source."
+    }
+  },
+  {
+    "id": "cmci-infrastructure-2023",
+    "metric": "CMCI Infrastructure",
+    "geography": "Municipality of Limay",
+    "year": 2023,
+    "value": 2.9108,
+    "unit": "index points",
+    "howToRead": "DTI Cities and Municipalities Competitiveness Index pillar score for 2023. Higher is better; that year's pillar scores sum to the overall score. CMCI has added pillars over time -- three through 2016, Resiliency from 2017, Innovation from 2022 -- so totals are comparable across years only within the same methodology. Bataan-wide comparison figures are in the full CMCI dataset.",
+    "provenance": {
+      "source_url": "https://cmci.dti.gov.ph/rankings-data.php?unit=1st%20to%202nd%20Class%20Municipalities",
+      "source_name": "DTI Cities and Municipalities Competitiveness Index - Bataan municipalities",
+      "retrieved_at": "2026-09-23",
+      "verified": true,
+      "verification_note": "Transcribed from the published dataset named in this record's source."
+    }
+  },
+  {
+    "id": "cmci-infrastructure-2024",
+    "metric": "CMCI Infrastructure",
+    "geography": "Municipality of Limay",
+    "year": 2024,
+    "value": 2.7419,
+    "unit": "index points",
+    "howToRead": "DTI Cities and Municipalities Competitiveness Index pillar score for 2024. Higher is better; that year's pillar scores sum to the overall score. CMCI has added pillars over time -- three through 2016, Resiliency from 2017, Innovation from 2022 -- so totals are comparable across years only within the same methodology. Bataan-wide comparison figures are in the full CMCI dataset.",
+    "provenance": {
+      "source_url": "https://cmci.dti.gov.ph/rankings-data.php?unit=1st%20to%202nd%20Class%20Municipalities",
+      "source_name": "DTI Cities and Municipalities Competitiveness Index - Bataan municipalities",
+      "retrieved_at": "2026-09-23",
+      "verified": true,
+      "verification_note": "Transcribed from the published dataset named in this record's source."
+    }
+  },
+  {
+    "id": "cmci-innovation-2022",
+    "metric": "CMCI Innovation",
+    "geography": "Municipality of Limay",
+    "year": 2022,
+    "value": 5.117,
+    "unit": "index points",
+    "howToRead": "DTI Cities and Municipalities Competitiveness Index pillar score for 2022. Higher is better; that year's pillar scores sum to the overall score. CMCI has added pillars over time -- three through 2016, Resiliency from 2017, Innovation from 2022 -- so totals are comparable across years only within the same methodology. Bataan-wide comparison figures are in the full CMCI dataset.",
+    "provenance": {
+      "source_url": "https://cmci.dti.gov.ph/rankings-data.php?unit=1st%20to%202nd%20Class%20Municipalities",
+      "source_name": "DTI Cities and Municipalities Competitiveness Index - Bataan municipalities",
+      "retrieved_at": "2026-09-23",
+      "verified": true,
+      "verification_note": "Transcribed from the published dataset named in this record's source."
+    }
+  },
+  {
+    "id": "cmci-innovation-2023",
+    "metric": "CMCI Innovation",
+    "geography": "Municipality of Limay",
+    "year": 2023,
+    "value": 3.7386,
+    "unit": "index points",
+    "howToRead": "DTI Cities and Municipalities Competitiveness Index pillar score for 2023. Higher is better; that year's pillar scores sum to the overall score. CMCI has added pillars over time -- three through 2016, Resiliency from 2017, Innovation from 2022 -- so totals are comparable across years only within the same methodology. Bataan-wide comparison figures are in the full CMCI dataset.",
+    "provenance": {
+      "source_url": "https://cmci.dti.gov.ph/rankings-data.php?unit=1st%20to%202nd%20Class%20Municipalities",
+      "source_name": "DTI Cities and Municipalities Competitiveness Index - Bataan municipalities",
+      "retrieved_at": "2026-09-23",
+      "verified": true,
+      "verification_note": "Transcribed from the published dataset named in this record's source."
+    }
+  },
+  {
+    "id": "cmci-innovation-2024",
+    "metric": "CMCI Innovation",
+    "geography": "Municipality of Limay",
+    "year": 2024,
+    "value": 6.4182,
+    "unit": "index points",
+    "howToRead": "DTI Cities and Municipalities Competitiveness Index pillar score for 2024. Higher is better; that year's pillar scores sum to the overall score. CMCI has added pillars over time -- three through 2016, Resiliency from 2017, Innovation from 2022 -- so totals are comparable across years only within the same methodology. Bataan-wide comparison figures are in the full CMCI dataset.",
+    "provenance": {
+      "source_url": "https://cmci.dti.gov.ph/rankings-data.php?unit=1st%20to%202nd%20Class%20Municipalities",
+      "source_name": "DTI Cities and Municipalities Competitiveness Index - Bataan municipalities",
+      "retrieved_at": "2026-09-23",
+      "verified": true,
+      "verification_note": "Transcribed from the published dataset named in this record's source."
+    }
+  },
+  {
+    "id": "cmci-overall-score-2019",
+    "metric": "CMCI Overall Score",
+    "geography": "Municipality of Limay",
+    "year": 2019,
+    "value": 32.0592,
+    "unit": "index points",
+    "howToRead": "DTI Cities and Municipalities Competitiveness Index overall competitiveness score for 2019. Higher is better; that year's pillar scores sum to the overall score. CMCI has added pillars over time -- three through 2016, Resiliency from 2017, Innovation from 2022 -- so totals are comparable across years only within the same methodology. Bataan-wide comparison figures are in the full CMCI dataset.",
+    "provenance": {
+      "source_url": "https://cmci.dti.gov.ph/rankings-data.php?unit=1st%20to%202nd%20Class%20Municipalities",
+      "source_name": "DTI Cities and Municipalities Competitiveness Index - Bataan municipalities",
+      "retrieved_at": "2026-09-23",
+      "verified": true,
+      "verification_note": "Transcribed from the published dataset named in this record's source."
+    }
+  },
+  {
+    "id": "cmci-overall-score-2020",
+    "metric": "CMCI Overall Score",
+    "geography": "Municipality of Limay",
+    "year": 2020,
+    "value": 36.64,
+    "unit": "index points",
+    "howToRead": "DTI Cities and Municipalities Competitiveness Index overall competitiveness score for 2020. Higher is better; that year's pillar scores sum to the overall score. CMCI has added pillars over time -- three through 2016, Resiliency from 2017, Innovation from 2022 -- so totals are comparable across years only within the same methodology. Bataan-wide comparison figures are in the full CMCI dataset.",
+    "provenance": {
+      "source_url": "https://cmci.dti.gov.ph/rankings-data.php?unit=1st%20to%202nd%20Class%20Municipalities",
+      "source_name": "DTI Cities and Municipalities Competitiveness Index - Bataan municipalities",
+      "retrieved_at": "2026-09-23",
+      "verified": true,
+      "verification_note": "Transcribed from the published dataset named in this record's source."
+    }
+  },
+  {
+    "id": "cmci-overall-score-2021",
+    "metric": "CMCI Overall Score",
+    "geography": "Municipality of Limay",
+    "year": 2021,
+    "value": 34.8435,
+    "unit": "index points",
+    "howToRead": "DTI Cities and Municipalities Competitiveness Index overall competitiveness score for 2021. Higher is better; that year's pillar scores sum to the overall score. CMCI has added pillars over time -- three through 2016, Resiliency from 2017, Innovation from 2022 -- so totals are comparable across years only within the same methodology. Bataan-wide comparison figures are in the full CMCI dataset.",
+    "provenance": {
+      "source_url": "https://cmci.dti.gov.ph/rankings-data.php?unit=1st%20to%202nd%20Class%20Municipalities",
+      "source_name": "DTI Cities and Municipalities Competitiveness Index - Bataan municipalities",
+      "retrieved_at": "2026-09-23",
+      "verified": true,
+      "verification_note": "Transcribed from the published dataset named in this record's source."
+    }
+  },
+  {
+    "id": "cmci-overall-score-2022",
+    "metric": "CMCI Overall Score",
+    "geography": "Municipality of Limay",
+    "year": 2022,
+    "value": 33.872,
+    "unit": "index points",
+    "howToRead": "DTI Cities and Municipalities Competitiveness Index overall competitiveness score for 2022. Higher is better; that year's pillar scores sum to the overall score. CMCI has added pillars over time -- three through 2016, Resiliency from 2017, Innovation from 2022 -- so totals are comparable across years only within the same methodology. Bataan-wide comparison figures are in the full CMCI dataset.",
+    "provenance": {
+      "source_url": "https://cmci.dti.gov.ph/rankings-data.php?unit=1st%20to%202nd%20Class%20Municipalities",
+      "source_name": "DTI Cities and Municipalities Competitiveness Index - Bataan municipalities",
+      "retrieved_at": "2026-09-23",
+      "verified": true,
+      "verification_note": "Transcribed from the published dataset named in this record's source."
+    }
+  },
+  {
+    "id": "cmci-overall-score-2023",
+    "metric": "CMCI Overall Score",
+    "geography": "Municipality of Limay",
+    "year": 2023,
+    "value": 32.9022,
+    "unit": "index points",
+    "howToRead": "DTI Cities and Municipalities Competitiveness Index overall competitiveness score for 2023. Higher is better; that year's pillar scores sum to the overall score. CMCI has added pillars over time -- three through 2016, Resiliency from 2017, Innovation from 2022 -- so totals are comparable across years only within the same methodology. Bataan-wide comparison figures are in the full CMCI dataset.",
+    "provenance": {
+      "source_url": "https://cmci.dti.gov.ph/rankings-data.php?unit=1st%20to%202nd%20Class%20Municipalities",
+      "source_name": "DTI Cities and Municipalities Competitiveness Index - Bataan municipalities",
+      "retrieved_at": "2026-09-23",
+      "verified": true,
+      "verification_note": "Transcribed from the published dataset named in this record's source."
+    }
+  },
+  {
+    "id": "cmci-overall-score-2024",
+    "metric": "CMCI Overall Score",
+    "geography": "Municipality of Limay",
+    "year": 2024,
+    "value": 35.2288,
+    "unit": "index points",
+    "howToRead": "DTI Cities and Municipalities Competitiveness Index overall competitiveness score for 2024. Higher is better; that year's pillar scores sum to the overall score. CMCI has added pillars over time -- three through 2016, Resiliency from 2017, Innovation from 2022 -- so totals are comparable across years only within the same methodology. Bataan-wide comparison figures are in the full CMCI dataset.",
+    "provenance": {
+      "source_url": "https://cmci.dti.gov.ph/rankings-data.php?unit=1st%20to%202nd%20Class%20Municipalities",
+      "source_name": "DTI Cities and Municipalities Competitiveness Index - Bataan municipalities",
+      "retrieved_at": "2026-09-23",
+      "verified": true,
+      "verification_note": "Transcribed from the published dataset named in this record's source."
+    }
+  },
+  {
+    "id": "cmci-resiliency-2019",
+    "metric": "CMCI Resiliency",
+    "geography": "Municipality of Limay",
+    "year": 2019,
+    "value": 14.7465,
+    "unit": "index points",
+    "howToRead": "DTI Cities and Municipalities Competitiveness Index pillar score for 2019. Higher is better; that year's pillar scores sum to the overall score. CMCI has added pillars over time -- three through 2016, Resiliency from 2017, Innovation from 2022 -- so totals are comparable across years only within the same methodology. Bataan-wide comparison figures are in the full CMCI dataset.",
+    "provenance": {
+      "source_url": "https://cmci.dti.gov.ph/rankings-data.php?unit=1st%20to%202nd%20Class%20Municipalities",
+      "source_name": "DTI Cities and Municipalities Competitiveness Index - Bataan municipalities",
+      "retrieved_at": "2026-09-23",
+      "verified": true,
+      "verification_note": "Transcribed from the published dataset named in this record's source."
+    }
+  },
+  {
+    "id": "cmci-resiliency-2020",
+    "metric": "CMCI Resiliency",
+    "geography": "Municipality of Limay",
+    "year": 2020,
+    "value": 15.8868,
+    "unit": "index points",
+    "howToRead": "DTI Cities and Municipalities Competitiveness Index pillar score for 2020. Higher is better; that year's pillar scores sum to the overall score. CMCI has added pillars over time -- three through 2016, Resiliency from 2017, Innovation from 2022 -- so totals are comparable across years only within the same methodology. Bataan-wide comparison figures are in the full CMCI dataset.",
+    "provenance": {
+      "source_url": "https://cmci.dti.gov.ph/rankings-data.php?unit=1st%20to%202nd%20Class%20Municipalities",
+      "source_name": "DTI Cities and Municipalities Competitiveness Index - Bataan municipalities",
+      "retrieved_at": "2026-09-23",
+      "verified": true,
+      "verification_note": "Transcribed from the published dataset named in this record's source."
+    }
+  },
+  {
+    "id": "cmci-resiliency-2021",
+    "metric": "CMCI Resiliency",
+    "geography": "Municipality of Limay",
+    "year": 2021,
+    "value": 13.2965,
+    "unit": "index points",
+    "howToRead": "DTI Cities and Municipalities Competitiveness Index pillar score for 2021. Higher is better; that year's pillar scores sum to the overall score. CMCI has added pillars over time -- three through 2016, Resiliency from 2017, Innovation from 2022 -- so totals are comparable across years only within the same methodology. Bataan-wide comparison figures are in the full CMCI dataset.",
+    "provenance": {
+      "source_url": "https://cmci.dti.gov.ph/rankings-data.php?unit=1st%20to%202nd%20Class%20Municipalities",
+      "source_name": "DTI Cities and Municipalities Competitiveness Index - Bataan municipalities",
+      "retrieved_at": "2026-09-23",
+      "verified": true,
+      "verification_note": "Transcribed from the published dataset named in this record's source."
+    }
+  },
+  {
+    "id": "cmci-resiliency-2022",
+    "metric": "CMCI Resiliency",
+    "geography": "Municipality of Limay",
+    "year": 2022,
+    "value": 11.4727,
+    "unit": "index points",
+    "howToRead": "DTI Cities and Municipalities Competitiveness Index pillar score for 2022. Higher is better; that year's pillar scores sum to the overall score. CMCI has added pillars over time -- three through 2016, Resiliency from 2017, Innovation from 2022 -- so totals are comparable across years only within the same methodology. Bataan-wide comparison figures are in the full CMCI dataset.",
+    "provenance": {
+      "source_url": "https://cmci.dti.gov.ph/rankings-data.php?unit=1st%20to%202nd%20Class%20Municipalities",
+      "source_name": "DTI Cities and Municipalities Competitiveness Index - Bataan municipalities",
+      "retrieved_at": "2026-09-23",
+      "verified": true,
+      "verification_note": "Transcribed from the published dataset named in this record's source."
+    }
+  },
+  {
+    "id": "cmci-resiliency-2023",
+    "metric": "CMCI Resiliency",
+    "geography": "Municipality of Limay",
+    "year": 2023,
+    "value": 11.5044,
+    "unit": "index points",
+    "howToRead": "DTI Cities and Municipalities Competitiveness Index pillar score for 2023. Higher is better; that year's pillar scores sum to the overall score. CMCI has added pillars over time -- three through 2016, Resiliency from 2017, Innovation from 2022 -- so totals are comparable across years only within the same methodology. Bataan-wide comparison figures are in the full CMCI dataset.",
+    "provenance": {
+      "source_url": "https://cmci.dti.gov.ph/rankings-data.php?unit=1st%20to%202nd%20Class%20Municipalities",
+      "source_name": "DTI Cities and Municipalities Competitiveness Index - Bataan municipalities",
+      "retrieved_at": "2026-09-23",
+      "verified": true,
+      "verification_note": "Transcribed from the published dataset named in this record's source."
+    }
+  },
+  {
+    "id": "cmci-resiliency-2024",
+    "metric": "CMCI Resiliency",
+    "geography": "Municipality of Limay",
+    "year": 2024,
+    "value": 11.432,
+    "unit": "index points",
+    "howToRead": "DTI Cities and Municipalities Competitiveness Index pillar score for 2024. Higher is better; that year's pillar scores sum to the overall score. CMCI has added pillars over time -- three through 2016, Resiliency from 2017, Innovation from 2022 -- so totals are comparable across years only within the same methodology. Bataan-wide comparison figures are in the full CMCI dataset.",
+    "provenance": {
+      "source_url": "https://cmci.dti.gov.ph/rankings-data.php?unit=1st%20to%202nd%20Class%20Municipalities",
+      "source_name": "DTI Cities and Municipalities Competitiveness Index - Bataan municipalities",
+      "retrieved_at": "2026-09-23",
+      "verified": true,
+      "verification_note": "Transcribed from the published dataset named in this record's source."
+    }
   }
 ]

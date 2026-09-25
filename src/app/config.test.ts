@@ -9,7 +9,7 @@ describe("BetterLimay configuration boundary", () => {
 
     expect(config.lgu.name).toBe("Limay");
     expect(config.portal.name).toBe("BetterLimay");
-    expect(config.portal.brandColor).toBe("#0032A0");
+    expect(config.portal.brandColor).toBe("#1447B5");
   });
 
   it("rebrands portal identity from config without component constants", () => {

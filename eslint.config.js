@@ -13,6 +13,17 @@ export default tseslint.config(
       "node_modules/**",
       "playwright-report/**",
       "test-results/**",
+      // Python tooling artifacts. ESLint has nothing to lint in them, and it
+      // aborts the whole run on an EPERM if it cannot scandir one.
+      "**/__pycache__/**",
+      "**/.pytest_cache/**",
+      // Acquired source payloads; see sources/README.md.
+      "sources/**",
+      // Pipeline stage outputs are generated.
+      "pipeline/raw_data/**",
+      "pipeline/normalized_data/**",
+      "pipeline/parsed_data/**",
+      "pipeline/generated_data/**",
     ],
   },
   js.configs.recommended,

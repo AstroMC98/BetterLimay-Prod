@@ -11,6 +11,12 @@ export interface TransparencyChartData {
   records: TransparencyRecord[];
 }
 
+export interface TransparencyChartSeries {
+  kind: string;
+  unit: string;
+  records: TransparencyRecord[];
+}
+
 const KIND_ORDER: TransparencyRecord["kind"][] = [
   "budget",
   "procurement",
@@ -54,4 +60,42 @@ export function getTransparencyChartData(
         (left, right) => left.year - right.year || left.title.localeCompare(right.title),
       ),
   };
+}
+
+/**
+ * Group chartable records into series that can honestly share an axis.
+ *
+ * Filtering on unit alone is not enough. Every record here is in pesos, but an
+ * audited balance-sheet total and a road-project appropriation are not the same
+ * kind of quantity — put them on one axis and the ₱5.9B total flattens the ₱10M
+ * project into an invisible sliver, inviting the reader to compare two things
+ * that were never comparable. `kind` is the real boundary, so each kind becomes
+ * its own standalone chart.
+ *
+ * A group with fewer than two plottable records is dropped: one bar is a stat
+ * tile, and the table below carries it either way.
+ */
+export function getTransparencyChartSeries(
+  records: TransparencyRecord[],
+): TransparencyChartSeries[] {
+  const byKind = new Map<string, TransparencyRecord[]>();
+
+  for (const record of records) {
+    if (record.amount === null) continue;
+    const existing = byKind.get(record.kind);
+    if (existing) existing.push(record);
+    else byKind.set(record.kind, [record]);
+  }
+
+  return [...byKind.entries()]
+    .map(([kind, kindRecords]) => ({
+      kind,
+      unit: kindRecords[0].unit,
+      records: [...kindRecords].sort(
+        (left, right) =>
+          right.amount! - left.amount! || left.title.localeCompare(right.title),
+      ),
+    }))
+    .filter((series) => series.records.length >= 2)
+    .sort((left, right) => right.records.length - left.records.length);
 }

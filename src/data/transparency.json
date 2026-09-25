@@ -58,5 +58,195 @@
       "verified": true,
       "verification_note": "The notice identifies solicitation 25CB0017, an Approved Budget for the Contract of PHP 16,713,900, and status Awarded."
     }
+  },
+  {
+    "id": "coa-2024-total-assets",
+    "kind": "financial-statement",
+    "title": "Total assets",
+    "year": 2024,
+    "amount": 5912684685.44,
+    "unit": "PHP",
+    "status": "audited",
+    "sourceAgency": "Commission on Audit",
+    "howToRead": "Audited figure for calendar year 2024 as reported by the Commission on Audit in its Annual Audit Report on the Municipality of Limay. This is an audited actual for a year that has already closed, not a budget or a forecast. Taken from the Statement of Financial Position.",
+    "provenance": {
+      "source_name": "Commission on Audit",
+      "retrieved_at": "2026-09-23",
+      "verified": true,
+      "verification_note": "Transcribed from the audited report named in this record's source.",
+      "source_document": "Annual Audit Report on the Municipality of Limay, Bataan for CY 2024",
+      "source_issued": "2025-12-03"
+    }
+  },
+  {
+    "id": "coa-2024-total-liabilities",
+    "kind": "financial-statement",
+    "title": "Total liabilities",
+    "year": 2024,
+    "amount": 1306094835.66,
+    "unit": "PHP",
+    "status": "audited",
+    "sourceAgency": "Commission on Audit",
+    "howToRead": "Audited figure for calendar year 2024 as reported by the Commission on Audit in its Annual Audit Report on the Municipality of Limay. This is an audited actual for a year that has already closed, not a budget or a forecast. Taken from the Statement of Financial Position.",
+    "provenance": {
+      "source_name": "Commission on Audit",
+      "retrieved_at": "2026-09-23",
+      "verified": true,
+      "verification_note": "Transcribed from the audited report named in this record's source.",
+      "source_document": "Annual Audit Report on the Municipality of Limay, Bataan for CY 2024",
+      "source_issued": "2025-12-03"
+    }
+  },
+  {
+    "id": "coa-2024-total-current-assets",
+    "kind": "financial-statement",
+    "title": "Total current assets",
+    "year": 2024,
+    "amount": 3083460491.06,
+    "unit": "PHP",
+    "status": "audited",
+    "sourceAgency": "Commission on Audit",
+    "howToRead": "Audited figure for calendar year 2024 as reported by the Commission on Audit in its Annual Audit Report on the Municipality of Limay. This is an audited actual for a year that has already closed, not a budget or a forecast. Taken from the Statement of Financial Position.",
+    "provenance": {
+      "source_name": "Commission on Audit",
+      "retrieved_at": "2026-09-23",
+      "verified": true,
+      "verification_note": "Transcribed from the audited report named in this record's source.",
+      "source_document": "Annual Audit Report on the Municipality of Limay, Bataan for CY 2024",
+      "source_issued": "2025-12-03"
+    }
+  },
+  {
+    "id": "coa-2024-total-non-current-assets",
+    "kind": "financial-statement",
+    "title": "Total non-current assets",
+    "year": 2024,
+    "amount": 2829224194.38,
+    "unit": "PHP",
+    "status": "audited",
+    "sourceAgency": "Commission on Audit",
+    "howToRead": "Audited figure for calendar year 2024 as reported by the Commission on Audit in its Annual Audit Report on the Municipality of Limay. This is an audited actual for a year that has already closed, not a budget or a forecast. Taken from the Statement of Financial Position.",
+    "provenance": {
+      "source_name": "Commission on Audit",
+      "retrieved_at": "2026-09-23",
+      "verified": true,
+      "verification_note": "Transcribed from the audited report named in this record's source.",
+      "source_document": "Annual Audit Report on the Municipality of Limay, Bataan for CY 2024",
+      "source_issued": "2025-12-03"
+    }
+  },
+  {
+    "id": "coa-2024-total-revenue",
+    "kind": "financial-statement",
+    "title": "Total revenue",
+    "year": 2024,
+    "amount": 1265302498.41,
+    "unit": "PHP",
+    "status": "audited",
+    "sourceAgency": "Commission on Audit",
+    "howToRead": "Audited figure for calendar year 2024 as reported by the Commission on Audit in its Annual Audit Report on the Municipality of Limay. This is an audited actual for a year that has already closed, not a budget or a forecast. Taken from the Statement of Financial Performance.",
+    "provenance": {
+      "source_name": "Commission on Audit",
+      "retrieved_at": "2026-09-23",
+      "verified": true,
+      "verification_note": "Transcribed from the audited report named in this record's source.",
+      "source_document": "Annual Audit Report on the Municipality of Limay, Bataan for CY 2024",
+      "source_issued": "2025-12-03"
+    }
+  },
+  {
+    "id": "coa-2024-surplus-deficit-for-the-period",
+    "kind": "financial-statement",
+    "title": "Surplus for the period",
+    "year": 2024,
+    "amount": 293495147.79,
+    "unit": "PHP",
+    "status": "audited",
+    "sourceAgency": "Commission on Audit",
+    "howToRead": "Audited figure for calendar year 2024 as reported by the Commission on Audit in its Annual Audit Report on the Municipality of Limay. This is an audited actual for a year that has already closed, not a budget or a forecast. Taken from the Statement of Financial Performance.",
+    "provenance": {
+      "source_name": "Commission on Audit",
+      "retrieved_at": "2026-09-23",
+      "verified": true,
+      "verification_note": "Transcribed from the audited report named in this record's source.",
+      "source_document": "Annual Audit Report on the Municipality of Limay, Bataan for CY 2024",
+      "source_issued": "2025-12-03"
+    }
+  },
+  {
+    "id": "coa-2024-total-cash-inflows",
+    "kind": "financial-statement",
+    "title": "Total cash inflows",
+    "year": 2024,
+    "amount": 1193319018.86,
+    "unit": "PHP",
+    "status": "audited",
+    "sourceAgency": "Commission on Audit",
+    "howToRead": "Audited figure for calendar year 2024 as reported by the Commission on Audit in its Annual Audit Report on the Municipality of Limay. This is an audited actual for a year that has already closed, not a budget or a forecast. Taken from the Statement of Cash Flows.",
+    "provenance": {
+      "source_name": "Commission on Audit",
+      "retrieved_at": "2026-09-23",
+      "verified": true,
+      "verification_note": "Transcribed from the audited report named in this record's source.",
+      "source_document": "Annual Audit Report on the Municipality of Limay, Bataan for CY 2024",
+      "source_issued": "2025-12-03"
+    }
+  },
+  {
+    "id": "coa-2024-total-revenues-and-receipts",
+    "kind": "financial-statement",
+    "title": "Total revenues and receipts",
+    "year": 2024,
+    "amount": 1265451623.41,
+    "unit": "PHP",
+    "status": "audited",
+    "sourceAgency": "Commission on Audit",
+    "howToRead": "Audited figure for calendar year 2024 as reported by the Commission on Audit in its Annual Audit Report on the Municipality of Limay. This is an audited actual for a year that has already closed, not a budget or a forecast. Taken from the Statement of Comparison of Budget and Actual Amounts.",
+    "provenance": {
+      "source_name": "Commission on Audit",
+      "retrieved_at": "2026-09-23",
+      "verified": true,
+      "verification_note": "Transcribed from the audited report named in this record's source.",
+      "source_document": "Annual Audit Report on the Municipality of Limay, Bataan for CY 2024",
+      "source_issued": "2025-12-03"
+    }
+  },
+  {
+    "id": "coa-2024-total-current-appropriations",
+    "kind": "financial-statement",
+    "title": "Total current appropriations",
+    "year": 2024,
+    "amount": 1237766670.79,
+    "unit": "PHP",
+    "status": "audited",
+    "sourceAgency": "Commission on Audit",
+    "howToRead": "Audited figure for calendar year 2024 as reported by the Commission on Audit in its Annual Audit Report on the Municipality of Limay. This is an audited actual for a year that has already closed, not a budget or a forecast. Taken from the Statement of Comparison of Budget and Actual Amounts.",
+    "provenance": {
+      "source_name": "Commission on Audit",
+      "retrieved_at": "2026-09-23",
+      "verified": true,
+      "verification_note": "Transcribed from the audited report named in this record's source.",
+      "source_document": "Annual Audit Report on the Municipality of Limay, Bataan for CY 2024",
+      "source_issued": "2025-12-03"
+    }
+  },
+  {
+    "id": "coa-2024-total-tax-revenue",
+    "kind": "financial-statement",
+    "title": "Total tax revenue",
+    "year": 2024,
+    "amount": 959752592.81,
+    "unit": "PHP",
+    "status": "audited",
+    "sourceAgency": "Commission on Audit",
+    "howToRead": "Audited figure for calendar year 2024 as reported by the Commission on Audit in its Annual Audit Report on the Municipality of Limay. This is an audited actual for a year that has already closed, not a budget or a forecast. Taken from the Statement of Comparison of Budget and Actual Amounts.",
+    "provenance": {
+      "source_name": "Commission on Audit",
+      "retrieved_at": "2026-09-23",
+      "verified": true,
+      "verification_note": "Transcribed from the audited report named in this record's source.",
+      "source_document": "Annual Audit Report on the Municipality of Limay, Bataan for CY 2024",
+      "source_issued": "2025-12-03"
+    }
   }
 ]

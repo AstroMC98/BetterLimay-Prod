@@ -5,6 +5,12 @@ playwright-report
 test-results
 raw_data
 pipeline/.cache
+# Python tooling artifacts. Prettier aborts the whole run on an EPERM if it
+# cannot scandir one of these during directory expansion.
+**/__pycache__
+**/.pytest_cache
+# Acquired source payloads; see sources/README.md.
+sources
 branding
 config
 dev_tasks

@@ -3,7 +3,13 @@ import "leaflet/dist/leaflet.css";
 import { CircleMarker, MapContainer, Popup, TileLayer } from "react-leaflet";
 import { useTranslation } from "react-i18next";
 
+import { loadLguConfig } from "../../app/lguConfig";
+import { createPortalIdentity } from "../../app/portalIdentity";
 import type { VerifiedBarangayMapPoint } from "../../lib/ui/governmentCatalog";
+
+/* Leaflet paints to canvas, so it cannot read the CSS token. Taking the colour from
+   the LGU config keeps a fork's map pins in that fork's brand instead of Limay's. */
+const brandColor = createPortalIdentity(loadLguConfig()).brandColor;
 
 export default function VerifiedBarangayMap({
   points,
@@ -34,7 +40,11 @@ export default function VerifiedBarangayMap({
             key={record.id}
             center={[coordinates.lat, coordinates.lng]}
             radius={8}
-            pathOptions={{ color: "#0032A0", fillColor: "#0032A0", fillOpacity: 0.8 }}
+            pathOptions={{
+              color: brandColor,
+              fillColor: brandColor,
+              fillOpacity: 0.8,
+            }}
           >
             <Popup>
               <strong>{record.name}</strong>

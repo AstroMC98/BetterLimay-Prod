@@ -1,0 +1,101 @@
+# BetterLimay content editor.
+#
+# The editor writes directly into the repository's data files and commits on the
+# editor's behalf, so nobody needs to touch git to post news. A commit still
+# happens — that is deliberate, because it keeps the full edit history and means
+# a bad post can be reverted like any other change.
+#
+# Fields here mirror src/data/schema/*.schema.json. If a schema changes, change
+# this file in the same commit: `python -m pipeline.validate` runs in CI and will
+# reject anything the editor writes that does not match.
+
+backend:
+  name: github
+  repo: AstroMC98/BetterLimay-Prod
+  branch: main
+  # Our own OAuth proxy — api/admin-auth.ts. The browser cannot complete the
+  # token exchange itself because that step needs the client secret.
+  #
+  # Three things must name the same origin or sign-in fails:
+  #   1. the domain the editor is served from
+  #   2. this base_url
+  #   3. the GitHub OAuth app's Authorization callback URL
+  # Change them together, never one at a time.
+  base_url: https://betterlimay.org
+  auth_endpoint: api/admin-auth
+
+# Posts land on a branch and open a pull request rather than committing straight
+# to main. Publishing is still one click, but a mistake is caught before it is
+# live and every change is reviewable.
+publish_mode: editorial_workflow
+
+locale: en
+
+media_folder: public/uploads
+public_folder: /uploads
+
+collections:
+  - name: announcements
+    label: News and announcements
+    label_singular: Announcement
+    description: >
+      Official news posted by the Municipality. Each entry links to the original
+      post so a reader can confirm it at the source.
+    folder: src/data/announcements
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    # One JSON file per post; a build step folds them into announcements.json.
+    extension: json
+    format: json
+    fields:
+      - { name: id, label: ID, widget: string, pattern: ['^[a-z0-9-]+$', "Lowercase letters, numbers and hyphens only"] }
+      - { name: title, label: Title, widget: string }
+      - { name: publishedAt, label: Published, widget: datetime, format: "YYYY-MM-DDTHH:mm:ssZ" }
+      - { name: url, label: Original post URL, widget: string, pattern: ['^https://', "Must be a full https:// link to the original post"] }
+      - { name: sourceName, label: Source, widget: string, default: "Municipality of Limay" }
+      - { name: summary, label: Summary, widget: text, required: false }
+      - name: provenance
+        label: Provenance
+        widget: object
+        fields:
+          - { name: source_url, label: Source URL, widget: string, pattern: ['^https://', "Must be a full https:// link"] }
+          - { name: source_name, label: Publisher, widget: string, default: "Municipality of Limay" }
+          - { name: retrieved_at, label: Retrieved, widget: datetime, format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false }
+          - { name: verified, label: Verified, widget: hidden, default: true }
+          - { name: verification_note, label: Note, widget: string, required: false, default: "Posted by a maintainer from the official source named above." }
+
+  - name: hotlines
+    label: Emergency hotlines
+    label_singular: Hotline
+    description: >
+      Numbers a resident may dial in an emergency. Of everything here this is the
+      one where being wrong causes direct harm — check each number against the
+      official source before saving.
+    file_collections: false
+    folder: src/data/hotlines
+    create: true
+    extension: json
+    format: json
+    slug: "{{slug}}"
+    fields:
+      - { name: id, label: ID, widget: string, pattern: ['^[a-z0-9-]+$', "Lowercase letters, numbers and hyphens only"] }
+      - { name: service, label: Service or office, widget: string }
+      - { name: agency, label: Agency, widget: string, required: false }
+      - name: numbers
+        label: Numbers
+        widget: list
+        field: { name: number, label: Number, widget: string }
+        hint: Enter each number exactly as published. Do not reformat it.
+      - name: category
+        label: Category
+        widget: select
+        options: [police, fire, medical, disaster, coastguard, utility, other]
+      - name: provenance
+        label: Provenance
+        widget: object
+        fields:
+          - { name: source_document, label: Source document, widget: string, default: "Municipality of Limay emergency hotlines poster" }
+          - { name: source_name, label: Publisher, widget: string, default: "Municipality of Limay" }
+          - { name: retrieved_at, label: Retrieved, widget: datetime, format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false }
+          - { name: verified, label: Verified, widget: hidden, default: true }
+          - { name: verification_note, label: Note, widget: string, required: false }

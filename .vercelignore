@@ -1,0 +1,46 @@
+# What Vercel uploads for a build.
+#
+# Two reasons for this file:
+#
+# 1. `tests/pipeline/.pytest_cache` is owned by another Windows account on the
+#    maintainer's machine and cannot be read or deleted. The CLI walks the
+#    project directory before uploading and fails with EPERM on it. The same
+#    directory already breaks eslint and prettier, which exclude it too.
+#
+# 2. `sources/` holds ~73 MB of acquired PDFs that the build never reads — they
+#    are inputs to the local Python pipeline, not to Vite. Uploading them would
+#    make every deploy slower for nothing.
+#
+# Anything the build actually touches must stay: package.json, vite/tsconfig,
+# index.html, src/, public/, config/, scripts/ (the prebuild fold), api/ and
+# vercel.json.
+
+# Python tooling artifacts (the EPERM blocker)
+**/.pytest_cache
+**/__pycache__
+*.pyc
+
+# The local data pipeline. Runs on a maintainer's machine, never on Vercel;
+# its published output is already committed under src/data/ and public/data/.
+pipeline/
+sources/
+
+# Tests and local tooling.
+# vitest.config.ts and playwright.config.ts are NOT excluded: tsconfig.node.json
+# lists them in `include`, and `npm run build` runs `tsc -b`, so removing them
+# breaks the build with a missing-file error rather than anything obvious.
+tests/
+.playwright-mcp/
+lighthouserc.cjs
+
+# Docs and planning
+docs/
+dev_tasks/
+*.md
+!README.md
+
+# Build output and local state
+dist/
+coverage/
+playwright-report/
+test-results/

@@ -1,0 +1,358 @@
+# BetterLimay acquired-source register.
+#
+# This is the ONLY hand-edited metadata file in sources/. `sources/manifest.json`
+# is generated from it by `pipeline/0_acquire.py`; never hand-edit the manifest.
+#
+# Contract (see sources/README.md):
+#   - `url` must be an exact, public, auditable URL, or null with `blocked_by`.
+#     A null url is emitted with a non-fetched status, which pipeline/2_normalize.py
+#     skips automatically. This is the governance gate, enforced mechanically.
+#   - `retrieved_at` is date-only (YYYY-MM-DD) to match provenance.schema.json.
+#   - Two entries must never share a `url`: pipeline/2_normalize.py derives document
+#     identity from sha256(url)[:12], so a collision silently overwrites extracted text.
+#
+# entity_scope: municipal | peer-lgu | provincial | gocc | national-agency
+# extraction:   none | tabular | llm-text | llm-vision
+#   The llm-text/llm-vision split records whether the PDF has a text layer, which
+#   is useful to know, but it does not change how stage 5 runs: Gemini reads PDFs
+#   with native vision and handles a scan and a digital document identically.
+# completeness: complete | truncated | partial | unknown
+
+version: 1
+
+sources:
+  # ---------------------------------------------------------------- statistics
+  - id: psgc-limay-barangays-popcen-2024
+    path: municipality-of-limay/psgc-barangays-popcen-2024.tsv
+    entity: Philippine Statistics Authority
+    entity_scope: national-agency
+    source_name: Philippine Statistics Authority
+    url: null
+    # No public URL yet, so this cannot flow through the stage 2-4 document
+    # bridge (which derives identity from the URL). It IS publishable: the
+    # document: block above is a citation a reader can act on.
+    bridge_blocked_by: [exact-url-unconfirmed]
+    retrieved_at: 2026-09-23
+    document:
+      title: "PSA Philippine Standard Geographic Code - Municipality of Limay barangays, 2024 POPCEN"
+    acquisition: ui-export
+    extraction: tabular
+    completeness: complete
+    target_datasets: [barangays.json, statistics.json]
+    gap_ids: [GAP-008, GAP-014]
+    publishable: true
+    notes: >
+      12 barangays with 10-digit PSGC codes, correspondence codes, urban/rural class
+      and 2024 POPCEN population. Tab-separated, CRLF line endings.
+      TRAP: the header row repeats mid-file (paste artifact) - strip before parsing.
+      Codes skip 005/010/011; the 12 present match config/lgu.config.json.
+      CANDIDATE URL (unverified, psa.gov.ph returns HTTP 403 to automated fetch -
+      a maintainer must confirm from a browser):
+      https://psa.gov.ph/classification/psgc/barangays/0300806000
+      The related citimuni page is already `verified` in docs/SOURCE_REGISTER.md.
+
+  - id: dti-cmci-bataan-2014-2024
+    path: dti-cmci/bataan-2014-2024
+    entity: Department of Trade and Industry
+    entity_scope: national-agency
+    source_name: DTI Cities and Municipalities Competitiveness Index - Bataan municipalities
+    url: https://cmci.dti.gov.ph/rankings-data.php?unit=1st%20to%202nd%20Class%20Municipalities
+    retrieved_at: 2026-09-23
+    acquisition: ui-export
+    extraction: tabular
+    completeness: complete
+    target_datasets: [statistics.json]
+    gap_ids: [GAP-015]
+    publishable: true
+    notes: >
+      56 CSVs, one per pillar/indicator. Each is a matrix of 8 Bataan LGUs
+      (Limay, Balanga, Orion, Mariveles, Orani, Bagac, Abucay, Hermosa) x 11 years
+      (2014-2024). 3627 usable cells total; 449 are Limay's.
+      TWO SENTINELS, both verified - never coerce either to zero:
+        "-"      = the indicator did not exist that year.
+        "0.0000" in the 2018 column ONLY = not surveyed. Every LGU except Balanga
+                   is exactly 0.0000 across all 56 indicators, which is impossible
+                   as real data. Zeros in other years are genuine.
+      Peer-LGU rows are published deliberately as a comparative benchmark with
+      explicit per-record `geography`; see the carve-out in src/data/README.md.
+      Methodology: https://cmci.dti.gov.ph/about-method.php
+      Second rankings URL (3rd-4th class municipalities) in dti-cmci/source-urls.txt.
+
+  # --------------------------------------------------------------- procurement
+  - id: philgeps-limay-awards-export-2026-09-23
+    path: philgeps/awarded-contracts-limay-export-2026-09-23.csv
+    entity: Philippine Government Electronic Procurement System
+    entity_scope: national-agency
+    source_name: PhilGEPS awarded contracts - Municipality of Limay, Bataan
+    url: null
+    # No public URL yet, so this cannot flow through the stage 2-4 document
+    # bridge (which derives identity from the URL). It IS publishable: the
+    # document: block above is a citation a reader can act on.
+    bridge_blocked_by: [exact-url-unconfirmed]
+    retrieved_at: 2026-09-23
+    document:
+      title: "PhilGEPS awarded contracts search export - Municipality of Limay, Bataan"
+    acquisition: ui-export
+    extraction: tabular
+    completeness: truncated
+    target_datasets: [transparency.json]
+    gap_ids: [GAP-012]
+    publishable: true
+    notes: >
+      1000 rows, 11 columns, all "MUNICIPALITY OF LIMAY, BATAAN". Award dates
+      2024-04-23 to 2025-12-09. 93 distinct awardees.
+      TRUNCATED: exactly 1000 rows with no trailing newline - a paginated UI cap.
+      Any total derived from it is a LOWER BOUND and must be labelled as such.
+      6 malformed rows from unescaped commas (lines 93, 94, 203, 428, 853, 854).
+      29 exact duplicate rows. Reference ID and Contract No are both blank on
+      856/1000 rows, so there is no usable primary key; dedup on the composite
+      (Award Title, Awardee, Contract Amount, Award Date), which collides exactly
+      29 times - precisely the duplicate count - yielding 965 unique records.
+      The export has NO per-award URL column. Per docs/DATA_GAPS.md rule 4 that
+      blocks record-level publication until per-notice URLs are resolved through
+      pipeline/1_scrape.py. Registered candidate: https://notices.philgeps.gov.ph/
+
+  # ----------------------------------------------------------------- financial
+  - id: coa-limay-annual-audit-report-2024
+    path: coa/limay-2024-annual-audit-report.pdf
+    entity: Commission on Audit
+    entity_scope: national-agency
+    source_name: Commission on Audit
+    url: null
+    # No public URL yet, so this cannot flow through the stage 2-4 document
+    # bridge (which derives identity from the URL). It IS publishable: the
+    # document: block above is a citation a reader can act on.
+    bridge_blocked_by: [exact-url-unconfirmed]
+    retrieved_at: 2026-09-23
+    document:
+      title: "Annual Audit Report on the Municipality of Limay, Bataan for CY 2024"
+      issued: 2025-12-03
+    acquisition: manual-download
+    extraction: llm-text
+    completeness: complete
+    target_datasets: [transparency.json, statistics.json]
+    gap_ids: [GAP-011]
+    publishable: true
+    notes: >
+      211 pages. PDF title: "Annual Audit Report on the Municipality of Limay,
+      Bataan for CY 2024". Published 2025-12-03; AAR date 2025-06-25.
+      CLEAN SELECTABLE TEXT throughout - no OCR needed. Contains the Executive
+      Summary, audited financial statements and the Statement of Cash Flows with
+      actual peso figures. This is the authoritative municipal financial source
+      and the strongest available answer to GAP-011, which currently records that
+      no municipal budget, income/expenditure or Full Disclosure record has been
+      verified. Registered candidate: https://www.coa.gov.ph/
+
+  - id: coa-limay-aapsi-2024
+    path: coa/limay-2024-aapsi.pdf
+    entity: Commission on Audit
+    entity_scope: national-agency
+    source_name: Commission on Audit
+    url: null
+    # No public URL yet, so this cannot flow through the stage 2-4 document
+    # bridge (which derives identity from the URL). It IS publishable: the
+    # document: block above is a citation a reader can act on.
+    bridge_blocked_by: [exact-url-unconfirmed]
+    retrieved_at: 2026-09-23
+    document:
+      title: "Agency Action Plan and Status of Implementation - Municipality of Limay, Bataan, CY 2024"
+      issued: 2025-12-03
+    acquisition: manual-download
+    extraction: llm-text
+    completeness: complete
+    gap_ids: [GAP-011]
+    publishable: true
+    notes: 60 pages. Companion to the CY 2024 AAR; tracks management action on audit findings.
+
+  - id: coa-limay-apmt-2024
+    path: coa/limay-2024-apmt.pdf
+    entity: Commission on Audit
+    entity_scope: national-agency
+    source_name: Commission on Audit
+    url: null
+    # No public URL yet, so this cannot flow through the stage 2-4 document
+    # bridge (which derives identity from the URL). It IS publishable: the
+    # document: block above is a citation a reader can act on.
+    bridge_blocked_by: [exact-url-unconfirmed]
+    retrieved_at: 2026-09-23
+    document:
+      title: "Action Plan Monitoring Tool (APMT) - Municipality of Limay, Bataan, CY 2024"
+      issued: 2025-09-24
+    acquisition: manual-download
+    extraction: llm-text
+    completeness: complete
+    gap_ids: [GAP-011]
+    publishable: true
+    notes: >
+      45 pages. Audit Team R3-08, Sector LGAS-B Bataan, audit period January to
+      December 2024, AAR date 2025-06-25.
+
+  # ------------------------------------------------------------------ charters
+  - id: bataan-provincial-citizens-charter-2026
+    path: province-of-bataan/citizens-charter-2026-1st-edition.pdf
+    entity: Provincial Government of Bataan
+    entity_scope: provincial
+    source_name: Provincial Government of Bataan
+    url: null
+    # No public URL yet, so this cannot flow through the stage 2-4 document
+    # bridge (which derives identity from the URL). It IS publishable: the
+    # document: block above is a citation a reader can act on.
+    bridge_blocked_by: [exact-url-unconfirmed]
+    retrieved_at: 2026-09-23
+    document:
+      title: "Provincial Government of Bataan Citizen's Charter, 2026 1st Edition"
+    acquisition: manual-download
+    extraction: llm-text
+    extraction_scope: service-index
+    completeness: complete
+    target_datasets: [service-referrals.json]
+    publishable: true
+    notes: >
+      584 pages, 1,006,451 selectable characters - clean text, no OCR needed.
+      Uses the standard ARTA charter table:
+        CLIENT STEPS | AGENCY ACTION | FEES TO BE PAID | PROCESSING TIME | PERSON RESPONSIBLE
+      BEST EXTRACTION PROOF-OF-CONCEPT of the three charters here: clean text plus
+      the canonical table shape. Purpose is a REFERRAL index - when a service is
+      provincial rather than municipal, point the resident here. Do not import
+      provincial services into the municipal catalog.
+
+  - id: orion-citizens-charter-2026
+    path: municipality-of-orion/citizens-charter-2026-1st-edition.pdf
+    entity: Municipality of Orion
+    entity_scope: peer-lgu
+    source_name: Municipality of Orion
+    url: null
+    # No public URL yet, so this cannot flow through the stage 2-4 document
+    # bridge (which derives identity from the URL). It IS publishable: the
+    # document: block above is a citation a reader can act on.
+    bridge_blocked_by: [exact-url-unconfirmed]
+    retrieved_at: 2026-09-23
+    document:
+      title: "Municipality of Orion Citizen's Charter, 2026 1st Edition"
+    acquisition: manual-download
+    extraction: llm-vision
+    extraction_scope: government-to-citizen
+    completeness: complete
+    target_datasets: [services.json]
+    gap_ids: [GAP-009]
+    display_as: reference
+    publishable: true
+    notes: >
+      381 pages, 37.8 MB. SCANNED: zero selectable characters across all 381 pages;
+      every page is a single DCTDecode (JPEG) image.
+      Consequences:
+        - pipeline/3_parse.py extracts nothing. Its OCR fallback needs Tesseract,
+          which is NOT installed here, so it warns and yields empty text. Stage 5
+          is the only route for this document.
+        - stage 5 handles it anyway: Gemini reads PDF pages with native vision, so
+          a scan needs no OCR and costs the same ~258 tokens per page as a digital
+          PDF. The whole charter is roughly 98,000 input tokens.
+        - the file is under Gemini's 50 MB / 1000-page ceiling, but stage 5 still
+          slices and uploads per chunk so a page is never billed twice.
+      Structural proxy for Limay, whose own charter has never been reachable
+      (GAP-001 / GAP-003 / GAP-017). ORION'S FEES AND PROCESSING TIMES ARE ORION'S
+      FACTS. The process transfers to Limay; the numbers do not. Records publish
+      with providerScope "peer-lgu-reference" and a visible badge.
+
+  - id: limay-water-district-citizens-charter-2026
+    path: limay-water-district/citizens-charter-2026-1st-edition.pdf
+    entity: Limay Water District
+    entity_scope: gocc
+    source_name: Limay Water District
+    url: null
+    # No public URL yet, so this cannot flow through the stage 2-4 document
+    # bridge (which derives identity from the URL). It IS publishable: the
+    # document: block above is a citation a reader can act on.
+    bridge_blocked_by: [exact-url-unconfirmed]
+    retrieved_at: 2026-09-23
+    document:
+      title: "Limay Water District Citizen's Charter 2026 (1st Edition)"
+    acquisition: manual-download
+    extraction: llm-text
+    extraction_scope: service-index
+    completeness: complete
+    target_datasets: [service-referrals.json]
+    publishable: true
+    notes: >
+      140 pages, ~135,000 selectable characters - clean text, no OCR needed.
+      A separate local water district, NOT the Municipality. Water service is not a
+      municipal function here, so these belong in the referral index rather than the
+      municipal service catalog: a resident must not read an LWD fee as a municipal fee.
+
+  - id: ppa-pmo-bataan-aurora-citizens-charter-2016
+    path: ppa-pmo-bataan-aurora/citizens-charter-2016.pdf
+    entity: Philippine Ports Authority - Port Management Office, Bataan/Aurora
+    entity_scope: national-agency
+    source_name: PPA PMO Bataan/Aurora Citizen's Charter (2016)
+    url: null
+    blocked_by: [exact-url-unconfirmed, stale-edition]
+    retrieved_at: 2026-09-23
+    document:
+      title: "Philippine Ports Authority Port Management Office - Bataan/Aurora Citizen's Charter"
+      issued: 2016-10-10
+    acquisition: manual-download
+    extraction: none
+    completeness: complete
+    publishable: false
+    notes: >
+      16 pages, created 2016-10-10. The PDF /Title metadata reads "PMO-LIMAY
+      CITIZEN'S CHARTER", but the document body reads "PHILIPPINE PORTS AUTHORITY /
+      PORT MANAGEMENT OFFICE - BATAAN/AURORA". It is a national agency's regional
+      office covering two provinces, not a Limay-specific document, and it is ten
+      years old. Referral index at most; do not extract services from it.
+
+  # --------------------------------------------------------- blocked / leads
+  - id: limay-assessor-market-values-proposed-2025
+    path: municipality-of-limay/assessor-schedule-market-values-proposed-2025.pdf
+    entity: Municipality of Limay - Office of the Municipal Assessor
+    entity_scope: municipal
+    source_name: Limay Assessor schedule of market values (PROPOSED, 2025)
+    url: null
+    blocked_by: [exact-url-unconfirmed, proposed-not-enacted]
+    retrieved_at: 2026-09-23
+    document:
+      title: "GR Form No. 1 - Proposed Schedule of Market Values, Municipality of Limay"
+      issued: 2025-06-30
+    acquisition: manual-download
+    extraction: llm-text
+    completeness: partial
+    gap_ids: [GAP-019]
+    publishable: false
+    notes: >
+      8 pages, created 2025-06-30, produced by Microsoft Excel LTSC - an upstream
+      XLSX exists and would be a far better ingest source than this PDF.
+      PROPOSED, NOT ENACTED. Page 1 is headed "GR FORM NO. 1" (General Revision)
+      and the columns read 2019 SUB-CLASS / 2019 UNIT VALUE / PROPOSED /
+      NEW SUB-CLASS / NEW BASE UNIT VALUE. The words "ordinance" and "resolution"
+      appear nowhere in the document. Publishing NEW BASE UNIT VALUE as current
+      valuation would tell residents a proposal is law.
+      TRAP: text extraction is column-shredded (values stream separately from their
+      barangay/street labels) yet returns ~27,600 characters, so pipeline/3_parse.py
+      stamps it `high` confidence. Trust structured extraction, not the flat text.
+
+  - id: limay-emergency-hotlines-poster-2025
+    path: municipality-of-limay/emergency-hotlines-poster-2025.jpg
+    entity: Municipality of Limay
+    entity_scope: municipal
+    source_name: Limay emergency hotlines poster
+    url: null
+    bridge_blocked_by: [exact-url-unconfirmed]
+    retrieved_at: 2026-09-23
+    document:
+      title: "Municipality of Limay emergency hotlines poster"
+    acquisition: photo
+    extraction: llm-vision
+    completeness: unknown
+    target_datasets: [hotlines.json]
+    gap_ids: [GAP-007, GAP-020]
+    publishable: true
+    notes: >
+      1414x2000 JPEG infographic, no EXIF. Publishing a wrong emergency number is
+      the highest-harm failure this portal can produce, so transcription alone is
+      not sufficient evidence - corroborate every number against a reachable
+      official source first.
+      src/data/hotlines.json is currently fully dead: no schema, no HotlineRecord in
+      src/data/types.ts, no entry in pipeline/validate.py DATASETS or
+      scripts/observability.mjs DATASETS, and no import anywhere in src/
+      (HotlineBar.tsx renders a hardcoded unavailable message). Five registrations
+      are needed before anything can display. Tracked as GAP-020.

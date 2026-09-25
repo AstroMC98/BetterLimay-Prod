@@ -12,8 +12,25 @@ export type VerificationState =
   | "stale"
   | "draft";
 
+/**
+ * A fact must be auditable: another maintainer has to be able to return to the
+ * source and check it. A public URL is the easiest way to allow that, but not
+ * the only one — an official document the maintainers hold is equally auditable
+ * when cited precisely enough to be requested or located again.
+ *
+ * Exactly one of `source_url` or `source_document` is required; the JSON Schema
+ * enforces it. Keep this interface and `schema/provenance.schema.json` in step.
+ */
 export interface Provenance {
-  source_url: string;
+  /** Exact public URL. Preferred when the source is reachable online. */
+  source_url?: string;
+  /** Exact document title, for a source cited rather than linked. */
+  source_document?: string;
+  /** Date the document was issued or published (YYYY-MM-DD). */
+  source_issued?: string;
+  /** Page the fact appears on, as printed in the document. */
+  source_page?: number;
+  /** The publisher or authority responsible for the source. */
   source_name: string;
   retrieved_at: string;
   verified: boolean;
@@ -51,6 +68,18 @@ export interface ServiceFee {
   notes?: string;
 }
 
+/**
+ * Who actually provides a service. Anything other than "municipal" must be
+ * rendered visibly: a peer-LGU record shows another municipality's process while
+ * Limay's own charter is unavailable, and its fees are that municipality's facts.
+ */
+export type ServiceProviderScope =
+  | "municipal"
+  | "peer-lgu-reference"
+  | "provincial"
+  | "gocc"
+  | "national-agency";
+
 export interface ServiceRecord {
   id: string;
   slug: string;
@@ -63,6 +92,12 @@ export interface ServiceRecord {
   fees: ServiceFee[];
   processingTime: string;
   responsibleOfficeId: string;
+  /** Office as printed in the source, when it is not one of Limay's offices. */
+  responsibleOfficeName?: string;
+  providerEntity?: string;
+  providerScope?: ServiceProviderScope;
+  charterEdition?: string;
+  sourcePage?: number;
   sourceDocumentUrl?: string;
   dataGapIds?: string[];
   provenance: Provenance;
@@ -130,7 +165,7 @@ export interface LegislationRecord {
 
 export interface TransparencyRecord {
   id: string;
-  kind: "budget" | "procurement" | "bid" | "infrastructure";
+  kind: "budget" | "procurement" | "bid" | "infrastructure" | "financial-statement";
   title: string;
   year: number;
   amount: number | null;
@@ -140,6 +175,49 @@ export interface TransparencyRecord {
   howToRead: string;
   contractor?: string | null;
   location?: string | null;
+  provenance: Provenance;
+}
+
+/**
+ * Answers "I need X and Limay does not do it". A referral names the entity that
+ * is accountable, so a resident is not left with an empty result and a provincial
+ * fee is never read as a municipal one. Keep in step with
+ * ./schema/service-referral.schema.json.
+ */
+export interface ServiceReferralRecord {
+  id: string;
+  office: string;
+  entity: string;
+  /** Never "municipal": a municipal service belongs in services.json. */
+  entityScope: "provincial" | "gocc" | "national-agency" | "peer-lgu";
+  charterEdition?: string;
+  charterPage?: number;
+  serviceCount?: number;
+  examples?: string[];
+  howToRead: string;
+  provenance: Provenance;
+}
+
+/**
+ * A number a resident may dial in an emergency.
+ *
+ * `numbers` are strings, not numbers: a phone number is a dialling sequence
+ * where leading zeros are significant, and arithmetic on one is meaningless.
+ * Keep in step with ./schema/hotline.schema.json.
+ */
+export interface HotlineRecord {
+  id: string;
+  service: string;
+  agency?: string;
+  numbers: string[];
+  category?:
+    | "police"
+    | "fire"
+    | "medical"
+    | "disaster"
+    | "coastguard"
+    | "utility"
+    | "other";
   provenance: Provenance;
 }
 

@@ -21,6 +21,60 @@ const validSource: Provenance = {
   verified: true,
 };
 
+const citedDocument: Provenance = {
+  source_document: "Annual Audit Report on the Municipality of Limay, Bataan for CY 2024",
+  source_issued: "2025-12-03",
+  source_page: 18,
+  source_name: "Commission on Audit",
+  retrieved_at: "2026-09-01",
+  verified: true,
+};
+
+describe("a source cited as a document rather than a link", () => {
+  // Not every authoritative document is on the web. A COA audit report cited by
+  // title, issue date and page can be requested from the issuing office, so it
+  // is auditable -- "unavailable" would tell the reader we have nothing, which
+  // is false and would understate the evidence behind the figure.
+  it("is a real source, not an unavailable one", () => {
+    const result = getProvenanceViewModel(
+      citedDocument,
+      new Date("2026-09-22T00:00:00Z"),
+    );
+
+    expect(result.state).toBe("verified");
+    expect(result.isConfirmed).toBe(true);
+    expect(result.sourceUrl).toBeUndefined();
+    expect(result.sourceDocument).toBe(citedDocument.source_document);
+  });
+
+  it("builds a citation a reader could act on", () => {
+    const result = getProvenanceViewModel(
+      citedDocument,
+      new Date("2026-09-22T00:00:00Z"),
+    );
+
+    expect(result.sourceCitation).toBe(
+      "Annual Audit Report on the Municipality of Limay, Bataan for CY 2024, " +
+        "Commission on Audit, issued 2025-12-03, p. 18",
+    );
+  });
+
+  it("still requires a publisher and a retrieval date", () => {
+    expect(getProvenanceViewModel({ ...citedDocument, source_name: "   " }).state).toBe(
+      "unavailable",
+    );
+    expect(
+      getProvenanceViewModel({ ...citedDocument, retrieved_at: "not-a-date" }).state,
+    ).toBe("unavailable");
+  });
+
+  it("is unavailable when it can be neither linked nor cited", () => {
+    const { source_document: _omitted, ...withoutDocument } = citedDocument;
+
+    expect(getProvenanceViewModel(withoutDocument).state).toBe("unavailable");
+  });
+});
+
 describe("provenance presentation", () => {
   it("recognizes a current verified source as confirmed", () => {
     const result = getProvenanceViewModel(validSource, new Date("2026-09-22T00:00:00Z"));

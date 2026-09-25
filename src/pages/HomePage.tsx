@@ -53,7 +53,6 @@ export function HomePage() {
         aria-labelledby="announcements-title"
       >
         <article className="home-panel">
-          <p className="eyebrow">{t("home.latestAnnouncements")}</p>
           <h2 id="announcements-title">{t("home.latestAnnouncements")}</h2>
           <p>{t("home.announcementsUnavailable")}</p>
           <a
@@ -65,7 +64,6 @@ export function HomePage() {
           </a>
         </article>
         <article className="home-panel" aria-labelledby="transparency-title">
-          <p className="eyebrow">{t("home.transparencyTitle")}</p>
           <h2 id="transparency-title">{t("home.transparencyTitle")}</h2>
           <p>{t("home.transparencyUnavailable")}</p>
           <div className="home-panel__links">
@@ -85,7 +83,6 @@ export function HomePage() {
         aria-labelledby="contribute-title"
       >
         <div>
-          <p className="eyebrow">{t("home.contributeTitle")}</p>
           <h2 id="contribute-title">{t("home.contributeTitle")}</h2>
           <p>{t("home.contributeDescription")}</p>
         </div>
@@ -104,7 +101,6 @@ export function HomePage() {
         className="disclaimer-panel"
         aria-labelledby="disclaimer-title"
       >
-        <p className="eyebrow">{t("home.disclaimerTitle")}</p>
         <h2 id="disclaimer-title">{t("home.disclaimerTitle")}</h2>
         <p>{t("home.disclaimerBody")}</p>
         <a href={portalIdentity.socials.officialWebsite} target="_blank" rel="noreferrer">

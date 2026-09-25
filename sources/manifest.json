@@ -1,0 +1,230 @@
+[
+  {
+    "acquisition": "manual-download",
+    "blocked_by": [
+      "exact-url-unconfirmed"
+    ],
+    "bytes": 24032798,
+    "citable": true,
+    "completeness": "complete",
+    "entity": "Provincial Government of Bataan",
+    "entity_scope": "provincial",
+    "held_path": "province-of-bataan/citizens-charter-2026-1st-edition.pdf",
+    "id": "bataan-provincial-citizens-charter-2026",
+    "path": "",
+    "retrieved_at": "2026-09-23",
+    "sha256": "732bb5e798f88f2a1baa60f3d81e9c9c386eb06e12f1abd7d74521b013866e51",
+    "source_name": "Provincial Government of Bataan Citizen's Charter, 2026 1st Edition",
+    "status": "blocked_no_public_url",
+    "url": null
+  },
+  {
+    "acquisition": "manual-download",
+    "blocked_by": [
+      "exact-url-unconfirmed"
+    ],
+    "bytes": 8209621,
+    "citable": true,
+    "completeness": "complete",
+    "entity": "Commission on Audit",
+    "entity_scope": "national-agency",
+    "held_path": "coa/limay-2024-aapsi.pdf",
+    "id": "coa-limay-aapsi-2024",
+    "path": "",
+    "retrieved_at": "2026-09-23",
+    "sha256": "3006967758cf11c3f1e4393eada2aa84008f5d5c9ef91e7c27d5fb7627408da9",
+    "source_name": "COA Agency Action Plan and Status of Implementation - Limay, CY 2024",
+    "status": "blocked_no_public_url",
+    "url": null
+  },
+  {
+    "acquisition": "manual-download",
+    "blocked_by": [
+      "exact-url-unconfirmed"
+    ],
+    "bytes": 2364824,
+    "citable": true,
+    "completeness": "complete",
+    "entity": "Commission on Audit",
+    "entity_scope": "national-agency",
+    "held_path": "coa/limay-2024-annual-audit-report.pdf",
+    "id": "coa-limay-annual-audit-report-2024",
+    "path": "",
+    "retrieved_at": "2026-09-23",
+    "sha256": "532fe23f4d0db80f242241d245480e3bfba2388c7547c268dbbecb5af4202e87",
+    "source_name": "COA Annual Audit Report on the Municipality of Limay, Bataan, CY 2024",
+    "status": "blocked_no_public_url",
+    "url": null
+  },
+  {
+    "acquisition": "manual-download",
+    "blocked_by": [
+      "exact-url-unconfirmed"
+    ],
+    "bytes": 980468,
+    "citable": true,
+    "completeness": "complete",
+    "entity": "Commission on Audit",
+    "entity_scope": "national-agency",
+    "held_path": "coa/limay-2024-apmt.pdf",
+    "id": "coa-limay-apmt-2024",
+    "path": "",
+    "retrieved_at": "2026-09-23",
+    "sha256": "2ff200ea404b5f408828dad8a300074c0ea8af6ad6d6232f56b609051fb0e713",
+    "source_name": "COA Action Plan Monitoring Tool - Limay, CY 2024",
+    "status": "blocked_no_public_url",
+    "url": null
+  },
+  {
+    "acquisition": "ui-export",
+    "bytes": 36458,
+    "collection_path": "dti-cmci/bataan-2014-2024",
+    "completeness": "complete",
+    "entity": "Department of Trade and Industry",
+    "entity_scope": "national-agency",
+    "file_count": 56,
+    "id": "dti-cmci-bataan-2014-2024",
+    "path": "",
+    "retrieved_at": "2026-09-23",
+    "sha256": "afd41fe4fa4c23f9ca3f50f95dd9ca392826d0a2501a342de4e3ca1e7d1ae689",
+    "source_name": "DTI Cities and Municipalities Competitiveness Index - Bataan municipalities",
+    "status": "collection",
+    "url": "https://cmci.dti.gov.ph/rankings-data.php?unit=1st%20to%202nd%20Class%20Municipalities"
+  },
+  {
+    "acquisition": "manual-download",
+    "blocked_by": [
+      "exact-url-unconfirmed",
+      "proposed-not-enacted"
+    ],
+    "bytes": 364010,
+    "citable": true,
+    "completeness": "partial",
+    "entity": "Municipality of Limay - Office of the Municipal Assessor",
+    "entity_scope": "municipal",
+    "held_path": "municipality-of-limay/assessor-schedule-market-values-proposed-2025.pdf",
+    "id": "limay-assessor-market-values-proposed-2025",
+    "path": "",
+    "retrieved_at": "2026-09-23",
+    "sha256": "eeeb6cc0dadde3ba2c4aa58e1178e695b24bbae4d3711265e8110f12bf3ab161",
+    "source_name": "Limay Assessor schedule of market values (PROPOSED, 2025)",
+    "status": "blocked_no_public_url",
+    "url": null
+  },
+  {
+    "acquisition": "photo",
+    "blocked_by": [
+      "exact-url-unconfirmed",
+      "needs-corroboration"
+    ],
+    "bytes": 309806,
+    "citable": false,
+    "completeness": "unknown",
+    "entity": "Municipality of Limay",
+    "entity_scope": "municipal",
+    "held_path": "municipality-of-limay/emergency-hotlines-poster-2025.jpg",
+    "id": "limay-emergency-hotlines-poster-2025",
+    "path": "",
+    "retrieved_at": "2026-09-23",
+    "sha256": "da443409907e0ca498580f8b9c31706a814604aac32a5be9bf7a4e186493d0eb",
+    "source_name": "Limay emergency hotlines poster",
+    "status": "blocked_no_public_url",
+    "url": null
+  },
+  {
+    "acquisition": "manual-download",
+    "blocked_by": [
+      "exact-url-unconfirmed"
+    ],
+    "bytes": 1397213,
+    "citable": true,
+    "completeness": "complete",
+    "entity": "Limay Water District",
+    "entity_scope": "gocc",
+    "held_path": "limay-water-district/citizens-charter-2026-1st-edition.pdf",
+    "id": "limay-water-district-citizens-charter-2026",
+    "path": "",
+    "retrieved_at": "2026-09-23",
+    "sha256": "0efd426ad10e529cca5728953257e0f2487655552eca73f61589703e53ad712a",
+    "source_name": "Limay Water District Citizen's Charter 2026 (1st Edition)",
+    "status": "blocked_no_public_url",
+    "url": null
+  },
+  {
+    "acquisition": "manual-download",
+    "blocked_by": [
+      "exact-url-unconfirmed"
+    ],
+    "bytes": 37782622,
+    "citable": true,
+    "completeness": "complete",
+    "entity": "Municipality of Orion",
+    "entity_scope": "peer-lgu",
+    "held_path": "municipality-of-orion/citizens-charter-2026-1st-edition.pdf",
+    "id": "orion-citizens-charter-2026",
+    "path": "",
+    "retrieved_at": "2026-09-23",
+    "sha256": "32333ff0d65db62793e32efa86feeb27032263ab21e42adffd1844d4ab55c18c",
+    "source_name": "Municipality of Orion Citizen's Charter, 2026 1st Edition",
+    "status": "blocked_no_public_url",
+    "url": null
+  },
+  {
+    "acquisition": "ui-export",
+    "blocked_by": [
+      "exact-url-unconfirmed"
+    ],
+    "bytes": 246806,
+    "citable": true,
+    "completeness": "truncated",
+    "entity": "Philippine Government Electronic Procurement System",
+    "entity_scope": "national-agency",
+    "held_path": "philgeps/awarded-contracts-limay-export-2026-09-23.csv",
+    "id": "philgeps-limay-awards-export-2026-09-23",
+    "path": "",
+    "retrieved_at": "2026-09-23",
+    "sha256": "3aef09e6287467261f15011ef4da4074266e90769037835e4cfe72e7a2082137",
+    "source_name": "PhilGEPS awarded contracts - Municipality of Limay, Bataan",
+    "status": "blocked_no_public_url",
+    "url": null
+  },
+  {
+    "acquisition": "manual-download",
+    "blocked_by": [
+      "exact-url-unconfirmed",
+      "stale-edition"
+    ],
+    "bytes": 381272,
+    "citable": true,
+    "completeness": "complete",
+    "entity": "Philippine Ports Authority - Port Management Office, Bataan/Aurora",
+    "entity_scope": "national-agency",
+    "held_path": "ppa-pmo-bataan-aurora/citizens-charter-2016.pdf",
+    "id": "ppa-pmo-bataan-aurora-citizens-charter-2016",
+    "path": "",
+    "retrieved_at": "2026-09-23",
+    "sha256": "aa52efbb06d241e2e587d0be860e9f5109f66a5d4d8bd7dbad574f7d4fc1c1c0",
+    "source_name": "PPA PMO Bataan/Aurora Citizen's Charter (2016)",
+    "status": "blocked_no_public_url",
+    "url": null
+  },
+  {
+    "acquisition": "ui-export",
+    "blocked_by": [
+      "exact-url-unconfirmed"
+    ],
+    "bytes": 682,
+    "citable": true,
+    "completeness": "complete",
+    "entity": "Philippine Statistics Authority",
+    "entity_scope": "national-agency",
+    "held_path": "municipality-of-limay/psgc-barangays-popcen-2024.tsv",
+    "id": "psgc-limay-barangays-popcen-2024",
+    "path": "",
+    "retrieved_at": "2026-09-23",
+    "sha256": "3910891dce8441477a99953b13a3c1726415af1e835c7c2e78212268ecbe622d",
+    "source_name": "PSA PSGC - Municipality of Limay, Bataan (barangay list, 2024 POPCEN)",
+    "status": "blocked_no_public_url",
+    "url": null
+  }
+]

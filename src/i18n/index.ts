@@ -16,13 +16,17 @@ export function resolveLocale(language: string | null | undefined): Locale {
     : DEFAULT_LOCALE;
 }
 
+/* English is the canonical language of the portal, so it is the default for every
+   visitor regardless of what their browser reports. Filipino is opt-in through the
+   switcher, and the choice is remembered once made. Previously a device reporting
+   fil-PH was switched automatically, which made the browser - not the reader -
+   decide which version of a civic record they saw. */
 export function getInitialLocale(): Locale {
   if (typeof window === "undefined") {
     return DEFAULT_LOCALE;
   }
 
-  const storedLocale = window.localStorage.getItem(LOCALE_STORAGE_KEY);
-  return resolveLocale(storedLocale ?? window.navigator.language);
+  return resolveLocale(window.localStorage.getItem(LOCALE_STORAGE_KEY));
 }
 
 async function fetchLocale(locale: Locale): Promise<LocaleResource> {

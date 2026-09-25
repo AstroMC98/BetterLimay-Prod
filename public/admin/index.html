@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Never index the editor. -->
+    <meta name="robots" content="noindex, nofollow" />
+    <title>BetterLimay content editor</title>
+  </head>
+  <body>
+    <!--
+      The editor is loaded from unpkg at a pinned version. Pinning matters: this
+      script can commit to the repository, so it must not silently become a
+      different build. Bump it deliberately, never with a range.
+
+      The site's Content-Security-Policy allows this one origin in `script-src`
+      for that reason. If you would rather keep `script-src 'self'`, vendor the
+      bundle into this directory and point the src at it instead.
+    -->
+    <script src="https://unpkg.com/decap-cms@3.16.3/dist/decap-cms.js"></script>
+  </body>
+</html>

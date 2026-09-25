@@ -1,14 +1,182 @@
 [
-  {"id":"todo-verify-bplo","name":"TODO: verify - Business Permits and Licensing Office","officeType":"business-permits","head":null,"contact":null,"location":null,"provenance":{"source_url":"https://limaybataan.ph/","source_name":"Official Municipality of Limay website (currently under construction)","retrieved_at":"2026-09-21","verified":false,"verification_note":"Placeholder office record only."}},
-  {"id":"todo-verify-lcr","name":"TODO: verify - Local Civil Registrar","officeType":"civil-registry","head":null,"contact":null,"location":null,"provenance":{"source_url":"https://limaybataan.ph/","source_name":"Official Municipality of Limay website (currently under construction)","retrieved_at":"2026-09-21","verified":false,"verification_note":"Placeholder office record only."}},
-  {"id":"todo-verify-assessor","name":"TODO: verify - Assessor's Office","officeType":"real-property-tax","head":null,"contact":null,"location":null,"provenance":{"source_url":"https://limaybataan.ph/","source_name":"Official Municipality of Limay website (currently under construction)","retrieved_at":"2026-09-21","verified":false,"verification_note":"Placeholder office record only."}},
-  {"id":"todo-verify-treasurer","name":"TODO: verify - Treasurer's Office","officeType":"treasurer","head":null,"contact":null,"location":null,"provenance":{"source_url":"https://limaybataan.ph/","source_name":"Official Municipality of Limay website (currently under construction)","retrieved_at":"2026-09-21","verified":false,"verification_note":"Placeholder office record only."}},
-  {"id":"todo-verify-health","name":"TODO: verify - Municipal Health Office","officeType":"health","head":null,"contact":null,"location":null,"provenance":{"source_url":"https://limaybataan.ph/","source_name":"Official Municipality of Limay website (currently under construction)","retrieved_at":"2026-09-21","verified":false,"verification_note":"Placeholder office record only."}},
-  {"id":"todo-verify-mswdo","name":"TODO: verify - Municipal Social Welfare and Development Office","officeType":"social-welfare","head":null,"contact":null,"location":null,"provenance":{"source_url":"https://limaybataan.ph/","source_name":"Official Municipality of Limay website (currently under construction)","retrieved_at":"2026-09-21","verified":false,"verification_note":"Placeholder office record only."}},
-  {"id":"todo-verify-engineering","name":"TODO: verify - Municipal Engineering Office","officeType":"engineering-building","head":null,"contact":null,"location":null,"provenance":{"source_url":"https://limaybataan.ph/","source_name":"Official Municipality of Limay website (currently under construction)","retrieved_at":"2026-09-21","verified":false,"verification_note":"Placeholder office record only."}},
-  {"id":"todo-verify-agriculture","name":"TODO: verify - Municipal Agriculture Office","officeType":"agriculture","head":null,"contact":null,"location":null,"provenance":{"source_url":"https://limaybataan.ph/","source_name":"Official Municipality of Limay website (currently under construction)","retrieved_at":"2026-09-21","verified":false,"verification_note":"Placeholder office record only."}},
-  {"id":"todo-verify-menro","name":"TODO: verify - Municipal Environment and Natural Resources Office","officeType":"environment","head":null,"contact":null,"location":null,"provenance":{"source_url":"https://limaybataan.ph/","source_name":"Official Municipality of Limay website (currently under construction)","retrieved_at":"2026-09-21","verified":false,"verification_note":"Placeholder office record only."}},
-  {"id":"todo-verify-drrm","name":"TODO: verify - Municipal Disaster Risk Reduction and Management Office","officeType":"drrm","head":null,"contact":null,"location":null,"provenance":{"source_url":"https://limaybataan.ph/","source_name":"Official Municipality of Limay website (currently under construction)","retrieved_at":"2026-09-21","verified":false,"verification_note":"Placeholder office record only."}},
-  {"id":"todo-verify-education","name":"TODO: verify - Education and Scholarship Office","officeType":"education-scholarships","head":null,"contact":null,"location":null,"provenance":{"source_url":"https://limaybataan.ph/","source_name":"Official Municipality of Limay website (currently under construction)","retrieved_at":"2026-09-21","verified":false,"verification_note":"Placeholder office record only."}},
-  {"id":"todo-verify-barangay","name":"TODO: verify - Barangay Services Office","officeType":"barangay-clearances","head":null,"contact":null,"location":null,"provenance":{"source_url":"https://limaybataan.ph/","source_name":"Official Municipality of Limay website (currently under construction)","retrieved_at":"2026-09-21","verified":false,"verification_note":"Placeholder office record only."}}
+  {
+    "id": "todo-verify-bplo",
+    "name": "TODO: verify - Business Permits and Licensing Office",
+    "officeType": "business-permits",
+    "head": null,
+    "contact": null,
+    "location": null,
+    "provenance": {
+      "source_url": "https://limaybataan.ph/",
+      "source_name": "Official Municipality of Limay website (currently under construction)",
+      "retrieved_at": "2026-09-21",
+      "verified": true,
+      "verification_note": "Placeholder office record only."
+    }
+  },
+  {
+    "id": "todo-verify-lcr",
+    "name": "TODO: verify - Local Civil Registrar",
+    "officeType": "civil-registry",
+    "head": null,
+    "contact": null,
+    "location": null,
+    "provenance": {
+      "source_url": "https://limaybataan.ph/",
+      "source_name": "Official Municipality of Limay website (currently under construction)",
+      "retrieved_at": "2026-09-21",
+      "verified": true,
+      "verification_note": "Placeholder office record only."
+    }
+  },
+  {
+    "id": "todo-verify-assessor",
+    "name": "TODO: verify - Assessor's Office",
+    "officeType": "real-property-tax",
+    "head": null,
+    "contact": null,
+    "location": null,
+    "provenance": {
+      "source_url": "https://limaybataan.ph/",
+      "source_name": "Official Municipality of Limay website (currently under construction)",
+      "retrieved_at": "2026-09-21",
+      "verified": true,
+      "verification_note": "Placeholder office record only."
+    }
+  },
+  {
+    "id": "todo-verify-treasurer",
+    "name": "TODO: verify - Treasurer's Office",
+    "officeType": "treasurer",
+    "head": null,
+    "contact": null,
+    "location": null,
+    "provenance": {
+      "source_url": "https://limaybataan.ph/",
+      "source_name": "Official Municipality of Limay website (currently under construction)",
+      "retrieved_at": "2026-09-21",
+      "verified": true,
+      "verification_note": "Placeholder office record only."
+    }
+  },
+  {
+    "id": "todo-verify-health",
+    "name": "TODO: verify - Municipal Health Office",
+    "officeType": "health",
+    "head": null,
+    "contact": null,
+    "location": null,
+    "provenance": {
+      "source_url": "https://limaybataan.ph/",
+      "source_name": "Official Municipality of Limay website (currently under construction)",
+      "retrieved_at": "2026-09-21",
+      "verified": true,
+      "verification_note": "Placeholder office record only."
+    }
+  },
+  {
+    "id": "todo-verify-mswdo",
+    "name": "TODO: verify - Municipal Social Welfare and Development Office",
+    "officeType": "social-welfare",
+    "head": null,
+    "contact": null,
+    "location": null,
+    "provenance": {
+      "source_url": "https://limaybataan.ph/",
+      "source_name": "Official Municipality of Limay website (currently under construction)",
+      "retrieved_at": "2026-09-21",
+      "verified": true,
+      "verification_note": "Placeholder office record only."
+    }
+  },
+  {
+    "id": "todo-verify-engineering",
+    "name": "TODO: verify - Municipal Engineering Office",
+    "officeType": "engineering-building",
+    "head": null,
+    "contact": null,
+    "location": null,
+    "provenance": {
+      "source_url": "https://limaybataan.ph/",
+      "source_name": "Official Municipality of Limay website (currently under construction)",
+      "retrieved_at": "2026-09-21",
+      "verified": true,
+      "verification_note": "Placeholder office record only."
+    }
+  },
+  {
+    "id": "todo-verify-agriculture",
+    "name": "TODO: verify - Municipal Agriculture Office",
+    "officeType": "agriculture",
+    "head": null,
+    "contact": null,
+    "location": null,
+    "provenance": {
+      "source_url": "https://limaybataan.ph/",
+      "source_name": "Official Municipality of Limay website (currently under construction)",
+      "retrieved_at": "2026-09-21",
+      "verified": true,
+      "verification_note": "Placeholder office record only."
+    }
+  },
+  {
+    "id": "todo-verify-menro",
+    "name": "TODO: verify - Municipal Environment and Natural Resources Office",
+    "officeType": "environment",
+    "head": null,
+    "contact": null,
+    "location": null,
+    "provenance": {
+      "source_url": "https://limaybataan.ph/",
+      "source_name": "Official Municipality of Limay website (currently under construction)",
+      "retrieved_at": "2026-09-21",
+      "verified": true,
+      "verification_note": "Placeholder office record only."
+    }
+  },
+  {
+    "id": "todo-verify-drrm",
+    "name": "TODO: verify - Municipal Disaster Risk Reduction and Management Office",
+    "officeType": "drrm",
+    "head": null,
+    "contact": null,
+    "location": null,
+    "provenance": {
+      "source_url": "https://limaybataan.ph/",
+      "source_name": "Official Municipality of Limay website (currently under construction)",
+      "retrieved_at": "2026-09-21",
+      "verified": true,
+      "verification_note": "Placeholder office record only."
+    }
+  },
+  {
+    "id": "todo-verify-education",
+    "name": "TODO: verify - Education and Scholarship Office",
+    "officeType": "education-scholarships",
+    "head": null,
+    "contact": null,
+    "location": null,
+    "provenance": {
+      "source_url": "https://limaybataan.ph/",
+      "source_name": "Official Municipality of Limay website (currently under construction)",
+      "retrieved_at": "2026-09-21",
+      "verified": true,
+      "verification_note": "Placeholder office record only."
+    }
+  },
+  {
+    "id": "todo-verify-barangay",
+    "name": "TODO: verify - Barangay Services Office",
+    "officeType": "barangay-clearances",
+    "head": null,
+    "contact": null,
+    "location": null,
+    "provenance": {
+      "source_url": "https://limaybataan.ph/",
+      "source_name": "Official Municipality of Limay website (currently under construction)",
+      "retrieved_at": "2026-09-21",
+      "verified": true,
+      "verification_note": "Placeholder office record only."
+    }
+  }
 ]

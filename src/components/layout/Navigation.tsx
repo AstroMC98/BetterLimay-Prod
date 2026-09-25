@@ -53,8 +53,18 @@ export function Navigation() {
       }
     }
 
+    function handlePointerDown(event: PointerEvent): void {
+      if (!navigation) return;
+      if (event.target instanceof Node && navigation.contains(event.target)) return;
+      setIsOpen(false);
+    }
+
     document.addEventListener("keydown", handleKeyDown);
-    return () => document.removeEventListener("keydown", handleKeyDown);
+    document.addEventListener("pointerdown", handlePointerDown);
+    return () => {
+      document.removeEventListener("keydown", handleKeyDown);
+      document.removeEventListener("pointerdown", handlePointerDown);
+    };
   }, [isOpen]);
 
   function closeMenu(): void {

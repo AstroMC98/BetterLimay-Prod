@@ -13,6 +13,8 @@ const DATASETS = [
   ["legislation", "legislation.json"],
   ["transparency", "transparency.json"],
   ["statistics", "statistics.json"],
+  ["serviceReferrals", "service-referrals.json"],
+  ["hotlines", "hotlines.json"],
 ];
 
 function isRecord(value) {

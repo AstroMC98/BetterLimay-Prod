@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "BetterLimay Emergency Hotline",
+  "description": "A number a resident may dial in an emergency. Of every record type here this is the one where being wrong causes direct harm, so each entry names the service it reaches and carries its own provenance.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "service", "numbers", "provenance"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+    "service": {
+      "type": "string",
+      "minLength": 1,
+      "description": "The office or service the number reaches, as printed on the source."
+    },
+    "agency": { "type": "string" },
+    "numbers": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string", "minLength": 3 },
+      "description": "Each number exactly as published. Kept as strings: a phone number is a dialling sequence, not a quantity, and leading zeros are significant."
+    },
+    "category": {
+      "type": "string",
+      "enum": ["police", "fire", "medical", "disaster", "coastguard", "utility", "other"]
+    },
+    "provenance": { "$ref": "./provenance.schema.json" }
+  }
+}

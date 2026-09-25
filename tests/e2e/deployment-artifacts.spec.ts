@@ -30,10 +30,17 @@ test.describe("Vercel deployment artifacts", () => {
       "Sitemap: https://betterlimay.org/sitemap.xml",
     );
 
-    const ogResponse = await request.get("/og-image.svg");
+    // PNG rather than SVG: the major social platforms do not render SVG share images.
+    const ogResponse = await request.get("/og-image.png");
     expect(ogResponse.status()).toBe(200);
-    expect(ogResponse.headers()["content-type"]).toContain("image/svg+xml");
-    expect(await ogResponse.text()).toContain("BetterLimay");
+    expect(ogResponse.headers()["content-type"]).toContain("image/png");
+
+    const faviconResponse = await request.get("/favicon.svg");
+    expect(faviconResponse.status()).toBe(200);
+    expect(faviconResponse.headers()["content-type"]).toContain("image/svg+xml");
+
+    const maskableIconResponse = await request.get("/icon-maskable-512.png");
+    expect(maskableIconResponse.status()).toBe(200);
 
     const routeResponse = await request.get("/services/business-permits");
     expect(routeResponse.status()).toBe(200);

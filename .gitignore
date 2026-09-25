@@ -2,6 +2,7 @@ node_modules/
 dist/
 playwright-report/
 test-results/
+.playwright-mcp/
 .lighthouseci/
 artifacts/
 
@@ -14,3 +15,29 @@ artifacts/
 
 *.local
 *.log
+
+# Acquired source payloads are local working artifacts and are never
+# redistributed (see pipeline/README.md). The metadata files below ARE tracked.
+# Single-level `sources/*` is deliberate: git cannot re-include a file whose
+# parent directory is excluded, so `sources/**` would defeat the negations.
+sources/*
+!sources/README.md
+!sources/sources.yml
+!sources/manifest.json
+
+# Pipeline stage outputs are derived and disposable.
+# pipeline/extracted_data/ is deliberately NOT listed: LLM extraction output is
+# committed and human-reviewed before promotion to src/data/.
+pipeline/raw_data/
+pipeline/normalized_data/
+pipeline/parsed_data/
+pipeline/generated_data/
+__pycache__/
+.pytest_cache/
+
+# pipeline/extracted_data/ IS committed - LLM output is reviewed before promotion.
+# These two are working artifacts of stage 5, not reviewable output.
+pipeline/extracted_data/.slices/
+pipeline/extracted_data/.uploads.json
+.vercel
+.env*

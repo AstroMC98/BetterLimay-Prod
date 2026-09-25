@@ -1,0 +1,108 @@
+{
+  "sourceId": "limay-emergency-hotlines-poster-2025",
+  "sourceName": "Limay emergency hotlines poster",
+  "entity": "Municipality of Limay",
+  "kind": "hotlines",
+  "model": "gemini-3.5-flash-lite",
+  "thinkingLevel": "high",
+  "pdfPageRange": [
+    1,
+    1
+  ],
+  "callCount": 1,
+  "usage": {
+    "prompt": 1200,
+    "output": 325,
+    "thoughts": 1910,
+    "cached": 0
+  },
+  "failedRanges": [],
+  "recordsRebasedToAbsolutePage": 0,
+  "emptyRanges": [
+    [
+      1,
+      1
+    ]
+  ],
+  "note": "Machine-extracted and not yet human-reviewed. Gemini returns no confidence scores or coordinates, so every figure needs checking against the source before promotion. Publication additionally requires an exact public source URL in sources/sources.yml.",
+  "records": [
+    {
+      "service": "LIMAY COMMAND CENTER",
+      "numbers": [
+        "0921-798-8042"
+      ]
+    },
+    {
+      "service": "304TH 2ND PMFC BATAAN",
+      "numbers": [
+        "0917-307-7366"
+      ]
+    },
+    {
+      "service": "LIMAY HEALTH CENTER",
+      "numbers": [
+        "0908-863-9668"
+      ]
+    },
+    {
+      "service": "PH COAST GUARD (LIMAY)",
+      "numbers": [
+        "0956-957-1376"
+      ]
+    },
+    {
+      "service": "FOREST GUARD (CAFGU LIMAY)",
+      "numbers": [
+        "0907-647-2248"
+      ]
+    },
+    {
+      "service": "LIWAD",
+      "numbers": [
+        "0919-089-9104"
+      ]
+    },
+    {
+      "service": "PNP LIMAY",
+      "numbers": [
+        "0998-598-5361"
+      ]
+    },
+    {
+      "service": "PENELCO LIMAY",
+      "numbers": [
+        "0917-112-7500"
+      ]
+    },
+    {
+      "service": "LIMAY SECURITY UNIT",
+      "numbers": [
+        "0910-237-2138"
+      ]
+    },
+    {
+      "service": "LAMAO SECURITY UNIT",
+      "numbers": [
+        "0910-312-6162"
+      ]
+    },
+    {
+      "service": "MDRRMO/LCERT",
+      "numbers": [
+        "0912-005-5676"
+      ]
+    },
+    {
+      "service": "SEABORNE PATROL",
+      "numbers": [
+        "0919-002-2896"
+      ]
+    },
+    {
+      "service": "BFP LIMAY",
+      "numbers": [
+        "0999-579-3288"
+      ]
+    }
+  ]
+}

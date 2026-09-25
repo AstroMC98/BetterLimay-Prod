@@ -57,6 +57,10 @@ describe("legislation portal UI", () => {
     expect(markup).toContain('href="https://example.org/ordinance-12-2024.pdf"');
     expect(markup).toContain("Requires waste segregation in public places.");
     expect(markup).toContain("legislation.summaryStatus.human-reviewed");
-    expect(markup).toContain('data-provenance-state="verified"');
+    // Provenance is still shown, just not as a badge: a badge that appears on
+    // every record carries no signal. The source and retrieval date live in the
+    // details panel, which is what these pages must expose.
+    expect(markup).toContain("provenance.showSource");
+    expect(markup).toContain("provenance.lastRetrieved");
   });
 });

@@ -24,7 +24,8 @@
     "directory": "Better LGU directory",
     "sourceCode": "Source code",
     "license": "License",
-    "costToPeople": "Cost to the People of Limay: ₱0"
+    "costToPeople": "Cost to the People of Limay: ₱0",
+    "endorsement": "An initiative of BetterGov.PH"
   },
   "forms": {
     "required": "Required",
@@ -74,7 +75,8 @@
       "unverified": "This record has not been verified; check the source before relying on it.",
       "stale": "This record was verified previously but may no longer be current.",
       "unavailable": "A valid source or required provenance metadata is not available."
-    }
+    },
+    "requestDocument": "This source is a document rather than a web page. Cite the title, edition and page above to request or look it up."
   },
   "services": {
     "loading": "Loading services",
@@ -124,6 +126,17 @@
       "drrm": "Disaster risk reduction and management",
       "education-scholarships": "Education and scholarships",
       "barangay-clearances": "Barangay clearances"
+    },
+    "providerNotice": {
+      "inferred": "Inferred from the {{entity}}'s Citizen's Charter ({{edition}}{{page}}). Fees and processing times may differ in Limay.",
+      "page": ", p. {{page}}"
+    },
+    "card": {
+      "processingTime": "Processing time",
+      "fees": "Fees",
+      "feesNone": "None listed",
+      "feesSome": "Fees apply",
+      "notStated": "Not stated"
     }
   },
   "hotline": {
@@ -392,11 +405,15 @@
       "budget": "Budget",
       "procurement": "Procurement",
       "bid": "Bid notice",
-      "infrastructure": "Infrastructure"
+      "infrastructure": "Infrastructure",
+      "financial-statement": "Audited financial statement"
     },
     "gaps": {
-      "financial": "Municipal financial records are not yet published in this catalog. The records below are sourced national appropriation and procurement references, not a complete municipal budget or expenditure report."
-    }
+      "financial": "Audited municipal financial figures for CY 2024 are now published, taken from the Commission on Audit's Annual Audit Report. They are audited actuals for a closed year, not a current budget. National appropriation and procurement references are listed separately and do not prove municipal execution or payment."
+    },
+    "chartOmitted": "{{count}} record is not charted because its amount has not been published.",
+    "chartOmitted_other": "{{count}} records are not charted because their amounts have not been published.",
+    "notApplicable": "Not applicable"
   },
   "statistics": {
     "eyebrow": "Census snapshot",
@@ -408,7 +425,8 @@
     "chartUnit": "Chart unit: {{unit}}",
     "chartLabel": "Statistics chart in {{unit}}; use the data table below for exact values and sources.",
     "metricPicker": "Metric",
-    "chartRows": "{{count}} source records are shown in the table below.",
+    "chartRows": "{{count}} source record is shown in the table below.",
+    "chartRows_other": "{{count}} source records are shown in the table below.",
     "tableCaption": "Statistics records with exact values, reference years, geography, and provenance.",
     "howToRead": "How to read this statistic",
     "value": "Value",
@@ -420,9 +438,30 @@
     },
     "gaps": {
       "barangayDemographics": "Barangay-level demographic records are not yet published. No barangay value is inferred from the municipal totals.",
-      "cmci": "A verified DTI CMCI ranking is not yet published in this catalog. No ranking or score is fabricated."
+      "cmci": "DTI CMCI scores for Limay are now published for 2019-2024, alongside the seven other Bataan municipalities for comparison. No ranking or score is fabricated."
     },
-    "empty": "No statistics records are published yet."
+    "empty": "No statistics records are published yet.",
+    "headlineEyebrow": "Census snapshot",
+    "headlineTitle": "Limay at a glance",
+    "recordsEyebrow": "Source records",
+    "recordsTitle": "All statistics records",
+    "cmci": {
+      "loading": "Loading the Bataan comparison…",
+      "unavailable": "The Bataan comparison could not be loaded. The table of Limay's own scores is above.",
+      "indicatorLabel": "Compare",
+      "rankCaption": "{{subject}} ranks in {{indicator}}, {{year}}",
+      "rankOutOf": "of {{total}} Bataan municipalities",
+      "subjectScore": "{{subject}}",
+      "bestScore": "Highest in Bataan",
+      "medianScore": "Bataan median",
+      "chartLabel": "{{indicator}} for {{subject}} compared with the other Bataan municipalities, by year",
+      "legendSubject": "{{subject}}",
+      "legendContext": "Other Bataan municipalities",
+      "tableToggle": "View the comparison as a table",
+      "tableCaption": "{{indicator}} by municipality and year",
+      "year": "Year",
+      "notSurveyed": "Not surveyed"
+    }
   },
   "pages": {
     "independentEyebrow": "Independent community portal",
@@ -447,9 +486,8 @@
       "description": "Browse service categories and source-status placeholders for the BetterLimay MVP.",
       "eyebrow": "Service directory",
       "categoryTitle": "{{category}}",
-      "categoryDescription": "Service records in this category remain subject to source review.",
-      "detailDescription": "Details for {{service}} are shown with their current source status.",
-      "detailNotice": "This record is not confirmed. Verify requirements, fees, processing time, and office details with the official source before relying on it."
+      "categoryDescription": "Service records in this category name the charter and page they come from.",
+      "detailDescription": "Details for {{service}} are shown with their current source status."
     },
     "government": {
       "title": "Government directory",
@@ -493,6 +531,7 @@
       "description": "Learn about this independent, community-run information portal."
     },
     "legal": {
+      "eyebrow": "Legal notice",
       "title": "Legal and trust information",
       "description": "Review BetterLimay's independent-portal, source-verification, and correction guidance.",
       "privacyTitle": "Privacy placeholder",
@@ -512,6 +551,10 @@
       "title": "Limay statistics",
       "description": "Review sourced population and household metrics with reference years, units, tables, and provenance."
     },
+    "legislation": {
+      "title": "Local legislation",
+      "description": "Browse sourced ordinances and resolutions with their reference numbers, status, and links to the original documents."
+    },
     "news": {
       "title": "Limay announcements",
       "description": "Review announcements only when an original official source can be linked and checked."
@@ -525,18 +568,22 @@
       "description": "Suggest source-backed corrections or help improve this independent community portal."
     },
     "faq": {
+      "eyebrow": "Common questions",
       "title": "Frequently asked questions",
       "description": "Learn how BetterLimay handles sources, gaps, corrections, and community reports."
     },
     "accessibility": {
+      "eyebrow": "Accessibility",
       "title": "Accessibility",
       "description": "Review the accessibility practices and known limitations of this community portal."
     },
     "privacy": {
+      "eyebrow": "Privacy",
       "title": "Privacy notice",
       "description": "Understand what BetterLimay collects, why it is needed, and what the report form does not collect."
     },
     "terms": {
+      "eyebrow": "Terms of use",
       "title": "Terms of use",
       "description": "Read the terms for using an independent information portal and its source links."
     },

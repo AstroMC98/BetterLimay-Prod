@@ -1,0 +1,15 @@
+{
+  "id": "hotline-bfp-limay",
+  "service": "BFP LIMAY",
+  "numbers": [
+    "0999-579-3288"
+  ],
+  "category": "fire",
+  "provenance": {
+    "source_name": "Limay emergency hotlines poster",
+    "retrieved_at": "2026-09-23",
+    "verified": true,
+    "verification_note": "Transcribed from the Municipality of Limay emergency hotline poster named in this record's source.",
+    "source_document": "Municipality of Limay emergency hotlines poster"
+  }
+}

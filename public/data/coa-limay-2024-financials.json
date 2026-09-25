@@ -1,0 +1,3017 @@
+{
+  "dataset": "coa-limay-annual-audit-report-2024",
+  "subject": "Municipality of Limay",
+  "fiscalYear": 2024,
+  "unit": "PHP",
+  "provenance": {
+    "source_name": "Commission on Audit",
+    "retrieved_at": "2026-09-23",
+    "verified": false,
+    "verification_note": "Transcribed from the COA Annual Audit Report for CY 2024; unverified until a maintainer checks each figure against the printed statement.",
+    "source_document": "Annual Audit Report on the Municipality of Limay, Bataan for CY 2024",
+    "source_issued": "2025-12-03"
+  },
+  "howToRead": "Every line item extracted from Part I of the Commission on Audit's Annual Audit Report on the Municipality of Limay for CY 2024. These are audited actuals for a closed year, not a budget. Negative figures are deductions or outflows exactly as printed. Each record names the statement it came from and the page it appears on.",
+  "integrity": {
+    "accountingIdentitiesChecked": 2,
+    "note": "Published only after the balance sheet reconciles: total assets must equal current plus non-current assets, and total liabilities and net assets/equity must equal total assets."
+  },
+  "records": [
+    {
+      "statement": "Statement of Financial Position",
+      "label": "Cash and Cash Equivalents",
+      "amount": 1010223104.88,
+      "comparativeAmount": 1050251736.96,
+      "fiscalYear": 2024,
+      "documentPage": 2,
+      "pdfPage": 18
+    },
+    {
+      "statement": "Statement of Financial Position",
+      "label": "Investments",
+      "amount": 712688550.81,
+      "comparativeAmount": 855527118.26,
+      "fiscalYear": 2024,
+      "documentPage": 2,
+      "pdfPage": 18
+    },
+    {
+      "statement": "Statement of Financial Position",
+      "label": "Receivables",
+      "amount": 1293130696.73,
+      "comparativeAmount": 979313104.67,
+      "fiscalYear": 2024,
+      "documentPage": 2,
+      "pdfPage": 18
+    },
+    {
+      "statement": "Statement of Financial Position",
+      "label": "Inventories",
+      "amount": 16252035.95,
+      "comparativeAmount": 6610520.44,
+      "fiscalYear": 2024,
+      "documentPage": 2,
+      "pdfPage": 18
+    },
+    {
+      "statement": "Statement of Financial Position",
+      "label": "Prepayments and Deferred Charges",
+      "amount": 51166102.69,
+      "comparativeAmount": 35086638.69,
+      "fiscalYear": 2024,
+      "documentPage": 2,
+      "pdfPage": 18
+    },
+    {
+      "statement": "Statement of Financial Position",
+      "label": "Total Current Assets",
+      "amount": 3083460491.06,
+      "comparativeAmount": 2926789119.02,
+      "fiscalYear": 2024,
+      "documentPage": 2,
+      "pdfPage": 18
+    },
+    {
+      "statement": "Statement of Financial Position",
+      "label": "Property, Plant and Equipment",
+      "amount": 2829224194.38,
+      "comparativeAmount": 3244345930.03,
+      "fiscalYear": 2024,
+      "documentPage": 2,
+      "pdfPage": 18
+    },
+    {
+      "statement": "Statement of Financial Position",
+      "label": "Total Non-Current Assets",
+      "amount": 2829224194.38,
+      "comparativeAmount": 3244345930.03,
+      "fiscalYear": 2024,
+      "documentPage": 2,
+      "pdfPage": 18
+    },
+    {
+      "statement": "Statement of Financial Position",
+      "label": "Total Assets",
+      "amount": 5912684685.44,
+      "comparativeAmount": 6171135049.05,
+      "fiscalYear": 2024,
+      "documentPage": 2,
+      "pdfPage": 18
+    },
+    {
+      "statement": "Statement of Financial Position",
+      "label": "Financial Liabilities",
+      "amount": 32804759.65,
+      "comparativeAmount": 17934141.13,
+      "fiscalYear": 2024,
+      "documentPage": 2,
+      "pdfPage": 18
+    },
+    {
+      "statement": "Statement of Financial Position",
+      "label": "Inter-Agency Payables",
+      "amount": 68087810.63,
+      "comparativeAmount": 41305851.88,
+      "fiscalYear": 2024,
+      "documentPage": 2,
+      "pdfPage": 18
+    },
+    {
+      "statement": "Statement of Financial Position",
+      "label": "Intra-Agency Payables",
+      "amount": 8095592.82,
+      "comparativeAmount": 4486130.45,
+      "fiscalYear": 2024,
+      "documentPage": 2,
+      "pdfPage": 18
+    },
+    {
+      "statement": "Statement of Financial Position",
+      "label": "Trust Liabilities",
+      "amount": 128256962.75,
+      "comparativeAmount": 137969189.5,
+      "fiscalYear": 2024,
+      "documentPage": 2,
+      "pdfPage": 18
+    },
+    {
+      "statement": "Statement of Financial Position",
+      "label": "Deferred Credits/Unearned Income",
+      "amount": 1057955619.42,
+      "comparativeAmount": 922302733.9,
+      "fiscalYear": 2024,
+      "documentPage": 2,
+      "pdfPage": 18
+    },
+    {
+      "statement": "Statement of Financial Position",
+      "label": "Other Payables",
+      "amount": 10894090.39,
+      "comparativeAmount": 10534579.66,
+      "fiscalYear": 2024,
+      "documentPage": 2,
+      "pdfPage": 18
+    },
+    {
+      "statement": "Statement of Financial Position",
+      "label": "Total Current Liabilities",
+      "amount": 1306094835.66,
+      "comparativeAmount": 1134532626.52,
+      "fiscalYear": 2024,
+      "documentPage": 2,
+      "pdfPage": 18
+    },
+    {
+      "statement": "Statement of Financial Position",
+      "label": "Total Liabilities",
+      "amount": 1306094835.66,
+      "comparativeAmount": 1134532626.52,
+      "fiscalYear": 2024,
+      "documentPage": 2,
+      "pdfPage": 18
+    },
+    {
+      "statement": "Statement of Financial Position",
+      "label": "Government Equity",
+      "amount": 4606589849.78,
+      "comparativeAmount": 5036602422.53,
+      "fiscalYear": 2024,
+      "documentPage": 2,
+      "pdfPage": 18
+    },
+    {
+      "statement": "Statement of Financial Position",
+      "label": "Total Liabilities and Net Assets/Equity",
+      "amount": 5912684685.44,
+      "comparativeAmount": 6171135049.05,
+      "fiscalYear": 2024,
+      "documentPage": 2,
+      "pdfPage": 18
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Tax Revenue",
+      "amount": 959752592.81,
+      "comparativeAmount": 1071595926.33,
+      "fiscalYear": 2024,
+      "documentPage": 3,
+      "pdfPage": 19
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Share from Internal Revenue Collections",
+      "amount": 255602738.0,
+      "comparativeAmount": 241886006.53,
+      "fiscalYear": 2024,
+      "documentPage": 3,
+      "pdfPage": 19
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Service and Business Income",
+      "amount": 46994497.79,
+      "comparativeAmount": 43454762.06,
+      "fiscalYear": 2024,
+      "documentPage": 3,
+      "pdfPage": 19
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Shares, Grants and Donations",
+      "amount": 554179.03,
+      "comparativeAmount": 1897773.09,
+      "fiscalYear": 2024,
+      "documentPage": 3,
+      "pdfPage": 19
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Miscellaneous Income",
+      "amount": 2398490.78,
+      "comparativeAmount": 3462744.74,
+      "fiscalYear": 2024,
+      "documentPage": 3,
+      "pdfPage": 19
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Total Revenue",
+      "amount": 1265302498.41,
+      "comparativeAmount": 1362297212.75,
+      "fiscalYear": 2024,
+      "documentPage": 3,
+      "pdfPage": 19
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Personal Services",
+      "amount": 273265705.19,
+      "comparativeAmount": 260199625.85,
+      "fiscalYear": 2024,
+      "documentPage": 3,
+      "pdfPage": 19
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Maintenance and Other Operating Expenses",
+      "amount": 450379116.52,
+      "comparativeAmount": 368792320.1,
+      "fiscalYear": 2024,
+      "documentPage": 3,
+      "pdfPage": 19
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Non-Cash Expenses",
+      "amount": 239390566.56,
+      "comparativeAmount": 284214808.55,
+      "fiscalYear": 2024,
+      "documentPage": 3,
+      "pdfPage": 19
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Current Operating Expenses",
+      "amount": 963035388.27,
+      "comparativeAmount": 913206754.5,
+      "fiscalYear": 2024,
+      "documentPage": 3,
+      "pdfPage": 19
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Surplus (Deficit) from Current Operation",
+      "amount": 302267110.14,
+      "comparativeAmount": 449090458.25,
+      "fiscalYear": 2024,
+      "documentPage": 3,
+      "pdfPage": 19
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Transfers, Assistance and Subsidy From",
+      "amount": 149125.0,
+      "comparativeAmount": 210410.0,
+      "fiscalYear": 2024,
+      "documentPage": 3,
+      "pdfPage": 19
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Transfers, Assistance and Subsidy To",
+      "amount": -8921087.35,
+      "comparativeAmount": -15461195.68,
+      "fiscalYear": 2024,
+      "documentPage": 3,
+      "pdfPage": 19
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Surplus(Deficit) for the period",
+      "amount": 293495147.79,
+      "comparativeAmount": 433839672.57,
+      "fiscalYear": 2024,
+      "documentPage": 3,
+      "pdfPage": 19
+    },
+    {
+      "statement": "Statement of Changes in Net Assets/Equity",
+      "label": "Balance at January 1",
+      "amount": 5036602422.53,
+      "comparativeAmount": 4647486477.71,
+      "fiscalYear": 2024,
+      "documentPage": 4,
+      "pdfPage": 20
+    },
+    {
+      "statement": "Statement of Changes in Net Assets/Equity",
+      "label": "Prior Period Errors",
+      "amount": -622904229.67,
+      "comparativeAmount": -83221799.49,
+      "fiscalYear": 2024,
+      "documentPage": 4,
+      "pdfPage": 20
+    },
+    {
+      "statement": "Statement of Changes in Net Assets/Equity",
+      "label": "Restated Balance",
+      "amount": 4413698192.86,
+      "comparativeAmount": 4564264678.22,
+      "fiscalYear": 2024,
+      "documentPage": 4,
+      "pdfPage": 20
+    },
+    {
+      "statement": "Statement of Changes in Net Assets/Equity",
+      "label": "Adjustment of net revenue recognized directly in net assets/equity",
+      "amount": -100603490.87,
+      "comparativeAmount": 38498071.74,
+      "fiscalYear": 2024,
+      "documentPage": 4,
+      "pdfPage": 20
+    },
+    {
+      "statement": "Statement of Changes in Net Assets/Equity",
+      "label": "Surplus (Deficit) for the period",
+      "amount": 293495147.79,
+      "comparativeAmount": 433839672.57,
+      "fiscalYear": 2024,
+      "documentPage": 4,
+      "pdfPage": 20
+    },
+    {
+      "statement": "Statement of Changes in Net Assets/Equity",
+      "label": "Total recognized revenue and expenses for the period",
+      "amount": 192891656.92,
+      "comparativeAmount": 472337744.31,
+      "fiscalYear": 2024,
+      "documentPage": 4,
+      "pdfPage": 20
+    },
+    {
+      "statement": "Statement of Changes in Net Assets/Equity",
+      "label": "Balance at December 31",
+      "amount": 4606589849.78,
+      "comparativeAmount": 5036602422.53,
+      "fiscalYear": 2024,
+      "documentPage": 4,
+      "pdfPage": 20
+    },
+    {
+      "statement": "Statement of Cash Flows",
+      "label": "Collection from taxpayers",
+      "amount": 894731767.19,
+      "comparativeAmount": 1245864840.93,
+      "fiscalYear": 2024,
+      "documentPage": 1,
+      "pdfPage": 21
+    },
+    {
+      "statement": "Statement of Cash Flows",
+      "label": "Share from Internal Revenue Allotment",
+      "amount": 255602738.0,
+      "comparativeAmount": 241886006.53,
+      "fiscalYear": 2024,
+      "documentPage": 1,
+      "pdfPage": 21
+    },
+    {
+      "statement": "Statement of Cash Flows",
+      "label": "Receipts from business/service income",
+      "amount": 27078157.83,
+      "comparativeAmount": 36507244.78,
+      "fiscalYear": 2024,
+      "documentPage": 1,
+      "pdfPage": 21
+    },
+    {
+      "statement": "Statement of Cash Flows",
+      "label": "Interest Income",
+      "amount": 12804561.04,
+      "comparativeAmount": 51995827.47,
+      "fiscalYear": 2024,
+      "documentPage": 1,
+      "pdfPage": 21
+    },
+    {
+      "statement": "Statement of Cash Flows",
+      "label": "Other Receipts",
+      "amount": 3101794.8,
+      "comparativeAmount": 5570927.83,
+      "fiscalYear": 2024,
+      "documentPage": 1,
+      "pdfPage": 21
+    },
+    {
+      "statement": "Statement of Cash Flows",
+      "label": "Total Cash Inflows",
+      "amount": 1193319018.86,
+      "comparativeAmount": 1581824847.54,
+      "fiscalYear": 2024,
+      "documentPage": 1,
+      "pdfPage": 21
+    },
+    {
+      "statement": "Statement of Cash Flows",
+      "label": "Payment of Expenses",
+      "amount": 318573113.69,
+      "comparativeAmount": 375948133.44,
+      "fiscalYear": 2024,
+      "documentPage": 1,
+      "pdfPage": 21
+    },
+    {
+      "statement": "Statement of Cash Flows",
+      "label": "Payments to suppliers and creditors",
+      "amount": 70712136.16,
+      "comparativeAmount": 100773723.54,
+      "fiscalYear": 2024,
+      "documentPage": 1,
+      "pdfPage": 21
+    },
+    {
+      "statement": "Statement of Cash Flows",
+      "label": "Payments to employees",
+      "amount": 298664801.76,
+      "comparativeAmount": 265980295.53,
+      "fiscalYear": 2024,
+      "documentPage": 1,
+      "pdfPage": 21
+    },
+    {
+      "statement": "Statement of Cash Flows",
+      "label": "Total Cash Outflows",
+      "amount": 687950051.61,
+      "comparativeAmount": 742702152.51,
+      "fiscalYear": 2024,
+      "documentPage": 1,
+      "pdfPage": 21
+    },
+    {
+      "statement": "Statement of Cash Flows",
+      "label": "Net Cash Flows from Operating",
+      "amount": 505368967.25,
+      "comparativeAmount": 839122695.03,
+      "fiscalYear": 2024,
+      "documentPage": 1,
+      "pdfPage": 21
+    },
+    {
+      "statement": "Statement of Cash Flows",
+      "label": "Purchase/Construction of Property, Plant and Equipment",
+      "amount": 545397599.33,
+      "comparativeAmount": 573853281.64,
+      "fiscalYear": 2024,
+      "documentPage": 1,
+      "pdfPage": 21
+    },
+    {
+      "statement": "Statement of Cash Flows",
+      "label": "Grant of Loans",
+      "amount": 0.0,
+      "comparativeAmount": 400000000.0,
+      "fiscalYear": 2024,
+      "documentPage": 1,
+      "pdfPage": 21
+    },
+    {
+      "statement": "Statement of Cash Flows",
+      "label": "Total Cash Outflows",
+      "amount": 545397599.33,
+      "comparativeAmount": 973853281.64,
+      "fiscalYear": 2024,
+      "documentPage": 1,
+      "pdfPage": 21
+    },
+    {
+      "statement": "Statement of Cash Flows",
+      "label": "Net Cash Flows from Investing Activities",
+      "amount": -545397599.33,
+      "comparativeAmount": -973853281.64,
+      "fiscalYear": 2024,
+      "documentPage": 1,
+      "pdfPage": 21
+    },
+    {
+      "statement": "Statement of Cash Flows",
+      "label": "Total Cash Provided by Operating, Investing and Financing Activities",
+      "amount": -40028632.08,
+      "comparativeAmount": -134730586.61,
+      "fiscalYear": 2024,
+      "documentPage": 1,
+      "pdfPage": 21
+    },
+    {
+      "statement": "Statement of Cash Flows",
+      "label": "Add: Cash at the Beginning of the year",
+      "amount": 1050251736.96,
+      "comparativeAmount": 1184982323.57,
+      "fiscalYear": 2024,
+      "documentPage": 1,
+      "pdfPage": 21
+    },
+    {
+      "statement": "Statement of Cash Flows",
+      "label": "Cash Balance at the End of the Year",
+      "amount": 1010223104.88,
+      "comparativeAmount": 1050251736.96,
+      "fiscalYear": 2024,
+      "documentPage": 1,
+      "pdfPage": 21
+    },
+    {
+      "statement": "Statement of Comparison of Budget and Actual Amounts",
+      "label": "a. Tax Revenue - Property",
+      "amount": 798786857.56,
+      "documentPage": 1,
+      "pdfPage": 22
+    },
+    {
+      "statement": "Statement of Comparison of Budget and Actual Amounts",
+      "label": "b. Tax Revenue - Goods and Services",
+      "amount": 159755258.7,
+      "documentPage": 1,
+      "pdfPage": 22
+    },
+    {
+      "statement": "Statement of Comparison of Budget and Actual Amounts",
+      "label": "c. Other Local Taxes",
+      "amount": 1210476.55,
+      "documentPage": 1,
+      "pdfPage": 22
+    },
+    {
+      "statement": "Statement of Comparison of Budget and Actual Amounts",
+      "label": "Total Tax Revenue",
+      "amount": 959752592.81,
+      "documentPage": 1,
+      "pdfPage": 22
+    },
+    {
+      "statement": "Statement of Comparison of Budget and Actual Amounts",
+      "label": "a. Service Income",
+      "amount": 21052039.87,
+      "documentPage": 1,
+      "pdfPage": 22
+    },
+    {
+      "statement": "Statement of Comparison of Budget and Actual Amounts",
+      "label": "b. Business Income",
+      "amount": 6026117.96,
+      "documentPage": 1,
+      "pdfPage": 22
+    },
+    {
+      "statement": "Statement of Comparison of Budget and Actual Amounts",
+      "label": "c. Other Income and Receipts",
+      "amount": 22314830.74,
+      "documentPage": 1,
+      "pdfPage": 22
+    },
+    {
+      "statement": "Statement of Comparison of Budget and Actual Amounts",
+      "label": "Total Non -Tax Revenue",
+      "amount": 49392988.57,
+      "documentPage": 1,
+      "pdfPage": 22
+    },
+    {
+      "statement": "Statement of Comparison of Budget and Actual Amounts",
+      "label": "1. Share from the National Internal Revenue Taxes (IRA)",
+      "amount": 255602738.0,
+      "documentPage": 1,
+      "pdfPage": 22
+    },
+    {
+      "statement": "Statement of Comparison of Budget and Actual Amounts",
+      "label": "2. Share from GOCCs",
+      "amount": 554179.03,
+      "documentPage": 1,
+      "pdfPage": 22
+    },
+    {
+      "statement": "Statement of Comparison of Budget and Actual Amounts",
+      "label": "3. Other Receipts",
+      "amount": 149125.0,
+      "documentPage": 1,
+      "pdfPage": 22
+    },
+    {
+      "statement": "Statement of Comparison of Budget and Actual Amounts",
+      "label": "Total Revenues and Receipts",
+      "amount": 1265451623.41,
+      "documentPage": 1,
+      "pdfPage": 22
+    },
+    {
+      "statement": "Statement of Comparison of Budget and Actual Amounts",
+      "label": "Personnel Services",
+      "amount": 205894089.81,
+      "documentPage": 1,
+      "pdfPage": 22
+    },
+    {
+      "statement": "Statement of Comparison of Budget and Actual Amounts",
+      "label": "Maintenance and Other Operating Expenses",
+      "amount": 356422917.65,
+      "documentPage": 1,
+      "pdfPage": 22
+    },
+    {
+      "statement": "Statement of Comparison of Budget and Actual Amounts",
+      "label": "Capital Outlay",
+      "amount": 414511101.51,
+      "documentPage": 1,
+      "pdfPage": 22
+    },
+    {
+      "statement": "Statement of Comparison of Budget and Actual Amounts",
+      "label": "Personnel Services",
+      "amount": 16787557.55,
+      "documentPage": 1,
+      "pdfPage": 22
+    },
+    {
+      "statement": "Statement of Comparison of Budget and Actual Amounts",
+      "label": "Maintenance and Other Operating Expenses",
+      "amount": 6918019.86,
+      "documentPage": 1,
+      "pdfPage": 22
+    },
+    {
+      "statement": "Statement of Comparison of Budget and Actual Amounts",
+      "label": "Capital Outlay",
+      "amount": 3297928.0,
+      "documentPage": 1,
+      "pdfPage": 22
+    },
+    {
+      "statement": "Statement of Comparison of Budget and Actual Amounts",
+      "label": "Personnel Services",
+      "amount": 42272340.14,
+      "documentPage": 1,
+      "pdfPage": 22
+    },
+    {
+      "statement": "Statement of Comparison of Budget and Actual Amounts",
+      "label": "Maintenance and Other Operating Expenses",
+      "amount": 47851179.11,
+      "documentPage": 1,
+      "pdfPage": 22
+    },
+    {
+      "statement": "Statement of Comparison of Budget and Actual Amounts",
+      "label": "Capital Outlay",
+      "amount": 8558211.73,
+      "documentPage": 1,
+      "pdfPage": 22
+    },
+    {
+      "statement": "Statement of Comparison of Budget and Actual Amounts",
+      "label": "Personnel Services",
+      "amount": 0.0,
+      "documentPage": 1,
+      "pdfPage": 22
+    },
+    {
+      "statement": "Statement of Comparison of Budget and Actual Amounts",
+      "label": "Maintenance and Other Operating Expenses",
+      "amount": 0.0,
+      "documentPage": 1,
+      "pdfPage": 22
+    },
+    {
+      "statement": "Statement of Comparison of Budget and Actual Amounts",
+      "label": "Capital Outlay",
+      "amount": 0.0,
+      "documentPage": 1,
+      "pdfPage": 22
+    },
+    {
+      "statement": "Statement of Comparison of Budget and Actual Amounts",
+      "label": "Personnel Services",
+      "amount": 0.0,
+      "documentPage": 1,
+      "pdfPage": 22
+    },
+    {
+      "statement": "Statement of Comparison of Budget and Actual Amounts",
+      "label": "Maintenance and Other Operating Expenses",
+      "amount": 22935288.23,
+      "documentPage": 1,
+      "pdfPage": 22
+    },
+    {
+      "statement": "Statement of Comparison of Budget and Actual Amounts",
+      "label": "Capital Outlay",
+      "amount": 0.0,
+      "documentPage": 1,
+      "pdfPage": 22
+    },
+    {
+      "statement": "Statement of Comparison of Budget and Actual Amounts",
+      "label": "Personnel Services",
+      "amount": 8311717.69,
+      "documentPage": 1,
+      "pdfPage": 22
+    },
+    {
+      "statement": "Statement of Comparison of Budget and Actual Amounts",
+      "label": "Maintenance and Other Operating Expenses",
+      "amount": 1409394.02,
+      "documentPage": 1,
+      "pdfPage": 22
+    },
+    {
+      "statement": "Statement of Comparison of Budget and Actual Amounts",
+      "label": "Capital Outlay",
+      "amount": 172798.0,
+      "documentPage": 1,
+      "pdfPage": 22
+    },
+    {
+      "statement": "Statement of Comparison of Budget and Actual Amounts",
+      "label": "Financial Expense",
+      "amount": 0.0,
+      "documentPage": 1,
+      "pdfPage": 22
+    },
+    {
+      "statement": "Statement of Comparison of Budget and Actual Amounts",
+      "label": "Maintenance and Other Operating Expenses",
+      "amount": 7814700.0,
+      "documentPage": 1,
+      "pdfPage": 22
+    },
+    {
+      "statement": "Statement of Comparison of Budget and Actual Amounts",
+      "label": "Capital Outlay",
+      "amount": 27886925.85,
+      "documentPage": 1,
+      "pdfPage": 22
+    },
+    {
+      "statement": "Statement of Comparison of Budget and Actual Amounts",
+      "label": "Capital Outlay",
+      "amount": 50773796.63,
+      "documentPage": 1,
+      "pdfPage": 22
+    },
+    {
+      "statement": "Statement of Comparison of Budget and Actual Amounts",
+      "label": "Maintenance and Other Operating Expenses",
+      "amount": 15948705.0,
+      "documentPage": 1,
+      "pdfPage": 22
+    },
+    {
+      "statement": "Statement of Comparison of Budget and Actual Amounts",
+      "label": "Maintenance and Other Operating Expenses",
+      "amount": 0.0,
+      "documentPage": 1,
+      "pdfPage": 22
+    },
+    {
+      "statement": "Statement of Comparison of Budget and Actual Amounts",
+      "label": "Total Current Appropriations",
+      "amount": 1237766670.79,
+      "documentPage": 1,
+      "pdfPage": 22
+    },
+    {
+      "statement": "Statement of Comparison of Budget and Actual Amounts",
+      "label": "Surplus (Deficit) for the period",
+      "amount": 27684952.63,
+      "documentPage": 1,
+      "pdfPage": 22
+    },
+    {
+      "statement": "Statement of Financial Position",
+      "label": "Cash – Local Treasury",
+      "amount": 4278352.58,
+      "comparativeAmount": 819615.9,
+      "fiscalYear": 2024,
+      "documentPage": 2,
+      "pdfPage": 30,
+      "printedPage": 18
+    },
+    {
+      "statement": "Statement of Financial Position",
+      "label": "Cash in Bank - Local Currency, Current Account",
+      "amount": 1005944752.3,
+      "comparativeAmount": 1049432121.06,
+      "fiscalYear": 2024,
+      "documentPage": 2,
+      "pdfPage": 30,
+      "printedPage": 18
+    },
+    {
+      "statement": "Statement of Financial Position",
+      "label": "Total Cash and Cash Equivalents",
+      "amount": 1010223104.88,
+      "comparativeAmount": 1050251736.96,
+      "fiscalYear": 2024,
+      "documentPage": 2,
+      "pdfPage": 30,
+      "printedPage": 18
+    },
+    {
+      "statement": "Statement of Financial Position",
+      "label": "Cash in Bank - Local Currency, Time Deposits",
+      "amount": 712187300.81,
+      "comparativeAmount": 855025868.26,
+      "fiscalYear": 2024,
+      "documentPage": 3,
+      "pdfPage": 31,
+      "printedPage": 19
+    },
+    {
+      "statement": "Statement of Financial Position",
+      "label": "Total Investments in Time Deposits",
+      "amount": 712187300.81,
+      "comparativeAmount": 855025868.26,
+      "fiscalYear": 2024,
+      "documentPage": 3,
+      "pdfPage": 31,
+      "printedPage": 19
+    },
+    {
+      "statement": "Statement of Financial Position",
+      "label": "Other Investment",
+      "amount": 501250.0,
+      "comparativeAmount": 501250.0,
+      "fiscalYear": 2024,
+      "documentPage": 3,
+      "pdfPage": 31,
+      "printedPage": 19
+    },
+    {
+      "statement": "Statement of Financial Position",
+      "label": "Total Financial Assets - Others",
+      "amount": 501250.0,
+      "comparativeAmount": 501250.0,
+      "fiscalYear": 2024,
+      "documentPage": 3,
+      "pdfPage": 31,
+      "printedPage": 19
+    },
+    {
+      "statement": "Statement of Financial Position",
+      "label": "Total Investments",
+      "amount": 712688550.81,
+      "comparativeAmount": 855527118.26,
+      "fiscalYear": 2024,
+      "documentPage": 3,
+      "pdfPage": 31,
+      "printedPage": 19
+    },
+    {
+      "statement": "Statement of Financial Position",
+      "label": "Accounts Receivable",
+      "amount": 1157696.93,
+      "comparativeAmount": 247484.03,
+      "fiscalYear": 2024,
+      "documentPage": 3,
+      "pdfPage": 31,
+      "printedPage": 19
+    },
+    {
+      "statement": "Statement of Financial Position",
+      "label": "Real Property Tax Receivable",
+      "amount": 528977809.71,
+      "comparativeAmount": 461151367.02,
+      "fiscalYear": 2024,
+      "documentPage": 3,
+      "pdfPage": 31,
+      "printedPage": 19
+    },
+    {
+      "statement": "Statement of Financial Position",
+      "label": "Special Education Tax Receivable",
+      "amount": 528977809.71,
+      "comparativeAmount": 461151366.88,
+      "fiscalYear": 2024,
+      "documentPage": 3,
+      "pdfPage": 31,
+      "printedPage": 19
+    },
+    {
+      "statement": "Statement of Financial Position",
+      "label": "Loans Receivable - LGU",
+      "amount": 0.0,
+      "comparativeAmount": 5101366.75,
+      "fiscalYear": 2024,
+      "documentPage": 3,
+      "pdfPage": 31,
+      "printedPage": 19
+    },
+    {
+      "statement": "Statement of Financial Position",
+      "label": "Loans Receivable - Others",
+      "amount": 1000000.0,
+      "comparativeAmount": 2780112.43,
+      "fiscalYear": 2024,
+      "documentPage": 3,
+      "pdfPage": 31,
+      "printedPage": 19
+    },
+    {
+      "statement": "Statement of Financial Position",
+      "label": "Total Loans and Receivable Accounts",
+      "amount": 1060113316.35,
+      "comparativeAmount": 930431697.11,
+      "fiscalYear": 2024,
+      "documentPage": 3,
+      "pdfPage": 31,
+      "printedPage": 19
+    },
+    {
+      "statement": "Statement of Financial Position",
+      "label": "Due from NGAs",
+      "amount": 549.47,
+      "comparativeAmount": 0.0,
+      "fiscalYear": 2024,
+      "documentPage": 3,
+      "pdfPage": 31,
+      "printedPage": 19
+    },
+    {
+      "statement": "Statement of Financial Position",
+      "label": "Due from Local Government Units",
+      "amount": 189337410.39,
+      "comparativeAmount": 1533891.64,
+      "fiscalYear": 2024,
+      "documentPage": 3,
+      "pdfPage": 31,
+      "printedPage": 19
+    },
+    {
+      "statement": "Statement of Financial Position",
+      "label": "Total Inter - Agency Receivables",
+      "amount": 189337959.86,
+      "comparativeAmount": 1533891.64,
+      "fiscalYear": 2024,
+      "documentPage": 3,
+      "pdfPage": 31,
+      "printedPage": 19
+    },
+    {
+      "statement": "Statement of Financial Position",
+      "label": "Due from Other Funds",
+      "amount": 8095592.82,
+      "comparativeAmount": 6190659.7,
+      "fiscalYear": 2024,
+      "documentPage": 3,
+      "pdfPage": 31,
+      "printedPage": 19
+    },
+    {
+      "statement": "Statement of Financial Position",
+      "label": "Total Intra - Agency Receivables",
+      "amount": 8095592.82,
+      "comparativeAmount": 6190659.7,
+      "fiscalYear": 2024,
+      "documentPage": 3,
+      "pdfPage": 31,
+      "printedPage": 19
+    },
+    {
+      "statement": "Statement of Financial Position",
+      "label": "Advances for Operating Expenses",
+      "amount": 5387881.3,
+      "comparativeAmount": 2256343.48,
+      "fiscalYear": 2024,
+      "documentPage": 3,
+      "pdfPage": 31,
+      "printedPage": 19
+    },
+    {
+      "statement": "Statement of Financial Position",
+      "label": "Advances to Special Disbursing Officer",
+      "amount": 26259500.0,
+      "comparativeAmount": 26258840.0,
+      "fiscalYear": 2024,
+      "documentPage": 3,
+      "pdfPage": 31,
+      "printedPage": 19
+    },
+    {
+      "statement": "Statement of Financial Position",
+      "label": "Advances to Officers and Employees",
+      "amount": 1450.0,
+      "comparativeAmount": 206000.0,
+      "fiscalYear": 2024,
+      "documentPage": 4,
+      "pdfPage": 32,
+      "printedPage": 20
+    },
+    {
+      "statement": "Statement of Financial Position",
+      "label": "Total Advances",
+      "amount": 31648831.3,
+      "comparativeAmount": 28721183.48,
+      "fiscalYear": 2024,
+      "documentPage": 4,
+      "pdfPage": 32,
+      "printedPage": 20
+    },
+    {
+      "statement": "Statement of Financial Position",
+      "label": "Due from Officers and Employees",
+      "amount": 243336.72,
+      "comparativeAmount": 144788.99,
+      "fiscalYear": 2024,
+      "documentPage": 4,
+      "pdfPage": 32,
+      "printedPage": 20
+    },
+    {
+      "statement": "Statement of Financial Position",
+      "label": "Other Receivables",
+      "amount": 3691659.68,
+      "comparativeAmount": 12290883.75,
+      "fiscalYear": 2024,
+      "documentPage": 4,
+      "pdfPage": 32,
+      "printedPage": 20
+    },
+    {
+      "statement": "Statement of Financial Position",
+      "label": "Total Other Receivables",
+      "amount": 3934996.4,
+      "comparativeAmount": 12435672.74,
+      "fiscalYear": 2024,
+      "documentPage": 4,
+      "pdfPage": 32,
+      "printedPage": 20
+    },
+    {
+      "statement": "Statement of Financial Position",
+      "label": "Total Receivables",
+      "amount": 1293130696.73,
+      "comparativeAmount": 979313104.67,
+      "fiscalYear": 2024,
+      "documentPage": 4,
+      "pdfPage": 32,
+      "printedPage": 20
+    },
+    {
+      "statement": "Statement of Financial Position",
+      "label": "Office Supplies Inventory",
+      "amount": 1120716.61,
+      "comparativeAmount": 498709.84,
+      "fiscalYear": 2024,
+      "documentPage": 4,
+      "pdfPage": 32,
+      "printedPage": 20
+    },
+    {
+      "statement": "Statement of Financial Position",
+      "label": "Animal/Zoological Supplies Inventory",
+      "amount": 0.0,
+      "comparativeAmount": 49595.0,
+      "fiscalYear": 2024,
+      "documentPage": 4,
+      "pdfPage": 32,
+      "printedPage": 20
+    },
+    {
+      "statement": "Statement of Financial Position",
+      "label": "Drugs and Medicines Inventory",
+      "amount": 13653311.62,
+      "comparativeAmount": 4700790.63,
+      "fiscalYear": 2024,
+      "documentPage": 4,
+      "pdfPage": 32,
+      "printedPage": 20
+    },
+    {
+      "statement": "Statement of Financial Position",
+      "label": "Medical, Dental and Laboratory Supplies Inventory",
+      "amount": 0.0,
+      "comparativeAmount": 174977.4,
+      "fiscalYear": 2024,
+      "documentPage": 4,
+      "pdfPage": 32,
+      "printedPage": 20
+    },
+    {
+      "statement": "Statement of Financial Position",
+      "label": "Other Supplies and Materials Inventory",
+      "amount": 1478007.72,
+      "comparativeAmount": 1186447.57,
+      "fiscalYear": 2024,
+      "documentPage": 4,
+      "pdfPage": 32,
+      "printedPage": 20
+    },
+    {
+      "statement": "Statement of Financial Position",
+      "label": "Total Inventories",
+      "amount": 16252035.95,
+      "comparativeAmount": 6610520.44,
+      "fiscalYear": 2024,
+      "documentPage": 4,
+      "pdfPage": 32,
+      "printedPage": 20
+    },
+    {
+      "statement": "Statement of Financial Position",
+      "label": "Advance to Contractors",
+      "amount": 50448356.11,
+      "comparativeAmount": 34367262.11,
+      "fiscalYear": 2024,
+      "documentPage": 4,
+      "pdfPage": 32,
+      "printedPage": 20
+    },
+    {
+      "statement": "Statement of Financial Position",
+      "label": "Other Prepayments",
+      "amount": 717746.58,
+      "comparativeAmount": 719376.58,
+      "fiscalYear": 2024,
+      "documentPage": 4,
+      "pdfPage": 32,
+      "printedPage": 20
+    },
+    {
+      "statement": "Statement of Financial Position",
+      "label": "Total Prepayments and Deferred Charges",
+      "amount": 51166102.69,
+      "comparativeAmount": 35086638.69,
+      "fiscalYear": 2024,
+      "documentPage": 4,
+      "pdfPage": 32,
+      "printedPage": 20
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Tax Revenue – Fines and Penalties – Other Taxes",
+      "amount": 833.34,
+      "comparativeAmount": 0.0,
+      "fiscalYear": 2024,
+      "documentPage": 1,
+      "printedPage": 25,
+      "pdfPage": 37
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Total Tax Revenue – Fines and Penalties",
+      "amount": 1636555.77,
+      "comparativeAmount": 2827110.13,
+      "fiscalYear": 2024,
+      "documentPage": 1,
+      "printedPage": 25,
+      "pdfPage": 37
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Total Tax Revenue",
+      "amount": 959752592.81,
+      "comparativeAmount": 1071595926.33,
+      "fiscalYear": 2024,
+      "documentPage": 1,
+      "printedPage": 25,
+      "pdfPage": 37
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Share from Internal Revenue Collection",
+      "amount": 255602738.0,
+      "comparativeAmount": 241886006.53,
+      "fiscalYear": 2024,
+      "documentPage": 1,
+      "printedPage": 25,
+      "pdfPage": 37
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Permit Fees",
+      "amount": 4958781.01,
+      "comparativeAmount": 9386955.21,
+      "fiscalYear": 2024,
+      "documentPage": 1,
+      "printedPage": 25,
+      "pdfPage": 37
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Registration Fees",
+      "amount": 80700.0,
+      "comparativeAmount": 87254.5,
+      "fiscalYear": 2024,
+      "documentPage": 1,
+      "printedPage": 25,
+      "pdfPage": 37
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Registration Plates, Tags and Stickers Fees",
+      "amount": 1150.0,
+      "comparativeAmount": 0.0,
+      "fiscalYear": 2024,
+      "documentPage": 1,
+      "printedPage": 25,
+      "pdfPage": 37
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Clearance and Certification Fees",
+      "amount": 582295.98,
+      "comparativeAmount": 541464.45,
+      "fiscalYear": 2024,
+      "documentPage": 1,
+      "printedPage": 25,
+      "pdfPage": 37
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Supervision and Regulation Enforcement Fees",
+      "amount": 875225.92,
+      "comparativeAmount": 1628034.67,
+      "fiscalYear": 2024,
+      "documentPage": 1,
+      "printedPage": 25,
+      "pdfPage": 37
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Inspection Fees",
+      "amount": 12192395.27,
+      "comparativeAmount": 13418049.81,
+      "fiscalYear": 2024,
+      "documentPage": 1,
+      "printedPage": 25,
+      "pdfPage": 37
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Verification and Authentication Fees",
+      "amount": 188277.78,
+      "comparativeAmount": 182754.83,
+      "fiscalYear": 2024,
+      "documentPage": 1,
+      "printedPage": 25,
+      "pdfPage": 37
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Processing Fees",
+      "amount": 34930.0,
+      "comparativeAmount": 46080.0,
+      "fiscalYear": 2024,
+      "documentPage": 1,
+      "printedPage": 25,
+      "pdfPage": 37
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Fines and Penalties - Service Income",
+      "amount": 609663.41,
+      "comparativeAmount": 566461.27,
+      "fiscalYear": 2024,
+      "documentPage": 1,
+      "printedPage": 25,
+      "pdfPage": 37
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Fees for Sealing and Licensing of Weights and Measures",
+      "amount": 150.0,
+      "comparativeAmount": 215.0,
+      "fiscalYear": 2024,
+      "documentPage": 1,
+      "printedPage": 25,
+      "pdfPage": 37
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Other Service Income",
+      "amount": 556900.0,
+      "comparativeAmount": 379260.0,
+      "fiscalYear": 2024,
+      "documentPage": 1,
+      "printedPage": 25,
+      "pdfPage": 37
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Total Service Income",
+      "amount": 20080469.37,
+      "comparativeAmount": 26236529.74,
+      "fiscalYear": 2024,
+      "documentPage": 1,
+      "printedPage": 25,
+      "pdfPage": 37
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "School Fees",
+      "amount": 37500.0,
+      "comparativeAmount": 44836.0,
+      "fiscalYear": 2024,
+      "documentPage": 1,
+      "printedPage": 25,
+      "pdfPage": 37
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Receipt from Market Operations",
+      "amount": 4960495.6,
+      "comparativeAmount": 4902748.54,
+      "fiscalYear": 2024,
+      "documentPage": 1,
+      "printedPage": 25,
+      "pdfPage": 37
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Receipts from Slaughterhouse Operations",
+      "amount": 372980.0,
+      "comparativeAmount": 420383.0,
+      "fiscalYear": 2024,
+      "documentPage": 1,
+      "printedPage": 25,
+      "pdfPage": 37
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Receipt from Cemetery Operations",
+      "amount": 655142.36,
+      "comparativeAmount": 569103.0,
+      "fiscalYear": 2024,
+      "documentPage": 1,
+      "printedPage": 25,
+      "pdfPage": 37
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Garbage Fees",
+      "amount": 852270.5,
+      "comparativeAmount": 4222186.5,
+      "fiscalYear": 2024,
+      "documentPage": 1,
+      "printedPage": 25,
+      "pdfPage": 37
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Hospital Fees",
+      "amount": 119300.0,
+      "comparativeAmount": 111458.0,
+      "fiscalYear": 2024,
+      "documentPage": 1,
+      "printedPage": 25,
+      "pdfPage": 37
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Interest Income",
+      "amount": 19916339.96,
+      "comparativeAmount": 6947517.28,
+      "fiscalYear": 2024,
+      "documentPage": 1,
+      "printedPage": 25,
+      "pdfPage": 37
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Total Business Income",
+      "amount": 26914028.42,
+      "comparativeAmount": 17218232.32,
+      "fiscalYear": 2024,
+      "documentPage": 1,
+      "printedPage": 25,
+      "pdfPage": 37
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Total Service and Business Income",
+      "amount": 46994497.79,
+      "comparativeAmount": 43454762.06,
+      "fiscalYear": 2024,
+      "documentPage": 1,
+      "printedPage": 25,
+      "pdfPage": 37
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Share from PCSO",
+      "amount": 554179.03,
+      "comparativeAmount": 697773.09,
+      "fiscalYear": 2024,
+      "documentPage": 2,
+      "printedPage": 26,
+      "pdfPage": 38
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Grants and Donations in Cash",
+      "amount": 0.0,
+      "comparativeAmount": 1200000.0,
+      "fiscalYear": 2024,
+      "documentPage": 2,
+      "printedPage": 26,
+      "pdfPage": 38
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Total Shares, Grants and Donations",
+      "amount": 554179.03,
+      "comparativeAmount": 1897773.09,
+      "fiscalYear": 2024,
+      "documentPage": 2,
+      "printedPage": 26,
+      "pdfPage": 38
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Miscellaneous Income",
+      "amount": 2398490.78,
+      "comparativeAmount": 3462744.74,
+      "fiscalYear": 2024,
+      "documentPage": 2,
+      "printedPage": 26,
+      "pdfPage": 38
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Subsidy from National Government",
+      "amount": 149125.0,
+      "comparativeAmount": 0.0,
+      "fiscalYear": 2024,
+      "documentPage": 2,
+      "printedPage": 26,
+      "pdfPage": 38
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Subsidy from Local Government Units",
+      "amount": 0.0,
+      "comparativeAmount": 210410.0,
+      "fiscalYear": 2024,
+      "documentPage": 2,
+      "printedPage": 26,
+      "pdfPage": 38
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Total Assistance and Subsidy From",
+      "amount": 149125.0,
+      "comparativeAmount": 210410.0,
+      "fiscalYear": 2024,
+      "documentPage": 2,
+      "printedPage": 26,
+      "pdfPage": 38
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Subsidy to LGUs",
+      "amount": 3328997.0,
+      "comparativeAmount": 1563500.0,
+      "fiscalYear": 2024,
+      "documentPage": 2,
+      "printedPage": 26,
+      "pdfPage": 38
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Total Financial Assistance/Subsidy to",
+      "amount": 3328997.0,
+      "comparativeAmount": 1563500.0,
+      "fiscalYear": 2024,
+      "documentPage": 2,
+      "printedPage": 26,
+      "pdfPage": 38
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Transfers of Unspent Current Year DRRM Funds to the Trust Fund",
+      "amount": 5592090.35,
+      "comparativeAmount": 9610958.75,
+      "fiscalYear": 2024,
+      "documentPage": 2,
+      "printedPage": 26,
+      "pdfPage": 38
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Transfers for Project Equity Share/LGU Counterpart",
+      "amount": 0.0,
+      "comparativeAmount": 4286736.93,
+      "fiscalYear": 2024,
+      "documentPage": 2,
+      "printedPage": 26,
+      "pdfPage": 38
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Total Transfers to",
+      "amount": 5592090.35,
+      "comparativeAmount": 13897695.68,
+      "fiscalYear": 2024,
+      "documentPage": 2,
+      "printedPage": 26,
+      "pdfPage": 38
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Total Transfers, Assistance and Subsidy To",
+      "amount": 8921087.35,
+      "comparativeAmount": 15461195.68,
+      "fiscalYear": 2024,
+      "documentPage": 2,
+      "printedPage": 26,
+      "pdfPage": 38
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Transfers, Assistance and Subsidy (Net)",
+      "amount": -8771962.35,
+      "comparativeAmount": -15250785.68,
+      "fiscalYear": 2024,
+      "documentPage": 2,
+      "printedPage": 26,
+      "pdfPage": 38
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Salaries and Wages - Regular",
+      "amount": 169068204.22,
+      "comparativeAmount": 167277873.34,
+      "fiscalYear": 2024,
+      "documentPage": 3,
+      "printedPage": 27,
+      "pdfPage": 39
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Total Salaries and Wages",
+      "amount": 169068204.22,
+      "comparativeAmount": 167277873.34,
+      "fiscalYear": 2024,
+      "documentPage": 3,
+      "printedPage": 27,
+      "pdfPage": 39
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Personal Economic Relief Allowance",
+      "amount": 14858698.48,
+      "comparativeAmount": 15184409.62,
+      "fiscalYear": 2024,
+      "documentPage": 3,
+      "printedPage": 27,
+      "pdfPage": 39
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Representation Allowance",
+      "amount": 2374250.0,
+      "comparativeAmount": 2271712.5,
+      "fiscalYear": 2024,
+      "documentPage": 3,
+      "printedPage": 27,
+      "pdfPage": 39
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Transportation Allowance",
+      "amount": 2175912.5,
+      "comparativeAmount": 2072712.5,
+      "fiscalYear": 2024,
+      "documentPage": 3,
+      "printedPage": 27,
+      "pdfPage": 39
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Clothing/Uniform Allowance",
+      "amount": 4412800.0,
+      "comparativeAmount": 3856250.0,
+      "fiscalYear": 2024,
+      "documentPage": 3,
+      "printedPage": 27,
+      "pdfPage": 39
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Subsistence Allowance",
+      "amount": 1259750.0,
+      "comparativeAmount": 1303499.99,
+      "fiscalYear": 2024,
+      "documentPage": 3,
+      "printedPage": 27,
+      "pdfPage": 39
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Laundry Allowance",
+      "amount": 125975.0,
+      "comparativeAmount": 129750.0,
+      "fiscalYear": 2024,
+      "documentPage": 3,
+      "printedPage": 27,
+      "pdfPage": 39
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Honoraria",
+      "amount": 0.0,
+      "comparativeAmount": 8000.0,
+      "fiscalYear": 2024,
+      "documentPage": 3,
+      "printedPage": 27,
+      "pdfPage": 39
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Hazard Pay",
+      "amount": 419916.64,
+      "comparativeAmount": 432499.91,
+      "fiscalYear": 2024,
+      "documentPage": 3,
+      "printedPage": 27,
+      "pdfPage": 39
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Overtime and Night Pay",
+      "amount": 1990828.3,
+      "comparativeAmount": 1255279.66,
+      "fiscalYear": 2024,
+      "documentPage": 3,
+      "printedPage": 27,
+      "pdfPage": 39
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Year-End Bonus",
+      "amount": 14209141.15,
+      "comparativeAmount": 14052728.1,
+      "fiscalYear": 2024,
+      "documentPage": 3,
+      "printedPage": 27,
+      "pdfPage": 39
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Cash Gift",
+      "amount": 3049500.0,
+      "comparativeAmount": 3198250.0,
+      "fiscalYear": 2024,
+      "documentPage": 3,
+      "printedPage": 27,
+      "pdfPage": 39
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Other Bonuses and Allowances",
+      "amount": 17066693.12,
+      "comparativeAmount": 22031365.77,
+      "fiscalYear": 2024,
+      "documentPage": 3,
+      "printedPage": 27,
+      "pdfPage": 39
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Other Compensation",
+      "amount": 61943465.19,
+      "comparativeAmount": 65796458.05,
+      "fiscalYear": 2024,
+      "documentPage": 3,
+      "printedPage": 27,
+      "pdfPage": 39
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Retirement and Life Insurance Premiums",
+      "amount": 19598284.56,
+      "comparativeAmount": 19354977.79,
+      "fiscalYear": 2024,
+      "documentPage": 3,
+      "printedPage": 27,
+      "pdfPage": 39
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Pag-IBIG Contributions",
+      "amount": 1422722.35,
+      "comparativeAmount": 755008.48,
+      "fiscalYear": 2024,
+      "documentPage": 3,
+      "printedPage": 27,
+      "pdfPage": 39
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "PhilHealth Contributions",
+      "amount": 4063537.92,
+      "comparativeAmount": 3122090.74,
+      "fiscalYear": 2024,
+      "documentPage": 3,
+      "printedPage": 27,
+      "pdfPage": 39
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Employees Compensation Insurance Premiums",
+      "amount": 743782.14,
+      "comparativeAmount": 756423.84,
+      "fiscalYear": 2024,
+      "documentPage": 3,
+      "printedPage": 27,
+      "pdfPage": 39
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Personnel Benefit Contribution",
+      "amount": 25828326.97,
+      "comparativeAmount": 23988500.85,
+      "fiscalYear": 2024,
+      "documentPage": 3,
+      "printedPage": 27,
+      "pdfPage": 39
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Terminal Leave Benefit",
+      "amount": 3262503.35,
+      "comparativeAmount": 548852.47,
+      "fiscalYear": 2024,
+      "documentPage": 3,
+      "printedPage": 27,
+      "pdfPage": 39
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Other Personnel Benefits",
+      "amount": 13163205.46,
+      "comparativeAmount": 2587941.14,
+      "fiscalYear": 2024,
+      "documentPage": 3,
+      "printedPage": 27,
+      "pdfPage": 39
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Other Personnel Benefits",
+      "amount": 16425708.81,
+      "comparativeAmount": 3136793.61,
+      "fiscalYear": 2024,
+      "documentPage": 3,
+      "printedPage": 27,
+      "pdfPage": 39
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Total Personnel Services",
+      "amount": 273265705.19,
+      "comparativeAmount": 260199625.85,
+      "fiscalYear": 2024,
+      "documentPage": 3,
+      "printedPage": 27,
+      "pdfPage": 39
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Traveling Expenses - Local",
+      "amount": 807170.9,
+      "comparativeAmount": 580297.01,
+      "fiscalYear": 2024,
+      "documentPage": 3,
+      "printedPage": 27,
+      "pdfPage": 39
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Total Traveling Expenses",
+      "amount": 807170.9,
+      "comparativeAmount": 580297.01,
+      "fiscalYear": 2024,
+      "documentPage": 3,
+      "printedPage": 27,
+      "pdfPage": 39
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Training Expenses",
+      "amount": 3766068.8,
+      "comparativeAmount": 5351043.04,
+      "fiscalYear": 2024,
+      "documentPage": 3,
+      "printedPage": 27,
+      "pdfPage": 39
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Total Training and Scholarship Expenses",
+      "amount": 3766068.8,
+      "comparativeAmount": 5351043.04,
+      "fiscalYear": 2024,
+      "documentPage": 3,
+      "printedPage": 27,
+      "pdfPage": 39
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Office Supplies Expenses",
+      "amount": 8282641.03,
+      "comparativeAmount": 4406419.17,
+      "fiscalYear": 2024,
+      "documentPage": 4,
+      "printedPage": 28,
+      "pdfPage": 40
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Accountable Forms Expenses",
+      "amount": 299084.0,
+      "comparativeAmount": 353544.5,
+      "fiscalYear": 2024,
+      "documentPage": 4,
+      "printedPage": 28,
+      "pdfPage": 40
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Animal/Zoological Expenses",
+      "amount": 49595.0,
+      "comparativeAmount": 8100.0,
+      "fiscalYear": 2024,
+      "documentPage": 4,
+      "printedPage": 28,
+      "pdfPage": 40
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Welfare Goods Expenses",
+      "amount": 7339950.0,
+      "comparativeAmount": 0.0,
+      "fiscalYear": 2024,
+      "documentPage": 4,
+      "printedPage": 28,
+      "pdfPage": 40
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Drugs and Medicines Expenses",
+      "amount": 22692478.41,
+      "comparativeAmount": 16903762.38,
+      "fiscalYear": 2024,
+      "documentPage": 4,
+      "printedPage": 28,
+      "pdfPage": 40
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Medical, Dental and Laboratory Supplies Expenses",
+      "amount": 9843115.44,
+      "comparativeAmount": 11760531.6,
+      "fiscalYear": 2024,
+      "documentPage": 4,
+      "printedPage": 28,
+      "pdfPage": 40
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Fuel, Oil and Lubricant Expenses",
+      "amount": 19216790.2,
+      "comparativeAmount": 16978421.97,
+      "fiscalYear": 2024,
+      "documentPage": 4,
+      "printedPage": 28,
+      "pdfPage": 40
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Agricultural and Marine Supplies Expenses",
+      "amount": 2610.0,
+      "comparativeAmount": 0.0,
+      "fiscalYear": 2024,
+      "documentPage": 4,
+      "printedPage": 28,
+      "pdfPage": 40
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Textbooks and Instructional Materials Expenses",
+      "amount": 15456680.0,
+      "comparativeAmount": 42980248.0,
+      "fiscalYear": 2024,
+      "documentPage": 4,
+      "printedPage": 28,
+      "pdfPage": 40
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Semi-Expendable Machinery and Equipment Expenses",
+      "amount": 16950.0,
+      "comparativeAmount": 0.0,
+      "fiscalYear": 2024,
+      "documentPage": 4,
+      "printedPage": 28,
+      "pdfPage": 40
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Other Supplies and Material Expenses",
+      "amount": 59777076.99,
+      "comparativeAmount": 32116091.43,
+      "fiscalYear": 2024,
+      "documentPage": 4,
+      "printedPage": 28,
+      "pdfPage": 40
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Total Supplies and Material Expenses",
+      "amount": 142976971.07,
+      "comparativeAmount": 125507119.05,
+      "fiscalYear": 2024,
+      "documentPage": 4,
+      "printedPage": 28,
+      "pdfPage": 40
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Water Expenses",
+      "amount": 1011511.4,
+      "comparativeAmount": 755330.13,
+      "fiscalYear": 2024,
+      "documentPage": 4,
+      "printedPage": 28,
+      "pdfPage": 40
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Electricity Expenses",
+      "amount": 16500598.5,
+      "comparativeAmount": 17697956.58,
+      "fiscalYear": 2024,
+      "documentPage": 4,
+      "printedPage": 28,
+      "pdfPage": 40
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Total Utility Expenses",
+      "amount": 17512109.9,
+      "comparativeAmount": 18453286.71,
+      "fiscalYear": 2024,
+      "documentPage": 4,
+      "printedPage": 28,
+      "pdfPage": 40
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Postage and Courier Services",
+      "amount": 4685.0,
+      "comparativeAmount": 8225.0,
+      "fiscalYear": 2024,
+      "documentPage": 4,
+      "printedPage": 28,
+      "pdfPage": 40
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Telephone Expenses",
+      "amount": 1354308.52,
+      "comparativeAmount": 1395871.78,
+      "fiscalYear": 2024,
+      "documentPage": 4,
+      "printedPage": 28,
+      "pdfPage": 40
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Internet Subscription Expenses",
+      "amount": 3538001.9,
+      "comparativeAmount": 4347928.13,
+      "fiscalYear": 2024,
+      "documentPage": 4,
+      "printedPage": 28,
+      "pdfPage": 40
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Total Communication Expenses",
+      "amount": 4896995.42,
+      "comparativeAmount": 5752024.91,
+      "fiscalYear": 2024,
+      "documentPage": 4,
+      "printedPage": 28,
+      "pdfPage": 40
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Survey Expenses",
+      "amount": 70000.0,
+      "comparativeAmount": 0.0,
+      "fiscalYear": 2024,
+      "documentPage": 4,
+      "printedPage": 28,
+      "pdfPage": 40
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Total Demolition/Relocation and Desilting/Dredging Expenses",
+      "amount": 70000.0,
+      "comparativeAmount": 0.0,
+      "fiscalYear": 2024,
+      "documentPage": 4,
+      "printedPage": 28,
+      "pdfPage": 40
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Confidential Expenses",
+      "amount": 28105300.0,
+      "comparativeAmount": 28100000.0,
+      "fiscalYear": 2024,
+      "documentPage": 4,
+      "printedPage": 28,
+      "pdfPage": 40
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Extraordinary and Miscellaneous Expenses",
+      "amount": 5946045.98,
+      "comparativeAmount": 8497852.53,
+      "fiscalYear": 2024,
+      "documentPage": 4,
+      "printedPage": 28,
+      "pdfPage": 40
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Total Confidential, Intelligence and Extraordinary Expenses",
+      "amount": 34051345.98,
+      "comparativeAmount": 36597852.53,
+      "fiscalYear": 2024,
+      "documentPage": 4,
+      "printedPage": 28,
+      "pdfPage": 40
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Other Professional Services",
+      "amount": 52965840.11,
+      "comparativeAmount": 50951594.42,
+      "fiscalYear": 2024,
+      "documentPage": 4,
+      "printedPage": 28,
+      "pdfPage": 40
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Total Professional Services",
+      "amount": 52965840.11,
+      "comparativeAmount": 50951594.42,
+      "fiscalYear": 2024,
+      "documentPage": 4,
+      "printedPage": 28,
+      "pdfPage": 40
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Other General Services",
+      "amount": 47538658.94,
+      "comparativeAmount": 41120895.45,
+      "documentPage": 1,
+      "pdfPage": 41,
+      "printedPage": 29
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Total General Services",
+      "amount": 47538658.94,
+      "comparativeAmount": 41120895.45,
+      "documentPage": 1,
+      "pdfPage": 41,
+      "printedPage": 29
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Repairs and Maintenance - Infrastructure Assets",
+      "amount": 252980.0,
+      "comparativeAmount": 478090.0,
+      "documentPage": 1,
+      "pdfPage": 41,
+      "printedPage": 29
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Repairs and Maintenance - Buildings and Other Structures",
+      "amount": 5060396.54,
+      "comparativeAmount": 441610.04,
+      "documentPage": 1,
+      "pdfPage": 41,
+      "printedPage": 29
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Repairs and Maintenance - Machinery and Equipment",
+      "amount": 274895.5,
+      "comparativeAmount": 815963.0,
+      "documentPage": 1,
+      "pdfPage": 41,
+      "printedPage": 29
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Repairs and Maintenance - Transportation Equipment",
+      "amount": 2853492.17,
+      "comparativeAmount": 1217437.99,
+      "documentPage": 1,
+      "pdfPage": 41,
+      "printedPage": 29
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Repairs and Maintenance – Furnitures and Fixtures",
+      "amount": 610952.0,
+      "comparativeAmount": 0.0,
+      "documentPage": 1,
+      "pdfPage": 41,
+      "printedPage": 29
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Repairs and Maintenance – Other Property, Plant and Equipment",
+      "amount": 0.0,
+      "comparativeAmount": 30450.0,
+      "documentPage": 1,
+      "pdfPage": 41,
+      "printedPage": 29
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Total Repairs and Maintenance",
+      "amount": 9052716.21,
+      "comparativeAmount": 2983551.03,
+      "documentPage": 1,
+      "pdfPage": 41,
+      "printedPage": 29
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Taxes, Duties and Licenses",
+      "amount": 223293.82,
+      "comparativeAmount": 182176.54,
+      "documentPage": 1,
+      "pdfPage": 41,
+      "printedPage": 29
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Fidelity Bond Premiums",
+      "amount": 298875.0,
+      "comparativeAmount": 222750.0,
+      "documentPage": 1,
+      "pdfPage": 41,
+      "printedPage": 29
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Insurance Expenses",
+      "amount": 790128.12,
+      "comparativeAmount": 555118.83,
+      "documentPage": 1,
+      "pdfPage": 41,
+      "printedPage": 29
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Total Taxes, Insurance Premiums and Other Fees",
+      "amount": 1312296.94,
+      "comparativeAmount": 960045.37,
+      "documentPage": 1,
+      "pdfPage": 41,
+      "printedPage": 29
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Advertising Expenses",
+      "amount": 538700.0,
+      "comparativeAmount": 181526.08,
+      "documentPage": 1,
+      "pdfPage": 41,
+      "printedPage": 29
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Printing and Publication",
+      "amount": 6000.0,
+      "comparativeAmount": 0.0,
+      "documentPage": 1,
+      "pdfPage": 41,
+      "printedPage": 29
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Representation Expenses",
+      "amount": 3173949.64,
+      "comparativeAmount": 2741282.38,
+      "documentPage": 1,
+      "pdfPage": 41,
+      "printedPage": 29
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Rent/Lease Expenses",
+      "amount": 23009.28,
+      "comparativeAmount": 358266.78,
+      "documentPage": 1,
+      "pdfPage": 41,
+      "printedPage": 29
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Membership Dues and Contributions to Organizations",
+      "amount": 521050.0,
+      "comparativeAmount": 188500.0,
+      "documentPage": 1,
+      "pdfPage": 41,
+      "printedPage": 29
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Subscription Expenses",
+      "amount": 17430.0,
+      "comparativeAmount": 29195.48,
+      "documentPage": 1,
+      "pdfPage": 41,
+      "printedPage": 29
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Donations",
+      "amount": 71072607.74,
+      "comparativeAmount": 31399857.92,
+      "documentPage": 1,
+      "pdfPage": 41,
+      "printedPage": 29
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Other Maintenance and Operating Expenses",
+      "amount": 60076195.59,
+      "comparativeAmount": 45635981.94,
+      "documentPage": 1,
+      "pdfPage": 41,
+      "printedPage": 29
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Total Other Maintenance and Operating Expenses",
+      "amount": 135428942.25,
+      "comparativeAmount": 80534610.58,
+      "documentPage": 1,
+      "pdfPage": 41,
+      "printedPage": 29
+    },
+    {
+      "statement": "Statement of Financial Performance",
+      "label": "Total Maintenance and Other Operating Expenses",
+      "amount": 450379116.52,
+      "comparativeAmount": 368792320.1,
+      "documentPage": 1,
+      "pdfPage": 41,
+      "printedPage": 29
+    },
+    {
+      "statement": "Note 21 – Non-Cash Expenses",
+      "label": "Depreciation - Land Improvements",
+      "amount": 4116313.71,
+      "comparativeAmount": 2826850.05,
+      "documentPage": 1,
+      "printedPage": 30,
+      "pdfPage": 42
+    },
+    {
+      "statement": "Note 21 – Non-Cash Expenses",
+      "label": "Depreciation - Infrastructure Assets",
+      "amount": 44681599.8,
+      "comparativeAmount": 69742282.5,
+      "documentPage": 1,
+      "printedPage": 30,
+      "pdfPage": 42
+    },
+    {
+      "statement": "Note 21 – Non-Cash Expenses",
+      "label": "Depreciation - Buildings and Other Structures",
+      "amount": 103248459.87,
+      "comparativeAmount": 77878102.54,
+      "documentPage": 1,
+      "printedPage": 30,
+      "pdfPage": 42
+    },
+    {
+      "statement": "Note 21 – Non-Cash Expenses",
+      "label": "Depreciation - Machinery and Equipment",
+      "amount": 68488953.98,
+      "comparativeAmount": 111687102.98,
+      "documentPage": 1,
+      "printedPage": 30,
+      "pdfPage": 42
+    },
+    {
+      "statement": "Note 21 – Non-Cash Expenses",
+      "label": "Depreciation - Transportation Equipment",
+      "amount": 8404038.45,
+      "comparativeAmount": 8732356.02,
+      "documentPage": 1,
+      "printedPage": 30,
+      "pdfPage": 42
+    },
+    {
+      "statement": "Note 21 – Non-Cash Expenses",
+      "label": "Depreciation - Furniture, Fixtures and Books",
+      "amount": 7839135.99,
+      "comparativeAmount": 8568706.31,
+      "documentPage": 1,
+      "printedPage": 30,
+      "pdfPage": 42
+    },
+    {
+      "statement": "Note 21 – Non-Cash Expenses",
+      "label": "Depreciation - Other Property, Plant and Equipment",
+      "amount": 2612064.76,
+      "comparativeAmount": 4779408.15,
+      "documentPage": 1,
+      "printedPage": 30,
+      "pdfPage": 42
+    },
+    {
+      "statement": "Note 21 – Non-Cash Expenses",
+      "label": "Total Non-Cash Expenses",
+      "amount": 239390566.56,
+      "comparativeAmount": 284214808.55,
+      "documentPage": 1,
+      "printedPage": 30,
+      "pdfPage": 42
+    },
+    {
+      "statement": "Note 22 – Reconciliation of Net Cash Flows from Operating Activities",
+      "label": "Surplus/(Deficit)",
+      "amount": 293495147.79,
+      "comparativeAmount": 433839672.57,
+      "documentPage": 1,
+      "printedPage": 30,
+      "pdfPage": 42
+    },
+    {
+      "statement": "Note 22 – Reconciliation of Net Cash Flows from Operating Activities",
+      "label": "Depreciation",
+      "amount": 239390566.56,
+      "comparativeAmount": 284214808.55,
+      "documentPage": 1,
+      "printedPage": 30,
+      "pdfPage": 42
+    },
+    {
+      "statement": "Note 22 – Reconciliation of Net Cash Flows from Operating Activities",
+      "label": "Increase in Payables",
+      "amount": 174101349.59,
+      "comparativeAmount": 389426712.9,
+      "documentPage": 1,
+      "printedPage": 30,
+      "pdfPage": 42
+    },
+    {
+      "statement": "Note 22 – Reconciliation of Net Cash Flows from Operating Activities",
+      "label": "Net Increase in Cash due to Prior Period Adjustment",
+      "amount": 121501771.31,
+      "comparativeAmount": -249923788.45,
+      "documentPage": 1,
+      "printedPage": 30,
+      "pdfPage": 42
+    },
+    {
+      "statement": "Note 22 – Reconciliation of Net Cash Flows from Operating Activities",
+      "label": "Increase in Current Assets",
+      "amount": -9302275.94,
+      "comparativeAmount": -18422713.08,
+      "documentPage": 1,
+      "printedPage": 30,
+      "pdfPage": 42
+    },
+    {
+      "statement": "Note 22 – Reconciliation of Net Cash Flows from Operating Activities",
+      "label": "Increase in Receivables",
+      "amount": -313817592.06,
+      "comparativeAmount": -11997.46,
+      "documentPage": 1,
+      "printedPage": 30,
+      "pdfPage": 42
+    },
+    {
+      "statement": "Note 22 – Reconciliation of Net Cash Flows from Operating Activities",
+      "label": "Net Cash from Operating Activities",
+      "amount": 505368967.25,
+      "comparativeAmount": 839122695.03,
+      "documentPage": 1,
+      "printedPage": 30,
+      "pdfPage": 42
+    },
+    {
+      "statement": "Note 23 – Reconciliation between actual amounts on a comparable basis as presented in this statement and in the Statement of Financial Performance for the year ended December 31, 2024.",
+      "label": "Comparison Statement of Budget and Actual - Income",
+      "amount": 1265451623.41,
+      "documentPage": 1,
+      "printedPage": 30,
+      "pdfPage": 42
+    },
+    {
+      "statement": "Note 23 – Reconciliation between actual amounts on a comparable basis as presented in this statement and in the Statement of Financial Performance for the year ended December 31, 2024.",
+      "label": "Comparison Statement of Budget and Actual - Personal Services",
+      "amount": 273265705.19,
+      "documentPage": 1,
+      "printedPage": 30,
+      "pdfPage": 42
+    },
+    {
+      "statement": "Note 23 – Reconciliation between actual amounts on a comparable basis as presented in this statement and in the Statement of Financial Performance for the year ended December 31, 2024.",
+      "label": "Comparison Statement of Budget and Actual - MOOE",
+      "amount": 459300203.87,
+      "documentPage": 1,
+      "printedPage": 30,
+      "pdfPage": 42
+    },
+    {
+      "statement": "Note 23 – Reconciliation between actual amounts on a comparable basis as presented in this statement and in the Statement of Financial Performance for the year ended December 31, 2024.",
+      "label": "Comparison Statement of Budget and Actual - Financial Expenses",
+      "amount": 0.0,
+      "documentPage": 1,
+      "printedPage": 30,
+      "pdfPage": 42
+    },
+    {
+      "statement": "Note 23 – Reconciliation between actual amounts on a comparable basis as presented in this statement and in the Statement of Financial Performance for the year ended December 31, 2024.",
+      "label": "Comparison Statement of Budget and Actual - Capital Outlay",
+      "amount": 505200761.72,
+      "documentPage": 1,
+      "printedPage": 30,
+      "pdfPage": 42
+    },
+    {
+      "statement": "Note 23 – Reconciliation between actual amounts on a comparable basis as presented in this statement and in the Statement of Financial Performance for the year ended December 31, 2024.",
+      "label": "Entity Differences - Income",
+      "amount": -149125.0,
+      "documentPage": 1,
+      "printedPage": 30,
+      "pdfPage": 42
+    },
+    {
+      "statement": "Note 23 – Reconciliation between actual amounts on a comparable basis as presented in this statement and in the Statement of Financial Performance for the year ended December 31, 2024.",
+      "label": "Entity Differences - Personal Services",
+      "amount": -8921087.35,
+      "documentPage": 1,
+      "printedPage": 30,
+      "pdfPage": 42
+    },
+    {
+      "statement": "Note 23 – Reconciliation between actual amounts on a comparable basis as presented in this statement and in the Statement of Financial Performance for the year ended December 31, 2024.",
+      "label": "Basis Differences: - Income",
+      "amount": 0.0,
+      "documentPage": 1,
+      "printedPage": 30,
+      "pdfPage": 42
+    },
+    {
+      "statement": "Note 23 – Reconciliation between actual amounts on a comparable basis as presented in this statement and in the Statement of Financial Performance for the year ended December 31, 2024.",
+      "label": "Basis Differences: - Personal Services",
+      "amount": 0.0,
+      "documentPage": 1,
+      "printedPage": 30,
+      "pdfPage": 42
+    },
+    {
+      "statement": "Note 23 – Reconciliation between actual amounts on a comparable basis as presented in this statement and in the Statement of Financial Performance for the year ended December 31, 2024.",
+      "label": "Basis Differences: - MOOE",
+      "amount": 0.0,
+      "documentPage": 1,
+      "printedPage": 30,
+      "pdfPage": 42
+    },
+    {
+      "statement": "Note 23 – Reconciliation between actual amounts on a comparable basis as presented in this statement and in the Statement of Financial Performance for the year ended December 31, 2024.",
+      "label": "Basis Differences: - Financial Expenses",
+      "amount": 0.0,
+      "documentPage": 1,
+      "printedPage": 30,
+      "pdfPage": 42
+    },
+    {
+      "statement": "Note 23 – Reconciliation between actual amounts on a comparable basis as presented in this statement and in the Statement of Financial Performance for the year ended December 31, 2024.",
+      "label": "Basis Differences: - Capital Outlay",
+      "amount": -505200761.72,
+      "documentPage": 1,
+      "printedPage": 30,
+      "pdfPage": 42
+    },
+    {
+      "statement": "Note 23 – Reconciliation between actual amounts on a comparable basis as presented in this statement and in the Statement of Financial Performance for the year ended December 31, 2024.",
+      "label": "Non-cash income - Income",
+      "amount": 0.0,
+      "documentPage": 2,
+      "printedPage": 31,
+      "pdfPage": 43
+    },
+    {
+      "statement": "Note 23 – Reconciliation between actual amounts on a comparable basis as presented in this statement and in the Statement of Financial Performance for the year ended December 31, 2024.",
+      "label": "Non-cash income - Personal Services",
+      "amount": 0.0,
+      "documentPage": 2,
+      "printedPage": 31,
+      "pdfPage": 43
+    },
+    {
+      "statement": "Note 23 – Reconciliation between actual amounts on a comparable basis as presented in this statement and in the Statement of Financial Performance for the year ended December 31, 2024.",
+      "label": "Non-cash income - MOOE",
+      "amount": 0.0,
+      "documentPage": 2,
+      "printedPage": 31,
+      "pdfPage": 43
+    },
+    {
+      "statement": "Note 23 – Reconciliation between actual amounts on a comparable basis as presented in this statement and in the Statement of Financial Performance for the year ended December 31, 2024.",
+      "label": "Non-cash income - Financial Expenses",
+      "amount": 0.0,
+      "documentPage": 2,
+      "printedPage": 31,
+      "pdfPage": 43
+    },
+    {
+      "statement": "Note 23 – Reconciliation between actual amounts on a comparable basis as presented in this statement and in the Statement of Financial Performance for the year ended December 31, 2024.",
+      "label": "Non-cash income - Capital Outlay",
+      "amount": 0.0,
+      "documentPage": 2,
+      "printedPage": 31,
+      "pdfPage": 43
+    },
+    {
+      "statement": "Note 23 – Reconciliation between actual amounts on a comparable basis as presented in this statement and in the Statement of Financial Performance for the year ended December 31, 2024.",
+      "label": "Gain on Sale of Assets - Income",
+      "amount": 0.0,
+      "documentPage": 2,
+      "printedPage": 31,
+      "pdfPage": 43
+    },
+    {
+      "statement": "Note 23 – Reconciliation between actual amounts on a comparable basis as presented in this statement and in the Statement of Financial Performance for the year ended December 31, 2024.",
+      "label": "Gain on Sale of Assets - Personal Services",
+      "amount": 0.0,
+      "documentPage": 2,
+      "printedPage": 31,
+      "pdfPage": 43
+    },
+    {
+      "statement": "Note 23 – Reconciliation between actual amounts on a comparable basis as presented in this statement and in the Statement of Financial Performance for the year ended December 31, 2024.",
+      "label": "Gain on Sale of Assets - MOOE",
+      "amount": 0.0,
+      "documentPage": 2,
+      "printedPage": 31,
+      "pdfPage": 43
+    },
+    {
+      "statement": "Note 23 – Reconciliation between actual amounts on a comparable basis as presented in this statement and in the Statement of Financial Performance for the year ended December 31, 2024.",
+      "label": "Gain on Sale of Assets - Financial Expenses",
+      "amount": 0.0,
+      "documentPage": 2,
+      "printedPage": 31,
+      "pdfPage": 43
+    },
+    {
+      "statement": "Note 23 – Reconciliation between actual amounts on a comparable basis as presented in this statement and in the Statement of Financial Performance for the year ended December 31, 2024.",
+      "label": "Gain on Sale of Assets - Capital Outlay",
+      "amount": 0.0,
+      "documentPage": 2,
+      "printedPage": 31,
+      "pdfPage": 43
+    },
+    {
+      "statement": "Note 23 – Reconciliation between actual amounts on a comparable basis as presented in this statement and in the Statement of Financial Performance for the year ended December 31, 2024.",
+      "label": "Sale of capital assets - Income",
+      "amount": 0.0,
+      "documentPage": 2,
+      "printedPage": 31,
+      "pdfPage": 43
+    },
+    {
+      "statement": "Note 23 – Reconciliation between actual amounts on a comparable basis as presented in this statement and in the Statement of Financial Performance for the year ended December 31, 2024.",
+      "label": "Sale of capital assets - Personal Services",
+      "amount": 0.0,
+      "documentPage": 2,
+      "printedPage": 31,
+      "pdfPage": 43
+    },
+    {
+      "statement": "Note 23 – Reconciliation between actual amounts on a comparable basis as presented in this statement and in the Statement of Financial Performance for the year ended December 31, 2024.",
+      "label": "Sale of capital assets - MOOE",
+      "amount": 0.0,
+      "documentPage": 2,
+      "printedPage": 31,
+      "pdfPage": 43
+    },
+    {
+      "statement": "Note 23 – Reconciliation between actual amounts on a comparable basis as presented in this statement and in the Statement of Financial Performance for the year ended December 31, 2024.",
+      "label": "Sale of capital assets - Financial Expenses",
+      "amount": 0.0,
+      "documentPage": 2,
+      "printedPage": 31,
+      "pdfPage": 43
+    },
+    {
+      "statement": "Note 23 – Reconciliation between actual amounts on a comparable basis as presented in this statement and in the Statement of Financial Performance for the year ended December 31, 2024.",
+      "label": "Sale of capital assets - Capital Outlay",
+      "amount": 0.0,
+      "documentPage": 2,
+      "printedPage": 31,
+      "pdfPage": 43
+    },
+    {
+      "statement": "Note 23 – Reconciliation between actual amounts on a comparable basis as presented in this statement and in the Statement of Financial Performance for the year ended December 31, 2024.",
+      "label": "Budgetary items not considered as expenses - Income",
+      "amount": 0.0,
+      "documentPage": 2,
+      "printedPage": 31,
+      "pdfPage": 43
+    },
+    {
+      "statement": "Note 23 – Reconciliation between actual amounts on a comparable basis as presented in this statement and in the Statement of Financial Performance for the year ended December 31, 2024.",
+      "label": "Budgetary items not considered as expenses - Personal Services",
+      "amount": 0.0,
+      "documentPage": 2,
+      "printedPage": 31,
+      "pdfPage": 43
+    },
+    {
+      "statement": "Note 23 – Reconciliation between actual amounts on a comparable basis as presented in this statement and in the Statement of Financial Performance for the year ended December 31, 2024.",
+      "label": "Budgetary items not considered as expenses - MOOE",
+      "amount": 0.0,
+      "documentPage": 2,
+      "printedPage": 31,
+      "pdfPage": 43
+    },
+    {
+      "statement": "Note 23 – Reconciliation between actual amounts on a comparable basis as presented in this statement and in the Statement of Financial Performance for the year ended December 31, 2024.",
+      "label": "Budgetary items not considered as expenses - Financial Expenses",
+      "amount": 0.0,
+      "documentPage": 2,
+      "printedPage": 31,
+      "pdfPage": 43
+    },
+    {
+      "statement": "Note 23 – Reconciliation between actual amounts on a comparable basis as presented in this statement and in the Statement of Financial Performance for the year ended December 31, 2024.",
+      "label": "Budgetary items not considered as expenses - Capital Outlay",
+      "amount": -505200761.72,
+      "documentPage": 2,
+      "printedPage": 31,
+      "pdfPage": 43
+    },
+    {
+      "statement": "Note 23 – Reconciliation between actual amounts on a comparable basis as presented in this statement and in the Statement of Financial Performance for the year ended December 31, 2024.",
+      "label": "Debt Service (Loan Amortization, Retirement of Debt Instruments) - Income",
+      "amount": 0.0,
+      "documentPage": 2,
+      "printedPage": 31,
+      "pdfPage": 43
+    },
+    {
+      "statement": "Note 23 – Reconciliation between actual amounts on a comparable basis as presented in this statement and in the Statement of Financial Performance for the year ended December 31, 2024.",
+      "label": "Debt Service (Loan Amortization, Retirement of Debt Instruments) - Personal Services",
+      "amount": 0.0,
+      "documentPage": 2,
+      "printedPage": 31,
+      "pdfPage": 43
+    },
+    {
+      "statement": "Note 23 – Reconciliation between actual amounts on a comparable basis as presented in this statement and in the Statement of Financial Performance for the year ended December 31, 2024.",
+      "label": "Debt Service (Loan Amortization, Retirement of Debt Instruments) - MOOE",
+      "amount": 0.0,
+      "documentPage": 2,
+      "printedPage": 31,
+      "pdfPage": 43
+    },
+    {
+      "statement": "Note 23 – Reconciliation between actual amounts on a comparable basis as presented in this statement and in the Statement of Financial Performance for the year ended December 31, 2024.",
+      "label": "Debt Service (Loan Amortization, Retirement of Debt Instruments) - Financial Expenses",
+      "amount": 0.0,
+      "documentPage": 2,
+      "printedPage": 31,
+      "pdfPage": 43
+    },
+    {
+      "statement": "Note 23 – Reconciliation between actual amounts on a comparable basis as presented in this statement and in the Statement of Financial Performance for the year ended December 31, 2024.",
+      "label": "Debt Service (Loan Amortization, Retirement of Debt Instruments) - Capital Outlay",
+      "amount": 0.0,
+      "documentPage": 2,
+      "printedPage": 31,
+      "pdfPage": 43
+    },
+    {
+      "statement": "Note 23 – Reconciliation between actual amounts on a comparable basis as presented in this statement and in the Statement of Financial Performance for the year ended December 31, 2024.",
+      "label": "Interest Expenses capitalized - Income",
+      "amount": 0.0,
+      "documentPage": 2,
+      "printedPage": 31,
+      "pdfPage": 43
+    },
+    {
+      "statement": "Note 23 – Reconciliation between actual amounts on a comparable basis as presented in this statement and in the Statement of Financial Performance for the year ended December 31, 2024.",
+      "label": "Interest Expenses capitalized - Personal Services",
+      "amount": 0.0,
+      "documentPage": 2,
+      "printedPage": 31,
+      "pdfPage": 43
+    },
+    {
+      "statement": "Note 23 – Reconciliation between actual amounts on a comparable basis as presented in this statement and in the Statement of Financial Performance for the year ended December 31, 2024.",
+      "label": "Interest Expenses capitalized - MOOE",
+      "amount": 0.0,
+      "documentPage": 2,
+      "printedPage": 31,
+      "pdfPage": 43
+    },
+    {
+      "statement": "Note 23 – Reconciliation between actual amounts on a comparable basis as presented in this statement and in the Statement of Financial Performance for the year ended December 31, 2024.",
+      "label": "Interest Expenses capitalized - Financial Expenses",
+      "amount": 0.0,
+      "documentPage": 2,
+      "printedPage": 31,
+      "pdfPage": 43
+    },
+    {
+      "statement": "Note 23 – Reconciliation between actual amounts on a comparable basis as presented in this statement and in the Statement of Financial Performance for the year ended December 31, 2024.",
+      "label": "Interest Expenses capitalized - Capital Outlay",
+      "amount": 0.0,
+      "documentPage": 2,
+      "printedPage": 31,
+      "pdfPage": 43
+    },
+    {
+      "statement": "Note 23 – Reconciliation between actual amounts on a comparable basis as presented in this statement and in the Statement of Financial Performance for the year ended December 31, 2024.",
+      "label": "Capital Expenditures - Income",
+      "amount": 0.0,
+      "documentPage": 2,
+      "printedPage": 31,
+      "pdfPage": 43
+    },
+    {
+      "statement": "Note 23 – Reconciliation between actual amounts on a comparable basis as presented in this statement and in the Statement of Financial Performance for the year ended December 31, 2024.",
+      "label": "Capital Expenditures - Personal Services",
+      "amount": 0.0,
+      "documentPage": 2,
+      "printedPage": 31,
+      "pdfPage": 43
+    },
+    {
+      "statement": "Note 23 – Reconciliation between actual amounts on a comparable basis as presented in this statement and in the Statement of Financial Performance for the year ended December 31, 2024.",
+      "label": "Capital Expenditures - MOOE",
+      "amount": 0.0,
+      "documentPage": 2,
+      "printedPage": 31,
+      "pdfPage": 43
+    },
+    {
+      "statement": "Note 23 – Reconciliation between actual amounts on a comparable basis as presented in this statement and in the Statement of Financial Performance for the year ended December 31, 2024.",
+      "label": "Capital Expenditures - Financial Expenses",
+      "amount": 0.0,
+      "documentPage": 2,
+      "printedPage": 31,
+      "pdfPage": 43
+    },
+    {
+      "statement": "Note 23 – Reconciliation between actual amounts on a comparable basis as presented in this statement and in the Statement of Financial Performance for the year ended December 31, 2024.",
+      "label": "Capital Expenditures - Capital Outlay",
+      "amount": -505200761.72,
+      "documentPage": 2,
+      "printedPage": 31,
+      "pdfPage": 43
+    },
+    {
+      "statement": "Note 23 – Reconciliation between actual amounts on a comparable basis as presented in this statement and in the Statement of Financial Performance for the year ended December 31, 2024.",
+      "label": "Timing Differences: - Income",
+      "amount": 0.0,
+      "documentPage": 2,
+      "printedPage": 31,
+      "pdfPage": 43
+    },
+    {
+      "statement": "Note 23 – Reconciliation between actual amounts on a comparable basis as presented in this statement and in the Statement of Financial Performance for the year ended December 31, 2024.",
+      "label": "Timing Differences: - Personal Services",
+      "amount": 0.0,
+      "documentPage": 2,
+      "printedPage": 31,
+      "pdfPage": 43
+    },
+    {
+      "statement": "Note 23 – Reconciliation between actual amounts on a comparable basis as presented in this statement and in the Statement of Financial Performance for the year ended December 31, 2024.",
+      "label": "Timing Differences: - MOOE",
+      "amount": 0.0,
+      "documentPage": 2,
+      "printedPage": 31,
+      "pdfPage": 43
+    },
+    {
+      "statement": "Note 23 – Reconciliation between actual amounts on a comparable basis as presented in this statement and in the Statement of Financial Performance for the year ended December 31, 2024.",
+      "label": "Timing Differences: - Financial Expenses",
+      "amount": 0.0,
+      "documentPage": 2,
+      "printedPage": 31,
+      "pdfPage": 43
+    },
+    {
+      "statement": "Note 23 – Reconciliation between actual amounts on a comparable basis as presented in this statement and in the Statement of Financial Performance for the year ended December 31, 2024.",
+      "label": "Timing Differences: - Capital Outlay",
+      "amount": 0.0,
+      "documentPage": 2,
+      "printedPage": 31,
+      "pdfPage": 43
+    },
+    {
+      "statement": "Note 23 – Reconciliation between actual amounts on a comparable basis as presented in this statement and in the Statement of Financial Performance for the year ended December 31, 2024.",
+      "label": "Prepayments charged to current appropriations - Income",
+      "amount": 0.0,
+      "documentPage": 2,
+      "printedPage": 31,
+      "pdfPage": 43
+    },
+    {
+      "statement": "Note 23 – Reconciliation between actual amounts on a comparable basis as presented in this statement and in the Statement of Financial Performance for the year ended December 31, 2024.",
+      "label": "Prepayments charged to current appropriations - Personal Services",
+      "amount": 0.0,
+      "documentPage": 2,
+      "printedPage": 31,
+      "pdfPage": 43
+    },
+    {
+      "statement": "Note 23 – Reconciliation between actual amounts on a comparable basis as presented in this statement and in the Statement of Financial Performance for the year ended December 31, 2024.",
+      "label": "Prepayments charged to current appropriations - MOOE",
+      "amount": 0.0,
+      "documentPage": 2,
+      "printedPage": 31,
+      "pdfPage": 43
+    },
+    {
+      "statement": "Note 23 – Reconciliation between actual amounts on a comparable basis as presented in this statement and in the Statement of Financial Performance for the year ended December 31, 2024.",
+      "label": "Prepayments charged to current appropriations - Financial Expenses",
+      "amount": 0.0,
+      "documentPage": 2,
+      "printedPage": 31,
+      "pdfPage": 43
+    },
+    {
+      "statement": "Note 23 – Reconciliation between actual amounts on a comparable basis as presented in this statement and in the Statement of Financial Performance for the year ended December 31, 2024.",
+      "label": "Prepayments charged to current appropriations - Capital Outlay",
+      "amount": 0.0,
+      "documentPage": 2,
+      "printedPage": 31,
+      "pdfPage": 43
+    },
+    {
+      "statement": "Note 23 – Reconciliation between actual amounts on a comparable basis as presented in this statement and in the Statement of Financial Performance for the year ended December 31, 2024.",
+      "label": "Unconsumed Inventories charged to current appropriations - Income",
+      "amount": 0.0,
+      "documentPage": 2,
+      "printedPage": 31,
+      "pdfPage": 43
+    },
+    {
+      "statement": "Note 23 – Reconciliation between actual amounts on a comparable basis as presented in this statement and in the Statement of Financial Performance for the year ended December 31, 2024.",
+      "label": "Unconsumed Inventories charged to current appropriations - Personal Services",
+      "amount": 0.0,
+      "documentPage": 2,
+      "printedPage": 31,
+      "pdfPage": 43
+    },
+    {
+      "statement": "Note 23 – Reconciliation between actual amounts on a comparable basis as presented in this statement and in the Statement of Financial Performance for the year ended December 31, 2024.",
+      "label": "Unconsumed Inventories charged to current appropriations - MOOE",
+      "amount": 0.0,
+      "documentPage": 2,
+      "printedPage": 31,
+      "pdfPage": 43
+    },
+    {
+      "statement": "Note 23 – Reconciliation between actual amounts on a comparable basis as presented in this statement and in the Statement of Financial Performance for the year ended December 31, 2024.",
+      "label": "Unconsumed Inventories charged to current appropriations - Financial Expenses",
+      "amount": 0.0,
+      "documentPage": 2,
+      "printedPage": 31,
+      "pdfPage": 43
+    },
+    {
+      "statement": "Note 23 – Reconciliation between actual amounts on a comparable basis as presented in this statement and in the Statement of Financial Performance for the year ended December 31, 2024.",
+      "label": "Unconsumed Inventories charged to current appropriations - Capital Outlay",
+      "amount": 0.0,
+      "documentPage": 2,
+      "printedPage": 31,
+      "pdfPage": 43
+    },
+    {
+      "statement": "Note 23 – Reconciliation between actual amounts on a comparable basis as presented in this statement and in the Statement of Financial Performance for the year ended December 31, 2024.",
+      "label": "Consumed Inventories and deferred charges charged to prior period appropriations - Income",
+      "amount": 0.0,
+      "documentPage": 2,
+      "printedPage": 31,
+      "pdfPage": 43
+    },
+    {
+      "statement": "Note 23 – Reconciliation between actual amounts on a comparable basis as presented in this statement and in the Statement of Financial Performance for the year ended December 31, 2024.",
+      "label": "Consumed Inventories and deferred charges charged to prior period appropriations - Personal Services",
+      "amount": 0.0,
+      "documentPage": 2,
+      "printedPage": 31,
+      "pdfPage": 43
+    },
+    {
+      "statement": "Note 23 – Reconciliation between actual amounts on a comparable basis as presented in this statement and in the Statement of Financial Performance for the year ended December 31, 2024.",
+      "label": "Consumed Inventories and deferred charges charged to prior period appropriations - MOOE",
+      "amount": 0.0,
+      "documentPage": 2,
+      "printedPage": 31,
+      "pdfPage": 43
+    },
+    {
+      "statement": "Note 23 – Reconciliation between actual amounts on a comparable basis as presented in this statement and in the Statement of Financial Performance for the year ended December 31, 2024.",
+      "label": "Consumed Inventories and deferred charges charged to prior period appropriations - Financial Expenses",
+      "amount": 0.0,
+      "documentPage": 2,
+      "printedPage": 31,
+      "pdfPage": 43
+    },
+    {
+      "statement": "Note 23 – Reconciliation between actual amounts on a comparable basis as presented in this statement and in the Statement of Financial Performance for the year ended December 31, 2024.",
+      "label": "Consumed Inventories and deferred charges charged to prior period appropriations - Capital Outlay",
+      "amount": 0.0,
+      "documentPage": 2,
+      "printedPage": 31,
+      "pdfPage": 43
+    },
+    {
+      "statement": "Note 23 – Reconciliation between actual amounts on a comparable basis as presented in this statement and in the Statement of Financial Performance for the year ended December 31, 2024.",
+      "label": "Per Statement of Financial Performance - Income",
+      "amount": 1265302498.41,
+      "documentPage": 2,
+      "printedPage": 31,
+      "pdfPage": 43
+    },
+    {
+      "statement": "Note 23 – Reconciliation between actual amounts on a comparable basis as presented in this statement and in the Statement of Financial Performance for the year ended December 31, 2024.",
+      "label": "Per Statement of Financial Performance - Personal Services",
+      "amount": 273265705.19,
+      "documentPage": 2,
+      "printedPage": 31,
+      "pdfPage": 43
+    },
+    {
+      "statement": "Note 23 – Reconciliation between actual amounts on a comparable basis as presented in this statement and in the Statement of Financial Performance for the year ended December 31, 2024.",
+      "label": "Per Statement of Financial Performance - MOOE",
+      "amount": 450379116.52,
+      "documentPage": 2,
+      "printedPage": 31,
+      "pdfPage": 43
+    },
+    {
+      "statement": "Note 23 – Reconciliation between actual amounts on a comparable basis as presented in this statement and in the Statement of Financial Performance for the year ended December 31, 2024.",
+      "label": "Per Statement of Financial Performance - Financial Expenses",
+      "amount": 0.0,
+      "documentPage": 2,
+      "printedPage": 31,
+      "pdfPage": 43
+    },
+    {
+      "statement": "Note 23 – Reconciliation between actual amounts on a comparable basis as presented in this statement and in the Statement of Financial Performance for the year ended December 31, 2024.",
+      "label": "Per Statement of Financial Performance - Capital Outlay",
+      "amount": 0.0,
+      "documentPage": 2,
+      "printedPage": 31,
+      "pdfPage": 43
+    }
+  ]
+}
