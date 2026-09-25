@@ -89,6 +89,16 @@ The full register, with retrieval dates and notes, is in [`docs/SOURCE_REGISTER.
 - Sangguniang Kabataan members' phone numbers are never published.
 - Personal mobile numbers are never published; only official office lines are.
 
+## Legislation search and storage
+
+Legislation is kept deliberately simple until there is a corpus to justify more:
+
+- **Static JSON:** `src/data/legislation.json` is the source of truth, validated with the same schemas and provenance rules as every other dataset. It is empty until auditable Limay ordinances, resolutions and executive orders are submitted; see [Contributing data](#contributing-data).
+- **Fuse.js:** `src/lib/ui/legislationCatalog.ts` searches and filters in the browser, with no server dependency.
+- **No D1/SQLite or Meilisearch yet:** a database or search server is added only when corpus size, update frequency and maintainer capacity justify running one. Any future adapter must keep the `LegislationRecord` fields, the provenance requirements and human review of summaries.
+
+The decision is recorded in [`docs/research/PHASE2_DECISIONS.md`](docs/research/PHASE2_DECISIONS.md). Synthetic legislation records exist only in test fixtures and are never presented as Limay records.
+
 ## Publishing content
 
 News, emergency hotlines and the official Facebook pages are edited at **[/admin](https://www.betterlimay.org/admin)**. This is Decap CMS, signed in with GitHub; any account with write access to this repository can edit.
