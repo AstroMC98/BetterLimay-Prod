@@ -37,7 +37,7 @@ describe("global search adapter", () => {
         .search("business permits")
         .some((result) => result.item.kind === "service"),
     ).toBe(true);
-    expect(provider.search("treasurer office")[0]?.item.kind).toBe("office");
+    expect(provider.search("water district")[0]?.item.kind).toBe("office");
   });
 
   it("finds officials and follows the normalized result path", () => {

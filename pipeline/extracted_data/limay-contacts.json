@@ -1,0 +1,54 @@
+{
+  "note": "Curated contact records. Every entry names the source it was checked against; build with python -m pipeline.transforms.contacts.",
+  "records": [
+    {
+      "id": "municipal-hall",
+      "name": "Municipality of Limay, Municipal Hall",
+      "officeType": "Local government",
+      "description": "Main office of the Municipal Government of Limay.",
+      "head": "Richie Jason D. David, Municipal Mayor",
+      "phone": "(047) 633-0302 / 0919 002 9061",
+      "email": "limaybataanncd@gmail.com",
+      "address": "Townsite, Limay, Bataan",
+      "source": "dti-cmci-limay-profile",
+      "note": "Contact details as listed on the Limay LGU profile of the DTI CMCI."
+    },
+    {
+      "id": "limay-water-district",
+      "name": "Limay Water District",
+      "officeType": "Water district (government-owned)",
+      "description": "Water supply, new connections and billing.",
+      "head": null,
+      "phone": "(047) 240-5341 / 0919 089 9104",
+      "email": "waterdistrictlimay@yahoo.com.ph",
+      "address": "001 R. Ambrocio St., Townsite, Limay, Bataan",
+      "source": "limay-water-district-citizens-charter-2026",
+      "page": 140,
+      "note": "From the List of Offices in the Limay Water District Citizen's Charter, 2026 1st Edition."
+    },
+    {
+      "id": "limay-polytechnic-college",
+      "name": "Limay Polytechnic College",
+      "officeType": "Local college",
+      "description": "Community college run by the Municipality.",
+      "head": null,
+      "phone": null,
+      "email": "lipoco1997@gmail.com",
+      "address": null,
+      "source": "betterlimay-maintainer-contacts-2026-09-25",
+      "note": "E-mail from the maintainers' contact list; it also appears as the college's official address on its published learning materials."
+    },
+    {
+      "id": "limay-municipal-police-station",
+      "name": "Limay Municipal Police Station",
+      "officeType": "Police (PNP)",
+      "description": "For emergencies, call the numbers in the hotline bar instead.",
+      "head": null,
+      "phone": null,
+      "email": "limay.pcr@yahoo.com",
+      "address": null,
+      "source": "betterlimay-maintainer-contacts-2026-09-25",
+      "note": "E-mail from the maintainers' contact list, matching the station's Facebook handle (limay.pcr)."
+    }
+  ]
+}

@@ -3517,3 +3517,67 @@
 .barangay-roster__term {
   width: 8rem;
 }
+
+/* --- Municipal contact ----------------------------------------------------- */
+.municipal-contact {
+  margin-top: var(--better-space-10, 2.5rem);
+  padding: var(--better-space-5);
+  border: 1px solid var(--better-border);
+  border-radius: 0.75rem;
+  background: var(--better-surface-raised);
+}
+
+.municipal-contact h2 {
+  margin: 0 0 var(--better-space-4);
+  font-size: 1.25rem;
+}
+
+.municipal-contact dl {
+  display: grid;
+  gap: var(--better-space-4);
+  margin: 0 0 var(--better-space-4);
+}
+
+@media (min-width: 40rem) {
+  .municipal-contact dl {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.municipal-contact dt {
+  color: var(--better-text-muted);
+  font-size: 0.8125rem;
+}
+
+.municipal-contact dd {
+  margin: 0;
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+
+.portal-footer__contact a {
+  color: inherit;
+}
+
+@media (min-width: 40rem) {
+  .municipal-contact dl {
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  }
+}
+
+.municipal-contact dd,
+.government-record-card__details dd {
+  overflow-wrap: normal;
+}
+
+/* A phone number broken across lines is a number misread. */
+.municipal-contact dd a[href^="tel:"],
+.government-record-card__details a[href^="tel:"] {
+  white-space: nowrap;
+}
+
+/* Long e-mail addresses may wrap; phone numbers (above) may not. */
+.municipal-contact a[href^="mailto:"],
+.government-record-card__details a[href^="mailto:"] {
+  overflow-wrap: anywhere;
+}

@@ -25,7 +25,8 @@
     "sourceCode": "Source code",
     "license": "License",
     "costToPeople": "Cost to the People of Limay: ₱0",
-    "endorsement": "An initiative of BetterGov.PH"
+    "endorsement": "An initiative of BetterGov.PH",
+    "municipalHall": "Municipal Hall"
   },
   "forms": {
     "required": "Required",
@@ -495,13 +496,13 @@
       "title": "Government directory",
       "description": "Who runs Limay: its elected officials, its twelve barangays, and how to reach the Municipality.",
       "eyebrow": "Government directory",
-      "branchDescription": "The {{branch}} of the Municipality of Limay.",
+      "branchDescription": "{{branch}}, Municipality of Limay.",
       "recordNotice": "Nothing is published for this section yet. Check with the Municipality directly in the meantime.",
       "branches": {
         "executive": "Executive branch",
         "legislative": "Legislative branch",
         "ex-officio": "Ex-officio roles",
-        "departments": "Departments",
+        "departments": "Offices and contacts",
         "barangays": "Barangays"
       },
       "electedOfficialsTitle": "Elected officials",
@@ -541,7 +542,11 @@
       "barangayDescription": "Officials, population and contact number for Barangay {{name}}, Limay, Bataan.",
       "backToBarangays": "Back to all barangays",
       "barangayCouncil": "Barangay council",
-      "sangguniangKabataan": "Sangguniang Kabataan"
+      "sangguniangKabataan": "Sangguniang Kabataan",
+      "phone": "Phone",
+      "email": "E-mail",
+      "contactTitle": "Contact the Municipality",
+      "moreContacts": "More offices and contacts"
     },
     "about": {
       "title": "About BetterLimay",

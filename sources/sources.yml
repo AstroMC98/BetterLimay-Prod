@@ -403,3 +403,46 @@ sources:
       PRIVACY: full middle names and per-row phone numbers are NOT published;
       names go out with a middle initial, and only the barangay's own line (from
       council rows, never SK rows) is shown. See pipeline/transforms/barangays.py.
+
+  # ------------------------------------------------------------------ contacts
+  - id: dti-cmci-limay-profile
+    path: dti-cmci/limay-profile
+    entity: Department of Trade and Industry
+    entity_scope: national-agency
+    source_name: DTI Cities and Municipalities Competitiveness Index - Limay LGU profile
+    url: https://cmci.dti.gov.ph/lgu-profile.php?lgu=Limay
+    retrieved_at: 2026-09-25
+    acquisition: manual-download
+    extraction: tabular
+    completeness: complete
+    target_datasets: [offices.json, officials.json]
+    gap_ids: [GAP-004, GAP-006]
+    publishable: true
+    notes: >
+      Server-rendered HTML. Carries the LGU's official tel (633-0302 /
+      +63 919 002 9061), e-mail (limaybataanncd@gmail.com), address (Townsite),
+      category (First Class), population and the Mayor's full name, plus
+      national CMCI ranks and pillar scores for 2014-2024.
+
+  - id: betterlimay-maintainer-contacts-2026-09-25
+    path: municipality-of-limay/recent_election-and-additional data.txt
+    entity: BetterLimay maintainers
+    entity_scope: municipal
+    source_name: BetterLimay maintainers
+    url: null
+    retrieved_at: 2026-09-25
+    document:
+      title: "BetterLimay maintainer contact list"
+      issued: 2026-09-25
+    acquisition: manual-entry
+    extraction: none
+    completeness: partial
+    target_datasets: [offices.json]
+    publishable: true
+    notes: >
+      Contacts collected by the maintainers where no official page could be
+      found to cite. Used only as a fallback: prefer the agency's own document.
+      The Mayor's mobile number in this file is deliberately NOT published.
+      Police e-mail: a third-party directory lists limaymps_finest@yahoo.com;
+      the maintainers' limay.pcr@yahoo.com matches the station's Facebook handle
+      (facebook.com/limay.pcr) and is the one used.

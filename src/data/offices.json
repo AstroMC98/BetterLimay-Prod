@@ -1,182 +1,97 @@
 [
   {
-    "id": "todo-verify-bplo",
-    "name": "TODO: verify - Business Permits and Licensing Office",
-    "officeType": "business-permits",
-    "head": null,
-    "contact": null,
-    "location": null,
+    "id": "municipal-hall",
+    "name": "Municipality of Limay, Municipal Hall",
+    "officeType": "Local government",
+    "description": "Main office of the Municipal Government of Limay.",
+    "head": "Richie Jason D. David, Municipal Mayor",
+    "contact": {
+      "phone": "(047) 633-0302 / 0919 002 9061",
+      "email": "limaybataanncd@gmail.com",
+      "hours": null
+    },
+    "location": {
+      "address": "Townsite, Limay, Bataan",
+      "coordinates": null
+    },
     "provenance": {
-      "source_url": "https://limaybataan.ph/",
-      "source_name": "Official Municipality of Limay website (currently under construction)",
-      "retrieved_at": "2026-09-21",
+      "source_name": "DTI Cities and Municipalities Competitiveness Index - Limay LGU profile",
+      "retrieved_at": "2026-09-25",
       "verified": true,
-      "verification_note": "Placeholder office record only."
+      "verification_note": "Contact details as listed on the Limay LGU profile of the DTI CMCI.",
+      "source_url": "https://cmci.dti.gov.ph/lgu-profile.php?lgu=Limay"
     }
   },
   {
-    "id": "todo-verify-lcr",
-    "name": "TODO: verify - Local Civil Registrar",
-    "officeType": "civil-registry",
+    "id": "limay-water-district",
+    "name": "Limay Water District",
+    "officeType": "Water district (government-owned)",
+    "description": "Water supply, new connections and billing.",
     "head": null,
-    "contact": null,
-    "location": null,
+    "contact": {
+      "phone": "(047) 240-5341 / 0919 089 9104",
+      "email": "waterdistrictlimay@yahoo.com.ph",
+      "hours": null
+    },
+    "location": {
+      "address": "001 R. Ambrocio St., Townsite, Limay, Bataan",
+      "coordinates": null
+    },
     "provenance": {
-      "source_url": "https://limaybataan.ph/",
-      "source_name": "Official Municipality of Limay website (currently under construction)",
-      "retrieved_at": "2026-09-21",
+      "source_name": "Limay Water District",
+      "retrieved_at": "2026-09-23",
       "verified": true,
-      "verification_note": "Placeholder office record only."
+      "verification_note": "From the List of Offices in the Limay Water District Citizen's Charter, 2026 1st Edition.",
+      "source_document": "Limay Water District Citizen's Charter 2026 (1st Edition)",
+      "source_page": 140
     }
   },
   {
-    "id": "todo-verify-assessor",
-    "name": "TODO: verify - Assessor's Office",
-    "officeType": "real-property-tax",
+    "id": "limay-polytechnic-college",
+    "name": "Limay Polytechnic College",
+    "officeType": "Local college",
+    "description": "Community college run by the Municipality.",
     "head": null,
-    "contact": null,
-    "location": null,
+    "contact": {
+      "phone": null,
+      "email": "lipoco1997@gmail.com",
+      "hours": null
+    },
+    "location": {
+      "address": null,
+      "coordinates": null
+    },
     "provenance": {
-      "source_url": "https://limaybataan.ph/",
-      "source_name": "Official Municipality of Limay website (currently under construction)",
-      "retrieved_at": "2026-09-21",
+      "source_name": "BetterLimay maintainers",
+      "retrieved_at": "2026-09-25",
       "verified": true,
-      "verification_note": "Placeholder office record only."
+      "verification_note": "E-mail from the maintainers' contact list; it also appears as the college's official address on its published learning materials.",
+      "source_document": "BetterLimay maintainer contact list",
+      "source_issued": "2026-09-25"
     }
   },
   {
-    "id": "todo-verify-treasurer",
-    "name": "TODO: verify - Treasurer's Office",
-    "officeType": "treasurer",
+    "id": "limay-municipal-police-station",
+    "name": "Limay Municipal Police Station",
+    "officeType": "Police (PNP)",
+    "description": "For emergencies, call the numbers in the hotline bar instead.",
     "head": null,
-    "contact": null,
-    "location": null,
+    "contact": {
+      "phone": null,
+      "email": "limay.pcr@yahoo.com",
+      "hours": null
+    },
+    "location": {
+      "address": null,
+      "coordinates": null
+    },
     "provenance": {
-      "source_url": "https://limaybataan.ph/",
-      "source_name": "Official Municipality of Limay website (currently under construction)",
-      "retrieved_at": "2026-09-21",
+      "source_name": "BetterLimay maintainers",
+      "retrieved_at": "2026-09-25",
       "verified": true,
-      "verification_note": "Placeholder office record only."
-    }
-  },
-  {
-    "id": "todo-verify-health",
-    "name": "TODO: verify - Municipal Health Office",
-    "officeType": "health",
-    "head": null,
-    "contact": null,
-    "location": null,
-    "provenance": {
-      "source_url": "https://limaybataan.ph/",
-      "source_name": "Official Municipality of Limay website (currently under construction)",
-      "retrieved_at": "2026-09-21",
-      "verified": true,
-      "verification_note": "Placeholder office record only."
-    }
-  },
-  {
-    "id": "todo-verify-mswdo",
-    "name": "TODO: verify - Municipal Social Welfare and Development Office",
-    "officeType": "social-welfare",
-    "head": null,
-    "contact": null,
-    "location": null,
-    "provenance": {
-      "source_url": "https://limaybataan.ph/",
-      "source_name": "Official Municipality of Limay website (currently under construction)",
-      "retrieved_at": "2026-09-21",
-      "verified": true,
-      "verification_note": "Placeholder office record only."
-    }
-  },
-  {
-    "id": "todo-verify-engineering",
-    "name": "TODO: verify - Municipal Engineering Office",
-    "officeType": "engineering-building",
-    "head": null,
-    "contact": null,
-    "location": null,
-    "provenance": {
-      "source_url": "https://limaybataan.ph/",
-      "source_name": "Official Municipality of Limay website (currently under construction)",
-      "retrieved_at": "2026-09-21",
-      "verified": true,
-      "verification_note": "Placeholder office record only."
-    }
-  },
-  {
-    "id": "todo-verify-agriculture",
-    "name": "TODO: verify - Municipal Agriculture Office",
-    "officeType": "agriculture",
-    "head": null,
-    "contact": null,
-    "location": null,
-    "provenance": {
-      "source_url": "https://limaybataan.ph/",
-      "source_name": "Official Municipality of Limay website (currently under construction)",
-      "retrieved_at": "2026-09-21",
-      "verified": true,
-      "verification_note": "Placeholder office record only."
-    }
-  },
-  {
-    "id": "todo-verify-menro",
-    "name": "TODO: verify - Municipal Environment and Natural Resources Office",
-    "officeType": "environment",
-    "head": null,
-    "contact": null,
-    "location": null,
-    "provenance": {
-      "source_url": "https://limaybataan.ph/",
-      "source_name": "Official Municipality of Limay website (currently under construction)",
-      "retrieved_at": "2026-09-21",
-      "verified": true,
-      "verification_note": "Placeholder office record only."
-    }
-  },
-  {
-    "id": "todo-verify-drrm",
-    "name": "TODO: verify - Municipal Disaster Risk Reduction and Management Office",
-    "officeType": "drrm",
-    "head": null,
-    "contact": null,
-    "location": null,
-    "provenance": {
-      "source_url": "https://limaybataan.ph/",
-      "source_name": "Official Municipality of Limay website (currently under construction)",
-      "retrieved_at": "2026-09-21",
-      "verified": true,
-      "verification_note": "Placeholder office record only."
-    }
-  },
-  {
-    "id": "todo-verify-education",
-    "name": "TODO: verify - Education and Scholarship Office",
-    "officeType": "education-scholarships",
-    "head": null,
-    "contact": null,
-    "location": null,
-    "provenance": {
-      "source_url": "https://limaybataan.ph/",
-      "source_name": "Official Municipality of Limay website (currently under construction)",
-      "retrieved_at": "2026-09-21",
-      "verified": true,
-      "verification_note": "Placeholder office record only."
-    }
-  },
-  {
-    "id": "todo-verify-barangay",
-    "name": "TODO: verify - Barangay Services Office",
-    "officeType": "barangay-clearances",
-    "head": null,
-    "contact": null,
-    "location": null,
-    "provenance": {
-      "source_url": "https://limaybataan.ph/",
-      "source_name": "Official Municipality of Limay website (currently under construction)",
-      "retrieved_at": "2026-09-21",
-      "verified": true,
-      "verification_note": "Placeholder office record only."
+      "verification_note": "E-mail from the maintainers' contact list, matching the station's Facebook handle (limay.pcr).",
+      "source_document": "BetterLimay maintainer contact list",
+      "source_issued": "2026-09-25"
     }
   }
 ]

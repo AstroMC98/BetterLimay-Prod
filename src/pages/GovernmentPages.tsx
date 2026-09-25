@@ -89,39 +89,73 @@ function OfficialCards({ records }: { records: OfficialRecord[] }) {
   );
 }
 
+/** "(047) 633-0302 / 0919 002 9061" -> one tel: link per number. */
+function PhoneLinks({ value }: { value: string }) {
+  const numbers = value
+    .split("/")
+    .map((part) => part.trim())
+    .filter(Boolean);
+  return (
+    <>
+      {numbers.map((number, index) => (
+        <span key={number}>
+          {index > 0 ? " / " : null}
+          <a href={`tel:${number.replace(/[^\d+]/g, "")}`}>{number}</a>
+        </span>
+      ))}
+    </>
+  );
+}
+
 function OfficeCards({ records }: { records: OfficeRecord[] }) {
   const { t } = useTranslation("common");
 
   return (
     <div className="government-record-grid">
       {records.map((office) => (
-        <article className="government-record-card" key={office.id}>
+        <article
+          className="government-record-card"
+          key={office.id}
+          data-testid={`office-${office.id}`}
+        >
           <div className="government-record-card__header">
             <div>
               <p className="government-record-card__label">{office.officeType}</p>
               <h2>{office.name}</h2>
             </div>
-            <ProvenanceStatusBadge provenance={office.provenance} />
           </div>
+          {office.description ? (
+            <p className="government-record-card__meta">{office.description}</p>
+          ) : null}
           <dl className="government-record-card__details">
-            <div>
-              <dt>{t("pages.government.officeHead")}</dt>
-              <dd>{office.head ?? t("pages.government.notAvailable")}</dd>
-            </div>
-            <div>
-              <dt>{t("pages.government.contact")}</dt>
-              <dd>
-                {office.contact?.phone ??
-                  office.contact?.email ??
-                  t("pages.government.notAvailable")}
-              </dd>
-            </div>
-            <div>
-              <dt>{t("pages.government.location")}</dt>
-              <dd>
-                {office.location?.address ?? t("pages.government.locationNotVerified")}
-              </dd>
-            </div>
+            {office.head ? (
+              <div>
+                <dt>{t("pages.government.officeHead")}</dt>
+                <dd>{office.head}</dd>
+              </div>
+            ) : null}
+            {office.contact?.phone ? (
+              <div>
+                <dt>{t("pages.government.phone")}</dt>
+                <dd>
+                  <PhoneLinks value={office.contact.phone} />
+                </dd>
+              </div>
+            ) : null}
+            {office.contact?.email ? (
+              <div>
+                <dt>{t("pages.government.email")}</dt>
+                <dd>
+                  <a href={`mailto:${office.contact.email}`}>{office.contact.email}</a>
+                </dd>
+              </div>
+            ) : null}
+            {office.location?.address ? (
+              <div>
+                <dt>{t("pages.government.location")}</dt>
+                <dd>{office.location.address}</dd>
+              </div>
+            ) : null}
           </dl>
           <ProvenanceDetails provenance={office.provenance} />
         </article>
@@ -250,7 +284,46 @@ export function GovernmentPage() {
           {t("pages.government.electedOfficialsTitle")}
         </Link>
       </nav>
-      <GovernmentRecordNotice />
+      <MunicipalContact />
+    </section>
+  );
+}
+
+function MunicipalContact() {
+  const { t } = useTranslation("common");
+  const hall = offices.find((office) => office.id === "municipal-hall");
+  if (!hall) return null;
+
+  return (
+    <section className="municipal-contact" aria-labelledby="municipal-contact-title">
+      <h2 id="municipal-contact-title">{t("pages.government.contactTitle")}</h2>
+      <dl>
+        {hall.contact?.phone ? (
+          <div>
+            <dt>{t("pages.government.phone")}</dt>
+            <dd>
+              <PhoneLinks value={hall.contact.phone} />
+            </dd>
+          </div>
+        ) : null}
+        {hall.contact?.email ? (
+          <div>
+            <dt>{t("pages.government.email")}</dt>
+            <dd>
+              <a href={`mailto:${hall.contact.email}`}>{hall.contact.email}</a>
+            </dd>
+          </div>
+        ) : null}
+        {hall.location?.address ? (
+          <div>
+            <dt>{t("pages.government.location")}</dt>
+            <dd>{hall.location.address}</dd>
+          </div>
+        ) : null}
+      </dl>
+      <Link className="text-link" to="/departments">
+        {t("pages.government.moreContacts")}
+      </Link>
     </section>
   );
 }
@@ -281,10 +354,11 @@ export function GovernmentBranchPage({ branch }: { branch: GovernmentBranch }) {
       {branch === "barangays" ? (
         <BarangayDirectory />
       ) : branch === "departments" ? (
-        <>
+        offices.length > 0 ? (
           <OfficeCards records={offices} />
+        ) : (
           <GovernmentRecordNotice />
-        </>
+        )
       ) : (
         <>
           {branchRecords.length > 0 ? (

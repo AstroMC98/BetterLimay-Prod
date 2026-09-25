@@ -25,7 +25,8 @@
     "sourceCode": "Source code",
     "license": "Lisensya",
     "costToPeople": "Gastos sa mga Mamamayan ng Limay: ₱0",
-    "endorsement": "Isang inisyatiba ng BetterGov.PH"
+    "endorsement": "Isang inisyatiba ng BetterGov.PH",
+    "municipalHall": "Munisipyo"
   },
   "forms": {
     "required": "Kailangan",
@@ -495,13 +496,13 @@
       "title": "Directory ng pamahalaan",
       "description": "Sino ang namamahala sa Limay: ang mga halal na opisyal, ang labindalawang barangay, at kung paano makipag-ugnayan sa Munisipyo.",
       "eyebrow": "Directory ng pamahalaan",
-      "branchDescription": "Ang {{branch}} ng Munisipyo ng Limay.",
+      "branchDescription": "{{branch}}, Munisipyo ng Limay.",
       "recordNotice": "Wala pang nakalathala para sa seksyong ito. Makipag-ugnayan muna nang direkta sa Munisipyo.",
       "branches": {
         "executive": "Sangay ehekutibo",
         "legislative": "Sangay lehislatibo",
         "ex-officio": "Mga ex-officio na tungkulin",
-        "departments": "Mga departamento",
+        "departments": "Mga tanggapan at contact",
         "barangays": "Mga barangay"
       },
       "electedOfficialsTitle": "Mga halal na opisyal",
@@ -541,7 +542,11 @@
       "barangayDescription": "Mga opisyal, populasyon at numero ng Barangay {{name}}, Limay, Bataan.",
       "backToBarangays": "Bumalik sa lahat ng barangay",
       "barangayCouncil": "Sangguniang Barangay",
-      "sangguniangKabataan": "Sangguniang Kabataan"
+      "sangguniangKabataan": "Sangguniang Kabataan",
+      "phone": "Telepono",
+      "email": "E-mail",
+      "contactTitle": "Makipag-ugnayan sa Munisipyo",
+      "moreContacts": "Iba pang tanggapan at contact"
     },
     "about": {
       "title": "Tungkol sa BetterLimay",
