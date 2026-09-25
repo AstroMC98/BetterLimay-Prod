@@ -904,5 +904,21 @@
   },
   "header": {
     "placeLine": "Community Portal para sa {{lgu}}"
+  },
+  "launch": {
+    "title": "Maligayang pagdating sa BetterLimay",
+    "description": "Isang independenteng gabay, binuo ng komunidad, sa mga serbisyo, opisyal, at pampublikong rekord ng Limay.",
+    "findTitle": "Ano ang makikita mo",
+    "findBody": "Mga serbisyo ng gobyerno at ang mga requirement nito, ang iyong mga opisyal at barangay, at ang gastos at estadistika ng bayan. May source ang bawat numero para matiyak mo ito.",
+    "buildingTitle": "Nagsisimula pa lang kami",
+    "buildingBody": "Bago pa ang BetterLimay, at patuloy kaming nagdadagdag ng features at data. Bumalik ka nang madalas: marami pang rekord, tools, at pahina ang darating.",
+    "beta": "Beta",
+    "helpTitle": "May alam kang wala pa rito?",
+    "helpBody": "Magbahagi ng koreksiyon o pampublikong dokumento, o tumulong sa pagbuo ng portal. Bawat ambag ay nagpapahusay nito para sa Limay.",
+    "helpLink": "Alamin kung paano magsumite ng data",
+    "dontShow": "Huwag nang ipakita muli",
+    "explore": "Tingnan ang site",
+    "contribute": "Mag-ambag dito",
+    "close": "Isara ang welcome message"
   }
 }

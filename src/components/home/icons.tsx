@@ -219,3 +219,11 @@ export function IconLightbulb() {
     </svg>
   );
 }
+
+export function IconClose() {
+  return (
+    <svg {...base} width={20} height={20}>
+      <path d="M6 6l12 12M18 6 6 18" />
+    </svg>
+  );
+}

@@ -5285,3 +5285,210 @@
     line-height: 1.3;
   }
 }
+
+/* ==========================================================================
+   Launch banner: first-visit welcome dialog (native <dialog>, showModal)
+   ========================================================================== */
+.launch-modal {
+  width: min(100% - 2rem, 36rem);
+  max-width: none;
+  max-height: calc(100dvh - 2rem);
+  margin: auto;
+  padding: 0;
+  overflow: auto;
+  border: 0;
+  border-radius: 1rem;
+  background: var(--better-surface-raised);
+  box-shadow: 0 1.5rem 4rem rgb(8 12 24 / 35%);
+  color: var(--better-text-strong);
+}
+
+.launch-modal::backdrop {
+  background: rgb(8 12 24 / 70%);
+}
+
+/* The page behind stays put while the welcome is open. */
+html:has(.launch-modal[open]) {
+  overflow: hidden;
+}
+
+.launch-modal[open] {
+  animation: launch-modal-in 180ms ease-out;
+}
+
+@keyframes launch-modal-in {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .launch-modal[open] {
+    animation: none;
+  }
+}
+
+.launch-modal__panel {
+  position: relative;
+  display: grid;
+  gap: var(--better-space-6);
+  padding: var(--better-space-6);
+}
+
+@media (min-width: 40rem) {
+  .launch-modal__panel {
+    padding: var(--better-space-8);
+  }
+}
+
+.launch-modal__close {
+  position: absolute;
+  top: var(--better-space-3);
+  right: var(--better-space-3);
+  display: inline-grid;
+  width: var(--better-target);
+  height: var(--better-target);
+  place-items: center;
+  padding: 0;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--better-text-muted);
+  cursor: pointer;
+}
+
+.launch-modal__close:hover {
+  background: var(--better-surface-tint);
+  color: var(--better-text-strong);
+}
+
+.launch-modal__header {
+  display: flex;
+  gap: var(--better-space-4);
+  align-items: flex-start;
+  padding-right: var(--better-space-10);
+}
+
+.launch-modal__header img {
+  flex: none;
+}
+
+.launch-modal__header h2 {
+  margin: 0;
+  color: var(--better-brand-deep);
+  font-family: var(--better-font-display);
+  font-size: clamp(1.25rem, 3.5vw, 1.5rem);
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.launch-modal__header p {
+  margin: var(--better-space-1) 0 0;
+  color: var(--better-text-muted);
+}
+
+.launch-modal__body {
+  display: grid;
+  gap: var(--better-space-5);
+}
+
+.launch-modal__body h3 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--better-space-2);
+  align-items: center;
+  margin: 0 0 var(--better-space-1);
+  font-size: 1.0625rem;
+  font-weight: 700;
+}
+
+.launch-modal__body p {
+  margin: 0;
+  color: var(--better-text-muted);
+}
+
+.launch-modal__pill {
+  display: inline-block;
+  padding: 0.05rem 0.6rem;
+  border-radius: 999px;
+  background: var(--better-brand-primary);
+  color: var(--better-on-brand);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.launch-modal__help {
+  display: flex;
+  gap: var(--better-space-3);
+  align-items: flex-start;
+  padding: var(--better-space-4);
+  border-radius: 0.75rem;
+  background: var(--better-surface-tint);
+}
+
+.launch-modal__help-icon {
+  flex: none;
+  color: var(--better-brand-primary);
+}
+
+.launch-modal__help p {
+  margin: 0;
+  color: var(--better-text-muted);
+  font-size: 0.9375rem;
+}
+
+.launch-modal__help .launch-modal__help-title {
+  color: var(--better-text-strong);
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.launch-modal__help .text-link {
+  display: inline-flex;
+  gap: 0.3rem;
+  align-items: center;
+  margin-top: var(--better-space-2);
+  font-size: 0.9375rem;
+  font-weight: 700;
+}
+
+.launch-modal__actions {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: var(--better-space-3);
+}
+
+.launch-modal__actions .button {
+  gap: 0.35rem;
+}
+
+.launch-modal__check {
+  display: inline-flex;
+  gap: var(--better-space-2);
+  align-items: center;
+  min-height: var(--better-target);
+  color: var(--better-text-muted);
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+
+.launch-modal__check input {
+  width: 1.125rem;
+  height: 1.125rem;
+  margin: 0;
+  accent-color: var(--better-brand-primary);
+}
+
+@media (min-width: 40rem) {
+  .launch-modal__actions {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .launch-modal__spacer {
+    flex: 1;
+  }
+}
