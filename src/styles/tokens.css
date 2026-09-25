@@ -3903,3 +3903,152 @@
 .data-table__detail > td {
   box-shadow: inset 4px 0 0 var(--bl-chart-accent);
 }
+
+/* --- Government landing ------------------------------------------------------ */
+.gov-section {
+  margin-top: var(--better-space-10, 2.5rem);
+}
+
+.gov-section__head {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--better-space-2) var(--better-space-4);
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: var(--better-space-4);
+}
+
+.gov-section__head h2,
+.gov-more h2 {
+  margin: 0;
+  font-size: 1.375rem;
+}
+
+.gov-leaders,
+.gov-names,
+.gov-barangays {
+  display: grid;
+  gap: var(--better-space-3);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media (min-width: 40rem) {
+  .gov-leaders {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .gov-names {
+    grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr));
+  }
+
+  .gov-barangays {
+    grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+  }
+}
+
+.gov-leader {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: var(--better-space-5);
+  border: 1px solid var(--better-border);
+  border-radius: 0.75rem;
+  background: var(--better-surface-raised);
+}
+
+.gov-leader__role {
+  color: var(--better-brand-primary);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.gov-leader__name {
+  font-family: var(--better-font-display);
+  font-size: 1.375rem;
+  line-height: 1.2;
+}
+
+.gov-leader__term {
+  color: var(--better-text-muted);
+  font-size: 0.875rem;
+}
+
+.gov-names li {
+  padding: var(--better-space-3) var(--better-space-4);
+  border: 1px solid var(--better-border);
+  border-radius: 0.5rem;
+  background: var(--better-surface-raised);
+  font-weight: 600;
+}
+
+.gov-barangay {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 0.125rem var(--better-space-3);
+  height: 100%;
+  padding: var(--better-space-3) var(--better-space-4);
+  border: 1px solid var(--better-border);
+  border-radius: 0.5rem;
+  background: var(--better-surface-raised);
+  color: var(--better-text-strong);
+  text-decoration: none;
+}
+
+.gov-barangay:hover {
+  border-color: var(--better-brand-primary);
+}
+
+.gov-barangay:focus-visible {
+  outline: 0.2rem solid var(--better-focus);
+  outline-offset: 0.15rem;
+}
+
+.gov-barangay > span:not(.gov-barangay__population) {
+  grid-column: 1;
+  color: var(--better-text-muted);
+  font-size: 0.8125rem;
+}
+
+.gov-barangay__population {
+  grid-column: 2;
+  grid-row: 1;
+  color: var(--better-text-muted);
+  font-size: 0.8125rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.gov-more {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--better-space-3) var(--better-space-6);
+  align-items: baseline;
+  margin-top: var(--better-space-10, 2.5rem);
+  padding-top: var(--better-space-6);
+  border-top: 1px solid var(--better-border);
+}
+
+.gov-more h2 {
+  flex-basis: 100%;
+  font-size: 1rem;
+}
+
+.gov-section__head h2 {
+  color: var(--better-text-strong);
+  font-family: var(--better-font-display);
+  font-weight: 800;
+}
+
+/* On a tile the population sits under the captain's name, not beside the
+   barangay name, now that it carries its "residents (2024)" label. */
+.gov-barangay {
+  grid-template-columns: 1fr;
+}
+
+.gov-barangay__population {
+  grid-column: 1;
+  grid-row: auto;
+}

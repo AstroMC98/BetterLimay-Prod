@@ -36,13 +36,8 @@ const BRANCHES = [
 
 type GovernmentBranch = (typeof BRANCHES)[number];
 
-const BRANCH_PATHS: Record<GovernmentBranch, string> = {
-  executive: "/executive",
-  legislative: "/government/legislative",
-  "ex-officio": "/government/ex-officio",
-  departments: "/departments",
-  barangays: "/barangays",
-};
+/** Role written by pipeline/transforms/elections.py for councilors. */
+const COUNCIL_ROLE = "Sangguniang Bayan Member";
 
 const VerifiedBarangayMap = lazy(
   () => import("../components/government/VerifiedBarangayMap"),
@@ -262,9 +257,16 @@ export function GovernmentPage() {
   const location = useLocation();
   const title = t("pages.government.title");
   const description = t("pages.government.description");
+  const current = officials.filter((official) => official.status === "current");
+  const leaders = current.filter((official) => official.role !== COUNCIL_ROLE);
+  const council = current.filter((official) => official.role === COUNCIL_ROLE);
+  const totalPopulation = barangays.reduce((sum, b) => sum + (b.population2024 ?? 0), 0);
 
   return (
-    <section className="foundation-page" data-testid="government-page">
+    <section
+      className="foundation-page foundation-page--wide"
+      data-testid="government-page"
+    >
       <RouteMetadata
         config={config}
         title={title}
@@ -274,17 +276,103 @@ export function GovernmentPage() {
       <p className="eyebrow">{t("pages.independentEyebrow")}</p>
       <h1>{title}</h1>
       <p className="foundation-page__tagline">{description}</p>
-      <nav className="route-list" aria-label={title}>
-        {BRANCHES.map((knownBranch) => (
-          <Link className="route-card" key={knownBranch} to={BRANCH_PATHS[knownBranch]}>
-            {t(`pages.government.branches.${knownBranch}`)}
-          </Link>
-        ))}
-        <Link className="route-card" to="/elected-officials">
+
+      {/* The page leads with the people and places, not with a menu: a
+          resident arriving here wants to know who runs Limay and how to reach
+          them, and the detail pages are one click from each section. */}
+      {leaders.length > 0 ? (
+        <section className="gov-section" aria-labelledby="gov-leaders-title">
+          <div className="gov-section__head">
+            <h2 id="gov-leaders-title">{t("pages.government.leadershipTitle")}</h2>
+            <Link className="text-link" to="/elected-officials">
+              {t("pages.government.seeResults")}
+            </Link>
+          </div>
+          <ul className="gov-leaders">
+            {leaders.map((official) => (
+              <li key={official.id} className="gov-leader">
+                <span className="gov-leader__role">{official.role}</span>
+                <strong className="gov-leader__name">{official.name}</strong>
+                {official.term ? (
+                  <span className="gov-leader__term">
+                    {t("pages.government.term")} {official.term}
+                  </span>
+                ) : null}
+              </li>
+            ))}
+          </ul>
+        </section>
+      ) : null}
+
+      {council.length > 0 ? (
+        <section className="gov-section" aria-labelledby="gov-council-title">
+          <div className="gov-section__head">
+            <h2 id="gov-council-title">{t("pages.government.councilTitle")}</h2>
+            <Link className="text-link" to="/elected-officials">
+              {t("pages.government.seeAllOfficials")}
+            </Link>
+          </div>
+          <ul className="gov-names">
+            {council.map((official) => (
+              <li key={official.id}>{official.name}</li>
+            ))}
+          </ul>
+        </section>
+      ) : null}
+
+      {barangays.length > 0 ? (
+        <section className="gov-section" aria-labelledby="gov-barangays-title">
+          <div className="gov-section__head">
+            <h2 id="gov-barangays-title">{t("pages.government.branches.barangays")}</h2>
+            <Link className="text-link" to="/barangays">
+              {t("pages.government.seeAllBarangays")}
+            </Link>
+          </div>
+          {totalPopulation > 0 ? (
+            <p className="barangay-total">
+              {t("pages.government.totalPopulation", {
+                count: barangays.length,
+                formatted: totalPopulation.toLocaleString("en-PH"),
+              })}
+            </p>
+          ) : null}
+          <ul className="gov-barangays">
+            {barangays.map((barangay) => (
+              <li key={barangay.id}>
+                <Link className="gov-barangay" to={`/barangays/${barangay.id}`}>
+                  <strong>{barangay.name}</strong>
+                  <span>
+                    {barangay.punongBarangay ?? t("pages.government.notAvailable")}
+                  </span>
+                  {barangay.population2024 !== undefined ? (
+                    <span className="gov-barangay__population">
+                      {t("pages.government.population", {
+                        count: barangay.population2024,
+                        formatted: barangay.population2024.toLocaleString("en-PH"),
+                      })}
+                    </span>
+                  ) : null}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </section>
+      ) : null}
+
+      <MunicipalContact />
+
+      <nav className="gov-more" aria-label={t("pages.government.moreTitle")}>
+        <h2>{t("pages.government.moreTitle")}</h2>
+        <Link className="text-link" to="/departments">
+          {t("pages.government.branches.departments")}
+        </Link>
+        <Link className="text-link" to="/elected-officials">
           {t("pages.government.electedOfficialsTitle")}
         </Link>
+        <Link className="text-link" to="/barangays">
+          {t("pages.government.branches.barangays")}
+        </Link>
       </nav>
-      <MunicipalContact />
     </section>
   );
 }

@@ -590,7 +590,13 @@
       "phone": "Telepono",
       "email": "E-mail",
       "contactTitle": "Makipag-ugnayan sa Munisipyo",
-      "moreContacts": "Iba pang tanggapan at contact"
+      "moreContacts": "Iba pang tanggapan at contact",
+      "leadershipTitle": "Pamunuan ng munisipyo",
+      "councilTitle": "Sangguniang Bayan",
+      "seeResults": "Resulta ng halalan 2025",
+      "seeAllOfficials": "Lahat ng halal na opisyal",
+      "seeAllBarangays": "Lahat ng barangay",
+      "moreTitle": "Iba pa sa seksyong ito"
     },
     "about": {
       "title": "Tungkol sa BetterLimay",

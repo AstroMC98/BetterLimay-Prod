@@ -590,7 +590,13 @@
       "phone": "Phone",
       "email": "E-mail",
       "contactTitle": "Contact the Municipality",
-      "moreContacts": "More offices and contacts"
+      "moreContacts": "More offices and contacts",
+      "leadershipTitle": "Municipal leadership",
+      "councilTitle": "Sangguniang Bayan",
+      "seeResults": "2025 election results",
+      "seeAllOfficials": "All elected officials",
+      "seeAllBarangays": "All barangays",
+      "moreTitle": "More in this section"
     },
     "about": {
       "title": "About BetterLimay",
