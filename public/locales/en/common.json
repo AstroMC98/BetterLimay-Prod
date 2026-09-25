@@ -244,7 +244,16 @@
     "empty": "No announcements are ready for publication",
     "emptyDescription": "The official site and Facebook source could not be safely aggregated into an auditable news record. This does not mean there are no announcements; check the official channels directly.",
     "readMore": "Read the full post",
-    "backToNews": "Back to all news"
+    "backToNews": "Back to all news",
+    "video": "Video",
+    "facebook": {
+      "watch": "Watch on this page",
+      "show": "Show the Facebook post",
+      "privacy": "Loads from Facebook only when you press the button.",
+      "open": "Open on Facebook",
+      "videoTitle": "Facebook video",
+      "postTitle": "Facebook post"
+    }
   },
   "report": {
     "eyebrow": "Community feedback",

@@ -244,7 +244,16 @@
     "empty": "Wala pang anunsyong handang ilathala",
     "emptyDescription": "Hindi ligtas na na-aggregate ang opisyal na website at Facebook source sa isang auditable news record. Hindi ito nangangahulugang walang anunsyo; tingnan nang direkta ang mga opisyal na channel.",
     "readMore": "Basahin ang buong post",
-    "backToNews": "Bumalik sa lahat ng balita"
+    "backToNews": "Bumalik sa lahat ng balita",
+    "video": "Video",
+    "facebook": {
+      "watch": "Panoorin dito",
+      "show": "Ipakita ang Facebook post",
+      "privacy": "Maglo-load lang mula sa Facebook kapag pinindot mo ang button.",
+      "open": "Buksan sa Facebook",
+      "videoTitle": "Video sa Facebook",
+      "postTitle": "Post sa Facebook"
+    }
   },
   "report": {
     "eyebrow": "Feedback ng komunidad",

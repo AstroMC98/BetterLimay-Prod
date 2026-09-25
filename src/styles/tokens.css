@@ -3581,3 +3581,60 @@
 .government-record-card__details a[href^="mailto:"] {
   overflow-wrap: anywhere;
 }
+
+/* --- Facebook embeds --------------------------------------------------------- */
+.facebook-embed {
+  margin: var(--better-space-6) 0;
+}
+
+.facebook-embed iframe,
+.facebook-embed__placeholder {
+  display: block;
+  width: 100%;
+  max-width: 560px;
+  border: 0;
+  border-radius: 0.75rem;
+}
+
+.facebook-embed--video iframe,
+.facebook-embed--video .facebook-embed__placeholder {
+  aspect-ratio: 16 / 9;
+}
+
+.facebook-embed--post iframe {
+  height: 640px;
+}
+
+.facebook-embed__placeholder {
+  display: grid;
+  place-content: center;
+  gap: var(--better-space-3);
+  min-height: 12rem;
+  padding: var(--better-space-5);
+  border: 1px dashed var(--better-border-strong);
+  background: var(--better-surface-tint);
+  text-align: center;
+}
+
+.facebook-embed__placeholder p {
+  margin: 0;
+  color: var(--better-text-muted);
+  font-size: 0.875rem;
+}
+
+.facebook-embed figcaption {
+  margin-top: var(--better-space-2);
+  font-size: 0.875rem;
+}
+
+.news-card__tag {
+  display: inline-block;
+  margin-right: var(--better-space-2);
+  padding: 0 var(--better-space-2);
+  border-radius: 999px;
+  background: var(--bl-chart-accent);
+  /* Surface colour, not white: the accent lightens in dark mode. */
+  color: var(--bl-surface);
+  font-size: 0.75rem;
+  font-weight: 700;
+}

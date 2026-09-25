@@ -259,6 +259,8 @@ export interface AnnouncementRecord {
   /** Cover image path under /uploads. */
   image?: string;
   imageAlt?: string;
+  /** A Facebook post or live video, embedded click-to-load. */
+  facebookUrl?: string;
   provenance: Provenance;
 }
 

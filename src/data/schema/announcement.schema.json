@@ -21,6 +21,11 @@
       "required": [
         "url"
       ]
+    },
+    {
+      "required": [
+        "facebookUrl"
+      ]
     }
   ],
   "properties": {
@@ -66,6 +71,11 @@
     },
     "provenance": {
       "$ref": "./provenance.schema.json"
+    },
+    "facebookUrl": {
+      "type": "string",
+      "pattern": "^https://(www\\.|m\\.)?facebook\\.com/|^https://fb\\.watch/",
+      "description": "A Facebook post or live video, embedded click-to-load."
     }
   }
 }

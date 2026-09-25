@@ -3,6 +3,7 @@ import Markdown from "react-markdown";
 import { Link, useLocation, useParams } from "react-router-dom";
 
 import { loadLguConfig } from "../app/lguConfig";
+import { FacebookEmbed } from "../components/news/FacebookEmbed";
 import { ProvenanceDetails } from "../components/provenance/Provenance";
 import announcementsJson from "../data/announcements.json";
 import type { AnnouncementRecord } from "../data/types";
@@ -28,7 +29,8 @@ export function NewsPostPage() {
   const { id } = useParams();
   const post = announcements.find((announcement) => announcement.id === id);
 
-  if (!post?.body) {
+  // A post page exists for anything readable here: written text or an embed.
+  if (!post || !(post.body || post.facebookUrl)) {
     return <NotFoundPage />;
   }
 
@@ -53,22 +55,25 @@ export function NewsPostPage() {
       {post.image ? (
         <img className="news-post__image" src={post.image} alt={post.imageAlt ?? ""} />
       ) : null}
-      <div className="news-post__body">
-        <Markdown
-          components={{
-            // Links in a post leave the site; images stay lazy so a long post
-            // does not download every picture up front.
-            a: ({ href, children }) => (
-              <a href={href} target="_blank" rel="noreferrer">
-                {children}
-              </a>
-            ),
-            img: ({ src, alt }) => <img src={src} alt={alt ?? ""} loading="lazy" />,
-          }}
-        >
-          {post.body}
-        </Markdown>
-      </div>
+      {post.facebookUrl ? <FacebookEmbed url={post.facebookUrl} /> : null}
+      {post.body ? (
+        <div className="news-post__body">
+          <Markdown
+            components={{
+              // Links in a post leave the site; images stay lazy so a long post
+              // does not download every picture up front.
+              a: ({ href, children }) => (
+                <a href={href} target="_blank" rel="noreferrer">
+                  {children}
+                </a>
+              ),
+              img: ({ src, alt }) => <img src={src} alt={alt ?? ""} loading="lazy" />,
+            }}
+          >
+            {post.body}
+          </Markdown>
+        </div>
+      ) : null}
       {post.url ? (
         <p>
           <a href={post.url} target="_blank" rel="noreferrer">

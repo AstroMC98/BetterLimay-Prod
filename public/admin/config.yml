@@ -105,6 +105,16 @@ collections:
           ]
         editor_components: [image]
         modes: [rich_text, raw]
+      - name: facebookUrl
+        label: Facebook post or live video
+        widget: string
+        required: false
+        hint: "Optional. Paste a link to a post or live video on the Municipality's Facebook page; readers can play it here."
+        pattern:
+          [
+            '^https://(www\.|m\.)?facebook\.com/|^https://fb\.watch/',
+            "Must be a facebook.com or fb.watch link",
+          ]
       - {
           name: url,
           label: Original post URL,
