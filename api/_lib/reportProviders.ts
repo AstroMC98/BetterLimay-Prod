@@ -1,4 +1,4 @@
-import type { ReportRequest } from "./reportContract";
+import type { ReportRequest } from "./reportContract.js";
 
 export type ReportDeliveryInput = ReportRequest;
 

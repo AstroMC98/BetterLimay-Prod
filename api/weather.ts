@@ -1,4 +1,4 @@
-import { parseWeatherQuery } from "./_lib/weatherContract";
+import { parseWeatherQuery } from "./_lib/weatherContract.js";
 
 const OPEN_METEO_URL = "https://api.open-meteo.com/v1/forecast";
 const WEATHER_CACHE_CONTROL = "public, s-maxage=300, stale-while-revalidate=600";

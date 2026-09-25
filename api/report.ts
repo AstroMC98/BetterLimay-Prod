@@ -1,17 +1,17 @@
 import { randomUUID } from "node:crypto";
 
-import { isJsonContentType, parseReportRequest } from "./_lib/reportContract";
+import { isJsonContentType, parseReportRequest } from "./_lib/reportContract.js";
 import {
   createRedisRateLimitStore,
   createResendDelivery,
   type RateLimitStore,
   type ReportDelivery,
-} from "./_lib/reportProviders";
+} from "./_lib/reportProviders.js";
 import {
   getClientIp,
   hashRateLimitKey,
   verifyTurnstileToken,
-} from "./_lib/reportSecurity";
+} from "./_lib/reportSecurity.js";
 
 const MAX_REPORT_BODY_BYTES = 12_000;
 const DEFAULT_RATE_LIMIT_REQUESTS = 5;
