@@ -264,14 +264,14 @@
     "honeypotLabel": "Leave this field blank",
     "privacyNotice": "This independent portal collects only the information needed to route a report. By continuing, you acknowledge the Data Privacy Act of 2012 (RA 10173) notice. Do not include passwords, financial information, or sensitive personal data.",
     "consentLabel": "I consent to the collection and use of this information to process my report.",
-    "turnstileLabel": "A security challenge is required before a report can be delivered.",
+    "turnstileLabel": "Complete the security check above to send your report.",
     "deliveryDisabled": "Report delivery is not enabled yet. The form will not send your report while the server-side security and delivery service is being configured.",
     "submit": "Submit report",
     "validationSummary": "Please correct the highlighted fields before continuing.",
     "status": {
       "idle": "",
       "disabled": "Report delivery is currently unavailable. No report was sent.",
-      "success": "Your report was accepted for processing.",
+      "success": "Thank you. Your report was sent to the BetterLimay team.",
       "validation-error": "The report could not be accepted. Check the form and try again.",
       "challenge-failed": "The security check could not be verified. Please try again.",
       "rate-limited": "Too many attempts were made. Please wait before trying again.",
@@ -283,7 +283,8 @@
       "message": "Enter a report of no more than 5,000 characters.",
       "consent": "Consent is required before submitting.",
       "server": "The report did not pass server validation."
-    }
+    },
+    "sending": "Sending…"
   },
   "contribute": {
     "eyebrow": "Help maintain the record",

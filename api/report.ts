@@ -144,9 +144,11 @@ function runtimeDependencies(): ReportHandlerDependencies {
       verifyTurnstileToken(token, clientIp, {
         secretKey: process.env.TURNSTILE_SECRET_KEY ?? "",
       }),
+    // Upstash added through the Vercel Marketplace sets KV_REST_API_*; a
+    // directly created database uses UPSTASH_REDIS_REST_*. Accept either.
     rateLimitStore: createRedisRateLimitStore({
-      url: process.env.UPSTASH_REDIS_REST_URL ?? "",
-      token: process.env.UPSTASH_REDIS_REST_TOKEN ?? "",
+      url: process.env.UPSTASH_REDIS_REST_URL || process.env.KV_REST_API_URL || "",
+      token: process.env.UPSTASH_REDIS_REST_TOKEN || process.env.KV_REST_API_TOKEN || "",
     }),
     delivery,
     rateLimit: {

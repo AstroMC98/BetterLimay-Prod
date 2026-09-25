@@ -3,6 +3,7 @@ import { describe, expect, it, vi } from "vitest";
 import {
   createRedisRateLimitStore,
   createResendDelivery,
+  reportSubject,
   type ReportDeliveryInput,
 } from "./reportProviders";
 
@@ -63,6 +64,33 @@ describe("report provider adapters", () => {
     expect(fetcher).toHaveBeenCalledWith(
       "https://api.resend.com/emails",
       expect.objectContaining({ method: "POST" }),
+    );
+  });
+
+  it("sets Reply-To to the resident and a readable subject", async () => {
+    const fetcher = vi
+      .fn<typeof fetch>()
+      .mockResolvedValue(new Response(null, { status: 202 }));
+    const delivery = createResendDelivery({
+      apiKey: "api-key",
+      recipient: "maintainer@example.org",
+      sender: "BetterLimay <onboarding@resend.dev>",
+      fetcher,
+    });
+
+    await delivery?.deliver(report, "request-123");
+    const body = JSON.parse(String(fetcher.mock.calls[0][1]?.body));
+    expect(body.reply_to).toBe(report.email);
+    expect(body.subject).toMatch(/^BetterLimay report: /);
+    expect(body.text).toContain("request-123");
+  });
+
+  it("collapses whitespace and shortens long subjects", () => {
+    expect(reportSubject("  Broken\n streetlight   near the plaza ")).toBe(
+      "BetterLimay report: Broken streetlight near the plaza",
+    );
+    expect(reportSubject("x".repeat(80))).toHaveLength(
+      "BetterLimay report: ".length + 60,
     );
   });
 });

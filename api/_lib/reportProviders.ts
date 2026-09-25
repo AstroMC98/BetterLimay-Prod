@@ -73,6 +73,12 @@ export function createRedisRateLimitStore({
   };
 }
 
+/** "BetterLimay report: <start of the message>", so the inbox is scannable. */
+export function reportSubject(message: string): string {
+  const preview = message.replace(/\s+/g, " ").trim();
+  return `BetterLimay report: ${preview.length > 60 ? `${preview.slice(0, 57)}...` : preview}`;
+}
+
 export function createResendDelivery({
   apiKey,
   recipient,
@@ -92,7 +98,9 @@ export function createResendDelivery({
         body: JSON.stringify({
           from: sender,
           to: [recipient],
-          subject: `BetterLimay community report ${requestId}`,
+          // Reply in Gmail and it goes to the resident, not to the sender address.
+          reply_to: input.email,
+          subject: reportSubject(input.message),
           text: `Request ID: ${requestId}\nName: ${input.name}\nEmail: ${input.email}\n\n${input.message}`,
         }),
       });

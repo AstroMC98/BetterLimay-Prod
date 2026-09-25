@@ -6,6 +6,7 @@ import { loadLguConfig } from "../app/lguConfig";
 import { createPortalIdentity } from "../app/portalIdentity";
 import announcementsJson from "../data/announcements.json";
 import type { AnnouncementRecord } from "../data/types";
+import { TurnstileWidget } from "../components/report/TurnstileWidget";
 import { submitReport, type ReportResult } from "../lib/ui/reportApi";
 import { type ReportInput, validateReportInput } from "../lib/ui/reportValidation";
 import { facebookEmbedKind } from "../lib/ui/facebook";
@@ -198,6 +199,9 @@ export function ReportPage() {
   const [result, setResult] = useState<ReportResult | "idle">("idle");
   const [validationErrors, setValidationErrors] = useState<string[]>([]);
   const turnstileSiteKey = import.meta.env.VITE_TURNSTILE_SITE_KEY ?? "";
+  const [turnstileToken, setTurnstileToken] = useState<string | null>(null);
+  const [turnstileReset, setTurnstileReset] = useState(0);
+  const [submitting, setSubmitting] = useState(false);
 
   function updateField<K extends keyof ReportInput>(field: K, value: ReportInput[K]) {
     setInput((current) => ({ ...current, [field]: value }));
@@ -213,11 +217,16 @@ export function ReportPage() {
       return;
     }
 
+    setSubmitting(true);
     const nextResult = await submitReport(input, {
       turnstileSiteKey,
-      turnstileToken: "",
+      turnstileToken: turnstileToken ?? "",
     });
+    setSubmitting(false);
     setResult(nextResult);
+    // A Turnstile token is single-use: ask for a fresh one whatever happened.
+    setTurnstileReset((count) => count + 1);
+    if (nextResult.status === "success") setInput(INITIAL_REPORT_INPUT);
   }
 
   return (
@@ -301,11 +310,25 @@ export function ReportPage() {
         {validationErrors.includes("consent") ? (
           <p className="form-error">{t("report.errors.consent")}</p>
         ) : null}
-        <p className="report-form__turnstile">{t("report.turnstileLabel")}</p>
-        <p className="report-form__delivery-note">{t("report.deliveryDisabled")}</p>
-        <button className="button button--primary" type="submit">
-          {t("report.submit")}
+        {turnstileSiteKey ? (
+          <TurnstileWidget
+            siteKey={turnstileSiteKey}
+            resetKey={turnstileReset}
+            onToken={setTurnstileToken}
+          />
+        ) : (
+          <p className="report-form__delivery-note">{t("report.deliveryDisabled")}</p>
+        )}
+        <button
+          className="button button--primary"
+          type="submit"
+          disabled={!turnstileSiteKey || !turnstileToken || submitting}
+        >
+          {submitting ? t("report.sending") : t("report.submit")}
         </button>
+        {turnstileSiteKey && !turnstileToken ? (
+          <p className="report-form__hint">{t("report.turnstileLabel")}</p>
+        ) : null}
         <p className="report-form__status" data-testid="report-status" aria-live="polite">
           {validationErrors.length > 0
             ? t("report.validationSummary")
