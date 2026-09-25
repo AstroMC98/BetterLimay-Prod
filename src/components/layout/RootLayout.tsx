@@ -55,7 +55,9 @@ export function RootLayout() {
                 {portalNameParts[0]}
                 <b>{portalNameParts[1]}</b>
               </span>
-              <span className="portal-mark__place">{portalIdentity.lguFullName}</span>
+              <span className="portal-mark__place">
+                {t("header.placeLine", { lgu: portalIdentity.lguFullName })}
+              </span>
             </span>
           </Link>
           <div className="portal-header__actions">

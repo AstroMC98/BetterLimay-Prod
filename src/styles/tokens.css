@@ -5271,3 +5271,17 @@
 .about-cta__footer a {
   color: #fff;
 }
+
+/* The header line is now a sentence, not just a place name: keep it to two
+   balanced lines on phones instead of three ragged ones. */
+.portal-mark__place {
+  text-wrap: balance;
+}
+
+@media (max-width: 30rem) {
+  .portal-mark__place {
+    max-width: 13rem;
+    font-size: 0.6875rem;
+    line-height: 1.3;
+  }
+}
