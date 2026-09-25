@@ -46,6 +46,28 @@ describe("support and trust pages", () => {
     expect(markup).toContain('aria-live="polite"');
   });
 
+  it("keeps Submit disabled without a site key, and until Turnstile issues a token", () => {
+    // No key: delivery is off and the button cannot be pressed.
+    expect(renderPage(<ReportPage />)).toMatch(
+      /<button[^>]*disabled[^>]*type="submit"|<button[^>]*type="submit"[^>]*disabled/,
+    );
+
+    // With a key: the Turnstile container renders, the disabled note does not,
+    // and Submit still waits for a token.
+    vi.stubEnv("VITE_TURNSTILE_SITE_KEY", "test-site-key");
+    try {
+      const markup = renderPage(<ReportPage />);
+      expect(markup).toContain('data-testid="turnstile"');
+      expect(markup).not.toContain("report.deliveryDisabled");
+      expect(markup).toMatch(
+        /<button[^>]*disabled[^>]*type="submit"|<button[^>]*type="submit"[^>]*disabled/,
+      );
+      expect(markup).toContain("report.turnstileLabel");
+    } finally {
+      vi.unstubAllEnvs();
+    }
+  });
+
   it("renders contribution guidance without copying a second report form", () => {
     const markup = renderPage(<ContributePage />);
 

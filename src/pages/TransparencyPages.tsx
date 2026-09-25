@@ -1,4 +1,12 @@
-import { lazy, Suspense, useEffect, useMemo, useState, type ReactNode } from "react";
+import {
+  Fragment,
+  lazy,
+  Suspense,
+  useEffect,
+  useMemo,
+  useState,
+  type ReactNode,
+} from "react";
 import { useTranslation } from "react-i18next";
 import { useLocation } from "react-router-dom";
 import {
@@ -13,8 +21,9 @@ import {
 
 import { loadLguConfig } from "../app/lguConfig";
 import {
-  ProvenanceDetails,
+  ProvenanceBlock,
   ProvenanceStatusBadge,
+  SourceLink,
 } from "../components/provenance/Provenance";
 import { CmciComparison } from "../components/statistics/CmciComparison";
 import { CmciProfile } from "../components/statistics/CmciProfile";
@@ -24,6 +33,7 @@ const FloodHazardMap = lazy(() => import("../components/statistics/FloodHazardMa
 import statisticsJson from "../data/statistics.json";
 import transparencyJson from "../data/transparency.json";
 import type { StatisticRecord, TransparencyRecord } from "../data/types";
+import { AXIS_TICK, GRID } from "../lib/ui/chartTheme";
 import { RouteMetadata } from "../lib/ui/RouteMetadata";
 import {
   getTransparencyChartSeries,
@@ -64,7 +74,6 @@ function truncateTick(value: string): string {
   return value.length > TICK_MAX_CHARS ? `${value.slice(0, TICK_MAX_CHARS - 1)}…` : value;
 }
 
-const AXIS_TICK = { fill: "var(--better-text-muted)", fontSize: 12 };
 /* Without a cap a single-datapoint series renders as one bar filling the plot area. */
 const MAX_BAR_WIDTH = 24;
 
@@ -87,6 +96,81 @@ function DataGapNotice({ children }: { children: ReactNode }) {
   );
 }
 
+/** Which rows have their detail panel open. One set per table. */
+function useOpenRows() {
+  const [open, setOpen] = useState<Set<string>>(() => new Set());
+  const toggle = (id: string) =>
+    setOpen((current) => {
+      const next = new Set(current);
+      if (next.has(id)) next.delete(id);
+      else next.add(id);
+      return next;
+    });
+  return { isOpen: (id: string) => open.has(id), toggle };
+}
+
+function DetailsToggle({
+  id,
+  open,
+  onToggle,
+}: {
+  id: string;
+  open: boolean;
+  onToggle: () => void;
+}) {
+  const { t } = useTranslation("common");
+  return (
+    <button
+      type="button"
+      className="data-table__toggle"
+      aria-expanded={open}
+      aria-controls={`detail-${id}`}
+      onClick={onToggle}
+    >
+      {open ? t("transparency.hideDetails") : t("transparency.details")}
+    </button>
+  );
+}
+
+/**
+ * Everything behind a figure, in one full-width row under it.
+ *
+ * Opening "how to read" and "source" inside narrow cells turned one row into a
+ * tall column of wrapped text. A row spanning the table gives both the width
+ * they need, side by side, and closes as one.
+ */
+function DetailRow({
+  id,
+  colSpan,
+  howToRead,
+  provenance,
+  howToReadLabel,
+}: {
+  id: string;
+  colSpan: number;
+  howToRead: string;
+  provenance: TransparencyRecord["provenance"];
+  howToReadLabel: string;
+}) {
+  const { t } = useTranslation("common");
+  return (
+    <tr className="data-table__detail" id={`detail-${id}`}>
+      <td colSpan={colSpan}>
+        <div className="data-table__detail-grid">
+          <section>
+            <h3>{howToReadLabel}</h3>
+            <p>{howToRead}</p>
+          </section>
+          <section>
+            <h3>{t("provenance.sourceInformation")}</h3>
+            <ProvenanceBlock provenance={provenance} />
+          </section>
+        </div>
+      </td>
+    </tr>
+  );
+}
+
 function TransparencyTable({
   records,
   testId,
@@ -95,6 +179,8 @@ function TransparencyTable({
   testId?: string;
 }) {
   const { t } = useTranslation("common");
+
+  const rows = useOpenRows();
 
   return (
     <div className="data-table-wrapper" data-testid={testId}>
@@ -128,38 +214,53 @@ function TransparencyTable({
         </thead>
         <tbody>
           {records.map((record) => (
-            <tr key={record.id}>
-              <th scope="row">
-                <span className="data-table__title">{record.title}</span>
-                <span className="data-table__meta">
-                  {t(`transparency.kinds.${record.kind}`)}
-                </span>
-                <details className="data-table__explanation">
-                  <summary>{t("transparency.howToRead")}</summary>
-                  <p>{record.howToRead}</p>
-                </details>
-              </th>
-              <td className="data-table__num">{record.year}</td>
-              <td className="data-table__num">
-                {formatAmount(record.amount, record.unit, t("transparency.notAvailable"))}
-              </td>
-              <td>
-                <span className="data-chip">{record.status}</span>
-              </td>
-              <td>{record.sourceAgency}</td>
-              <td>
-                {record.location ??
-                  t(
-                    record.kind === "financial-statement"
-                      ? "transparency.notApplicable"
-                      : "transparency.notAvailable",
+            <Fragment key={record.id}>
+              <tr>
+                <th scope="row">
+                  <span className="data-table__title">{record.title}</span>
+                  <span className="data-table__meta">
+                    {t(`transparency.kinds.${record.kind}`)}
+                  </span>
+                  <DetailsToggle
+                    id={record.id}
+                    open={rows.isOpen(record.id)}
+                    onToggle={() => rows.toggle(record.id)}
+                  />
+                </th>
+                <td className="data-table__num">{record.year}</td>
+                <td className="data-table__num">
+                  {formatAmount(
+                    record.amount,
+                    record.unit,
+                    t("transparency.notAvailable"),
                   )}
-              </td>
-              <td>
-                <ProvenanceStatusBadge provenance={record.provenance} />
-                <ProvenanceDetails provenance={record.provenance} />
-              </td>
-            </tr>
+                </td>
+                <td>
+                  <span className="data-chip">{record.status}</span>
+                </td>
+                <td>{record.sourceAgency}</td>
+                <td>
+                  {record.location ??
+                    t(
+                      record.kind === "financial-statement"
+                        ? "transparency.notApplicable"
+                        : "transparency.notAvailable",
+                    )}
+                </td>
+                <td>
+                  <SourceLink provenance={record.provenance} />
+                </td>
+              </tr>
+              {rows.isOpen(record.id) ? (
+                <DetailRow
+                  id={record.id}
+                  colSpan={7}
+                  howToRead={record.howToRead}
+                  provenance={record.provenance}
+                  howToReadLabel={t("transparency.howToRead")}
+                />
+              ) : null}
+            </Fragment>
           ))}
         </tbody>
       </table>
@@ -208,11 +309,7 @@ function TransparencyChart({
             data={chartData}
             margin={{ top: 8, right: 24, bottom: 8, left: 8 }}
           >
-            <CartesianGrid
-              horizontal={false}
-              stroke="var(--better-border)"
-              strokeDasharray="0"
-            />
+            <CartesianGrid {...GRID} vertical horizontal={false} />
             <XAxis
               type="number"
               tick={AXIS_TICK}
@@ -255,6 +352,7 @@ function TransparencyChart({
 
 function StatisticsTable({ records }: { records: StatisticRecord[] }) {
   const { t } = useTranslation("common");
+  const rows = useOpenRows();
 
   return (
     <div className="data-table-wrapper" data-testid="statistics-chart-table">
@@ -274,25 +372,36 @@ function StatisticsTable({ records }: { records: StatisticRecord[] }) {
         </thead>
         <tbody>
           {records.map((record) => (
-            <tr key={record.id}>
-              <th scope="row" className="data-table__num">
-                {record.year}
-              </th>
-              <td className="data-table__num">
-                <span className="data-table__title">
-                  {formatNumber(record.value)} {record.unit}
-                </span>
-                <details className="data-table__explanation">
-                  <summary>{t("statistics.howToRead")}</summary>
-                  <p>{record.howToRead}</p>
-                </details>
-              </td>
-              <td>{record.geography}</td>
-              <td>
-                <ProvenanceStatusBadge provenance={record.provenance} />
-                <ProvenanceDetails provenance={record.provenance} />
-              </td>
-            </tr>
+            <Fragment key={record.id}>
+              <tr>
+                <th scope="row" className="data-table__num">
+                  {record.year}
+                </th>
+                <td className="data-table__num">
+                  <span className="data-table__title">
+                    {formatNumber(record.value)} {record.unit}
+                  </span>
+                  <DetailsToggle
+                    id={record.id}
+                    open={rows.isOpen(record.id)}
+                    onToggle={() => rows.toggle(record.id)}
+                  />
+                </td>
+                <td>{record.geography}</td>
+                <td>
+                  <SourceLink provenance={record.provenance} />
+                </td>
+              </tr>
+              {rows.isOpen(record.id) ? (
+                <DetailRow
+                  id={record.id}
+                  colSpan={4}
+                  howToRead={record.howToRead}
+                  provenance={record.provenance}
+                  howToReadLabel={t("statistics.howToRead")}
+                />
+              ) : null}
+            </Fragment>
           ))}
         </tbody>
       </table>
@@ -395,11 +504,7 @@ function StatisticsChart({
     >
       <ResponsiveContainer width="100%" height={280}>
         <BarChart data={data} margin={{ top: 12, right: 16, bottom: 24, left: 8 }}>
-          <CartesianGrid
-            strokeDasharray="0"
-            stroke="var(--better-border)"
-            vertical={false}
-          />
+          <CartesianGrid {...GRID} />
           <XAxis dataKey="year" tick={AXIS_TICK} />
           <YAxis width={68} tick={AXIS_TICK} tickFormatter={formatAxisTick} />
           <Tooltip

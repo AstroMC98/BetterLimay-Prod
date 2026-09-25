@@ -77,7 +77,8 @@
       "stale": "Na-beripika na ang record na ito ngunit maaaring hindi na kasalukuyan.",
       "unavailable": "Walang available na valid source o kinakailangang provenance metadata."
     },
-    "requestDocument": "Dokumento ang pinagmulan nito, hindi web page. Gamitin ang pamagat, edisyon at pahina sa itaas upang hilingin o hanapin ito."
+    "requestDocument": "Dokumento ang pinagmulan nito, hindi web page. Gamitin ang pamagat, edisyon at pahina sa itaas upang hilingin o hanapin ito.",
+    "sourceSummary": "Pinagmulan: {{source}} · {{date}}"
   },
   "services": {
     "loading": "Ikinakarga ang mga serbisyo",
@@ -264,14 +265,14 @@
     "honeypotLabel": "Iwanang blangko ang field na ito",
     "privacyNotice": "Ang independenteng portal na ito ay kumukuha lamang ng impormasyong kailangan upang maipasa ang report. Sa pagpapatuloy, kinikilala mo ang notice sa Data Privacy Act of 2012 (RA 10173). Huwag magsama ng password, financial information, o sensitibong personal na datos.",
     "consentLabel": "Sumasang-ayon ako sa pangongolekta at paggamit ng impormasyong ito upang maproseso ang aking report.",
-    "turnstileLabel": "Kailangan ang security challenge bago maipasa ang report.",
+    "turnstileLabel": "Kumpletuhin ang security check sa itaas para maipadala ang ulat.",
     "deliveryDisabled": "Hindi pa pinapagana ang report delivery. Hindi ipapadala ng form ang report habang kino-configure ang server-side security at delivery service.",
     "submit": "Ipadala ang report",
     "validationSummary": "Ayusin ang mga naka-highlight na field bago magpatuloy.",
     "status": {
       "idle": "",
       "disabled": "Hindi pa available ang report delivery. Walang report na ipinadala.",
-      "success": "Tinanggap para sa processing ang iyong report.",
+      "success": "Salamat. Naipadala ang iyong ulat sa BetterLimay team.",
       "validation-error": "Hindi tinanggap ang report. Suriin ang form at subukan muli.",
       "challenge-failed": "Hindi napatunayan ang security check. Subukan muli.",
       "rate-limited": "Napakaraming pagtatangka. Maghintay muna bago subukan muli.",
@@ -283,7 +284,8 @@
       "message": "Maglagay ng report na hindi lalampas sa 5,000 character.",
       "consent": "Kailangan ang pahintulot bago mag-submit.",
       "server": "Hindi pumasa sa server validation ang report."
-    }
+    },
+    "sending": "Ipinapadala…"
   },
   "contribute": {
     "eyebrow": "Tumulong sa pagpapanatili ng talaan",
@@ -426,7 +428,9 @@
     },
     "chartOmitted": "{{count}} record ang hindi naka-chart dahil hindi pa nailalathala ang halaga nito.",
     "chartOmitted_other": "{{count}} records ang hindi naka-chart dahil hindi pa nailalathala ang halaga ng mga ito.",
-    "notApplicable": "Hindi naaangkop"
+    "notApplicable": "Hindi naaangkop",
+    "details": "Detalye",
+    "hideDetails": "Itago ang detalye"
   },
   "statistics": {
     "eyebrow": "Snapshot ng census",
@@ -586,7 +590,13 @@
       "phone": "Telepono",
       "email": "E-mail",
       "contactTitle": "Makipag-ugnayan sa Munisipyo",
-      "moreContacts": "Iba pang tanggapan at contact"
+      "moreContacts": "Iba pang tanggapan at contact",
+      "leadershipTitle": "Pamunuan ng munisipyo",
+      "councilTitle": "Sangguniang Bayan",
+      "seeResults": "Resulta ng halalan 2025",
+      "seeAllOfficials": "Lahat ng halal na opisyal",
+      "seeAllBarangays": "Lahat ng barangay",
+      "moreTitle": "Iba pa sa seksyong ito"
     },
     "about": {
       "title": "Tungkol sa BetterLimay",

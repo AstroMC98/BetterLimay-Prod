@@ -8,7 +8,7 @@ module.exports = {
       startServerReadyTimeout: 120000,
       url: [
         "http://127.0.0.1:5199/",
-        "http://127.0.0.1:5199/services/business-permits/business-permits",
+        "http://127.0.0.1:5199/services/civil-registry/application-for-marriage-license",
       ],
       numberOfRuns: 1,
       settings: {

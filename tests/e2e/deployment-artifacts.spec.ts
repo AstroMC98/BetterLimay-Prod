@@ -60,13 +60,32 @@ test.describe("Vercel deployment artifacts", () => {
 
     expect([...headerNames]).toEqual(
       expect.arrayContaining([
-        "Content-Security-Policy",
         "Strict-Transport-Security",
         "X-Frame-Options",
         "Referrer-Policy",
         "Permissions-Policy",
       ]),
     );
+
+    // The CSP is split in two because two CSP headers on one response are both
+    // enforced: the public site never allows eval; only the /admin editor
+    // (Decap CMS compiles functions at runtime) does. The two sources must be
+    // exact complements so every path gets exactly one policy.
+    const cspFor = (source: string) =>
+      vercelConfig.headers
+        .find((entry) => entry.source === source)
+        ?.headers.find((header) => header.key === "Content-Security-Policy")?.value;
+    const publicCsp = cspFor("/((?!admin).*)");
+    const adminCsp = cspFor("/(admin.*)");
+
+    expect(publicCsp).toContain("default-src 'self'");
+    expect(publicCsp).not.toContain("unsafe-eval");
+    expect(adminCsp).toContain("'unsafe-eval'");
+    expect(
+      vercelConfig.headers.filter((entry) =>
+        entry.headers.some((header) => header.key === "Content-Security-Policy"),
+      ),
+    ).toHaveLength(2);
 
     for (const fileName of [".env.example", ".dev.vars.example"]) {
       const contents = fs.readFileSync(path.join(repositoryRoot, fileName), "utf8");

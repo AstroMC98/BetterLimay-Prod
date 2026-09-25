@@ -11,6 +11,7 @@ import {
 
 import electionsJson from "../../data/elections.json";
 import type { ElectionContestRecord } from "../../data/types";
+import { CATEGORY_TICK, VALUE_LABEL } from "../../lib/ui/chartTheme";
 import { ProvenanceDetails } from "../provenance/Provenance";
 
 const contests = electionsJson as ElectionContestRecord[];
@@ -68,7 +69,7 @@ function ContestChart({ contest }: { contest: ElectionContestRecord }) {
               width={170}
               tickLine={false}
               axisLine={false}
-              tick={{ fill: "var(--better-text-strong)", fontSize: 13 }}
+              tick={CATEGORY_TICK}
             />
             <Bar dataKey="votes" radius={[0, 3, 3, 0]} isAnimationActive={false}>
               {rows.map((row) => (
@@ -82,7 +83,7 @@ function ContestChart({ contest }: { contest: ElectionContestRecord }) {
                 dataKey="votes"
                 position="right"
                 formatter={(value: unknown) => formatVotes(Number(value))}
-                style={{ fill: "var(--better-text-muted)", fontSize: 12 }}
+                style={VALUE_LABEL}
               />
             </Bar>
           </BarChart>

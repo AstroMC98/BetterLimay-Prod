@@ -11,6 +11,9 @@ const webServer = process.env.PLAYWRIGHT_SKIP_WEBSERVER
 
 export default defineConfig({
   testDir: "./tests",
+  // Browser tests only. tests/*.test.ts are Vitest unit tests, which the
+  // default pattern would also pick up and fail to run.
+  testMatch: "**/*.spec.ts",
   fullyParallel: true,
   forbidOnly: Boolean(process.env.CI),
   retries: process.env.CI ? 2 : 0,

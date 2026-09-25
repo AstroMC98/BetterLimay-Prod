@@ -19,3 +19,5 @@ pipeline
 src/data
 tests/pipeline
 *.min.js
+# Pipeline output (minified on purpose; regenerated, never hand-edited).
+public/data
