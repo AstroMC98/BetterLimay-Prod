@@ -1,0 +1,14 @@
+{
+  "id": "fb-limay-water-district",
+  "name": "Limay Water District",
+  "url": "https://www.facebook.com/limaywaterdistrict",
+  "description": "Service interruptions, billing and water advisories.",
+  "order": 5,
+  "provenance": {
+    "source_url": "https://www.facebook.com/limaywaterdistrict",
+    "source_name": "Limay Water District",
+    "retrieved_at": "2026-09-25",
+    "verified": true,
+    "verification_note": "Facebook page listed in the Limay Water District Citizen's Charter, 2026 1st Edition, p. 139."
+  }
+}

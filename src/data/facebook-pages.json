@@ -1,0 +1,72 @@
+[
+  {
+    "id": "fb-1limay",
+    "name": "Municipality of Limay (1Limay)",
+    "url": "https://www.facebook.com/1Limay",
+    "description": "The Municipal Government's main page: announcements, advisories and events.",
+    "order": 1,
+    "provenance": {
+      "source_url": "https://www.facebook.com/1Limay",
+      "source_name": "Municipality of Limay (1Limay)",
+      "retrieved_at": "2026-09-25",
+      "verified": true,
+      "verification_note": "Official Facebook page, named as it appears on Facebook."
+    }
+  },
+  {
+    "id": "fb-sangguniang-bayan",
+    "name": "Sangguniang Bayan ng Limay",
+    "url": "https://www.facebook.com/profile.php?id=61556428786042",
+    "description": "The municipal council: sessions, ordinances and resolutions.",
+    "order": 2,
+    "provenance": {
+      "source_url": "https://www.facebook.com/profile.php?id=61556428786042",
+      "source_name": "Sangguniang Bayan ng Limay",
+      "retrieved_at": "2026-09-25",
+      "verified": true,
+      "verification_note": "Official Facebook page, named as it appears on Facebook."
+    }
+  },
+  {
+    "id": "fb-limay-cc",
+    "name": "Limay CC",
+    "url": "https://www.facebook.com/limay.cc",
+    "description": "Traffic monitoring and live updates from Limay CC.",
+    "order": 3,
+    "provenance": {
+      "source_url": "https://www.facebook.com/limay.cc",
+      "source_name": "Limay CC",
+      "retrieved_at": "2026-09-25",
+      "verified": true,
+      "verification_note": "Official Facebook page, named as it appears on Facebook."
+    }
+  },
+  {
+    "id": "fb-limay-pnp",
+    "name": "Limay Bataan PNP",
+    "url": "https://www.facebook.com/limay.pcr",
+    "description": "Peace and order updates from the Limay Municipal Police Station.",
+    "order": 4,
+    "provenance": {
+      "source_url": "https://www.facebook.com/limay.pcr",
+      "source_name": "Limay Bataan PNP",
+      "retrieved_at": "2026-09-25",
+      "verified": true,
+      "verification_note": "Official Facebook page, named as it appears on Facebook."
+    }
+  },
+  {
+    "id": "fb-limay-water-district",
+    "name": "Limay Water District",
+    "url": "https://www.facebook.com/limaywaterdistrict",
+    "description": "Service interruptions, billing and water advisories.",
+    "order": 5,
+    "provenance": {
+      "source_url": "https://www.facebook.com/limaywaterdistrict",
+      "source_name": "Limay Water District",
+      "retrieved_at": "2026-09-25",
+      "verified": true,
+      "verification_note": "Facebook page listed in the Limay Water District Citizen's Charter, 2026 1st Edition, p. 139."
+    }
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "id": "fb-limay-pnp",
+  "name": "Limay Bataan PNP",
+  "url": "https://www.facebook.com/limay.pcr",
+  "description": "Peace and order updates from the Limay Municipal Police Station.",
+  "order": 4,
+  "provenance": {
+    "source_url": "https://www.facebook.com/limay.pcr",
+    "source_name": "Limay Bataan PNP",
+    "retrieved_at": "2026-09-25",
+    "verified": true,
+    "verification_note": "Official Facebook page, named as it appears on Facebook."
+  }
+}

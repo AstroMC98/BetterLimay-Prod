@@ -26,7 +26,45 @@
     "license": "Lisensya",
     "costToPeople": "Gastos sa mga Mamamayan ng Limay: ₱0",
     "endorsement": "Isang inisyatiba ng BetterGov.PH",
-    "municipalHall": "Munisipyo"
+    "municipalHall": "Munisipyo",
+    "tagline": "Civic portal ng komunidad",
+    "description": "Isang open-source na inisyatiba para sa malinaw na access sa mga serbisyo, opisyal at pampublikong rekord ng Limay.",
+    "facebookLabel": "Munisipyo ng Limay sa Facebook",
+    "githubLabel": "Source code ng BetterLimay sa GitHub",
+    "builtBy": "Binuo ng komunidad para sa komunidad.",
+    "costLabel": "Gastos sa Mamamayan ng Limay =",
+    "copyright": "{{year}} BetterLimay.org. Public domain ang nilalaman maliban kung nakasaad.",
+    "facebookNote": "Ang feed sa home page ay nilo-load mula sa Facebook.",
+    "sitemap": "Sitemap",
+    "columns": {
+      "services": "Mga serbisyo",
+      "government": "Pamahalaang lokal",
+      "network": "BetterGov network",
+      "resources": "Iba pang mapagkukunan"
+    },
+    "links": {
+      "allServices": "Lahat ng serbisyo",
+      "civilRegistry": "Civil registry",
+      "businessPermits": "Business permit",
+      "health": "Kalusugan",
+      "socialWelfare": "Serbisyong panlipunan",
+      "electedOfficials": "Mga halal na opisyal",
+      "offices": "Mga tanggapan at contact",
+      "barangays": "Mga barangay",
+      "transparency": "Transparency",
+      "statistics": "Estadistika at mapa ng baha",
+      "transparencyPortal": "Transparency Portal",
+      "openData": "Open Data Portal",
+      "petitions": "Petitions PH",
+      "saln": "SALN Tracker",
+      "budget": "Budget Tracker",
+      "philgeps": "PhilGEPS Tracker",
+      "officialWebsite": "Opisyal na website ng Limay",
+      "province": "Lalawigan ng Bataan",
+      "foi": "Freedom of Information",
+      "report": "Mag-ulat ng problema",
+      "editor": "Content editor"
+    }
   },
   "forms": {
     "required": "Kailangan",
@@ -180,7 +218,63 @@
     "contributeAction": "Magbahagi ng pagwawasto",
     "disclaimerTitle": "Independenteng community portal",
     "disclaimerBody": "Hindi kaanib ng LGU ang BetterLimay. Tiyakin palagi ang mahalagang impormasyon sa opisyal na source.",
-    "floodMapAction": "Mapa ng panganib sa baha"
+    "floodMapAction": "Mapa ng panganib sa baha",
+    "popular": {
+      "label": "Madalas hanapin",
+      "all": "Lahat ng serbisyo"
+    },
+    "feed": {
+      "eyebrow": "Opisyal na balita",
+      "title": "Pinakabago mula sa Limay",
+      "description": "Mga anunsyo, abiso at livestream mula sa opisyal na Facebook page ng Munisipyo at ng mga ahensyang naglilingkod sa Limay.",
+      "tabsLabel": "Mga opisyal na Facebook page",
+      "viewOnFacebook": "Tingnan sa Facebook",
+      "iframeTitle": "Pinakabagong post ng {{page}} sa Facebook",
+      "fallback": "Kung hindi lumabas ang feed,",
+      "openDirectly": "buksan ito nang direkta sa Facebook."
+    },
+    "who": {
+      "eyebrow": "Pamahalaang lokal",
+      "title": "Kilalanin ang naglilingkod sa inyo",
+      "description": "Ang mga tao, tanggapan at barangay na bumubuo sa Pamahalaang Bayan ng Limay.",
+      "overview": "Buod ng pamahalaan",
+      "officials": "Mga halal na opisyal",
+      "officialsBody_one": "Mayor {{mayor}} at {{count}} pang halal na opisyal",
+      "officialsBody_other": "Mayor {{mayor}} at {{count}} pang halal na opisyal",
+      "officialsFallback": "Ang Mayor, Bise Mayor at Sangguniang Bayan",
+      "offices": "Mga tanggapan at contact",
+      "officesBody_one": "{{count}} tanggapan na may telepono at e-mail",
+      "officesBody_other": "{{count}} tanggapan na may telepono at e-mail",
+      "barangays": "Mga barangay",
+      "barangaysBody_one": "{{count}} barangay · {{population}} residente",
+      "barangaysBody_other": "{{count}} barangay · {{population}} residente"
+    },
+    "spending": {
+      "eyebrow": "Transparency",
+      "title": "Tingnan ang mga rekord sa likod ng pondo ng bayan",
+      "description": "Mula sa na-audit na pananalapi ng Limay hanggang sa bawat kontrata at proyekto, bawat rekord may source.",
+      "overview": "Buod ng transparency",
+      "finance": "Na-audit na pananalapi",
+      "financeBody_one": "{{count}} bilang mula sa 2024 audit ng COA",
+      "financeBody_other": "{{count}} bilang mula sa 2024 audit ng COA",
+      "procurement": "Procurement",
+      "procurementBody": "Mga iginawad na kontrata mula sa PhilGEPS",
+      "infrastructure": "Imprastraktura",
+      "infrastructureBody": "Mga pambansang proyekto sa Limay",
+      "numbers": "Limay sa mga numero",
+      "numbersBody": "Senso, ranggo sa competitiveness at mapa ng baha"
+    },
+    "history": {
+      "eyebrow": "Mula 1917",
+      "era": "Panahon {{number}}",
+      "sources": "Mga source:"
+    },
+    "about": {
+      "title": "Tungkol sa BetterLimay",
+      "body": "Isang independiyenteng portal na binuo ng komunidad upang maayos ang mga serbisyo at pampublikong rekord ng Limay. Bawat bilang ay may nakasaad na source.",
+      "project": "Tungkol sa proyekto",
+      "help": "Tumulong na pagbutihin"
+    }
   },
   "search": {
     "label": "Maghanap sa BetterLimay",

@@ -1,0 +1,125 @@
+{
+  "title": "History of Limay",
+  "intro": "From a barrio of Orion to the last town created in Bataan, and one of its industrial centres.",
+  "eras": [
+    {
+      "id": "origins",
+      "label": "Origins",
+      "summary": "Before Limay was a town of its own, it was part of Orion.",
+      "events": [
+        {
+          "year": "Spanish era",
+          "title": "\"Lima ay\": how Limay got its name",
+          "body": "Spanish soldiers met five natives whose boat had been wrecked by a storm and asked the name of the place. Not understanding the question, the natives answered \"lima ay\" (five), and the soldiers took it as the name.",
+          "source": "province"
+        },
+        {
+          "year": "Late 1600s",
+          "title": "Friars settle a limestone coast",
+          "body": "Dominican and Franciscan friars settled Limay and used its limestone to build the churches of Orion and Balanga. Limay was then a barrio of Orion.",
+          "source": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "becoming-a-town",
+      "label": "Becoming a town",
+      "summary": "Revolution, early industry, and independence from Orion.",
+      "events": [
+        {
+          "year": "1898",
+          "title": "Limayans in the Revolution",
+          "body": "Residents of Limay joined the Philippine Revolution.",
+          "source": "wikipedia"
+        },
+        {
+          "year": "1913",
+          "title": "The lumber company",
+          "body": "The Cadwallader-Gibson Lumber Company employed Limayans alongside workers who had come from the Visayas.",
+          "source": "wikipedia"
+        },
+        {
+          "year": "1917",
+          "title": "Limay becomes a municipality",
+          "body": "On January 1, 1917, Executive Order No. 983 of Governor-General Francis Burton Harrison made Limay an independent municipality. It was the last town created in Bataan, and the first to grant a share of its realty-tax income.",
+          "source": "province"
+        }
+      ]
+    },
+    {
+      "id": "war",
+      "label": "The Battle of Bataan",
+      "summary": "Limay's place in the defence and fall of Bataan.",
+      "events": [
+        {
+          "year": "1942",
+          "title": "Hospital and surrender at Lamao",
+          "body": "Limay hosted the first hospital of the American and Filipino forces, run by the nurses remembered as the \"Angels of Bataan\". In Lamao, Maj. Gen. Edward P. King surrendered the forces on Bataan after the defensive line along the Alangan River collapsed.",
+          "source": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "industry",
+      "label": "Industry and today",
+      "summary": "Heavy industry made Limay a first-class municipality, and put its coast at risk.",
+      "events": [
+        {
+          "year": "2024",
+          "title": "The Terra Nova oil spill",
+          "body": "The tanker MT Terra Nova sank 3.6 nautical miles off Lamao Point. A no-fishing zone was declared in Limay's waters.",
+          "source": "wikipedia"
+        },
+        {
+          "year": "Today",
+          "title": "A first-class industrial town",
+          "body": "Limay is a first-class municipality by income, largely from heavy industry: the Petron Bataan Refinery, Planters Products, Columbian Carbon Philippines and the Limay Bulk Handling Terminal, among others.",
+          "source": "province"
+        }
+      ]
+    }
+  ],
+  "highlights": [
+    {
+      "label": "Name",
+      "title": "\"Lima ay\"",
+      "body": "Named, the story goes, for five shipwrecked natives answering a question they did not understand.",
+      "source": "province"
+    },
+    {
+      "label": "Town since",
+      "title": "1917",
+      "body": "The last municipality created in Bataan, by Executive Order No. 983.",
+      "source": "province"
+    },
+    {
+      "label": "Class",
+      "title": "First-class municipality",
+      "body": "One of Bataan's industrial centres, home to the Petron Bataan Refinery.",
+      "source": "province"
+    }
+  ],
+  "sources": {
+    "province": {
+      "source_url": "https://bataan.gov.ph/limay/",
+      "source_name": "Provincial Government of Bataan",
+      "retrieved_at": "2026-09-25",
+      "verified": true,
+      "verification_note": "From the Provincial Government of Bataan's page on Limay."
+    },
+    "wikipedia": {
+      "source_url": "https://en.wikipedia.org/wiki/Limay",
+      "source_name": "Wikipedia, \"Limay\" (CC BY-SA 4.0)",
+      "retrieved_at": "2026-09-25",
+      "verified": true,
+      "verification_note": "Paraphrased from the article's History section, which cites limaybataan.com, ABS-CBN News and Rappler. Text licensed CC BY-SA 4.0."
+    }
+  },
+  "provenance": {
+    "source_url": "https://bataan.gov.ph/limay/",
+    "source_name": "Provincial Government of Bataan",
+    "retrieved_at": "2026-09-25",
+    "verified": true,
+    "verification_note": "From the Provincial Government of Bataan's page on Limay."
+  }
+}

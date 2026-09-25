@@ -5,13 +5,17 @@ const auditedRoutes = [
   { name: "home", path: "/" },
   {
     name: "service-detail",
-    path: "/services/business-permits/business-permits",
+    path: "/services/civil-registry/application-for-marriage-license",
   },
 ] as const;
 
 test.describe("MVP accessibility audits", () => {
   test.beforeEach(async ({ page }) => {
     await page.route("https://api.open-meteo.com/**", (route) => route.abort());
+    // The home page embeds Facebook's own feed. Its markup is Facebook's to fix,
+    // not ours, and it changes with every post, so it is kept out of the audit:
+    // blocked here, and its frame excluded below. Everything we render is audited.
+    await page.route("https://www.facebook.com/**", (route) => route.abort());
   });
 
   for (const route of auditedRoutes) {
@@ -22,6 +26,7 @@ test.describe("MVP accessibility audits", () => {
 
       const results = await new AxeBuilder({ page })
         .withTags(["wcag2a", "wcag2aa"])
+        .exclude(".home-feed__panel iframe")
         .analyze();
       const blockingViolations = results.violations.filter((violation) =>
         ["critical", "serious"].includes(violation.impact ?? ""),
