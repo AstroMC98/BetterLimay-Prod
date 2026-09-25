@@ -7,6 +7,7 @@ import { createPortalIdentity } from "../../app/portalIdentity";
 import { HotlineBar } from "../home/HotlineBar";
 import { InfoBar } from "../home/InfoBar";
 import { SiteFooter } from "./SiteFooter";
+import { LaunchBanner } from "./LaunchBanner";
 import { LoadingState } from "./LoadingState";
 import { ScrollToHash } from "./ScrollToHash";
 import { SiteHeader } from "./SiteHeader";
@@ -43,6 +44,8 @@ export function RootLayout() {
       </main>
 
       <SiteFooter />
+
+      <LaunchBanner />
     </div>
   );
 }

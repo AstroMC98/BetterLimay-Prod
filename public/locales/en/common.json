@@ -1029,5 +1029,21 @@
         "label": "Sitemap"
       }
     }
+  },
+  "launch": {
+    "title": "Welcome to BetterLimay",
+    "description": "An independent, community-built guide to Limay's services, officials, and public records.",
+    "findTitle": "What you'll find",
+    "findBody": "Government services and their requirements, your officials and barangays, and the town's spending and statistics. Every figure names its source so you can check it.",
+    "buildingTitle": "We're just getting started",
+    "buildingBody": "BetterLimay is new, and we're adding features and data as we go. Check back often: more records, tools, and pages are on the way.",
+    "beta": "Beta",
+    "helpTitle": "Know something we're missing?",
+    "helpBody": "Share a correction or a public document, or lend a hand building the portal. Every contribution makes it more useful for Limay.",
+    "helpLink": "See how to submit data",
+    "dontShow": "Don't show again",
+    "explore": "Explore the site",
+    "contribute": "Contribute here",
+    "close": "Close welcome message"
   }
 }

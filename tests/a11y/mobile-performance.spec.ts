@@ -3,6 +3,10 @@ import { expect, test } from "@playwright/test";
 test.describe("Low-bandwidth mobile safeguards", () => {
   test.beforeEach(async ({ page }) => {
     await page.route("https://api.open-meteo.com/**", (route) => route.abort());
+    // The first-visit welcome dialog has its own spec; keep it off these pages.
+    await page.addInitScript(() =>
+      window.localStorage.setItem("betterlimay.launchBanner.v1", "1"),
+    );
   });
 
   test("keeps the home shell light and optional enhancements non-blocking", async ({

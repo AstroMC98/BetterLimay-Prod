@@ -12,6 +12,10 @@ const auditedRoutes = [
 test.describe("MVP accessibility audits", () => {
   test.beforeEach(async ({ page }) => {
     await page.route("https://api.open-meteo.com/**", (route) => route.abort());
+    // The first-visit welcome dialog has its own spec; keep it off these pages.
+    await page.addInitScript(() =>
+      window.localStorage.setItem("betterlimay.launchBanner.v1", "1"),
+    );
     // The home page embeds Facebook's own feed. Its markup is Facebook's to fix,
     // not ours, and it changes with every post, so it is kept out of the audit:
     // blocked here, and its frame excluded below. Everything we render is audited.
