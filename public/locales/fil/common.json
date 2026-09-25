@@ -436,7 +436,70 @@
     "independenceTitle": "Ano ang hindi ito",
     "independenceBody": "Hindi opisyal na website ng Municipality of Limay ang BetterLimay at hindi ito nagsasalita para sa LGU. Tiyakin ang mahalagang impormasyon sa orihinal na government source.",
     "sourcesTitle": "Paano hinahawakan ang sources",
-    "sourcesBody": "May source, retrieval, at verification metadata ang mga inilathalang fact. Kapag hindi available ang source, ipinapakita ang gap sa halip na punan ito ng palagay."
+    "sourcesBody": "May source, retrieval, at verification metadata ang mga inilathalang fact. Kapag hindi available ang source, ipinapakita ang gap sa halip na punan ito ng palagay.",
+    "trustTitle": "Independente at may source",
+    "hero": {
+      "title": "Sumali sa #CivicTech Revolution",
+      "body": "Kasama ang mga beterano ng industriya, binubuo namin ang <b>BetterLimay</b> — para maging transparent, episyente, at abot-kamay ng bawat Pilipino ang gobyerno.",
+      "discord": "Sumali sa Aming Discord",
+      "learnMore": "Alamin Pa"
+    },
+    "mission": {
+      "title": "Ang Aming Misyon",
+      "subtitle": "Hindi lang kami gumagawa ng websites — binubuo namin ang kinabukasan ng pamamahala sa Pilipinas.",
+      "p1": "Ang BetterGov ay isang <b>tech initiative na pinangungunahan ng volunteers</b> na nakatuon sa paggawa ng mga <chip>#civictech</chip> project para gawing mas transparent, episyente, at abot-kamay ng mamamayan ang gobyerno.",
+      "p2": "Marami kaming nakikitang mahuhusay at kahanga-hangang tech ideas na inilulunsad kamakailan. Layunin naming <b>suportahan, i-promote, pagsamahin, at bigyang-lakas</b> ang mga builder na ito!"
+    },
+    "provide": {
+      "title": "Ano ang Aming Ibinibigay",
+      "subtitle": "Lahat ng kailangan mo para bumuo ng makabuluhang civic tech projects",
+      "footnote": "Ang mga resource ay ibinibigay sa pamamagitan ng BetterGov volunteer network.",
+      "items": {
+        "infra": {
+          "title": "Infrastructure at Tools",
+          "body": "Servers, AI credits, development tools, at iba pa!"
+        },
+        "hackathons": {
+          "title": "Tech Hackathons",
+          "body": "Regular na events para magtulungan at bumuo nang sama-sama"
+        },
+        "data": {
+          "title": "Data at APIs",
+          "body": "Access sa government data at API endpoints"
+        },
+        "team": {
+          "title": "Hanapin ang Iyong Team",
+          "body": "Makipag-ugnayan sa tamang mga tao at resource persons"
+        },
+        "mentorship": {
+          "title": "Industry Mentorship",
+          "body": "Gabay mula sa mga beteranong tech at startup"
+        },
+        "office": {
+          "title": "Office Space",
+          "body": "Pisikal na workspace para sa collaboration at meetings"
+        }
+      }
+    },
+    "manifesto": {
+      "title": "Tapos na kaming maghintay",
+      "quote": "“GALIT KAMI. GALIT KA RIN.”",
+      "line1": "Pero makakapag-ambag tayo sa sarili nating paraan — <b>GAANO MAN ITO KALIIT.</b>",
+      "line2": "Kaya nating gumawa ng <hl>KAHANGA-HANGANG BAGAY</hl> nang sama-sama.",
+      "line3": "GRASSROOTS STYLE. OPEN SOURCE. HINDI KAILANGAN NG PAHINTULOT.",
+      "line4": "Nakatuon kaming maglaan ng <b>ORAS, RESOURCES, AT PERA</b> sa initiative na ito.",
+      "line5": "Patuloy kaming bubuo nang <b>WALANG TIGIL</b> kahit walang pahintulot ninuman. Open source, pampubliko, at <b>DE-KALIDAD</b> na mga site.",
+      "closing": "NAGHAHANAP KAMI NG MGA TAONG MAS MAGALING SA AMIN!"
+    },
+    "cta": {
+      "title": "Handa Ka Na Bang Gumawa ng Pagbabago?",
+      "body": "Sumali sa aming komunidad ng builders, dreamers, at changemakers. Sama-sama nating bubuuin ang teknolohiyang pang-gobyerno na nararapat sa Pilipinas.",
+      "discord": "Sumali sa Aming Discord Community",
+      "ideas": "Tuklasin ang Project Ideas",
+      "or": "o",
+      "footer": "<src>Open source</src> • Community-driven • Binuo nang may ❤️ para sa Pilipinas"
+    },
+    "newTab": "(bubukas sa bagong tab)"
   },
   "legal": {
     "portal": {

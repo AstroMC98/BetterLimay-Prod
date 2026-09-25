@@ -4886,3 +4886,388 @@
 .submit-guide__grid h3 {
   font-weight: 700;
 }
+
+/* ==========================================================================
+   About page (BetterGov chapter layout, after bettermeycauayan.org/about)
+   The hero, manifesto and CTA bands stay dark in both themes, like the footer,
+   so they use fixed brand hexes rather than --bl-* (which lighten in dark mode).
+   Full bleed comes from a border-image outset: it paints edge to edge without
+   widening the page, so there is no horizontal scroll from a 100vw scrollbar.
+   ========================================================================== */
+.about-page {
+  --about-navy: #14285e;
+  --about-blue: #1447b5;
+  --about-ink: #0b1633;
+  --about-gold: #fcd116;
+  --about-red: #7a1020;
+
+  display: grid;
+  gap: var(--better-space-16);
+  /* Sit flush under the header and on the footer; .portal-main pads 3rem at every width. */
+  margin: calc(-1 * var(--better-space-12)) 0;
+}
+
+.portal-shell:has(.about-page) .site-footer {
+  margin-top: 0;
+}
+
+.about-page h1,
+.about-page h2,
+.about-page h3 {
+  font-family: var(--better-font-display);
+}
+
+/* --- Shared pieces --- */
+.about-band {
+  display: grid;
+  justify-items: center;
+  gap: var(--better-space-5);
+  padding: var(--better-space-16) 0;
+  color: #fff;
+  text-align: center;
+}
+
+.about-band h1,
+.about-band h2 {
+  max-width: 24ch;
+  margin: 0;
+  color: #fff;
+  font-weight: 800;
+  line-height: 1.15;
+}
+
+.about-band p {
+  max-width: 42rem;
+  margin: 0;
+}
+
+.about-badge {
+  display: inline-grid;
+  width: 3.5rem;
+  height: 3.5rem;
+  place-items: center;
+  border-radius: 999px;
+  background: var(--better-surface-tint);
+  color: var(--better-brand-primary);
+}
+
+.about-badge--glass {
+  background: rgb(255 255 255 / 16%);
+  color: #fff;
+}
+
+.about-badge--gold {
+  background: var(--about-gold);
+  color: var(--about-ink);
+}
+
+.about-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--better-space-3);
+  align-items: center;
+  justify-content: center;
+}
+
+.about-actions__or {
+  font-size: 0.875rem;
+  opacity: 0.85;
+}
+
+.about-btn {
+  display: inline-flex;
+  min-height: var(--better-target);
+  gap: 0.45rem;
+  align-items: center;
+  padding: var(--better-space-3) var(--better-space-5);
+  border: 2px solid #fff;
+  border-radius: var(--bl-radius-sm);
+  font-weight: 700;
+  text-decoration: none;
+  transition:
+    background var(--bl-transition),
+    color var(--bl-transition);
+}
+
+.about-btn--light {
+  background: #fff;
+  color: var(--about-navy);
+}
+
+.about-btn--light:hover {
+  background: #e7eefc;
+}
+
+.about-btn--outline {
+  background: transparent;
+  color: #fff;
+}
+
+.about-btn--outline:hover {
+  background: rgb(255 255 255 / 14%);
+}
+
+/* The global navy focus halo disappears on a navy band; gold alone carries it here. */
+.about-band a:focus-visible {
+  outline-color: var(--about-gold);
+  box-shadow: none;
+}
+
+/* --- Hero --- */
+.about-hero {
+  border-image: linear-gradient(115deg, var(--about-navy), var(--about-blue)) fill 0 / 0 /
+    0 100vmax;
+}
+
+.about-hero__eyebrow {
+  color: #ffd27a;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.about-hero h1 {
+  font-size: var(--text-h1-size);
+}
+
+.about-hero__body {
+  color: #e7eefc;
+  font-size: clamp(1rem, 2.4vw, 1.125rem);
+}
+
+.about-hero__body strong {
+  color: #fff;
+}
+
+/* --- Light sections --- */
+.about-section {
+  display: grid;
+  gap: var(--better-space-8);
+  justify-items: center;
+}
+
+.about-section__head {
+  display: grid;
+  gap: var(--better-space-3);
+  justify-items: center;
+  max-width: 40rem;
+  text-align: center;
+}
+
+.about-section__head h2 {
+  margin: 0;
+  color: var(--better-brand-deep);
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 800;
+}
+
+.about-section__head p {
+  margin: 0;
+  color: var(--better-text-muted);
+}
+
+.about-section[id] {
+  scroll-margin-top: var(--better-space-8);
+}
+
+.about-callout {
+  max-width: 46rem;
+  padding: var(--better-space-6) var(--better-space-8);
+  border: 1px solid var(--better-border);
+  border-radius: 1rem;
+  background: linear-gradient(
+    135deg,
+    var(--better-surface-raised),
+    var(--better-surface-tint)
+  );
+  color: var(--better-text-muted);
+  line-height: 1.7;
+}
+
+.about-callout p {
+  margin: 0;
+}
+
+.about-callout p + p {
+  margin-top: var(--better-space-4);
+}
+
+.about-callout strong {
+  color: var(--better-text-strong);
+}
+
+.about-chip {
+  display: inline-block;
+  padding: 0.05rem 0.6rem;
+  border-radius: 999px;
+  background: var(--better-brand-primary);
+  color: var(--better-on-brand);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+.about-card {
+  display: grid;
+  align-content: start;
+  gap: var(--better-space-2);
+  padding: var(--better-space-6);
+  border: 1px solid var(--better-border);
+  border-radius: 0.75rem;
+  background: var(--better-surface-raised);
+}
+
+.about-card h3 {
+  margin: 0;
+  color: var(--better-text-strong);
+  font-size: 1.0625rem;
+  font-weight: 700;
+}
+
+.about-card p {
+  margin: 0;
+  color: var(--better-text-muted);
+  font-size: 0.9375rem;
+}
+
+.about-card .text-link {
+  display: inline-flex;
+  gap: 0.3rem;
+  align-items: center;
+  justify-self: start;
+  margin-top: var(--better-space-2);
+}
+
+.about-card__icon {
+  display: inline-grid;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-bottom: var(--better-space-2);
+  place-items: center;
+  border-radius: 0.5rem;
+  background: var(--better-surface-tint);
+  color: var(--better-brand-primary);
+}
+
+.about-trust {
+  display: grid;
+  width: 100%;
+  max-width: 56rem;
+  gap: var(--better-space-4);
+}
+
+.about-trust .about-card {
+  border-top: 0.25rem solid var(--better-brand-primary);
+}
+
+.about-provide__grid {
+  display: grid;
+  width: 100%;
+  gap: var(--better-space-4);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.about-provide__note {
+  margin: 0;
+  color: var(--better-text-subtle);
+  font-size: 0.875rem;
+}
+
+@media (min-width: 40rem) {
+  .about-trust,
+  .about-provide__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 64rem) {
+  .about-provide__grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+/* --- Manifesto --- */
+.about-manifesto {
+  border-image: linear-gradient(
+      110deg,
+      var(--about-red),
+      var(--about-ink) 55%,
+      var(--about-navy)
+    )
+    fill 0 / 0 / 0 100vmax;
+}
+
+.about-manifesto h2 {
+  color: var(--about-gold);
+  font-size: clamp(1.75rem, 5vw, 2.75rem);
+  text-transform: uppercase;
+}
+
+.about-manifesto__panel {
+  display: grid;
+  width: 100%;
+  max-width: 44rem;
+  gap: var(--better-space-4);
+  padding: var(--better-space-8) var(--better-space-6);
+  border: 1px solid rgb(255 255 255 / 18%);
+  border-radius: 1rem;
+  background: rgb(255 255 255 / 8%);
+  font-weight: 600;
+}
+
+.about-manifesto__panel p {
+  max-width: none;
+}
+
+.about-manifesto__quote {
+  font-family: var(--better-font-display);
+  font-size: clamp(1.375rem, 4vw, 2rem);
+  font-weight: 800;
+}
+
+.about-manifesto mark {
+  background: none;
+  color: var(--about-gold);
+  font-size: 1.15em;
+  font-weight: 800;
+}
+
+.about-manifesto__closing {
+  padding-top: var(--better-space-5);
+  border-top: 1px solid rgb(255 255 255 / 30%);
+  font-family: var(--better-font-display);
+  font-weight: 800;
+}
+
+/* --- Closing CTA --- */
+/* The manifesto and CTA bands meet with no canvas strip between them. */
+.about-manifesto + .about-cta {
+  margin-top: calc(-1 * var(--better-space-16));
+}
+
+.about-cta {
+  border-image: linear-gradient(115deg, var(--about-blue), var(--about-navy)) fill 0 / 0 /
+    0 100vmax;
+}
+
+.about-cta h2 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+}
+
+.about-cta > p:not(.about-cta__footer) {
+  color: #e7eefc;
+}
+
+.about-cta__footer {
+  padding-top: var(--better-space-5);
+  border-top: 1px solid rgb(255 255 255 / 25%);
+  color: #c9d6f2;
+  font-size: 0.875rem;
+}
+
+.about-cta__footer a {
+  color: #fff;
+}

@@ -5,7 +5,9 @@ import announcements from "../data/announcements.json";
 import type { AnnouncementRecord } from "../data/types";
 import { describe, expect, it, vi } from "vitest";
 
+import config from "../../config/lgu.config.json";
 import {
+  AboutPage,
   AccessibilityPage,
   ContributePage,
   FaqPage,
@@ -21,6 +23,7 @@ vi.mock("react-i18next", () => ({
     t: (key: string, values?: Record<string, string | number>) =>
       values ? `${key}:${JSON.stringify(values)}` : key,
   }),
+  Trans: ({ i18nKey }: { i18nKey: string }) => i18nKey,
 }));
 
 function renderPage(element: React.ReactElement): string {
@@ -28,6 +31,20 @@ function renderPage(element: React.ReactElement): string {
 }
 
 describe("support and trust pages", () => {
+  it("renders the About page as a chapter page that keeps the independence notes", () => {
+    const markup = renderPage(<AboutPage />);
+
+    expect(markup).toContain('data-testid="about-page"');
+    expect(markup).toContain("about.hero.title");
+    expect(markup).toContain('id="mission"');
+    expect(markup).toContain(`href="${config.portal.socials.communityDiscord}"`);
+    expect(markup).toContain("about.independenceBody");
+    expect(markup).toContain("about.sourcesBody");
+    expect(markup.match(/about\.provide\.items\.\w+\.title/g) ?? []).toHaveLength(6);
+    expect(markup).toContain("about.manifesto.closing");
+    expect(markup).toContain('href="/contribute"');
+  });
+
   it("lists posts and tags BetterLimay updates so they are not read as LGU news", () => {
     const markup = renderPage(<NewsPage />);
     const posts = announcements as AnnouncementRecord[];
