@@ -93,4 +93,7 @@ export function createWeatherHandler(options: WeatherHandlerOptions = {}) {
   };
 }
 
-export default createWeatherHandler();
+// Exported under the HTTP method, not as a default export: Vercel only calls a
+// method-named export with a Fetch API Request (absolute URL). A default-exported
+// function is called Node-style with a relative URL, and `new URL()` throws.
+export const GET = createWeatherHandler();
