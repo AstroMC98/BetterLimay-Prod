@@ -904,5 +904,130 @@
   },
   "header": {
     "placeLine": "Community Portal for the {{lgu}}"
+  },
+  "nav": {
+    "groups": {
+      "services": "Services",
+      "government": "Government",
+      "data": "Transparency and data",
+      "about": "About",
+      "news": "News"
+    },
+    "servicesFootnote": "Can't find the service you need?",
+    "actions": {
+      "report": "Report an issue",
+      "submitData": "Submit data"
+    },
+    "items": {
+      "home": {
+        "label": "Home",
+        "desc": "Start page"
+      },
+      "news": {
+        "label": "News",
+        "desc": "Announcements and updates"
+      },
+      "allServices": {
+        "label": "All services",
+        "desc": "Every service with its requirements and fees"
+      },
+      "civilRegistry": {
+        "label": "Civil registry",
+        "desc": "Birth, marriage and death certificates"
+      },
+      "businessPermits": {
+        "label": "Business permits",
+        "desc": "New and renewed business permits"
+      },
+      "realProperty": {
+        "label": "Real property tax",
+        "desc": "Assessment and payment of property tax"
+      },
+      "health": {
+        "label": "Health",
+        "desc": "Rural health unit and health programmes"
+      },
+      "socialWelfare": {
+        "label": "Social welfare",
+        "desc": "Assistance, IDs and social programmes"
+      },
+      "governmentOverview": {
+        "label": "Government overview",
+        "desc": "How the Municipality is organised"
+      },
+      "electedOfficials": {
+        "label": "Elected officials",
+        "desc": "Mayor, Vice Mayor and Sangguniang Bayan"
+      },
+      "offices": {
+        "label": "Offices and contacts",
+        "desc": "Municipal offices with phone and e-mail"
+      },
+      "barangays": {
+        "label": "Barangays",
+        "desc": "The 12 barangays and their officials"
+      },
+      "legislation": {
+        "label": "Legislation",
+        "desc": "Ordinances and resolutions"
+      },
+      "electionResults": {
+        "label": "2025 election results"
+      },
+      "contactMunicipality": {
+        "label": "Contact the Municipality"
+      },
+      "transparency": {
+        "label": "Transparency records",
+        "desc": "Budgets, spending and public documents"
+      },
+      "auditedFinances": {
+        "label": "Audited finances",
+        "desc": "Income and spending checked by COA"
+      },
+      "procurement": {
+        "label": "Procurement",
+        "desc": "Contracts the Municipality has awarded"
+      },
+      "infrastructure": {
+        "label": "Infrastructure",
+        "desc": "Public works projects and their status"
+      },
+      "statistics": {
+        "label": "Statistics",
+        "desc": "Population, economy and competitiveness"
+      },
+      "floodMap": {
+        "label": "Flood hazard map",
+        "desc": "UP NOAH flood hazard zones"
+      },
+      "about": {
+        "label": "About BetterLimay",
+        "desc": "Who runs this portal and why"
+      },
+      "submitData": {
+        "label": "Submit Limay data",
+        "desc": "Share a public record for review"
+      },
+      "report": {
+        "label": "Report an issue",
+        "desc": "Tell us about a problem or a correction"
+      },
+      "privacy": {
+        "label": "Privacy"
+      },
+      "terms": {
+        "label": "Terms of use"
+      },
+      "accessibility": {
+        "label": "Accessibility"
+      },
+      "faq": {
+        "label": "FAQ"
+      },
+      "sitemap": {
+        "label": "Sitemap"
+      }
+    }
   }
 }
