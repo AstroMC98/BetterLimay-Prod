@@ -65,8 +65,26 @@ test.describe("MVP critical flows", () => {
 
     await expect(page.locator("html")).toHaveAttribute("lang", "fil");
     await expect(
-      page.locator(".primary-navigation__link").filter({ hasText: "Mga serbisyo" }),
+      page.locator(".nav-trigger").filter({ hasText: "Mga serbisyo" }),
     ).toHaveCount(1);
+  });
+
+  test("opens a navigation panel and follows one of its links", async ({ page }) => {
+    await page.setViewportSize({ width: 1366, height: 900 });
+    await openHome(page);
+
+    const government = page.locator(".nav-trigger").filter({ hasText: "Government" });
+    await government.click();
+    await expect(government).toHaveAttribute("aria-expanded", "true");
+
+    await page
+      .locator(".nav-panel")
+      .getByRole("link", { name: /Barangays/ })
+      .click();
+    await expect(page).toHaveURL(/\/barangays$/);
+    // The panel closes, and the trigger now marks the section you are in.
+    await expect(government).toHaveAttribute("aria-expanded", "false");
+    await expect(government).toHaveAttribute("data-current", "true");
   });
 
   test("opens and closes the responsive navigation menu", async ({ page }) => {
@@ -80,12 +98,16 @@ test.describe("MVP critical flows", () => {
     await menuButton.focus();
     await page.keyboard.press("Enter");
     await expect(menuButton).toHaveAttribute("aria-expanded", "true");
+    const menu = page.getByTestId("mobile-menu");
+    await expect(menu.locator(".nav-item").first()).toBeVisible();
     await expect(
-      page.locator("#primary-navigation-links .primary-navigation__link").first(),
+      menu.getByRole("link", { name: "Report an issue" }).last(),
     ).toBeVisible();
 
     await page.keyboard.press("Escape");
     await expect(menuButton).toHaveAttribute("aria-expanded", "false");
+    await expect(menu).toHaveCount(0);
+    await expect(menuButton).toBeFocused();
   });
 
   test("shows where a service comes from on its detail page", async ({ page }) => {

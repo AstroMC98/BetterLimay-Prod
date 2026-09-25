@@ -1,6 +1,9 @@
 @import "tailwindcss";
 @source "../../node_modules/@bettergov/kapwa";
 @import "@bettergov/kapwa/kapwa.css";
+/* animate-in / zoom-in / slide-in utilities used by the shadcn primitives in
+   src/components/ui. */
+@import "tw-animate-css";
 
 /* Self-hosted brand fonts. CSP is `font-src 'self'` and QUALITY_BUDGETS.md forbids
    external web-font requests, so these must be bundled, never fetched from Google. */
@@ -207,6 +210,23 @@
   --color-surface-success: var(--better-status-success-bg);
   --color-surface-warning: var(--better-status-warning-bg);
   --color-surface-danger: var(--better-status-danger-bg);
+
+  /* shadcn's colour names, for the primitives in src/components/ui and any
+     component added later with `npx shadcn add`. Each points at one of ours, so
+     light and dark follow automatically. Text on primary uses on-brand, not
+     white: the brand blue lightens in dark mode. */
+  --color-background: var(--better-surface-canvas);
+  --color-foreground: var(--better-text-strong);
+  --color-popover: var(--better-surface-raised);
+  --color-popover-foreground: var(--better-text-strong);
+  --color-accent: var(--better-surface-tint);
+  --color-accent-foreground: var(--better-text-strong);
+  --color-muted-foreground: var(--better-text-muted);
+  --color-border: var(--better-border);
+  --color-input: var(--better-border-strong);
+  --color-ring: var(--better-focus);
+  --color-primary: var(--better-brand-primary);
+  --color-primary-foreground: var(--better-on-brand);
 
   --font-display: var(--better-font-display);
   --font-body: var(--better-font-body);
@@ -721,44 +741,6 @@
     align-items: center;
   }
 
-  .primary-navigation {
-    position: relative;
-  }
-
-  .primary-navigation__toggle {
-    display: none;
-    min-height: var(--better-target);
-    padding: var(--better-space-2) var(--better-space-3);
-    border: 1px solid var(--better-border);
-    background: var(--better-surface-raised);
-    color: var(--better-text-strong);
-    cursor: pointer;
-    font: inherit;
-    font-weight: 700;
-  }
-
-  .primary-navigation__links {
-    display: flex;
-    gap: var(--better-space-4);
-    align-items: center;
-  }
-
-  .primary-navigation__link {
-    padding: var(--better-space-2) 0;
-    color: var(--better-text-muted);
-    font-size: 0.9375rem;
-    text-decoration: none;
-  }
-
-  .primary-navigation__link:hover,
-  .primary-navigation__link--active {
-    color: var(--better-brand-primary);
-  }
-
-  .primary-navigation__link--active {
-    font-weight: 700;
-  }
-
   .hotline-bar {
     position: sticky;
     z-index: 20;
@@ -1131,65 +1113,6 @@
       width: min(100% - 2rem, var(--bl-container));
       flex-wrap: wrap;
       padding: var(--better-space-2) 0;
-    }
-
-    .primary-navigation__toggle {
-      display: inline-flex;
-    }
-
-    /* The panel used to anchor to the nav element's own right edge, which left it a
-     208px box floating in the middle of a 390px screen. Anchoring to the header
-     instead makes it a full-width sheet. */
-    /* Sits above the scrim so the brand row and the toggle stay legible while the
-     menu is open; only the page content behind is dimmed. */
-    .portal-header {
-      position: relative;
-      z-index: 26;
-    }
-
-    .primary-navigation {
-      position: static;
-    }
-
-    .primary-navigation__links {
-      position: absolute;
-      z-index: 30;
-      top: 100%;
-      right: 0;
-      left: 0;
-      display: none;
-      /* It was 627px tall with overflow visible, so the last items were unreachable
-       on a short phone. */
-      max-height: min(70vh, 30rem);
-      flex-direction: column;
-      align-items: stretch;
-      padding: var(--better-space-2);
-      overflow-y: auto;
-      border-top: 1px solid var(--better-border);
-      background: var(--better-surface-raised);
-      box-shadow: var(--bl-shadow-high);
-    }
-
-    .primary-navigation--open .primary-navigation__links {
-      display: flex;
-    }
-
-    /* Scrim: the page used to read straight through around the open menu.
-     It hangs off the shell, not off the nav - as a descendant of the header it
-     sat inside the header's stacking context and dimmed the brand row too. */
-    .portal-shell:has(.primary-navigation--open)::before {
-      content: "";
-      position: fixed;
-      z-index: 25;
-      inset: 0;
-      background: rgb(16 26 51 / 45%);
-    }
-
-    .primary-navigation__link {
-      min-height: var(--better-target);
-      align-items: center;
-      padding: var(--better-space-3);
-      display: flex;
     }
   }
 
@@ -2576,57 +2499,292 @@
     line-height: 1.1;
   }
 
-  @media (min-width: 64.0625rem) {
-    .primary-navigation__links {
-      gap: 0;
-      flex-wrap: wrap;
-    }
+  /* --------------------------------------------------------------------------
+   Dropdown navigation (adapted from shadcn's header-3).
+   Desktop: Radix NavigationMenu triggers on the navy bar, each opening a panel
+   of icon + title + description links. Phones (up to 64rem): the bar is a single
+   menu button that opens a full-screen list below it.
+   -------------------------------------------------------------------------- */
 
-    .primary-navigation__link {
-      display: inline-flex;
-      min-height: var(--better-target);
-      align-items: center;
-      padding: 0 var(--better-space-3);
-      border-bottom: 0.1875rem solid transparent;
-      color: color-mix(in srgb, var(--better-nav-fg) 82%, transparent);
-      font-size: 0.9375rem;
-      transition:
-        background var(--bl-transition),
-        border-color var(--bl-transition),
-        color var(--bl-transition);
-    }
+  /* Report / Submit data sit in the brand row on desktop and move into the phone
+     menu below 64rem, where the row only has room for theme and language. */
+  .portal-header__cta {
+    display: flex;
+    gap: var(--better-space-2);
+    align-items: center;
+  }
 
-    .primary-navigation__link:hover {
-      background: color-mix(in srgb, var(--better-nav-fg) 12%, transparent);
-      color: var(--better-nav-fg);
-    }
+  .nav-trigger {
+    position: relative;
+    min-height: var(--better-target);
+    gap: 0.125rem;
+    padding: 0 var(--better-space-3);
+    border: 0;
+    border-bottom: 0.1875rem solid transparent;
+    border-radius: 0;
+    background: transparent;
+    color: color-mix(in srgb, var(--better-nav-fg) 82%, transparent);
+    cursor: pointer;
+    font: inherit;
+    font-size: 0.9375rem;
+    text-decoration: none;
+    transition:
+      background var(--bl-transition),
+      border-color var(--bl-transition),
+      color var(--bl-transition);
+  }
 
-    /* Active state carries a gold rule as well as a colour change, so it is not
-     signalled by colour alone (WCAG 1.4.1). */
-    .primary-navigation__link--active {
-      border-bottom-color: var(--better-focus);
-      background: color-mix(in srgb, var(--better-nav-fg) 10%, transparent);
-      color: var(--better-nav-fg);
+  .nav-trigger:hover,
+  .nav-trigger[data-state="open"] {
+    background: color-mix(in srgb, var(--better-nav-fg) 12%, transparent);
+    color: var(--better-nav-fg);
+  }
+
+  /* The section you are in carries a gold rule as well as a colour change, so it
+     is not signalled by colour alone (WCAG 1.4.1). */
+  .nav-trigger[data-current] {
+    border-bottom-color: var(--better-focus);
+    background: color-mix(in srgb, var(--better-nav-fg) 10%, transparent);
+    color: var(--better-nav-fg);
+    font-weight: 700;
+  }
+
+  /* The halo is navy, which vanishes on the navy bar; use a light one there. */
+  .nav-trigger:focus-visible {
+    box-shadow: 0 0 0 0.3125rem color-mix(in srgb, var(--better-nav-fg) 35%, transparent);
+  }
+
+  .nav-trigger--link {
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .nav-panel {
+    padding: var(--better-space-3);
+  }
+
+  .nav-panel__grid {
+    display: grid;
+    gap: var(--better-space-3);
+  }
+
+  .nav-panel__grid--with-more {
+    grid-template-columns: auto 13rem;
+  }
+
+  .nav-panel__main,
+  .nav-panel__more {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .nav-panel__main {
+    display: grid;
+    width: 36rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--better-space-1);
+  }
+
+  .nav-panel__more {
+    display: grid;
+    align-content: start;
+    gap: var(--better-space-1);
+    padding-left: var(--better-space-3);
+    border-left: 1px solid var(--better-border);
+  }
+
+  .nav-item {
+    display: flex;
+    gap: var(--better-space-3);
+    align-items: flex-start;
+    padding: var(--better-space-2) var(--better-space-3);
+    border-radius: var(--bl-radius-sm);
+    color: var(--better-text-strong);
+    text-decoration: none;
+    transition: background var(--bl-transition);
+  }
+
+  .nav-item:hover,
+  .nav-item[data-active] {
+    background: var(--better-surface-tint);
+  }
+
+  .nav-item__icon {
+    display: inline-grid;
+    flex: none;
+    width: 2.25rem;
+    height: 2.25rem;
+    place-items: center;
+    border: 1px solid var(--better-border);
+    border-radius: var(--bl-radius-sm);
+    background: var(--better-surface-canvas);
+    color: var(--better-brand-primary);
+  }
+
+  .nav-item__icon svg {
+    width: 1.125rem;
+    height: 1.125rem;
+  }
+
+  .nav-item__text {
+    display: grid;
+    gap: 0.125rem;
+    min-width: 0;
+  }
+
+  .nav-item__title {
+    font-weight: 700;
+    line-height: 1.3;
+  }
+
+  .nav-item__desc {
+    color: var(--better-text-muted);
+    font-size: 0.8125rem;
+    line-height: 1.4;
+  }
+
+  .nav-more-link {
+    display: flex;
+    gap: var(--better-space-2);
+    align-items: center;
+    min-height: 2.5rem;
+    padding: 0 var(--better-space-2);
+    border-radius: var(--bl-radius-sm);
+    color: var(--better-text-strong);
+    font-size: 0.875rem;
+    text-decoration: none;
+  }
+
+  .nav-more-link:hover {
+    background: var(--better-surface-tint);
+  }
+
+  .nav-more-link svg {
+    width: 1rem;
+    height: 1rem;
+    flex: none;
+    color: var(--better-text-muted);
+  }
+
+  .nav-panel__footnote {
+    margin: var(--better-space-3) 0 0;
+    padding: var(--better-space-3) var(--better-space-3) 0;
+    border-top: 1px solid var(--better-border);
+    color: var(--better-text-muted);
+    font-size: 0.875rem;
+  }
+
+  .nav-panel__footnote a {
+    color: var(--better-brand-primary);
+    font-weight: 700;
+  }
+
+  .nav-mobile-toggle {
+    display: none;
+    width: 100%;
+    min-height: var(--better-target);
+    gap: var(--better-space-2);
+    align-items: center;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: var(--better-nav-fg);
+    cursor: pointer;
+    font: inherit;
+    font-weight: 700;
+  }
+
+  .nav-mobile-toggle:focus-visible {
+    box-shadow: 0 0 0 0.3125rem color-mix(in srgb, var(--better-nav-fg) 35%, transparent);
+  }
+
+  /* Full screen below the navy bar; `top` is measured in SiteHeader. */
+  .mobile-menu {
+    position: fixed;
+    z-index: 40;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    border-top: 1px solid var(--better-border);
+    background: var(--better-surface-raised);
+    animation: mobile-menu-in 160ms ease-out;
+  }
+
+  @keyframes mobile-menu-in {
+    from {
+      opacity: 0;
+      transform: translateY(-0.5rem);
     }
   }
 
-  /* On mobile the nav bar collapses to just the toggle. */
+  .mobile-menu__panel {
+    display: grid;
+    gap: var(--better-space-5);
+    width: min(100% - 2rem, 40rem);
+    margin: 0 auto;
+    padding: var(--better-space-4) 0 var(--better-space-6);
+  }
+
+  .mobile-menu__list {
+    display: grid;
+    gap: var(--better-space-1);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .mobile-menu__list--compact {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .mobile-menu__list .nav-item {
+    min-height: var(--better-target);
+    align-items: center;
+  }
+
+  .mobile-menu__group h2 {
+    margin: 0 0 var(--better-space-2);
+    padding: 0 var(--better-space-3);
+    color: var(--better-text-muted);
+    font-size: 0.8125rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  .mobile-menu__actions {
+    display: grid;
+    gap: var(--better-space-2);
+    padding-top: var(--better-space-4);
+    border-top: 1px solid var(--better-border);
+  }
+
   @media (max-width: 64rem) {
     .portal-nav__inner {
       display: flex;
-      justify-content: flex-start;
     }
 
-    .primary-navigation {
-      width: 100%;
+    .portal-header__cta {
+      display: none;
     }
 
-    .primary-navigation__toggle {
-      width: 100%;
-      justify-content: space-between;
-      border: 0;
-      background: transparent;
-      color: var(--better-nav-fg);
+    .nav-mobile-toggle {
+      display: inline-flex;
+    }
+  }
+
+  /* Leaflet gives its panes z-index 400 without a stacking context of their own,
+     so a map would paint over an open menu panel. Keep them inside the map. */
+  .leaflet-container {
+    isolation: isolate;
+  }
+
+  @media print {
+    .mobile-menu {
+      display: none !important;
     }
   }
 
