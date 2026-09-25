@@ -62,7 +62,8 @@
             "officialWebsite": { "type": "string", "format": "uri" },
             "officialFacebook": { "type": "string", "format": "uri" },
             "sourceCode": { "type": "string", "format": "uri" },
-            "betterGovDirectory": { "type": "string", "format": "uri" }
+            "betterGovDirectory": { "type": "string", "format": "uri" },
+            "communityDiscord": { "type": "string", "format": "uri" }
           }
         },
         "contactEmail": {

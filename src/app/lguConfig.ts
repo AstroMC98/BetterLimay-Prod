@@ -24,6 +24,8 @@ export interface LguConfig {
       officialFacebook: string;
       sourceCode: string;
       betterGovDirectory: string;
+      /** Optional volunteer chat invite. The About page hides its Discord buttons without it. */
+      communityDiscord?: string;
     };
     contactEmail: string | null;
     brandColor: string;

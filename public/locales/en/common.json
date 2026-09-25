@@ -436,7 +436,70 @@
     "independenceTitle": "What it is not",
     "independenceBody": "BetterLimay is not the official website of the Municipality of Limay and does not speak for the LGU. Verify important information with the original government source.",
     "sourcesTitle": "How sources are handled",
-    "sourcesBody": "Published facts carry source, retrieval, and verification metadata. When a source is unavailable, the portal shows the gap instead of filling it with an assumption."
+    "sourcesBody": "Published facts carry source, retrieval, and verification metadata. When a source is unavailable, the portal shows the gap instead of filling it with an assumption.",
+    "trustTitle": "Independent and sourced",
+    "hero": {
+      "title": "Join the #CivicTech Revolution",
+      "body": "Together with industry veterans, we're building <b>BetterLimay</b> — making government transparent, efficient, and accessible to every Filipino.",
+      "discord": "Join Our Discord",
+      "learnMore": "Learn More"
+    },
+    "mission": {
+      "title": "Our Mission",
+      "subtitle": "We're not just building websites — we're building the future of governance in the Philippines.",
+      "p1": "BetterGov is a <b>volunteer-led tech initiative</b> committed to creating <chip>#civictech</chip> projects aimed at making government more transparent, efficient, and accessible to citizens.",
+      "p2": "We've seen a surge of wonderful and impressive tech ideas being launched recently. Our goal is to <b>support, promote, consolidate, and empower</b> these builders!"
+    },
+    "provide": {
+      "title": "What We Provide",
+      "subtitle": "Everything you need to build impactful civic tech projects",
+      "footnote": "Resources are provided through the BetterGov volunteer network.",
+      "items": {
+        "infra": {
+          "title": "Infrastructure & Tools",
+          "body": "Servers, AI credits, development tools, and more!"
+        },
+        "hackathons": {
+          "title": "Tech Hackathons",
+          "body": "Regular events to collaborate and build together"
+        },
+        "data": {
+          "title": "Data & APIs",
+          "body": "Access to government data and API endpoints"
+        },
+        "team": {
+          "title": "Find Your Team",
+          "body": "Connect with the right people and resource persons"
+        },
+        "mentorship": {
+          "title": "Industry Mentorship",
+          "body": "Guidance from seasoned tech and startup veterans"
+        },
+        "office": {
+          "title": "Office Space",
+          "body": "Physical workspace for collaboration and meetings"
+        }
+      }
+    },
+    "manifesto": {
+      "title": "We're done waiting",
+      "quote": "“WE'RE ANGRY. YOU'RE ANGRY.”",
+      "line1": "But we can contribute in our own ways — <b>NO MATTER HOW LITTLE IT IS.</b>",
+      "line2": "We can do <hl>AMAZING THINGS</hl> together.",
+      "line3": "GRASSROOTS STYLE. OPEN SOURCE. NO PERMISSION NEEDED.",
+      "line4": "We are committed to putting <b>TIME, RESOURCES, AND MONEY</b> into this initiative.",
+      "line5": "We will keep building <b>RELENTLESSLY</b> without anyone's permission. Open source, public, <b>HIGH QUALITY</b> sites.",
+      "closing": "WE'RE LOOKING FOR PEOPLE SMARTER THAN US!"
+    },
+    "cta": {
+      "title": "Ready to Make a Difference?",
+      "body": "Join our community of builders, dreamers, and changemakers. Together, we'll create the government technology the Philippines deserves.",
+      "discord": "Join Our Discord Community",
+      "ideas": "Explore Project Ideas",
+      "or": "or",
+      "footer": "<src>Open source</src> • Community-driven • Built with ❤️ for the Philippines"
+    },
+    "newTab": "(opens in a new tab)"
   },
   "legal": {
     "portal": {

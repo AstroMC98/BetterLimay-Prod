@@ -139,3 +139,83 @@ export function IconGitHub() {
     </svg>
   );
 }
+
+/* About page set: same 24px line style as the icons above. */
+
+export function IconTarget() {
+  return (
+    <svg {...base}>
+      <circle cx="12" cy="12" r="9" />
+      <circle cx="12" cy="12" r="5" />
+      <circle cx="12" cy="12" r="1" />
+    </svg>
+  );
+}
+
+export function IconServer() {
+  return (
+    <svg {...base}>
+      <rect x="3" y="4" width="18" height="7" rx="1.5" />
+      <rect x="3" y="13" width="18" height="7" rx="1.5" />
+      <path d="M7 7.5h.01M7 16.5h.01" />
+    </svg>
+  );
+}
+
+export function IconGlobe() {
+  return (
+    <svg {...base}>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18" />
+    </svg>
+  );
+}
+
+export function IconHeart() {
+  return (
+    <svg {...base}>
+      <path d="M12 20s-7.5-4.6-7.5-10A4.5 4.5 0 0 1 12 7a4.5 4.5 0 0 1 7.5 3c0 5.4-7.5 10-7.5 10Z" />
+    </svg>
+  );
+}
+
+export function IconStar() {
+  return (
+    <svg {...base}>
+      <path d="m12 3 2.8 5.7 6.2.9-4.5 4.4 1.1 6.2L12 17.3 6.4 20.2l1.1-6.2L3 9.6l6.2-.9Z" />
+    </svg>
+  );
+}
+
+export function IconOffice() {
+  return (
+    <svg {...base}>
+      <rect x="5" y="3" width="14" height="18" rx="1.5" />
+      <path d="M9 7h.01M15 7h.01M9 11h.01M15 11h.01M10 21v-4h4v4" />
+    </svg>
+  );
+}
+
+export function IconBolt() {
+  return (
+    <svg {...base}>
+      <path d="M13 2 4 14h7l-1 8 9-12h-7Z" />
+    </svg>
+  );
+}
+
+export function IconChat() {
+  return (
+    <svg {...base} width={18} height={18}>
+      <path d="M21 12a8 8 0 0 1-11.8 7L4 20.5l1.5-4.7A8 8 0 1 1 21 12Z" />
+    </svg>
+  );
+}
+
+export function IconLightbulb() {
+  return (
+    <svg {...base} width={18} height={18}>
+      <path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2.1h5c0-.9.4-1.6 1-2.1A6 6 0 0 0 12 3Z" />
+    </svg>
+  );
+}

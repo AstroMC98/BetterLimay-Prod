@@ -4,6 +4,14 @@ import { Link, useLocation } from "react-router-dom";
 
 import { loadLguConfig } from "../app/lguConfig";
 import { createPortalIdentity } from "../app/portalIdentity";
+import {
+  AboutCta,
+  AboutHero,
+  AboutManifesto,
+  AboutMission,
+  AboutProvide,
+  AboutTrust,
+} from "../components/about/AboutSections";
 import announcementsJson from "../data/announcements.json";
 import type { AnnouncementRecord } from "../data/types";
 import { TurnstileWidget } from "../components/report/TurnstileWidget";
@@ -66,32 +74,22 @@ function ExternalSourceLink({ href, children }: { href: string; children: ReactN
 export function AboutPage() {
   const { t } = useTranslation("common");
 
+  // Not SupportPageShell: its narrow document column cannot hold the full-bleed bands.
   return (
-    <SupportPageShell
-      eyebrow={t("pages.independentEyebrow")}
-      title={t("pages.about.title")}
-      description={t("pages.about.description")}
-      path="/about"
-      testId="about-page"
-    >
-      <div className="support-page__document">
-        <section>
-          <h2>{t("about.missionTitle")}</h2>
-          <p>{t("about.missionBody")}</p>
-        </section>
-        <section>
-          <h2>{t("about.independenceTitle")}</h2>
-          <p>{t("about.independenceBody")}</p>
-        </section>
-        <section>
-          <h2>{t("about.sourcesTitle")}</h2>
-          <p>{t("about.sourcesBody")}</p>
-          <ExternalSourceLink href={portalIdentity.socials.officialWebsite}>
-            {t("footer.officialWebsite")}
-          </ExternalSourceLink>
-        </section>
-      </div>
-    </SupportPageShell>
+    <div className="about-page" data-testid="about-page">
+      <RouteMetadata
+        config={config}
+        title={t("pages.about.title")}
+        description={t("pages.about.description")}
+        path="/about"
+      />
+      <AboutHero />
+      <AboutMission />
+      <AboutTrust />
+      <AboutProvide />
+      <AboutManifesto />
+      <AboutCta />
+    </div>
   );
 }
 
