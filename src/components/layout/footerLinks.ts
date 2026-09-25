@@ -59,6 +59,7 @@ export const FOOTER_COLUMNS: FooterColumn[] = [
       { label: "province", href: "https://bataan.gov.ph/", external: true },
       { label: "foi", href: "https://www.foi.gov.ph/", external: true },
       { label: "report", href: "/report" },
+      { label: "submitData", href: "/contribute#submit-data" },
       { label: "editor", href: "/admin", external: true },
     ],
   },

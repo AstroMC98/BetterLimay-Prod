@@ -1,0 +1,16 @@
+{
+  "id": "help-complete-the-repository",
+  "title": "Help us complete the BetterLimay Information Repository",
+  "publishedAt": "2026-09-25T10:30:00+08:00",
+  "summary": "Legislation, Limay's own Citizen's Charter, the department directory and more are still missing. Here is what we need and how to send it.",
+  "body": "BetterLimay is only as complete as the public records behind it. Some of what residents need most is still missing, because it has never been published in a form we could cite.\n\n## What we are still looking for\n\n- **Municipal legislation:** ordinances, resolutions and executive orders, with their numbers and dates.\n- **Limay's own Citizen's Charter:** until we have it, service steps borrow the Municipality of Orion's process.\n- **The municipal department directory:** offices, their heads, hours, rooms and direct lines.\n- **Barangay hall locations,** so the barangay map can finally be shown.\n- **The ABC Federation and SK Federation presidents,** who also sit on the Sangguniang Bayan.\n- **The council's official names,** as some are still shown under their ballot names.\n- **The annual budget and Full Disclosure Policy documents.**\n\n## How to help\n\nAnything you share is checked against its source before it is published, and nothing goes up without a source a reader could check.\n\n**[Read the guide: how to submit Limay data for review](/contribute#submit-data)**\n\nOr email the document, or a link to it, to **[volunteer.betterlimay@gmail.com](mailto:volunteer.betterlimay@gmail.com)**, with where it came from and its date.",
+  "category": "project",
+  "sourceName": "BetterLimay",
+  "provenance": {
+    "source_document": "Posted by the BetterLimay maintainers",
+    "source_name": "BetterLimay",
+    "retrieved_at": "2026-09-25",
+    "verified": true,
+    "verification_note": "An update from the BetterLimay team, not an announcement of the Municipality of Limay."
+  }
+}

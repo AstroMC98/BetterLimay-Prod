@@ -63,7 +63,8 @@
       "province": "Lalawigan ng Bataan",
       "foi": "Freedom of Information",
       "report": "Mag-ulat ng problema",
-      "editor": "Content editor"
+      "editor": "Content editor",
+      "submitData": "Magsumite ng datos ng Limay"
     }
   },
   "forms": {
@@ -349,7 +350,8 @@
       "open": "Buksan sa Facebook",
       "videoTitle": "Video sa Facebook",
       "postTitle": "Post sa Facebook"
-    }
+    },
+    "projectTag": "Update ng BetterLimay"
   },
   "report": {
     "eyebrow": "Feedback ng komunidad",
@@ -393,7 +395,40 @@
     "developerEyebrow": "Para sa developers",
     "developerTitle": "Pagandahin ang portal",
     "developerBody": "Suriin ang architecture, data provenance, tests, at contribution rules bago magbukas ng pull request. Mas madaling beripikahin ng community maintainers ang maliliit at reviewable na pagbabago.",
-    "sourceAction": "Buksan ang source code"
+    "sourceAction": "Buksan ang source code",
+    "submit": {
+      "eyebrow": "Tumulong kumpletuhin ang repository",
+      "title": "Magsumite ng datos ng Limay para suriin",
+      "intro": "Sinusuri ang bawat pampublikong rekord na ibinabahagi mo laban sa source nito, binabanggit, at kinikilala ka kung nais mo. Walang inilalathala nang walang source na masusuri ng mambabasa.",
+      "needTitle": "Ang hinahanap namin",
+      "needs": [
+        "Mga ordinansa, resolusyon at executive order, kasama ang numero at petsa ng pag-apruba",
+        "Ang sariling Citizen's Charter ng Limay",
+        "Direktoryo ng mga departamento: tanggapan, pinuno, oras at direktang linya",
+        "Lokasyon ng mga barangay hall",
+        "Ang Pangulo ng ABC Federation at ng SK Federation",
+        "Opisyal na pangalan ng Bise Mayor at mga kasapi ng Sangguniang Bayan",
+        "Ang taunang budget at mga dokumento ng Full Disclosure Policy"
+      ],
+      "usableTitle": "Ano ang nagpapagamit sa isang submission",
+      "usable": [
+        "Galing ito sa opisyal na source: tanggapan ng munisipyo o barangay, Sangguniang Bayan, DILG, COA o PSA.",
+        "Nakasaad kung saan at kailan ito galing: link, o pamagat ng dokumento, tanggapang naglabas at petsa.",
+        "Puwede ang litrato o scan basta malinaw.",
+        "Walang pribadong personal na impormasyon, gaya ng ID o address ng pribadong indibidwal."
+      ],
+      "howTitle": "Paano magsumite",
+      "howEmail": "I-email ang dokumento, o link nito, kasama kung saan ito galing at ang petsa, sa",
+      "howGithub": "O magbukas ng data submission sa GitHub",
+      "nextTitle": "Ano ang susunod",
+      "next": [
+        "Susuriin ito ng isang maintainer laban sa source.",
+        "Idadagdag ito na may citation, at ang pangalan mo kung nais mong makilala.",
+        "Sasagutin ka namin anuman ang resulta."
+      ],
+      "collabTitle": "Pakikipagtulungan at pagboboluntaryo",
+      "collabBody": "Para sa partnership, pagboboluntaryo, research, disenyo, pagsasalin o lokal na kaalaman, sumulat sa"
+    }
   },
   "about": {
     "missionTitle": "Ano ang BetterLimay",
@@ -728,7 +763,7 @@
     },
     "news": {
       "title": "Mga anunsyo ng Limay",
-      "description": "Mga balita at anunsyo mula sa Munisipyo ng Limay."
+      "description": "Mga anunsyo mula sa Munisipyo ng Limay, at mga update mula sa BetterLimay team."
     },
     "report": {
       "title": "Mag-report ng concern sa komunidad",

@@ -1,1 +1,34 @@
-[]
+[
+  {
+    "id": "help-complete-the-repository",
+    "title": "Help us complete the BetterLimay Information Repository",
+    "publishedAt": "2026-09-25T10:30:00+08:00",
+    "summary": "Legislation, Limay's own Citizen's Charter, the department directory and more are still missing. Here is what we need and how to send it.",
+    "body": "BetterLimay is only as complete as the public records behind it. Some of what residents need most is still missing, because it has never been published in a form we could cite.\n\n## What we are still looking for\n\n- **Municipal legislation:** ordinances, resolutions and executive orders, with their numbers and dates.\n- **Limay's own Citizen's Charter:** until we have it, service steps borrow the Municipality of Orion's process.\n- **The municipal department directory:** offices, their heads, hours, rooms and direct lines.\n- **Barangay hall locations,** so the barangay map can finally be shown.\n- **The ABC Federation and SK Federation presidents,** who also sit on the Sangguniang Bayan.\n- **The council's official names,** as some are still shown under their ballot names.\n- **The annual budget and Full Disclosure Policy documents.**\n\n## How to help\n\nAnything you share is checked against its source before it is published, and nothing goes up without a source a reader could check.\n\n**[Read the guide: how to submit Limay data for review](/contribute#submit-data)**\n\nOr email the document, or a link to it, to **[volunteer.betterlimay@gmail.com](mailto:volunteer.betterlimay@gmail.com)**, with where it came from and its date.",
+    "category": "project",
+    "sourceName": "BetterLimay",
+    "provenance": {
+      "source_document": "Posted by the BetterLimay maintainers",
+      "source_name": "BetterLimay",
+      "retrieved_at": "2026-09-25",
+      "verified": true,
+      "verification_note": "An update from the BetterLimay team, not an announcement of the Municipality of Limay."
+    }
+  },
+  {
+    "id": "support-the-movement",
+    "title": "Support the Movement",
+    "publishedAt": "2026-09-25T10:00:00+08:00",
+    "summary": "BetterLimay is volunteer-run and free for the people of Limay. Here is how you can help, and how to reach us for collaboration.",
+    "body": "BetterLimay is an independent, volunteer-run portal that puts Limay's public services, officials and records in one place, and names the source of every figure. It costs the people of Limay nothing, and it is built in the open.\n\nA resident should not need to know which office to ask, or which Facebook page to scroll, to find out what a service requires, who represents their barangay, or how public money was spent. That is the gap BetterLimay is trying to close, and it cannot be closed by a few people.\n\n## How you can help\n\n- **Collaborate with us.** For partnerships, volunteering, research, design, translation into Filipino, or local knowledge, and for offices and organisations who want to work with us, email **[volunteer.betterlimay@gmail.com](mailto:volunteer.betterlimay@gmail.com)**.\n- **Share public records.** If you hold an ordinance, a directory, a charter or any other public document about Limay, see the [guide to submitting Limay data](/contribute#submit-data).\n- **Tell us what is wrong.** Found a mistake or something out of date? Use [Report an issue](/report).\n- **Build with us.** The whole site is open source on [GitHub](https://github.com/AstroMC98/BetterLimay-Prod).\n- **Spread the word.** Share BetterLimay with your family, your barangay and your organisation.\n\nEvery contribution is reviewed against its source before it is published, and credited if you wish.\n\nQuestions or ideas? Write to **[volunteer.betterlimay@gmail.com](mailto:volunteer.betterlimay@gmail.com)**.",
+    "category": "project",
+    "sourceName": "BetterLimay",
+    "provenance": {
+      "source_document": "Posted by the BetterLimay maintainers",
+      "source_name": "BetterLimay",
+      "retrieved_at": "2026-09-25",
+      "verified": true,
+      "verification_note": "An update from the BetterLimay team, not an announcement of the Municipality of Limay."
+    }
+  }
+]

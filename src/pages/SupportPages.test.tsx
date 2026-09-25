@@ -1,5 +1,8 @@
 import { renderToStaticMarkup } from "react-dom/server";
 import { MemoryRouter } from "react-router-dom";
+
+import announcements from "../data/announcements.json";
+import type { AnnouncementRecord } from "../data/types";
 import { describe, expect, it, vi } from "vitest";
 
 import {
@@ -25,13 +28,29 @@ function renderPage(element: React.ReactElement): string {
 }
 
 describe("support and trust pages", () => {
-  it("shows a source gap instead of claiming there are no official announcements", () => {
+  it("lists posts and tags BetterLimay updates so they are not read as LGU news", () => {
     const markup = renderPage(<NewsPage />);
+    const posts = announcements as AnnouncementRecord[];
+    const projectPosts = posts.filter((post) => post.category === "project");
 
     expect(markup).toContain('data-testid="news-page"');
-    expect(markup).toContain('data-testid="news-empty"');
-    expect(markup).toContain("news.empty");
-    expect(markup).toContain("https://www.facebook.com/1Limay");
+    expect(markup).not.toContain('data-testid="news-empty"');
+    for (const post of posts) expect(markup).toContain(post.title);
+    expect(markup.match(/news\.projectTag/g) ?? []).toHaveLength(projectPosts.length);
+  });
+
+  it("gives every BetterLimay post a body and points readers to the submission guide", () => {
+    const posts = (announcements as AnnouncementRecord[]).filter(
+      (post) => post.category === "project",
+    );
+    expect(posts.length).toBeGreaterThanOrEqual(2);
+    for (const post of posts) {
+      expect(post.body).toBeTruthy();
+      expect(post.body).toContain("volunteer.betterlimay@gmail.com");
+    }
+    expect(posts.some((post) => post.body?.includes("/contribute#submit-data"))).toBe(
+      true,
+    );
   });
 
   it("renders the report privacy notice, consent, honeypot, and disabled-delivery state", () => {
@@ -72,6 +91,9 @@ describe("support and trust pages", () => {
     const markup = renderPage(<ContributePage />);
 
     expect(markup).toContain('data-testid="contribute-page"');
+    expect(markup).toContain('id="submit-data"');
+    expect(markup).toContain('href="mailto:volunteer.betterlimay@gmail.com"');
+    expect(markup).toContain("issues/new?template=data-submission.yml");
     expect(markup).toContain("contribute.correctionTitle");
     expect(markup).toContain("contribute.developerTitle");
     expect(markup).toContain("https://github.com/");
