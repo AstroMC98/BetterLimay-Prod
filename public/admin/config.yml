@@ -237,11 +237,36 @@ collections:
     summary: "{{order}}. {{name}}"
     sortable_fields: [order, name]
     fields:
-      - { name: id, label: ID, widget: string, hint: "Lowercase, starting with fb-, e.g. fb-limay-mdrrmo", pattern: ['^[a-z0-9-]+$', "Lowercase letters, numbers and hyphens only"] }
+      - {
+          name: id,
+          label: ID,
+          widget: string,
+          hint: "Lowercase, starting with fb-, e.g. fb-limay-mdrrmo",
+          pattern: ["^[a-z0-9-]+$", "Lowercase letters, numbers and hyphens only"],
+        }
       - { name: name, label: Page name, widget: string }
-      - { name: url, label: Facebook address, widget: string, hint: "The page's address, e.g. https://www.facebook.com/limay.cc", pattern: ['^https://www\.facebook\.com/', "Must start with https://www.facebook.com/"] }
-      - { name: description, label: One-line description, widget: string, required: false }
-      - { name: order, label: Tab order, widget: number, value_type: int, min: 1, default: 9 }
+      - {
+          name: url,
+          label: Facebook address,
+          widget: string,
+          hint: "The page's address, e.g. https://www.facebook.com/limay.cc",
+          pattern:
+            ['^https://www\.facebook\.com/', "Must start with https://www.facebook.com/"],
+        }
+      - {
+          name: description,
+          label: One-line description,
+          widget: string,
+          required: false,
+        }
+      - {
+          name: order,
+          label: Tab order,
+          widget: number,
+          value_type: int,
+          min: 1,
+          default: 9,
+        }
       - name: provenance
         label: Source
         widget: object
@@ -249,6 +274,12 @@ collections:
         fields:
           - { name: source_url, label: Page URL, widget: string }
           - { name: source_name, label: Page name, widget: string }
-          - { name: retrieved_at, label: Date added, widget: datetime, format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false }
+          - {
+              name: retrieved_at,
+              label: Date added,
+              widget: datetime,
+              format: "YYYY-MM-DD",
+              date_format: "YYYY-MM-DD",
+              time_format: false,
+            }
           - { name: verified, label: Verified, widget: hidden, default: true }
-

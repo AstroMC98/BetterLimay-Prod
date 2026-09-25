@@ -14,9 +14,7 @@ test.describe("MVP critical flows", () => {
     await openHome(page);
 
     await expect(page.getByTestId("global-search")).toBeVisible();
-    await expect(
-      page.getByRole("heading", { name: "Latest from Limay" }),
-    ).toBeVisible();
+    await expect(page.getByRole("heading", { name: "Latest from Limay" })).toBeVisible();
     await expect(page.getByRole("contentinfo")).toContainText(
       "Cost to the People of Limay",
     );
