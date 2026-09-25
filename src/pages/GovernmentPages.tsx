@@ -16,6 +16,7 @@ import {
   ProvenanceDetails,
   ProvenanceStatusBadge,
 } from "../components/provenance/Provenance";
+import { ElectionResults } from "../components/government/ElectionResults";
 import { getVerifiedBarangayMapPoints } from "../lib/ui/governmentCatalog";
 import { RouteMetadata } from "../lib/ui/RouteMetadata";
 import { NotFoundPage } from "./PortalStatusPages";
@@ -286,7 +287,6 @@ export function GovernmentBranchPage({ branch }: { branch: GovernmentBranch }) {
           ) : (
             <GovernmentRecordNotice />
           )}
-          {branchRecords.length > 0 ? <GovernmentRecordNotice /> : null}
         </>
       )}
     </section>
@@ -298,9 +298,9 @@ export function ElectedOfficialsPage() {
   const location = useLocation();
   const title = t("pages.government.electedOfficialsTitle");
   const description = t("pages.government.electedOfficialsDescription");
-  const electedRecords = officials.filter(
-    (official) => official.branch === "legislative" || official.branch === "ex-officio",
-  );
+  // Everyone who holds office by election, Mayor first: the data is ordered
+  // Mayor, Vice Mayor, then councilors by votes.
+  const electedRecords = officials.filter((official) => official.status === "current");
 
   return (
     <section
@@ -322,7 +322,7 @@ export function ElectedOfficialsPage() {
       ) : (
         <GovernmentRecordNotice />
       )}
-      {electedRecords.length > 0 ? <GovernmentRecordNotice /> : null}
+      <ElectionResults />
     </section>
   );
 }

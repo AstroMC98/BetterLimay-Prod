@@ -3305,3 +3305,82 @@
     align-items: start;
   }
 }
+
+/* --- Election results ------------------------------------------------------ */
+.election-results {
+  margin-top: var(--better-space-12);
+}
+
+.election-results__caption {
+  color: var(--better-text-muted);
+  font-size: 0.875rem;
+}
+
+.election-contest {
+  margin-top: var(--better-space-8);
+}
+
+.election-contest h3 {
+  display: flex;
+  gap: var(--better-space-3);
+  align-items: baseline;
+  margin: 0 0 var(--better-space-3);
+  font-size: 1.125rem;
+}
+
+.election-contest__seats,
+.election-contest__won {
+  color: var(--better-text-muted);
+  font-size: 0.8125rem;
+  font-weight: 600;
+}
+
+.election-contest__won {
+  margin-left: var(--better-space-2);
+  color: var(--bl-chart-accent);
+}
+
+.election-contest__table {
+  margin-top: var(--better-space-3);
+}
+
+.election-contest__table table {
+  width: 100%;
+  margin-top: var(--better-space-3);
+  border-collapse: collapse;
+  font-size: 0.875rem;
+}
+
+.election-contest__table :where(th, td) {
+  padding: var(--better-space-2);
+  border-bottom: 1px solid var(--better-border);
+  text-align: left;
+}
+
+.election-contest__table td:last-child {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+/* A result chart is sized by its rows; the shared 18rem floor left a two-row
+   contest mostly empty. */
+.election-contest .data-chart {
+  min-height: 0;
+  margin-top: 0;
+}
+
+/* People and offices read as a directory, not a feed: several per row. */
+@media (min-width: 40rem) {
+  .government-record-grid {
+    grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+    align-items: start;
+  }
+}
+
+.election-results > h2 {
+  margin: 0 0 var(--better-space-2);
+  color: var(--better-text-strong);
+  font-family: var(--better-font-display);
+  font-size: var(--text-h3-size);
+  font-weight: 800;
+}

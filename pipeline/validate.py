@@ -30,6 +30,7 @@ DATASETS = {
     "statistics.json": "statistic.schema.json",
     "service-referrals.json": "service-referral.schema.json",
     "hotlines.json": "hotline.schema.json",
+    "elections.json": "election-result.schema.json",
 }
 REQUIRED_DATASETS = {"services.json", "offices.json", "officials.json", "barangays.json", "announcements.json"}
 

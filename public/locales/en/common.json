@@ -493,10 +493,10 @@
     },
     "government": {
       "title": "Government directory",
-      "description": "Browse government branch and office route placeholders without treating unverified records as confirmed facts.",
+      "description": "Who runs Limay: its elected officials, its twelve barangays, and how to reach the Municipality.",
       "eyebrow": "Government directory",
-      "branchDescription": "The {{branch}} route is available, but records shown here require source verification.",
-      "recordNotice": "No confirmed record is published for this route yet. Verify names, roles, offices, and locations with an official source.",
+      "branchDescription": "The {{branch}} of the Municipality of Limay.",
+      "recordNotice": "Nothing is published for this section yet. Check with the Municipality directly in the meantime.",
       "branches": {
         "executive": "Executive branch",
         "legislative": "Legislative branch",
@@ -505,15 +505,15 @@
         "barangays": "Barangays"
       },
       "electedOfficialsTitle": "Elected officials",
-      "electedOfficialsDescription": "Review the Sangguniang Bayan and ex-officio role placeholders. Names remain visibly unverified until a public source confirms them.",
-      "exOfficioNote": "The ABC Federation President and SK Federation President are represented as ex-officio roles. Their names are not published until verified.",
+      "electedOfficialsDescription": "The Mayor, Vice Mayor and Sangguniang Bayan elected in May 2025, with the full results.",
+      "exOfficioNote": "The ABC Federation President and SK Federation President also sit on the Sangguniang Bayan. They will be listed once an official source names them.",
       "term": "Term",
       "verified": "Verified",
       "viewSource": "View source",
       "officeHead": "Office head",
       "contact": "Contact",
       "location": "Location",
-      "notAvailable": "Not available — verify with the official source",
+      "notAvailable": "Not available",
       "locationNotVerified": "Location not verified",
       "locationMissing": "No location published",
       "locationAvailable": "Verified coordinates available",
@@ -598,5 +598,18 @@
   "theme": {
     "switchToDark": "Switch to dark mode",
     "switchToLight": "Switch to light mode"
+  },
+  "elections": {
+    "title": "2025 election results",
+    "caption": "Unofficial results aggregated from Comelec transmissions as of {{asOf}}, {{returns}}.",
+    "seats_one": "{{count}} seat",
+    "seats_other": "{{count}} seats",
+    "chartLabel": "{{contest}} results. Elected: {{winners}}.",
+    "showTable": "Show every candidate's votes as a table",
+    "rank": "Rank",
+    "candidate": "Candidate",
+    "party": "Party",
+    "votes": "Votes",
+    "elected": "Elected"
   }
 }

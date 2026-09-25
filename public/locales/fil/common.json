@@ -493,10 +493,10 @@
     },
     "government": {
       "title": "Directory ng pamahalaan",
-      "description": "Mag-browse ng route placeholder para sa mga sangay at opisina ng pamahalaan nang hindi itinuturing na kumpirmado ang mga hindi beripikadong record.",
+      "description": "Sino ang namamahala sa Limay: ang mga halal na opisyal, ang labindalawang barangay, at kung paano makipag-ugnayan sa Munisipyo.",
       "eyebrow": "Directory ng pamahalaan",
-      "branchDescription": "Available ang {{branch}} route, ngunit kailangan pa ng source verification ang mga record dito.",
-      "recordNotice": "Wala pang kumpirmadong record na nailathala para sa route na ito. Tiyakin ang mga pangalan, tungkulin, opisina, at lokasyon sa opisyal na source.",
+      "branchDescription": "Ang {{branch}} ng Munisipyo ng Limay.",
+      "recordNotice": "Wala pang nakalathala para sa seksyong ito. Makipag-ugnayan muna nang direkta sa Munisipyo.",
       "branches": {
         "executive": "Sangay ehekutibo",
         "legislative": "Sangay lehislatibo",
@@ -505,15 +505,15 @@
         "barangays": "Mga barangay"
       },
       "electedOfficialsTitle": "Mga halal na opisyal",
-      "electedOfficialsDescription": "Tingnan ang mga placeholder para sa Sangguniang Bayan at mga ex-officio na tungkulin. Mananatiling malinaw na hindi beripikado ang mga pangalan hanggang makumpirma ng pampublikong source.",
-      "exOfficioNote": "Kasama rito bilang ex-officio na tungkulin ang Pangulo ng ABC Federation at Pangulo ng SK Federation. Hindi ilalathala ang mga pangalan bago beripikahin.",
+      "electedOfficialsDescription": "Ang Mayor, Bise Mayor at Sangguniang Bayan na nahalal noong Mayo 2025, kasama ang buong resulta.",
+      "exOfficioNote": "Kasapi rin ng Sangguniang Bayan ang Pangulo ng ABC Federation at ng SK Federation. Ililista sila kapag pinangalanan na ng opisyal na source.",
       "term": "Termino",
       "verified": "Beripikado",
       "viewSource": "Tingnan ang source",
       "officeHead": "Pinuno ng opisina",
       "contact": "Kontak",
       "location": "Lokasyon",
-      "notAvailable": "Walang datos — tiyakin sa opisyal na source",
+      "notAvailable": "Hindi available",
       "locationNotVerified": "Hindi beripikado ang lokasyon",
       "locationMissing": "Walang nailathalang lokasyon",
       "locationAvailable": "May beripikadong koordinado",
@@ -598,5 +598,18 @@
   "theme": {
     "switchToDark": "Lumipat sa madilim na mode",
     "switchToLight": "Lumipat sa maliwanag na mode"
+  },
+  "elections": {
+    "title": "Resulta ng halalan 2025",
+    "caption": "Hindi opisyal na resulta mula sa mga transmission ng Comelec hanggang {{asOf}}, {{returns}}.",
+    "seats_one": "{{count}} puwesto",
+    "seats_other": "{{count}} puwesto",
+    "chartLabel": "Resulta para sa {{contest}}. Nahalal: {{winners}}.",
+    "showTable": "Ipakita ang boto ng bawat kandidato bilang talahanayan",
+    "rank": "Ranggo",
+    "candidate": "Kandidato",
+    "party": "Partido",
+    "votes": "Boto",
+    "elected": "Nahalal"
   }
 }

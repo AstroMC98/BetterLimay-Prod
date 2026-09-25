@@ -356,3 +356,25 @@ sources:
       scripts/observability.mjs DATASETS, and no import anywhere in src/
       (HotlineBar.tsx renders a hardcoded unavailable message). Five registrations
       are needed before anything can display. Tracked as GAP-020.
+
+  # ----------------------------------------------------------------- elections
+  - id: abs-cbn-halalan-2025-limay
+    path: abs-cbn/halalan-2025-limay-rendered.yml
+    entity: ABS-CBN News (aggregating Comelec transmissions)
+    entity_scope: national-agency
+    source_name: ABS-CBN Halalan 2025 results, Limay, Bataan
+    url: https://halalanresults.abs-cbn.com/local/bataan/limay
+    retrieved_at: 2026-09-25
+    acquisition: rendered-snapshot
+    extraction: none
+    completeness: complete
+    target_datasets: [elections.json, officials.json]
+    gap_ids: [GAP-005]
+    publishable: true
+    notes: >
+      Rendered by JavaScript and returns HTTP 403 to plain fetches, so it is
+      archived as a Playwright accessibility snapshot after clicking "View All"
+      under Councilor (otherwise only the top 5 of 18 are in the page).
+      Unofficial, aggregated from Comelec, 100% of ERs (75 of 75 clustered
+      precincts) as of 2025-05-15 14:41. Ballot names, not legal names.
+      Only the section above "OTHER RESULTS FROM" is Limay's own contests.

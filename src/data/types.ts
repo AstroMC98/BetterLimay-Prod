@@ -247,3 +247,25 @@ export interface AnnouncementRecord {
   imageAlt?: string;
   provenance: Provenance;
 }
+
+export interface ElectionCandidate {
+  /** Exactly as printed on the ballot, e.g. "DAVID, RICHIE". */
+  ballotName: string;
+  displayName: string;
+  party: string;
+  votes: number;
+  rank: number;
+  won: boolean;
+}
+
+export interface ElectionContestRecord {
+  id: string;
+  election: string;
+  contest: string;
+  jurisdiction: string;
+  seats: number;
+  asOf: string;
+  electionReturns?: string;
+  candidates: ElectionCandidate[];
+  provenance: Provenance;
+}
