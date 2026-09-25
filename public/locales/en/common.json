@@ -26,7 +26,45 @@
     "license": "License",
     "costToPeople": "Cost to the People of Limay: ₱0",
     "endorsement": "An initiative of BetterGov.PH",
-    "municipalHall": "Municipal Hall"
+    "municipalHall": "Municipal Hall",
+    "tagline": "Community civic portal",
+    "description": "An open-source initiative giving residents clear access to Limay's services, officials and public records.",
+    "facebookLabel": "Municipality of Limay on Facebook",
+    "githubLabel": "BetterLimay source code on GitHub",
+    "builtBy": "Built by the community for the community.",
+    "costLabel": "Cost to the People of Limay =",
+    "copyright": "{{year}} BetterLimay.org. Content is public domain unless otherwise specified.",
+    "facebookNote": "The home-page feed is loaded from Facebook.",
+    "sitemap": "Sitemap",
+    "columns": {
+      "services": "Local services",
+      "government": "Local government",
+      "network": "BetterGov network",
+      "resources": "Resources"
+    },
+    "links": {
+      "allServices": "All services",
+      "civilRegistry": "Civil registry",
+      "businessPermits": "Business permits",
+      "health": "Health",
+      "socialWelfare": "Social welfare",
+      "electedOfficials": "Elected officials",
+      "offices": "Offices and contacts",
+      "barangays": "Barangays",
+      "transparency": "Transparency",
+      "statistics": "Statistics and flood map",
+      "transparencyPortal": "Transparency Portal",
+      "openData": "Open Data Portal",
+      "petitions": "Petitions PH",
+      "saln": "SALN Tracker",
+      "budget": "Budget Tracker",
+      "philgeps": "PhilGEPS Tracker",
+      "officialWebsite": "Limay official website",
+      "province": "Province of Bataan",
+      "foi": "Freedom of Information",
+      "report": "Report an issue",
+      "editor": "Content editor"
+    }
   },
   "forms": {
     "required": "Required",
@@ -180,7 +218,63 @@
     "contributeAction": "Contribute a correction",
     "disclaimerTitle": "Independent community portal",
     "disclaimerBody": "BetterLimay is not affiliated with the LGU. Always verify important information with the official source.",
-    "floodMapAction": "Flood hazard map"
+    "floodMapAction": "Flood hazard map",
+    "popular": {
+      "label": "Popular services",
+      "all": "All services"
+    },
+    "feed": {
+      "eyebrow": "Official updates",
+      "title": "Latest from Limay",
+      "description": "Announcements, advisories and livestreams from the official Facebook pages of the Municipality and the agencies that serve Limay.",
+      "tabsLabel": "Official Facebook pages",
+      "viewOnFacebook": "View on Facebook",
+      "iframeTitle": "Latest posts from {{page}} on Facebook",
+      "fallback": "If the feed does not appear,",
+      "openDirectly": "open it directly on Facebook."
+    },
+    "who": {
+      "eyebrow": "Local government",
+      "title": "Know who serves your community",
+      "description": "The people, offices and barangays that make up the Municipal Government of Limay.",
+      "overview": "Government overview",
+      "officials": "Elected officials",
+      "officialsBody_one": "Mayor {{mayor}} and {{count}} other elected official",
+      "officialsBody_other": "Mayor {{mayor}} and {{count}} other elected officials",
+      "officialsFallback": "The Mayor, Vice Mayor and Sangguniang Bayan",
+      "offices": "Offices and contacts",
+      "officesBody_one": "{{count}} office with its phone and e-mail",
+      "officesBody_other": "{{count}} offices with their phone and e-mail",
+      "barangays": "Barangays",
+      "barangaysBody_one": "{{count}} barangay · {{population}} residents",
+      "barangaysBody_other": "{{count}} barangays · {{population}} residents"
+    },
+    "spending": {
+      "eyebrow": "Transparency",
+      "title": "See the records behind public spending",
+      "description": "From Limay's audited finances to individual contracts and projects, each record linked to its source.",
+      "overview": "Transparency overview",
+      "finance": "Audited finances",
+      "financeBody_one": "{{count}} figure from COA's 2024 audit",
+      "financeBody_other": "{{count}} figures from COA's 2024 audit",
+      "procurement": "Procurement",
+      "procurementBody": "Awarded contracts from PhilGEPS",
+      "infrastructure": "Infrastructure",
+      "infrastructureBody": "National projects in Limay",
+      "numbers": "Limay by the numbers",
+      "numbersBody": "Census, competitiveness rank and flood map"
+    },
+    "history": {
+      "eyebrow": "Since 1917",
+      "era": "Era {{number}}",
+      "sources": "Sources:"
+    },
+    "about": {
+      "title": "About BetterLimay",
+      "body": "An independent, community-built portal that organises Limay's services and public records so residents can find and understand them. Every figure names its source.",
+      "project": "About the project",
+      "help": "Help improve it"
+    }
   },
   "search": {
     "label": "Search BetterLimay",

@@ -34,6 +34,7 @@ const dataDir = resolve(here, "../src/data");
 const COLLECTIONS = [
   { collection: "announcements", arrayFile: "announcements.json", editorOnly: true },
   { collection: "hotlines", arrayFile: "hotlines.json", editorOnly: false },
+  { collection: "facebook-pages", arrayFile: "facebook-pages.json", editorOnly: false },
 ];
 
 /**
@@ -69,6 +70,9 @@ function sortFor(collection, records) {
     return [...records].sort((a, b) =>
       String(b.publishedAt).localeCompare(String(a.publishedAt)),
     );
+  }
+  if (collection === "facebook-pages") {
+    return [...records].sort((a, b) => (a.order ?? 99) - (b.order ?? 99));
   }
   if (collection === "hotlines") {
     return [...records].sort((a, b) => {

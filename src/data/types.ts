@@ -285,3 +285,39 @@ export interface ElectionContestRecord {
   candidates: ElectionCandidate[];
   provenance: Provenance;
 }
+
+export interface FacebookPageRecord {
+  id: string;
+  name: string;
+  /** The page on www.facebook.com. */
+  url: string;
+  description?: string;
+  order: number;
+  provenance: Provenance;
+}
+
+export type HistorySourceKey = "province" | "wikipedia";
+
+export interface HistoryEvent {
+  /** "1917", "Late 1600s", "Today": a label, not always a number. */
+  year: string;
+  title: string;
+  body: string;
+  source: HistorySourceKey;
+}
+
+export interface HistoryEra {
+  id: string;
+  label: string;
+  summary: string;
+  events: HistoryEvent[];
+}
+
+export interface HistoryDocument {
+  title: string;
+  intro: string;
+  eras: HistoryEra[];
+  highlights: { label: string; title: string; body: string; source: HistorySourceKey }[];
+  sources: Record<HistorySourceKey, Provenance>;
+  provenance: Provenance;
+}

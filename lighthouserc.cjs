@@ -21,6 +21,10 @@ module.exports = {
         },
         throttlingMethod: "simulate",
         chromeFlags: "--headless --no-sandbox --disable-gpu --disable-dev-shm-usage",
+        // The home page embeds Facebook's own feed. Its script (~500 kB) is
+        // Facebook's, varies with every post, and is not ours to budget, so the
+        // audit measures BetterLimay's code with Facebook blocked.
+        blockedUrlPatterns: ["*facebook.com*", "*fbcdn.net*", "*facebook.net*"],
       },
     },
     assert: {

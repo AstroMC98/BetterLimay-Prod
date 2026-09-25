@@ -31,6 +31,11 @@ DATASETS = {
     "service-referrals.json": "service-referral.schema.json",
     "hotlines.json": "hotline.schema.json",
     "elections.json": "election-result.schema.json",
+    "facebook-pages.json": "facebook-page.schema.json",
+}
+# Datasets that are one document rather than a list of records.
+SINGLE_DOCUMENTS = {
+    "history.json": "history.schema.json",
 }
 REQUIRED_DATASETS = {"services.json", "offices.json", "officials.json", "barangays.json", "announcements.json"}
 
@@ -174,6 +179,22 @@ def validate_project(
                     errors.extend(_record_policy_errors(item, item_source))
             else:
                 errors.append(f"{data_path}: dataset must contain a JSON array")
+        except (OSError, json.JSONDecodeError, KeyError) as exc:
+            errors.append(f"{data_path}: {type(exc).__name__}: {exc}")
+
+    for filename, schema_name in SINGLE_DOCUMENTS.items():
+        data_path = data_dir / filename
+        schema_path = schema_dir / schema_name
+        if not data_path.exists():
+            continue
+        try:
+            data = load_json(data_path)
+            schema = {**load_json(schema_path), "$id": schema_path.resolve().as_uri()}
+            if not isinstance(data, dict):
+                errors.append(f"{data_path}: document must be a JSON object")
+                continue
+            errors.extend(validation_errors(data, schema, str(data_path), registry=registry))
+            errors.extend(_record_metadata_errors(data, str(data_path)))
         except (OSError, json.JSONDecodeError, KeyError) as exc:
             errors.append(f"{data_path}: {type(exc).__name__}: {exc}")
     return errors

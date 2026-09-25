@@ -1,0 +1,127 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "BetterLimay History",
+  "description": "Limay's history as eras of dated events. Every event names the source it comes from.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "title",
+    "intro",
+    "eras",
+    "highlights",
+    "sources",
+    "provenance"
+  ],
+  "properties": {
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "intro": {
+      "type": "string",
+      "minLength": 1
+    },
+    "eras": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "label",
+          "summary",
+          "events"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9-]+$"
+          },
+          "label": {
+            "type": "string",
+            "minLength": 1
+          },
+          "summary": {
+            "type": "string"
+          },
+          "events": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "year",
+                "title",
+                "body",
+                "source"
+              ],
+              "properties": {
+                "year": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "title": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "body": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "source": {
+                  "type": "string",
+                  "enum": [
+                    "province",
+                    "wikipedia"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "highlights": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "label",
+          "title",
+          "body",
+          "source"
+        ],
+        "properties": {
+          "label": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "body": {
+            "type": "string"
+          },
+          "source": {
+            "type": "string",
+            "enum": [
+              "province",
+              "wikipedia"
+            ]
+          }
+        }
+      }
+    },
+    "sources": {
+      "type": "object",
+      "additionalProperties": {
+        "$ref": "./provenance.schema.json"
+      }
+    },
+    "provenance": {
+      "$ref": "./provenance.schema.json"
+    }
+  }
+}

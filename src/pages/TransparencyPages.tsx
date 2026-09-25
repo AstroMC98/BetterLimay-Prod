@@ -533,6 +533,12 @@ function StatisticsTable({ records }: { records: StatisticRecord[] }) {
 }
 
 export function TransparencyPage() {
+  const { hash } = useLocation();
+  // React Router does not scroll to #fragments; home-page cards link to them.
+  useEffect(() => {
+    if (!hash) return;
+    document.getElementById(hash.slice(1))?.scrollIntoView();
+  }, [hash]);
   const { t } = useTranslation("common");
   const groups = getTransparencyGroups(transparency);
   /* One chart per kind. A balance-sheet total and a road appropriation are both

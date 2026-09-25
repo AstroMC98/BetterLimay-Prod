@@ -1,15 +1,24 @@
-import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
 import { loadLguConfig } from "../app/lguConfig";
 import { createPortalIdentity } from "../app/portalIdentity";
-import { ProvenanceStatusBadge } from "../components/provenance/Provenance";
+import { FacebookFeed } from "../components/home/FacebookFeed";
+import { HistoryTimeline } from "../components/home/HistoryTimeline";
+import {
+  AboutStrip,
+  PopularServices,
+  SpendingCards,
+  WhoServes,
+} from "../components/home/HomeSections";
 import { GlobalSearch } from "../components/search/GlobalSearch";
-import services from "../data/services.json";
 
 const portalIdentity = createPortalIdentity(loadLguConfig());
-const quickServices = services.slice(0, 6);
 
+/**
+ * The home page, in the order a resident needs it: find a service, see what
+ * the Municipality is saying, know who serves you, follow the money, and
+ * where Limay comes from.
+ */
 export function HomePage() {
   const { t } = useTranslation("common");
 
@@ -21,95 +30,17 @@ export function HomePage() {
           <h1 id="home-title">{t("home.heroTitle")}</h1>
           <p>{t("home.heroDescription")}</p>
         </div>
-        <GlobalSearch />
-      </section>
-
-      <section className="home-section" aria-labelledby="quick-access-title">
-        <div className="section-heading">
-          <div>
-            <p className="eyebrow">{portalIdentity.portalName}</p>
-            <h2 id="quick-access-title">{t("home.quickAccessTitle")}</h2>
-          </div>
-          <p>{t("home.quickAccessDescription")}</p>
-        </div>
-        <div className="service-tile-grid">
-          {quickServices.map((service) => (
-            <Link
-              key={service.id}
-              className="service-tile"
-              to={`/services/${service.category}`}
-            >
-              <span className="service-tile__title">
-                {t(`services.categories.${service.category}`)}
-              </span>
-              <ProvenanceStatusBadge provenance={service.provenance} />
-            </Link>
-          ))}
+        <div className="home-hero__search">
+          <GlobalSearch />
+          <PopularServices />
         </div>
       </section>
 
-      <section
-        className="home-section home-section--split"
-        aria-labelledby="announcements-title"
-      >
-        <article className="home-panel">
-          <h2 id="announcements-title">{t("home.latestAnnouncements")}</h2>
-          <p>{t("home.announcementsUnavailable")}</p>
-          <a
-            href={loadLguConfig().portal.socials.officialFacebook}
-            target="_blank"
-            rel="noreferrer"
-          >
-            {t("hotline.verifyOfficial")}
-          </a>
-        </article>
-        <article className="home-panel" aria-labelledby="transparency-title">
-          <h2 id="transparency-title">{t("home.transparencyTitle")}</h2>
-          <p>{t("home.transparencyUnavailable")}</p>
-          <div className="home-panel__links">
-            <Link className="text-link" to="/transparency">
-              {t("home.transparencyAction")}
-            </Link>
-            <Link className="text-link" to="/statistics">
-              {t("home.statisticsAction")}
-            </Link>
-            <Link className="text-link" to="/statistics#hazards">
-              {t("home.floodMapAction")}
-            </Link>
-          </div>
-        </article>
-      </section>
-
-      <section
-        id="contribute"
-        className="contribute-panel"
-        aria-labelledby="contribute-title"
-      >
-        <div>
-          <h2 id="contribute-title">{t("home.contributeTitle")}</h2>
-          <p>{t("home.contributeDescription")}</p>
-        </div>
-        <a
-          className="button button--secondary"
-          href={`${portalIdentity.socials.sourceCode}/issues`}
-          target="_blank"
-          rel="noreferrer"
-        >
-          {t("home.contributeAction")}
-        </a>
-      </section>
-
-      <section
-        id="disclaimer"
-        className="disclaimer-panel"
-        aria-labelledby="disclaimer-title"
-      >
-        <h2 id="disclaimer-title">{t("home.disclaimerTitle")}</h2>
-        <p>{t("home.disclaimerBody")}</p>
-        <a href={portalIdentity.socials.officialWebsite} target="_blank" rel="noreferrer">
-          {t("footer.officialWebsite")}
-        </a>
-      </section>
+      <FacebookFeed />
+      <WhoServes />
+      <SpendingCards />
+      <HistoryTimeline />
+      <AboutStrip />
     </div>
   );
 }

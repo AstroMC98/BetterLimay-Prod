@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "BetterLimay Official Facebook Page",
+  "description": "An official Facebook page shown in the home-page feed. Edited in /admin.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "name",
+    "url",
+    "order",
+    "provenance"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "url": {
+      "type": "string",
+      "pattern": "^https://www\\.facebook\\.com/",
+      "description": "The page's address on www.facebook.com."
+    },
+    "description": {
+      "type": "string"
+    },
+    "order": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "provenance": {
+      "$ref": "./provenance.schema.json"
+    }
+  }
+}

@@ -6,17 +6,11 @@ import { loadLguConfig } from "../../app/lguConfig";
 import { createPortalIdentity } from "../../app/portalIdentity";
 import { HotlineBar } from "../home/HotlineBar";
 import { InfoBar } from "../home/InfoBar";
-import officesJson from "../../data/offices.json";
-import type { OfficeRecord } from "../../data/types";
 import { LanguageSwitcher } from "./LanguageSwitcher";
+import { SiteFooter } from "./SiteFooter";
 import { ThemeToggle } from "./ThemeToggle";
 import { LoadingState } from "./LoadingState";
 import { Navigation } from "./Navigation";
-
-/** The Municipal Hall line in the footer: the one contact every page should carry. */
-const municipalHall = (officesJson as OfficeRecord[]).find(
-  (office) => office.id === "municipal-hall",
-);
 
 const portalIdentity = createPortalIdentity(loadLguConfig());
 
@@ -84,61 +78,7 @@ export function RootLayout() {
         </Suspense>
       </main>
 
-      <footer className="portal-footer">
-        <div className="portal-footer__inner">
-          <div>
-            <p className="portal-footer__endorsement">{t("footer.endorsement")}</p>
-            <p>{t("footer.independentPortal")}</p>
-            <p className="portal-footer__cost">{t("footer.costToPeople")}</p>
-            {municipalHall?.contact ? (
-              <p className="portal-footer__contact">
-                {t("footer.municipalHall")}:{" "}
-                {municipalHall.contact.phone ? (
-                  <a
-                    href={`tel:${municipalHall.contact.phone.split("/")[0].replace(/[^0-9+]/g, "")}`}
-                  >
-                    {municipalHall.contact.phone.split("/")[0].trim()}
-                  </a>
-                ) : null}
-                {municipalHall.contact.phone && municipalHall.contact.email
-                  ? " · "
-                  : null}
-                {municipalHall.contact.email ? (
-                  <a href={`mailto:${municipalHall.contact.email}`}>
-                    {municipalHall.contact.email}
-                  </a>
-                ) : null}
-              </p>
-            ) : null}
-          </div>
-          <nav className="portal-footer__links" aria-label={t("footer.footerNavigation")}>
-            <a
-              href={portalIdentity.socials.officialWebsite}
-              target="_blank"
-              rel="noreferrer"
-            >
-              {t("footer.officialWebsite")}
-            </a>
-            <a
-              href={portalIdentity.socials.betterGovDirectory}
-              target="_blank"
-              rel="noreferrer"
-            >
-              {t("footer.directory")}
-            </a>
-            <a href={portalIdentity.socials.sourceCode} target="_blank" rel="noreferrer">
-              {t("footer.sourceCode")}
-            </a>
-            <a
-              href={`${portalIdentity.socials.sourceCode}/blob/main/LICENSE`}
-              target="_blank"
-              rel="noreferrer"
-            >
-              {t("footer.license")}
-            </a>
-          </nav>
-        </div>
-      </footer>
+      <SiteFooter />
     </div>
   );
 }

@@ -1,0 +1,14 @@
+{
+  "id": "fb-limay-cc",
+  "name": "Limay CC",
+  "url": "https://www.facebook.com/limay.cc",
+  "description": "Traffic monitoring and live updates from Limay CC.",
+  "order": 3,
+  "provenance": {
+    "source_url": "https://www.facebook.com/limay.cc",
+    "source_name": "Limay CC",
+    "retrieved_at": "2026-09-25",
+    "verified": true,
+    "verification_note": "Official Facebook page, named as it appears on Facebook."
+  }
+}
