@@ -46,7 +46,7 @@
       ]
     },
     {
-      "source": "/admin/:path*",
+      "source": "/(admin.*)",
       "headers": [
         {
           "key": "Content-Security-Policy",
