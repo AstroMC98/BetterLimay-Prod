@@ -904,5 +904,130 @@
   },
   "header": {
     "placeLine": "Community Portal para sa {{lgu}}"
+  },
+  "nav": {
+    "groups": {
+      "services": "Mga serbisyo",
+      "government": "Pamahalaan",
+      "data": "Transparency at datos",
+      "about": "Tungkol",
+      "news": "Balita"
+    },
+    "servicesFootnote": "Hindi mahanap ang serbisyong kailangan mo?",
+    "actions": {
+      "report": "Mag-ulat ng problema",
+      "submitData": "Magsumite ng datos"
+    },
+    "items": {
+      "home": {
+        "label": "Home",
+        "desc": "Panimulang pahina"
+      },
+      "news": {
+        "label": "Balita",
+        "desc": "Mga anunsyo at update"
+      },
+      "allServices": {
+        "label": "Lahat ng serbisyo",
+        "desc": "Bawat serbisyo kasama ang requirements at bayad"
+      },
+      "civilRegistry": {
+        "label": "Civil registry",
+        "desc": "Birth, marriage at death certificate"
+      },
+      "businessPermits": {
+        "label": "Mga business permit",
+        "desc": "Bago at renewal ng business permit"
+      },
+      "realProperty": {
+        "label": "Buwis sa ari-arian",
+        "desc": "Assessment at pagbabayad ng amilyar"
+      },
+      "health": {
+        "label": "Kalusugan",
+        "desc": "Rural health unit at mga programang pangkalusugan"
+      },
+      "socialWelfare": {
+        "label": "Serbisyong panlipunan",
+        "desc": "Tulong, ID at mga programang panlipunan"
+      },
+      "governmentOverview": {
+        "label": "Pangkalahatang-ideya",
+        "desc": "Paano nakaayos ang Munisipyo"
+      },
+      "electedOfficials": {
+        "label": "Mga halal na opisyal",
+        "desc": "Mayor, Vice Mayor at Sangguniang Bayan"
+      },
+      "offices": {
+        "label": "Mga tanggapan at contact",
+        "desc": "Mga tanggapan ng Munisipyo na may telepono at e-mail"
+      },
+      "barangays": {
+        "label": "Mga barangay",
+        "desc": "Ang 12 barangay at kanilang mga opisyal"
+      },
+      "legislation": {
+        "label": "Batas lokal",
+        "desc": "Mga ordinansa at resolusyon"
+      },
+      "electionResults": {
+        "label": "Resulta ng halalan 2025"
+      },
+      "contactMunicipality": {
+        "label": "Makipag-ugnayan sa Munisipyo"
+      },
+      "transparency": {
+        "label": "Mga rekord ng transparency",
+        "desc": "Budget, gastos at pampublikong dokumento"
+      },
+      "auditedFinances": {
+        "label": "Na-audit na pananalapi",
+        "desc": "Kita at gastos na sinuri ng COA"
+      },
+      "procurement": {
+        "label": "Procurement",
+        "desc": "Mga kontratang iginawad ng Munisipyo"
+      },
+      "infrastructure": {
+        "label": "Imprastraktura",
+        "desc": "Mga proyektong pampubliko at kanilang katayuan"
+      },
+      "statistics": {
+        "label": "Estadistika",
+        "desc": "Populasyon, ekonomiya at competitiveness"
+      },
+      "floodMap": {
+        "label": "Mapa ng panganib sa baha",
+        "desc": "Mga flood hazard zone ng UP NOAH"
+      },
+      "about": {
+        "label": "Tungkol sa BetterLimay",
+        "desc": "Sino ang nagpapatakbo ng portal na ito at bakit"
+      },
+      "submitData": {
+        "label": "Magsumite ng datos ng Limay",
+        "desc": "Magbahagi ng pampublikong rekord para suriin"
+      },
+      "report": {
+        "label": "Mag-ulat ng problema",
+        "desc": "Sabihin sa amin ang problema o pagtatama"
+      },
+      "privacy": {
+        "label": "Privacy"
+      },
+      "terms": {
+        "label": "Mga tuntunin ng paggamit"
+      },
+      "accessibility": {
+        "label": "Accessibility"
+      },
+      "faq": {
+        "label": "FAQ"
+      },
+      "sitemap": {
+        "label": "Sitemap"
+      }
+    }
   }
 }
