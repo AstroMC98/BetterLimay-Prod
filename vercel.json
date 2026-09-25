@@ -33,10 +33,24 @@
         {
           "key": "Permissions-Policy",
           "value": "camera=(), microphone=(), geolocation=()"
-        },
+        }
+      ]
+    },
+    {
+      "source": "/((?!admin).*)",
+      "headers": [
         {
           "key": "Content-Security-Policy",
           "value": "default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; script-src 'self' https://unpkg.com; style-src 'self' 'unsafe-inline' https://unpkg.com; img-src 'self' data: blob: https://raw.githubusercontent.com https://avatars.githubusercontent.com https://*.tile.openstreetmap.org; connect-src 'self' https://api.open-meteo.com https://api.github.com https://unpkg.com; font-src 'self'; manifest-src 'self'; worker-src 'self'; form-action 'self'"
+        }
+      ]
+    },
+    {
+      "source": "/admin/:path*",
+      "headers": [
+        {
+          "key": "Content-Security-Policy",
+          "value": "default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; script-src 'self' 'unsafe-eval' https://unpkg.com; style-src 'self' 'unsafe-inline' https://unpkg.com; img-src 'self' data: blob: https://raw.githubusercontent.com https://avatars.githubusercontent.com https://*.tile.openstreetmap.org; connect-src 'self' https://api.open-meteo.com https://api.github.com https://unpkg.com; font-src 'self'; manifest-src 'self'; worker-src 'self'; form-action 'self'"
         }
       ]
     },
