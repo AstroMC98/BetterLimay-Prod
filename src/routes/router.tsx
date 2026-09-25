@@ -17,6 +17,7 @@ import {
 } from "../pages/ServicePages";
 import {
   ElectedOfficialsPage,
+  BarangayDetailPage,
   GovernmentBranchPage,
   GovernmentBranchRoute,
   GovernmentPage,
@@ -54,6 +55,7 @@ export const MVP_ROUTE_PATHS = [
   "/elected-officials",
   "/departments",
   "/barangays",
+  "/barangays/:id",
   "/about",
   "/legal",
   "/legal/privacy",
@@ -109,6 +111,7 @@ const router = createBrowserRouter([
       { path: "elected-officials", element: <ElectedOfficialsPage /> },
       { path: "departments", element: <GovernmentBranchPage branch="departments" /> },
       { path: "barangays", element: <GovernmentBranchPage branch="barangays" /> },
+      { path: "barangays/:id", element: <BarangayDetailPage /> },
       {
         path: "about",
         element: <AboutPage />,

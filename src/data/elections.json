@@ -1,0 +1,224 @@
+[
+  {
+    "id": "limay-2025-mayor",
+    "election": "2025 National and Local Elections",
+    "contest": "Mayor",
+    "jurisdiction": "Municipality of Limay",
+    "seats": 1,
+    "asOf": "2025-05-15T14:41:00+08:00",
+    "electionReturns": "75 of 75 clustered precincts (100%)",
+    "candidates": [
+      {
+        "ballotName": "DAVID, RICHIE",
+        "displayName": "Richie Jason D. David",
+        "party": "PFP",
+        "votes": 30171,
+        "rank": 1,
+        "won": true
+      },
+      {
+        "ballotName": "ROQUE, VER",
+        "displayName": "Ver Roque",
+        "party": "IND",
+        "votes": 20949,
+        "rank": 2,
+        "won": false
+      }
+    ],
+    "provenance": {
+      "source_name": "ABS-CBN Halalan 2025 results, Limay, Bataan",
+      "retrieved_at": "2026-09-25",
+      "verified": true,
+      "verification_note": "Unofficial results aggregated by ABS-CBN from Comelec transmissions, from 100% of election returns (75 of 75 clustered precincts), as of May 15, 2025 2:41 PM. Names are as printed on the ballot.",
+      "source_url": "https://halalanresults.abs-cbn.com/local/bataan/limay"
+    }
+  },
+  {
+    "id": "limay-2025-vice-mayor",
+    "election": "2025 National and Local Elections",
+    "contest": "Vice Mayor",
+    "jurisdiction": "Municipality of Limay",
+    "seats": 1,
+    "asOf": "2025-05-15T14:41:00+08:00",
+    "electionReturns": "75 of 75 clustered precincts (100%)",
+    "candidates": [
+      {
+        "ballotName": "DAVID, GRACE",
+        "displayName": "Grace David",
+        "party": "PFP",
+        "votes": 29820,
+        "rank": 1,
+        "won": true
+      },
+      {
+        "ballotName": "ROQUE, OBET",
+        "displayName": "Obet Roque",
+        "party": "IND",
+        "votes": 20591,
+        "rank": 2,
+        "won": false
+      }
+    ],
+    "provenance": {
+      "source_name": "ABS-CBN Halalan 2025 results, Limay, Bataan",
+      "retrieved_at": "2026-09-25",
+      "verified": true,
+      "verification_note": "Unofficial results aggregated by ABS-CBN from Comelec transmissions, from 100% of election returns (75 of 75 clustered precincts), as of May 15, 2025 2:41 PM. Names are as printed on the ballot.",
+      "source_url": "https://halalanresults.abs-cbn.com/local/bataan/limay"
+    }
+  },
+  {
+    "id": "limay-2025-councilor",
+    "election": "2025 National and Local Elections",
+    "contest": "Councilor",
+    "jurisdiction": "Municipality of Limay",
+    "seats": 8,
+    "asOf": "2025-05-15T14:41:00+08:00",
+    "electionReturns": "75 of 75 clustered precincts (100%)",
+    "candidates": [
+      {
+        "ballotName": "DAVID, SARAH",
+        "displayName": "Sarah David",
+        "party": "PFP",
+        "votes": 29728,
+        "rank": 1,
+        "won": true
+      },
+      {
+        "ballotName": "ROXAS, CECIL",
+        "displayName": "Cecil Roxas",
+        "party": "PFP",
+        "votes": 29154,
+        "rank": 2,
+        "won": true
+      },
+      {
+        "ballotName": "REYES, BART",
+        "displayName": "Bart Reyes",
+        "party": "PFP",
+        "votes": 28154,
+        "rank": 3,
+        "won": true
+      },
+      {
+        "ballotName": "GOCHUICO, DENNIS",
+        "displayName": "Dennis Gochuico",
+        "party": "PFP",
+        "votes": 27581,
+        "rank": 4,
+        "won": true
+      },
+      {
+        "ballotName": "ROQUE-PEREZ, DRA RORY",
+        "displayName": "Dra. Rory Roque-Perez",
+        "party": "BLKTN",
+        "votes": 26308,
+        "rank": 5,
+        "won": true
+      },
+      {
+        "ballotName": "TAYAG, JR. MENG-NEWR",
+        "displayName": "Meng-Newr Tayag Jr.",
+        "party": "PFP",
+        "votes": 26142,
+        "rank": 6,
+        "won": true
+      },
+      {
+        "ballotName": "AMBROCIO, MANNY",
+        "displayName": "Manny Ambrocio",
+        "party": "BLKTN",
+        "votes": 25555,
+        "rank": 7,
+        "won": true
+      },
+      {
+        "ballotName": "DELA REA, AMA",
+        "displayName": "Ama Dela Rea",
+        "party": "IND",
+        "votes": 24523,
+        "rank": 8,
+        "won": true
+      },
+      {
+        "ballotName": "BORBE, JIM",
+        "displayName": "Jim Borbe",
+        "party": "IND",
+        "votes": 17334,
+        "rank": 9,
+        "won": false
+      },
+      {
+        "ballotName": "CORTEZ, ED",
+        "displayName": "Ed Cortez",
+        "party": "IND",
+        "votes": 17115,
+        "rank": 10,
+        "won": false
+      },
+      {
+        "ballotName": "DE ROXAS, ADY",
+        "displayName": "Ady De Roxas",
+        "party": "IND",
+        "votes": 16788,
+        "rank": 11,
+        "won": false
+      },
+      {
+        "ballotName": "ROQUE, ELIZA ANN",
+        "displayName": "Eliza Ann Roque",
+        "party": "IND",
+        "votes": 15242,
+        "rank": 12,
+        "won": false
+      },
+      {
+        "ballotName": "ROXAS, LITO",
+        "displayName": "Lito Roxas",
+        "party": "IND",
+        "votes": 15068,
+        "rank": 13,
+        "won": false
+      },
+      {
+        "ballotName": "GOMEZ, KARL",
+        "displayName": "Karl Gomez",
+        "party": "IND",
+        "votes": 12895,
+        "rank": 14,
+        "won": false
+      },
+      {
+        "ballotName": "GABRIEL, GADI",
+        "displayName": "Gadi Gabriel",
+        "party": "IND",
+        "votes": 12148,
+        "rank": 15,
+        "won": false
+      },
+      {
+        "ballotName": "OLINAR, NHOY",
+        "displayName": "Nhoy Olinar",
+        "party": "IND",
+        "votes": 12016,
+        "rank": 16,
+        "won": false
+      },
+      {
+        "ballotName": "MONTERO, PITONG",
+        "displayName": "Pitong Montero",
+        "party": "IND",
+        "votes": 8453,
+        "rank": 17,
+        "won": false
+      }
+    ],
+    "provenance": {
+      "source_name": "ABS-CBN Halalan 2025 results, Limay, Bataan",
+      "retrieved_at": "2026-09-25",
+      "verified": true,
+      "verification_note": "Unofficial results aggregated by ABS-CBN from Comelec transmissions, from 100% of election returns (75 of 75 clustered precincts), as of May 15, 2025 2:41 PM. Names are as printed on the ballot.",
+      "source_url": "https://halalanresults.abs-cbn.com/local/bataan/limay"
+    }
+  }
+]

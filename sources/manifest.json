@@ -1,5 +1,19 @@
 [
   {
+    "acquisition": "rendered-snapshot",
+    "bytes": 43574,
+    "completeness": "complete",
+    "entity": "ABS-CBN News (aggregating Comelec transmissions)",
+    "entity_scope": "national-agency",
+    "id": "abs-cbn-halalan-2025-limay",
+    "path": "abs-cbn/halalan-2025-limay-rendered.yml",
+    "retrieved_at": "2026-09-25",
+    "sha256": "358d88c115b4591ab3c2659bae6dfe6a8c53fd56e352a7327b3552b0626e86a8",
+    "source_name": "ABS-CBN Halalan 2025 results, Limay, Bataan",
+    "status": "cached",
+    "url": "https://halalanresults.abs-cbn.com/local/bataan/limay"
+  },
+  {
     "acquisition": "manual-download",
     "blocked_by": [
       "exact-url-unconfirmed"
@@ -14,7 +28,26 @@
     "path": "",
     "retrieved_at": "2026-09-23",
     "sha256": "732bb5e798f88f2a1baa60f3d81e9c9c386eb06e12f1abd7d74521b013866e51",
-    "source_name": "Provincial Government of Bataan Citizen's Charter, 2026 1st Edition",
+    "source_name": "Provincial Government of Bataan",
+    "status": "blocked_no_public_url",
+    "url": null
+  },
+  {
+    "acquisition": "manual-entry",
+    "blocked_by": [
+      "not-publishable"
+    ],
+    "bytes": 968,
+    "citable": true,
+    "completeness": "partial",
+    "entity": "BetterLimay maintainers",
+    "entity_scope": "municipal",
+    "held_path": "municipality-of-limay/recent_election-and-additional data.txt",
+    "id": "betterlimay-maintainer-contacts-2026-09-25",
+    "path": "",
+    "retrieved_at": "2026-09-25",
+    "sha256": "eadfc4fb159ccf6f9b289316634cccd9fe100c85ad5421de1726184b15eaa6ab",
+    "source_name": "BetterLimay maintainers",
     "status": "blocked_no_public_url",
     "url": null
   },
@@ -33,7 +66,7 @@
     "path": "",
     "retrieved_at": "2026-09-23",
     "sha256": "3006967758cf11c3f1e4393eada2aa84008f5d5c9ef91e7c27d5fb7627408da9",
-    "source_name": "COA Agency Action Plan and Status of Implementation - Limay, CY 2024",
+    "source_name": "Commission on Audit",
     "status": "blocked_no_public_url",
     "url": null
   },
@@ -52,7 +85,7 @@
     "path": "",
     "retrieved_at": "2026-09-23",
     "sha256": "532fe23f4d0db80f242241d245480e3bfba2388c7547c268dbbecb5af4202e87",
-    "source_name": "COA Annual Audit Report on the Municipality of Limay, Bataan, CY 2024",
+    "source_name": "Commission on Audit",
     "status": "blocked_no_public_url",
     "url": null
   },
@@ -71,7 +104,26 @@
     "path": "",
     "retrieved_at": "2026-09-23",
     "sha256": "2ff200ea404b5f408828dad8a300074c0ea8af6ad6d6232f56b609051fb0e713",
-    "source_name": "COA Action Plan Monitoring Tool - Limay, CY 2024",
+    "source_name": "Commission on Audit",
+    "status": "blocked_no_public_url",
+    "url": null
+  },
+  {
+    "acquisition": "manual-download",
+    "blocked_by": [
+      "exact-url-unconfirmed"
+    ],
+    "bytes": 24393,
+    "citable": true,
+    "completeness": "complete",
+    "entity": "Department of the Interior and Local Government",
+    "entity_scope": "national-agency",
+    "held_path": "municipality-of-limay/barangay-officials.xlsx",
+    "id": "dilg-limay-barangay-officials-2023",
+    "path": "",
+    "retrieved_at": "2026-09-25",
+    "sha256": "e49fce385d1c98155fc929948b5ecb7c25a3669329ecc75ce52b6e6f833a50f9",
+    "source_name": "Department of the Interior and Local Government",
     "status": "blocked_no_public_url",
     "url": null
   },
@@ -90,6 +142,22 @@
     "source_name": "DTI Cities and Municipalities Competitiveness Index - Bataan municipalities",
     "status": "collection",
     "url": "https://cmci.dti.gov.ph/rankings-data.php?unit=1st%20to%202nd%20Class%20Municipalities"
+  },
+  {
+    "acquisition": "manual-download",
+    "bytes": 189974,
+    "collection_path": "dti-cmci/limay-profile",
+    "completeness": "complete",
+    "entity": "Department of Trade and Industry",
+    "entity_scope": "national-agency",
+    "file_count": 1,
+    "id": "dti-cmci-limay-profile",
+    "path": "",
+    "retrieved_at": "2026-09-25",
+    "sha256": "0fd7b00af77fef328a2b6f6e9f182d7d50b3cd83fd5099f342388c17df96390a",
+    "source_name": "DTI Cities and Municipalities Competitiveness Index - Limay LGU profile",
+    "status": "collection",
+    "url": "https://cmci.dti.gov.ph/lgu-profile.php?lgu=Limay"
   },
   {
     "acquisition": "manual-download",
@@ -114,11 +182,10 @@
   {
     "acquisition": "photo",
     "blocked_by": [
-      "exact-url-unconfirmed",
-      "needs-corroboration"
+      "exact-url-unconfirmed"
     ],
     "bytes": 309806,
-    "citable": false,
+    "citable": true,
     "completeness": "unknown",
     "entity": "Municipality of Limay",
     "entity_scope": "municipal",
@@ -146,7 +213,7 @@
     "path": "",
     "retrieved_at": "2026-09-23",
     "sha256": "0efd426ad10e529cca5728953257e0f2487655552eca73f61589703e53ad712a",
-    "source_name": "Limay Water District Citizen's Charter 2026 (1st Edition)",
+    "source_name": "Limay Water District",
     "status": "blocked_no_public_url",
     "url": null
   },
@@ -165,7 +232,7 @@
     "path": "",
     "retrieved_at": "2026-09-23",
     "sha256": "32333ff0d65db62793e32efa86feeb27032263ab21e42adffd1844d4ab55c18c",
-    "source_name": "Municipality of Orion Citizen's Charter, 2026 1st Edition",
+    "source_name": "Municipality of Orion",
     "status": "blocked_no_public_url",
     "url": null
   },
@@ -223,7 +290,7 @@
     "path": "",
     "retrieved_at": "2026-09-23",
     "sha256": "3910891dce8441477a99953b13a3c1726415af1e835c7c2e78212268ecbe622d",
-    "source_name": "PSA PSGC - Municipality of Limay, Bataan (barangay list, 2024 POPCEN)",
+    "source_name": "Philippine Statistics Authority",
     "status": "blocked_no_public_url",
     "url": null
   }

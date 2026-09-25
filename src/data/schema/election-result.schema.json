@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "BetterLimay Election Contest Result",
+  "description": "One contest in one election for a Limay office, with every candidate. Winners are the top `seats` candidates by votes.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "election", "contest", "jurisdiction", "seats", "asOf", "candidates", "provenance"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+    "election": { "type": "string", "minLength": 1 },
+    "contest": { "type": "string", "minLength": 1 },
+    "jurisdiction": { "type": "string", "minLength": 1 },
+    "seats": { "type": "integer", "minimum": 1 },
+    "asOf": { "type": "string", "format": "date-time" },
+    "electionReturns": { "type": "string" },
+    "candidates": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["ballotName", "displayName", "party", "votes", "rank", "won"],
+        "properties": {
+          "ballotName": { "type": "string", "minLength": 1, "description": "Exactly as printed on the ballot." },
+          "displayName": { "type": "string", "minLength": 1 },
+          "party": { "type": "string", "minLength": 1 },
+          "votes": { "type": "integer", "minimum": 0 },
+          "rank": { "type": "integer", "minimum": 1 },
+          "won": { "type": "boolean" }
+        }
+      }
+    },
+    "provenance": { "$ref": "./provenance.schema.json" }
+  }
+}

@@ -1,82 +1,162 @@
 [
   {
-    "id": "todo-verify-mayor",
-    "name": "TODO: verify - current Mayor",
-    "role": "Mayor",
+    "id": "mayor-richie-jason-d-david",
+    "name": "Richie Jason D. David",
+    "role": "Municipal Mayor",
     "branch": "executive",
-    "status": "unverified",
-    "term": null,
+    "status": "current",
+    "term": "2025–2028",
     "officeId": null,
     "provenance": {
-      "source_url": "https://limaybataan.ph/",
-      "source_name": "Official Municipality of Limay website (currently under construction)",
-      "retrieved_at": "2026-09-21",
+      "source_name": "ABS-CBN Halalan 2025 results, Limay, Bataan",
+      "retrieved_at": "2026-09-25",
       "verified": true,
-      "verification_note": "Role placeholder only; current officeholder not verified."
+      "verification_note": "Elected Mayor in the 2025 National and Local Elections (30,171 votes, rank 1 of 2). Legal name from the DTI Cities and Municipalities Competitiveness Index, Limay LGU profile; ballot name DAVID, RICHIE.",
+      "source_url": "https://halalanresults.abs-cbn.com/local/bataan/limay"
     }
   },
   {
-    "id": "todo-verify-vice-mayor",
-    "name": "TODO: verify - current Vice Mayor",
-    "role": "Vice Mayor",
-    "branch": "executive",
-    "status": "unverified",
-    "term": null,
-    "officeId": null,
-    "provenance": {
-      "source_url": "https://limaybataan.ph/",
-      "source_name": "Official Municipality of Limay website (currently under construction)",
-      "retrieved_at": "2026-09-21",
-      "verified": true,
-      "verification_note": "Role placeholder only; current officeholder not verified."
-    }
-  },
-  {
-    "id": "todo-verify-sangguniang-bayan",
-    "name": "TODO: verify - Sanggunian members",
-    "role": "Sangguniang Bayan member",
+    "id": "vice-mayor-grace-david",
+    "name": "Grace David",
+    "role": "Municipal Vice Mayor",
     "branch": "legislative",
-    "status": "unverified",
-    "term": null,
+    "status": "current",
+    "term": "2025–2028",
     "officeId": null,
     "provenance": {
-      "source_url": "https://limaybataan.ph/",
-      "source_name": "Official Municipality of Limay website (currently under construction)",
-      "retrieved_at": "2026-09-21",
+      "source_name": "ABS-CBN Halalan 2025 results, Limay, Bataan",
+      "retrieved_at": "2026-09-25",
       "verified": true,
-      "verification_note": "Role placeholder only; current roster not verified."
+      "verification_note": "Elected Vice Mayor in the 2025 National and Local Elections (29,820 votes, rank 1 of 2). Shown under the ballot name DAVID, GRACE.",
+      "source_url": "https://halalanresults.abs-cbn.com/local/bataan/limay"
     }
   },
   {
-    "id": "todo-verify-abc-president",
-    "name": "TODO: verify - ABC Federation President",
-    "role": "ABC Federation President (ex-officio)",
-    "branch": "ex-officio",
-    "status": "unverified",
-    "term": null,
+    "id": "councilor-sarah-david",
+    "name": "Sarah David",
+    "role": "Sangguniang Bayan Member",
+    "branch": "legislative",
+    "status": "current",
+    "term": "2025–2028",
     "officeId": null,
     "provenance": {
-      "source_url": "https://limaybataan.ph/",
-      "source_name": "Official Municipality of Limay website (currently under construction)",
-      "retrieved_at": "2026-09-21",
+      "source_name": "ABS-CBN Halalan 2025 results, Limay, Bataan",
+      "retrieved_at": "2026-09-25",
       "verified": true,
-      "verification_note": "Role placeholder only; current officeholder not verified."
+      "verification_note": "Elected Councilor in the 2025 National and Local Elections (29,728 votes, rank 1 of 17). Shown under the ballot name DAVID, SARAH.",
+      "source_url": "https://halalanresults.abs-cbn.com/local/bataan/limay"
     }
   },
   {
-    "id": "todo-verify-sk-president",
-    "name": "TODO: verify - SK Federation President",
-    "role": "SK Federation President (ex-officio)",
-    "branch": "ex-officio",
-    "status": "unverified",
-    "term": null,
+    "id": "councilor-cecil-roxas",
+    "name": "Cecil Roxas",
+    "role": "Sangguniang Bayan Member",
+    "branch": "legislative",
+    "status": "current",
+    "term": "2025–2028",
     "officeId": null,
     "provenance": {
-      "source_url": "https://limaybataan.ph/",
-      "source_name": "Official Municipality of Limay website (currently under construction)",
-      "retrieved_at": "2026-09-21",
+      "source_name": "ABS-CBN Halalan 2025 results, Limay, Bataan",
+      "retrieved_at": "2026-09-25",
       "verified": true,
-      "verification_note": "Role placeholder only; current officeholder not verified."
+      "verification_note": "Elected Councilor in the 2025 National and Local Elections (29,154 votes, rank 2 of 17). Shown under the ballot name ROXAS, CECIL.",
+      "source_url": "https://halalanresults.abs-cbn.com/local/bataan/limay"
+    }
+  },
+  {
+    "id": "councilor-bart-reyes",
+    "name": "Bart Reyes",
+    "role": "Sangguniang Bayan Member",
+    "branch": "legislative",
+    "status": "current",
+    "term": "2025–2028",
+    "officeId": null,
+    "provenance": {
+      "source_name": "ABS-CBN Halalan 2025 results, Limay, Bataan",
+      "retrieved_at": "2026-09-25",
+      "verified": true,
+      "verification_note": "Elected Councilor in the 2025 National and Local Elections (28,154 votes, rank 3 of 17). Shown under the ballot name REYES, BART.",
+      "source_url": "https://halalanresults.abs-cbn.com/local/bataan/limay"
+    }
+  },
+  {
+    "id": "councilor-dennis-gochuico",
+    "name": "Dennis Gochuico",
+    "role": "Sangguniang Bayan Member",
+    "branch": "legislative",
+    "status": "current",
+    "term": "2025–2028",
+    "officeId": null,
+    "provenance": {
+      "source_name": "ABS-CBN Halalan 2025 results, Limay, Bataan",
+      "retrieved_at": "2026-09-25",
+      "verified": true,
+      "verification_note": "Elected Councilor in the 2025 National and Local Elections (27,581 votes, rank 4 of 17). Shown under the ballot name GOCHUICO, DENNIS.",
+      "source_url": "https://halalanresults.abs-cbn.com/local/bataan/limay"
+    }
+  },
+  {
+    "id": "councilor-dra-rory-roque-perez",
+    "name": "Dra. Rory Roque-Perez",
+    "role": "Sangguniang Bayan Member",
+    "branch": "legislative",
+    "status": "current",
+    "term": "2025–2028",
+    "officeId": null,
+    "provenance": {
+      "source_name": "ABS-CBN Halalan 2025 results, Limay, Bataan",
+      "retrieved_at": "2026-09-25",
+      "verified": true,
+      "verification_note": "Elected Councilor in the 2025 National and Local Elections (26,308 votes, rank 5 of 17). Shown under the ballot name ROQUE-PEREZ, DRA RORY.",
+      "source_url": "https://halalanresults.abs-cbn.com/local/bataan/limay"
+    }
+  },
+  {
+    "id": "councilor-meng-newr-tayag-jr",
+    "name": "Meng-Newr Tayag Jr.",
+    "role": "Sangguniang Bayan Member",
+    "branch": "legislative",
+    "status": "current",
+    "term": "2025–2028",
+    "officeId": null,
+    "provenance": {
+      "source_name": "ABS-CBN Halalan 2025 results, Limay, Bataan",
+      "retrieved_at": "2026-09-25",
+      "verified": true,
+      "verification_note": "Elected Councilor in the 2025 National and Local Elections (26,142 votes, rank 6 of 17). Shown under the ballot name TAYAG, JR. MENG-NEWR.",
+      "source_url": "https://halalanresults.abs-cbn.com/local/bataan/limay"
+    }
+  },
+  {
+    "id": "councilor-manny-ambrocio",
+    "name": "Manny Ambrocio",
+    "role": "Sangguniang Bayan Member",
+    "branch": "legislative",
+    "status": "current",
+    "term": "2025–2028",
+    "officeId": null,
+    "provenance": {
+      "source_name": "ABS-CBN Halalan 2025 results, Limay, Bataan",
+      "retrieved_at": "2026-09-25",
+      "verified": true,
+      "verification_note": "Elected Councilor in the 2025 National and Local Elections (25,555 votes, rank 7 of 17). Shown under the ballot name AMBROCIO, MANNY.",
+      "source_url": "https://halalanresults.abs-cbn.com/local/bataan/limay"
+    }
+  },
+  {
+    "id": "councilor-ama-dela-rea",
+    "name": "Ama Dela Rea",
+    "role": "Sangguniang Bayan Member",
+    "branch": "legislative",
+    "status": "current",
+    "term": "2025–2028",
+    "officeId": null,
+    "provenance": {
+      "source_name": "ABS-CBN Halalan 2025 results, Limay, Bataan",
+      "retrieved_at": "2026-09-25",
+      "verified": true,
+      "verification_note": "Elected Councilor in the 2025 National and Local Elections (24,523 votes, rank 8 of 17). Shown under the ballot name DELA REA, AMA.",
+      "source_url": "https://halalanresults.abs-cbn.com/local/bataan/limay"
     }
   }
 ]

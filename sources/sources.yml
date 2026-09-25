@@ -356,3 +356,134 @@ sources:
       scripts/observability.mjs DATASETS, and no import anywhere in src/
       (HotlineBar.tsx renders a hardcoded unavailable message). Five registrations
       are needed before anything can display. Tracked as GAP-020.
+
+  # ----------------------------------------------------------------- elections
+  - id: abs-cbn-halalan-2025-limay
+    path: abs-cbn/halalan-2025-limay-rendered.yml
+    entity: ABS-CBN News (aggregating Comelec transmissions)
+    entity_scope: national-agency
+    source_name: ABS-CBN Halalan 2025 results, Limay, Bataan
+    url: https://halalanresults.abs-cbn.com/local/bataan/limay
+    retrieved_at: 2026-09-25
+    acquisition: rendered-snapshot
+    extraction: none
+    completeness: complete
+    target_datasets: [elections.json, officials.json]
+    gap_ids: [GAP-005]
+    publishable: true
+    notes: >
+      Rendered by JavaScript and returns HTTP 403 to plain fetches, so it is
+      archived as a Playwright accessibility snapshot after clicking "View All"
+      under Councilor (otherwise only the top 5 of 18 are in the page).
+      Unofficial, aggregated from Comelec, 100% of ERs (75 of 75 clustered
+      precincts) as of 2025-05-15 14:41. Ballot names, not legal names.
+      Only the section above "OTHER RESULTS FROM" is Limay's own contests.
+
+  # ----------------------------------------------------------------- barangays
+  - id: dilg-limay-barangay-officials-2023
+    path: municipality-of-limay/barangay-officials.xlsx
+    entity: Department of the Interior and Local Government
+    entity_scope: national-agency
+    source_name: Department of the Interior and Local Government
+    url: null
+    bridge_blocked_by: [exact-url-unconfirmed]
+    retrieved_at: 2026-09-25
+    document:
+      title: "DILG roster of barangay officials, Municipality of Limay, Bataan, term 2023-2026"
+    acquisition: manual-download
+    extraction: tabular
+    completeness: complete
+    target_datasets: [barangays.json]
+    gap_ids: [GAP-008]
+    publishable: true
+    notes: >
+      232 rows, 12 barangays: Punong Barangay, Sangguniang Barangay members, SK
+      chair/members/secretary/treasurer, barangay secretary/treasurer. The
+      province column is mislabelled "ABUCAY" but every row reads LIMAY.
+      PRIVACY: full middle names and per-row phone numbers are NOT published;
+      names go out with a middle initial, and only the barangay's own line (from
+      council rows, never SK rows) is shown. See pipeline/transforms/barangays.py.
+
+  # ------------------------------------------------------------------ contacts
+  - id: dti-cmci-limay-profile
+    path: dti-cmci/limay-profile
+    entity: Department of Trade and Industry
+    entity_scope: national-agency
+    source_name: DTI Cities and Municipalities Competitiveness Index - Limay LGU profile
+    url: https://cmci.dti.gov.ph/lgu-profile.php?lgu=Limay
+    retrieved_at: 2026-09-25
+    acquisition: manual-download
+    extraction: tabular
+    completeness: complete
+    target_datasets: [offices.json, officials.json, cmci-limay-profile.json]
+    gap_ids: [GAP-004, GAP-006, GAP-015]
+    publishable: true
+    notes: >
+      Server-rendered HTML. Carries the LGU's official tel (633-0302 /
+      +63 919 002 9061), e-mail (limaybataanncd@gmail.com), address (Townsite),
+      category (First Class), population and the Mayor's full name, plus
+      national CMCI ranks and pillar scores for 2014-2024.
+
+  - id: betterlimay-maintainer-contacts-2026-09-25
+    path: municipality-of-limay/recent_election-and-additional data.txt
+    entity: BetterLimay maintainers
+    entity_scope: municipal
+    source_name: BetterLimay maintainers
+    url: null
+    retrieved_at: 2026-09-25
+    document:
+      title: "BetterLimay maintainer contact list"
+      issued: 2026-09-25
+    acquisition: manual-entry
+    extraction: none
+    completeness: partial
+    target_datasets: [offices.json]
+    publishable: true
+    notes: >
+      Contacts collected by the maintainers where no official page could be
+      found to cite. Used only as a fallback: prefer the agency's own document.
+      The Mayor's mobile number in this file is deliberately NOT published.
+      Police e-mail: a third-party directory lists limaymps_finest@yahoo.com;
+      the maintainers' limay.pcr@yahoo.com matches the station's Facebook handle
+      (facebook.com/limay.pcr) and is the one used.
+
+  # ------------------------------------------------------------------- hazards
+  - id: up-noah-flood-hazard-bataan
+    path: up-noah/flood
+    entity: UP NOAH Center
+    entity_scope: national-agency
+    source_name: UP NOAH Center flood hazard maps (via the BetterGov open-data mirror)
+    url: https://huggingface.co/datasets/bettergovph/project-noah-hazard-maps
+    retrieved_at: 2026-09-25
+    acquisition: manual-download
+    extraction: tabular
+    completeness: complete
+    target_datasets: [limay-flood-100yr.geojson]
+    publishable: true
+    license: ODC-ODbL
+    notes: >
+      Flood/{5yr,25yr,100yr}/Bataan.zip, ESRI shapefiles in EPSG:4326 with a Var
+      attribute: 1 low (0-0.5 m), 2 medium (>0.5-1.5 m), 3 high (>1.5 m).
+      Also listed on https://data.bettergov.ph/datasets/22. noah.up.edu.ph itself
+      sends X-Frame-Options: SAMEORIGIN, so it cannot be embedded; the derived,
+      clipped layer is redistributed instead, as ODbL permits with attribution.
+      NOAH_License.pdf is kept alongside. Only the 100-year layer is published:
+      the 5- and 25-year Bataan layers end at ~120.58 E and miss most of Limay.
+
+  - id: openstreetmap-limay-boundary
+    path: openstreetmap/limay-boundary.geojson
+    entity: OpenStreetMap contributors
+    entity_scope: national-agency
+    source_name: OpenStreetMap contributors
+    url: https://www.openstreetmap.org/relation/15310575
+    retrieved_at: 2026-09-25
+    acquisition: manual-download
+    extraction: none
+    completeness: complete
+    target_datasets: [limay-flood-100yr.geojson]
+    publishable: true
+    license: ODC-ODbL
+    notes: >
+      Municipal boundary via Nominatim. Covers ~242 km2 against Limay's ~104 km2
+      land area because it includes municipal waters; used only to clip hazard
+      layers (which exist on land only) and never drawn as "Limay".

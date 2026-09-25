@@ -144,7 +144,21 @@ export interface BarangayRecord {
   punongBarangay: string | null;
   coordinates: Coordinates | null;
   profile?: string;
+  psgcCode?: string;
+  classification?: "urban" | "rural";
+  population2024?: number;
+  /** The barangay's own line. Never a personal number. */
+  contactPhone?: string;
+  term?: string;
+  officials?: BarangayOfficial[];
   provenance: Provenance;
+}
+
+export interface BarangayOfficial {
+  /** First name, middle initial, last name, suffix. */
+  name: string;
+  position: string;
+  termInPosition?: string;
 }
 
 export interface LegislationRecord {
@@ -245,5 +259,29 @@ export interface AnnouncementRecord {
   /** Cover image path under /uploads. */
   image?: string;
   imageAlt?: string;
+  /** A Facebook post or live video, embedded click-to-load. */
+  facebookUrl?: string;
+  provenance: Provenance;
+}
+
+export interface ElectionCandidate {
+  /** Exactly as printed on the ballot, e.g. "DAVID, RICHIE". */
+  ballotName: string;
+  displayName: string;
+  party: string;
+  votes: number;
+  rank: number;
+  won: boolean;
+}
+
+export interface ElectionContestRecord {
+  id: string;
+  election: string;
+  contest: string;
+  jurisdiction: string;
+  seats: number;
+  asOf: string;
+  electionReturns?: string;
+  candidates: ElectionCandidate[];
   provenance: Provenance;
 }

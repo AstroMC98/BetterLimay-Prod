@@ -1,0 +1,128 @@
+{
+  "source": "abs-cbn-halalan-2025-limay",
+  "election": "2025 National and Local Elections",
+  "asOf": "2025-05-15T14:41:00+08:00",
+  "electionReturns": "75 of 75 clustered precincts (100%)",
+  "contests": [
+    {
+      "contest": "Mayor",
+      "candidates": [
+        {
+          "ballotName": "DAVID, RICHIE",
+          "party": "PFP",
+          "votes": 30171
+        },
+        {
+          "ballotName": "ROQUE, VER",
+          "party": "IND",
+          "votes": 20949
+        }
+      ]
+    },
+    {
+      "contest": "Vice Mayor",
+      "candidates": [
+        {
+          "ballotName": "DAVID, GRACE",
+          "party": "PFP",
+          "votes": 29820
+        },
+        {
+          "ballotName": "ROQUE, OBET",
+          "party": "IND",
+          "votes": 20591
+        }
+      ]
+    },
+    {
+      "contest": "Councilor",
+      "candidates": [
+        {
+          "ballotName": "DAVID, SARAH",
+          "party": "PFP",
+          "votes": 29728
+        },
+        {
+          "ballotName": "ROXAS, CECIL",
+          "party": "PFP",
+          "votes": 29154
+        },
+        {
+          "ballotName": "REYES, BART",
+          "party": "PFP",
+          "votes": 28154
+        },
+        {
+          "ballotName": "GOCHUICO, DENNIS",
+          "party": "PFP",
+          "votes": 27581
+        },
+        {
+          "ballotName": "ROQUE-PEREZ, DRA RORY",
+          "party": "BLKTN",
+          "votes": 26308
+        },
+        {
+          "ballotName": "TAYAG, JR. MENG-NEWR",
+          "party": "PFP",
+          "votes": 26142
+        },
+        {
+          "ballotName": "AMBROCIO, MANNY",
+          "party": "BLKTN",
+          "votes": 25555
+        },
+        {
+          "ballotName": "DELA REA, AMA",
+          "party": "IND",
+          "votes": 24523
+        },
+        {
+          "ballotName": "BORBE, JIM",
+          "party": "IND",
+          "votes": 17334
+        },
+        {
+          "ballotName": "CORTEZ, ED",
+          "party": "IND",
+          "votes": 17115
+        },
+        {
+          "ballotName": "DE ROXAS, ADY",
+          "party": "IND",
+          "votes": 16788
+        },
+        {
+          "ballotName": "ROQUE, ELIZA ANN",
+          "party": "IND",
+          "votes": 15242
+        },
+        {
+          "ballotName": "ROXAS, LITO",
+          "party": "IND",
+          "votes": 15068
+        },
+        {
+          "ballotName": "GOMEZ, KARL",
+          "party": "IND",
+          "votes": 12895
+        },
+        {
+          "ballotName": "GABRIEL, GADI",
+          "party": "IND",
+          "votes": 12148
+        },
+        {
+          "ballotName": "OLINAR, NHOY",
+          "party": "IND",
+          "votes": 12016
+        },
+        {
+          "ballotName": "MONTERO, PITONG",
+          "party": "IND",
+          "votes": 8453
+        }
+      ]
+    }
+  ]
+}

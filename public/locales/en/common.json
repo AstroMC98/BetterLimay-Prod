@@ -25,7 +25,8 @@
     "sourceCode": "Source code",
     "license": "License",
     "costToPeople": "Cost to the People of Limay: ₱0",
-    "endorsement": "An initiative of BetterGov.PH"
+    "endorsement": "An initiative of BetterGov.PH",
+    "municipalHall": "Municipal Hall"
   },
   "forms": {
     "required": "Required",
@@ -170,14 +171,15 @@
     "latestAnnouncements": "Latest announcements",
     "announcementsUnavailable": "No announcements are available from a verified official source yet.",
     "transparencyTitle": "Transparency, one source at a time",
-    "transparencyUnavailable": "Browse sourced project and procurement references; municipal finance and CMCI data remain explicit gaps.",
+    "transparencyUnavailable": "Audited finances, procurement, Limay's competitiveness ranking and a flood hazard map, each with its source.",
     "transparencyAction": "Open transparency records",
     "statisticsAction": "Open statistics",
     "contributeTitle": "Help keep Limay information clear",
     "contributeDescription": "Share a correction or help us verify a public record.",
     "contributeAction": "Contribute a correction",
     "disclaimerTitle": "Independent community portal",
-    "disclaimerBody": "BetterLimay is not affiliated with the LGU. Always verify important information with the official source."
+    "disclaimerBody": "BetterLimay is not affiliated with the LGU. Always verify important information with the official source.",
+    "floodMapAction": "Flood hazard map"
   },
   "search": {
     "label": "Search BetterLimay",
@@ -243,7 +245,16 @@
     "empty": "No announcements are ready for publication",
     "emptyDescription": "The official site and Facebook source could not be safely aggregated into an auditable news record. This does not mean there are no announcements; check the official channels directly.",
     "readMore": "Read the full post",
-    "backToNews": "Back to all news"
+    "backToNews": "Back to all news",
+    "video": "Video",
+    "facebook": {
+      "watch": "Watch on this page",
+      "show": "Show the Facebook post",
+      "privacy": "Loads from Facebook only when you press the button.",
+      "open": "Open on Facebook",
+      "videoTitle": "Facebook video",
+      "postTitle": "Facebook post"
+    }
   },
   "report": {
     "eyebrow": "Community feedback",
@@ -463,6 +474,36 @@
       "tableCaption": "{{indicator}} by municipality and year",
       "year": "Year",
       "notSurveyed": "Not surveyed"
+    },
+    "cmciProfile": {
+      "eyebrow": "DTI Cities and Municipalities Competitiveness Index",
+      "title": "Limay nationally",
+      "region": "Region III (Central Luzon)",
+      "loading": "Loading Limay's national CMCI profile…",
+      "unavailable": "Limay's national CMCI profile could not be loaded.",
+      "nationally": "overall, nationally, in {{year}}",
+      "overallScore": "Overall score {{score}} (sum of the pillars)",
+      "up_one": "up {{count}} place since {{year}}",
+      "up_other": "up {{count}} places since {{year}}",
+      "down_one": "down {{count}} place since {{year}}",
+      "down_other": "down {{count}} places since {{year}}",
+      "same": "same rank as {{year}}",
+      "pillarsLabel": "Pillar ranks and scores",
+      "score": "Score {{score}}",
+      "rankTitle": "Overall rank over time",
+      "rankAxis": "Rank, 1 = best (higher on the chart is better)",
+      "rankTooltip": "Rank",
+      "rankChartLabel": "Limay's overall national CMCI rank by year: {{points}}",
+      "rankCaveat": "DTI's comparison group changed over the years and the profile does not say how many municipalities were ranked, so a change in rank is not by itself a change in performance. 2018 was not surveyed for Limay.",
+      "detailTitle": "What makes up a pillar",
+      "pillarLabel": "Pillar",
+      "yearLabel": "Year",
+      "detailChartLabel": "Sub-indicator scores for {{pillar}}, {{year}}",
+      "detailTable": "Show ranks and scores as a table",
+      "indicator": "Sub-indicator",
+      "rankColumn": "Rank",
+      "scoreColumn": "Score",
+      "source": "See Limay's full profile on the DTI CMCI site"
     }
   },
   "pages": {
@@ -493,27 +534,27 @@
     },
     "government": {
       "title": "Government directory",
-      "description": "Browse government branch and office route placeholders without treating unverified records as confirmed facts.",
+      "description": "Who runs Limay: its elected officials, its twelve barangays, and how to reach the Municipality.",
       "eyebrow": "Government directory",
-      "branchDescription": "The {{branch}} route is available, but records shown here require source verification.",
-      "recordNotice": "No confirmed record is published for this route yet. Verify names, roles, offices, and locations with an official source.",
+      "branchDescription": "{{branch}}, Municipality of Limay.",
+      "recordNotice": "Nothing is published for this section yet. Check with the Municipality directly in the meantime.",
       "branches": {
         "executive": "Executive branch",
         "legislative": "Legislative branch",
         "ex-officio": "Ex-officio roles",
-        "departments": "Departments",
+        "departments": "Offices and contacts",
         "barangays": "Barangays"
       },
       "electedOfficialsTitle": "Elected officials",
-      "electedOfficialsDescription": "Review the Sangguniang Bayan and ex-officio role placeholders. Names remain visibly unverified until a public source confirms them.",
-      "exOfficioNote": "The ABC Federation President and SK Federation President are represented as ex-officio roles. Their names are not published until verified.",
+      "electedOfficialsDescription": "The Mayor, Vice Mayor and Sangguniang Bayan elected in May 2025, with the full results.",
+      "exOfficioNote": "The ABC Federation President and SK Federation President also sit on the Sangguniang Bayan. They will be listed once an official source names them.",
       "term": "Term",
       "verified": "Verified",
       "viewSource": "View source",
       "officeHead": "Office head",
       "contact": "Contact",
       "location": "Location",
-      "notAvailable": "Not available — verify with the official source",
+      "notAvailable": "Not available",
       "locationNotVerified": "Location not verified",
       "locationMissing": "No location published",
       "locationAvailable": "Verified coordinates available",
@@ -524,9 +565,28 @@
       "mapUnavailable": "The map is not available because no barangay coordinates have been verified yet.",
       "osmAttribution": "OpenStreetMap contributors",
       "listEyebrow": "Accessible alternative",
-      "listAlternative": "Barangay list",
+      "listAlternative": "All barangays",
       "noBarangays": "No barangay records are published yet.",
-      "expectedBarangays": "The configuration expects {{count}} barangays; names and profiles still need source verification."
+      "expectedBarangays": "The configuration expects {{count}} barangays; names and profiles still need source verification.",
+      "classification": {
+        "urban": "Urban",
+        "rural": "Rural"
+      },
+      "classificationLabel": "Classification",
+      "population_one": "{{formatted}} resident (2024)",
+      "population_other": "{{formatted}} residents (2024)",
+      "population2024": "Population (2024 census)",
+      "totalPopulation_one": "{{count}} barangay, {{formatted}} residents in the 2024 census",
+      "totalPopulation_other": "{{count}} barangays, {{formatted}} residents in the 2024 census",
+      "barangayTitle": "Barangay {{name}}",
+      "barangayDescription": "Officials, population and contact number for Barangay {{name}}, Limay, Bataan.",
+      "backToBarangays": "Back to all barangays",
+      "barangayCouncil": "Barangay council",
+      "sangguniangKabataan": "Sangguniang Kabataan",
+      "phone": "Phone",
+      "email": "E-mail",
+      "contactTitle": "Contact the Municipality",
+      "moreContacts": "More offices and contacts"
     },
     "about": {
       "title": "About BetterLimay",
@@ -598,5 +658,41 @@
   "theme": {
     "switchToDark": "Switch to dark mode",
     "switchToLight": "Switch to light mode"
+  },
+  "elections": {
+    "title": "2025 election results",
+    "caption": "Unofficial results aggregated from Comelec transmissions as of {{asOf}}, {{returns}}.",
+    "seats_one": "{{count}} seat",
+    "seats_other": "{{count}} seats",
+    "chartLabel": "{{contest}} results. Elected: {{winners}}.",
+    "showTable": "Show every candidate's votes as a table",
+    "rank": "Rank",
+    "candidate": "Candidate",
+    "party": "Party",
+    "votes": "Votes",
+    "elected": "Elected"
+  },
+  "hazards": {
+    "eyebrow": "UP NOAH flood hazard map",
+    "title": "Where Limay floods",
+    "intro": "Areas of Limay that would flood in a very heavy rain, the kind expected about once in 100 years, by how dangerous the water would be.",
+    "loading": "Loading the flood hazard map…",
+    "unavailable": "The flood hazard map could not be loaded.",
+    "legendLabel": "Flood hazard levels",
+    "levels": {
+      "low": "Low",
+      "medium": "Medium",
+      "high": "High"
+    },
+    "depths": {
+      "low": "up to knee-deep (0–0.5 m)",
+      "medium": "knee to neck (0.5–1.5 m)",
+      "high": "above the neck (over 1.5 m)"
+    },
+    "area": "{{km2}} km²",
+    "mapLabel": "Flood hazard map of Limay for a 100-year rain: {{low}} km² low, {{medium}} km² medium and {{high}} km² high hazard.",
+    "disclaimer": "These are modelled hazard zones, not live flood reports. Water speed counts too, so shallow but fast water can be rated higher. In an emergency, follow MDRRMO advisories and the hotlines at the top of the page.",
+    "coverage": "NOAH's maps for more frequent rains (5- and 25-year) do not cover most of Limay, so they are not shown.",
+    "noahLink": "Explore all hazards on UP NOAH"
   }
 }

@@ -1,1 +1,1354 @@
-[]
+[
+  {
+    "id": "alangan",
+    "name": "Alangan",
+    "punongBarangay": "Teresita D. Dela Rea",
+    "coordinates": null,
+    "psgcCode": "0300806001",
+    "classification": "urban",
+    "population2024": 7501,
+    "term": "2023–2026",
+    "officials": [
+      {
+        "name": "Teresita D. Dela Rea",
+        "position": "Punong Barangay",
+        "termInPosition": "2nd term"
+      },
+      {
+        "name": "Regino E. Fajardo",
+        "position": "Sangguniang Barangay Member",
+        "termInPosition": "3rd term"
+      },
+      {
+        "name": "Emelita G. Cobrado",
+        "position": "Sangguniang Barangay Member",
+        "termInPosition": "2nd term"
+      },
+      {
+        "name": "Raphy V. Aucena",
+        "position": "Sangguniang Barangay Member",
+        "termInPosition": "3rd term"
+      },
+      {
+        "name": "Jenelyn M. Santos",
+        "position": "Sangguniang Barangay Member",
+        "termInPosition": "2nd term"
+      },
+      {
+        "name": "Rodrigo G. Gelomina",
+        "position": "Sangguniang Barangay Member",
+        "termInPosition": "3rd term"
+      },
+      {
+        "name": "Alex T. Valdez",
+        "position": "Sangguniang Barangay Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Marietta G. Panganiban",
+        "position": "Barangay Secretary"
+      },
+      {
+        "name": "Ellieza D. Polon",
+        "position": "SK Chairperson",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Rechie R. Fajardo",
+        "position": "SK Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Erika P. Fenis",
+        "position": "SK Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Trisha D. Manansala",
+        "position": "SK Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Shamel D. Roque",
+        "position": "SK Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Sunshine L. De Guzman",
+        "position": "SK Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Jesah Myka E. Picardal",
+        "position": "SK Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Mark Lorence A. Rebato",
+        "position": "SK Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Vanessa Bianca D. Sinsay",
+        "position": "SK Secretary"
+      },
+      {
+        "name": "Loreto B. Angcla Jr.",
+        "position": "SK Treasurer"
+      }
+    ],
+    "provenance": {
+      "source_name": "Department of the Interior and Local Government",
+      "retrieved_at": "2026-09-25",
+      "verified": true,
+      "verification_note": "Officials from the DILG barangay officials roster, term 2023-2026. Middle names are shown as initials. Population and classification from the PSA 2024 POPCEN.",
+      "source_document": "DILG roster of barangay officials, Municipality of Limay, Bataan, term 2023-2026"
+    },
+    "contactPhone": "0910 621 3165"
+  },
+  {
+    "id": "kitang-i",
+    "name": "Kitang I",
+    "punongBarangay": "Arnel Q. Bagtas",
+    "coordinates": null,
+    "psgcCode": "0300806002",
+    "classification": "rural",
+    "population2024": 2239,
+    "term": "2023–2026",
+    "officials": [
+      {
+        "name": "Arnel Q. Bagtas",
+        "position": "Punong Barangay",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Erwin D. Ambrocio",
+        "position": "Sangguniang Barangay Member",
+        "termInPosition": "3rd term"
+      },
+      {
+        "name": "Arnulfo A. Culanding",
+        "position": "Sangguniang Barangay Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Dominador R. Labbao",
+        "position": "Sangguniang Barangay Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Rolando A. Cruz",
+        "position": "Sangguniang Barangay Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Vianney M. Deogracias",
+        "position": "Sangguniang Barangay Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Luisito D. Remorin",
+        "position": "Sangguniang Barangay Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "German M. Teodoro Sr.",
+        "position": "Sangguniang Barangay Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Michelle S. Bautista",
+        "position": "Barangay Secretary"
+      },
+      {
+        "name": "Madeline E. Jucdong",
+        "position": "Barangay Treasurer"
+      },
+      {
+        "name": "Timothy James A. De Leon",
+        "position": "SK Chairperson",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Tricia May M. Delgado",
+        "position": "SK Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Len C. Bagtas",
+        "position": "SK Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Paul Asi P. Betco",
+        "position": "SK Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Allen S. Gregorio",
+        "position": "SK Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "John Byron L. Cruz",
+        "position": "SK Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "John Michael C. Sioson",
+        "position": "SK Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Bryan Jones R. Rapirap",
+        "position": "SK Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Mheomel R. Martin",
+        "position": "SK Secretary"
+      },
+      {
+        "name": "Reann Mae R. Gregorio",
+        "position": "SK Treasurer"
+      }
+    ],
+    "provenance": {
+      "source_name": "Department of the Interior and Local Government",
+      "retrieved_at": "2026-09-25",
+      "verified": true,
+      "verification_note": "Officials from the DILG barangay officials roster, term 2023-2026. Middle names are shown as initials. Population and classification from the PSA 2024 POPCEN.",
+      "source_document": "DILG roster of barangay officials, Municipality of Limay, Bataan, term 2023-2026"
+    },
+    "contactPhone": "0964 179 1174"
+  },
+  {
+    "id": "kitang-2-luz",
+    "name": "Kitang 2 & Luz",
+    "punongBarangay": "Leonida S. Navarro",
+    "coordinates": null,
+    "psgcCode": "0300806003",
+    "classification": "urban",
+    "population2024": 6209,
+    "term": "2023–2026",
+    "officials": [
+      {
+        "name": "Leonida S. Navarro",
+        "position": "Punong Barangay",
+        "termInPosition": "2nd term"
+      },
+      {
+        "name": "Jesse C. Cabulao",
+        "position": "Sangguniang Barangay Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Marissa A. Dominguez",
+        "position": "Sangguniang Barangay Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Freddie P. Peralta",
+        "position": "Sangguniang Barangay Member",
+        "termInPosition": "2nd term"
+      },
+      {
+        "name": "Marco C. De Guzman",
+        "position": "Sangguniang Barangay Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Lucy C. Cuevas",
+        "position": "Sangguniang Barangay Member",
+        "termInPosition": "2nd term"
+      },
+      {
+        "name": "Domingo M. Dimaangay",
+        "position": "Sangguniang Barangay Member",
+        "termInPosition": "2nd term"
+      },
+      {
+        "name": "Maricris P. Cabral",
+        "position": "Sangguniang Barangay Member",
+        "termInPosition": "Appointive"
+      },
+      {
+        "name": "Theresa P. Lim",
+        "position": "Barangay Secretary"
+      },
+      {
+        "name": "Lorieda C. Razon",
+        "position": "Barangay Treasurer"
+      },
+      {
+        "name": "Maricksy Iree Mae O. Cabulao",
+        "position": "SK Chairperson",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Abby Angeli S. Ambrocio",
+        "position": "SK Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Kevin G. Peralta",
+        "position": "SK Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Lance O. Peralta",
+        "position": "SK Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Rose Jane J. Cortez",
+        "position": "SK Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Haiden S. Orias",
+        "position": "SK Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Raven C. Peralta",
+        "position": "SK Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Adrian M. Macuroy",
+        "position": "SK Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Angelica S. Buensuceso",
+        "position": "SK Treasurer"
+      }
+    ],
+    "provenance": {
+      "source_name": "Department of the Interior and Local Government",
+      "retrieved_at": "2026-09-25",
+      "verified": true,
+      "verification_note": "Officials from the DILG barangay officials roster, term 2023-2026. Middle names are shown as initials. Population and classification from the PSA 2024 POPCEN.",
+      "source_document": "DILG roster of barangay officials, Municipality of Limay, Bataan, term 2023-2026"
+    },
+    "contactPhone": "0931 854 0680"
+  },
+  {
+    "id": "lamao",
+    "name": "Lamao",
+    "punongBarangay": "Leila F. Cruz",
+    "coordinates": null,
+    "psgcCode": "0300806004",
+    "classification": "urban",
+    "population2024": 19492,
+    "term": "2023–2026",
+    "officials": [
+      {
+        "name": "Leila F. Cruz",
+        "position": "Punong Barangay",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Pilarcita N. Cañete",
+        "position": "Sangguniang Barangay Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Alberto A. Borja",
+        "position": "Sangguniang Barangay Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Pepito P. Montero",
+        "position": "Sangguniang Barangay Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Dennis R. Peña",
+        "position": "Sangguniang Barangay Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Ricardo N. Casal Jr.",
+        "position": "Sangguniang Barangay Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Roy C. Collantes",
+        "position": "Sangguniang Barangay Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Dina Mae M. Camero",
+        "position": "Sangguniang Barangay Member",
+        "termInPosition": "Appointive"
+      },
+      {
+        "name": "Juanita D. Gaudia",
+        "position": "Barangay Secretary"
+      },
+      {
+        "name": "Amirah E. Ocampo",
+        "position": "Barangay Treasurer"
+      },
+      {
+        "name": "Hanzar Carrel T. Cañete",
+        "position": "SK Chairperson",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Carl Danzen M. Agas",
+        "position": "SK Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Francis Durrel B. Molina",
+        "position": "SK Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Mark Adrian A. Labosta",
+        "position": "SK Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Nickson B. Calimbas",
+        "position": "SK Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Jayson S. Bozon",
+        "position": "SK Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Randelle M. Dela Cruz",
+        "position": "SK Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Nicole D. Beltran",
+        "position": "SK Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Christine Joy P. Irangan",
+        "position": "SK Secretary"
+      },
+      {
+        "name": "Ella Zhane S. Baul",
+        "position": "SK Treasurer"
+      }
+    ],
+    "provenance": {
+      "source_name": "Department of the Interior and Local Government",
+      "retrieved_at": "2026-09-25",
+      "verified": true,
+      "verification_note": "Officials from the DILG barangay officials roster, term 2023-2026. Middle names are shown as initials. Population and classification from the PSA 2024 POPCEN.",
+      "source_document": "DILG roster of barangay officials, Municipality of Limay, Bataan, term 2023-2026"
+    },
+    "contactPhone": "(047) 633-9703"
+  },
+  {
+    "id": "landing",
+    "name": "Landing",
+    "punongBarangay": "Editha D. Sales",
+    "coordinates": null,
+    "psgcCode": "0300806006",
+    "classification": "rural",
+    "population2024": 3175,
+    "term": "2023–2026",
+    "officials": [
+      {
+        "name": "Editha D. Sales",
+        "position": "Punong Barangay",
+        "termInPosition": "2nd term"
+      },
+      {
+        "name": "Alizandro M. Mahinay",
+        "position": "Sangguniang Barangay Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Prescila F. Peralta",
+        "position": "Sangguniang Barangay Member",
+        "termInPosition": "3rd term"
+      },
+      {
+        "name": "Enrico C. Mendez",
+        "position": "Sangguniang Barangay Member",
+        "termInPosition": "2nd term"
+      },
+      {
+        "name": "Lolita C. Canoy",
+        "position": "Sangguniang Barangay Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Nestor P. Plarisan",
+        "position": "Sangguniang Barangay Member",
+        "termInPosition": "2nd term"
+      },
+      {
+        "name": "Erlinda C. Villanueva",
+        "position": "Sangguniang Barangay Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Carlito P. Iglip",
+        "position": "Sangguniang Barangay Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Hydee T. Cruz",
+        "position": "Barangay Secretary"
+      },
+      {
+        "name": "Maria Fe B. Cortez",
+        "position": "Barangay Treasurer"
+      },
+      {
+        "name": "Ashlhey C. Custodio",
+        "position": "SK Chairperson",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Eisel Llyod G. Cruz",
+        "position": "SK Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Ritz Ann M. Rivera",
+        "position": "SK Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Sandara E. Velasquez",
+        "position": "SK Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Kartleen C. Atenta",
+        "position": "SK Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "James Brian B. Carel",
+        "position": "SK Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Mike Enzo S. Gatdula",
+        "position": "SK Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Byron Aj E. Guinto",
+        "position": "SK Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Emar P. Olarte",
+        "position": "SK Secretary"
+      },
+      {
+        "name": "Chrisha Earl C. Constante",
+        "position": "SK Treasurer"
+      }
+    ],
+    "provenance": {
+      "source_name": "Department of the Interior and Local Government",
+      "retrieved_at": "2026-09-25",
+      "verified": true,
+      "verification_note": "Officials from the DILG barangay officials roster, term 2023-2026. Middle names are shown as initials. Population and classification from the PSA 2024 POPCEN.",
+      "source_document": "DILG roster of barangay officials, Municipality of Limay, Bataan, term 2023-2026"
+    }
+  },
+  {
+    "id": "poblacion",
+    "name": "Poblacion",
+    "punongBarangay": "Angelito S. Roxas",
+    "coordinates": null,
+    "psgcCode": "0300806007",
+    "classification": "rural",
+    "population2024": 614,
+    "term": "2023–2026",
+    "officials": [
+      {
+        "name": "Angelito S. Roxas",
+        "position": "Punong Barangay",
+        "termInPosition": "2nd term"
+      },
+      {
+        "name": "Modesto D. Mistula",
+        "position": "Sangguniang Barangay Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Marissa S. Pacion",
+        "position": "Sangguniang Barangay Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Erickson A. Astano",
+        "position": "Sangguniang Barangay Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Raissa May G. Ventura",
+        "position": "Sangguniang Barangay Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Estela P. Francisco",
+        "position": "Sangguniang Barangay Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Charito G. Bautista",
+        "position": "Sangguniang Barangay Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Amelia G. Baluyot",
+        "position": "Sangguniang Barangay Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Jhovy P. Heramis",
+        "position": "Barangay Secretary"
+      },
+      {
+        "name": "Lolita G. Mercado",
+        "position": "Barangay Treasurer"
+      },
+      {
+        "name": "Justin Angelo C. Dela Pena",
+        "position": "SK Chairperson",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Diorella G. Bautista",
+        "position": "SK Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Mialgie Samdrielle F. Basco",
+        "position": "SK Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Jan Vincent S. Gomez",
+        "position": "SK Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "John Andrei D. Malit",
+        "position": "SK Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Francis M. Cruz Jr.",
+        "position": "SK Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Chanelly R. Tarong",
+        "position": "SK Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Franz Cymon C. Glocenda",
+        "position": "SK Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Patrisse Julianne G. Mercado",
+        "position": "SK Secretary"
+      },
+      {
+        "name": "Endric John R. Rosas",
+        "position": "SK Treasurer"
+      }
+    ],
+    "provenance": {
+      "source_name": "Department of the Interior and Local Government",
+      "retrieved_at": "2026-09-25",
+      "verified": true,
+      "verification_note": "Officials from the DILG barangay officials roster, term 2023-2026. Middle names are shown as initials. Population and classification from the PSA 2024 POPCEN.",
+      "source_document": "DILG roster of barangay officials, Municipality of Limay, Bataan, term 2023-2026"
+    },
+    "contactPhone": "(047) 275-0042"
+  },
+  {
+    "id": "reformista",
+    "name": "Reformista",
+    "punongBarangay": "Danilo C. Lintag",
+    "coordinates": null,
+    "psgcCode": "0300806008",
+    "classification": "urban",
+    "population2024": 5607,
+    "term": "2023–2026",
+    "officials": [
+      {
+        "name": "Danilo C. Lintag",
+        "position": "Punong Barangay",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Virginia G. Abaja",
+        "position": "Sangguniang Barangay Member",
+        "termInPosition": "2nd term"
+      },
+      {
+        "name": "Angelito P. Samson",
+        "position": "Sangguniang Barangay Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Michael B. Hernandez",
+        "position": "Sangguniang Barangay Member",
+        "termInPosition": "2nd term"
+      },
+      {
+        "name": "Vener C. Reyes",
+        "position": "Sangguniang Barangay Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Reynalyn S. Ching",
+        "position": "Sangguniang Barangay Member",
+        "termInPosition": "2nd term"
+      },
+      {
+        "name": "Dennis E. Garcia",
+        "position": "Sangguniang Barangay Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Susana Q. David",
+        "position": "Sangguniang Barangay Member",
+        "termInPosition": "Appointive"
+      },
+      {
+        "name": "Dona May M. Salvador",
+        "position": "Barangay Secretary"
+      },
+      {
+        "name": "Mary Grace C. Cortez",
+        "position": "Barangay Treasurer"
+      },
+      {
+        "name": "Alejandro Jose P. Joaquin",
+        "position": "SK Chairperson",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Erica B. Basco",
+        "position": "SK Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Cian Marby E. Calma",
+        "position": "SK Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Nicole Joy A. Soqueña",
+        "position": "SK Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Francis D. Dacasin",
+        "position": "SK Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Krystal Kylle S. Jose",
+        "position": "SK Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Mark Jade B. Morales",
+        "position": "SK Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Vincent M. Cortez",
+        "position": "SK Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Maria Luisa M. Margallo",
+        "position": "SK Treasurer"
+      }
+    ],
+    "provenance": {
+      "source_name": "Department of the Interior and Local Government",
+      "retrieved_at": "2026-09-25",
+      "verified": true,
+      "verification_note": "Officials from the DILG barangay officials roster, term 2023-2026. Middle names are shown as initials. Population and classification from the PSA 2024 POPCEN.",
+      "source_document": "DILG roster of barangay officials, Municipality of Limay, Bataan, term 2023-2026"
+    },
+    "contactPhone": "0960 200 5128"
+  },
+  {
+    "id": "townsite",
+    "name": "Townsite",
+    "punongBarangay": "Baby Lyn T. Legaspi",
+    "coordinates": null,
+    "psgcCode": "0300806009",
+    "classification": "urban",
+    "population2024": 5961,
+    "term": "2023–2026",
+    "officials": [
+      {
+        "name": "Baby Lyn T. Legaspi",
+        "position": "Punong Barangay",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Ofelia H. Bermillo",
+        "position": "Sangguniang Barangay Member",
+        "termInPosition": "3rd term"
+      },
+      {
+        "name": "Angela A. Sangalang",
+        "position": "Sangguniang Barangay Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Danilo M. Sanchez",
+        "position": "Sangguniang Barangay Member",
+        "termInPosition": "3rd term"
+      },
+      {
+        "name": "Marilyn R. Bermillo",
+        "position": "Sangguniang Barangay Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Hilaria T. Malimban",
+        "position": "Sangguniang Barangay Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Romana M. Dizon",
+        "position": "Sangguniang Barangay Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Teodolfo P. Aron",
+        "position": "Sangguniang Barangay Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Ferie Gay R. Dumas",
+        "position": "Barangay Secretary"
+      },
+      {
+        "name": "Marlyn R. Roa",
+        "position": "Barangay Treasurer"
+      },
+      {
+        "name": "Angelo B. Tanjuan",
+        "position": "SK Chairperson",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Mark Vincent D. Dasigan",
+        "position": "SK Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "John Lloyd L. Torres",
+        "position": "SK Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Nicole B. Paguirigan",
+        "position": "SK Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Kaila M. Roque",
+        "position": "SK Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Jayvee L. Ramos",
+        "position": "SK Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Ara Cel D. Aron",
+        "position": "SK Secretary"
+      },
+      {
+        "name": "Crisanto R. Salenga",
+        "position": "SK Treasurer"
+      }
+    ],
+    "provenance": {
+      "source_name": "Department of the Interior and Local Government",
+      "retrieved_at": "2026-09-25",
+      "verified": true,
+      "verification_note": "Officials from the DILG barangay officials roster, term 2023-2026. Middle names are shown as initials. Population and classification from the PSA 2024 POPCEN.",
+      "source_document": "DILG roster of barangay officials, Municipality of Limay, Bataan, term 2023-2026"
+    }
+  },
+  {
+    "id": "wawa",
+    "name": "Wawa",
+    "punongBarangay": "Aurelyn F. Diaz",
+    "coordinates": null,
+    "psgcCode": "0300806012",
+    "classification": "rural",
+    "population2024": 470,
+    "term": "2023–2026",
+    "officials": [
+      {
+        "name": "Aurelyn F. Diaz",
+        "position": "Punong Barangay",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Roberto C. Cruz",
+        "position": "Sangguniang Barangay Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Ronald M. Bautista",
+        "position": "Sangguniang Barangay Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Noberto C. Roque",
+        "position": "Sangguniang Barangay Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Florante M. Fernando",
+        "position": "Sangguniang Barangay Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Ferdinand L. Tapia",
+        "position": "Sangguniang Barangay Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Luzviminda S. Sinadjan",
+        "position": "Sangguniang Barangay Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Rosel S. Vergel",
+        "position": "Barangay Secretary"
+      },
+      {
+        "name": "Jocelyn A. Macaraig",
+        "position": "Barangay Treasurer"
+      },
+      {
+        "name": "Jaymar E. Roque",
+        "position": "SK Chairperson",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Ron Kyle S. Bautista",
+        "position": "SK Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Gladen Joy E. Fernando",
+        "position": "SK Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Kurt Sprewell D. Fernando",
+        "position": "SK Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Ryan Russel F. Garcia",
+        "position": "SK Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Tyrese Eds R. Mariano",
+        "position": "SK Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Bhenjoe R. Diaz",
+        "position": "SK Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Thessa R. Mariano",
+        "position": "SK Secretary"
+      },
+      {
+        "name": "Erica Fhaye M. Paris",
+        "position": "SK Treasurer"
+      }
+    ],
+    "provenance": {
+      "source_name": "Department of the Interior and Local Government",
+      "retrieved_at": "2026-09-25",
+      "verified": true,
+      "verification_note": "Officials from the DILG barangay officials roster, term 2023-2026. Middle names are shown as initials. Population and classification from the PSA 2024 POPCEN.",
+      "source_document": "DILG roster of barangay officials, Municipality of Limay, Bataan, term 2023-2026"
+    },
+    "contactPhone": "(047) 633-3540"
+  },
+  {
+    "id": "duale",
+    "name": "Duale",
+    "punongBarangay": "Johnny P. Cerezo",
+    "coordinates": null,
+    "psgcCode": "0300806013",
+    "classification": "urban",
+    "population2024": 9587,
+    "term": "2023–2026",
+    "officials": [
+      {
+        "name": "Johnny P. Cerezo",
+        "position": "Punong Barangay",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Feliciana T. Colasito",
+        "position": "Sangguniang Barangay Member",
+        "termInPosition": "2nd term"
+      },
+      {
+        "name": "Emma M. Mamaril",
+        "position": "Sangguniang Barangay Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Valentin S. Isayas",
+        "position": "Sangguniang Barangay Member",
+        "termInPosition": "3rd term"
+      },
+      {
+        "name": "Angelina C. Villaviray",
+        "position": "Sangguniang Barangay Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Aquilino M. Pablo",
+        "position": "Sangguniang Barangay Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Rico G. Ariola",
+        "position": "Sangguniang Barangay Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Cornelio G. Tanguilid",
+        "position": "Sangguniang Barangay Member",
+        "termInPosition": "2nd term"
+      },
+      {
+        "name": "May Ann G. Bamba",
+        "position": "Barangay Secretary"
+      },
+      {
+        "name": "Rowena M. Peralta",
+        "position": "Barangay Treasurer"
+      },
+      {
+        "name": "Rizzle Kate P. Manalansan",
+        "position": "SK Chairperson",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Krisha Joyce D. Nadong",
+        "position": "SK Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Jhiane Joyce Y. Villaviray",
+        "position": "SK Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Goldwynn T. Andres",
+        "position": "SK Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Patrice Nicole P. Javier",
+        "position": "SK Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Shyna Allen Rodriguez",
+        "position": "SK Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Vincent S. Olarte",
+        "position": "SK Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Jaylord Q. Pin",
+        "position": "SK Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Divine Grace M. Mamaril",
+        "position": "SK Secretary"
+      },
+      {
+        "name": "Angel Mae M. Goron",
+        "position": "SK Treasurer"
+      }
+    ],
+    "provenance": {
+      "source_name": "Department of the Interior and Local Government",
+      "retrieved_at": "2026-09-25",
+      "verified": true,
+      "verification_note": "Officials from the DILG barangay officials roster, term 2023-2026. Middle names are shown as initials. Population and classification from the PSA 2024 POPCEN.",
+      "source_document": "DILG roster of barangay officials, Municipality of Limay, Bataan, term 2023-2026"
+    }
+  },
+  {
+    "id": "san-francisco-de-asis",
+    "name": "San Francisco de Asis",
+    "punongBarangay": "Agnes P. Castillo",
+    "coordinates": null,
+    "psgcCode": "0300806014",
+    "classification": "urban",
+    "population2024": 7258,
+    "term": "2023–2026",
+    "officials": [
+      {
+        "name": "Agnes P. Castillo",
+        "position": "Punong Barangay",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Aselo R. Mendoza",
+        "position": "Sangguniang Barangay Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Rachel Ann R. Malit",
+        "position": "Sangguniang Barangay Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Aurea Liza M. Santos",
+        "position": "Sangguniang Barangay Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Donald A. Laki",
+        "position": "Sangguniang Barangay Member",
+        "termInPosition": "2nd term"
+      },
+      {
+        "name": "Elaine V. Ponte",
+        "position": "Sangguniang Barangay Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Angelo C. Tercino",
+        "position": "Sangguniang Barangay Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Regalado S. Gabriel",
+        "position": "Sangguniang Barangay Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Glenda D. Sumague",
+        "position": "Barangay Secretary"
+      },
+      {
+        "name": "Ricamaila R. Roque",
+        "position": "Barangay Treasurer"
+      },
+      {
+        "name": "Zverick B. Dela Cruz",
+        "position": "SK Chairperson",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Cherrie D. Castillo",
+        "position": "SK Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Marco R. Billones",
+        "position": "SK Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Mico C. Genotiva",
+        "position": "SK Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "John Brixter D. Terciño",
+        "position": "SK Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Jamela Mae P. Yaneza",
+        "position": "SK Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Vens Frans A. Roque",
+        "position": "SK Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Jersey Andrie T. Sevilla",
+        "position": "SK Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Kris Jasmine P. Salunga",
+        "position": "SK Secretary"
+      },
+      {
+        "name": "King Graniel N. Rovira",
+        "position": "SK Treasurer"
+      }
+    ],
+    "provenance": {
+      "source_name": "Department of the Interior and Local Government",
+      "retrieved_at": "2026-09-25",
+      "verified": true,
+      "verification_note": "Officials from the DILG barangay officials roster, term 2023-2026. Middle names are shown as initials. Population and classification from the PSA 2024 POPCEN.",
+      "source_document": "DILG roster of barangay officials, Municipality of Limay, Bataan, term 2023-2026"
+    },
+    "contactPhone": "(047) 275-6154"
+  },
+  {
+    "id": "st-francis-ii",
+    "name": "St. Francis II",
+    "punongBarangay": "Nestor D. Nabaunag",
+    "coordinates": null,
+    "psgcCode": "0300806015",
+    "classification": "urban",
+    "population2024": 13847,
+    "term": "2023–2026",
+    "officials": [
+      {
+        "name": "Nestor D. Nabaunag",
+        "position": "Punong Barangay",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Gracel M. Nabaunag",
+        "position": "Sangguniang Barangay Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Estelito Y. Aboganda",
+        "position": "Sangguniang Barangay Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Reynaldo M. Malobo",
+        "position": "Sangguniang Barangay Member",
+        "termInPosition": "3rd term"
+      },
+      {
+        "name": "Joven C. Bebit",
+        "position": "Sangguniang Barangay Member",
+        "termInPosition": "2nd term"
+      },
+      {
+        "name": "Alvin A. Conarco",
+        "position": "Sangguniang Barangay Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Angelo C. De Vera",
+        "position": "Sangguniang Barangay Member",
+        "termInPosition": "2nd term"
+      },
+      {
+        "name": "Val B. Macing",
+        "position": "Sangguniang Barangay Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Sally V. Espinosa",
+        "position": "Barangay Secretary"
+      },
+      {
+        "name": "Catherine D. Cinco",
+        "position": "Barangay Treasurer"
+      },
+      {
+        "name": "John Paul C. Nabaunag",
+        "position": "SK Chairperson",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Faith A. Alcaraz",
+        "position": "SK Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Casandra R. Gade",
+        "position": "SK Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Kyla P. Bardaje",
+        "position": "SK Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Andy R. Lupango",
+        "position": "SK Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Roy R. Galosa",
+        "position": "SK Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Ronald C. Arnaiz",
+        "position": "SK Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Myra Kyla Mae I. Espinosa",
+        "position": "SK Member",
+        "termInPosition": "1st term"
+      },
+      {
+        "name": "Kenneth V. Castillo",
+        "position": "SK Secretary"
+      },
+      {
+        "name": "Jerald B. Orongan",
+        "position": "SK Treasurer"
+      }
+    ],
+    "provenance": {
+      "source_name": "Department of the Interior and Local Government",
+      "retrieved_at": "2026-09-25",
+      "verified": true,
+      "verification_note": "Officials from the DILG barangay officials roster, term 2023-2026. Middle names are shown as initials. Population and classification from the PSA 2024 POPCEN.",
+      "source_document": "DILG roster of barangay officials, Municipality of Limay, Bataan, term 2023-2026"
+    },
+    "contactPhone": "0912 329 4161"
+  }
+]

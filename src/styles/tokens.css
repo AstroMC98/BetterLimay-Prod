@@ -3305,3 +3305,480 @@
     align-items: start;
   }
 }
+
+/* --- Election results ------------------------------------------------------ */
+.election-results {
+  margin-top: var(--better-space-12);
+}
+
+.election-results__caption {
+  color: var(--better-text-muted);
+  font-size: 0.875rem;
+}
+
+.election-contest {
+  margin-top: var(--better-space-8);
+}
+
+.election-contest h3 {
+  display: flex;
+  gap: var(--better-space-3);
+  align-items: baseline;
+  margin: 0 0 var(--better-space-3);
+  font-size: 1.125rem;
+}
+
+.election-contest__seats,
+.election-contest__won {
+  color: var(--better-text-muted);
+  font-size: 0.8125rem;
+  font-weight: 600;
+}
+
+.election-contest__won {
+  margin-left: var(--better-space-2);
+  color: var(--bl-chart-accent);
+}
+
+.election-contest__table {
+  margin-top: var(--better-space-3);
+}
+
+.election-contest__table table {
+  width: 100%;
+  margin-top: var(--better-space-3);
+  border-collapse: collapse;
+  font-size: 0.875rem;
+}
+
+.election-contest__table :where(th, td) {
+  padding: var(--better-space-2);
+  border-bottom: 1px solid var(--better-border);
+  text-align: left;
+}
+
+.election-contest__table td:last-child {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+/* A result chart is sized by its rows; the shared 18rem floor left a two-row
+   contest mostly empty. */
+.election-contest .data-chart {
+  min-height: 0;
+  margin-top: 0;
+}
+
+/* People and offices read as a directory, not a feed: several per row. */
+@media (min-width: 40rem) {
+  .government-record-grid {
+    grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+    align-items: start;
+  }
+}
+
+.election-results > h2 {
+  margin: 0 0 var(--better-space-2);
+  color: var(--better-text-strong);
+  font-family: var(--better-font-display);
+  font-size: var(--text-h3-size);
+  font-weight: 800;
+}
+
+/* --- Barangays ------------------------------------------------------------- */
+.barangay-total {
+  margin: var(--better-space-2) 0 0;
+  color: var(--better-text-muted);
+}
+
+.barangay-grid {
+  display: grid;
+  gap: var(--better-space-4);
+  margin: var(--better-space-6) 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media (min-width: 40rem) {
+  .barangay-grid {
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  }
+}
+
+.barangay-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--better-space-2);
+  height: 100%;
+  padding: var(--better-space-5);
+  border: 1px solid var(--better-border);
+  border-radius: 0.75rem;
+  background: var(--better-surface-raised);
+  color: var(--better-text-strong);
+  text-decoration: none;
+}
+
+.barangay-card:hover {
+  border-color: var(--better-brand-primary);
+}
+
+.barangay-card:focus-visible {
+  outline: 0.2rem solid var(--better-focus);
+  outline-offset: 0.15rem;
+}
+
+.barangay-card__class {
+  color: var(--better-brand-primary);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.barangay-card__name {
+  font-size: 1.125rem;
+  line-height: 1.3;
+}
+
+.barangay-card__captain,
+.barangay-card__population {
+  color: var(--better-text-muted);
+  font-size: 0.875rem;
+}
+
+.barangay-card__population {
+  margin-top: auto;
+  padding-top: var(--better-space-3);
+  border-top: 1px solid var(--better-border);
+  font-variant-numeric: tabular-nums;
+}
+
+.barangay-facts {
+  display: grid;
+  gap: var(--better-space-4);
+  margin: var(--better-space-6) 0;
+}
+
+@media (min-width: 40rem) {
+  .barangay-facts {
+    grid-template-columns: repeat(auto-fill, minmax(11rem, 1fr));
+  }
+}
+
+.barangay-facts dt {
+  color: var(--better-text-muted);
+  font-size: 0.8125rem;
+}
+
+.barangay-facts dd {
+  margin: 0;
+  font-weight: 700;
+}
+
+.barangay-roster__group {
+  margin-top: var(--better-space-8);
+}
+
+.barangay-roster__group h2 {
+  margin: 0 0 var(--better-space-3);
+  font-size: 1.25rem;
+}
+
+.barangay-roster {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.barangay-roster :where(th, td) {
+  padding: var(--better-space-3) var(--better-space-2);
+  border-bottom: 1px solid var(--better-border);
+  text-align: left;
+  vertical-align: top;
+}
+
+.barangay-roster td {
+  color: var(--better-text-muted);
+  font-size: 0.9375rem;
+}
+
+.barangay-roster__term {
+  white-space: nowrap;
+}
+
+/* Fixed columns so the council and SK tables line up with each other. */
+.barangay-roster {
+  table-layout: fixed;
+}
+
+.barangay-roster th {
+  width: 42%;
+}
+
+.barangay-roster__term {
+  width: 8rem;
+}
+
+/* --- Municipal contact ----------------------------------------------------- */
+.municipal-contact {
+  margin-top: var(--better-space-10, 2.5rem);
+  padding: var(--better-space-5);
+  border: 1px solid var(--better-border);
+  border-radius: 0.75rem;
+  background: var(--better-surface-raised);
+}
+
+.municipal-contact h2 {
+  margin: 0 0 var(--better-space-4);
+  font-size: 1.25rem;
+}
+
+.municipal-contact dl {
+  display: grid;
+  gap: var(--better-space-4);
+  margin: 0 0 var(--better-space-4);
+}
+
+@media (min-width: 40rem) {
+  .municipal-contact dl {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.municipal-contact dt {
+  color: var(--better-text-muted);
+  font-size: 0.8125rem;
+}
+
+.municipal-contact dd {
+  margin: 0;
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+
+.portal-footer__contact a {
+  color: inherit;
+}
+
+@media (min-width: 40rem) {
+  .municipal-contact dl {
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  }
+}
+
+.municipal-contact dd,
+.government-record-card__details dd {
+  overflow-wrap: normal;
+}
+
+/* A phone number broken across lines is a number misread. */
+.municipal-contact dd a[href^="tel:"],
+.government-record-card__details a[href^="tel:"] {
+  white-space: nowrap;
+}
+
+/* Long e-mail addresses may wrap; phone numbers (above) may not. */
+.municipal-contact a[href^="mailto:"],
+.government-record-card__details a[href^="mailto:"] {
+  overflow-wrap: anywhere;
+}
+
+/* --- Facebook embeds --------------------------------------------------------- */
+.facebook-embed {
+  margin: var(--better-space-6) 0;
+}
+
+.facebook-embed iframe,
+.facebook-embed__placeholder {
+  display: block;
+  width: 100%;
+  max-width: 560px;
+  border: 0;
+  border-radius: 0.75rem;
+}
+
+.facebook-embed--video iframe,
+.facebook-embed--video .facebook-embed__placeholder {
+  aspect-ratio: 16 / 9;
+}
+
+.facebook-embed--post iframe {
+  height: 640px;
+}
+
+.facebook-embed__placeholder {
+  display: grid;
+  place-content: center;
+  gap: var(--better-space-3);
+  min-height: 12rem;
+  padding: var(--better-space-5);
+  border: 1px dashed var(--better-border-strong);
+  background: var(--better-surface-tint);
+  text-align: center;
+}
+
+.facebook-embed__placeholder p {
+  margin: 0;
+  color: var(--better-text-muted);
+  font-size: 0.875rem;
+}
+
+.facebook-embed figcaption {
+  margin-top: var(--better-space-2);
+  font-size: 0.875rem;
+}
+
+.news-card__tag {
+  display: inline-block;
+  margin-right: var(--better-space-2);
+  padding: 0 var(--better-space-2);
+  border-radius: 999px;
+  background: var(--bl-chart-accent);
+  /* Surface colour, not white: the accent lightens in dark mode. */
+  color: var(--bl-surface);
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+/* --- CMCI national profile --------------------------------------------------- */
+.cmci-profile__category {
+  margin: 0 0 var(--better-space-3);
+  color: var(--better-text-muted);
+  font-size: 0.875rem;
+}
+
+.cmci-profile__headline {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--better-space-2) var(--better-space-5);
+  align-items: baseline;
+}
+
+.cmci-profile__rank {
+  display: flex;
+  gap: var(--better-space-3);
+  align-items: baseline;
+  margin: 0;
+}
+
+.cmci-profile__rank strong {
+  color: var(--bl-chart-accent);
+  font-family: var(--better-font-display);
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.cmci-profile__score {
+  flex-basis: 100%;
+  margin: 0;
+  color: var(--better-text-muted);
+}
+
+.cmci-change {
+  color: var(--better-text-muted);
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+/* Direction is also in the words and arrow shape, never colour alone. */
+.cmci-change--up {
+  color: var(--bl-chart-accent);
+}
+
+.cmci-pillars {
+  display: grid;
+  gap: var(--better-space-3);
+  margin: var(--better-space-6) 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media (min-width: 40rem) {
+  .cmci-pillars {
+    grid-template-columns: repeat(auto-fit, minmax(10.5rem, 1fr));
+  }
+}
+
+.cmci-pillar {
+  display: flex;
+  flex-direction: column;
+  gap: var(--better-space-1, 0.25rem);
+  padding: var(--better-space-4);
+  border: 1px solid var(--better-border);
+  border-radius: 0.75rem;
+  background: var(--better-surface-raised);
+}
+
+.cmci-pillar__name {
+  color: var(--better-text-muted);
+  font-size: 0.8125rem;
+  font-weight: 700;
+}
+
+.cmci-pillar__rank {
+  font-family: var(--better-font-display);
+  font-size: 1.75rem;
+  line-height: 1.1;
+}
+
+.cmci-pillar__score {
+  font-size: 0.875rem;
+}
+
+.cmci-profile__figure {
+  margin: var(--better-space-8) 0 0;
+}
+
+.cmci-profile__figure figcaption {
+  display: flex;
+  flex-direction: column;
+  gap: 0.125rem;
+}
+
+.cmci-profile__figure figcaption span {
+  color: var(--better-text-muted);
+  font-size: 0.8125rem;
+}
+
+.cmci-profile__chart {
+  min-height: 0;
+}
+
+/* --- Flood hazard map ------------------------------------------------------- */
+.hazard-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--better-space-3) var(--better-space-6);
+  margin: var(--better-space-4) 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.875rem;
+}
+
+.hazard-legend li {
+  display: flex;
+  gap: var(--better-space-2);
+  align-items: center;
+}
+
+.hazard-legend__swatch {
+  width: 1rem;
+  height: 1rem;
+  border: 1px solid var(--better-border-strong);
+  border-radius: 3px;
+}
+
+.hazard-legend__area {
+  color: var(--better-text-muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.hazard-map__frame {
+  overflow: hidden;
+  border: 1px solid var(--better-border);
+  border-radius: 0.75rem;
+}
+
+.hazard-map__canvas {
+  height: 26rem;
+  width: 100%;
+}

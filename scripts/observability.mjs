@@ -15,6 +15,7 @@ const DATASETS = [
   ["statistics", "statistics.json"],
   ["serviceReferrals", "service-referrals.json"],
   ["hotlines", "hotlines.json"],
+  ["elections", "elections.json"],
 ];
 
 function isRecord(value) {

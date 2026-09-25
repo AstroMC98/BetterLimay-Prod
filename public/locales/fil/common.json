@@ -25,7 +25,8 @@
     "sourceCode": "Source code",
     "license": "Lisensya",
     "costToPeople": "Gastos sa mga Mamamayan ng Limay: ₱0",
-    "endorsement": "Isang inisyatiba ng BetterGov.PH"
+    "endorsement": "Isang inisyatiba ng BetterGov.PH",
+    "municipalHall": "Munisipyo"
   },
   "forms": {
     "required": "Kailangan",
@@ -170,14 +171,15 @@
     "latestAnnouncements": "Mga pinakabagong anunsyo",
     "announcementsUnavailable": "Wala pang anunsyong galing sa beripikadong opisyal na source.",
     "transparencyTitle": "Transparency, isang source kada pagkakataon",
-    "transparencyUnavailable": "Tingnan ang sourced project at procurement references; malinaw na gap pa ang municipal finance at CMCI data.",
+    "transparencyUnavailable": "Na-audit na pananalapi, procurement, ranggo ng Limay sa competitiveness at mapa ng panganib sa baha, bawat isa may source.",
     "transparencyAction": "Buksan ang transparency records",
     "statisticsAction": "Buksan ang statistics",
     "contributeTitle": "Tulungan kaming linawin ang impormasyon sa Limay",
     "contributeDescription": "Magbahagi ng pagwawasto o tumulong na beripikahin ang pampublikong rekord.",
     "contributeAction": "Magbahagi ng pagwawasto",
     "disclaimerTitle": "Independenteng community portal",
-    "disclaimerBody": "Hindi kaanib ng LGU ang BetterLimay. Tiyakin palagi ang mahalagang impormasyon sa opisyal na source."
+    "disclaimerBody": "Hindi kaanib ng LGU ang BetterLimay. Tiyakin palagi ang mahalagang impormasyon sa opisyal na source.",
+    "floodMapAction": "Mapa ng panganib sa baha"
   },
   "search": {
     "label": "Maghanap sa BetterLimay",
@@ -243,7 +245,16 @@
     "empty": "Wala pang anunsyong handang ilathala",
     "emptyDescription": "Hindi ligtas na na-aggregate ang opisyal na website at Facebook source sa isang auditable news record. Hindi ito nangangahulugang walang anunsyo; tingnan nang direkta ang mga opisyal na channel.",
     "readMore": "Basahin ang buong post",
-    "backToNews": "Bumalik sa lahat ng balita"
+    "backToNews": "Bumalik sa lahat ng balita",
+    "video": "Video",
+    "facebook": {
+      "watch": "Panoorin dito",
+      "show": "Ipakita ang Facebook post",
+      "privacy": "Maglo-load lang mula sa Facebook kapag pinindot mo ang button.",
+      "open": "Buksan sa Facebook",
+      "videoTitle": "Video sa Facebook",
+      "postTitle": "Post sa Facebook"
+    }
   },
   "report": {
     "eyebrow": "Feedback ng komunidad",
@@ -463,6 +474,36 @@
       "tableCaption": "{{indicator}} ayon sa bayan at taon",
       "year": "Taon",
       "notSurveyed": "Walang survey"
+    },
+    "cmciProfile": {
+      "eyebrow": "DTI Cities and Municipalities Competitiveness Index",
+      "title": "Ang Limay sa buong bansa",
+      "region": "Rehiyon III (Gitnang Luzon)",
+      "loading": "Nilo-load ang pambansang CMCI profile ng Limay…",
+      "unavailable": "Hindi ma-load ang pambansang CMCI profile ng Limay.",
+      "nationally": "sa kabuuan, sa buong bansa, noong {{year}}",
+      "overallScore": "Kabuuang iskor {{score}} (kabuuan ng mga haligi)",
+      "up_one": "umakyat nang {{count}} puwesto mula {{year}}",
+      "up_other": "umakyat nang {{count}} puwesto mula {{year}}",
+      "down_one": "bumaba nang {{count}} puwesto mula {{year}}",
+      "down_other": "bumaba nang {{count}} puwesto mula {{year}}",
+      "same": "parehong ranggo noong {{year}}",
+      "pillarsLabel": "Ranggo at iskor ng bawat haligi",
+      "score": "Iskor {{score}}",
+      "rankTitle": "Kabuuang ranggo sa paglipas ng panahon",
+      "rankAxis": "Ranggo, 1 = pinakamahusay (mas mataas sa chart ay mas mabuti)",
+      "rankTooltip": "Ranggo",
+      "rankChartLabel": "Kabuuang pambansang CMCI ranggo ng Limay bawat taon: {{points}}",
+      "rankCaveat": "Nagbago ang grupong pinaghahambingan ng DTI sa paglipas ng mga taon at hindi sinasabi ng profile kung ilang munisipyo ang niraranggo, kaya ang pagbabago sa ranggo ay hindi agad pagbabago sa performance. Hindi sinurbey ang Limay noong 2018.",
+      "detailTitle": "Ano ang bumubuo sa isang haligi",
+      "pillarLabel": "Haligi",
+      "yearLabel": "Taon",
+      "detailChartLabel": "Iskor ng mga sub-indicator para sa {{pillar}}, {{year}}",
+      "detailTable": "Ipakita ang ranggo at iskor bilang talahanayan",
+      "indicator": "Sub-indicator",
+      "rankColumn": "Ranggo",
+      "scoreColumn": "Iskor",
+      "source": "Tingnan ang buong profile ng Limay sa DTI CMCI"
     }
   },
   "pages": {
@@ -493,27 +534,27 @@
     },
     "government": {
       "title": "Directory ng pamahalaan",
-      "description": "Mag-browse ng route placeholder para sa mga sangay at opisina ng pamahalaan nang hindi itinuturing na kumpirmado ang mga hindi beripikadong record.",
+      "description": "Sino ang namamahala sa Limay: ang mga halal na opisyal, ang labindalawang barangay, at kung paano makipag-ugnayan sa Munisipyo.",
       "eyebrow": "Directory ng pamahalaan",
-      "branchDescription": "Available ang {{branch}} route, ngunit kailangan pa ng source verification ang mga record dito.",
-      "recordNotice": "Wala pang kumpirmadong record na nailathala para sa route na ito. Tiyakin ang mga pangalan, tungkulin, opisina, at lokasyon sa opisyal na source.",
+      "branchDescription": "{{branch}}, Munisipyo ng Limay.",
+      "recordNotice": "Wala pang nakalathala para sa seksyong ito. Makipag-ugnayan muna nang direkta sa Munisipyo.",
       "branches": {
         "executive": "Sangay ehekutibo",
         "legislative": "Sangay lehislatibo",
         "ex-officio": "Mga ex-officio na tungkulin",
-        "departments": "Mga departamento",
+        "departments": "Mga tanggapan at contact",
         "barangays": "Mga barangay"
       },
       "electedOfficialsTitle": "Mga halal na opisyal",
-      "electedOfficialsDescription": "Tingnan ang mga placeholder para sa Sangguniang Bayan at mga ex-officio na tungkulin. Mananatiling malinaw na hindi beripikado ang mga pangalan hanggang makumpirma ng pampublikong source.",
-      "exOfficioNote": "Kasama rito bilang ex-officio na tungkulin ang Pangulo ng ABC Federation at Pangulo ng SK Federation. Hindi ilalathala ang mga pangalan bago beripikahin.",
+      "electedOfficialsDescription": "Ang Mayor, Bise Mayor at Sangguniang Bayan na nahalal noong Mayo 2025, kasama ang buong resulta.",
+      "exOfficioNote": "Kasapi rin ng Sangguniang Bayan ang Pangulo ng ABC Federation at ng SK Federation. Ililista sila kapag pinangalanan na ng opisyal na source.",
       "term": "Termino",
       "verified": "Beripikado",
       "viewSource": "Tingnan ang source",
       "officeHead": "Pinuno ng opisina",
       "contact": "Kontak",
       "location": "Lokasyon",
-      "notAvailable": "Walang datos — tiyakin sa opisyal na source",
+      "notAvailable": "Hindi available",
       "locationNotVerified": "Hindi beripikado ang lokasyon",
       "locationMissing": "Walang nailathalang lokasyon",
       "locationAvailable": "May beripikadong koordinado",
@@ -524,9 +565,28 @@
       "mapUnavailable": "Hindi pa available ang mapa dahil wala pang beripikadong koordinado ng barangay.",
       "osmAttribution": "mga kontribyutor ng OpenStreetMap",
       "listEyebrow": "Alternatibong accessible",
-      "listAlternative": "Listahan ng barangay",
-      "noBarangays": "Wala pang nailathalang record ng barangay.",
-      "expectedBarangays": "Inaasahan ng configuration ang {{count}} barangay; kailangan pang beripikahin ang mga pangalan at profile mula sa source."
+      "listAlternative": "Lahat ng barangay",
+      "noBarangays": "Wala pang nakalathalang talaan ng barangay.",
+      "expectedBarangays": "Inaasahan ng configuration ang {{count}} barangay; kailangan pang beripikahin ang mga pangalan at profile mula sa source.",
+      "classification": {
+        "urban": "Urban",
+        "rural": "Rural"
+      },
+      "classificationLabel": "Klasipikasyon",
+      "population_one": "{{formatted}} residente (2024)",
+      "population_other": "{{formatted}} residente (2024)",
+      "population2024": "Populasyon (senso 2024)",
+      "totalPopulation_one": "{{count}} barangay, {{formatted}} residente sa senso 2024",
+      "totalPopulation_other": "{{count}} barangay, {{formatted}} residente sa senso 2024",
+      "barangayTitle": "Barangay {{name}}",
+      "barangayDescription": "Mga opisyal, populasyon at numero ng Barangay {{name}}, Limay, Bataan.",
+      "backToBarangays": "Bumalik sa lahat ng barangay",
+      "barangayCouncil": "Sangguniang Barangay",
+      "sangguniangKabataan": "Sangguniang Kabataan",
+      "phone": "Telepono",
+      "email": "E-mail",
+      "contactTitle": "Makipag-ugnayan sa Munisipyo",
+      "moreContacts": "Iba pang tanggapan at contact"
     },
     "about": {
       "title": "Tungkol sa BetterLimay",
@@ -598,5 +658,41 @@
   "theme": {
     "switchToDark": "Lumipat sa madilim na mode",
     "switchToLight": "Lumipat sa maliwanag na mode"
+  },
+  "elections": {
+    "title": "Resulta ng halalan 2025",
+    "caption": "Hindi opisyal na resulta mula sa mga transmission ng Comelec hanggang {{asOf}}, {{returns}}.",
+    "seats_one": "{{count}} puwesto",
+    "seats_other": "{{count}} puwesto",
+    "chartLabel": "Resulta para sa {{contest}}. Nahalal: {{winners}}.",
+    "showTable": "Ipakita ang boto ng bawat kandidato bilang talahanayan",
+    "rank": "Ranggo",
+    "candidate": "Kandidato",
+    "party": "Partido",
+    "votes": "Boto",
+    "elected": "Nahalal"
+  },
+  "hazards": {
+    "eyebrow": "Mapa ng panganib sa baha ng UP NOAH",
+    "title": "Saan binabaha ang Limay",
+    "intro": "Mga lugar sa Limay na babahain sa napakalakas na ulan, ang uri na inaasahan halos isang beses sa 100 taon, ayon sa panganib ng tubig.",
+    "loading": "Nilo-load ang mapa ng panganib sa baha…",
+    "unavailable": "Hindi ma-load ang mapa ng panganib sa baha.",
+    "legendLabel": "Antas ng panganib sa baha",
+    "levels": {
+      "low": "Mababa",
+      "medium": "Katamtaman",
+      "high": "Mataas"
+    },
+    "depths": {
+      "low": "hanggang tuhod (0–0.5 m)",
+      "medium": "tuhod hanggang leeg (0.5–1.5 m)",
+      "high": "lampas leeg (higit 1.5 m)"
+    },
+    "area": "{{km2}} km²",
+    "mapLabel": "Mapa ng panganib sa baha ng Limay para sa 100-taong ulan: {{low}} km² mababa, {{medium}} km² katamtaman at {{high}} km² mataas na panganib.",
+    "disclaimer": "Ito ay mga modelong sona ng panganib, hindi ulat ng aktuwal na baha. Isinasama rin ang bilis ng tubig, kaya ang mababaw pero mabilis na tubig ay maaaring mas mataas ang antas. Sa emergency, sundin ang abiso ng MDRRMO at ang mga hotline sa itaas ng pahina.",
+    "coverage": "Hindi sakop ng mapa ng NOAH para sa mas madalas na ulan (5- at 25-taon) ang karamihan ng Limay, kaya hindi ito ipinapakita.",
+    "noahLink": "Tingnan ang lahat ng panganib sa UP NOAH"
   }
 }

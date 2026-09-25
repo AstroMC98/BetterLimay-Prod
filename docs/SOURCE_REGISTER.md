@@ -42,6 +42,11 @@
 | `https://open-meteo.com/` | Open-Meteo | Optional current weather enhancement | 2026-09-21 | `candidate` | API attribution and current retrieval timestamp required; never use as civic fact source | Platform owner |
 | `https://github.com/BetterLosBanos/betterlb` | BetterLB | Architecture and fork patterns only | 2026-09-21 | `available` | CC0/public-domain project documentation; verify exact file before copying code | AstroMC98 |
 | `https://github.com/BetterSolano/bettersolano` | BetterSolano | Services UX, PWA, hotline, i18n patterns only | 2026-09-21 | `available` | MIT code + CC BY 4.0 content as documented; no Solano data reuse | AstroMC98 |
+| `https://halalanresults.abs-cbn.com/local/bataan/limay` | ABS-CBN Halalan 2025 results, Limay (aggregated from Comelec) | Elected officials, full 2025 local results | 2026-09-25 | `acquired` - JavaScript-rendered, HTTP 403 to plain fetch; archived as a rendered snapshot | Unofficial, 100% of ERs as of 2025-05-15 14:41; ballot names | AstroMC98 |
+| `https://cmci.dti.gov.ph/lgu-profile.php?lgu=Limay` | DTI CMCI Limay LGU profile, 2014–2024 | National rank, pillar ranks and scores, sub-indicators; LGU contact details | 2026-09-25 | `acquired` - server-rendered, one page per year (`&year=`) | Overall score computed as pillar sum, cross-checked with the rankings export | AstroMC98 |
+| DILG roster of barangay officials, Limay, term 2023–2026 (document) | Department of the Interior and Local Government | Barangay officials | 2026-09-25 | `acquired` - spreadsheet held by maintainers | Middle names and SK-row phone numbers withheld by design | AstroMC98 |
+| `https://huggingface.co/datasets/bettergovph/project-noah-hazard-maps` | UP NOAH Center flood hazard maps, Bataan | Flood hazard layer (100-year) | 2026-09-25 | `acquired` - noah.up.edu.ph cannot be framed; derived layer redistributed | ODC-ODbL, attribution required | AstroMC98 |
+| `https://www.openstreetmap.org/relation/15310575` | OpenStreetMap contributors | Limay boundary for clipping only | 2026-09-25 | `acquired` | ODC-ODbL; includes municipal waters, never drawn | AstroMC98 |
 
 ## Manual verification checklist
 

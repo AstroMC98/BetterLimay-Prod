@@ -8,6 +8,7 @@ import announcementsJson from "../data/announcements.json";
 import type { AnnouncementRecord } from "../data/types";
 import { submitReport, type ReportResult } from "../lib/ui/reportApi";
 import { type ReportInput, validateReportInput } from "../lib/ui/reportValidation";
+import { facebookEmbedKind } from "../lib/ui/facebook";
 import { formatNewsDate } from "../lib/ui/newsDate";
 import { RouteMetadata } from "../lib/ui/RouteMetadata";
 
@@ -122,6 +123,13 @@ export function NewsPage() {
               ) : null}
               <div className="news-card__content">
                 <p className="news-card__date">
+                  {announcement.facebookUrl ? (
+                    <span className="news-card__tag">
+                      {facebookEmbedKind(announcement.facebookUrl) === "video"
+                        ? t("news.video")
+                        : "Facebook"}
+                    </span>
+                  ) : null}
                   <time dateTime={announcement.publishedAt}>
                     {formatNewsDate(announcement.publishedAt)}
                   </time>
@@ -129,7 +137,7 @@ export function NewsPage() {
                   {announcement.sourceName}
                 </p>
                 <h2>
-                  {announcement.body ? (
+                  {announcement.body || announcement.facebookUrl ? (
                     <Link to={`/news/${announcement.id}`}>{announcement.title}</Link>
                   ) : (
                     announcement.title
@@ -137,7 +145,7 @@ export function NewsPage() {
                 </h2>
                 {announcement.summary ? <p>{announcement.summary}</p> : null}
                 <div className="news-card__links">
-                  {announcement.body ? (
+                  {announcement.body || announcement.facebookUrl ? (
                     <Link to={`/news/${announcement.id}`}>{t("news.readMore")}</Link>
                   ) : null}
                   {announcement.url ? (
