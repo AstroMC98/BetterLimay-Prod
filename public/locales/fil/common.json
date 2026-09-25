@@ -901,5 +901,8 @@
     "disclaimer": "Ito ay mga modelong sona ng panganib, hindi ulat ng aktuwal na baha. Isinasama rin ang bilis ng tubig, kaya ang mababaw pero mabilis na tubig ay maaaring mas mataas ang antas. Sa emergency, sundin ang abiso ng MDRRMO at ang mga hotline sa itaas ng pahina.",
     "coverage": "Hindi sakop ng mapa ng NOAH para sa mas madalas na ulan (5- at 25-taon) ang karamihan ng Limay, kaya hindi ito ipinapakita.",
     "noahLink": "Tingnan ang lahat ng panganib sa UP NOAH"
+  },
+  "header": {
+    "placeLine": "Community Portal para sa {{lgu}}"
   }
 }

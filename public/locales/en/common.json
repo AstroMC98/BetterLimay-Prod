@@ -901,5 +901,8 @@
     "disclaimer": "These are modelled hazard zones, not live flood reports. Water speed counts too, so shallow but fast water can be rated higher. In an emergency, follow MDRRMO advisories and the hotlines at the top of the page.",
     "coverage": "NOAH's maps for more frequent rains (5- and 25-year) do not cover most of Limay, so they are not shown.",
     "noahLink": "Explore all hazards on UP NOAH"
+  },
+  "header": {
+    "placeLine": "Community Portal for the {{lgu}}"
   }
 }
