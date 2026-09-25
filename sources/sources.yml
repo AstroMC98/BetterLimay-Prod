@@ -378,3 +378,28 @@ sources:
       Unofficial, aggregated from Comelec, 100% of ERs (75 of 75 clustered
       precincts) as of 2025-05-15 14:41. Ballot names, not legal names.
       Only the section above "OTHER RESULTS FROM" is Limay's own contests.
+
+  # ----------------------------------------------------------------- barangays
+  - id: dilg-limay-barangay-officials-2023
+    path: municipality-of-limay/barangay-officials.xlsx
+    entity: Department of the Interior and Local Government
+    entity_scope: national-agency
+    source_name: Department of the Interior and Local Government
+    url: null
+    bridge_blocked_by: [exact-url-unconfirmed]
+    retrieved_at: 2026-09-25
+    document:
+      title: "DILG roster of barangay officials, Municipality of Limay, Bataan, term 2023-2026"
+    acquisition: manual-download
+    extraction: tabular
+    completeness: complete
+    target_datasets: [barangays.json]
+    gap_ids: [GAP-008]
+    publishable: true
+    notes: >
+      232 rows, 12 barangays: Punong Barangay, Sangguniang Barangay members, SK
+      chair/members/secretary/treasurer, barangay secretary/treasurer. The
+      province column is mislabelled "ABUCAY" but every row reads LIMAY.
+      PRIVACY: full middle names and per-row phone numbers are NOT published;
+      names go out with a middle initial, and only the barangay's own line (from
+      council rows, never SK rows) is shown. See pipeline/transforms/barangays.py.

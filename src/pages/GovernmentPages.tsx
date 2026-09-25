@@ -130,6 +130,8 @@ function OfficeCards({ records }: { records: OfficeRecord[] }) {
   );
 }
 
+const SK_PREFIX = "SK ";
+
 function BarangayList({ records }: { records: BarangayRecord[] }) {
   const { t } = useTranslation("common");
 
@@ -137,38 +139,38 @@ function BarangayList({ records }: { records: BarangayRecord[] }) {
     return (
       <div className="government-map__fallback">
         <p>{t("pages.government.noBarangays")}</p>
-        <p>
-          {t("pages.government.expectedBarangays", { count: config.lgu.barangayCount })}
-        </p>
       </div>
     );
   }
 
   return (
-    <ol
-      className="government-barangay-list"
-      aria-label={t("pages.government.listAlternative")}
-    >
+    <ol className="barangay-grid" aria-label={t("pages.government.listAlternative")}>
       {records.map((barangay) => (
-        <li className="government-record-card" key={barangay.id}>
-          <div className="government-record-card__header">
-            <div>
-              <h2>{barangay.name}</h2>
-              <p className="government-record-card__meta">
-                {t("pages.government.punongBarangay")}:{" "}
-                {barangay.punongBarangay ?? t("pages.government.notAvailable")}
-              </p>
-            </div>
-            <ProvenanceStatusBadge provenance={barangay.provenance} />
-          </div>
-          <p className="government-record-card__meta">
-            {barangay.coordinates
-              ? barangay.provenance.verified
-                ? t("pages.government.locationAvailable")
-                : t("pages.government.locationNotVerified")
-              : t("pages.government.locationMissing")}
-          </p>
-          <ProvenanceDetails provenance={barangay.provenance} />
+        <li key={barangay.id}>
+          <Link
+            className="barangay-card"
+            to={`/barangays/${barangay.id}`}
+            data-testid={`barangay-card-${barangay.id}`}
+          >
+            <span className="barangay-card__class">
+              {barangay.classification
+                ? t(`pages.government.classification.${barangay.classification}`)
+                : null}
+            </span>
+            <strong className="barangay-card__name">{barangay.name}</strong>
+            <span className="barangay-card__captain">
+              {t("pages.government.punongBarangay")}:{" "}
+              {barangay.punongBarangay ?? t("pages.government.notAvailable")}
+            </span>
+            {barangay.population2024 !== undefined ? (
+              <span className="barangay-card__population">
+                {t("pages.government.population", {
+                  count: barangay.population2024,
+                  formatted: barangay.population2024.toLocaleString("en-PH"),
+                })}
+              </span>
+            ) : null}
+          </Link>
         </li>
       ))}
     </ol>
@@ -178,17 +180,20 @@ function BarangayList({ records }: { records: BarangayRecord[] }) {
 function BarangayDirectory() {
   const { t } = useTranslation("common");
   const mapPoints = getVerifiedBarangayMapPoints(barangays);
+  const totalPopulation = barangays.reduce((sum, b) => sum + (b.population2024 ?? 0), 0);
 
   return (
     <div className="government-barangays">
-      <section className="government-map-panel" aria-labelledby="barangay-map-title">
-        <div>
-          <p className="government-record-card__label">
-            {t("pages.government.mapEyebrow")}
-          </p>
-          <h2 id="barangay-map-title">{t("pages.government.mapTitle")}</h2>
-        </div>
-        {mapPoints.length > 0 ? (
+      {/* Shown once any barangay has verified coordinates. Until then an empty
+          map frame would only say "nothing here" in a larger font. */}
+      {mapPoints.length > 0 ? (
+        <section className="government-map-panel" aria-labelledby="barangay-map-title">
+          <div>
+            <p className="government-record-card__label">
+              {t("pages.government.mapEyebrow")}
+            </p>
+            <h2 id="barangay-map-title">{t("pages.government.mapTitle")}</h2>
+          </div>
           <Suspense
             fallback={
               <p className="government-map__fallback">
@@ -198,19 +203,19 @@ function BarangayDirectory() {
           >
             <VerifiedBarangayMap points={mapPoints} />
           </Suspense>
-        ) : (
-          <div className="government-map__fallback">
-            <p>{t("pages.government.mapUnavailable")}</p>
-            <p>{t("pages.government.listAlternative")}</p>
-          </div>
-        )}
-      </section>
+        </section>
+      ) : null}
       <section aria-labelledby="barangay-list-title">
         <div className="government-section-heading">
-          <p className="government-record-card__label">
-            {t("pages.government.listEyebrow")}
-          </p>
           <h2 id="barangay-list-title">{t("pages.government.listAlternative")}</h2>
+          {totalPopulation > 0 ? (
+            <p className="barangay-total">
+              {t("pages.government.totalPopulation", {
+                count: barangays.length,
+                formatted: totalPopulation.toLocaleString("en-PH"),
+              })}
+            </p>
+          ) : null}
         </div>
         <BarangayList records={barangays} />
       </section>
@@ -324,6 +329,107 @@ export function ElectedOfficialsPage() {
       )}
       <ElectionResults />
     </section>
+  );
+}
+
+function RosterGroup({
+  title,
+  officials,
+}: {
+  title: string;
+  officials: NonNullable<BarangayRecord["officials"]>;
+}) {
+  if (officials.length === 0) return null;
+  return (
+    <section className="barangay-roster__group">
+      <h2>{title}</h2>
+      <table className="barangay-roster">
+        <tbody>
+          {officials.map((official, index) => (
+            <tr key={`${official.position}-${official.name}-${index}`}>
+              <th scope="row">{official.name}</th>
+              <td>{official.position}</td>
+              <td className="barangay-roster__term">{official.termInPosition ?? ""}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </section>
+  );
+}
+
+export function BarangayDetailPage() {
+  const { t } = useTranslation("common");
+  const location = useLocation();
+  const { id } = useParams();
+  const barangay = barangays.find((record) => record.id === id);
+
+  if (!barangay) {
+    return <NotFoundPage />;
+  }
+
+  const officials = barangay.officials ?? [];
+  const council = officials.filter((o) => !o.position.startsWith(SK_PREFIX));
+  const youth = officials.filter((o) => o.position.startsWith(SK_PREFIX));
+  const title = t("pages.government.barangayTitle", { name: barangay.name });
+
+  return (
+    <article
+      className="foundation-page barangay-detail"
+      data-testid="barangay-detail-page"
+    >
+      <RouteMetadata
+        config={config}
+        title={title}
+        description={t("pages.government.barangayDescription", { name: barangay.name })}
+        path={location.pathname}
+        type="article"
+      />
+      <Link className="text-link service-breadcrumb" to="/barangays">
+        {t("pages.government.backToBarangays")}
+      </Link>
+      <p className="eyebrow">{t("pages.government.branches.barangays")}</p>
+      <h1>{title}</h1>
+      <dl className="barangay-facts">
+        <div>
+          <dt>{t("pages.government.punongBarangay")}</dt>
+          <dd>{barangay.punongBarangay ?? t("pages.government.notAvailable")}</dd>
+        </div>
+        {barangay.population2024 !== undefined ? (
+          <div>
+            <dt>{t("pages.government.population2024")}</dt>
+            <dd>{barangay.population2024.toLocaleString("en-PH")}</dd>
+          </div>
+        ) : null}
+        {barangay.classification ? (
+          <div>
+            <dt>{t("pages.government.classificationLabel")}</dt>
+            <dd>{t(`pages.government.classification.${barangay.classification}`)}</dd>
+          </div>
+        ) : null}
+        <div>
+          <dt>{t("pages.government.contact")}</dt>
+          <dd>
+            {barangay.contactPhone ? (
+              <a href={`tel:${barangay.contactPhone.replace(/[^\d+]/g, "")}`}>
+                {barangay.contactPhone}
+              </a>
+            ) : (
+              t("pages.government.notAvailable")
+            )}
+          </dd>
+        </div>
+        {barangay.term ? (
+          <div>
+            <dt>{t("pages.government.term")}</dt>
+            <dd>{barangay.term}</dd>
+          </div>
+        ) : null}
+      </dl>
+      <RosterGroup title={t("pages.government.barangayCouncil")} officials={council} />
+      <RosterGroup title={t("pages.government.sangguniangKabataan")} officials={youth} />
+      <ProvenanceDetails provenance={barangay.provenance} />
+    </article>
   );
 }
 

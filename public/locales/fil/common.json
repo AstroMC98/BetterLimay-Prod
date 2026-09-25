@@ -524,9 +524,24 @@
       "mapUnavailable": "Hindi pa available ang mapa dahil wala pang beripikadong koordinado ng barangay.",
       "osmAttribution": "mga kontribyutor ng OpenStreetMap",
       "listEyebrow": "Alternatibong accessible",
-      "listAlternative": "Listahan ng barangay",
-      "noBarangays": "Wala pang nailathalang record ng barangay.",
-      "expectedBarangays": "Inaasahan ng configuration ang {{count}} barangay; kailangan pang beripikahin ang mga pangalan at profile mula sa source."
+      "listAlternative": "Lahat ng barangay",
+      "noBarangays": "Wala pang nakalathalang talaan ng barangay.",
+      "expectedBarangays": "Inaasahan ng configuration ang {{count}} barangay; kailangan pang beripikahin ang mga pangalan at profile mula sa source.",
+      "classification": {
+        "urban": "Urban",
+        "rural": "Rural"
+      },
+      "classificationLabel": "Klasipikasyon",
+      "population_one": "{{formatted}} residente (2024)",
+      "population_other": "{{formatted}} residente (2024)",
+      "population2024": "Populasyon (senso 2024)",
+      "totalPopulation_one": "{{count}} barangay, {{formatted}} residente sa senso 2024",
+      "totalPopulation_other": "{{count}} barangay, {{formatted}} residente sa senso 2024",
+      "barangayTitle": "Barangay {{name}}",
+      "barangayDescription": "Mga opisyal, populasyon at numero ng Barangay {{name}}, Limay, Bataan.",
+      "backToBarangays": "Bumalik sa lahat ng barangay",
+      "barangayCouncil": "Sangguniang Barangay",
+      "sangguniangKabataan": "Sangguniang Kabataan"
     },
     "about": {
       "title": "Tungkol sa BetterLimay",

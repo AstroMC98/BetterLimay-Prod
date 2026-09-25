@@ -524,9 +524,24 @@
       "mapUnavailable": "The map is not available because no barangay coordinates have been verified yet.",
       "osmAttribution": "OpenStreetMap contributors",
       "listEyebrow": "Accessible alternative",
-      "listAlternative": "Barangay list",
+      "listAlternative": "All barangays",
       "noBarangays": "No barangay records are published yet.",
-      "expectedBarangays": "The configuration expects {{count}} barangays; names and profiles still need source verification."
+      "expectedBarangays": "The configuration expects {{count}} barangays; names and profiles still need source verification.",
+      "classification": {
+        "urban": "Urban",
+        "rural": "Rural"
+      },
+      "classificationLabel": "Classification",
+      "population_one": "{{formatted}} resident (2024)",
+      "population_other": "{{formatted}} residents (2024)",
+      "population2024": "Population (2024 census)",
+      "totalPopulation_one": "{{count}} barangay, {{formatted}} residents in the 2024 census",
+      "totalPopulation_other": "{{count}} barangays, {{formatted}} residents in the 2024 census",
+      "barangayTitle": "Barangay {{name}}",
+      "barangayDescription": "Officials, population and contact number for Barangay {{name}}, Limay, Bataan.",
+      "backToBarangays": "Back to all barangays",
+      "barangayCouncil": "Barangay council",
+      "sangguniangKabataan": "Sangguniang Kabataan"
     },
     "about": {
       "title": "About BetterLimay",
