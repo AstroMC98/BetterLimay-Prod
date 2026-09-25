@@ -2927,7 +2927,7 @@
   padding: 0.35rem 0.5rem;
   border: 1px solid var(--better-border);
   border-radius: 0.375rem;
-  background: var(--bl-surface);
+  background: var(--better-surface-raised);
   color: var(--better-text);
 }
 
@@ -3008,7 +3008,7 @@
 }
 
 .cmci-tooltip {
-  background: var(--bl-surface);
+  background: var(--better-surface-raised);
   border: 1px solid var(--better-border);
   border-radius: 0.375rem;
   padding: 0.5rem 0.75rem;
@@ -3633,8 +3633,9 @@
   padding: 0 var(--better-space-2);
   border-radius: 999px;
   background: var(--bl-chart-accent);
-  /* Surface colour, not white: the accent lightens in dark mode. */
-  color: var(--bl-surface);
+  /* The page colour, not white: the accent lightens in dark mode, and
+     --bl-surface stays white there. */
+  color: var(--better-surface-canvas);
   font-size: 0.75rem;
   font-weight: 700;
 }

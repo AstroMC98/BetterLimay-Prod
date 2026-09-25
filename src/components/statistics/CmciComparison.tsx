@@ -19,6 +19,13 @@ import {
   type CmciComparison as Comparison,
   type CmciDataset,
 } from "../../lib/ui/cmciComparison";
+import {
+  ACCENT_ACTIVE_DOT,
+  ACCENT_DOT,
+  AXIS_TICK,
+  GRID,
+  X_AXIS_LINE,
+} from "../../lib/ui/chartTheme";
 
 const DATASET_URL = "/data/cmci-bataan.json";
 const DEFAULT_INDICATOR = "Overall Score";
@@ -195,13 +202,15 @@ export function CmciComparison() {
             data={comparison.points}
             margin={{ top: 12, right: 24, bottom: 8, left: 0 }}
           >
-            <CartesianGrid stroke="var(--better-border)" vertical={false} />
+            <CartesianGrid {...GRID} />
             <XAxis
               dataKey="year"
+              tick={AXIS_TICK}
               tickLine={false}
-              axisLine={{ stroke: "var(--better-border)" }}
+              axisLine={X_AXIS_LINE}
             />
             <YAxis
+              tick={AXIS_TICK}
               tickLine={false}
               axisLine={false}
               width={52}
@@ -209,7 +218,12 @@ export function CmciComparison() {
                  near zero, and anchoring there flattens the comparison. */
               domain={comparison.domain}
               allowDecimals={false}
-              label={{ value: comparison.unit, angle: -90, position: "insideLeft" }}
+              label={{
+                value: comparison.unit,
+                angle: -90,
+                position: "insideLeft",
+                style: AXIS_TICK,
+              }}
             />
             <Tooltip
               content={<ComparisonTooltip />}
@@ -220,7 +234,9 @@ export function CmciComparison() {
               return (
                 <Line
                   key={geography}
-                  type="monotone"
+                  /* Straight segments: a smoothed curve overshoots between years
+                     and draws scores no municipality had. */
+                  type="linear"
                   dataKey={geography}
                   name={geography}
                   /* A gap is a year not surveyed. Joining across it would draw a
@@ -229,12 +245,8 @@ export function CmciComparison() {
                   stroke={subject ? "var(--bl-chart-accent)" : "var(--bl-chart-context)"}
                   strokeWidth={subject ? 2.5 : 1.5}
                   strokeOpacity={subject ? 1 : 0.55}
-                  dot={
-                    subject
-                      ? { r: 4, strokeWidth: 2, stroke: "var(--bl-surface)" }
-                      : false
-                  }
-                  activeDot={{ r: 5, strokeWidth: 2, stroke: "var(--bl-surface)" }}
+                  dot={subject ? ACCENT_DOT : false}
+                  activeDot={subject ? ACCENT_ACTIVE_DOT : { r: 3 }}
                   isAnimationActive={false}
                 />
               );

@@ -24,6 +24,7 @@ const FloodHazardMap = lazy(() => import("../components/statistics/FloodHazardMa
 import statisticsJson from "../data/statistics.json";
 import transparencyJson from "../data/transparency.json";
 import type { StatisticRecord, TransparencyRecord } from "../data/types";
+import { AXIS_TICK, GRID } from "../lib/ui/chartTheme";
 import { RouteMetadata } from "../lib/ui/RouteMetadata";
 import {
   getTransparencyChartSeries,
@@ -64,7 +65,6 @@ function truncateTick(value: string): string {
   return value.length > TICK_MAX_CHARS ? `${value.slice(0, TICK_MAX_CHARS - 1)}…` : value;
 }
 
-const AXIS_TICK = { fill: "var(--better-text-muted)", fontSize: 12 };
 /* Without a cap a single-datapoint series renders as one bar filling the plot area. */
 const MAX_BAR_WIDTH = 24;
 
@@ -208,11 +208,7 @@ function TransparencyChart({
             data={chartData}
             margin={{ top: 8, right: 24, bottom: 8, left: 8 }}
           >
-            <CartesianGrid
-              horizontal={false}
-              stroke="var(--better-border)"
-              strokeDasharray="0"
-            />
+            <CartesianGrid {...GRID} vertical horizontal={false} />
             <XAxis
               type="number"
               tick={AXIS_TICK}
@@ -395,11 +391,7 @@ function StatisticsChart({
     >
       <ResponsiveContainer width="100%" height={280}>
         <BarChart data={data} margin={{ top: 12, right: 16, bottom: 24, left: 8 }}>
-          <CartesianGrid
-            strokeDasharray="0"
-            stroke="var(--better-border)"
-            vertical={false}
-          />
+          <CartesianGrid {...GRID} />
           <XAxis dataKey="year" tick={AXIS_TICK} />
           <YAxis width={68} tick={AXIS_TICK} tickFormatter={formatAxisTick} />
           <Tooltip

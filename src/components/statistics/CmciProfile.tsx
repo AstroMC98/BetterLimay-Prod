@@ -22,6 +22,15 @@ import {
   type CmciProfile as Profile,
   type SurveyedYear,
 } from "../../lib/ui/cmciProfile";
+import {
+  ACCENT_ACTIVE_DOT,
+  ACCENT_DOT,
+  AXIS_TICK,
+  CATEGORY_TICK,
+  GRID,
+  VALUE_LABEL,
+  X_AXIS_LINE,
+} from "../../lib/ui/chartTheme";
 
 const DATASET_URL = "/data/cmci-limay-profile.json";
 const PROFILE_URL = "https://cmci.dti.gov.ph/lgu-profile.php?lgu=Limay";
@@ -163,15 +172,17 @@ function RankOverTime({ profile }: { profile: Profile }) {
       >
         <ResponsiveContainer width="100%" height={260}>
           <LineChart data={series} margin={{ top: 20, right: 28, bottom: 8, left: 12 }}>
-            <CartesianGrid stroke="var(--better-border)" vertical={false} />
+            <CartesianGrid {...GRID} />
             <XAxis
               dataKey="year"
+              tick={AXIS_TICK}
               tickLine={false}
-              axisLine={{ stroke: "var(--better-border)" }}
+              axisLine={X_AXIS_LINE}
             />
             {/* Reversed: rank 1 is best, so better sits higher, as a reader expects. */}
             <YAxis
               reversed
+              tick={AXIS_TICK}
               domain={[1, top]}
               ticks={ticks}
               tickLine={false}
@@ -193,14 +204,11 @@ function RankOverTime({ profile }: { profile: Profile }) {
               connectNulls={false}
               stroke="var(--bl-chart-accent)"
               strokeWidth={2.5}
-              dot={{ r: 4, strokeWidth: 2, stroke: "var(--bl-surface)" }}
+              dot={ACCENT_DOT}
+              activeDot={ACCENT_ACTIVE_DOT}
               isAnimationActive={false}
             >
-              <LabelList
-                dataKey="rank"
-                position="top"
-                style={{ fontSize: 11, fill: "var(--better-text-muted)" }}
-              />
+              <LabelList dataKey="rank" position="top" offset={10} style={VALUE_LABEL} />
             </Line>
           </LineChart>
         </ResponsiveContainer>
@@ -279,7 +287,7 @@ function PillarDetail({ years }: { years: SurveyedYear[] }) {
               width={230}
               tickLine={false}
               axisLine={false}
-              tick={{ fontSize: 12, fill: "var(--better-text-strong)" }}
+              tick={CATEGORY_TICK}
             />
             <Bar
               dataKey="score"
@@ -291,7 +299,7 @@ function PillarDetail({ years }: { years: SurveyedYear[] }) {
                 dataKey="score"
                 position="right"
                 formatter={(value: unknown) => Number(value).toFixed(4)}
-                style={{ fontSize: 11, fill: "var(--better-text-muted)" }}
+                style={VALUE_LABEL}
               />
             </Bar>
           </BarChart>
